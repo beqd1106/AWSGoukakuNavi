@@ -26,6 +26,9 @@ enum PassProbability {
 
     /// 0〜100 の目安スコア
     static func score(_ input: Inputs) -> Int {
+        // 1問も回答していなければ推定の根拠がないため0（「まずは毎日の学習から」）
+        guard input.totalAnswered > 0 else { return 0 }
+
         // ① 配点加重の正答率
         var weighted = 0.0
         for domain in ExamDomain.allCases {
