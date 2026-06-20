@@ -1,0 +1,86 @@
+# Codemagic CI/CD 設定（AWSnote / AWSGoukakuNavi）
+#
+# 2つのワークフロー:
+#   1. ios-build-check … 署名なし・シミュレータ向けに「コンパイルが通るか」だけ確認（pushで自動実行）
+#   2. ios-testflight  … 署名あり・TestFlightへ配信（手動実行 or API トリガー）
+#
+# まず 1 でビルドできることを確認し、問題なければ 2 を回す流れ。
+# GitHub Actions(.github/workflows/build-check.yml)でも署名なしビルド＋テストを実行済み。
+
+workflows:
+
+  # ── ① コンパイル確認（署名不要・Apple Developer設定なしでOK）──────────────
+  ios-build-check:
+    name: コンパイル確認 (署名なし)
+    instance_type: mac_mini_m2
+    max_build_duration: 30
+    environment:
+      xcode: latest
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: "*"
+          include: true
+    scripts:
+      - name: Install XcodeGen
+        script: brew install xcodegen
+      - name: Generate Xcode project
+        script: xcodegen generate
+      - name: Build for simulator (no code signing)
+        script: |
+          xcodebuild \
+            -project "AWSGoukakuNavi.xcodeproj" \
+            -scheme "AWSGoukakuNavi" \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+    artifacts:
+      - /tmp/xcodebuild_logs/*.log
+
+  # ── ② TestFlight配信（署名あり・手動実行）─────────────────────────────
+  # 事前準備(すべてブラウザ):
+  #   1. App Store Connect で「Integrations用 APIキー(App Manager権限)」を発行
+  #   2. Codemagic の Teams > Integrations > App Store Connect に登録（名前: AppStoreConnect）
+  #   3. App Store Connect でアプリを新規作成し、Bundle ID を com.beqd1106.awsgoukakunavi に一致させる
+  #   4. （初回のみ）Apple Developer の Identifiers に上記 Bundle ID を登録
+  ios-testflight:
+    name: iOS build & TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: AppStoreConnect
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.beqd1106.awsgoukakunavi
+      vars:
+        XCODE_SCHEME: "AWSGoukakuNavi"
+      xcode: latest
+      cocoapods: default
+    # 自動トリガーなし（Codemagic画面で手動Start、またはAPIで起動）
+    scripts:
+      - name: Install XcodeGen
+        script: brew install xcodegen
+      - name: Generate Xcode project
+        script: xcodegen generate
+      - name: Set up code signing
+        script: xcode-project use-profiles
+      - name: Set build number
+        script: |
+          cd "$CM_BUILD_DIR"
+          # Codemagicが採番するBUILD_NUMBER+1をビルド番号に（重複回避）
+          agvtool new-version -all "$(($BUILD_NUMBER + 1))"
+      - name: Build ipa
+        script: |
+          xcode-project build-ipa \
+            --project "AWSGoukakuNavi.xcodeproj" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
