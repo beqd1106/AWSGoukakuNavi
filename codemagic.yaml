@@ -59,7 +59,14 @@ workflows:
         XCODE_SCHEME: "AWSGoukakuNavi"
       xcode: latest
       cocoapods: default
-    # 自動トリガーなし（Codemagic画面で手動Start、またはAPIで起動）
+    # バージョンタグ(v*)のpushで自動起動。手動Startも可。
+    # 例: git tag v1.0.0 && git push origin v1.0.0 でTestFlightビルドが走る。
+    triggering:
+      events:
+        - tag
+      tag_patterns:
+        - pattern: "v*"
+          include: true
     scripts:
       - name: Install XcodeGen
         script: brew install xcodegen
