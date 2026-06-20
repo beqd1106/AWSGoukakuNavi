@@ -5,9 +5,9 @@ struct MockExamStartView: View {
     @EnvironmentObject var store: StudyStore
     @State private var running = false
 
-    /// MVPの問題数。コンテンツが増えれば本番同様65問へ拡張可能。
+    /// 本番同様65問。問題プールが足りない場合は利用可能数に丸める。
     private var available: Int { ContentRepository.shared.questions.count }
-    private var count: Int { min(20, available) }
+    private var count: Int { min(65, available) }
 
     var body: some View {
         ZStack {

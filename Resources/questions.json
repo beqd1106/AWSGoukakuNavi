@@ -547,5 +547,1608 @@
     "difficulty": 1,
     "tags": ["弾力性", "Auto Scaling"],
     "beginnerNote": "『ゴムのように伸び縮みする＝弾力性』とイメージしましょう。"
+  },
+  {
+    "id": "q-cc-007",
+    "question": "クラウドを使うことで、企業の支出が「初期に大きな設備投資（CapEx）」から「使った分の経費（OpEx）」へ変わります。この変化を表す言葉として最も適切なものはどれですか。",
+    "choices": [
+      "固定費を変動費に変える",
+      "変動費を固定費に変える",
+      "すべての費用をゼロにする",
+      "費用を前払いで固定する"
+    ],
+    "correctAnswers": [0],
+    "explanation": "クラウドでは高額なサーバーを先に買う必要がなく、使った分だけ支払います。これにより、大きな固定費（初期投資）を、利用量に応じた変動費に変えられます。",
+    "wrongChoiceExplanations": {
+      "1": "向きが逆です。クラウドは固定費を変動費に変えます。",
+      "2": "費用がゼロになるわけではありません。",
+      "3": "前払いで固定するのはオンプレミス的な考え方です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 2,
+    "tags": ["CapEx", "OpEx", "クラウドの価値"],
+    "beginnerNote": "『買う(固定費)→借りる(変動費)』がクラウドの基本です。"
+  },
+  {
+    "id": "q-cc-008",
+    "question": "クラウド導入のメリットである「キャパシティの予測が不要になる」とは、どういう意味ですか。",
+    "choices": [
+      "将来必要なサーバー量を前もって当てる必要がなくなる",
+      "サーバーが一切不要になる",
+      "料金を予測する必要がなくなる",
+      "セキュリティ対策が不要になる"
+    ],
+    "correctAnswers": [0],
+    "explanation": "オンプレミスでは将来の需要を見越して機器を購入する必要があり、過剰投資や不足が起きました。クラウドは必要に応じて増減できるため、需要を当てる必要がありません。",
+    "wrongChoiceExplanations": {
+      "1": "サーバー自体は使います。物理購入が不要になるだけです。",
+      "2": "料金の管理はむしろ重要です。",
+      "3": "セキュリティ対策は引き続き必要です（責任共有モデル）。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 2,
+    "tags": ["キャパシティ", "メリット"],
+    "beginnerNote": "『どれだけ必要か当てなくていい』＝必要な時に増やせるから、です。"
+  },
+  {
+    "id": "q-cc-009",
+    "question": "複数のアベイラビリティーゾーン（AZ）にシステムを分散配置する主な目的はどれですか。",
+    "choices": [
+      "1つのデータセンターで障害が起きても稼働を続けるため",
+      "料金を必ず安くするため",
+      "プログラムを書かなくてよくするため",
+      "インターネットを不要にするため"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AZは物理的に離れたデータセンター群です。複数AZに分散すれば、片方で障害が起きてももう片方で稼働を継続でき、高可用性（落ちにくさ）を実現できます。",
+    "wrongChoiceExplanations": {
+      "1": "可用性向上が主目的で、必ず安くなるわけではありません。",
+      "2": "コーディングの要否とは関係ありません。",
+      "3": "インターネット接続は引き続き利用します。"
+    },
+    "domain": "cloudConcepts",
+    "service": "可用性",
+    "difficulty": 2,
+    "tags": ["高可用性", "AZ", "信頼性"],
+    "beginnerNote": "『1か所が倒れても大丈夫にする』ための分散です。"
+  },
+  {
+    "id": "q-cc-010",
+    "question": "システムの一部を自社データセンターに、一部をAWSに置いて連携させる構成を何と呼びますか。",
+    "choices": [
+      "ハイブリッドクラウド",
+      "パブリッククラウド",
+      "オンプレミスのみ",
+      "マルチリージョン"
+    ],
+    "correctAnswers": [0],
+    "explanation": "ハイブリッドクラウドは、オンプレミス（自社環境）とクラウドを組み合わせて使う構成です。段階的な移行や、特定データを社内に残したい場合などに用います。",
+    "wrongChoiceExplanations": {
+      "1": "パブリッククラウドはクラウドだけを使う形態です。",
+      "2": "オンプレミスのみはクラウドを使いません。",
+      "3": "マルチリージョンは複数のAWS地域に分散する話で、社内連携の概念ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 2,
+    "tags": ["ハイブリッド", "デプロイモデル"],
+    "beginnerNote": "『社内＋クラウドの合わせ技＝ハイブリッド』です。"
+  },
+  {
+    "id": "q-cc-011",
+    "question": "Well-Architected フレームワークの「運用上の優秀性（Operational Excellence）」の柱が主に扱う内容はどれですか。",
+    "choices": [
+      "システムの運用・監視・改善を継続的に行うこと",
+      "料金を最小化することだけ",
+      "攻撃を防ぐことだけ",
+      "サーバーを物理的に冷却すること"
+    ],
+    "correctAnswers": [0],
+    "explanation": "運用上の優秀性の柱は、運用作業の自動化、監視、変更管理、継続的な改善などを通じてビジネス価値を高めることに焦点を当てます。",
+    "wrongChoiceExplanations": {
+      "1": "料金はコスト最適化の柱が扱います。",
+      "2": "攻撃防御はセキュリティの柱が扱います。",
+      "3": "物理的な冷却はAWSの責任範囲で、設計の柱の主題ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 3,
+    "tags": ["Well-Architected", "運用"],
+    "beginnerNote": "6つの柱は『何を良くしたいか』で分かれています。運用＝回し続ける改善。"
+  },
+  {
+    "id": "q-cc-012",
+    "question": "AWSが継続的に値下げを行えてきた主な理由として、最も適切なものはどれですか。",
+    "choices": [
+      "規模の経済により調達コストが下がり、利用者へ還元しているため",
+      "利用者数が減っているため",
+      "サービスの品質を下げているため",
+      "政府から補助金を受けているため"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWSは膨大な数の利用者にサービスを提供しており、大規模な調達でコストを下げられます（規模の経済）。その効果を値下げという形で利用者に還元してきました。",
+    "wrongChoiceExplanations": {
+      "1": "利用者は増加傾向で、それが規模の経済を生みます。",
+      "2": "品質低下が値下げ理由ではありません。",
+      "3": "補助金が理由ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 2,
+    "tags": ["規模の経済", "価格"],
+    "beginnerNote": "『たくさん使われる→安く仕入れられる→値下げ』の流れです。"
+  },
+  {
+    "id": "q-cc-013",
+    "question": "クラウドの「俊敏性（アジリティ）」がもたらす利点として、最も適切なものはどれですか。",
+    "choices": [
+      "新しいアイデアを素早く試し、失敗してもすぐやり直せる",
+      "一度作ったシステムは二度と変更できない",
+      "サーバー調達に数か月かかる",
+      "世界展開ができなくなる"
+    ],
+    "correctAnswers": [0],
+    "explanation": "クラウドでは数分でリソースを用意できるため、新サービスの実験や検証を素早く回せます。失敗のコストも小さく、イノベーションを促進します。",
+    "wrongChoiceExplanations": {
+      "1": "クラウドは柔軟に変更できます。",
+      "2": "調達は数分で、数か月かかるのはオンプレミスです。",
+      "3": "クラウドは数分で世界展開できます。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 1,
+    "tags": ["アジリティ", "俊敏性"],
+    "beginnerNote": "『すぐ試せる・すぐやめられる』が俊敏性です。"
+  },
+  {
+    "id": "q-cc-014",
+    "question": "AWSの責任のうち「データセンターの運用」をAWSが担うことで、利用者が得られる利点はどれですか。",
+    "choices": [
+      "ビジネスの差別化につながる本業に集中できる",
+      "プログラミングが一切不要になる",
+      "料金が常に無料になる",
+      "セキュリティの責任がすべてなくなる"
+    ],
+    "correctAnswers": [0],
+    "explanation": "サーバーの設置・電源・空調・物理警備などの『重労働』をAWSに任せられるため、利用者は付加価値を生む本業に集中できます。",
+    "wrongChoiceExplanations": {
+      "1": "アプリ開発などは引き続き必要です。",
+      "2": "無料にはなりません。",
+      "3": "利用者側のセキュリティ責任は残ります（責任共有モデル）。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 2,
+    "tags": ["メリット", "本業集中"],
+    "beginnerNote": "『裏方仕事をAWSに任せて本業に集中』できるのが大きな価値です。"
+  },
+  {
+    "id": "q-cc-015",
+    "question": "次のうち、Well-Architected フレームワークの6つの柱に「含まれる」ものを2つ選んでください。",
+    "choices": [
+      "パフォーマンス効率",
+      "持続可能性",
+      "広告効果",
+      "従業員満足度"
+    ],
+    "correctAnswers": [0, 1],
+    "explanation": "6つの柱は、運用上の優秀性・セキュリティ・信頼性・パフォーマンス効率・コスト最適化・持続可能性です。パフォーマンス効率と持続可能性はこれに含まれます。",
+    "wrongChoiceExplanations": {
+      "2": "広告効果は柱ではありません。",
+      "3": "従業員満足度は柱ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 2,
+    "tags": ["Well-Architected", "複数選択"],
+    "beginnerNote": "持続可能性(Sustainability)は比較的新しく追加された6つ目の柱です。"
+  },
+  {
+    "id": "q-cc-016",
+    "question": "クラウドの「グローバル展開が数分でできる」という利点が役立つ場面として、最も適切なものはどれですか。",
+    "choices": [
+      "海外の利用者にも低遅延でサービスを届けたいとき",
+      "社内の紙の書類を整理したいとき",
+      "従業員の勤怠を管理したいとき",
+      "オフィスの座席を決めたいとき"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWSは世界各地にリージョンを持つため、利用者の近くにサービスを配置でき、海外でも低遅延で届けられます。数分で他地域へ展開できる点が強みです。",
+    "wrongChoiceExplanations": {
+      "1": "紙の整理はクラウドのグローバル展開とは無関係です。",
+      "2": "勤怠管理はこの利点の主題ではありません。",
+      "3": "座席決めとは関係ありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 1,
+    "tags": ["グローバル展開", "メリット"],
+    "beginnerNote": "『世界中の近い場所から届けて速くする』ができます。"
+  },
+  {
+    "id": "q-cc-017",
+    "question": "AWS Cloud Adoption Framework（CAF）が示す「パースペクティブ（視点）」に該当しないものはどれですか。",
+    "choices": [
+      "天候",
+      "ビジネス",
+      "ガバナンス",
+      "セキュリティ"
+    ],
+    "correctAnswers": [0],
+    "explanation": "CAFはビジネス・人材・ガバナンス・プラットフォーム・セキュリティ・運用などの視点でクラウド導入を整理します。天候は含まれません。",
+    "wrongChoiceExplanations": {
+      "1": "ビジネスはCAFの視点の1つです。",
+      "2": "ガバナンスはCAFの視点の1つです。",
+      "3": "セキュリティはCAFの視点の1つです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "AWS CAF",
+    "difficulty": 3,
+    "tags": ["CAF", "クラウド導入"],
+    "beginnerNote": "CAFは『移行のときに整理すべき観点集』。具体名より役割を押さえればOK。"
+  },
+  {
+    "id": "q-cc-018",
+    "question": "オンプレミスで起きがちな「過剰なサーバー購入による無駄」を、クラウドが解消できる理由として最も適切なものはどれですか。",
+    "choices": [
+      "需要に合わせて必要な分だけ使い、不要になれば減らせるから",
+      "サーバーが永久に壊れないから",
+      "電気代がかからないから",
+      "利用者がサーバーを製造できるから"
+    ],
+    "correctAnswers": [0],
+    "explanation": "クラウドは弾力性により、混雑時に増やし、空いている時に減らせます。これにより、ピークに合わせて買い込む必要がなくなり、無駄を抑えられます。",
+    "wrongChoiceExplanations": {
+      "1": "機器は故障し得ます。AWSが対応するだけです。",
+      "2": "クラウド利用にも料金はかかります。",
+      "3": "利用者が製造するわけではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 2,
+    "tags": ["弾力性", "コスト"],
+    "beginnerNote": "『ピークに合わせて買い込む無駄』を弾力性が解消します。"
+  },
+  {
+    "id": "q-cc-019",
+    "question": "「スケーラビリティ（拡張性）」の説明として最も適切なものはどれですか。",
+    "choices": [
+      "利用の増加に合わせてシステムの処理能力を拡大できること",
+      "システムを一切変更できないこと",
+      "料金を必ず固定にできること",
+      "データを削除する機能のこと"
+    ],
+    "correctAnswers": [0],
+    "explanation": "スケーラビリティは、負荷の増加に応じて処理能力を拡大できる性質です。サーバーを増やす（スケールアウト）、性能を上げる（スケールアップ）などの方法があります。",
+    "wrongChoiceExplanations": {
+      "1": "変更できないのは拡張性の逆です。",
+      "2": "料金固定とは関係ありません。",
+      "3": "削除機能のことではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 2,
+    "tags": ["スケーラビリティ", "拡張性"],
+    "beginnerNote": "『大きくできる＝スケーラビリティ』『伸び縮み＝弾力性』で対比します。"
+  },
+  {
+    "id": "q-cc-020",
+    "question": "クラウドにおける「総所有コスト（TCO）」を下げる要因として、最も適切なものはどれですか。",
+    "choices": [
+      "ハードウェア購入・保守・運用要員などの費用を削減できる",
+      "アプリ開発が一切不要になる",
+      "利用者数が必ず増える",
+      "通信が暗号化されなくなる"
+    ],
+    "correctAnswers": [0],
+    "explanation": "TCO（Total Cost of Ownership）は導入から運用まで含めた総コストです。クラウドは物理機器の購入・保守・運用人員などを削減でき、TCOを下げられます。",
+    "wrongChoiceExplanations": {
+      "1": "アプリ開発は引き続き必要です。",
+      "2": "利用者数が必ず増えるわけではありません。",
+      "3": "暗号化はむしろ重視されます。"
+    },
+    "domain": "cloudConcepts",
+    "service": "全般",
+    "difficulty": 3,
+    "tags": ["TCO", "コスト"],
+    "beginnerNote": "TCOは『買う費用＋使い続ける費用』の合計。クラウドはここを下げられます。"
+  },
+  {
+    "id": "q-cc-021",
+    "question": "既存システムをほとんど変更せずにそのままクラウドへ移す移行手法を何と呼びますか。",
+    "choices": [
+      "リホスト（リフト＆シフト）",
+      "リファクタリング",
+      "リタイア",
+      "リプレース"
+    ],
+    "correctAnswers": [0],
+    "explanation": "リホスト（リフト＆シフト）は、アプリをほぼ変更せずにそのままクラウドへ移す手法です。最も手早く移行でき、後から最適化することもできます。",
+    "wrongChoiceExplanations": {
+      "1": "リファクタリングはアプリを作り変えてクラウド最適化する手法です。",
+      "2": "リタイアは不要なシステムを廃止することです。",
+      "3": "リプレースは別の製品に置き換えることです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 3,
+    "tags": ["移行戦略", "リホスト"],
+    "beginnerNote": "『そのまま持ち上げて移す＝リフト＆シフト』。まず移してあとで改善、が定石。"
+  },
+  {
+    "id": "q-cc-022",
+    "question": "Well-Architected フレームワークの「持続可能性（Sustainability）」の柱が重視する観点として、最も適切なものはどれですか。",
+    "choices": [
+      "環境への影響（エネルギー効率など）を考慮した設計",
+      "広告費の最大化",
+      "サーバーの色の統一",
+      "従業員の通勤時間の短縮"
+    ],
+    "correctAnswers": [0],
+    "explanation": "持続可能性の柱は、必要なリソースだけを効率的に使い、環境負荷（消費エネルギーなど）を抑えることを重視します。",
+    "wrongChoiceExplanations": {
+      "1": "広告費は柱の主題ではありません。",
+      "2": "見た目の統一とは関係ありません。",
+      "3": "通勤時間は柱の主題ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 3,
+    "tags": ["Well-Architected", "持続可能性"],
+    "beginnerNote": "『地球にやさしい使い方』を設計で考えるのが持続可能性の柱です。"
+  },
+  {
+    "id": "q-sec-006",
+    "question": "IAMで権限を設計するときの「最小権限の原則」とは、どのような考え方ですか。",
+    "choices": [
+      "業務に必要な最小限の権限だけを与える",
+      "全員にすべての権限を与える",
+      "権限を一切与えない",
+      "管理者権限を全員に配る"
+    ],
+    "correctAnswers": [0],
+    "explanation": "最小権限の原則は、各ユーザーやサービスに『仕事に必要な分だけ』権限を与える考え方です。万一漏洩しても被害を最小化でき、セキュリティの基本となります。",
+    "wrongChoiceExplanations": {
+      "1": "全権限付与はリスクが大きく、原則に反します。",
+      "2": "まったく与えないと業務ができません。",
+      "3": "管理者権限の乱発は危険です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": ["IAM", "最小権限", "頻出"],
+    "beginnerNote": "『必要な分だけ渡す』。鍵を渡しすぎない、と同じ発想です。"
+  },
+  {
+    "id": "q-sec-007",
+    "question": "多要素認証（MFA）が提供するセキュリティ上の利点として、最も適切なものはどれですか。",
+    "choices": [
+      "パスワードが漏れても、追加の認証がないとログインできない",
+      "パスワードを不要にする",
+      "通信を高速化する",
+      "料金を安くする"
+    ],
+    "correctAnswers": [0],
+    "explanation": "MFAは『パスワード＋スマホのワンタイムコード』のように複数の要素で認証します。パスワードが漏れても、もう一つの要素がないとログインできず、安全性が高まります。",
+    "wrongChoiceExplanations": {
+      "1": "パスワードは引き続き使います。要素を追加するものです。",
+      "2": "通信速度とは無関係です。",
+      "3": "料金とは無関係です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": ["MFA", "認証"],
+    "beginnerNote": "『鍵を2つにする』イメージ。片方盗まれても入れません。"
+  },
+  {
+    "id": "q-sec-008",
+    "question": "EC2インスタンス上のアプリからS3に安全にアクセスさせたいとき、推奨される方法はどれですか。",
+    "choices": [
+      "IAMロールをEC2に割り当てる",
+      "アクセスキーをコードに直接書き込む",
+      "ルートユーザーのパスワードをアプリに保存する",
+      "全員に管理者権限を付与する"
+    ],
+    "correctAnswers": [0],
+    "explanation": "IAMロールをEC2に割り当てると、アプリは一時的な認証情報で安全にS3へアクセスできます。キーをコードに埋め込む必要がなく、漏洩リスクを避けられます。",
+    "wrongChoiceExplanations": {
+      "1": "キーの直書きは漏洩の危険が高く、避けるべきです。",
+      "2": "ルートユーザーの情報を保存するのは非常に危険です。",
+      "3": "管理者権限の乱発は最小権限の原則に反します。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 3,
+    "tags": ["IAMロール", "ベストプラクティス"],
+    "beginnerNote": "『キーを書かずにロールを付ける』が安全。ロールは一時的な権限の貸与です。"
+  },
+  {
+    "id": "q-sec-009",
+    "question": "EC2インスタンスへの通信を許可・拒否する「仮想ファイアウォール」として機能するものはどれですか。",
+    "choices": [
+      "セキュリティグループ",
+      "S3バケット",
+      "IAMポリシー",
+      "CloudFront"
+    ],
+    "correctAnswers": [0],
+    "explanation": "セキュリティグループは、インスタンス単位の仮想ファイアウォールです。許可するポートや送信元を設定して、受信・送信の通信を制御します。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージで、通信制御の仕組みではありません。",
+      "2": "IAMポリシーはAWS操作の権限制御で、ネットワーク通信のFWではありません。",
+      "3": "CloudFrontはコンテンツ配信サービスです。"
+    },
+    "domain": "security",
+    "service": "セキュリティグループ",
+    "difficulty": 2,
+    "tags": ["セキュリティグループ", "ネットワーク"],
+    "beginnerNote": "『サーバーの門番（通信の許可リスト）＝セキュリティグループ』です。"
+  },
+  {
+    "id": "q-sec-010",
+    "question": "SQLインジェクションやクロスサイトスクリプティングなど、悪意のあるWebリクエストを遮断するサービスはどれですか。",
+    "choices": [
+      "AWS WAF",
+      "Amazon S3",
+      "AWS Budgets",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS WAF（Web Application Firewall）は、Webアプリへの不正なリクエストをルールに基づいて遮断します。CloudFrontやALBと組み合わせて使います。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "Budgetsはコスト予算管理です。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "security",
+    "service": "AWS WAF",
+    "difficulty": 2,
+    "tags": ["WAF", "セキュリティサービス"],
+    "beginnerNote": "『不正な入力を弾く＝WAF／大量アクセスを防ぐ＝Shield』で対比します。"
+  },
+  {
+    "id": "q-sec-011",
+    "question": "暗号鍵の作成・管理を一元的に行い、各種AWSサービスのデータ暗号化に使えるサービスはどれですか。",
+    "choices": [
+      "AWS KMS（Key Management Service）",
+      "Amazon EC2",
+      "AWS Cost Explorer",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS KMS は暗号鍵を安全に作成・管理するサービスです。S3やEBS、RDSなど多くのサービスと連携し、保存データの暗号化を簡単にします。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は仮想サーバーです。",
+      "2": "Cost Explorerはコスト分析です。",
+      "3": "Route 53はDNSサービスです。"
+    },
+    "domain": "security",
+    "service": "AWS KMS",
+    "difficulty": 3,
+    "tags": ["KMS", "暗号化"],
+    "beginnerNote": "『鍵の管理人＝KMS』。データの鍵を安全に預かってくれます。"
+  },
+  {
+    "id": "q-sec-012",
+    "question": "「誰が・いつ・どのAWS操作（API）を行ったか」の記録を残し、監査に役立てられるサービスはどれですか。",
+    "choices": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "Amazon S3",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS CloudTrail は、アカウント内のAPI呼び出し（操作）を記録します。誰が何をしたかを追跡でき、監査やトラブル調査に役立ちます。",
+    "wrongChoiceExplanations": {
+      "1": "CloudWatchは性能やログの『監視』が主で、操作履歴の記録はCloudTrailです。",
+      "2": "S3はストレージサービスです。",
+      "3": "Lambdaはコード実行サービスです。"
+    },
+    "domain": "security",
+    "service": "AWS CloudTrail",
+    "difficulty": 2,
+    "tags": ["CloudTrail", "監査"],
+    "beginnerNote": "『操作の記録＝CloudTrail／状態の監視＝CloudWatch』の違いは頻出です。"
+  },
+  {
+    "id": "q-sec-013",
+    "question": "機械学習を用いて不正アクセスや異常な振る舞いを継続的に検知する「脅威検知」サービスはどれですか。",
+    "choices": [
+      "Amazon GuardDuty",
+      "Amazon S3",
+      "AWS Budgets",
+      "Amazon EC2"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon GuardDuty は、ログを分析して不審な通信やアカウントの異常を自動で検知する脅威検知サービスです。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "EC2は仮想サーバーです。"
+    },
+    "domain": "security",
+    "service": "Amazon GuardDuty",
+    "difficulty": 3,
+    "tags": ["GuardDuty", "脅威検知"],
+    "beginnerNote": "『あやしい動きを見張る番犬＝GuardDuty』とイメージしましょう。"
+  },
+  {
+    "id": "q-sec-014",
+    "question": "S3に保存された個人情報（PII）などの機密データを自動で発見・分類するサービスはどれですか。",
+    "choices": [
+      "Amazon Macie",
+      "Amazon EC2",
+      "Amazon CloudFront",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Macie は、機械学習でS3内の個人情報や機密データを発見・分類し、保護に役立てるサービスです。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は仮想サーバーです。",
+      "2": "CloudFrontはコンテンツ配信です。",
+      "3": "Trusted Advisorは最適化の助言サービスです。"
+    },
+    "domain": "security",
+    "service": "Amazon Macie",
+    "difficulty": 3,
+    "tags": ["Macie", "データ保護"],
+    "beginnerNote": "『S3の中の個人情報を見つける＝Macie』。"
+  },
+  {
+    "id": "q-sec-015",
+    "question": "EC2やコンテナの脆弱性（既知のセキュリティ上の弱点）を自動でスキャンして評価するサービスはどれですか。",
+    "choices": [
+      "Amazon Inspector",
+      "Amazon S3",
+      "AWS Budgets",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Inspector は、ワークロードの脆弱性や意図しない公開設定を自動的に評価し、対処の優先順位を示すサービスです。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "Route 53はDNSサービスです。"
+    },
+    "domain": "security",
+    "service": "Amazon Inspector",
+    "difficulty": 3,
+    "tags": ["Inspector", "脆弱性診断"],
+    "beginnerNote": "『弱点を点検する健康診断＝Inspector』。"
+  },
+  {
+    "id": "q-sec-016",
+    "question": "責任共有モデルにおいて、EC2を利用する場合に「利用者（顧客）」が責任を持つものはどれですか。",
+    "choices": [
+      "ゲストOSのパッチ適用やアプリの設定",
+      "物理サーバーの保守",
+      "データセンターの空調管理",
+      "ハイパーバイザーの管理"
+    ],
+    "correctAnswers": [0],
+    "explanation": "EC2では、OSのアップデート、アプリの設定、データの保護などは利用者の責任です（in the cloud）。物理基盤やハイパーバイザーはAWSの責任です（of the cloud）。",
+    "wrongChoiceExplanations": {
+      "1": "物理サーバーの保守はAWSの責任です。",
+      "2": "空調などデータセンター運用はAWSの責任です。",
+      "3": "ハイパーバイザーはAWSの責任です。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 2,
+    "tags": ["責任共有モデル", "EC2", "頻出"],
+    "beginnerNote": "『EC2のOS更新は利用者の仕事』。マネージドサービスほどAWSの担当が増えます。"
+  },
+  {
+    "id": "q-sec-017",
+    "question": "責任共有モデルにおいて、マネージドサービス（例：S3やLambda）を使うほど一般的にどうなりますか。",
+    "choices": [
+      "AWSが担う運用範囲が増え、利用者の負担が減る",
+      "利用者がOSのパッチ適用まで行う必要が増える",
+      "AWSの責任が完全になくなる",
+      "利用者の責任が完全になくなる"
+    ],
+    "correctAnswers": [0],
+    "explanation": "マネージドサービスでは、OSの管理やパッチ適用などをAWSが担うため、利用者は設定やデータ管理に集中できます。ただしデータやアクセス管理の責任は残ります。",
+    "wrongChoiceExplanations": {
+      "1": "むしろOS管理はAWSが担います。",
+      "2": "AWSの責任がなくなることはありません。",
+      "3": "データやアクセスの責任は利用者に残ります。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 3,
+    "tags": ["責任共有モデル", "マネージド"],
+    "beginnerNote": "『マネージドほどAWS担当が増える』。でもデータと権限は常に利用者の責任。"
+  },
+  {
+    "id": "q-sec-018",
+    "question": "通信中のデータを盗み見から守るための基本的な対策として、最も適切なものはどれですか。",
+    "choices": [
+      "HTTPS（TLS/SSL）で通信を暗号化する",
+      "通信を平文のまま送る",
+      "パスワードを画面に表示する",
+      "暗号化を無効にする"
+    ],
+    "correctAnswers": [0],
+    "explanation": "通信中（in transit）のデータはTLS/SSL（HTTPS）で暗号化して守ります。保存データ（at rest）はKMSなどで暗号化します。両方の保護が重要です。",
+    "wrongChoiceExplanations": {
+      "1": "平文は盗聴の危険があります。",
+      "2": "パスワード表示は危険です。",
+      "3": "暗号化の無効化は危険です。"
+    },
+    "domain": "security",
+    "service": "暗号化",
+    "difficulty": 2,
+    "tags": ["暗号化", "通信"],
+    "beginnerNote": "『移動中＝TLS／保存中＝KMS』の2か所で守るのが基本です。"
+  },
+  {
+    "id": "q-sec-019",
+    "question": "データベースのパスワードやAPIキーなどの秘密情報を安全に保管し、自動ローテーションもできるサービスはどれですか。",
+    "choices": [
+      "AWS Secrets Manager",
+      "Amazon S3",
+      "Amazon EC2",
+      "AWS Budgets"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Secrets Manager は、パスワードやキーなどの秘密情報を安全に保管し、定期的な自動更新（ローテーション）も行えるサービスです。",
+    "wrongChoiceExplanations": {
+      "1": "S3にそのまま秘密情報を置くのは適切ではありません。",
+      "2": "EC2は仮想サーバーです。",
+      "3": "Budgetsはコスト管理です。"
+    },
+    "domain": "security",
+    "service": "AWS Secrets Manager",
+    "difficulty": 3,
+    "tags": ["Secrets Manager", "秘密情報"],
+    "beginnerNote": "『パスワードの金庫＝Secrets Manager』。コードに直書きしないための仕組み。"
+  },
+  {
+    "id": "q-sec-020",
+    "question": "複数ユーザーに同じ権限をまとめて付与・管理したいとき、IAMで使うと効率的なものはどれですか。",
+    "choices": [
+      "IAMグループ",
+      "セキュリティグループ",
+      "S3バケット",
+      "リージョン"
+    ],
+    "correctAnswers": [0],
+    "explanation": "IAMグループにポリシーを付与し、ユーザーをグループに入れることで、複数ユーザーの権限をまとめて管理できます。異動時もグループを変えるだけで済みます。",
+    "wrongChoiceExplanations": {
+      "1": "セキュリティグループはネットワーク通信のFWで、IAMの権限管理とは別物です。",
+      "2": "S3バケットはストレージの保存場所です。",
+      "3": "リージョンは地理的な区分です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": ["IAMグループ", "アクセス管理"],
+    "beginnerNote": "『IAMグループ＝権限管理／セキュリティグループ＝通信制御』。名前が似て別物です。"
+  },
+  {
+    "id": "q-sec-021",
+    "question": "AWSの監査レポートやコンプライアンス証明書をオンデマンドで取得したい場合、利用すべきサービスはどれですか。",
+    "choices": [
+      "AWS Artifact",
+      "Amazon GuardDuty",
+      "Amazon EC2",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Artifact は、SOCやISO、PCIなどのコンプライアンス関連文書をダウンロードできるサービスです。取引先や監査人への提出に役立ちます。",
+    "wrongChoiceExplanations": {
+      "1": "GuardDutyは脅威検知サービスです。",
+      "2": "EC2は仮想サーバーです。",
+      "3": "Lambdaはコード実行サービスです。"
+    },
+    "domain": "security",
+    "service": "AWS Artifact",
+    "difficulty": 2,
+    "tags": ["Artifact", "コンプライアンス"],
+    "beginnerNote": "『監査書類が欲しい→Artifact』。GuardDuty(検知)と混同しないように。"
+  },
+  {
+    "id": "q-sec-022",
+    "question": "AWSリソースの設定変更を継続的に記録し、望ましい設定から外れていないかを評価できるサービスはどれですか。",
+    "choices": [
+      "AWS Config",
+      "Amazon CloudFront",
+      "AWS Budgets",
+      "Amazon SNS"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Config は、リソースの構成変更を記録し、定めたルールに準拠しているかを継続的に評価します。コンプライアンス維持に役立ちます。",
+    "wrongChoiceExplanations": {
+      "1": "CloudFrontはコンテンツ配信です。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "SNSは通知サービスです。"
+    },
+    "domain": "security",
+    "service": "AWS Config",
+    "difficulty": 3,
+    "tags": ["Config", "ガバナンス"],
+    "beginnerNote": "『設定の変化を記録＆ルール違反を検出＝Config』。操作の記録はCloudTrail。"
+  },
+  {
+    "id": "q-sec-023",
+    "question": "ルートユーザーに関するベストプラクティスとして、最も適切なものはどれですか。",
+    "choices": [
+      "MFAを有効にし、普段はIAMユーザーで作業する",
+      "アクセスキーを発行してアプリに組み込む",
+      "全社員にパスワードを共有する",
+      "ルートユーザーで毎日の運用を行う"
+    ],
+    "correctAnswers": [0],
+    "explanation": "ルートユーザーは全権限を持つため、MFAで保護し、日常作業は権限を絞ったIAMユーザーで行います。ルートのアクセスキーは原則作らないのが安全です。",
+    "wrongChoiceExplanations": {
+      "1": "ルートのアクセスキー作成・組込みは非常に危険です。",
+      "2": "パスワード共有はリスクが大きいです。",
+      "3": "ルートでの日常運用は推奨されません。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": ["ルートユーザー", "ベストプラクティス", "頻出"],
+    "beginnerNote": "ルートは『非常用の社長アカウント』。普段は使わずMFAで厳重保管。"
+  },
+  {
+    "id": "q-sec-024",
+    "question": "AWS Shield Standard の特徴として、最も適切なものはどれですか。",
+    "choices": [
+      "追加料金なしで、一般的なDDoS攻撃から自動的に保護する",
+      "利用には必ず最上位サポートの契約が必要",
+      "DDoSではなくデータ暗号化を行う",
+      "コスト分析を行う"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Shield Standard は追加料金なしで全ユーザーに自動適用され、一般的なDDoS攻撃から保護します。より高度な保護が必要な場合はShield Advanced（有料）を使います。",
+    "wrongChoiceExplanations": {
+      "1": "Standardは無料・自動で、特別な契約は不要です。",
+      "2": "Shieldの役割は暗号化ではありません。",
+      "3": "コスト分析はCost Explorerの役割です。"
+    },
+    "domain": "security",
+    "service": "AWS Shield",
+    "difficulty": 2,
+    "tags": ["Shield", "DDoS"],
+    "beginnerNote": "『Standard＝無料・自動／Advanced＝有料・高度』の違いを押さえましょう。"
+  },
+  {
+    "id": "q-sec-025",
+    "question": "多数のAWSアカウントに対して、利用できるサービスや操作の上限（ガードレール）を一括で適用したい場合に使うものはどれですか。",
+    "choices": [
+      "AWS Organizations のサービスコントロールポリシー（SCP）",
+      "セキュリティグループ",
+      "Amazon S3バケットポリシーのみ",
+      "Amazon CloudWatchアラーム"
+    ],
+    "correctAnswers": [0],
+    "explanation": "SCP（Service Control Policy）はAWS Organizations の機能で、組織内アカウントが使える操作の上限を一括で定義できます。各アカウントの『超えてはいけない枠』を決めます。",
+    "wrongChoiceExplanations": {
+      "1": "セキュリティグループはネットワーク通信の制御です。",
+      "2": "バケットポリシーは単一バケットのアクセス制御で、組織全体の統制ではありません。",
+      "3": "CloudWatchアラームは監視通知です。"
+    },
+    "domain": "security",
+    "service": "AWS Organizations",
+    "difficulty": 3,
+    "tags": ["SCP", "ガバナンス", "Organizations"],
+    "beginnerNote": "『組織全体に効くガードレール＝SCP』。個人の権限はIAM、組織の枠はSCP。"
+  },
+  {
+    "id": "q-sec-026",
+    "question": "次のうち、AWSの「セキュリティ・脅威検知」に関係するサービスを2つ選んでください。",
+    "choices": [
+      "Amazon GuardDuty",
+      "AWS WAF",
+      "Amazon Redshift",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswers": [0, 1],
+    "explanation": "GuardDuty（脅威検知）とWAF（不正Webリクエスト遮断）はどちらもセキュリティ関連サービスです。Redshiftは分析、Cost Explorerはコスト分析で別分野です。",
+    "wrongChoiceExplanations": {
+      "2": "Redshiftはデータウェアハウス（分析）です。",
+      "3": "Cost Explorerはコスト分析サービスです。"
+    },
+    "domain": "security",
+    "service": "セキュリティサービス",
+    "difficulty": 2,
+    "tags": ["GuardDuty", "WAF", "複数選択"],
+    "beginnerNote": "セキュリティ系の名前を分野で仕分けする練習です。"
+  },
+  {
+    "id": "q-sec-027",
+    "question": "コンプライアンス（法令や基準の順守）に関して、利用者が担うべき責任の例として最も適切なものはどれですか。",
+    "choices": [
+      "自社データの分類と取り扱いルールの順守",
+      "AWSデータセンターの物理監査",
+      "AWSハードウェアの廃棄処理",
+      "AWSネットワーク機器の保守"
+    ],
+    "correctAnswers": [0],
+    "explanation": "データの分類、アクセス管理、各業界規制への自社対応は利用者の責任です。物理設備やハードウェアの管理はAWSの責任範囲です。",
+    "wrongChoiceExplanations": {
+      "1": "物理監査・物理設備はAWSの責任です。",
+      "2": "ハードウェア廃棄はAWSが行います。",
+      "3": "ネットワーク機器保守はAWSの責任です。"
+    },
+    "domain": "security",
+    "service": "コンプライアンス",
+    "difficulty": 3,
+    "tags": ["コンプライアンス", "責任共有モデル"],
+    "beginnerNote": "『データの扱いは利用者／物理設備はAWS』の線引きがここでも効きます。"
+  },
+  {
+    "id": "q-sec-028",
+    "question": "従業員が普段使う社内IDで複数のAWSアカウントにシングルサインオン（SSO）できるようにするサービスはどれですか。",
+    "choices": [
+      "AWS IAM Identity Center",
+      "Amazon S3",
+      "AWS Budgets",
+      "Amazon EC2"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS IAM Identity Center（旧 AWS SSO）は、社内の認証基盤と連携し、1つのIDで複数アカウント・アプリへSSOできるようにする仕組みです。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "EC2は仮想サーバーです。"
+    },
+    "domain": "security",
+    "service": "IAM Identity Center",
+    "difficulty": 3,
+    "tags": ["SSO", "IAM Identity Center"],
+    "beginnerNote": "『1つのIDでまとめてログイン＝IAM Identity Center(旧SSO)』。"
+  },
+  {
+    "id": "q-tec-010",
+    "question": "EC2インスタンスに接続して使う、永続的な仮想ディスク（ブロックストレージ）はどれですか。",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon Route 53",
+      "AWS IAM"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon EBS（Elastic Block Store）は、EC2にアタッチして使う仮想ディスクです。OSやデータベースのデータ置き場として使い、インスタンスを止めてもデータは保持されます。",
+    "wrongChoiceExplanations": {
+      "1": "S3はオブジェクトストレージで、EC2のディスクとは用途が異なります。",
+      "2": "Route 53はDNSサービスです。",
+      "3": "IAMはアクセス管理サービスです。"
+    },
+    "domain": "technology",
+    "service": "EBS",
+    "difficulty": 2,
+    "tags": ["EBS", "ストレージ"],
+    "beginnerNote": "『EC2に付ける外付けHDD＝EBS』。S3(ファイル置き場)とは別物です。"
+  },
+  {
+    "id": "q-tec-011",
+    "question": "複数のEC2インスタンスから同時にアクセスできる、共有のファイルストレージはどれですか。",
+    "choices": [
+      "Amazon EFS",
+      "Amazon EBS",
+      "AWS Lambda",
+      "Amazon SNS"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon EFS（Elastic File System）は、複数のEC2から同時にマウントして使える共有ファイルストレージです。容量は自動で伸縮します。",
+    "wrongChoiceExplanations": {
+      "1": "EBSは基本的に1つのインスタンスに接続するディスクです。",
+      "2": "Lambdaはコード実行サービスです。",
+      "3": "SNSは通知サービスです。"
+    },
+    "domain": "technology",
+    "service": "EFS",
+    "difficulty": 3,
+    "tags": ["EFS", "ストレージ"],
+    "beginnerNote": "『みんなで共有する書庫＝EFS／1台専用の外付け＝EBS』。"
+  },
+  {
+    "id": "q-tec-012",
+    "question": "ほとんどアクセスしないデータを、長期間とても安く保管するのに適したストレージはどれですか。",
+    "choices": [
+      "Amazon S3 Glacier",
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon VPC"
+    ],
+    "correctAnswers": [0],
+    "explanation": "S3 Glacier は、めったに使わないデータを低コストで長期保管するアーカイブ向けストレージです。取り出しに時間がかかる代わりに保管料金が安いのが特徴です。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は仮想サーバーです。",
+      "2": "RDSはデータベースです。",
+      "3": "VPCはネットワークです。"
+    },
+    "domain": "technology",
+    "service": "S3 Glacier",
+    "difficulty": 2,
+    "tags": ["Glacier", "ストレージクラス"],
+    "beginnerNote": "『使わないけど捨てられない書類の倉庫＝Glacier』。安いが取り出しに時間。"
+  },
+  {
+    "id": "q-tec-013",
+    "question": "アクセス量の増減に応じて、EC2インスタンスの台数を自動で増減させる仕組みはどれですか。",
+    "choices": [
+      "Auto Scaling",
+      "Amazon S3",
+      "AWS IAM",
+      "Amazon Athena"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Auto Scaling は、負荷に応じてインスタンス数を自動で増減します。混雑時は増やし、空いている時は減らすことで、性能とコストの両立を図ります。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "IAMはアクセス管理です。",
+      "3": "AthenaはS3データのSQL分析です。"
+    },
+    "domain": "technology",
+    "service": "Auto Scaling",
+    "difficulty": 2,
+    "tags": ["Auto Scaling", "弾力性"],
+    "beginnerNote": "『混んだら増やす・空いたら減らす自動運転＝Auto Scaling』。"
+  },
+  {
+    "id": "q-tec-014",
+    "question": "複数のEC2インスタンスに通信（リクエスト）を振り分けて、負荷を分散するサービスはどれですか。",
+    "choices": [
+      "Elastic Load Balancing（ELB）",
+      "Amazon S3",
+      "AWS Budgets",
+      "Amazon Macie"
+    ],
+    "correctAnswers": [0],
+    "explanation": "ELB は、受け取った通信を複数のインスタンスへ自動的に振り分けます。負荷分散と可用性の向上に役立ち、Auto Scalingと組み合わせて使われます。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "Macieはデータ保護サービスです。"
+    },
+    "domain": "technology",
+    "service": "ELB",
+    "difficulty": 2,
+    "tags": ["ELB", "負荷分散"],
+    "beginnerNote": "『受付で行列を複数の窓口に振り分ける＝ロードバランサー』。"
+  },
+  {
+    "id": "q-tec-015",
+    "question": "サーバー（EC2）を管理せずにコンテナを実行できる、サーバーレスのコンテナ実行環境はどれですか。",
+    "choices": [
+      "AWS Fargate",
+      "Amazon EBS",
+      "Amazon Route 53",
+      "AWS Artifact"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Fargate は、ECSやEKSでコンテナを動かす際に、基盤となるサーバーの管理を不要にするサーバーレスの実行環境です。",
+    "wrongChoiceExplanations": {
+      "1": "EBSはブロックストレージです。",
+      "2": "Route 53はDNSサービスです。",
+      "3": "Artifactはコンプライアンス文書取得です。"
+    },
+    "domain": "technology",
+    "service": "Fargate",
+    "difficulty": 3,
+    "tags": ["Fargate", "コンテナ", "サーバーレス"],
+    "beginnerNote": "『コンテナをサーバー管理なしで動かす＝Fargate』。"
+  },
+  {
+    "id": "q-tec-016",
+    "question": "MySQLやPostgreSQLと互換性があり、高い性能と可用性を備えたAWS独自のリレーショナルデータベースはどれですか。",
+    "choices": [
+      "Amazon Aurora",
+      "Amazon DynamoDB",
+      "Amazon S3",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Aurora は、MySQL/PostgreSQL互換でクラウド向けに最適化された高性能なリレーショナルデータベースです。RDSの一種として提供されます。",
+    "wrongChoiceExplanations": {
+      "1": "DynamoDBはNoSQLデータベースです。",
+      "2": "S3はストレージサービスです。",
+      "3": "CloudFrontはコンテンツ配信です。"
+    },
+    "domain": "technology",
+    "service": "Aurora",
+    "difficulty": 3,
+    "tags": ["Aurora", "データベース"],
+    "beginnerNote": "『MySQL互換の高性能版＝Aurora』。NoSQLはDynamoDB。"
+  },
+  {
+    "id": "q-tec-017",
+    "question": "大量のデータを集計・分析する用途（データウェアハウス）に最適化されたサービスはどれですか。",
+    "choices": [
+      "Amazon Redshift",
+      "Amazon RDS",
+      "Amazon SQS",
+      "AWS IAM"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Redshift は、大規模なデータを高速に集計・分析するためのデータウェアハウスサービスです。BIや経営分析などに使われます。",
+    "wrongChoiceExplanations": {
+      "1": "RDSは業務処理向けのリレーショナルDBで、大規模分析特化ではありません。",
+      "2": "SQSはメッセージキューです。",
+      "3": "IAMはアクセス管理です。"
+    },
+    "domain": "technology",
+    "service": "Redshift",
+    "difficulty": 3,
+    "tags": ["Redshift", "分析"],
+    "beginnerNote": "『大量データの集計・分析＝Redshift（データ倉庫）』。"
+  },
+  {
+    "id": "q-tec-018",
+    "question": "S3に保存したデータを、サーバーを用意せずにSQLで直接分析できるサービスはどれですか。",
+    "choices": [
+      "Amazon Athena",
+      "Amazon EC2",
+      "Amazon EBS",
+      "AWS Shield"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Athena は、S3上のデータに対してSQLで直接クエリを実行できるサーバーレスの分析サービスです。実行したクエリに対して課金されます。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は仮想サーバーです。",
+      "2": "EBSはブロックストレージです。",
+      "3": "ShieldはDDoS防御です。"
+    },
+    "domain": "technology",
+    "service": "Athena",
+    "difficulty": 3,
+    "tags": ["Athena", "分析"],
+    "beginnerNote": "『S3のデータをそのままSQLで調べる＝Athena』。"
+  },
+  {
+    "id": "q-tec-019",
+    "question": "アプリ同士を疎結合にし、処理をためて順番に渡す「メッセージキュー」サービスはどれですか。",
+    "choices": [
+      "Amazon SQS",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon VPC"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon SQS（Simple Queue Service）は、メッセージを一時的にためて順に処理させるキューです。送信側と受信側を切り離す（疎結合にする）ことで、急な負荷にも強くなります。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "RDSはデータベースです。",
+      "3": "VPCはネットワークです。"
+    },
+    "domain": "technology",
+    "service": "SQS",
+    "difficulty": 3,
+    "tags": ["SQS", "メッセージング", "疎結合"],
+    "beginnerNote": "『注文票をいったん箱にためて順番に処理＝SQS』。"
+  },
+  {
+    "id": "q-tec-020",
+    "question": "1つのメッセージを複数の受信者へ一斉に配信する「パブリッシュ／サブスクライブ型」の通知サービスはどれですか。",
+    "choices": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon S3",
+      "AWS IAM"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon SNS（Simple Notification Service）は、1つのメッセージを購読している複数の宛先（メール、SMS、Lambdaなど）へ一斉配信します。",
+    "wrongChoiceExplanations": {
+      "1": "SQSは1対1でためて処理するキューで、一斉配信とは仕組みが異なります。",
+      "2": "S3はストレージサービスです。",
+      "3": "IAMはアクセス管理です。"
+    },
+    "domain": "technology",
+    "service": "SNS",
+    "difficulty": 3,
+    "tags": ["SNS", "通知"],
+    "beginnerNote": "『一斉送信の放送＝SNS／順番待ちの箱＝SQS』で対比します。"
+  },
+  {
+    "id": "q-tec-021",
+    "question": "リアルタイムに流れ込むストリーミングデータ（ログやセンサーデータなど）を収集・処理するサービスはどれですか。",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon S3 Glacier",
+      "AWS Budgets",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Kinesis は、リアルタイムで連続的に発生するデータを収集・処理・分析するためのサービスです。IoTやログ分析などに使われます。",
+    "wrongChoiceExplanations": {
+      "1": "Glacierは長期アーカイブ向けで、リアルタイム処理ではありません。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "Route 53はDNSサービスです。"
+    },
+    "domain": "technology",
+    "service": "Kinesis",
+    "difficulty": 3,
+    "tags": ["Kinesis", "ストリーミング"],
+    "beginnerNote": "『途切れず流れてくるデータをその場でさばく＝Kinesis』。"
+  },
+  {
+    "id": "q-tec-022",
+    "question": "画像や動画から物体・顔・文字などを認識するAIサービスはどれですか。",
+    "choices": [
+      "Amazon Rekognition",
+      "Amazon Redshift",
+      "Amazon EBS",
+      "AWS WAF"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Rekognition は、画像や動画を分析して、物体・人物・テキスト・不適切コンテンツなどを検出するAIサービスです。",
+    "wrongChoiceExplanations": {
+      "1": "Redshiftはデータウェアハウスです。",
+      "2": "EBSはブロックストレージです。",
+      "3": "WAFはWebの不正リクエスト遮断です。"
+    },
+    "domain": "technology",
+    "service": "Amazon Rekognition",
+    "difficulty": 3,
+    "tags": ["Rekognition", "AI/ML"],
+    "beginnerNote": "『画像・動画を見て認識するAI＝Rekognition』。"
+  },
+  {
+    "id": "q-tec-023",
+    "question": "文章を別の言語へ自動翻訳するAIサービスはどれですか。",
+    "choices": [
+      "Amazon Translate",
+      "Amazon S3",
+      "Amazon EC2",
+      "AWS Shield"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Translate は、テキストを多言語へ機械翻訳するサービスです。AWSにはこのほか音声合成のPolly、音声認識のTranscribe、自然言語処理のComprehendなどAI系サービスが揃っています。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "EC2は仮想サーバーです。",
+      "3": "ShieldはDDoS防御です。"
+    },
+    "domain": "technology",
+    "service": "Amazon Translate",
+    "difficulty": 3,
+    "tags": ["Translate", "AI/ML"],
+    "beginnerNote": "AI系：翻訳=Translate / 音声合成=Polly / 文字起こし=Transcribe。"
+  },
+  {
+    "id": "q-tec-024",
+    "question": "Webアプリの裏側でAPIを受け付け、Lambdaなどへ橋渡しするマネージドサービスはどれですか。",
+    "choices": [
+      "Amazon API Gateway",
+      "Amazon EBS",
+      "AWS Budgets",
+      "Amazon Macie"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon API Gateway は、APIの受け口を作り、認証やスロットリングを行いつつLambdaやバックエンドへリクエストを中継するマネージドサービスです。",
+    "wrongChoiceExplanations": {
+      "1": "EBSはブロックストレージです。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "Macieはデータ保護サービスです。"
+    },
+    "domain": "technology",
+    "service": "API Gateway",
+    "difficulty": 3,
+    "tags": ["API Gateway", "サーバーレス"],
+    "beginnerNote": "『APIの玄関口＝API Gateway』。Lambdaと組み合わせる定番。"
+  },
+  {
+    "id": "q-tec-025",
+    "question": "アプリの実行環境（EC2やロードバランサー等）を自動で用意し、コードをアップするだけでデプロイできるサービスはどれですか。",
+    "choices": [
+      "AWS Elastic Beanstalk",
+      "Amazon S3 Glacier",
+      "Amazon Route 53",
+      "AWS Artifact"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Elastic Beanstalk は、アプリのコードをアップロードするだけで、必要なインフラ（サーバー・ロードバランサー等）を自動構成してくれるPaaS的なサービスです。",
+    "wrongChoiceExplanations": {
+      "1": "Glacierは長期アーカイブストレージです。",
+      "2": "Route 53はDNSサービスです。",
+      "3": "Artifactはコンプライアンス文書取得です。"
+    },
+    "domain": "technology",
+    "service": "Elastic Beanstalk",
+    "difficulty": 3,
+    "tags": ["Elastic Beanstalk", "デプロイ"],
+    "beginnerNote": "『コードを置くだけで環境一式を用意＝Elastic Beanstalk』。"
+  },
+  {
+    "id": "q-tec-026",
+    "question": "インフラ構成をコード（テンプレート）で定義し、自動で構築・再現できるサービスはどれですか。",
+    "choices": [
+      "AWS CloudFormation",
+      "Amazon CloudFront",
+      "Amazon SQS",
+      "AWS IAM"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS CloudFormation は、インフラをコード（IaC）として記述し、同じ環境を何度でも自動構築できるサービスです。手作業のミスを減らし、再現性を高めます。",
+    "wrongChoiceExplanations": {
+      "1": "CloudFrontはコンテンツ配信です。",
+      "2": "SQSはメッセージキューです。",
+      "3": "IAMはアクセス管理です。"
+    },
+    "domain": "technology",
+    "service": "CloudFormation",
+    "difficulty": 3,
+    "tags": ["CloudFormation", "IaC"],
+    "beginnerNote": "『設計図(コード)から環境を自動で組み立てる＝CloudFormation』。"
+  },
+  {
+    "id": "q-tec-027",
+    "question": "大容量データを物理デバイスに入れて郵送し、AWSへ移送する（ネットワーク転送が難しい場合の）サービスはどれですか。",
+    "choices": [
+      "AWS Snowball",
+      "Amazon CloudFront",
+      "AWS Lambda",
+      "Amazon SNS"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Snowball は、頑丈な物理デバイスにデータを入れて輸送し、大容量データをオフラインでAWSへ移すサービスです。回線が細い・データが膨大な場合に有効です。",
+    "wrongChoiceExplanations": {
+      "1": "CloudFrontはコンテンツ配信です。",
+      "2": "Lambdaはコード実行サービスです。",
+      "3": "SNSは通知サービスです。"
+    },
+    "domain": "technology",
+    "service": "AWS Snowball",
+    "difficulty": 3,
+    "tags": ["Snowball", "データ移行"],
+    "beginnerNote": "『データを箱で郵送して移す＝Snowball』。回線が遅い時の裏技。"
+  },
+  {
+    "id": "q-tec-028",
+    "question": "オンプレミスとAWSの間に専用の物理回線を引き、安定した低遅延の通信を実現するサービスはどれですか。",
+    "choices": [
+      "AWS Direct Connect",
+      "Amazon S3",
+      "AWS Budgets",
+      "Amazon Rekognition"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Direct Connect は、自社拠点とAWSを専用線で接続し、インターネット経由より安定して低遅延・高帯域な通信を実現します。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージサービスです。",
+      "2": "Budgetsはコスト管理です。",
+      "3": "Rekognitionは画像認識AIです。"
+    },
+    "domain": "technology",
+    "service": "Direct Connect",
+    "difficulty": 3,
+    "tags": ["Direct Connect", "ネットワーク"],
+    "beginnerNote": "『AWSへの専用道路＝Direct Connect』。安定・高速だが準備は必要。"
+  },
+  {
+    "id": "q-tec-029",
+    "question": "AWSでリージョンを選ぶ際に考慮すべき要素として、最も適切でないものはどれですか。",
+    "choices": [
+      "経営者の出身地",
+      "利用者に近いか（遅延）",
+      "データの保管場所に関する法規制（データ主権）",
+      "リージョンごとの料金やサービスの有無"
+    ],
+    "correctAnswers": [0],
+    "explanation": "リージョン選定では、遅延（利用者との近さ）、法規制・データ主権、料金、利用したいサービスの提供状況などを考慮します。経営者の出身地は関係ありません。",
+    "wrongChoiceExplanations": {
+      "1": "利用者との近さ（遅延）は重要な選定要素です。",
+      "2": "データの保管場所に関する法規制は重要です。",
+      "3": "料金やサービス提供状況も重要な要素です。"
+    },
+    "domain": "technology",
+    "service": "リージョン選定",
+    "difficulty": 2,
+    "tags": ["リージョン", "選定基準"],
+    "beginnerNote": "リージョン選びは『近さ・法律・料金・サービス有無』の4観点で考えます。"
+  },
+  {
+    "id": "q-tec-030",
+    "question": "データを分析しやすいダッシュボードやグラフにして可視化する、AWSのBI（ビジネスインテリジェンス）サービスはどれですか。",
+    "choices": [
+      "Amazon QuickSight",
+      "Amazon EC2",
+      "AWS Shield",
+      "Amazon SQS"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon QuickSight は、データをグラフやダッシュボードに可視化するBIサービスです。経営指標や売上の分析などに使われます。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は仮想サーバーです。",
+      "2": "ShieldはDDoS防御です。",
+      "3": "SQSはメッセージキューです。"
+    },
+    "domain": "technology",
+    "service": "Amazon QuickSight",
+    "difficulty": 3,
+    "tags": ["QuickSight", "分析", "BI"],
+    "beginnerNote": "『データをグラフ・ダッシュボードで見える化＝QuickSight』。"
+  },
+  {
+    "id": "q-tec-031",
+    "question": "次のうち、AWSの「ストレージサービス」を2つ選んでください。",
+    "choices": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon EC2",
+      "Amazon VPC"
+    ],
+    "correctAnswers": [0, 1],
+    "explanation": "S3（オブジェクトストレージ）とEBS（ブロックストレージ）はどちらもストレージサービスです。EC2はコンピューティング、VPCはネットワークです。",
+    "wrongChoiceExplanations": {
+      "2": "EC2は仮想サーバー（コンピューティング）です。",
+      "3": "VPCはネットワークサービスです。"
+    },
+    "domain": "technology",
+    "service": "ストレージ",
+    "difficulty": 1,
+    "tags": ["S3", "EBS", "複数選択"],
+    "beginnerNote": "サービスを『計算・保存・ネットワーク・DB』で仕分けする基本練習です。"
+  },
+  {
+    "id": "q-tec-032",
+    "question": "音声からテキストへの文字起こし（音声認識）を行うAWSのサービスはどれですか。",
+    "choices": [
+      "Amazon Transcribe",
+      "Amazon Translate",
+      "Amazon S3",
+      "AWS Budgets"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Amazon Transcribe は、音声データを自動でテキスト化（文字起こし）するサービスです。会議の議事録や字幕作成などに使えます。",
+    "wrongChoiceExplanations": {
+      "1": "Translateは言語間の翻訳サービスです。",
+      "2": "S3はストレージサービスです。",
+      "3": "Budgetsはコスト管理です。"
+    },
+    "domain": "technology",
+    "service": "Amazon Transcribe",
+    "difficulty": 3,
+    "tags": ["Transcribe", "AI/ML"],
+    "beginnerNote": "『音声→文字＝Transcribe／文字→別言語＝Translate』。"
+  },
+  {
+    "id": "q-bil-006",
+    "question": "AWSを初めて使う人が、一定の範囲を無料で試せる仕組みを何と呼びますか。",
+    "choices": [
+      "AWS無料利用枠（Free Tier）",
+      "リザーブドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS無料利用枠（Free Tier）は、対象サービスを一定量まで無料で試せる仕組みです。『12か月間無料』『常時無料』『短期トライアル』の3タイプがあります。",
+    "wrongChoiceExplanations": {
+      "1": "リザーブドは長期コミット型の割引で、無料枠ではありません。",
+      "2": "スポットは余剰リソースの割引利用で、無料枠ではありません。",
+      "3": "Savings Plansは利用コミットによる割引です。"
+    },
+    "domain": "billing",
+    "service": "無料利用枠",
+    "difficulty": 1,
+    "tags": ["Free Tier", "料金"],
+    "beginnerNote": "『最初のお試し無料枠＝Free Tier』。超過分は課金されるので注意。"
+  },
+  {
+    "id": "q-bil-007",
+    "question": "AWSを使い始める前に、構成に基づいて月額料金の見積もりを立てられるツールはどれですか。",
+    "choices": [
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer",
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Pricing Calculator は、使う予定のサービスや構成を入力して、利用前に料金を見積もるためのツールです。",
+    "wrongChoiceExplanations": {
+      "1": "Cost Explorerは実際に発生した過去のコストを分析するツールです。",
+      "2": "CloudWatchは監視サービスです。",
+      "3": "Trusted Advisorは最適化の助言サービスです。"
+    },
+    "domain": "billing",
+    "service": "AWS Pricing Calculator",
+    "difficulty": 2,
+    "tags": ["Pricing Calculator", "見積もり"],
+    "beginnerNote": "『使う前の見積もり＝Pricing Calculator／使った後の分析＝Cost Explorer』。"
+  },
+  {
+    "id": "q-bil-008",
+    "question": "AWSのデータ転送料金に関する一般的な説明として、最も適切なものはどれですか。",
+    "choices": [
+      "AWSへの受信（インバウンド）は基本無料で、外部への送信（アウトバウンド）は課金されることが多い",
+      "受信も送信もすべて無料",
+      "受信は課金、送信は無料",
+      "データ転送は一切できない"
+    ],
+    "correctAnswers": [0],
+    "explanation": "一般的に、インターネットからAWSへのデータ受信（インバウンド）は無料で、AWSから外部への送信（アウトバウンド）には料金がかかることが多いです。コスト設計で重要なポイントです。",
+    "wrongChoiceExplanations": {
+      "1": "送信（アウトバウンド）は課金されるのが一般的です。",
+      "2": "向きが逆です。受信が無料、送信が課金が一般的です。",
+      "3": "データ転送は可能です。"
+    },
+    "domain": "billing",
+    "service": "データ転送料金",
+    "difficulty": 3,
+    "tags": ["データ転送", "料金"],
+    "beginnerNote": "『入れるのは無料・出すのは有料』が基本イメージです。"
+  },
+  {
+    "id": "q-bil-009",
+    "question": "AWS Organizations の一括請求（Consolidated Billing）で得られる利点として、最も適切なものはどれですか。",
+    "choices": [
+      "複数アカウントの使用量を合算し、ボリューム割引を受けやすくなる",
+      "各アカウントが必ず別々に高い料金を払う",
+      "セキュリティが自動で無効になる",
+      "サーバーが自動で増える"
+    ],
+    "correctAnswers": [0],
+    "explanation": "一括請求では複数アカウントの使用量を合算するため、ボリューム割引の基準に達しやすく、結果的にコストを抑えられます。請求も1つにまとまり管理が楽になります。",
+    "wrongChoiceExplanations": {
+      "1": "合算により割引が受けやすくなり、むしろ有利です。",
+      "2": "セキュリティが無効になることはありません。",
+      "3": "サーバーが自動で増えるわけではありません。"
+    },
+    "domain": "billing",
+    "service": "AWS Organizations",
+    "difficulty": 3,
+    "tags": ["一括請求", "ボリューム割引"],
+    "beginnerNote": "『まとめて使うほど単価が下がる』を組織で実現するのが一括請求です。"
+  },
+  {
+    "id": "q-bil-010",
+    "question": "1〜3年の利用量（時間あたりの金額）をコミットする代わりに、幅広いサービスで柔軟に割引を受けられる料金モデルはどれですか。",
+    "choices": [
+      "Savings Plans",
+      "オンデマンド",
+      "無料利用枠",
+      "Dedicated Host"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Savings Plans は、一定の利用量を1〜3年コミットすることで、EC2やFargate、Lambdaなどに柔軟な割引を適用できる料金モデルです。リザーブドより柔軟性が高いのが特徴です。",
+    "wrongChoiceExplanations": {
+      "1": "オンデマンドはコミットなしで割引もありません。",
+      "2": "無料利用枠は初心者向けの無料枠です。",
+      "3": "Dedicated Hostは物理サーバー専有の選択肢です。"
+    },
+    "domain": "billing",
+    "service": "Savings Plans",
+    "difficulty": 3,
+    "tags": ["Savings Plans", "料金モデル"],
+    "beginnerNote": "『使う量を約束して柔軟に割引＝Savings Plans』。リザーブドより自由度高め。"
+  },
+  {
+    "id": "q-bil-011",
+    "question": "部署やプロジェクトごとにコストを分けて把握したいとき、リソースに付けて費用を集計できる仕組みはどれですか。",
+    "choices": [
+      "コスト配分タグ",
+      "セキュリティグループ",
+      "リージョン",
+      "IAMロール"
+    ],
+    "correctAnswers": [0],
+    "explanation": "コスト配分タグ（Cost Allocation Tags）は、リソースに『部署:営業』などのタグを付け、タグ単位でコストを集計・分析できる仕組みです。",
+    "wrongChoiceExplanations": {
+      "1": "セキュリティグループは通信制御の仕組みです。",
+      "2": "リージョンは地理的な区分です。",
+      "3": "IAMロールは権限の仕組みです。"
+    },
+    "domain": "billing",
+    "service": "コスト配分タグ",
+    "difficulty": 3,
+    "tags": ["タグ", "コスト管理"],
+    "beginnerNote": "『リソースに付箋を貼って費用を仕分け＝コスト配分タグ』。"
+  },
+  {
+    "id": "q-bil-012",
+    "question": "AWS Trusted Advisor がコスト最適化の観点で指摘する内容の例として、最も適切なものはどれですか。",
+    "choices": [
+      "使われていない（アイドルな）リソースの停止・削除",
+      "新しい言語の学習",
+      "オフィスの賃料の交渉",
+      "従業員の採用計画"
+    ],
+    "correctAnswers": [0],
+    "explanation": "Trusted Advisor は、使われていないリソースや過剰なスペックなどを検出し、コスト削減の提案を行います。コスト・セキュリティ・性能・耐障害性・上限の5観点で点検します。",
+    "wrongChoiceExplanations": {
+      "1": "言語学習はAWSの最適化提案ではありません。",
+      "2": "賃料交渉はAWSの範囲外です。",
+      "3": "採用計画はAWSの範囲外です。"
+    },
+    "domain": "billing",
+    "service": "AWS Trusted Advisor",
+    "difficulty": 2,
+    "tags": ["Trusted Advisor", "コスト最適化"],
+    "beginnerNote": "『使ってない無駄を見つけて節約提案＝Trusted Advisor』。"
+  },
+  {
+    "id": "q-bil-013",
+    "question": "すべてのAWSユーザーが追加料金なしで利用でき、ドキュメントやコミュニティフォーラムが含まれるサポートプランはどれですか。",
+    "choices": [
+      "ベーシック（Basic）",
+      "ビジネス（Business）",
+      "エンタープライズ（Enterprise）",
+      "デベロッパー（Developer）"
+    ],
+    "correctAnswers": [0],
+    "explanation": "ベーシックプランは無料で全ユーザーが利用でき、ドキュメント・ホワイトペーパー・フォーラム、限定的なサポート（請求や上限引き上げ等）を含みます。技術サポートは限定的です。",
+    "wrongChoiceExplanations": {
+      "1": "ビジネスは有料で24時間の技術サポートが付きます。",
+      "2": "エンタープライズは最上位の有料プランです。",
+      "3": "デベロッパーは有料の入門プランです。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 2,
+    "tags": ["サポートプラン", "Basic"],
+    "beginnerNote": "『無料で全員が使える＝Basic』。技術的な相談は上位プランから。"
+  },
+  {
+    "id": "q-bil-014",
+    "question": "24時間365日の技術サポートに加え、サードパーティ製ソフトとの連携に関する一般的な支援も受けられる、中堅向けの有料サポートプランはどれですか。",
+    "choices": [
+      "ビジネス（Business）",
+      "ベーシック（Basic）",
+      "デベロッパー（Developer）",
+      "無料利用枠"
+    ],
+    "correctAnswers": [0],
+    "explanation": "ビジネスプランは24時間365日の技術サポート（電話・チャット・メール）を提供し、一般的なサードパーティ製ソフトとの相互運用に関する支援も受けられます。専任TAMはエンタープライズのみです。",
+    "wrongChoiceExplanations": {
+      "1": "Basicは無料で技術サポートは限定的です。",
+      "2": "Developerは営業時間内のメール中心で、24時間ではありません。",
+      "3": "無料利用枠はサポートプランではありません。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 3,
+    "tags": ["サポートプラン", "Business"],
+    "beginnerNote": "『24時間サポートはBusinessから／専任TAMはEnterpriseだけ』。"
+  },
+  {
+    "id": "q-bil-015",
+    "question": "発生したコストの内訳を時系列やサービス別に可視化し、傾向を分析できるサービスはどれですか。",
+    "choices": [
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "Amazon Inspector",
+      "Amazon Rekognition"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Cost Explorer は、過去のコストや使用量をグラフで可視化し、サービス別・期間別に傾向を分析できます。予算超過のアラートはAWS Budgetsの役割です。",
+    "wrongChoiceExplanations": {
+      "1": "Pricing Calculatorは利用前の見積もりツールです。",
+      "2": "Inspectorは脆弱性診断です。",
+      "3": "Rekognitionは画像認識AIです。"
+    },
+    "domain": "billing",
+    "service": "AWS Cost Explorer",
+    "difficulty": 2,
+    "tags": ["Cost Explorer", "コスト分析"],
+    "beginnerNote": "『過去のコストを振り返る＝Cost Explorer／予算超過を知らせる＝Budgets』。"
+  },
+  {
+    "id": "q-bil-016",
+    "question": "最も詳細なレベルで利用状況とコストの内訳を出力し、詳細なコスト分析に使えるレポートはどれですか。",
+    "choices": [
+      "AWS Cost and Usage Report（CUR）",
+      "AWS Shield のレポート",
+      "Amazon S3 のアクセスログのみ",
+      "Trusted Advisor のセキュリティチェック"
+    ],
+    "correctAnswers": [0],
+    "explanation": "AWS Cost and Usage Report（CUR）は、利用状況とコストを最も詳細な粒度で出力するレポートです。大規模な請求分析やチャージバックに使われます。",
+    "wrongChoiceExplanations": {
+      "1": "ShieldはDDoS防御で、コスト内訳レポートではありません。",
+      "2": "S3アクセスログはコスト内訳の詳細レポートではありません。",
+      "3": "Trusted Advisorのセキュリティチェックはコストレポートではありません。"
+    },
+    "domain": "billing",
+    "service": "Cost and Usage Report",
+    "difficulty": 3,
+    "tags": ["CUR", "コスト分析"],
+    "beginnerNote": "『最も細かいコスト明細＝Cost and Usage Report』。"
   }
 ]
