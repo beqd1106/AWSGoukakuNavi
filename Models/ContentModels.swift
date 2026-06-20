@@ -1,0 +1,78 @@
+import Foundation
+
+/// バンドルされたJSONから読み込む「静的な学習コンテンツ」のモデル群。
+/// ユーザーの進捗・履歴は SwiftData 側（UserModels.swift）で扱い、
+/// コンテンツとユーザーデータを明確に分離する。
+
+// MARK: - 問題
+
+struct QuizQuestion: Codable, Identifiable, Hashable {
+    let id: String
+    let question: String
+    let choices: [String]
+    /// 正解の選択肢インデックス（複数選択にも対応）
+    let correctAnswers: [Int]
+    let explanation: String
+    /// 不正解選択肢の理由。キーは選択肢インデックスの文字列。
+    let wrongChoiceExplanations: [String: String]
+    let domain: ExamDomain
+    let service: String
+    /// 1=やさしい 2=ふつう 3=やや難
+    let difficulty: Int
+    let tags: [String]
+    /// 初心者向けの一言補足
+    let beginnerNote: String?
+
+    /// 複数選択問題かどうか
+    var isMultipleSelect: Bool { correctAnswers.count > 1 }
+
+    /// 選んだ回答（インデックス集合）が正解か判定
+    func isCorrect(selected: Set<Int>) -> Bool {
+        selected == Set(correctAnswers)
+    }
+
+    func wrongReason(for index: Int) -> String? {
+        wrongChoiceExplanations[String(index)]
+    }
+}
+
+// MARK: - 用語カード
+
+struct TermCard: Codable, Identifiable, Hashable {
+    let id: String
+    let term: String
+    let shortDescription: String
+    let beginnerExplanation: String
+    let useCase: String
+    let examPoint: String
+    let relatedServices: [String]
+    let domain: ExamDomain
+    let difficulty: Int
+}
+
+// MARK: - レッスン
+
+struct Lesson: Codable, Identifiable, Hashable {
+    let id: String
+    let title: String
+    let domain: ExamDomain
+    let estimatedMinutes: Int
+    let summary: String
+    let sections: [LessonSection]
+    let quizIds: [String]
+}
+
+struct LessonSection: Codable, Hashable {
+    let heading: String
+    let body: String
+}
+
+// MARK: - AWSサービス一覧
+
+struct AWSServiceItem: Codable, Identifiable, Hashable {
+    let id: String
+    let name: String
+    let category: String
+    let oneLiner: String
+    let domain: ExamDomain
+}

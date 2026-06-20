@@ -1,0 +1,46 @@
+name: build-check
+
+# push のたびに Swift がコンパイルできるかを署名なしで確認し、ユニットテストを実行する。
+# GitHub の macOS ランナーで XcodeGen → xcodebuild を実行（Macなし開発フロー）。
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build for simulator (no code signing)
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project "AWSGoukakuNavi.xcodeproj" \
+            -scheme "AWSGoukakuNavi" \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Run unit tests
+        run: |
+          set -o pipefail
+          DEVICE=$(xcrun simctl list devices available | grep -oE 'iPhone [0-9]+( Pro( Max)?| Plus)?' | head -1)
+          echo "Using simulator: ${DEVICE:-iPhone 16}"
+          xcodebuild \
+            -project "AWSGoukakuNavi.xcodeproj" \
+            -scheme "AWSGoukakuNavi" \
+            -destination "platform=iOS Simulator,name=${DEVICE:-iPhone 16}" \
+            CODE_SIGNING_ALLOWED=NO \
+            test

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "t-ec2",
+    "term": "Amazon EC2",
+    "shortDescription": "AWS上で使える仮想サーバー。",
+    "beginnerExplanation": "自分でサーバー機器を買わなくても、必要なときにAWS上でサーバーを借りられるサービスです。OSやアプリを自由に入れられます。",
+    "useCase": "Webサイトや業務アプリを動かすサーバーが欲しいとき。",
+    "examPoint": "コンピューティングの代表格。自由度が高い反面、OSの更新やセキュリティ設定は利用者の責任（責任共有モデル）。",
+    "relatedServices": ["EBS", "Auto Scaling", "ELB"],
+    "domain": "technology",
+    "difficulty": 1
+  },
+  {
+    "id": "t-s3",
+    "term": "Amazon S3",
+    "shortDescription": "画像やファイルを保存する箱のようなサービス。",
+    "beginnerExplanation": "写真・動画・バックアップなど、あらゆるファイルを容量を気にせず保存できるストレージです。データは「オブジェクト」として入れます。",
+    "useCase": "ファイルの保存・バックアップ、静的Webサイトの公開。",
+    "examPoint": "オブジェクトストレージ。非常に高い耐久性。ストレージクラスでコスト最適化（標準/IA/Glacierなど）。",
+    "relatedServices": ["Glacier", "CloudFront"],
+    "domain": "technology",
+    "difficulty": 1
+  },
+  {
+    "id": "t-iam",
+    "term": "AWS IAM",
+    "shortDescription": "誰に何をさせるかを管理する仕組み。",
+    "beginnerExplanation": "AWSの中で「このユーザーはこれをしてOK／これは禁止」と権限を細かく決める仕組みです。会社の入館証や権限管理のイメージです。",
+    "useCase": "メンバーごとに操作できる範囲を分けたいとき。",
+    "examPoint": "ユーザー/グループ/ロール/ポリシー。最小権限の原則。MFA。ルートユーザーは日常利用しない。",
+    "relatedServices": ["Organizations", "IAM Identity Center"],
+    "domain": "security",
+    "difficulty": 1
+  },
+  {
+    "id": "t-lambda",
+    "term": "AWS Lambda",
+    "shortDescription": "サーバー管理なしでコードを実行できるサービス。",
+    "beginnerExplanation": "サーバーを用意・管理しなくても、コードを置くだけで動かせる「サーバーレス」サービスです。動いた分だけ課金されます。",
+    "useCase": "ファイルがアップされたら自動処理、定期バッチ、APIの裏側。",
+    "examPoint": "サーバーレスの代表。実行回数・実行時間に応じた課金。待機中は無料。",
+    "relatedServices": ["API Gateway", "S3", "DynamoDB"],
+    "domain": "technology",
+    "difficulty": 2
+  },
+  {
+    "id": "t-vpc",
+    "term": "Amazon VPC",
+    "shortDescription": "AWS内に作る自分専用のネットワーク空間。",
+    "beginnerExplanation": "AWSの中に、自分だけの仕切られたネットワーク（敷地）を作る仕組みです。中をサブネットで区切り、通信経路を設定できます。",
+    "useCase": "サーバーを外部から隔離したい、社内ネットワークと接続したいとき。",
+    "examPoint": "サブネット/ルートテーブル/IGW/NAT。セキュリティグループ（仮想FW）とセットで理解。",
+    "relatedServices": ["セキュリティグループ", "Route 53"],
+    "domain": "technology",
+    "difficulty": 2
+  },
+  {
+    "id": "t-rds",
+    "term": "Amazon RDS",
+    "shortDescription": "管理を任せられるリレーショナルDB。",
+    "beginnerExplanation": "MySQLやPostgreSQLなどの「表形式」のデータベースを、バックアップや障害対応をAWSに任せて使えるサービスです。",
+    "useCase": "業務アプリのデータをSQLで扱いたいとき。",
+    "examPoint": "マネージドなSQL DB。Multi-AZで高可用性、リードレプリカで読み取り拡張。NoSQLはDynamoDB。",
+    "relatedServices": ["Aurora", "DynamoDB"],
+    "domain": "technology",
+    "difficulty": 2
+  },
+  {
+    "id": "t-cloudfront",
+    "term": "Amazon CloudFront",
+    "shortDescription": "コンテンツを世界中へ高速配信するCDN。",
+    "beginnerExplanation": "世界中の拠点にデータをキャッシュして、ユーザーに一番近い場所から届けることで表示を速くするサービスです。",
+    "useCase": "海外ユーザーにも速くサイトや動画を届けたいとき。",
+    "examPoint": "CDN。エッジロケーションでキャッシュ。S3やELBと組み合わせる。",
+    "relatedServices": ["S3", "Route 53", "AWS Shield"],
+    "domain": "technology",
+    "difficulty": 2
+  },
+  {
+    "id": "t-cloudwatch",
+    "term": "Amazon CloudWatch",
+    "shortDescription": "AWSの状態を監視・記録する仕組み。",
+    "beginnerExplanation": "サーバーのCPUやエラー数などを見張り、グラフ化したり、異常時にアラートを出したりするサービスです。",
+    "useCase": "システムの健康状態を監視し、異常を早く知りたいとき。",
+    "examPoint": "メトリクス/ログ/アラーム/ダッシュボード。『監視＝CloudWatch』。操作履歴はCloudTrail。",
+    "relatedServices": ["CloudTrail", "SNS"],
+    "domain": "technology",
+    "difficulty": 2
+  },
+  {
+    "id": "t-route53",
+    "term": "Amazon Route 53",
+    "shortDescription": "ドメイン名を管理するDNSサービス。",
+    "beginnerExplanation": "「example.com」のような名前を、実際のサーバーの住所（IPアドレス）に変換するサービスです。ドメインの購入もできます。",
+    "useCase": "独自ドメインでサイトを公開したいとき。",
+    "examPoint": "DNS＋ドメイン登録＋ヘルスチェック＋ルーティングポリシー。",
+    "relatedServices": ["CloudFront", "VPC"],
+    "domain": "technology",
+    "difficulty": 2
+  },
+  {
+    "id": "t-shared",
+    "term": "責任共有モデル",
+    "shortDescription": "AWSと利用者で守る範囲を分担する考え方。",
+    "beginnerExplanation": "AWSは『建物（データセンターや基盤）の安全』を守り、利用者は『部屋の中（自分のデータや設定）の安全』を守る、という役割分担です。",
+    "useCase": "セキュリティの責任範囲を判断するとき。",
+    "examPoint": "AWS＝of the cloud（物理・基盤）、利用者＝in the cloud（データ・設定・IAM）。最頻出テーマ。",
+    "relatedServices": ["IAM", "AWS Artifact"],
+    "domain": "security",
+    "difficulty": 2
+  },
+  {
+    "id": "t-shield",
+    "term": "AWS Shield",
+    "shortDescription": "DDoS攻撃からアプリを守るサービス。",
+    "beginnerExplanation": "大量アクセスでサービスを止めようとする攻撃（DDoS）を防ぐサービスです。標準版は無料で自動的に守ってくれます。",
+    "useCase": "公開サービスをDDoSから守りたいとき。",
+    "examPoint": "Shield Standard（無料・自動）とAdvanced（有料・高度）。不正リクエスト遮断はWAF。",
+    "relatedServices": ["AWS WAF", "CloudFront"],
+    "domain": "security",
+    "difficulty": 2
+  },
+  {
+    "id": "t-organizations",
+    "term": "AWS Organizations",
+    "shortDescription": "複数アカウントをまとめて管理する仕組み。",
+    "beginnerExplanation": "会社で複数のAWSアカウントを使うとき、それらをまとめて管理し、請求も一本化できるサービスです。",
+    "useCase": "部署ごとのアカウントを統制し、請求をまとめたいとき。",
+    "examPoint": "一括請求（Consolidated Billing）、ボリューム割引の合算、SCPで権限制御。",
+    "relatedServices": ["IAM", "AWS Budgets"],
+    "domain": "billing",
+    "difficulty": 3
+  },
+  {
+    "id": "t-budgets",
+    "term": "AWS Budgets",
+    "shortDescription": "予算を決めて超過をアラートする。",
+    "beginnerExplanation": "「今月は◯円まで」と予算を決めておき、超えそうになったらメールなどで知らせてくれるサービスです。使いすぎ防止に役立ちます。",
+    "useCase": "想定外の高額請求を避けたいとき。",
+    "examPoint": "予算設定＋アラート。過去コストの分析はCost Explorer。",
+    "relatedServices": ["AWS Cost Explorer", "AWS Organizations"],
+    "domain": "billing",
+    "difficulty": 2
+  },
+  {
+    "id": "t-trustedadvisor",
+    "term": "AWS Trusted Advisor",
+    "shortDescription": "改善ポイントを助言してくれる点検役。",
+    "beginnerExplanation": "コスト・セキュリティ・性能・耐障害性・上限などの観点で「ここを直すと良いですよ」と自動でアドバイスしてくれるサービスです。",
+    "useCase": "今の構成に無駄やリスクがないか点検したいとき。",
+    "examPoint": "5つの観点でベストプラクティスを自動チェック。プランによりチェック範囲が変わる。",
+    "relatedServices": ["AWS Budgets", "AWS Support"],
+    "domain": "billing",
+    "difficulty": 3
+  },
+  {
+    "id": "t-wellarchitected",
+    "term": "Well-Architected フレームワーク",
+    "shortDescription": "良い設計のための6つの柱。",
+    "beginnerExplanation": "AWSで「良いシステムの作り方」をまとめた指針です。6つの観点でシステムを点検し、改善するためのチェックリストのようなものです。",
+    "useCase": "設計が適切かを見直したいとき。",
+    "examPoint": "6つの柱＝運用上の優秀性/セキュリティ/信頼性/パフォーマンス効率/コスト最適化/持続可能性。",
+    "relatedServices": ["AWS CAF", "Trusted Advisor"],
+    "domain": "cloudConcepts",
+    "difficulty": 2
+  }
+]
