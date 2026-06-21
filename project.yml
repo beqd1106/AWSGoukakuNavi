@@ -12,12 +12,7 @@ settings:
     VERSIONING_SYSTEM: apple-generic     # agvtoolでビルド番号を更新できるように
     SWIFT_VERSION: "5.9"
     DEVELOPMENT_LANGUAGE: ja
-    GENERATE_INFOPLIST_FILE: YES
     TARGETED_DEVICE_FAMILY: "1"          # iPhone専用
-    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-    INFOPLIST_KEY_UILaunchScreen_Generation: YES
-    INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
-    INFOPLIST_KEY_CFBundleDisplayName: AWSnote
 
 targets:
   AWSGoukakuNavi:
@@ -34,7 +29,25 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.beqd1106.awsgoukakunavi
-        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        TARGETED_DEVICE_FAMILY: "1"        # iPhone専用（iPad向き要件を回避）
+        GENERATE_INFOPLIST_FILE: NO        # 手書きInfo.plistで向き要件を確実にクリア
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: AWSnote
+        CFBundleName: AWSGoukakuNavi
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiresFullScreen: true             # マルチタスク非対応＝全方向要件を回避（90474対策）
+        UIRequiredDeviceCapabilities:
+          - arm64
+        ITSAppUsesNonExemptEncryption: false   # 標準的なHTTPSのみ→輸出コンプライアンスを自動クリア
 
   AWSGoukakuNaviTests:
     type: bundle.unit-test
@@ -46,3 +59,4 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.beqd1106.awsgoukakunavi.tests
+        GENERATE_INFOPLIST_FILE: YES
