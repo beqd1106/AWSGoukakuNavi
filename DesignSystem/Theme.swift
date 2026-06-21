@@ -5,21 +5,21 @@ import SwiftUI
 /// 初心者が迷わないよう、シンプル・余白広め・階層明快にする。
 enum Theme {
 
-    // MARK: - Color
-    static let bg        = Color(hex: 0xF5F7FB)   // 画面背景（ごく淡いブルーグレー）
+    // MARK: - Color（クリーム地のノート風＋ネイビー/オレンジ）
+    static let bg        = Color(hex: 0xF7F3EA)   // 画面背景（温かみのある生成りクリーム）
     static let card      = Color(hex: 0xFFFFFF)   // カード面
     static let navy      = Color(hex: 0x1B2A4A)   // 主役の濃紺（見出し・重要要素）
     static let blue      = Color(hex: 0x2D7FF0)   // アクセントの青（リンク・進捗）
-    static let blueSoft  = Color(hex: 0xE8F1FE)   // 青の淡い面
-    static let orange    = Color(hex: 0xF59024)   // CTA・強調・連続日数の炎
-    static let orangeSoft = Color(hex: 0xFDEFD9)
+    static let blueSoft  = Color(hex: 0xEAF1FE)   // 青の淡い面
+    static let orange    = Color(hex: 0xF39220)   // CTA・強調・連続日数の炎
+    static let orangeSoft = Color(hex: 0xFBEAD2)  // オレンジの淡い面
     static let teal      = Color(hex: 0x18A0A0)   // 料金分野・補助アクセント
     static let green     = Color(hex: 0x2BA664)   // 正解・成功
     static let red       = Color(hex: 0xE0533D)   // 不正解・警告
 
-    static let ink       = Color(hex: 0x1B2330)   // 主要テキスト
-    static let inkSoft   = Color(hex: 0x6B7689)   // 補助テキスト
-    static let line      = Color(hex: 0xE4E8F0)   // 区切り線・枠
+    static let ink       = Color(hex: 0x29303A)   // 主要テキスト（やや温かい墨）
+    static let inkSoft   = Color(hex: 0x8A8170)   // 補助テキスト（クリームに合う温かいグレー）
+    static let line      = Color(hex: 0xEBE3D4)   // 区切り線・枠（クリーム系）
 
     // MARK: - Spacing（4/8/12/16/24/32/48系）
     enum Space {

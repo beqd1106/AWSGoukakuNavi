@@ -1,20 +1,35 @@
 import SwiftUI
 
 /// 演習・復習・今日のタスクで使う問題プレイヤー（1問ずつ・即時解説）。
+/// 「前へ」で1つ前の問題に戻り、回答・正誤・解説を保持したまま見返せる。
 struct QuizPlayerView: View {
     let title: String
-    let questions: [QuizQuestion]
+    /// 出題セットは初回に @State へ固定する。
+    /// （呼び出し側が shuffled() で渡すと、親の再描画で配列が作り直され
+    ///   index はそのままで別の問題に化けるため。@State で初期値のみ採用して固定）
+    @State private var questions: [QuizQuestion]
 
     @EnvironmentObject var store: StudyStore
     @Environment(\.dismiss) private var dismiss
 
+    init(title: String, questions: [QuizQuestion]) {
+        self.title = title
+        _questions = State(initialValue: questions)
+    }
+
     @State private var index = 0
-    @State private var selected: Set<Int> = []
-    @State private var submitted = false
-    @State private var correctCount = 0
+    /// 問題インデックスごとの選択状態（戻っても保持）
+    @State private var selectedByIndex: [Int: Set<Int>] = [:]
+    /// 答え合わせ済みの問題インデックス
+    @State private var submittedIndices: Set<Int> = []
+    /// 問題インデックスごとの正誤（採点は1回だけ記録）
+    @State private var resultByIndex: [Int: Bool] = [:]
     @State private var finished = false
 
     private var current: QuizQuestion { questions[index] }
+    private var selected: Set<Int> { selectedByIndex[index] ?? [] }
+    private var isSubmitted: Bool { submittedIndices.contains(index) }
+    private var correctCount: Int { resultByIndex.values.filter { $0 }.count }
 
     var body: some View {
         ZStack {
@@ -70,15 +85,19 @@ struct QuizPlayerView: View {
                         }
                     }
 
-                    if submitted { explanationCard }
+                    if isSubmitted { explanationCard }
                 }
                 .padding(.horizontal, Theme.Space.l)
                 .padding(.bottom, 120)
             }
 
-            // 下部アクション
-            VStack(spacing: Theme.Space.s) {
-                if !submitted {
+            // 下部アクション（前へ / 答え合わせ・次へ）
+            HStack(spacing: Theme.Space.m) {
+                if index > 0 {
+                    SecondaryButton(title: "前へ", icon: "chevron.left") { goPrevious() }
+                        .frame(maxWidth: 130)
+                }
+                if !isSubmitted {
                     PrimaryButton(title: "答え合わせ", enabled: !selected.isEmpty) { submit() }
                 } else {
                     PrimaryButton(title: index + 1 < questions.count ? "次の問題へ" : "結果を見る",
@@ -97,14 +116,14 @@ struct QuizPlayerView: View {
         var border = Theme.line
         var icon = "circle"
         var iconColor = Theme.line
-        if submitted {
+        if isSubmitted {
             if isCorrect { bg = Theme.green.opacity(0.10); border = Theme.green; icon = "checkmark.circle.fill"; iconColor = Theme.green }
             else if isSelected { bg = Theme.red.opacity(0.10); border = Theme.red; icon = "xmark.circle.fill"; iconColor = Theme.red }
         } else if isSelected {
             bg = Theme.blueSoft; border = Theme.blue; icon = "largecircle.fill.circle"; iconColor = Theme.blue
         }
         return Button {
-            guard !submitted else { return }
+            guard !isSubmitted else { return }
             toggle(i)
         } label: {
             HStack(alignment: .top, spacing: Theme.Space.m) {
@@ -218,25 +237,31 @@ struct QuizPlayerView: View {
     // MARK: - 操作
 
     private func toggle(_ i: Int) {
+        var set = selectedByIndex[index] ?? []
         if current.isMultipleSelect {
-            if selected.contains(i) { selected.remove(i) } else { selected.insert(i) }
+            if set.contains(i) { set.remove(i) } else { set.insert(i) }
         } else {
-            selected = [i]
+            set = [i]
         }
+        selectedByIndex[index] = set
     }
 
     private func submit() {
-        submitted = true
+        guard !isSubmitted else { return }
+        submittedIndices.insert(index)
         let correct = current.isCorrect(selected: selected)
-        if correct { correctCount += 1 }
+        resultByIndex[index] = correct
+        // 採点・履歴記録は各問1回だけ
         store.recordAnswer(question: current, correct: correct)
+    }
+
+    private func goPrevious() {
+        if index > 0 { index -= 1 }
     }
 
     private func goNext() {
         if index + 1 < questions.count {
             index += 1
-            selected = []
-            submitted = false
         } else {
             finished = true
         }

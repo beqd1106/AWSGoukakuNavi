@@ -206,7 +206,7 @@ struct AppBackground: View {
     var body: some View {
         ZStack {
             Theme.bg.ignoresSafeArea()
-            LinearGradient(colors: [Theme.blue.opacity(0.06), .clear],
+            LinearGradient(colors: [Theme.orange.opacity(0.05), .clear],
                            startPoint: .top, endPoint: .center)
                 .ignoresSafeArea()
         }

@@ -8,7 +8,8 @@ struct HomeView: View {
             ZStack {
                 AppBackground()
                 ScrollView {
-                    VStack(alignment: .leading, spacing: Theme.Space.l) {
+                    VStack(alignment: .leading, spacing: Theme.Space.m) {
+                        AWSnoteHeader()
                         headerCard
                         examPrepBanner
                         todaySection
@@ -18,7 +19,7 @@ struct HomeView: View {
                     .padding(Theme.Space.l)
                 }
             }
-            .navigationTitle("ホーム")
+            .toolbar(.hidden, for: .navigationBar)
             .navigationDestination(for: HomeRoute.self) { route in
                 destination(for: route)
             }
@@ -190,6 +191,8 @@ struct HomeView: View {
             RoadmapView()
         case .finalCheck:
             FinalCheckView()
+        case .termSearch:
+            TermListView()
         }
     }
 
@@ -228,4 +231,33 @@ enum HomeRoute: Hashable {
     case review
     case roadmap
     case finalCheck
+    case termSearch
+}
+
+/// アプリ名ワードマークのヘッダー（アイコンのブランドに合わせたノート風）
+private struct AWSnoteHeader: View {
+    var body: some View {
+        HStack(alignment: .center) {
+            VStack(alignment: .leading, spacing: 3) {
+                HStack(alignment: .firstTextBaseline, spacing: 0) {
+                    Text("AWS").font(.system(size: 30, weight: .heavy)).foregroundStyle(Theme.navy)
+                    Text("note").font(.system(size: 30, weight: .regular)).foregroundStyle(Theme.navy.opacity(0.8))
+                }
+                // オレンジの手描き風アンダーライン
+                Capsule().fill(Theme.orange).frame(width: 132, height: 3)
+            }
+            Spacer()
+            NavigationLink(value: HomeRoute.termSearch) {
+                Image(systemName: "magnifyingglass")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(Theme.navy)
+                    .frame(width: 42, height: 42)
+                    .background(Theme.card)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Theme.line, lineWidth: 1))
+            }
+        }
+        .padding(.top, Theme.Space.s)
+        .padding(.bottom, Theme.Space.xs)
+    }
 }

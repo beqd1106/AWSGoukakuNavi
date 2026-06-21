@@ -45,10 +45,10 @@ struct OnboardingFlowView: View {
 
     private var welcomePage: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: Theme.Space.xl) {
-                Spacer(minLength: Theme.Space.xl)
+            VStack(alignment: .leading, spacing: Theme.Space.l) {
+                Spacer(minLength: Theme.Space.s)
                 Image(systemName: "cloud.fill")
-                    .font(.system(size: 56)).foregroundStyle(Theme.blue)
+                    .font(.system(size: 48)).foregroundStyle(Theme.blue)
                 Text("AWS合格ナビ").titleStyle()
                 Text("完全初心者から、AWS認定クラウドプラクティショナー合格を目指す学習アプリです。")
                     .font(.system(size: 16)).foregroundStyle(Theme.ink)
@@ -64,7 +64,8 @@ struct OnboardingFlowView: View {
                 Text("※試験範囲・配点は変更されることがあります。最新情報は必ずAWS公式サイトでご確認ください。")
                     .captionStyle()
             }
-            .padding(Theme.Space.xl)
+            .padding(.horizontal, Theme.Space.xl)
+            .padding(.vertical, Theme.Space.l)
         }
     }
 
@@ -83,7 +84,7 @@ struct OnboardingFlowView: View {
 
     private var diagnosisPage: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: Theme.Space.xl) {
+            VStack(alignment: .leading, spacing: Theme.Space.l) {
                 pageTitle("かんたん診断", "あなたに合った学習プランを作ります")
 
                 field("ニックネーム（任意）") {
@@ -121,7 +122,8 @@ struct OnboardingFlowView: View {
 
                 PrimaryButton(title: "次へ", icon: "arrow.right") { withAnimation { step = 2 } }
             }
-            .padding(Theme.Space.xl)
+            .padding(.horizontal, Theme.Space.xl)
+            .padding(.vertical, Theme.Space.l)
         }
     }
 
@@ -129,7 +131,7 @@ struct OnboardingFlowView: View {
 
     private var weakAreaPage: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: Theme.Space.xl) {
+            VStack(alignment: .leading, spacing: Theme.Space.l) {
                 pageTitle("苦手そうな分野は？", "複数選択できます（後から変更可）")
                 VStack(spacing: Theme.Space.s) {
                     ForEach(ExamDomain.allCases) { domain in
@@ -145,7 +147,8 @@ struct OnboardingFlowView: View {
                     .captionStyle()
                 PrimaryButton(title: "プランを見る", icon: "arrow.right") { withAnimation { step = 3 } }
             }
-            .padding(Theme.Space.xl)
+            .padding(.horizontal, Theme.Space.xl)
+            .padding(.vertical, Theme.Space.l)
         }
     }
 
@@ -153,7 +156,7 @@ struct OnboardingFlowView: View {
 
     private var planPage: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: Theme.Space.xl) {
+            VStack(alignment: .leading, spacing: Theme.Space.l) {
                 pageTitle("学習プランを選ぶ", "あなたには「\(recommendedPlan(for: experience).title)」がおすすめです")
 
                 VStack(spacing: Theme.Space.m) {
@@ -166,7 +169,8 @@ struct OnboardingFlowView: View {
                     finish()
                 }
             }
-            .padding(Theme.Space.xl)
+            .padding(.horizontal, Theme.Space.xl)
+            .padding(.vertical, Theme.Space.l)
         }
     }
 

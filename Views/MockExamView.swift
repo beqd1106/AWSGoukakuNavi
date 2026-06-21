@@ -60,7 +60,8 @@ struct MockExamStartView: View {
 
 /// 模擬試験の本体（即時フィードバックなし・タイマーあり）
 struct MockExamRunView: View {
-    let questions: [QuizQuestion]
+    /// 出題セットは初回に固定（親の再描画で再シャッフルされないように）
+    @State private var questions: [QuizQuestion]
     let timeLimit: TimeInterval
 
     @EnvironmentObject var store: StudyStore
@@ -74,7 +75,7 @@ struct MockExamRunView: View {
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     init(questions: [QuizQuestion], timeLimit: TimeInterval) {
-        self.questions = questions
+        _questions = State(initialValue: questions)
         self.timeLimit = timeLimit
         _remaining = State(initialValue: timeLimit)
     }

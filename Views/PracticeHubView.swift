@@ -15,7 +15,7 @@ struct PracticeHubView: View {
             ZStack {
                 AppBackground()
                 ScrollView {
-                    VStack(alignment: .leading, spacing: Theme.Space.l) {
+                    VStack(alignment: .leading, spacing: Theme.Space.m) {
                         // 模擬試験
                         NavigationLink(value: PracticeRoute.mock) {
                             Card {
