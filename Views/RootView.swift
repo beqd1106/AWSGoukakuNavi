@@ -8,20 +8,32 @@ struct RootView: View {
 
     var body: some View {
         Group {
-            if let store = store.store {
-                if store.hasCompletedOnboarding {
-                    MainTabView()
-                        .environmentObject(store)
-                } else {
-                    OnboardingFlowView()
-                        .environmentObject(store)
-                }
+            if let studyStore = store.store {
+                // StudyStore を直接監視する子Viewで分岐する。
+                // （RootView はホルダしか監視しないため、ここで @ObservedObject を張らないと
+                //   プロフィール作成後にオンボーディング→ホームへ切り替わらない）
+                RootRouterView(store: studyStore)
             } else {
                 // コンテキスト注入前の一瞬
                 AppBackground()
             }
         }
         .onAppear { store.configure(context: context) }
+    }
+}
+
+/// StudyStore を監視し、オンボーディング完了状態で画面を切り替えるルーター。
+private struct RootRouterView: View {
+    @ObservedObject var store: StudyStore
+    var body: some View {
+        Group {
+            if store.hasCompletedOnboarding {
+                MainTabView()
+            } else {
+                OnboardingFlowView()
+            }
+        }
+        .environmentObject(store)
     }
 }
 
