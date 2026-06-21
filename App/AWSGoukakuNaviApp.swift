@@ -33,7 +33,7 @@ struct AWSGoukakuNaviApp: App {
         WindowGroup {
             RootView()
                 .modelContainer(container)
-                .tint(Theme.blue)
+                .tint(Theme.orange)
         }
     }
 }
