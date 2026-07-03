@@ -16,12 +16,8 @@ workflows:
     max_build_duration: 30
     environment:
       xcode: latest
-    triggering:
-      events:
-        - push
-      branch_patterns:
-        - pattern: "*"
-          include: true
+    # macOS ビルドの浪費を避けるため自動起動はせず、必要なとき手動で実行する。
+    # （Codemagic UI の Start new build、または API から起動）
     scripts:
       - name: Install XcodeGen
         script: brew install xcodegen
@@ -57,6 +53,7 @@ workflows:
         bundle_identifier: com.beqd1106.awsgoukakunavi
       vars:
         XCODE_SCHEME: "AWSGoukakuNavi"
+        APP_ID: "6782375703"          # App Store Connect のアプリApple ID（ビルド番号採番に使用）
       xcode: latest
       cocoapods: default
     # バージョンタグ(v*)のpushで自動起動。手動Startも可。
@@ -77,8 +74,12 @@ workflows:
       - name: Set build number
         script: |
           cd "$CM_BUILD_DIR"
-          # Codemagicが採番するBUILD_NUMBER+1をビルド番号に（重複回避）
-          agvtool new-version -all "$(($BUILD_NUMBER + 1))"
+          # GitHub Actions で既に build8 まで配信済み。CIをまたいでも番号が逆行しないよう、
+          # TestFlight の最新ビルド番号を取得して +1 する（App Store Connect の単調増加要件を満たす）。
+          LATEST=$(app-store-connect get-latest-testflight-build-number "$APP_ID" 2>/dev/null || echo 0)
+          NEXT=$(( ${LATEST:-0} + 1 ))
+          echo "TestFlight latest build: ${LATEST:-0} -> setting build number to $NEXT"
+          agvtool new-version -all "$NEXT"
       - name: Build ipa
         script: |
           xcode-project build-ipa \
