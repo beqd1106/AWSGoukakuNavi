@@ -25,7 +25,8 @@
       "q2-cc-02",
       "q6-cc-01",
       "q6-cc-08"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-cc-02",
@@ -53,6 +54,10 @@
       "q-cc-013",
       "q7-cc-07",
       "q10-cc-08"
+    ],
+    "challengeQuizIds": [
+      "qm-cc-01",
+      "qm-cc-02"
     ]
   },
   {
@@ -81,7 +86,8 @@
       "q7-cc-08",
       "q-cc-010",
       "q2-cc-03"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-cc-04",
@@ -109,7 +115,8 @@
       "q9-cc-01",
       "q9-cc-06",
       "q2-cc-09"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-cc-05",
@@ -137,6 +144,10 @@
       "q10-cc-02",
       "q11-cc-02",
       "q-cc-009"
+    ],
+    "challengeQuizIds": [
+      "qm-cc-03",
+      "qm-cc-04"
     ]
   },
   {
@@ -165,6 +176,10 @@
       "q-cc-015",
       "q2-cc-05",
       "q2-cc-06"
+    ],
+    "challengeQuizIds": [
+      "qm-cc-05",
+      "qm-cc-06"
     ]
   },
   {
@@ -193,7 +208,8 @@
       "q-cc-017",
       "q4-cc-03",
       "q5-cc-05"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-cc-08",
@@ -221,7 +237,8 @@
       "q-cc-021",
       "q2-cc-08",
       "q4-cc-01"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-sec-01",
@@ -249,6 +266,10 @@
       "q-sec-001",
       "q-sec-016",
       "q3-sec-10"
+    ],
+    "challengeQuizIds": [
+      "qm-sec-01",
+      "qm-sec-02"
     ]
   },
   {
@@ -277,7 +298,8 @@
       "q2-sec-01",
       "q3-sec-13",
       "q4-sec-10"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-sec-03",
@@ -305,6 +327,11 @@
       "q7-sec-02",
       "q7-sec-05",
       "q9-sec-01"
+    ],
+    "challengeQuizIds": [
+      "qm-sec-03",
+      "qm-sec-04",
+      "qm-sec-05"
     ]
   },
   {
@@ -333,7 +360,8 @@
       "q-sec-006",
       "q-sec-020",
       "q-sec-023"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-sec-05",
@@ -361,7 +389,8 @@
       "q12-sec-21",
       "q-sec-028",
       "q3-sec-06"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-sec-06",
@@ -389,6 +418,10 @@
       "q2-sec-05",
       "q2-sec-11",
       "q3-sec-04"
+    ],
+    "challengeQuizIds": [
+      "qm-sec-06",
+      "qm-sec-07"
     ]
   },
   {
@@ -417,7 +450,8 @@
       "q-sec-010",
       "q-sec-026",
       "q2-sec-06"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-sec-08",
@@ -445,6 +479,10 @@
       "q2-sec-12",
       "q7-sec-08",
       "q9-sec-06"
+    ],
+    "challengeQuizIds": [
+      "qm-sec-08",
+      "qm-sec-09"
     ]
   },
   {
@@ -473,7 +511,8 @@
       "q8-sec-09",
       "q12-sec-11",
       "q-sec-022"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-sec-10",
@@ -501,7 +540,8 @@
       "q4-sec-05",
       "q6-sec-09",
       "q7-sec-09"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-01",
@@ -529,7 +569,8 @@
       "q2-tech-01",
       "q3-tech-01",
       "q4-tech-12"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-02",
@@ -557,6 +598,10 @@
       "q7-tech-10",
       "q8-tech-17",
       "q9-tech-12"
+    ],
+    "challengeQuizIds": [
+      "qm-tec-01",
+      "qm-tec-02"
     ]
   },
   {
@@ -585,6 +630,10 @@
       "q2-tech-04",
       "q4-tech-05",
       "q7-tech-12"
+    ],
+    "challengeQuizIds": [
+      "qm-tec-03",
+      "qm-tec-04"
     ]
   },
   {
@@ -613,7 +662,8 @@
       "q7-tech-02",
       "q-tec-010",
       "q-tec-012"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-05",
@@ -641,6 +691,10 @@
       "q4-tech-08",
       "q5-tech-16",
       "q7-tech-09"
+    ],
+    "challengeQuizIds": [
+      "qm-tec-05",
+      "qm-tec-06"
     ]
   },
   {
@@ -669,6 +723,10 @@
       "q-tec-009",
       "q2-tech-08",
       "q2-tech-10"
+    ],
+    "challengeQuizIds": [
+      "qm-tec-07",
+      "qm-tec-08"
     ]
   },
   {
@@ -697,7 +755,8 @@
       "q-tec-005",
       "q-tec-006",
       "q2-tech-02"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-08",
@@ -725,6 +784,10 @@
       "q-tec-028",
       "q2-tech-12",
       "q3-tech-17"
+    ],
+    "challengeQuizIds": [
+      "qm-tec-09",
+      "qm-tec-10"
     ]
   },
   {
@@ -753,6 +816,10 @@
       "q7-tech-11",
       "q3-tech-19",
       "q4-tech-14"
+    ],
+    "challengeQuizIds": [
+      "qm-tec-11",
+      "qm-tec-12"
     ]
   },
   {
@@ -781,7 +848,8 @@
       "q3-tech-09",
       "q4-tech-10",
       "q5-tech-18"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-11",
@@ -809,7 +877,8 @@
       "q-tec-019",
       "q-tec-020",
       "q-tec-024"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-12",
@@ -837,7 +906,8 @@
       "q-tec-018",
       "q-tec-021",
       "q-tec-030"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-13",
@@ -865,7 +935,8 @@
       "q3-tech-12",
       "q6-tech-08",
       "q8-tech-11"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-tec-14",
@@ -893,7 +964,8 @@
       "q4-tech-11",
       "q5-tech-10",
       "q5-tech-12"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-bil-01",
@@ -921,6 +993,10 @@
       "q4-bill-06",
       "q6-bill-01",
       "q7-bill-01"
+    ],
+    "challengeQuizIds": [
+      "qm-bil-01",
+      "qm-bil-02"
     ]
   },
   {
@@ -949,6 +1025,11 @@
       "q-bil-001",
       "q-bil-002",
       "q2-bill-02"
+    ],
+    "challengeQuizIds": [
+      "qm-bil-03",
+      "qm-bil-04",
+      "qm-bil-05"
     ]
   },
   {
@@ -977,7 +1058,8 @@
       "q7-bill-05",
       "q10-bill-02",
       "q-bil-004"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-bil-04",
@@ -1005,7 +1087,8 @@
       "q3-bill-08",
       "q6-bill-03",
       "q8-bill-06"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-bil-05",
@@ -1033,7 +1116,8 @@
       "q5-bill-06",
       "q6-bill-06",
       "q8-bill-05"
-    ]
+    ],
+    "challengeQuizIds": []
   },
   {
     "id": "l-bil-06",
@@ -1061,6 +1145,10 @@
       "q2-bill-06",
       "q6-bill-02",
       "q7-bill-08"
+    ],
+    "challengeQuizIds": [
+      "qm-bil-06",
+      "qm-bil-07"
     ]
   }
 ]

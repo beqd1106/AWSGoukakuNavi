@@ -449,22 +449,47 @@ const LESSONS = [
   },
 ];
 
+// ---- 中級チャレンジ（腕試し）の明示マッピング ----
+// CLF-C02 範囲内のシナリオ型「中級」問題（design/build_intermediate.js で作成）を
+// 各レッスンへ明示的に割り当てる。match のキーワード重複による誤配置を避けるため直接指定。
+const CHALLENGE = {
+  "l-cc-02": ["qm-cc-01", "qm-cc-02"],
+  "l-cc-05": ["qm-cc-03", "qm-cc-04"],
+  "l-cc-06": ["qm-cc-05", "qm-cc-06"],
+  "l-sec-01": ["qm-sec-01", "qm-sec-02"],
+  "l-sec-03": ["qm-sec-03", "qm-sec-04", "qm-sec-05"],
+  "l-sec-06": ["qm-sec-06", "qm-sec-07"],
+  "l-sec-08": ["qm-sec-08", "qm-sec-09"],
+  "l-tec-02": ["qm-tec-01", "qm-tec-02"],
+  "l-tec-03": ["qm-tec-03", "qm-tec-04"],
+  "l-tec-05": ["qm-tec-05", "qm-tec-06"],
+  "l-tec-06": ["qm-tec-07", "qm-tec-08"],
+  "l-tec-08": ["qm-tec-09", "qm-tec-10"],
+  "l-tec-09": ["qm-tec-11", "qm-tec-12"],
+  "l-bil-01": ["qm-bil-01", "qm-bil-02"],
+  "l-bil-02": ["qm-bil-03", "qm-bil-04", "qm-bil-05"],
+  "l-bil-06": ["qm-bil-06", "qm-bil-07"],
+};
+
 // ---- quizIds 自動割当 ----
 const TARGET = 5; // 1レッスンあたりの目標問題数
 const MIN = 3;
 const used = new Set();
+const qIds = new Set(questions.map((q) => q.id));
+const isChallenge = (q) => (q.tags || []).includes("中級");
 
 const domainOrder = ["cloudConcepts", "security", "technology", "billing"];
 LESSONS.sort((a, b) => domainOrder.indexOf(a.domain) - domainOrder.indexOf(b.domain));
 
+let challengeTotal = 0;
 const out = LESSONS.map((L) => {
-  const matched = questions.filter((q) => q.domain === L.domain && qMatches(q, L.match));
+  // 基本の確認問題は「中級」を除外（基礎は基礎のまま）
+  const matched = questions.filter((q) => q.domain === L.domain && !isChallenge(q) && qMatches(q, L.match));
   // 難易度昇順→未使用優先で並べる
   const sorted = matched.slice().sort((a, b) => (a.difficulty || 2) - (b.difficulty || 2));
   const fresh = sorted.filter((q) => !used.has(q.id));
   let pick = fresh.slice(0, TARGET);
   if (pick.length < MIN) {
-    // 未使用が足りなければ既出も足す
     const extra = sorted.filter((q) => !pick.includes(q)).slice(0, MIN - pick.length);
     pick = pick.concat(extra);
   }
@@ -472,6 +497,10 @@ const out = LESSONS.map((L) => {
   if (pick.length < MIN) {
     console.warn(`!! ${L.id} は確認問題が${pick.length}問しか集まりませんでした（match: ${L.match.join(",")}）`);
   }
+  // 中級チャレンジ（存在する問題IDのみ・2問以上で採用）
+  const chal = (CHALLENGE[L.id] || []).filter((id) => qIds.has(id));
+  const challengeQuizIds = chal.length >= 2 ? chal : [];
+  challengeTotal += challengeQuizIds.length;
   return {
     id: L.id,
     title: L.title,
@@ -480,6 +509,7 @@ const out = LESSONS.map((L) => {
     summary: L.summary,
     sections: L.sections,
     quizIds: pick.map((q) => q.id),
+    challengeQuizIds,
   };
 });
 
@@ -492,4 +522,5 @@ for (const d of domainOrder) {
   const qsum = ls.reduce((s, l) => s + l.quizIds.length, 0);
   console.log(`  ${d}: ${ls.length}レッスン / 確認問題のべ${qsum}問`);
 }
-console.log(`ユニーク割当問題: ${used.size} / 全543問`);
+console.log(`ユニーク割当問題（基本）: ${used.size}`);
+console.log(`中級チャレンジ: ${out.filter((l) => l.challengeQuizIds.length).length}レッスンに のべ${challengeTotal}問`);

@@ -14925,5 +14925,983 @@
       "データベース"
     ],
     "beginnerNote": "改ざん不能の履歴記録＝QLDB（台帳）。"
+  },
+  {
+    "id": "qm-cc-01",
+    "question": "需要予測が難しい新サービスを立ち上げるスタートアップにとって、オンプレミスでサーバーを大量購入する場合と比べたクラウドの最大の利点はどれですか。",
+    "choices": [
+      "使った分だけ支払い、需要に応じて容量を増減できる",
+      "ハードウェアを一括購入して資産として計上できる",
+      "社内に物理サーバーを設置して自社管理できる",
+      "通信料金を含むすべての費用が無料になる"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "需要が読めないときは、前もって大きく買い込まず「使った分だけ・必要に応じて増減」できるのがクラウドの強みです。初期投資（固定費）を変動費に変えられます。",
+    "wrongChoiceExplanations": {
+      "1": "資産計上できる点はクラウドの主目的ではなく、むしろ大型の初期投資を避けられるのが利点です。",
+      "2": "物理サーバーの自社管理はオンプレミスの特徴で、クラウドはそれを不要にします。",
+      "3": "クラウドは無料ではなく、使った分の従量課金が基本です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 3,
+    "tags": [
+      "クラウドの価値",
+      "変動費",
+      "俊敏性",
+      "中級"
+    ],
+    "beginnerNote": "「使った分だけ・すぐ増減」がクラウドの価値の核。需要が読めないほど有利になります。"
+  },
+  {
+    "id": "qm-cc-02",
+    "question": "「設備投資（CapEx）を運用支出（OpEx）に変える」というクラウドの利点を最もよく表す説明はどれですか。",
+    "choices": [
+      "毎月固定額だけを支払い続ける",
+      "大きな初期投資をせず、利用量に応じて支払う",
+      "3年分の利用料をまとめて前払いする",
+      "自社データセンターを増設して対応する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "サーバーを買い込む（資本的支出）代わりに、使った分を運用費として払う――これがCapExからOpExへの転換です。",
+    "wrongChoiceExplanations": {
+      "0": "従量課金は利用量に応じて変動し、固定額前提ではありません。",
+      "2": "前払いは一つの選択肢にすぎず、OpEx化の本質は「使った分だけ払う」ことです。",
+      "3": "データセンター増設は資本的支出そのもので、クラウドの利点と逆です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 3,
+    "tags": [
+      "クラウドの価値",
+      "変動費",
+      "中級"
+    ],
+    "beginnerNote": "CapEx→OpEx（設備投資→運用支出）はCLF頻出フレーズ。"
+  },
+  {
+    "id": "qm-cc-03",
+    "question": "あるWebアプリを1つのアベイラビリティーゾーンにある1台のEC2で運用しています。可用性を高めるための最も適切な第一歩はどれですか。",
+    "choices": [
+      "スナップショットの取得頻度を上げる",
+      "利用するリージョンを別のリージョンに変更する",
+      "複数のAZにインスタンスを分散し、ロードバランサーで振り分ける",
+      "インスタンスタイプをより大きなものに変更する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "単一AZ・単一インスタンスは単一障害点です。複数AZに分散しELBで振り分ければ、片方が落ちてもサービスを継続できます。",
+    "wrongChoiceExplanations": {
+      "0": "バックアップは復旧には役立ちますが、稼働中の可用性そのものは上がりません。",
+      "1": "リージョン変更は可用性向上の手段ではありません。",
+      "3": "スペックを上げても1台のままでは、その1台が落ちれば停止します（単一障害点は解消しません）。"
+    },
+    "domain": "cloudConcepts",
+    "service": "可用性",
+    "difficulty": 3,
+    "tags": [
+      "可用性",
+      "単一障害点",
+      "中級"
+    ],
+    "beginnerNote": "「単一障害点をなくす＝複数AZ＋ELB」が高可用性の基本。"
+  },
+  {
+    "id": "qm-cc-04",
+    "question": "セール期間だけアクセスが通常の10倍になるサイトを、コストを抑えつつ需要に追従させたいです。最も適切な仕組みはどれですか。",
+    "choices": [
+      "常に最大想定台数のサーバーを起動しておく",
+      "混雑のたびに手動で台数を変更する",
+      "とにかく高性能な1台に集約する",
+      "Auto Scalingで負荷に応じてサーバー台数を自動で増減する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "弾力性（エラスティシティ）の実践です。Auto Scalingで混雑時は増やし、空いたら減らすことで、性能とコストを両立できます。",
+    "wrongChoiceExplanations": {
+      "0": "常に最大台数だと閑散時に無駄なコストがかかります。",
+      "1": "手動対応は遅れやミスが生じ、急な変動に追従できません。",
+      "2": "1台集約は単一障害点となり、上限も頭打ちになります。"
+    },
+    "domain": "cloudConcepts",
+    "service": "弾力性",
+    "difficulty": 3,
+    "tags": [
+      "弾力性",
+      "スケーラビリティ",
+      "中級"
+    ],
+    "beginnerNote": "需要変動には「自動で増減＝Auto Scaling」。"
+  },
+  {
+    "id": "qm-cc-05",
+    "question": "「無駄な支出が発生していないかを継続的に見直す」取り組みは、Well-Architectedフレームワークのどの柱に最も当てはまりますか。",
+    "choices": [
+      "コスト最適化",
+      "信頼性",
+      "パフォーマンス効率",
+      "セキュリティ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "支払いの無駄をなくす観点はコスト最適化の柱です。使っていない資源の停止や適正サイズ化などが該当します。",
+    "wrongChoiceExplanations": {
+      "1": "信頼性は障害からの回復や継続性に関する柱です。",
+      "2": "パフォーマンス効率は資源を無駄なく活かす（性能面の）柱です。",
+      "3": "セキュリティはデータや権限の保護に関する柱です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 3,
+    "tags": [
+      "Well-Architected",
+      "中級"
+    ],
+    "beginnerNote": "状況→柱の対応を問う定番。無駄な支出＝コスト最適化。"
+  },
+  {
+    "id": "qm-cc-06",
+    "question": "「障害が発生しても自動的に復旧し、サービスを継続できるか」を主に扱うWell-Architectedの柱はどれですか。",
+    "choices": [
+      "コスト最適化",
+      "信頼性",
+      "運用上の優秀性",
+      "持続可能性"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "障害からの回復力・継続性を扱うのは信頼性の柱です。バックアップや復旧、冗長化の話題はここに該当します。",
+    "wrongChoiceExplanations": {
+      "0": "コスト最適化は支払いの無駄をなくす柱です。",
+      "2": "運用上の優秀性は、運用・監視・改善の仕組みに関する柱です。",
+      "3": "持続可能性は環境負荷の低減に関する柱です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 3,
+    "tags": [
+      "Well-Architected",
+      "信頼性",
+      "中級"
+    ],
+    "beginnerNote": "復旧・継続の話題＝信頼性の柱。"
+  },
+  {
+    "id": "qm-sec-01",
+    "question": "EC2インスタンス上で稼働するアプリについて、ゲストOSのセキュリティパッチ適用は誰の責任ですか。",
+    "choices": [
+      "AWSと利用者が自動で共同実施",
+      "どちらの責任でもない",
+      "利用者",
+      "AWS"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "EC2ではOS以上（ゲストOSのパッチ、ミドルウェア、アプリ、設定）は利用者の責任です。AWSは基盤（物理・ハイパーバイザー）を担います。",
+    "wrongChoiceExplanations": {
+      "0": "パッチ適用が自動で共同実施されるわけではありません。",
+      "1": "責任の所在は明確で、EC2のゲストOSは利用者側です。",
+      "3": "AWSが責任を負うのは基盤側で、ゲストOSのパッチは含みません。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 3,
+    "tags": [
+      "責任共有モデル",
+      "中級"
+    ],
+    "beginnerNote": "EC2は自由度が高い分、OS管理は利用者責任。"
+  },
+  {
+    "id": "qm-sec-02",
+    "question": "責任共有モデルにおいて、次のうちAWSが責任を負うものはどれですか。",
+    "choices": [
+      "IAMポリシーの適切な設定",
+      "S3バケットを公開するかどうかの設定",
+      "保存データを暗号化するかどうかの選択",
+      "データセンターの物理的なセキュリティ"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "AWSは「クラウドそのもの（物理施設・ハードウェア・基盤）」を守ります。設定・権限・暗号化の選択は利用者の責任です。",
+    "wrongChoiceExplanations": {
+      "0": "IAMポリシーの設定は利用者の責任です。",
+      "1": "バケットの公開設定は利用者が管理します。",
+      "2": "暗号化するかどうかの判断・設定は利用者側です。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 3,
+    "tags": [
+      "責任共有モデル",
+      "中級"
+    ],
+    "beginnerNote": "物理・基盤＝AWS、設定・データ＝利用者。"
+  },
+  {
+    "id": "qm-sec-03",
+    "question": "開発者に本番のS3バケットへの「読み取りのみ」を許可したいです。最も適切な方法はどれですか。",
+    "choices": [
+      "必要な読み取り権限だけを持つIAMポリシーを付与する",
+      "AdministratorAccessを付与しておく",
+      "ルートユーザーの認証情報を共有する",
+      "アクセスキーをアプリのコードに直接埋め込む"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "最小権限の原則に従い、業務に必要な読み取り権限だけを与えます。過剰な権限は事故や不正時の被害を広げます。",
+    "wrongChoiceExplanations": {
+      "1": "管理者権限の付与は最小権限に反し、危険です。",
+      "2": "ルートユーザーの共有は最も避けるべき運用です。",
+      "3": "アクセスキーの直書きは漏洩リスクが高く不適切です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 3,
+    "tags": [
+      "IAM",
+      "最小権限",
+      "ポリシー",
+      "中級"
+    ],
+    "beginnerNote": "困ったら「最小権限」。必要な分だけ与える。"
+  },
+  {
+    "id": "qm-sec-04",
+    "question": "EC2上のアプリからS3へアクセスさせる必要があります。セキュリティ上、最も推奨される方法はどれですか。",
+    "choices": [
+      "S3バケットを公開設定にする",
+      "EC2にIAMロールを割り当てる",
+      "アクセスキーをEC2内のファイルに保存する",
+      "ルートユーザーの認証情報を使う"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "サービス間連携はIAMロールが基本です。長期的なキーを配らずに一時認証で権限を渡せ、漏洩リスクを抑えられます。",
+    "wrongChoiceExplanations": {
+      "0": "バケット公開はアクセス制御にならず危険です。",
+      "2": "キーの保存は漏洩リスクがあり、ロールに比べ非推奨です。",
+      "3": "ルート認証情報の使用は避けるべきです。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 3,
+    "tags": [
+      "IAM",
+      "ロール",
+      "中級"
+    ],
+    "beginnerNote": "「サーバーからサービスへ＝IAMロール」。"
+  },
+  {
+    "id": "qm-sec-05",
+    "question": "あるIAMの評価で、同じアクションに対して明示的な許可（Allow）と明示的な拒否（Deny）の両方が該当しました。結果はどうなりますか。",
+    "choices": [
+      "エラーで評価が中断する",
+      "どちらになるかはランダムに決まる",
+      "拒否される（明示的なDenyが優先）",
+      "許可される（Allowが優先）"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "IAMのポリシー評価では、明示的なDenyが常に最優先されます。1つでもDenyがあれば、そのアクションは拒否されます。",
+    "wrongChoiceExplanations": {
+      "0": "評価が中断することはなく、Denyで確定します。",
+      "1": "評価は決定的で、ランダムではありません。",
+      "3": "Allowより明示的Denyが優先されるため許可にはなりません。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 3,
+    "tags": [
+      "IAM",
+      "ポリシー",
+      "中級"
+    ],
+    "beginnerNote": "明示的Denyは常に最優先、が鉄則。"
+  },
+  {
+    "id": "qm-sec-06",
+    "question": "次のうち「保存データ（at rest）の暗号化」に該当するのはどれですか。",
+    "choices": [
+      "ブラウザとサーバー間の通信をTLSで保護する",
+      "拠点間をVPNで接続する",
+      "ログインにMFAを有効化する",
+      "S3に保存したオブジェクトをKMSの鍵で暗号化する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "保存データの暗号化は、ディスクやストレージに置かれたデータそのものを暗号化することです。通信の暗号化（in transit）とは区別します。",
+    "wrongChoiceExplanations": {
+      "0": "TLSは通信中（in transit）の暗号化で、保存時ではありません。",
+      "1": "VPNは通信経路の保護で、保存データの暗号化ではありません。",
+      "2": "MFAは認証強化で、暗号化とは別の対策です。"
+    },
+    "domain": "security",
+    "service": "暗号化",
+    "difficulty": 3,
+    "tags": [
+      "暗号化",
+      "KMS",
+      "中級"
+    ],
+    "beginnerNote": "at rest＝保存時、in transit＝通信時。区別が問われる。"
+  },
+  {
+    "id": "qm-sec-07",
+    "question": "データベースの接続パスワードを安全に保管し、定期的な自動ローテーションも行いたいです。最も適したサービスはどれですか。",
+    "choices": [
+      "AWS Secrets Manager",
+      "Amazon S3",
+      "AWS Config",
+      "Amazon CloudWatch"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Secrets Managerは認証情報などの機密を安全に保管し、自動ローテーションにも対応します。コードへの直書きを避けられます。",
+    "wrongChoiceExplanations": {
+      "1": "S3は汎用ストレージで、機密情報の専用管理・自動ローテーションには向きません。",
+      "2": "Configは設定の追跡・評価用で、機密保管の用途ではありません。",
+      "3": "CloudWatchは監視・ログ用で、機密管理サービスではありません。"
+    },
+    "domain": "security",
+    "service": "Secrets Manager",
+    "difficulty": 3,
+    "tags": [
+      "Secrets Manager",
+      "暗号化",
+      "中級"
+    ],
+    "beginnerNote": "パスワード等の機密＋自動更新＝Secrets Manager。"
+  },
+  {
+    "id": "qm-sec-08",
+    "question": "EC2インスタンス単位で、許可した通信だけを通す「ステートフル」な仮想ファイアウォールはどれですか。",
+    "choices": [
+      "インターネットゲートウェイ",
+      "セキュリティグループ",
+      "ネットワークACL",
+      "ルートテーブル"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "セキュリティグループはインスタンス単位・ステートフルで動作します（戻りの通信は自動許可）。サブネット単位・ステートレスなのがネットワークACLです。",
+    "wrongChoiceExplanations": {
+      "0": "インターネットゲートウェイは外部接続の出入口で、フィルタではありません。",
+      "2": "ネットワークACLはサブネット単位でステートレスに動作します。",
+      "3": "ルートテーブルは通信経路を決めるもので、フィルタリングではありません。"
+    },
+    "domain": "security",
+    "service": "セキュリティグループ",
+    "difficulty": 3,
+    "tags": [
+      "セキュリティグループ",
+      "ネットワーク",
+      "中級"
+    ],
+    "beginnerNote": "SG＝インスタンス単位・ステートフル。NACL＝サブネット単位・ステートレス。"
+  },
+  {
+    "id": "qm-sec-09",
+    "question": "公開しているWebアプリへのSQLインジェクションやクロスサイトスクリプティングを、ルールで遮断したいです。最適なサービスはどれですか。",
+    "choices": [
+      "セキュリティグループ",
+      "Amazon Macie",
+      "AWS WAF",
+      "AWS Shield"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "AWS WAFはWebアプリを狙う攻撃をルールで遮断します。CloudFrontやALBの前段に配置して使います。",
+    "wrongChoiceExplanations": {
+      "0": "セキュリティグループはポート単位の通信制御で、Web攻撃の内容判定はできません。",
+      "1": "MacieはS3内の機微データ検出用で、攻撃遮断は行いません。",
+      "3": "ShieldはDDoS攻撃対策で、SQLインジェクション等のWeb攻撃遮断が主目的ではありません。"
+    },
+    "domain": "security",
+    "service": "WAF",
+    "difficulty": 3,
+    "tags": [
+      "WAF",
+      "中級"
+    ],
+    "beginnerNote": "Webアプリへの攻撃遮断＝WAF、DDoS＝Shield。"
+  },
+  {
+    "id": "qm-sec-10",
+    "question": "アカウント内の不正アクセスや異常な通信などの「怪しい挙動」を、ログから自動で継続的に検知したいです。最適なサービスはどれですか。",
+    "choices": [
+      "Amazon Inspector",
+      "Amazon Macie",
+      "AWS Artifact",
+      "Amazon GuardDuty"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "GuardDutyはログを分析して脅威（不審な挙動）を検知します。脆弱性診断のInspector、機微データ検出のMacieと役割が分かれます。",
+    "wrongChoiceExplanations": {
+      "0": "Inspectorは脆弱性・設定の診断が主目的で、挙動の検知ではありません。",
+      "1": "MacieはS3内の個人情報などの発見が目的です。",
+      "2": "Artifactは監査レポートの入手用で、脅威検知はしません。"
+    },
+    "domain": "security",
+    "service": "GuardDuty",
+    "difficulty": 3,
+    "tags": [
+      "GuardDuty",
+      "脅威検知",
+      "中級"
+    ],
+    "beginnerNote": "怪しい動きの検知＝GuardDuty。役割で区別。"
+  },
+  {
+    "id": "qm-tec-01",
+    "question": "既存アプリをできるだけ改修せずにクラウドへ移し、OSレベルの細かな制御も引き続き自分で行いたいです。最適な実行先はどれですか。",
+    "choices": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "AWS Fargate",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "OSから自分で管理でき自由度が高いのはEC2です。既存アプリをそのまま載せる（リフト&シフト）用途に向きます。",
+    "wrongChoiceExplanations": {
+      "1": "Lambdaはサーバーレスで、OSの制御や常時稼働の既存アプリには不向きです。",
+      "2": "Fargateはコンテナ向けで、OSを自分で管理する用途とは異なります。",
+      "3": "S3はストレージであり、アプリの実行環境ではありません。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 3,
+    "tags": [
+      "EC2",
+      "コンピューティング",
+      "中級"
+    ],
+    "beginnerNote": "OSまで自分で・そのまま移行＝EC2。"
+  },
+  {
+    "id": "qm-tec-02",
+    "question": "小規模なWebサイトを、分かりやすい定額料金・簡単な構成で手早く立ち上げたい初心者に最も適したサービスはどれですか。",
+    "choices": [
+      "Amazon EKS",
+      "Amazon Lightsail",
+      "Amazon EC2を手動でフル構築",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Lightsailは、サーバー・ストレージなどをまとめた分かりやすい定額プランで簡単に始められます。初心者の小規模用途に向きます。",
+    "wrongChoiceExplanations": {
+      "0": "EKSはKubernetesの本格運用向けで、小規模・簡単とは逆です。",
+      "2": "EC2の手動フル構築は自由度が高い反面、初心者の手軽さでは劣ります。",
+      "3": "Lambdaはサーバーレスで、常時稼働のWebサイトの単純運用とは方向性が異なります。"
+    },
+    "domain": "technology",
+    "service": "Lightsail",
+    "difficulty": 3,
+    "tags": [
+      "Lightsail",
+      "EC2",
+      "中級"
+    ],
+    "beginnerNote": "小規模・簡単・定額＝Lightsail。"
+  },
+  {
+    "id": "qm-tec-03",
+    "question": "画像がアップロードされるたびに短時間だけ動くサムネイル生成処理を、サーバー管理なし・使った分だけの課金で実装したいです。最適なサービスはどれですか。",
+    "choices": [
+      "Amazon RDS",
+      "Amazon S3",
+      "AWS Lambda",
+      "常時起動のAmazon EC2"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "イベント駆動で短時間だけ動く処理は、サーバーレスのLambdaが最適です。呼ばれたときだけ実行され、使った分だけ課金されます。",
+    "wrongChoiceExplanations": {
+      "0": "RDSはデータベースで、処理の実行環境ではありません。",
+      "1": "S3は保存先にはなりますが、処理そのものは実行しません。",
+      "3": "常時起動のEC2は、たまに動く処理には無駄なコストと運用が生じます。"
+    },
+    "domain": "technology",
+    "service": "Lambda",
+    "difficulty": 3,
+    "tags": [
+      "Lambda",
+      "サーバーレス",
+      "中級"
+    ],
+    "beginnerNote": "たまに・短時間・イベント駆動＝Lambda。"
+  },
+  {
+    "id": "qm-tec-04",
+    "question": "コンテナでアプリを運用したいが、土台となるサーバー（EC2）の管理はしたくありません。最適な構成はどれですか。",
+    "choices": [
+      "EC2上にDockerを手動で構築して運用する",
+      "AWS Lambdaだけで長時間の常駐処理を動かす",
+      "Amazon S3でコンテナをホスティングする",
+      "ECS/EKS を AWS Fargate で動かす"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Fargateを使うと、コンテナの土台となるサーバーの管理が不要になります。「サーバーの面倒を見たくない＝Fargate」です。",
+    "wrongChoiceExplanations": {
+      "0": "EC2に手動構築するとサーバー管理が必要になり、要件に反します。",
+      "1": "Lambdaは短時間のイベント処理向けで、常駐コンテナの一般的な代替ではありません。",
+      "2": "S3はストレージで、コンテナの実行環境ではありません。"
+    },
+    "domain": "technology",
+    "service": "Fargate",
+    "difficulty": 3,
+    "tags": [
+      "Fargate",
+      "コンテナ",
+      "ECS",
+      "中級"
+    ],
+    "beginnerNote": "コンテナ＋サーバー管理不要＝Fargate。"
+  },
+  {
+    "id": "qm-tec-05",
+    "question": "年に1〜2回しか参照しないが、必要時は数時間の取り出し待ちを許容できるバックアップを、最も安く長期保管したいです。最適なS3ストレージクラスはどれですか。",
+    "choices": [
+      "S3 Glacier系（アーカイブ向け）",
+      "S3 標準",
+      "S3 標準-IA",
+      "Amazon EBS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "めったにアクセスせず取り出しに時間を許容できる長期保管は、最も安価なGlacier系が適します。",
+    "wrongChoiceExplanations": {
+      "1": "S3標準は頻繁アクセス向けで割高になります。",
+      "2": "標準-IAは低頻度向けですが、Glacier系ほど安くはありません。",
+      "3": "EBSはEC2用のブロックストレージで、アーカイブ用途ではありません。"
+    },
+    "domain": "technology",
+    "service": "S3",
+    "difficulty": 3,
+    "tags": [
+      "S3",
+      "Glacier",
+      "ストレージクラス",
+      "中級"
+    ],
+    "beginnerNote": "めったに使わない長期保管＝Glacier系。"
+  },
+  {
+    "id": "qm-tec-06",
+    "question": "アクセス頻度が読めないデータのコストを、運用の手間なく自動で最適化したいです。最適な方法はどれですか。",
+    "choices": [
+      "Amazon EFSに移す",
+      "S3 Intelligent-Tiering を使う",
+      "常にS3標準に固定する",
+      "管理者が毎月手動でクラスを変更する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Intelligent-Tieringはアクセス状況に応じて自動で最適なクラスへ移動し、手間なくコストを最適化します。",
+    "wrongChoiceExplanations": {
+      "0": "EFSは共有ファイル用途で、S3のコスト最適化の答えではありません。",
+      "2": "標準固定では、低頻度データにも高いコストがかかり続けます。",
+      "3": "手動変更は手間がかかり、運用ミスも生じます。"
+    },
+    "domain": "technology",
+    "service": "S3",
+    "difficulty": 3,
+    "tags": [
+      "S3",
+      "ストレージクラス",
+      "中級"
+    ],
+    "beginnerNote": "頻度が読めない＝Intelligent-Tieringに任せる。"
+  },
+  {
+    "id": "qm-tec-07",
+    "question": "応答がミリ秒単位で、トラフィックに応じて自動スケールする、キー・バリュー型の大規模データストアが必要です。最適なサービスはどれですか。",
+    "choices": [
+      "Amazon Aurora",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "DynamoDBはキー・バリュー型のNoSQLで、超高速・自動スケール・サーバーレス。大規模で高速な用途に向きます。",
+    "wrongChoiceExplanations": {
+      "0": "AuroraもSQL系で、NoSQLの要件には一致しません。",
+      "1": "Redshiftは分析用のデータウェアハウスで、低遅延の運用系ではありません。",
+      "3": "RDSはリレーショナル（SQL）で、キー・バリューの超高速用途とは異なります。"
+    },
+    "domain": "technology",
+    "service": "データベース",
+    "difficulty": 3,
+    "tags": [
+      "DynamoDB",
+      "データベース",
+      "NoSQL",
+      "中級"
+    ],
+    "beginnerNote": "キー・バリュー・超高速・自動スケール＝DynamoDB。"
+  },
+  {
+    "id": "qm-tec-08",
+    "question": "よくアクセスされるデータをメモリ上に置いてデータベースの負荷を下げ、応答を高速化したいです。最適なサービスはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon S3 Glacier",
+      "Amazon Athena",
+      "Amazon ElastiCache"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ElastiCache（Redis/Memcached）は超高速なインメモリキャッシュで、頻繁に使うデータを手前に置いて高速化・DB負荷軽減を実現します。",
+    "wrongChoiceExplanations": {
+      "0": "S3はオブジェクトストレージで、インメモリキャッシュではありません。",
+      "1": "Glacierはアーカイブ向けで、高速キャッシュとは逆です。",
+      "2": "Athenaは分析クエリ用で、キャッシュ用途ではありません。"
+    },
+    "domain": "technology",
+    "service": "データベース",
+    "difficulty": 3,
+    "tags": [
+      "ElastiCache",
+      "データベース",
+      "中級"
+    ],
+    "beginnerNote": "メモリで高速化・DB負荷軽減＝ElastiCache。"
+  },
+  {
+    "id": "qm-tec-09",
+    "question": "世界中の利用者に動画コンテンツを低遅延で配信し、オリジンサーバーの負荷も下げたいです。最適なサービスはどれですか。",
+    "choices": [
+      "Amazon CloudFront",
+      "Amazon S3 単体での配信",
+      "AWS Direct Connect",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "CloudFrontはエッジロケーションから近くの利用者へ配信するCDNで、低遅延化とオリジン負荷の軽減を同時に実現します。",
+    "wrongChoiceExplanations": {
+      "1": "S3単体でも配信は可能ですが、世界規模の低遅延やキャッシュによる負荷軽減はCDNが担います。",
+      "2": "Direct Connectはオンプレ接続用で、コンテンツ配信の仕組みではありません。",
+      "3": "Route 53はDNSで、配信の高速化そのものは行いません。"
+    },
+    "domain": "technology",
+    "service": "CloudFront",
+    "difficulty": 3,
+    "tags": [
+      "CloudFront",
+      "CDN",
+      "中級"
+    ],
+    "beginnerNote": "世界に低遅延配信＋オリジン負荷減＝CloudFront（CDN）。"
+  },
+  {
+    "id": "qm-tec-10",
+    "question": "オンプレミスとAWSを、インターネットを介さずに安定・低遅延・大容量で接続したいです。最適な方法はどれですか。",
+    "choices": [
+      "NATゲートウェイ",
+      "AWS Direct Connect",
+      "サイト間VPN",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Direct Connectは専用線接続で、インターネットを介さず安定・低遅延・大容量を実現します。安定重視のハイブリッド構成に向きます。",
+    "wrongChoiceExplanations": {
+      "0": "NATゲートウェイは内部から外部への通信用で、専用線接続ではありません。",
+      "2": "VPNはインターネット経由のため、専用線ほどの安定性・帯域は保証しにくいです。",
+      "3": "CloudFrontはコンテンツ配信用で、拠点間接続の手段ではありません。"
+    },
+    "domain": "technology",
+    "service": "Direct Connect",
+    "difficulty": 3,
+    "tags": [
+      "Direct Connect",
+      "中級"
+    ],
+    "beginnerNote": "安定・低遅延・専用線＝Direct Connect、手軽＝VPN。"
+  },
+  {
+    "id": "qm-tec-11",
+    "question": "複数のEC2に受信トラフィックを分散し、異常なインスタンスを自動で切り離してサービスを継続させたいです。最適なサービスはどれですか。",
+    "choices": [
+      "Amazon CloudFront",
+      "Amazon Route 53",
+      "Elastic Load Balancing",
+      "Amazon EC2 Auto Scaling"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "ELBはトラフィックを複数サーバーへ分散し、ヘルスチェックで異常なインスタンスを外して健全な先へ振り分けます。",
+    "wrongChoiceExplanations": {
+      "0": "CloudFrontはCDNで、バックエンドの振り分けが主目的ではありません。",
+      "1": "Route 53はDNSで、インスタンス単位の振り分け・切り離しとは異なります。",
+      "3": "Auto Scalingは台数の増減が役割で、トラフィックの振り分けそのものはELBが担います。"
+    },
+    "domain": "technology",
+    "service": "ELB",
+    "difficulty": 3,
+    "tags": [
+      "ELB",
+      "可用性",
+      "中級"
+    ],
+    "beginnerNote": "振り分け＝ELB、台数の増減＝Auto Scaling。"
+  },
+  {
+    "id": "qm-tec-12",
+    "question": "CPU使用率に応じてEC2の台数を自動で増減し、コストと性能を両立したいです。最適なサービスはどれですか。",
+    "choices": [
+      "Elastic Load Balancing",
+      "AWS Lambda",
+      "Amazon CloudWatch 単体",
+      "Amazon EC2 Auto Scaling"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Auto Scalingは負荷に応じてEC2を自動で増減し、混雑時は増やし・空いたら減らすことで性能とコストを両立します。",
+    "wrongChoiceExplanations": {
+      "0": "ELBは振り分けが役割で、台数の増減は行いません。",
+      "1": "Lambdaはサーバーレスで、EC2台数の制御とは別物です。",
+      "2": "CloudWatchは監視・トリガー元になり得ますが、増減の実行はAuto Scalingが担います。"
+    },
+    "domain": "technology",
+    "service": "Auto Scaling",
+    "difficulty": 3,
+    "tags": [
+      "Auto Scaling",
+      "スケーリング",
+      "中級"
+    ],
+    "beginnerNote": "台数を自動増減＝Auto Scaling。"
+  },
+  {
+    "id": "qm-bil-01",
+    "question": "AWSのデータ転送料金について、正しい説明はどれですか。",
+    "choices": [
+      "一般に、AWSから外部インターネットへ出る通信（アウト）が課金対象になりやすい",
+      "AWSへ入ってくる通信（イン）が最も高額になる",
+      "すべての通信が常に無料である",
+      "同一リージョン内の通信も必ず高額になる"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "インバウンド（AWSへ入る通信）は基本無料で、アウトバウンド（外部へ出る通信）が課金対象になりやすい、というのが基本の考え方です。",
+    "wrongChoiceExplanations": {
+      "1": "インバウンドはむしろ基本無料です。",
+      "2": "すべての通信が無料ということはありません。",
+      "3": "同一リージョン内などは条件により無料・低額のことも多く、必ず高額ではありません。"
+    },
+    "domain": "billing",
+    "service": "料金モデル",
+    "difficulty": 3,
+    "tags": [
+      "データ転送料金",
+      "料金モデル",
+      "中級"
+    ],
+    "beginnerNote": "「出ていくデータに課金」が基本の勘どころ。"
+  },
+  {
+    "id": "qm-bil-02",
+    "question": "AWSの無料利用枠（Free Tier）の説明として正しいものはどれですか。",
+    "choices": [
+      "利用には毎回申請が必要で、実質有料である",
+      "12か月間無料・常に無料・トライアルの3種類がある",
+      "すべてのサービスが永久に無料で使える",
+      "法人アカウントでは利用できない"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "無料利用枠には「12か月無料」「常に無料（Always Free）」「短期トライアル」の3種類があります。対象や上限を超えると課金されます。",
+    "wrongChoiceExplanations": {
+      "0": "毎回の申請は不要で、対象範囲内なら無料です。",
+      "2": "すべてが永久無料ではなく、対象・期間・上限があります。",
+      "3": "法人でも利用でき、対象外という制限はありません。"
+    },
+    "domain": "billing",
+    "service": "料金モデル",
+    "difficulty": 3,
+    "tags": [
+      "無料利用枠",
+      "中級"
+    ],
+    "beginnerNote": "無料枠は3種類（12か月/常時/トライアル）。超過に注意。"
+  },
+  {
+    "id": "qm-bil-03",
+    "question": "今後3年間、同じEC2を常時稼働させ続けることが確実です。最も高い割引率が期待できる購入方法はどれですか。",
+    "choices": [
+      "スポットインスタンス",
+      "その都度、手動で起動・停止する",
+      "リザーブドインスタンス（3年・全額前払い）",
+      "オンデマンド"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "長期・確実な利用ほど、コミットの度合いが高いリザーブド（3年・全額前払い）で最大級の割引が得られます。",
+    "wrongChoiceExplanations": {
+      "0": "スポットは安価ですが中断があり、常時稼働の確実な用途には不向きです。",
+      "1": "手動運用は割引とは無関係で、最適化になりません。",
+      "3": "オンデマンドは柔軟ですが割引がありません。"
+    },
+    "domain": "billing",
+    "service": "EC2料金",
+    "difficulty": 3,
+    "tags": [
+      "EC2料金",
+      "リザーブド",
+      "中級"
+    ],
+    "beginnerNote": "長期・確実＝リザーブド/Savings Plansで割引最大。"
+  },
+  {
+    "id": "qm-bil-04",
+    "question": "中断されても後で再実行できる分散バッチ処理を、できるだけ安く大量に回したいです。最適な購入方法はどれですか。",
+    "choices": [
+      "オンデマンド",
+      "リザーブドインスタンス",
+      "Dedicated Host",
+      "スポットインスタンス"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "中断を許容できる処理には、余剰キャパシティを大幅割引で使えるスポットが最適です。中断されても再実行できる用途に向きます。",
+    "wrongChoiceExplanations": {
+      "0": "オンデマンドは割引がなく、最安を狙う要件に合いません。",
+      "1": "リザーブドは常時利用向けで、中断可の一時的処理には過剰です。",
+      "2": "Dedicated Hostは物理占有の要件向けで、コスト最安の答えではありません。"
+    },
+    "domain": "billing",
+    "service": "EC2料金",
+    "difficulty": 3,
+    "tags": [
+      "EC2料金",
+      "スポット",
+      "中級"
+    ],
+    "beginnerNote": "中断OKで最安＝スポット。"
+  },
+  {
+    "id": "qm-bil-05",
+    "question": "「1時間あたり◯ドル使う」とコミットして、EC2やFargateなど幅広いコンピュート料金を柔軟に割引したいです。最適なのはどれですか。",
+    "choices": [
+      "Savings Plans",
+      "スタンダードなリザーブドインスタンス（構成固定）",
+      "オンデマンド",
+      "スポットインスタンス"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Savings Plansは一定の利用コミットで対象コンピュートを柔軟に割引できます。構成の縛りがリザーブドよりゆるいのが利点です。",
+    "wrongChoiceExplanations": {
+      "1": "構成固定のリザーブドは柔軟性で劣ります。",
+      "2": "オンデマンドは割引がありません。",
+      "3": "スポットは中断があり、コミット型の柔軟割引とは異なります。"
+    },
+    "domain": "billing",
+    "service": "Savings Plans",
+    "difficulty": 3,
+    "tags": [
+      "Savings Plans",
+      "EC2料金",
+      "中級"
+    ],
+    "beginnerNote": "柔軟に割引・コミット型＝Savings Plans。"
+  },
+  {
+    "id": "qm-bil-06",
+    "question": "本番環境の運用で、24時間365日の技術サポート（ケース対応）が必要です。最低限どのサポートプラン以上が必要ですか。",
+    "choices": [
+      "無料利用枠のみで対応可能",
+      "Business 以上",
+      "Basic",
+      "Developer"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "24時間365日の技術サポートやケース対応はBusiness以上で利用できます。Enterpriseはさらに最速対応や専任TAMが付きます。",
+    "wrongChoiceExplanations": {
+      "0": "無料利用枠はサポートプランとは別で、本番の技術サポートは提供しません。",
+      "2": "Basicは無料で、技術的なケース対応の24時間サポートは含みません。",
+      "3": "Developerは営業時間帯中心で、本番の24時間対応には不十分です。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 3,
+    "tags": [
+      "サポートプラン",
+      "中級"
+    ],
+    "beginnerNote": "本番24時間＝Business以上、専任TAM＝Enterprise。"
+  },
+  {
+    "id": "qm-bil-07",
+    "question": "顧客に専任のテクニカルアカウントマネージャー（TAM）が付き、伴走支援を受けられるのはどのサポートプランですか。",
+    "choices": [
+      "Developer",
+      "Basic",
+      "Enterprise",
+      "Business"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "専任のTAMが付くのは最上位のEnterpriseサポートです。最速の応答や手厚い支援も特長です。",
+    "wrongChoiceExplanations": {
+      "0": "Developerは開発時向けで、TAMは付きません。",
+      "1": "Basicは無料で、TAMや電話ケース対応はありません。",
+      "3": "Businessは手厚いですが、専任TAMは付きません。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 3,
+    "tags": [
+      "サポートプラン",
+      "TAM",
+      "中級"
+    ],
+    "beginnerNote": "専任TAM＝Enterpriseだけ。"
   }
 ]

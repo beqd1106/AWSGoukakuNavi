@@ -111,8 +111,10 @@ struct LessonDetailView: View {
     let lesson: Lesson
     @EnvironmentObject var store: StudyStore
     @State private var showQuiz = false
+    @State private var showChallenge = false
 
     private var isDone: Bool { store.isLessonCompleted(lesson.id) }
+    private var challengeIds: [String] { lesson.challengeQuizIds ?? [] }
 
     var body: some View {
         ZStack {
@@ -155,6 +157,9 @@ struct LessonDetailView: View {
                         }
                     }
 
+                    // 中級チャレンジ（腕試し）
+                    if !challengeIds.isEmpty { challengeCard }
+
                     // 履修済みマークの手動トグル
                     completionButton
                 }
@@ -168,6 +173,45 @@ struct LessonDetailView: View {
                            questions: lesson.quizIds.compactMap { ContentRepository.shared.question(id: $0) },
                            showLessonLink: false,
                            onComplete: { store.markLessonCompleted(lesson.id) })
+        }
+        .navigationDestination(isPresented: $showChallenge) {
+            QuizPlayerView(title: "中級チャレンジ・\(lesson.title)",
+                           questions: challengeIds.compactMap { ContentRepository.shared.question(id: $0) },
+                           showLessonLink: false)
+        }
+    }
+
+    // 中級チャレンジ（CLF-C02の範囲内で、シナリオ型の難問に挑戦）
+    private var challengeCard: some View {
+        Card {
+            VStack(alignment: .leading, spacing: Theme.Space.s) {
+                HStack(spacing: 6) {
+                    Image(systemName: "flame.fill").foregroundStyle(Theme.orange)
+                    Text("中級チャレンジ").font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.navy)
+                    Text("やや難")
+                        .font(.system(size: 10, weight: .bold)).foregroundStyle(Theme.orange)
+                        .padding(.horizontal, 6).padding(.vertical, 2)
+                        .background(Theme.orangeSoft).clipShape(Capsule())
+                    Spacer()
+                }
+                Text("基礎が身についたら腕試し。CLF-C02の範囲内で、状況判断が必要なシナリオ問題に挑戦します。")
+                    .font(.system(size: 13)).foregroundStyle(Theme.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                Button {
+                    showChallenge = true
+                } label: {
+                    HStack {
+                        Image(systemName: "bolt.fill")
+                        Text("挑戦する（\(challengeIds.count)問）").font(.system(size: 15, weight: .semibold))
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.system(size: 13))
+                    }
+                    .foregroundStyle(Theme.orange)
+                    .padding(.vertical, 12).padding(.horizontal, 14)
+                    .frame(maxWidth: .infinity)
+                    .background(RoundedRectangle(cornerRadius: 12).stroke(Theme.orange.opacity(0.5), lineWidth: 1.2))
+                }
+            }
         }
     }
 

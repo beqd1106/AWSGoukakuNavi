@@ -60,6 +60,9 @@ struct Lesson: Codable, Identifiable, Hashable {
     let summary: String
     let sections: [LessonSection]
     let quizIds: [String]
+    /// 中級チャレンジ（腕試し）。CLF-C02範囲内のシナリオ型の難問。無い場合は空。
+    /// 旧データでキーが無くてもデコードできるよう任意にする。
+    let challengeQuizIds: [String]?
 }
 
 struct LessonSection: Codable, Hashable {
