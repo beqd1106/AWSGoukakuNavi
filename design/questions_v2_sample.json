@@ -1,0 +1,1485 @@
+[
+  {
+    "id": "cc-basic-001",
+    "domain": "cloudConcepts",
+    "category": "クラウドの基礎",
+    "setName": "クラウド基礎セット",
+    "difficulty": "Beginner",
+    "questionType": "term",
+    "question": "クラウドコンピューティングの「従量課金（pay-as-you-go）」を最もよく表しているのはどれですか。",
+    "choices": [
+      "実際に使ったリソースの分だけ料金を支払う",
+      "無料で無制限に利用できる",
+      "サーバーを購入してから利用する",
+      "毎月固定額を必ず支払う"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "クラウドは電気や水道のように『使った分だけ』支払う従量課金が基本です。前もって大きな初期投資をせず、必要なときに必要な量だけ使えるのが最大のメリットです。",
+    "wrongChoiceExplanations": {
+      "1": "無料利用枠はありますが、基本は使った分だけ支払います。",
+      "2": "物理サーバーを購入する必要がない（資産を持たない）のがクラウドの利点です。",
+      "3": "固定額ではなく、使用量に応じて料金が変動するのが従量課金の特徴です。"
+    },
+    "examPoint": "『使った分だけ払う』はクラウドの価値提案を表す最重要キーワード。CAPEX→OPEXの転換とセットで問われる。",
+    "beginnerTip": "携帯の従量プランと同じイメージ。使わなければ安く、使えばその分だけ。",
+    "relatedServices": [
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer"
+    ],
+    "tags": [
+      "従量課金",
+      "クラウドの価値"
+    ],
+    "factCheckSource": "AWS『クラウドコンピューティングとは』/ CLF-C02 試験ガイド Domain 1",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-benefit-001",
+    "domain": "cloudConcepts",
+    "category": "クラウドのメリット",
+    "setName": "クラウドメリットセット",
+    "difficulty": "Basic",
+    "questionType": "single",
+    "question": "オンプレミスからAWSクラウドへ移行する利点として、最も適切なものはどれですか。",
+    "choices": [
+      "インターネット接続がなくても必ず利用できる",
+      "大規模な初期投資（設備購入）を避け、使った分だけ支払える",
+      "サーバーの物理的な盗難リスクが完全にゼロになる",
+      "アプリのバグが自動的に修正される"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "クラウドでは初期費用（CAPEX）を、使用量に応じた運用費（OPEX）に置き換えられます。これにより小さく始めて、必要に応じて拡張できます。",
+    "wrongChoiceExplanations": {
+      "0": "多くのAWSサービスの利用にはインターネット接続が前提です。",
+      "2": "物理セキュリティはAWSの責任で強化されますが『完全にゼロ』とは言い切れません。誇張表現に注意。",
+      "3": "アプリのバグ修正は利用者（顧客）の責任で、自動では直りません。"
+    },
+    "examPoint": "クラウドの6つのメリット（俊敏性・弾力性・規模の経済・初期投資不要・容量推測不要・数分で世界展開）は頻出。",
+    "beginnerTip": "『買う』から『借りる』へ。最初に大金を用意しなくてよいのが大きい。",
+    "relatedServices": [
+      "Amazon EC2",
+      "AWS Pricing Calculator"
+    ],
+    "tags": [
+      "クラウドのメリット",
+      "CAPEX",
+      "OPEX"
+    ],
+    "factCheckSource": "AWS『クラウドコンピューティングの6つの利点』",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-elastic-001",
+    "domain": "cloudConcepts",
+    "category": "弾力性・俊敏性",
+    "setName": "クラウドメリットセット",
+    "difficulty": "Standard",
+    "questionType": "usecase",
+    "question": "あるECサイトはセール時だけアクセスが10倍に増えます。AWSの『弾力性（elasticity）』を活かした対応として最も適切なものはどれですか。",
+    "choices": [
+      "1台の超高性能サーバーだけで運用する",
+      "セール中はサイトを停止して負荷を避ける",
+      "需要に応じてサーバー台数を自動で増減させる",
+      "常にピーク時に合わせた台数を固定で持ち続ける"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "弾力性とは、需要に合わせてリソースを自動的に増減できる性質です。混雑時は増やし、空いている時は減らすことで、性能とコストを両立できます（例：Auto Scaling）。",
+    "wrongChoiceExplanations": {
+      "0": "1台依存は単一障害点になり、可用性・拡張性の面で不適切です。",
+      "1": "サービス停止は機会損失になり、解決になりません。",
+      "3": "ピーク固定は普段使わない分まで払う無駄が生じ、弾力性の利点を活かせません。"
+    },
+    "examPoint": "『弾力性＝自動で増減』『スケーラビリティ＝増減できる能力』。Auto Scaling と結びつけて覚える。",
+    "beginnerTip": "お店の混み具合に合わせてレジ（サーバー）を開け閉めするイメージ。",
+    "relatedServices": [
+      "Amazon EC2 Auto Scaling",
+      "Elastic Load Balancing"
+    ],
+    "tags": [
+      "弾力性",
+      "スケーラビリティ",
+      "Auto Scaling"
+    ],
+    "factCheckSource": "AWS『Auto Scaling とは』/ Well-Architected 信頼性・パフォーマンス",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-war-001",
+    "domain": "cloudConcepts",
+    "category": "Well-Architected",
+    "setName": "Well-Architectedセット",
+    "difficulty": "Basic",
+    "questionType": "multiple",
+    "question": "AWS Well-Architected フレームワークの『柱』に含まれるものを2つ選んでください。",
+    "choices": [
+      "人事評価",
+      "マーケティング戦略",
+      "セキュリティ",
+      "コスト最適化"
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ],
+    "explanation": "Well-Architected は6つの柱（運用上の優秀性・セキュリティ・信頼性・パフォーマンス効率・コスト最適化・持続可能性）で良い設計を評価します。セキュリティとコスト最適化はその一部です。",
+    "wrongChoiceExplanations": {
+      "0": "人事評価は Well-Architected の対象外です。",
+      "1": "マーケティング戦略は技術設計の柱ではありません。"
+    },
+    "examPoint": "6本の柱の名称は丸暗記推奨。2023年以降『持続可能性（Sustainability）』が含まれる点に注意。",
+    "beginnerTip": "『運用・セキュリティ・信頼性・性能・コスト・持続可能性』の6つ。頭文字でリズムよく覚える。",
+    "relatedServices": [
+      "AWS Well-Architected Tool"
+    ],
+    "tags": [
+      "Well-Architected",
+      "6つの柱"
+    ],
+    "factCheckSource": "AWS Well-Architected Framework 公式（6 pillars）",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-caf-001",
+    "domain": "cloudConcepts",
+    "category": "AWS CAF",
+    "setName": "CAFセット",
+    "difficulty": "Standard",
+    "questionType": "single",
+    "question": "AWS Cloud Adoption Framework（CAF）の説明として最も適切なものはどれですか。",
+    "choices": [
+      "通信を暗号化するためのプロトコル",
+      "データベースを自動でバックアップする機能",
+      "EC2インスタンスの料金を計算するツール",
+      "組織がクラウド移行を計画・実行するための観点（パースペクティブ）を示す指針"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "CAFは、クラウド導入を成功させるために組織が押さえるべき観点（ビジネス・人材・ガバナンス・プラットフォーム・セキュリティ・オペレーションの6パースペクティブ）を整理した指針です。",
+    "wrongChoiceExplanations": {
+      "0": "暗号化プロトコル（TLS等）とは無関係です。",
+      "1": "自動バックアップは RDS などサービス側の機能です。",
+      "2": "料金計算は AWS Pricing Calculator の役割です。"
+    },
+    "examPoint": "CAFは『技術』だけでなく『人・組織・ガバナンス』も含む点がポイント。6パースペクティブの名称が問われる。",
+    "beginnerTip": "クラウド移行の“チェックリスト集”のようなもの。道具ではなく考え方の枠組み。",
+    "relatedServices": [],
+    "tags": [
+      "CAF",
+      "クラウド移行"
+    ],
+    "factCheckSource": "AWS Cloud Adoption Framework 公式（6 perspectives）",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-scale-001",
+    "domain": "cloudConcepts",
+    "category": "拡張の考え方",
+    "setName": "クラウド基礎セット",
+    "difficulty": "Standard",
+    "questionType": "comparison",
+    "question": "『スケールアウト』の説明として正しいものはどれですか。",
+    "choices": [
+      "サーバーの台数を増やして処理能力を上げる",
+      "1台のサーバーのCPUやメモリを増強する",
+      "サーバーを停止してコストを下げる",
+      "データを暗号化して保護する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "スケールアウトは台数を増やす水平拡張、スケールアップは1台の性能を上げる垂直拡張です。クラウドでは台数を柔軟に増減できるスケールアウトが基本戦略になります。",
+    "wrongChoiceExplanations": {
+      "1": "それはスケールアップ（垂直拡張）の説明です。",
+      "2": "停止はコスト削減ですが、拡張の話ではありません。",
+      "3": "暗号化はセキュリティの話で、拡張とは別概念です。"
+    },
+    "examPoint": "スケールアウト＝水平（台数）／スケールアップ＝垂直（性能）。混同しやすい定番比較。",
+    "beginnerTip": "レジを増やす＝スケールアウト、1台を高性能にする＝スケールアップ。",
+    "relatedServices": [
+      "Amazon EC2 Auto Scaling",
+      "Elastic Load Balancing"
+    ],
+    "tags": [
+      "スケールアウト",
+      "スケールアップ"
+    ],
+    "factCheckSource": "AWS『スケーリングの種類』/ Well-Architected パフォーマンス効率",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-ha-001",
+    "domain": "cloudConcepts",
+    "category": "高可用性",
+    "setName": "Well-Architectedセット",
+    "difficulty": "Standard",
+    "questionType": "usecase",
+    "question": "システムの可用性を高めるための考え方として最も適切なものはどれですか。",
+    "choices": [
+      "監視をやめて通知を減らす",
+      "複数のアベイラビリティーゾーンに冗長化して単一障害点を避ける",
+      "すべてを1台のサーバーに集約する",
+      "バックアップを一切取らない"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "可用性を高める基本は『単一障害点（SPOF）をなくす』こと。複数のアベイラビリティーゾーン（AZ）にまたがって冗長化すれば、片方が障害でも稼働を続けられます。",
+    "wrongChoiceExplanations": {
+      "0": "監視停止は障害の早期発見を妨げます。",
+      "2": "1台集約は単一障害点そのもので、可用性を下げます。",
+      "3": "バックアップ無しは復旧不能リスクを高めます。"
+    },
+    "examPoint": "『複数AZ＝高可用性』は鉄板。リージョン内の独立したAZに分散する設計が問われる。",
+    "beginnerTip": "大事な荷物を2つのカバンに分けて持つイメージ。片方を落としても大丈夫。",
+    "relatedServices": [
+      "Elastic Load Balancing",
+      "Amazon RDS（マルチAZ）"
+    ],
+    "tags": [
+      "可用性",
+      "冗長化",
+      "アベイラビリティーゾーン"
+    ],
+    "factCheckSource": "AWS『リージョンとアベイラビリティーゾーン』/ Well-Architected 信頼性",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-capex-001",
+    "domain": "cloudConcepts",
+    "category": "オンプレとの比較",
+    "setName": "クラウドメリットセット",
+    "difficulty": "Standard",
+    "questionType": "comparison",
+    "question": "オンプレミスとクラウドの費用構造の違いとして正しいものはどれですか。",
+    "choices": [
+      "オンプレもクラウドも費用構造は同じ",
+      "オンプレは使った分だけ支払う従量課金が基本",
+      "オンプレは初期に大きな設備投資（CAPEX）、クラウドは使った分の運用費（OPEX）が中心",
+      "クラウドは必ずオンプレより総額が高い"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "オンプレは機器を先に購入する設備投資（CAPEX）型、クラウドは使った分を払う運用費（OPEX）型です。需要が読みにくい場合ほどクラウドの方が無駄を抑えやすくなります。",
+    "wrongChoiceExplanations": {
+      "0": "費用構造は大きく異なります（CAPEX中心 vs OPEX中心）。",
+      "1": "従量課金はクラウドの特徴で、オンプレの一般的な姿ではありません。",
+      "3": "使い方次第で総額は変わり、必ず高いとは限りません。"
+    },
+    "examPoint": "CAPEX→OPEXの転換はクラウドの価値説明の定番。TCO（総所有コスト）比較とセットで問われる。",
+    "beginnerTip": "家を買う（オンプレ）か、必要な期間だけ借りる（クラウド）かの違い。",
+    "relatedServices": [
+      "AWS Pricing Calculator"
+    ],
+    "tags": [
+      "CAPEX",
+      "OPEX",
+      "TCO"
+    ],
+    "factCheckSource": "AWS『クラウドの経済性 / TCO』",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-global-001",
+    "domain": "cloudConcepts",
+    "category": "グローバルインフラ",
+    "setName": "クラウド基礎セット",
+    "difficulty": "Basic",
+    "questionType": "term",
+    "question": "AWSの『リージョン』の説明として最も適切なものはどれですか。",
+    "choices": [
+      "課金を管理する画面のこと",
+      "アクセスを振り分けるロードバランサーのこと",
+      "1台の物理サーバーのこと",
+      "世界各地にある、データセンター群が集まった地理的な地域"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "リージョンはAWSのデータセンターが集まった地理的な地域（例：東京、大阪、バージニア北部）です。各リージョンは複数のアベイラビリティーゾーン（AZ）で構成されます。",
+    "wrongChoiceExplanations": {
+      "0": "課金管理は Billing コンソールの役割です。",
+      "1": "振り分けは Elastic Load Balancing の役割です。",
+      "2": "1台のサーバーは『インスタンス』など別の概念です。"
+    },
+    "examPoint": "リージョン→AZ→エッジロケーションの階層を整理。データの保存場所（リージョン選択）はコンプライアンス観点でも頻出。",
+    "beginnerTip": "リージョン＝『国・地域』、AZ＝その中の『建物（データセンター群）』。",
+    "relatedServices": [
+      "Amazon CloudFront"
+    ],
+    "tags": [
+      "リージョン",
+      "アベイラビリティーゾーン",
+      "グローバルインフラ"
+    ],
+    "factCheckSource": "AWS『グローバルインフラストラクチャ』公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "cc-review-001",
+    "domain": "cloudConcepts",
+    "category": "総復習",
+    "setName": "概念 総復習セット",
+    "difficulty": "Exam-like",
+    "questionType": "single",
+    "question": "ある企業が『容量を事前に推測せず、需要に応じて柔軟にリソースを使いたい』と考えています。これはクラウドのどの利点に最も当てはまりますか。",
+    "choices": [
+      "キャパシティの推測が不要になる",
+      "物理的な鍵の管理が不要になる",
+      "社員教育が不要になる",
+      "ソースコードが自動生成される"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "クラウドでは必要なときに必要な量を確保できるため、ピークを見越した過剰な容量確保（または不足）の心配が減ります。これは『キャパシティ推測が不要』という利点に該当します。",
+    "wrongChoiceExplanations": {
+      "1": "物理鍵管理はデータセンターの話で、本設問の主旨と異なります。",
+      "2": "社員教育はむしろ必要で、不要にはなりません。",
+      "3": "コード自動生成はクラウドの一般的利点ではありません。"
+    },
+    "examPoint": "6つの利点のうち『容量推測が不要』『俊敏性』は文章の言い換えで問われやすい。キーフレーズで判定する。",
+    "beginnerTip": "『どれくらい用意すればいい？』と悩まなくて済むのがクラウドの強み。",
+    "relatedServices": [
+      "Amazon EC2 Auto Scaling"
+    ],
+    "tags": [
+      "クラウドのメリット",
+      "キャパシティ"
+    ],
+    "factCheckSource": "AWS『クラウドの6つの利点』",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-shared-001",
+    "domain": "security",
+    "category": "責任共有モデル",
+    "setName": "責任共有モデルセット",
+    "difficulty": "Beginner",
+    "questionType": "shared-responsibility",
+    "question": "AWSの責任共有モデルで、『クラウド本体（of the cloud）のセキュリティ』を担当するのは誰ですか。",
+    "choices": [
+      "エンドユーザー個人",
+      "AWS",
+      "利用者（顧客）",
+      "インターネットプロバイダー"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "責任共有モデルでは、AWSが『クラウドのセキュリティ（of the cloud）』＝物理データセンター・ハードウェア・基盤ソフトを担当し、利用者は『クラウド内のセキュリティ（in the cloud）』＝データやアクセス設定を担当します。",
+    "wrongChoiceExplanations": {
+      "0": "エンドユーザー個人は契約上の責任主体ではありません。",
+      "2": "利用者は『中身（in the cloud）』を担当します。基盤側ではありません。",
+      "3": "ISPは責任共有モデルの当事者ではありません。"
+    },
+    "examPoint": "『of the cloud＝AWS』『in the cloud＝顧客』。この対比が責任共有モデル問題の核。",
+    "beginnerTip": "AWSは“建物と土台”、利用者は“部屋の中の持ち物と鍵”を守る。",
+    "relatedServices": [
+      "AWS IAM"
+    ],
+    "tags": [
+      "責任共有モデル"
+    ],
+    "factCheckSource": "AWS Shared Responsibility Model 公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-shared-002",
+    "domain": "security",
+    "category": "責任共有モデル",
+    "setName": "責任共有モデルセット",
+    "difficulty": "Standard",
+    "questionType": "shared-responsibility",
+    "question": "次のうち、責任共有モデルで『利用者（顧客）の責任』に当たるものはどれですか。",
+    "choices": [
+      "データセンターの物理的な入退室管理",
+      "AWSグローバルネットワークの保守",
+      "EC2インスタンスのゲストOSへのパッチ適用とアプリの設定",
+      "サーバーハードウェアの故障交換"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "EC2（IaaS）では、ゲストOSのアップデート、アプリの設定、データ保護、アクセス権の管理は利用者の責任です。物理基盤やハードウェアはAWSの責任です。",
+    "wrongChoiceExplanations": {
+      "0": "物理セキュリティはAWSの責任です。",
+      "1": "基盤ネットワークの保守はAWSの責任です。",
+      "3": "ハードウェア交換はAWSの責任です。"
+    },
+    "examPoint": "サービス種別（IaaS/PaaS/SaaS）で責任範囲が変わる。EC2は利用者責任が広く、Lambda等マネージドほどAWS責任が増える。",
+    "beginnerTip": "『自分で入れたOS・アプリ・データ』は自分の責任、と覚える。",
+    "relatedServices": [
+      "Amazon EC2",
+      "AWS Lambda"
+    ],
+    "tags": [
+      "責任共有モデル",
+      "EC2"
+    ],
+    "factCheckSource": "AWS Shared Responsibility Model 公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-iam-001",
+    "domain": "security",
+    "category": "IAM",
+    "setName": "IAM基礎セット",
+    "difficulty": "Basic",
+    "questionType": "single",
+    "question": "AWS IAMの『最小権限の原則』に従った運用として最も適切なものはどれですか。",
+    "choices": [
+      "全員にAdministratorAccess（管理者権限）を付与する",
+      "パスワードを全員で共有する",
+      "ルートユーザーで日常作業を行う",
+      "業務に必要な権限だけを付与する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "最小権限の原則とは、各ユーザー・サービスに『業務に必要な最小限の権限だけ』を与える考え方です。万一漏えいしても被害範囲を抑えられます。",
+    "wrongChoiceExplanations": {
+      "0": "全員に管理者権限は過剰で、重大なリスクになります。",
+      "1": "パスワード共有は監査不能・漏えいリスクが高く禁止すべきです。",
+      "2": "ルートユーザーでの日常作業は非推奨。普段はIAMユーザー/ロールを使います。"
+    },
+    "examPoint": "『最小権限』『ルートユーザーは日常使用しない』『MFA有効化』はIAMの定番ベストプラクティス。",
+    "beginnerTip": "鍵は“必要な部屋の分だけ”渡す。全部屋のマスターキーを配らない。",
+    "relatedServices": [
+      "AWS IAM",
+      "AWS IAM Identity Center"
+    ],
+    "tags": [
+      "IAM",
+      "最小権限"
+    ],
+    "factCheckSource": "AWS IAM ベストプラクティス公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-iam-002",
+    "domain": "security",
+    "category": "IAM",
+    "setName": "IAM基礎セット",
+    "difficulty": "Standard",
+    "questionType": "comparison",
+    "question": "IAM『ロール』の使いどころとして最も適切なものはどれですか。",
+    "choices": [
+      "EC2上のアプリに一時的な権限を安全に渡す",
+      "全ユーザーのパスワードを保存する",
+      "請求書を発行する",
+      "長期のアクセスキーをソースコードに直接書き込む"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "IAMロールは、一時的な認証情報を付与する仕組みです。EC2やLambdaにロールを割り当てれば、アクセスキーをコードに埋め込まずに安全に権限を渡せます。",
+    "wrongChoiceExplanations": {
+      "1": "パスワード保存はロールの役割ではありません。",
+      "2": "請求書発行はIAMの機能ではありません。",
+      "3": "アクセスキーのコード直書きは漏えいの典型例で、ロールで避けるべき対象です。"
+    },
+    "examPoint": "『ユーザー＝人に紐づく長期権限』『ロール＝一時的に引き受ける権限』。EC2/Lambdaにはロールを使う。",
+    "beginnerTip": "ロールは“その場で借りる名札”。用が済めば失効するので安全。",
+    "relatedServices": [
+      "AWS IAM",
+      "Amazon EC2",
+      "AWS Lambda"
+    ],
+    "tags": [
+      "IAM",
+      "ロール"
+    ],
+    "factCheckSource": "AWS IAM ロール公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-mfa-001",
+    "domain": "security",
+    "category": "認証",
+    "setName": "IAM基礎セット",
+    "difficulty": "Beginner",
+    "questionType": "term",
+    "question": "MFA（多要素認証）を有効にすると得られる効果として最も適切なものはどれですか。",
+    "choices": [
+      "サーバーの性能が上がる",
+      "パスワードが漏れても、追加の確認がないとログインできない",
+      "通信が自動的に暗号化される",
+      "料金が割引される"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "MFAはパスワード（知識）に加え、スマホのコードなど『2つ目の要素』を要求します。パスワードが漏れても、もう一つの要素がないとログインできず、不正アクセスを大きく減らせます。",
+    "wrongChoiceExplanations": {
+      "0": "サーバー性能とは無関係です。",
+      "2": "通信暗号化はTLSなど別の仕組みの役割です。",
+      "3": "MFAに料金割引効果はありません。"
+    },
+    "examPoint": "特に『ルートユーザーにMFAを設定する』はベストプラクティスとして頻出。",
+    "beginnerTip": "銀行アプリのワンタイムコードと同じ。パスワード＋もう一段の確認。",
+    "relatedServices": [
+      "AWS IAM"
+    ],
+    "tags": [
+      "MFA",
+      "多要素認証",
+      "IAM"
+    ],
+    "factCheckSource": "AWS IAM『MFAの使用』公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-svc-001",
+    "domain": "security",
+    "category": "セキュリティサービス",
+    "setName": "セキュリティサービスセット",
+    "difficulty": "Standard",
+    "questionType": "service-select",
+    "question": "保存データを暗号化するための『暗号鍵』を作成・管理するAWSサービスはどれですか。",
+    "choices": [
+      "Amazon CloudFront",
+      "AWS Budgets",
+      "AWS KMS（Key Management Service）",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "AWS KMSは暗号鍵を安全に作成・管理し、S3やEBSなど多くのサービスの暗号化に利用されます。鍵の一元管理とアクセス制御ができます。",
+    "wrongChoiceExplanations": {
+      "0": "CloudFrontはコンテンツ配信（CDN）です。",
+      "1": "Budgetsは予算アラートのサービスで暗号化とは無関係です。",
+      "3": "Route 53はDNS（ドメイン名解決）です。"
+    },
+    "examPoint": "暗号化＝KMS、脅威検知＝GuardDuty、DDoS防御＝Shield、Webアプリ防御＝WAF。役割の対応を整理。",
+    "beginnerTip": "KMSは“鍵の金庫番”。データそのものではなく鍵を守るサービス。",
+    "relatedServices": [
+      "AWS KMS",
+      "Amazon S3",
+      "Amazon EBS"
+    ],
+    "tags": [
+      "暗号化",
+      "KMS"
+    ],
+    "factCheckSource": "AWS KMS 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-svc-002",
+    "domain": "security",
+    "category": "セキュリティサービス",
+    "setName": "セキュリティサービスセット",
+    "difficulty": "Standard",
+    "questionType": "service-select",
+    "question": "Webアプリへの不正なリクエスト（SQLインジェクション等）をフィルタリングして防ぐサービスはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon RDS",
+      "AWS Cost Explorer",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "AWS WAF（Web Application Firewall）は、Webアプリへの不正なリクエストをルールで検査・遮断します。CloudFrontやALBと組み合わせて使います。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージで、攻撃防御の機能はありません。",
+      "1": "RDSはデータベースサービスです。",
+      "2": "Cost Explorerはコスト分析ツールです。"
+    },
+    "examPoint": "WAF＝Webアプリ層の防御、Shield＝DDoS防御。両者の守備範囲の違いが問われる。",
+    "beginnerTip": "WAFは“怪しいアクセスを入口で止める門番”。",
+    "relatedServices": [
+      "AWS WAF",
+      "AWS Shield",
+      "Amazon CloudFront"
+    ],
+    "tags": [
+      "WAF",
+      "セキュリティ"
+    ],
+    "factCheckSource": "AWS WAF 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-comp-001",
+    "domain": "security",
+    "category": "コンプライアンス",
+    "setName": "コンプライアンスセット",
+    "difficulty": "Standard",
+    "questionType": "service-select",
+    "question": "AWSの第三者監査レポート（ISO、SOCなど）をオンデマンドで入手できるサービスはどれですか。",
+    "choices": [
+      "AWS Artifact",
+      "Amazon EC2",
+      "Amazon CloudWatch",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "AWS Artifactは、AWSのコンプライアンスレポートや契約書類をセルフサービスで入手できるポータルです。監査対応の資料収集に使います。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は仮想サーバーで監査資料の配布機能はありません。",
+      "2": "CloudWatchは監視サービスで、コンプライアンス文書の配布は行いません。",
+      "3": "Lambdaはサーバーレス実行サービスです。"
+    },
+    "examPoint": "『監査レポート入手＝Artifact』。コンプライアンスは“AWSの責任範囲の証明書を取る場所”として覚える。",
+    "beginnerTip": "Artifactは“監査書類のダウンロードセンター”。",
+    "relatedServices": [
+      "AWS Artifact"
+    ],
+    "tags": [
+      "コンプライアンス",
+      "監査"
+    ],
+    "factCheckSource": "AWS Artifact 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-root-001",
+    "domain": "security",
+    "category": "アカウント保護",
+    "setName": "責任共有モデルセット",
+    "difficulty": "Basic",
+    "questionType": "usecase",
+    "question": "新しくAWSアカウントを作成しました。ルートユーザーの保護として最も適切な対応はどれですか。",
+    "choices": [
+      "ルートユーザーで毎日すべての作業を行う",
+      "ルートユーザーにMFAを設定し、日常作業はIAMユーザー/ロールで行う",
+      "ルートユーザーの認証情報をチーム全員で共有する",
+      "ルートユーザーのパスワードをメモに貼って共有する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ルートユーザーは最も強力な権限を持つため、MFAを必ず設定し、日常作業には使わず、権限を絞ったIAMユーザー/ロールを使うのが鉄則です。",
+    "wrongChoiceExplanations": {
+      "0": "日常作業でのルートユーザー使用は非推奨です。",
+      "2": "認証情報の共有は重大なリスクで禁止すべきです。",
+      "3": "パスワードの掲示・共有は論外です。"
+    },
+    "examPoint": "『ルートユーザーにMFA』『日常はIAM』『ルートのアクセスキーは作らない/削除』が定番の出題。",
+    "beginnerTip": "ルートユーザーは“社長の鍵”。普段はしまっておき、担当者用の鍵を配る。",
+    "relatedServices": [
+      "AWS IAM"
+    ],
+    "tags": [
+      "ルートユーザー",
+      "MFA",
+      "IAM"
+    ],
+    "factCheckSource": "AWS『ルートユーザーのベストプラクティス』",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "sec-review-001",
+    "domain": "security",
+    "category": "総復習",
+    "setName": "セキュリティ 総復習セット",
+    "difficulty": "Exam-like",
+    "questionType": "multiple",
+    "question": "AWSアカウントのセキュリティを高めるベストプラクティスとして適切なものを2つ選んでください。",
+    "choices": [
+      "ルートユーザーにMFAを有効化する",
+      "アクセスキーをソースコードに直接書き込んで共有する",
+      "全ユーザーに管理者権限を一律付与する",
+      "IAMで最小権限のポリシーを付与する"
+    ],
+    "correctAnswers": [
+      0,
+      3
+    ],
+    "explanation": "『ルートユーザーにMFA』『最小権限の付与』はいずれもIAMの基本ベストプラクティスです。アクセスキーの直書きや全員管理者は重大なリスクで避けるべきです。",
+    "wrongChoiceExplanations": {
+      "1": "アクセスキーのコード直書き・共有は漏えいの典型例で禁止すべきです。ロールを使います。",
+      "2": "全員に管理者権限は最小権限の原則に反し、被害範囲を広げます。"
+    },
+    "examPoint": "セキュリティ系の複数選択は『良い習慣 vs 悪い習慣』の判別。MFA・最小権限・ロール活用が正解側の常連。",
+    "beginnerTip": "“鍵は最小限・本人確認は二重に・秘密はコードに書かない”が合言葉。",
+    "relatedServices": [
+      "AWS IAM"
+    ],
+    "tags": [
+      "IAM",
+      "MFA",
+      "最小権限",
+      "ベストプラクティス"
+    ],
+    "factCheckSource": "AWS IAM ベストプラクティス公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-compute-001",
+    "domain": "technology",
+    "category": "コンピューティング",
+    "setName": "コンピューティングセット",
+    "difficulty": "Basic",
+    "questionType": "service-select",
+    "question": "OSやアプリを自由に構成できる『仮想サーバー』を提供するAWSサービスはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon Route 53",
+      "Amazon EC2",
+      "AWS Budgets"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Amazon EC2は、必要なときに借りられる仮想サーバーです。OSやアプリを自由に入れて構成でき、台数も柔軟に増減できます。",
+    "wrongChoiceExplanations": {
+      "0": "S3はファイルを保存するオブジェクトストレージです。",
+      "1": "Route 53はDNS（ドメイン名解決）サービスです。",
+      "3": "Budgetsは予算アラートのサービスです。"
+    },
+    "examPoint": "EC2＝仮想サーバー（IaaS）。購入オプション（On-Demand/Reserved/Spot）とセットで頻出。",
+    "beginnerTip": "EC2は“ネット越しに借りるパソコン（サーバー）”。",
+    "relatedServices": [
+      "Amazon EC2",
+      "AWS Lambda"
+    ],
+    "tags": [
+      "EC2",
+      "コンピューティング"
+    ],
+    "factCheckSource": "Amazon EC2 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-storage-001",
+    "domain": "technology",
+    "category": "ストレージ",
+    "setName": "ストレージセット",
+    "difficulty": "Basic",
+    "questionType": "service-select",
+    "question": "画像・動画・バックアップなどのファイルを大量に保存する用途に最も適したサービスはどれですか。",
+    "choices": [
+      "Amazon EC2",
+      "Amazon RDS",
+      "AWS IAM",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Amazon S3はオブジェクトストレージで、画像・動画・バックアップ・ログなどのファイル保存に向いています。容量はほぼ無制限で、高い耐久性を持ちます。",
+    "wrongChoiceExplanations": {
+      "0": "EC2は仮想サーバーで、ファイル保存専用ではありません。",
+      "1": "RDSはリレーショナルデータベースで、表形式データ向けです。",
+      "2": "IAMはアクセス管理で、保存用途ではありません。"
+    },
+    "examPoint": "S3＝オブジェクトストレージ。耐久性（イレブンナイン）やストレージクラス（標準/IA/Glacier）の比較が出る。",
+    "beginnerTip": "S3は“ネット上の超大容量の倉庫”。",
+    "relatedServices": [
+      "Amazon S3",
+      "Amazon S3 Glacier"
+    ],
+    "tags": [
+      "S3",
+      "ストレージ"
+    ],
+    "factCheckSource": "Amazon S3 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-db-001",
+    "domain": "technology",
+    "category": "データベース",
+    "setName": "データベースセット",
+    "difficulty": "Standard",
+    "questionType": "comparison",
+    "question": "『フルマネージドなリレーショナルデータベース』を提供するサービスはどれですか。",
+    "choices": [
+      "Amazon RDS",
+      "Amazon CloudFront",
+      "Amazon EC2",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Amazon RDSは、MySQLやPostgreSQLなどのリレーショナルDBをAWSが管理してくれるサービスです。バックアップ・パッチ・障害対応の手間を減らせます。NoSQLが必要ならDynamoDBを使います。",
+    "wrongChoiceExplanations": {
+      "1": "CloudFrontはCDNです。",
+      "2": "EC2は仮想サーバーで、DB運用は自前管理になります。",
+      "3": "S3はファイル保存用で、リレーショナルDBではありません。"
+    },
+    "examPoint": "RDS＝リレーショナル（表）、DynamoDB＝NoSQL（キー・バリュー）。用途による使い分けが頻出。",
+    "beginnerTip": "RDSは“管理をお任せできる表形式データベース”。",
+    "relatedServices": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon Aurora"
+    ],
+    "tags": [
+      "RDS",
+      "データベース"
+    ],
+    "factCheckSource": "Amazon RDS 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-serverless-001",
+    "domain": "technology",
+    "category": "サーバーレス",
+    "setName": "コンピューティングセット",
+    "difficulty": "Standard",
+    "questionType": "usecase",
+    "question": "サーバーの管理をせず、コードを実行した分だけ課金される仕組みを使いたい場合に適したサービスはどれですか。",
+    "choices": [
+      "AWS Artifact",
+      "AWS Lambda",
+      "Amazon VPC",
+      "Amazon EC2"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AWS Lambdaはサーバーレスのコンピューティングで、サーバーの用意・管理が不要です。コードが実行された分だけ課金され、アイドル時の費用がかかりません。",
+    "wrongChoiceExplanations": {
+      "0": "Artifactはコンプライアンス文書のポータルです。",
+      "2": "VPCはネットワークサービスです。",
+      "3": "EC2はサーバー管理が必要で、起動中は課金されます。"
+    },
+    "examPoint": "『サーバー管理不要＝サーバーレス＝Lambda』。実行回数・時間での課金モデルが特徴。",
+    "beginnerTip": "Lambdaは“使うときだけ動く自販機”。待機中はお金がかからない。",
+    "relatedServices": [
+      "AWS Lambda",
+      "Amazon API Gateway"
+    ],
+    "tags": [
+      "Lambda",
+      "サーバーレス"
+    ],
+    "factCheckSource": "AWS Lambda 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-network-001",
+    "domain": "technology",
+    "category": "ネットワーク",
+    "setName": "ネットワークセット",
+    "difficulty": "Beginner",
+    "questionType": "term",
+    "question": "AWS上に作る『自分専用の仮想ネットワーク』を指すサービスはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "AWS Lambda",
+      "Amazon VPC",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Amazon VPC（Virtual Private Cloud）は、AWS上に論理的に分離された自分専用のネットワークを作る仕組みです。サブネットやルーティングを設定して安全に区切れます。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージです。",
+      "1": "Lambdaはサーバーレス実行サービスです。",
+      "3": "RDSはデータベースです。"
+    },
+    "examPoint": "VPC＝専用の仮想ネットワーク。サブネット・セキュリティグループなど周辺用語と一緒に問われる。",
+    "beginnerTip": "VPCは“AWSの中に区切った自分専用の部屋（ネットワーク）”。",
+    "relatedServices": [
+      "Amazon VPC",
+      "Elastic Load Balancing"
+    ],
+    "tags": [
+      "VPC",
+      "ネットワーク"
+    ],
+    "factCheckSource": "Amazon VPC 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-cdn-001",
+    "domain": "technology",
+    "category": "ネットワーク・配信",
+    "setName": "ネットワークセット",
+    "difficulty": "Standard",
+    "questionType": "service-select",
+    "question": "世界中のユーザーに画像や動画を低遅延で配信したい場合に使うAWSのCDNサービスはどれですか。",
+    "choices": [
+      "AWS IAM",
+      "AWS Budgets",
+      "Amazon RDS",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Amazon CloudFrontはCDNで、世界中のエッジロケーションからコンテンツをキャッシュ配信し、表示を高速化します。配信元の負荷も軽減できます。",
+    "wrongChoiceExplanations": {
+      "0": "IAMはアクセス管理です。",
+      "1": "Budgetsは予算アラートです。",
+      "2": "RDSはデータベースです。"
+    },
+    "examPoint": "CloudFront＝CDN（エッジ配信）、Route 53＝DNS。混同しやすいので役割で区別。",
+    "beginnerTip": "CloudFrontは“近くの配送拠点から届ける宅配”。だから速い。",
+    "relatedServices": [
+      "Amazon CloudFront",
+      "Amazon S3"
+    ],
+    "tags": [
+      "CloudFront",
+      "CDN"
+    ],
+    "factCheckSource": "Amazon CloudFront 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-dns-001",
+    "domain": "technology",
+    "category": "ネットワーク",
+    "setName": "ネットワークセット",
+    "difficulty": "Basic",
+    "questionType": "term",
+    "question": "ドメイン名（例：example.com）をIPアドレスに変換するAWSのDNSサービスはどれですか。",
+    "choices": [
+      "Amazon Route 53",
+      "Amazon S3",
+      "AWS Lambda",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Amazon Route 53は、ドメイン名をIPアドレスに変換するDNSサービスです。ドメイン登録やヘルスチェックによるルーティングもできます。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージです。",
+      "2": "Lambdaはサーバーレス実行です。",
+      "3": "CloudFrontはコンテンツ配信（CDN）です。"
+    },
+    "examPoint": "Route 53＝DNS。名前解決＋ルーティングポリシーが特徴。CloudFrontとの役割の違いを押さえる。",
+    "beginnerTip": "Route 53は“住所（ドメイン）を実際の場所（IP）に案内する電話帳”。",
+    "relatedServices": [
+      "Amazon Route 53"
+    ],
+    "tags": [
+      "Route 53",
+      "DNS"
+    ],
+    "factCheckSource": "Amazon Route 53 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-monitor-001",
+    "domain": "technology",
+    "category": "監視・運用",
+    "setName": "監視・運用セット",
+    "difficulty": "Standard",
+    "questionType": "comparison",
+    "question": "『リソースのメトリクス（CPU使用率など）やログを監視・通知する』サービスはどれですか。",
+    "choices": [
+      "AWS WAF",
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Amazon CloudWatchはメトリクス・ログを収集して監視し、しきい値超過でアラートを出せます。一方、CloudTrailは『誰がいつ何を操作したか』のAPI履歴を記録する監査用です。",
+    "wrongChoiceExplanations": {
+      "0": "WAFはWebアプリ防御です。",
+      "2": "CloudTrailは操作履歴（監査ログ）の記録で、リソース監視とは目的が異なります。",
+      "3": "S3はストレージです。"
+    },
+    "examPoint": "CloudWatch＝性能・ログ監視、CloudTrail＝API操作の監査。『監視 vs 監査』の対比が頻出。",
+    "beginnerTip": "CloudWatch＝“体温計・モニター”、CloudTrail＝“防犯カメラの録画”。",
+    "relatedServices": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "tags": [
+      "CloudWatch",
+      "CloudTrail",
+      "監視"
+    ],
+    "factCheckSource": "Amazon CloudWatch / AWS CloudTrail 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-scaling-001",
+    "domain": "technology",
+    "category": "可用性・拡張",
+    "setName": "コンピューティングセット",
+    "difficulty": "Exam-like",
+    "questionType": "usecase",
+    "question": "Webアプリへのアクセスを複数のEC2に振り分けつつ、混雑時に台数を自動で増やしたい。組み合わせとして最も適切なものはどれですか。",
+    "choices": [
+      "Amazon S3 と AWS Artifact",
+      "Amazon Route 53 と AWS Budgets",
+      "Elastic Load Balancing と EC2 Auto Scaling",
+      "AWS IAM と Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Elastic Load Balancing（ELB）がアクセスを複数のEC2へ振り分け、EC2 Auto Scalingが負荷に応じて台数を自動増減します。両者の組み合わせで可用性とコスト効率を両立できます。",
+    "wrongChoiceExplanations": {
+      "0": "S3とArtifactは負荷分散・自動増減の役割を持ちません。",
+      "1": "Route 53とBudgetsはこの用途には不適切です。",
+      "3": "IAMとCloudFrontは負荷分散と自動スケーリングの主役ではありません。"
+    },
+    "examPoint": "『ELBで分散＋Auto Scalingで増減』は高可用性アーキテクチャの定番セット。",
+    "beginnerTip": "ELB＝交通整理、Auto Scaling＝混雑に応じてレジを開け閉め。",
+    "relatedServices": [
+      "Elastic Load Balancing",
+      "Amazon EC2 Auto Scaling"
+    ],
+    "tags": [
+      "ELB",
+      "Auto Scaling",
+      "可用性"
+    ],
+    "factCheckSource": "AWS ELB / EC2 Auto Scaling 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "tech-review-001",
+    "domain": "technology",
+    "category": "総復習（AI/分析）",
+    "setName": "サービス 総復習セット",
+    "difficulty": "Exam-like",
+    "questionType": "service-select",
+    "question": "S3に保存したデータに対して、標準SQLでそのまま分析クエリを実行できるサーバーレスのサービスはどれですか。",
+    "choices": [
+      "Amazon EC2",
+      "Amazon Route 53",
+      "AWS IAM",
+      "Amazon Athena"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Amazon Athenaは、S3上のデータに対してサーバーを用意せず標準SQLで分析できるサービスです。事前のDB構築なしにクエリを実行できます。",
+    "wrongChoiceExplanations": {
+      "0": "EC2は仮想サーバーで、分析専用サービスではありません。",
+      "1": "Route 53はDNSです。",
+      "2": "IAMはアクセス管理です。"
+    },
+    "examPoint": "分析系（Athena＝S3にSQL、QuickSight＝BIダッシュボード、Redshift＝DWH）の役割分担を整理。",
+    "beginnerTip": "Athenaは“倉庫（S3）の中身にそのまま質問できる”サービス。",
+    "relatedServices": [
+      "Amazon Athena",
+      "Amazon S3",
+      "Amazon QuickSight"
+    ],
+    "tags": [
+      "Athena",
+      "分析"
+    ],
+    "factCheckSource": "Amazon Athena 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-price-001",
+    "domain": "billing",
+    "category": "料金モデル",
+    "setName": "料金モデルセット",
+    "difficulty": "Beginner",
+    "questionType": "single",
+    "question": "AWSの料金の基本的な考え方として最も適切なものはどれですか。",
+    "choices": [
+      "使った分だけ支払い、多く使うほど単価が下がる場合がある",
+      "すべてのサービスが常に無料",
+      "一度契約すると解約できない",
+      "毎月必ず一定額を支払う固定制のみ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "AWSは従量課金が基本で、『使った分だけ支払う』『リザーブで割引』『使うほど割安（ボリュームディスカウント）』といった原則があります。固定制のみではありません。",
+    "wrongChoiceExplanations": {
+      "1": "無料利用枠はありますが、すべてが常に無料ではありません。",
+      "2": "解約できないという制約はありません。",
+      "3": "固定制のみではなく、使用量に応じた課金が基本です。"
+    },
+    "examPoint": "AWS料金3原則（pay-as-you-go / save when you reserve / pay less by using more）は頻出。",
+    "beginnerTip": "“使った分だけ・まとめ買いで割安”という料金の感覚を持つ。",
+    "relatedServices": [
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer"
+    ],
+    "tags": [
+      "料金モデル",
+      "従量課金"
+    ],
+    "factCheckSource": "AWS『料金の仕組み』公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-ec2price-001",
+    "domain": "billing",
+    "category": "EC2購入オプション",
+    "setName": "料金モデルセット",
+    "difficulty": "Standard",
+    "questionType": "comparison",
+    "question": "中断されても問題ないバッチ処理を、最も低コストで動かしたい場合に適したEC2の購入オプションはどれですか。",
+    "choices": [
+      "リザーブドインスタンス（3年前払い）",
+      "スポットインスタンス",
+      "オンデマンドインスタンス",
+      "Dedicated Host"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "スポットインスタンスはAWSの空き容量を大幅割引で使えますが、容量が必要になると中断されることがあります。中断に強いバッチ処理に向いています。",
+    "wrongChoiceExplanations": {
+      "0": "リザーブドは長期利用の割引で、中断前提の用途には過剰です。",
+      "2": "オンデマンドは柔軟ですが割引はありません。",
+      "3": "Dedicated Hostは物理サーバー占有用途でコストは高めです。"
+    },
+    "examPoint": "On-Demand（柔軟）/ Reserved・Savings Plans（長期割引）/ Spot（中断あり最安）の使い分けが定番。",
+    "beginnerTip": "スポットは“空席を格安で。ただし急に降ろされることがある”。",
+    "relatedServices": [
+      "Amazon EC2",
+      "AWS Savings Plans"
+    ],
+    "tags": [
+      "EC2",
+      "スポット",
+      "料金モデル"
+    ],
+    "factCheckSource": "Amazon EC2 購入オプション 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-savings-001",
+    "domain": "billing",
+    "category": "コスト最適化",
+    "setName": "コスト管理セット",
+    "difficulty": "Standard",
+    "questionType": "single",
+    "question": "一定の使用量を1年または3年コミットすることで、オンデマンドより割安にできる料金プランはどれですか。",
+    "choices": [
+      "Amazon CloudWatch",
+      "AWS Artifact",
+      "Savings Plans / リザーブドインスタンス",
+      "Amazon S3 標準ストレージ"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Savings Plansやリザーブドインスタンスは、1年または3年の利用をコミットする代わりに割引を受けられます。安定して使い続ける用途のコスト最適化に有効です。",
+    "wrongChoiceExplanations": {
+      "0": "CloudWatchは監視サービスです。",
+      "1": "Artifactはコンプライアンス文書のポータルです。",
+      "3": "S3標準は割引コミットの料金プランではありません。"
+    },
+    "examPoint": "『長期コミットで割引＝Savings Plans / Reserved』。Spot（中断前提の割引）との違いに注意。",
+    "beginnerTip": "“まとめて長く使う約束をすると安くなる”定期券のイメージ。",
+    "relatedServices": [
+      "AWS Savings Plans",
+      "Amazon EC2"
+    ],
+    "tags": [
+      "Savings Plans",
+      "コスト最適化"
+    ],
+    "factCheckSource": "AWS Savings Plans 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-tools-001",
+    "domain": "billing",
+    "category": "コスト管理ツール",
+    "setName": "請求・予算管理セット",
+    "difficulty": "Standard",
+    "questionType": "comparison",
+    "question": "『予算を設定し、超過しそうなときにアラート通知する』のに適したサービスはどれですか。",
+    "choices": [
+      "AWS Cost Explorer",
+      "Amazon EC2",
+      "AWS Pricing Calculator",
+      "AWS Budgets"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "AWS Budgetsは予算を設定し、実績や予測が予算を超えそうなときに通知します。Cost Explorerは過去のコストを可視化・分析する用途で、目的が異なります。",
+    "wrongChoiceExplanations": {
+      "0": "Cost Explorerは分析・可視化が主目的で、予算アラートはBudgetsの役割です。",
+      "1": "EC2は仮想サーバーで、コスト管理ツールではありません。",
+      "2": "Pricing Calculatorは利用前の見積もりツールです。"
+    },
+    "examPoint": "Budgets＝予算アラート、Cost Explorer＝過去分析、Pricing Calculator＝事前見積。3つの役割分担が頻出。",
+    "beginnerTip": "Budgets＝“使いすぎ通知”、Cost Explorer＝“家計簿の振り返り”、Calculator＝“買う前の見積り”。",
+    "relatedServices": [
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator"
+    ],
+    "tags": [
+      "Budgets",
+      "コスト管理"
+    ],
+    "factCheckSource": "AWS Budgets / Cost Explorer 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-calc-001",
+    "domain": "billing",
+    "category": "見積もり",
+    "setName": "請求・予算管理セット",
+    "difficulty": "Basic",
+    "questionType": "service-select",
+    "question": "AWSを利用する前に、構成に基づいて月額費用を見積もりたい場合に使うツールはどれですか。",
+    "choices": [
+      "AWS Pricing Calculator",
+      "AWS IAM",
+      "Amazon S3",
+      "AWS CloudTrail"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "AWS Pricing Calculatorは、利用予定のサービスや構成を入力して月額費用を事前に見積もるツールです。導入前のコスト試算に役立ちます。",
+    "wrongChoiceExplanations": {
+      "1": "IAMはアクセス管理です。",
+      "2": "S3はストレージです。",
+      "3": "CloudTrailはAPI操作の監査ログです。"
+    },
+    "examPoint": "『利用“前”の見積り＝Pricing Calculator』。利用“後”の分析（Cost Explorer）と区別する。",
+    "beginnerTip": "Pricing Calculatorは“買う前の見積りシミュレーター”。",
+    "relatedServices": [
+      "AWS Pricing Calculator"
+    ],
+    "tags": [
+      "Pricing Calculator",
+      "見積もり"
+    ],
+    "factCheckSource": "AWS Pricing Calculator 公式",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-support-001",
+    "domain": "billing",
+    "category": "サポートプラン",
+    "setName": "サポートプランセット",
+    "difficulty": "Standard",
+    "questionType": "billing-support",
+    "question": "本番ワークロードを運用し、24時間365日の電話・チャット・メールサポートが必要だが、専任のTAMまでは不要な場合に最も適したサポートプランはどれですか。",
+    "choices": [
+      "エンタープライズサポート",
+      "ビジネスサポート",
+      "デベロッパーサポート",
+      "ベーシックサポート"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ビジネスサポートは24時間365日の技術サポート（電話・チャット・メール）を提供し、本番運用に適しています。専任のTAM（テクニカルアカウントマネージャー）はエンタープライズ系プランの特典です。",
+    "wrongChoiceExplanations": {
+      "0": "エンタープライズはTAM付きで高機能ですが、本設問の要件（TAM不要）には過剰です。",
+      "2": "デベロッパーは営業時間内のメール中心で、24/7ではありません。",
+      "3": "ベーシックは無料ですが技術サポートのケース起票はできません。"
+    },
+    "examPoint": "Basic / Developer / Business / Enterprise の違い（対応時間・チャネル・TAM有無）は頻出。最新の内容は公式で要確認。",
+    "beginnerTip": "本番で24/7サポートが欲しい→Business、専任担当(TAM)まで→Enterprise系、と段階で覚える。",
+    "relatedServices": [
+      "AWS Support"
+    ],
+    "tags": [
+      "サポートプラン",
+      "ビジネスサポート"
+    ],
+    "factCheckSource": "AWS Support プラン比較 公式（※内容は変更されるため要確認）",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-support-002",
+    "domain": "billing",
+    "category": "サポートプラン",
+    "setName": "サポートプランセット",
+    "difficulty": "Standard",
+    "questionType": "billing-support",
+    "question": "専任のテクニカルアカウントマネージャー（TAM）による継続的な支援を受けられるのは、どのサポートプランですか。",
+    "choices": [
+      "デベロッパーサポート",
+      "ベーシックサポート",
+      "エンタープライズサポート",
+      "ビジネスサポート"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "専任TAMによる伴走支援はエンタープライズサポートの特徴です（エンタープライズOn-Rampでは指定されたTAMプールによる支援）。最新の提供範囲は公式で確認してください。",
+    "wrongChoiceExplanations": {
+      "0": "デベロッパーにTAMは付きません。",
+      "1": "ベーシックには技術サポートのケース起票もありません。",
+      "3": "ビジネスは24/7サポートですが専任TAMは付きません。"
+    },
+    "examPoint": "『TAM＝エンタープライズ系』。プランごとの特典差分は最新情報で要確認（変更されやすい領域）。",
+    "beginnerTip": "TAMは“専属の相談役”。最上位プランの特典、と覚える。",
+    "relatedServices": [
+      "AWS Support"
+    ],
+    "tags": [
+      "サポートプラン",
+      "TAM",
+      "エンタープライズ"
+    ],
+    "factCheckSource": "AWS Support プラン比較 公式（※最新情報を必ず確認）",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-org-001",
+    "domain": "billing",
+    "category": "請求管理",
+    "setName": "請求・予算管理セット",
+    "difficulty": "Standard",
+    "questionType": "single",
+    "question": "複数のAWSアカウントの請求を1つにまとめ、ボリュームディスカウントを受けやすくする仕組みはどれですか。",
+    "choices": [
+      "AWS Artifact",
+      "Amazon CloudFront",
+      "AWS WAF",
+      "AWS Organizations の一括請求（コンソリデーテッドビリング）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "AWS Organizationsの一括請求機能で複数アカウントの利用をまとめると、請求を一元化でき、使用量の合算によるボリュームディスカウントを受けやすくなります。",
+    "wrongChoiceExplanations": {
+      "0": "Artifactはコンプライアンス文書のポータルです。",
+      "1": "CloudFrontはCDNです。",
+      "2": "WAFはWebアプリ防御で請求管理とは無関係です。"
+    },
+    "examPoint": "Organizations＝複数アカウント管理＋一括請求＋SCP（権限ガードレール）。請求面の利点が問われる。",
+    "beginnerTip": "家族の携帯料金を“まとめて契約すると割安”になるイメージ。",
+    "relatedServices": [
+      "AWS Organizations"
+    ],
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "コスト最適化"
+    ],
+    "factCheckSource": "AWS Organizations 一括請求 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-freetier-001",
+    "domain": "billing",
+    "category": "無料利用枠",
+    "setName": "料金モデルセット",
+    "difficulty": "Beginner",
+    "questionType": "term",
+    "question": "AWSの『無料利用枠（Free Tier）』の説明として最も適切なものはどれですか。",
+    "choices": [
+      "一定の範囲内で無料で試せる枠で、12か月無料・期間中の常時無料・トライアルなどがある",
+      "すべてのサービスが永久に完全無料",
+      "有料プランに申し込まないと一切使えない",
+      "無料枠を超えても課金は一切発生しない"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Free Tierには『12か月間無料』『常に無料（一定量）』『短期トライアル』の3種類があります。範囲内なら無料ですが、超過分は課金されるため使用量の管理が重要です。",
+    "wrongChoiceExplanations": {
+      "1": "すべてが永久無料ではありません。",
+      "2": "無料枠は申し込み不要で利用開始できます。",
+      "3": "無料枠を超えると課金されます。Budgetsでの監視が有効です。"
+    },
+    "examPoint": "Free Tierの3タイプと『超過は課金』の理解が問われる。コスト管理（Budgets）とセットで覚える。",
+    "beginnerTip": "“お試し枠”。超えたら普通に課金されるので使い過ぎ注意。",
+    "relatedServices": [
+      "AWS Free Tier",
+      "AWS Budgets"
+    ],
+    "tags": [
+      "無料利用枠",
+      "Free Tier"
+    ],
+    "factCheckSource": "AWS 無料利用枠 公式ページ",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  },
+  {
+    "id": "bill-review-001",
+    "domain": "billing",
+    "category": "総復習",
+    "setName": "料金 総復習セット",
+    "difficulty": "Exam-like",
+    "questionType": "service-select",
+    "question": "コスト削減・セキュリティ・耐障害性などの観点でベストプラクティスに沿っているかを自動チェックし、改善点を提案するサービスはどれですか。",
+    "choices": [
+      "AWS Lambda",
+      "AWS Trusted Advisor",
+      "Amazon Route 53",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AWS Trusted Advisorは、コスト最適化・セキュリティ・耐障害性・パフォーマンス・サービス制限などの観点でアカウントを点検し、改善提案を行います。チェック範囲はサポートプランにより異なります。",
+    "wrongChoiceExplanations": {
+      "0": "Lambdaはサーバーレス実行です。",
+      "2": "Route 53はDNSです。",
+      "3": "S3はストレージで点検機能はありません。"
+    },
+    "examPoint": "Trusted Advisor＝ベストプラクティス点検。フルチェックはビジネス/エンタープライズ等の上位プランが必要（最新は要確認）。",
+    "beginnerTip": "Trusted Advisorは“健康診断＋改善アドバイス”をくれる相談役。",
+    "relatedServices": [
+      "AWS Trusted Advisor",
+      "AWS Support"
+    ],
+    "tags": [
+      "Trusted Advisor",
+      "コスト最適化",
+      "ベストプラクティス"
+    ],
+    "factCheckSource": "AWS Trusted Advisor 公式ドキュメント",
+    "createdAt": "2026-06-24",
+    "updatedAt": "2026-06-24"
+  }
+]

@@ -121,8 +121,7 @@ struct TermDetailView: View {
                     Image(systemName: icon).foregroundStyle(color)
                     Text(title).font(.system(size: 14, weight: .bold)).foregroundStyle(color)
                 }
-                Text(body).font(.system(size: 15)).foregroundStyle(Theme.ink)
-                    .fixedSize(horizontal: false, vertical: true).lineSpacing(3)
+                GlossaryText(text: body, size: 15, color: Theme.ink)
             }
         }
     }

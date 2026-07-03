@@ -9,6 +9,8 @@ final class ContentRepository {
     let terms: [TermCard]
     let lessons: [Lesson]
     let services: [AWSServiceItem]
+    /// 用語集（長い語を優先マッチできるよう term.count 降順で保持）
+    let glossary: [GlossaryEntry]
 
     private let questionsById: [String: QuizQuestion]
 
@@ -17,6 +19,9 @@ final class ContentRepository {
         self.terms     = Self.load("terms", as: [TermCard].self)
         self.lessons   = Self.load("lessons", as: [Lesson].self)
         self.services  = Self.load("services", as: [AWSServiceItem].self)
+        // glossary.json が無い環境でも落ちないよう任意ロード
+        let g = Self.loadOptional("glossary", as: [GlossaryEntry].self) ?? []
+        self.glossary  = g.sorted { $0.term.count > $1.term.count }
         self.questionsById = Dictionary(uniqueKeysWithValues: questions.map { ($0.id, $0) })
     }
 
@@ -77,5 +82,12 @@ final class ContentRepository {
         } catch {
             fatalError("\(name).json のデコードに失敗しました: \(error)")
         }
+    }
+
+    /// 任意リソース（無ければ nil を返す。glossary など後付けデータ用）
+    private static func loadOptional<T: Decodable>(_ name: String, as type: T.Type) -> T? {
+        guard let url = Bundle.main.url(forResource: name, withExtension: "json"),
+              let data = try? Data(contentsOf: url) else { return nil }
+        return try? JSONDecoder().decode(T.self, from: data)
     }
 }

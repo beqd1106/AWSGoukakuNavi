@@ -76,3 +76,13 @@ struct AWSServiceItem: Codable, Identifiable, Hashable {
     let oneLiner: String
     let domain: ExamDomain
 }
+
+// MARK: - 用語集（初心者向けツールチップ）
+
+/// 問題文・解説などに登場する専門用語に、タップで簡単な説明を出すための辞書。
+/// Web版（glossify）と同じ glossary.json を共有する。
+struct GlossaryEntry: Codable, Identifiable, Hashable {
+    let term: String
+    let explanation: String
+    var id: String { term }
+}

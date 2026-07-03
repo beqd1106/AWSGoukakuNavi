@@ -62,7 +62,7 @@ struct LessonDetailView: View {
                     Card {
                         HStack(alignment: .top, spacing: Theme.Space.s) {
                             Image(systemName: "sparkles").foregroundStyle(Theme.orange)
-                            Text(lesson.summary).font(.system(size: 14, weight: .medium)).foregroundStyle(Theme.ink)
+                            GlossaryText(text: lesson.summary, size: 14, weight: .medium, color: Theme.ink)
                         }
                     }
 
@@ -70,9 +70,7 @@ struct LessonDetailView: View {
                         Card {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(section.heading).font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.navy)
-                                Text(section.body).font(.system(size: 15)).foregroundStyle(Theme.ink)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .lineSpacing(4)
+                                GlossaryText(text: section.body, size: 15, color: Theme.ink, lineSpacing: 4)
                             }
                         }
                     }

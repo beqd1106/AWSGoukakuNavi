@@ -130,8 +130,7 @@ struct MockExamRunView: View {
                             if current.isMultipleSelect {
                                 TagChip(text: "複数選択（\(current.correctAnswers.count)つ）", color: Theme.teal)
                             }
-                            Text(current.question).font(.system(size: 17, weight: .semibold)).foregroundStyle(Theme.ink)
-                                .fixedSize(horizontal: false, vertical: true)
+                            GlossaryText(text: current.question, size: 17, weight: .semibold, color: Theme.ink)
                         }
                     }
                     ForEach(Array(current.choices.enumerated()), id: \.offset) { i, choice in

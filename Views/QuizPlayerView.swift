@@ -71,10 +71,8 @@ struct QuizPlayerView: View {
                             if current.isMultipleSelect {
                                 TagChip(text: "複数選択（\(current.correctAnswers.count)つ選ぶ）", color: Theme.teal)
                             }
-                            Text(current.question)
-                                .font(.system(size: 17, weight: .semibold))
-                                .foregroundStyle(Theme.ink)
-                                .fixedSize(horizontal: false, vertical: true)
+                            GlossaryText(text: current.question,
+                                         size: 17, weight: .semibold, color: Theme.ink)
                         }
                     }
 
@@ -169,7 +167,7 @@ struct QuizPlayerView: View {
                             if let reason = current.wrongReason(for: i) {
                                 HStack(alignment: .top, spacing: 6) {
                                     Text("×").foregroundStyle(Theme.red).font(.system(size: 14, weight: .bold))
-                                    Text(reason).font(.system(size: 13)).foregroundStyle(Theme.ink)
+                                    GlossaryText(text: reason, size: 13, color: Theme.ink)
                                 }
                             }
                         }
@@ -179,7 +177,7 @@ struct QuizPlayerView: View {
                 if let note = current.beginnerNote {
                     HStack(alignment: .top, spacing: 6) {
                         Image(systemName: "lightbulb.fill").foregroundStyle(Theme.orange).font(.system(size: 13))
-                        Text(note).font(.system(size: 13)).foregroundStyle(Theme.ink)
+                        GlossaryText(text: note, size: 13, color: Theme.ink)
                     }
                     .padding(Theme.Space.s)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -193,8 +191,7 @@ struct QuizPlayerView: View {
     private func labeledBlock(_ label: String, _ text: String, color: Color) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(label).font(.system(size: 13, weight: .bold)).foregroundStyle(color)
-            Text(text).font(.system(size: 14)).foregroundStyle(Theme.ink)
-                .fixedSize(horizontal: false, vertical: true)
+            GlossaryText(text: text, size: 14, color: Theme.ink)
         }
     }
 
