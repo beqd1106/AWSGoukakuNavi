@@ -41,6 +41,27 @@ struct TermListView: View {
                         }
                     }
 
+                    // 暗記モード（フリップ）への入口
+                    if !results.isEmpty {
+                        NavigationLink { FlashcardView(cards: results) } label: {
+                            HStack(spacing: Theme.Space.s) {
+                                Image(systemName: "rectangle.on.rectangle.angled").foregroundStyle(.white)
+                                    .frame(width: 36, height: 36).background(Theme.orange)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                VStack(alignment: .leading, spacing: 1) {
+                                    Text("暗記モードで学ぶ").font(.system(size: 15, weight: .bold)).foregroundStyle(Theme.navy)
+                                    Text("\(results.count)枚をタップでめくって暗記").captionStyle()
+                                }
+                                Spacer()
+                                Image(systemName: "chevron.right").foregroundStyle(Theme.inkSoft).font(.system(size: 13))
+                            }
+                            .padding(Theme.Space.m)
+                            .background(Theme.card)
+                            .clipShape(RoundedRectangle(cornerRadius: Theme.Radius.card))
+                            .overlay(RoundedRectangle(cornerRadius: Theme.Radius.card).stroke(Theme.orange.opacity(0.3), lineWidth: 1))
+                        }.buttonStyle(.plain)
+                    }
+
                     ForEach(results) { term in
                         NavigationLink { TermDetailView(term: term) } label: {
                             termRow(term)

@@ -5,6 +5,7 @@ enum PracticeRoute: Hashable {
     case review
     case bookmarks
     case mock
+    case custom
 }
 
 struct PracticeHubView: View {
@@ -39,6 +40,23 @@ struct PracticeHubView: View {
                             quickCard("お気に入り", "\(store.bookmarkedQuestions().count)問", "star.fill", Theme.blue, .bookmarks)
                         }
 
+                        // カスタム演習
+                        NavigationLink(value: PracticeRoute.custom) {
+                            Card {
+                                HStack(spacing: Theme.Space.m) {
+                                    Image(systemName: "slider.horizontal.3").font(.system(size: 22))
+                                        .foregroundStyle(.white).frame(width: 52, height: 52)
+                                        .background(Theme.orange).clipShape(RoundedRectangle(cornerRadius: 14))
+                                    VStack(alignment: .leading, spacing: 3) {
+                                        Text("カスタム演習").font(.system(size: 17, weight: .bold)).foregroundStyle(Theme.navy)
+                                        Text("分野×難易度×苦手×お気に入りで絞って出題").captionStyle()
+                                    }
+                                    Spacer()
+                                    Image(systemName: "chevron.right").foregroundStyle(Theme.inkSoft)
+                                }
+                            }
+                        }.buttonStyle(.plain)
+
                         // 分野別演習
                         SectionHeader(title: "分野別に演習")
                         ForEach(ExamDomain.allCases) { domain in
@@ -62,6 +80,8 @@ struct PracticeHubView: View {
                     QuizPlayerView(title: "お気に入り", questions: store.bookmarkedQuestions())
                 case .mock:
                     MockExamStartView()
+                case .custom:
+                    CustomPracticeView()
                 }
             }
         }

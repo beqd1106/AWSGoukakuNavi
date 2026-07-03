@@ -14,6 +14,7 @@ struct HomeView: View {
                         AWSnoteHeader()
                         todayHeroCard
                         examPrepBanner
+                        continueLessonCard
                         quickActions
                         todaySection
                         categorySection
@@ -91,6 +92,40 @@ struct HomeView: View {
                         }
                         Spacer()
                         Image(systemName: "chevron.right").foregroundStyle(Theme.inkSoft)
+                    }
+                }
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+    // MARK: - 続きから学習（次の未履修レッスン）
+
+    @ViewBuilder private var continueLessonCard: some View {
+        if let lesson = store.nextUnfinishedLesson() {
+            let done = store.completedLessonCount
+            let total = repo.lessons.count
+            NavigationLink(value: HomeRoute.lesson(lesson.id)) {
+                Card {
+                    VStack(alignment: .leading, spacing: Theme.Space.s) {
+                        HStack {
+                            Label("続きから学習", systemImage: "play.circle.fill")
+                                .font(.system(size: 15, weight: .bold)).foregroundStyle(Theme.blue)
+                            Spacer()
+                            Text("\(done)/\(total) レッスン").captionStyle()
+                        }
+                        HStack(spacing: Theme.Space.m) {
+                            Image(systemName: "text.book.closed.fill").foregroundStyle(.white)
+                                .frame(width: 40, height: 40).background(lesson.domain.color)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(lesson.title).font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.ink)
+                                    .lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                                Text("\(lesson.domain.shortTitle)・約\(lesson.estimatedMinutes)分").captionStyle()
+                            }
+                            Spacer(minLength: 0)
+                            Image(systemName: "chevron.right").foregroundStyle(Theme.inkSoft).font(.system(size: 13))
+                        }
                     }
                 }
             }

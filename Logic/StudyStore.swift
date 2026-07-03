@@ -170,6 +170,25 @@ final class StudyStore: ObservableObject {
         return repo.lessons(in: domain).filter { ids.contains($0.id) }.count
     }
 
+    /// カリキュラム順で最初の未履修レッスン（「続きから学習」用）。全て履修済みなら nil。
+    func nextUnfinishedLesson() -> Lesson? {
+        let ids = Set(((try? context.fetch(FetchDescriptor<LessonProgress>())) ?? []).map(\.lessonId))
+        return repo.lessons.first { !ids.contains($0.id) }
+    }
+
+    // MARK: - カスタム演習用の集合
+
+    /// これまでに一度でも間違えた問題のID集合
+    func mistakenQuestionIds() -> Set<String> {
+        Set(allAnswers.filter { !$0.isCorrect }.map(\.questionId))
+    }
+
+    /// ブックマーク済み問題のID集合
+    func bookmarkedQuestionIds() -> Set<String> {
+        let d = FetchDescriptor<QuestionMeta>(predicate: #Predicate { $0.isBookmarked == true })
+        return Set(((try? context.fetch(d)) ?? []).map(\.questionId))
+    }
+
     // MARK: - 統計
 
     private var allAnswers: [AnswerRecord] {

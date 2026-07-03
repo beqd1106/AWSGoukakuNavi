@@ -13,6 +13,10 @@ final class ContentRepository {
     let glossary: [GlossaryEntry]
 
     private let questionsById: [String: QuizQuestion]
+    /// 問題ID → その問題を確認問題に含むレッスン（レッスン→問題の逆引き）
+    private let lessonByQuestionId: [String: Lesson]
+    /// 分野ごとの (レッスン, キーワード集合)。未割当の問題を関連レッスンへ寄せる用。
+    private let lessonKeywordsByDomain: [ExamDomain: [(lesson: Lesson, keywords: Set<String>)]]
 
     private init() {
         self.questions = Self.load("questions", as: [QuizQuestion].self)
@@ -22,12 +26,48 @@ final class ContentRepository {
         // glossary.json が無い環境でも落ちないよう任意ロード
         let g = Self.loadOptional("glossary", as: [GlossaryEntry].self) ?? []
         self.glossary  = g.sorted { $0.term.count > $1.term.count }
-        self.questionsById = Dictionary(uniqueKeysWithValues: questions.map { ($0.id, $0) })
+        let byId = Dictionary(uniqueKeysWithValues: questions.map { ($0.id, $0) })
+        self.questionsById = byId
+
+        // レッスン←問題の逆引きと、分野別キーワード集合を構築
+        var qToLesson: [String: Lesson] = [:]
+        var kwByDomain: [ExamDomain: [(lesson: Lesson, keywords: Set<String>)]] = [:]
+        for lesson in lessons {
+            var kw = Set<String>()
+            for qid in lesson.quizIds {
+                qToLesson[qid] = lesson
+                if let q = byId[qid] {
+                    kw.insert(Self.normKeyword(q.service))
+                    q.tags.forEach { kw.insert(Self.normKeyword($0)) }
+                }
+            }
+            kwByDomain[lesson.domain, default: []].append((lesson, kw))
+        }
+        self.lessonByQuestionId = qToLesson
+        self.lessonKeywordsByDomain = kwByDomain
+    }
+
+    private static func normKeyword(_ s: String) -> String {
+        s.lowercased().replacingOccurrences(of: "amazon", with: "")
+            .replacingOccurrences(of: "aws", with: "")
+            .filter { !$0.isWhitespace && $0 != "-" && $0 != "・" }
     }
 
     // MARK: - 検索ヘルパ
 
     func question(id: String) -> QuizQuestion? { questionsById[id] }
+
+    /// 指定した問題に最も関連する解説レッスンを返す（問題→レッスンの相互リンク用）。
+    /// ①その問題を確認問題に含むレッスン → ②同分野でタグ/サービスが最も重なるレッスン → ③同分野の先頭。
+    func lesson(forQuestion q: QuizQuestion) -> Lesson? {
+        if let l = lessonByQuestionId[q.id] { return l }
+        let candidates = lessonKeywordsByDomain[q.domain] ?? []
+        var qk = Set<String>([Self.normKeyword(q.service)])
+        q.tags.forEach { qk.insert(Self.normKeyword($0)) }
+        let best = candidates.max { a, b in a.keywords.intersection(qk).count < b.keywords.intersection(qk).count }
+        if let best, !best.keywords.intersection(qk).isEmpty { return best.lesson }
+        return lessons(in: q.domain).first
+    }
 
     func questions(in domain: ExamDomain) -> [QuizQuestion] {
         questions.filter { $0.domain == domain }

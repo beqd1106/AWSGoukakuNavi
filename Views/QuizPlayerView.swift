@@ -14,11 +14,14 @@ struct QuizPlayerView: View {
 
     /// 全問終了時に一度だけ呼ばれる（レッスンの履修済みマークなどに使用）。
     private let onComplete: (() -> Void)?
+    /// 解説に「この分野の解説レッスンへ」導線を出すか（レッスンから起動した場合は循環を避けて false）。
+    private let showLessonLink: Bool
 
-    init(title: String, questions: [QuizQuestion], onComplete: (() -> Void)? = nil) {
+    init(title: String, questions: [QuizQuestion], showLessonLink: Bool = true, onComplete: (() -> Void)? = nil) {
         self.title = title
         _questions = State(initialValue: questions)
         self.onComplete = onComplete
+        self.showLessonLink = showLessonLink
     }
 
     @State private var index = 0
@@ -187,6 +190,27 @@ struct QuizPlayerView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Theme.orangeSoft)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+
+                // この問題に関連する解説レッスンへ
+                if showLessonLink, let lesson = ContentRepository.shared.lesson(forQuestion: current) {
+                    NavigationLink { LessonDetailView(lesson: lesson) } label: {
+                        HStack(spacing: Theme.Space.s) {
+                            Image(systemName: "text.book.closed.fill").foregroundStyle(Theme.blue)
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text("解説レッスンで学び直す").font(.system(size: 12, weight: .semibold)).foregroundStyle(Theme.inkSoft)
+                                Text(lesson.title).font(.system(size: 14, weight: .bold)).foregroundStyle(Theme.blue)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                            Spacer(minLength: 0)
+                            Image(systemName: "chevron.right").foregroundStyle(Theme.blue).font(.system(size: 12))
+                        }
+                        .padding(Theme.Space.m)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Theme.blueSoft)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
+                    .buttonStyle(.plain)
                 }
             }
         }

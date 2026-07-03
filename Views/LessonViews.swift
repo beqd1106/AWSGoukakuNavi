@@ -166,6 +166,7 @@ struct LessonDetailView: View {
         .navigationDestination(isPresented: $showQuiz) {
             QuizPlayerView(title: lesson.title,
                            questions: lesson.quizIds.compactMap { ContentRepository.shared.question(id: $0) },
+                           showLessonLink: false,
                            onComplete: { store.markLessonCompleted(lesson.id) })
         }
     }
