@@ -213,6 +213,19 @@ final class MockExamResult {
     var isPassingScore: Bool { scaledScore >= 700 }
 }
 
+// MARK: - レッスン履修状態（履修済みマーク用）
+
+@Model
+final class LessonProgress {
+    @Attribute(.unique) var lessonId: String
+    var completedAt: Date
+
+    init(lessonId: String, completedAt: Date = .now) {
+        self.lessonId = lessonId
+        self.completedAt = completedAt
+    }
+}
+
 // MARK: - 1日の学習ログ（連続日数・カレンダー用）
 
 @Model

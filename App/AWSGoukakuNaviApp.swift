@@ -14,6 +14,7 @@ struct AWSGoukakuNaviApp: App {
             QuestionMeta.self,
             MockExamResult.self,
             StudyDayLog.self,
+            LessonProgress.self,
         ])
         // 通常はディスク永続化。万一ストアを作成できない環境（CIのテスト実行など）では
         // インメモリにフォールバックし、起動クラッシュを防ぐ。

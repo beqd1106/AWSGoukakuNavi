@@ -12,9 +12,13 @@ struct QuizPlayerView: View {
     @EnvironmentObject var store: StudyStore
     @Environment(\.dismiss) private var dismiss
 
-    init(title: String, questions: [QuizQuestion]) {
+    /// 全問終了時に一度だけ呼ばれる（レッスンの履修済みマークなどに使用）。
+    private let onComplete: (() -> Void)?
+
+    init(title: String, questions: [QuizQuestion], onComplete: (() -> Void)? = nil) {
         self.title = title
         _questions = State(initialValue: questions)
+        self.onComplete = onComplete
     }
 
     @State private var index = 0
@@ -261,6 +265,7 @@ struct QuizPlayerView: View {
             index += 1
         } else {
             finished = true
+            onComplete?()
         }
     }
 }

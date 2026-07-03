@@ -135,6 +135,41 @@ final class StudyStore: ObservableObject {
         return metas.compactMap { repo.question(id: $0.questionId) }
     }
 
+    // MARK: - レッスン履修状態
+
+    /// 指定レッスンが履修済みか
+    func isLessonCompleted(_ lessonId: String) -> Bool {
+        let d = FetchDescriptor<LessonProgress>(predicate: #Predicate { $0.lessonId == lessonId })
+        return ((try? context.fetch(d))?.first) != nil
+    }
+
+    /// レッスンを履修済みにする（重複挿入しない）
+    func markLessonCompleted(_ lessonId: String) {
+        guard !isLessonCompleted(lessonId) else { return }
+        context.insert(LessonProgress(lessonId: lessonId))
+        bumpAndSave()
+    }
+
+    /// 履修済みを取り消す
+    func unmarkLessonCompleted(_ lessonId: String) {
+        let d = FetchDescriptor<LessonProgress>(predicate: #Predicate { $0.lessonId == lessonId })
+        if let item = try? context.fetch(d).first {
+            context.delete(item)
+            bumpAndSave()
+        }
+    }
+
+    /// 履修済みレッスンの総数
+    var completedLessonCount: Int {
+        ((try? context.fetch(FetchDescriptor<LessonProgress>())) ?? []).count
+    }
+
+    /// 分野別の履修済みレッスン数
+    func completedLessonCount(in domain: ExamDomain) -> Int {
+        let ids = Set(((try? context.fetch(FetchDescriptor<LessonProgress>())) ?? []).map(\.lessonId))
+        return repo.lessons(in: domain).filter { ids.contains($0.id) }.count
+    }
+
     // MARK: - 統計
 
     private var allAnswers: [AnswerRecord] {
