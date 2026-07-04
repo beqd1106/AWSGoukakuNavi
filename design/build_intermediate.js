@@ -333,7 +333,7 @@ const NEW = [
      "法人でも利用でき、対象外という制限はありません。",
      "毎回の申請は不要で、対象範囲内なら無料です。"],
     ["無料利用枠"],
-    "無料枠は3種類（12か月/常時/トライアル）。超過に注意。"),
+    "無料枠は3種類（12か月/常時/トライアル）。※2025年7月以降の新規アカウントは最大200ドルのクレジット方式に変更されましたが、試験では従来の3種類も問われます。"),
   q("qm-bil-03", "billing", "EC2料金",
     "今後3年間、同じEC2を常時稼働させ続けることが確実です。最も高い割引率が期待できる購入方法はどれですか。",
     ["リザーブドインスタンス（3年・全額前払い）",
@@ -399,11 +399,12 @@ function rotate(item, t) {
 }
 const rotated = NEW.map((item, i) => rotate(item, i % 4));
 
-// ---- マージ（既存id優先・重複追加しない）----
+// ---- マージ（qm-* は常に上書き＝生成スクリプトを唯一の正とする）----
 const byId = new Map(existing.map((x) => [x.id, x]));
 let added = 0;
 for (const item of rotated) {
-  if (!byId.has(item.id)) { byId.set(item.id, item); added++; }
+  if (!byId.has(item.id)) added++;
+  byId.set(item.id, item); // 既存でも最新定義で上書き（rotationは決定的なので位置は不変）
 }
 const merged = Array.from(byId.values());
 fs.writeFileSync(file, JSON.stringify(merged, null, 2) + "\n", "utf8");
