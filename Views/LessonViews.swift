@@ -112,9 +112,11 @@ struct LessonDetailView: View {
     @EnvironmentObject var store: StudyStore
     @State private var showQuiz = false
     @State private var showChallenge = false
+    @State private var showDrill = false
 
     private var isDone: Bool { store.isLessonCompleted(lesson.id) }
     private var challengeIds: [String] { lesson.challengeQuizIds ?? [] }
+    private var drillIds: [String] { lesson.drillQuizIds ?? [] }
 
     var body: some View {
         ZStack {
@@ -157,6 +159,9 @@ struct LessonDetailView: View {
                         }
                     }
 
+                    // 反復ドリル（5パターン）
+                    if !drillIds.isEmpty { drillCard }
+
                     // 中級チャレンジ（腕試し）
                     if !challengeIds.isEmpty { challengeCard }
 
@@ -178,6 +183,45 @@ struct LessonDetailView: View {
             QuizPlayerView(title: "中級チャレンジ・\(lesson.title)",
                            questions: challengeIds.compactMap { ContentRepository.shared.question(id: $0) },
                            showLessonLink: false)
+        }
+        .navigationDestination(isPresented: $showDrill) {
+            QuizPlayerView(title: "反復ドリル・\(lesson.title)",
+                           questions: drillIds.compactMap { ContentRepository.shared.question(id: $0) },
+                           showLessonLink: false)
+        }
+    }
+
+    // 反復ドリル（同じ知識を5パターンで問い、定着させる）
+    private var drillCard: some View {
+        Card {
+            VStack(alignment: .leading, spacing: Theme.Space.s) {
+                HStack(spacing: 6) {
+                    Image(systemName: "arrow.triangle.2.circlepath").foregroundStyle(Theme.teal)
+                    Text("反復ドリル").font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.navy)
+                    Text("5パターン")
+                        .font(.system(size: 10, weight: .bold)).foregroundStyle(Theme.teal)
+                        .padding(.horizontal, 6).padding(.vertical, 2)
+                        .background(Theme.teal.opacity(0.12)).clipShape(Capsule())
+                    Spacer()
+                }
+                Text("同じ内容を「用途→サービス／説明／シナリオ／穴埋め／誤り探し」の5つの角度で出題。繰り返してしっかり定着させます。")
+                    .font(.system(size: 13)).foregroundStyle(Theme.inkSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+                Button {
+                    showDrill = true
+                } label: {
+                    HStack {
+                        Image(systemName: "square.stack.3d.up.fill")
+                        Text("5パターンで反復（\(drillIds.count)問）").font(.system(size: 15, weight: .semibold))
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.system(size: 13))
+                    }
+                    .foregroundStyle(Theme.teal)
+                    .padding(.vertical, 12).padding(.horizontal, 14)
+                    .frame(maxWidth: .infinity)
+                    .background(RoundedRectangle(cornerRadius: 12).stroke(Theme.teal.opacity(0.5), lineWidth: 1.2))
+                }
+            }
         }
     }
 

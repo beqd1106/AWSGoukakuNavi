@@ -15903,5 +15903,1663 @@
       "中級"
     ],
     "beginnerNote": "専任TAM＝Enterpriseだけ。"
+  },
+  {
+    "id": "qd-cc02-1",
+    "question": "【用途→用語】「使った分だけ払い、初期の大型投資が不要」という利点を最もよく表す言葉はどれですか。",
+    "choices": [
+      "変動費化（従量課金）",
+      "規模の経済",
+      "グローバル展開",
+      "キャパシティ予測不要"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "初期投資（固定費）を、使った分だけの変動費に変えるのがクラウドの代表的な利点です。",
+    "wrongChoiceExplanations": {
+      "1": "規模の経済は「多くの利用者が集まり単価が下がる」利点で別物です。",
+      "2": "グローバル展開は世界に素早く広げられる利点です。",
+      "3": "キャパシティ予測不要は必要量を当てなくてよい利点です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 1,
+    "tags": [
+      "クラウドの価値",
+      "変動費",
+      "ドリル"
+    ],
+    "beginnerNote": "初期投資→変動費が最頻出。"
+  },
+  {
+    "id": "qd-cc02-2",
+    "question": "【用語→意味】クラウドで「規模の経済」が働く理由として正しいものはどれですか。",
+    "choices": [
+      "料金を前払いするから",
+      "多数の利用者の需要が集約され、単価が下がるから",
+      "1社専用の設備を持つから",
+      "サーバーを物理購入するから"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AWSは膨大な利用者の需要をまとめることで安く提供でき、その恩恵が利用者の低価格につながります。",
+    "wrongChoiceExplanations": {
+      "0": "前払いは割引手段の一つで、規模の経済の説明ではありません。",
+      "2": "1社専用設備はむしろ割高で、規模の経済と逆です。",
+      "3": "物理購入は規模の経済の理由ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 1,
+    "tags": [
+      "クラウドの価値",
+      "規模の経済",
+      "ドリル"
+    ],
+    "beginnerNote": "みんなで使うから安くなる＝規模の経済。"
+  },
+  {
+    "id": "qd-cc02-3",
+    "question": "【シナリオ】新サービスを世界中の顧客へ数分で展開したいと考えています。これはクラウドのどの利点に当たりますか。",
+    "choices": [
+      "規模の経済",
+      "変動費化",
+      "数分でグローバル展開できる",
+      "データセンター運用から解放される"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "AWSの各リージョンを使えば、短時間で世界規模にサービスを展開できます。",
+    "wrongChoiceExplanations": {
+      "0": "規模の経済はコスト面の利点です。",
+      "1": "変動費化は支払い方の利点です。",
+      "3": "運用からの解放は別の利点で、展開の速さそのものではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 2,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "「数分で世界展開」もメリットの一つ。"
+  },
+  {
+    "id": "qd-cc02-4",
+    "question": "【穴埋め】クラウドのメリットの言い換えで、俊敏性は「＿＿＿」とも呼ばれます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "スケーラビリティ",
+      "レイテンシ",
+      "スループット",
+      "アジリティ"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "俊敏性はアジリティ（agility）とも呼ばれ、必要なときに素早く調達できることを指します。",
+    "wrongChoiceExplanations": {
+      "0": "スケーラビリティは拡張性のことです。",
+      "1": "レイテンシは遅延（応答の速さ）のことです。",
+      "2": "スループットは処理量のことです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 1,
+    "tags": [
+      "クラウドの価値",
+      "俊敏性",
+      "ドリル"
+    ],
+    "beginnerNote": "俊敏性＝アジリティ。言い換えで問われる。"
+  },
+  {
+    "id": "qd-cc02-5",
+    "question": "【誤り探し】クラウドのメリットの説明として誤っているものはどれですか。",
+    "choices": [
+      "サーバーは必ず自社で購入・所有する必要がある",
+      "使った分だけ支払える",
+      "必要に応じてすぐ増減できる",
+      "データセンター運用の負担が減る"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "クラウドでは物理サーバーを購入・所有せず、必要な分だけ借りて使えます。所有が必須という記述が誤りです。",
+    "wrongChoiceExplanations": {
+      "1": "従量課金は正しい説明です。",
+      "2": "俊敏な増減は正しい説明です。",
+      "3": "運用負担の軽減は正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 2,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "「必ず自社購入」はオンプレの発想＝誤り。"
+  },
+  {
+    "id": "qd-cc05-1",
+    "question": "【場面→用語】「1台が故障してもサービスが止まらない状態」を何と呼びますか。",
+    "choices": [
+      "規模の経済",
+      "高可用性",
+      "弾力性",
+      "俊敏性"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "障害があってもサービスを継続できる状態を高可用性といいます。",
+    "wrongChoiceExplanations": {
+      "0": "規模の経済はコストの利点です。",
+      "2": "弾力性は需要に応じて自動増減することです。",
+      "3": "俊敏性は素早く調達できることです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "可用性",
+    "difficulty": 1,
+    "tags": [
+      "可用性",
+      "ドリル"
+    ],
+    "beginnerNote": "止まらない＝高可用性。"
+  },
+  {
+    "id": "qd-cc05-2",
+    "question": "【用語→意味】弾力性（エラスティシティ）の意味として正しいものはどれですか。",
+    "choices": [
+      "障害から復旧する",
+      "世界中に展開する",
+      "需要に応じてリソースを自動で増減する",
+      "1台をより高性能にする"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "弾力性は、負荷に合わせてリソースを自動的に増やしたり減らしたりできる性質です。",
+    "wrongChoiceExplanations": {
+      "0": "障害からの復旧は可用性・信頼性の話です。",
+      "1": "世界展開はグローバル展開の利点です。",
+      "3": "1台の高性能化はスケールアップで、弾力性の定義ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "弾力性",
+    "difficulty": 1,
+    "tags": [
+      "弾力性",
+      "ドリル"
+    ],
+    "beginnerNote": "需要に合わせ自動増減＝弾力性。"
+  },
+  {
+    "id": "qd-cc05-3",
+    "question": "【シナリオ】アクセス急増のたびにサイトが重くなります。可用性を高める最初の一手として最適なものはどれですか。",
+    "choices": [
+      "1台のスペックを上げるだけにする",
+      "バックアップ頻度を上げる",
+      "リージョンを変更する",
+      "複数AZに分散し、ELBで振り分け、Auto Scalingで増減する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "複数AZ＋ELB＋Auto Scalingは高可用性の王道です。単一障害点をなくし、負荷にも追従できます。",
+    "wrongChoiceExplanations": {
+      "0": "1台の増強では単一障害点が残ります。",
+      "1": "バックアップは復旧用で、稼働中の可用性は上がりません。",
+      "2": "リージョン変更は可用性向上策ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "可用性",
+    "difficulty": 2,
+    "tags": [
+      "可用性",
+      "ドリル"
+    ],
+    "beginnerNote": "複数AZ＋ELB＋Auto Scalingが定番。"
+  },
+  {
+    "id": "qd-cc05-4",
+    "question": "【穴埋め】台数を増やして負荷を分散する方式は「スケール＿＿＿」と呼ばれます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "アウト（水平）",
+      "アップ（垂直）",
+      "イン",
+      "ダウン"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "台数を増やすのがスケールアウト（水平）、1台を強化するのがスケールアップ（垂直）です。",
+    "wrongChoiceExplanations": {
+      "1": "スケールアップは1台を高性能化する垂直方向です。",
+      "2": "スケールインは台数を減らす方向です。",
+      "3": "スケールダウンは性能を下げる方向です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "スケーラビリティ",
+    "difficulty": 1,
+    "tags": [
+      "スケーラビリティ",
+      "スケールアウト",
+      "ドリル"
+    ],
+    "beginnerNote": "台数を増やす＝スケールアウト。"
+  },
+  {
+    "id": "qd-cc05-5",
+    "question": "【誤り探し】可用性を高める方法として誤っているものはどれですか。",
+    "choices": [
+      "Auto Scalingで冗長性を保つ",
+      "単一のAZに全リソースを集約する",
+      "複数のAZに分散する",
+      "ロードバランサーで振り分ける"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "単一AZへの集約は単一障害点をつくり、可用性を下げます。分散が正解の方向です。",
+    "wrongChoiceExplanations": {
+      "0": "Auto Scalingは冗長性・弾力性に寄与します。",
+      "2": "複数AZ分散は可用性を高めます。",
+      "3": "ロードバランサーは可用性向上に有効です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "可用性",
+    "difficulty": 2,
+    "tags": [
+      "可用性",
+      "単一障害点",
+      "ドリル"
+    ],
+    "beginnerNote": "1か所集約は単一障害点＝NG。"
+  },
+  {
+    "id": "qd-cc06-1",
+    "question": "【場面→柱】「バックアップと復旧計画を整え、障害に備える」はどの柱に当たりますか。",
+    "choices": [
+      "セキュリティ",
+      "持続可能性",
+      "信頼性",
+      "コスト最適化"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "障害からの回復や継続性は信頼性の柱です。",
+    "wrongChoiceExplanations": {
+      "0": "セキュリティはデータ・権限の保護の柱です。",
+      "1": "持続可能性は環境負荷低減の柱です。",
+      "3": "コスト最適化は支払いの無駄をなくす柱です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 1,
+    "tags": [
+      "Well-Architected",
+      "信頼性",
+      "ドリル"
+    ],
+    "beginnerNote": "復旧・継続＝信頼性。"
+  },
+  {
+    "id": "qd-cc06-2",
+    "question": "【用語→意味】「パフォーマンス効率」の柱が主に扱うのはどれですか。",
+    "choices": [
+      "支払いの無駄がないか",
+      "環境への負荷",
+      "誰がアクセスできるか",
+      "リソースを無駄なく効率的に使えているか"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "パフォーマンス効率は、コンピューティング資源を効率よく活用できているかを扱います。",
+    "wrongChoiceExplanations": {
+      "0": "支払いの無駄はコスト最適化の柱です。",
+      "1": "環境負荷は持続可能性の柱です。",
+      "2": "アクセス管理はセキュリティの柱です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 1,
+    "tags": [
+      "Well-Architected",
+      "ドリル"
+    ],
+    "beginnerNote": "資源を効率よく＝パフォーマンス効率。"
+  },
+  {
+    "id": "qd-cc06-3",
+    "question": "【シナリオ】使っていないリソースへの支払いが続いていないか見直したいです。関係が深い柱はどれですか。",
+    "choices": [
+      "コスト最適化",
+      "信頼性",
+      "セキュリティ",
+      "運用上の優秀性"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "無駄な支出を避ける観点はコスト最適化の柱です。",
+    "wrongChoiceExplanations": {
+      "1": "信頼性は障害からの回復に関する柱です。",
+      "2": "セキュリティは保護に関する柱です。",
+      "3": "運用上の優秀性は運用・改善に関する柱です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 2,
+    "tags": [
+      "Well-Architected",
+      "ドリル"
+    ],
+    "beginnerNote": "無駄な支出＝コスト最適化。"
+  },
+  {
+    "id": "qd-cc06-4",
+    "question": "【穴埋め】2021年に追加された6つ目の柱は「＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "拡張性",
+      "持続可能性",
+      "回復性",
+      "移植性"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "6つ目の柱として持続可能性（Sustainability）が追加されました。環境負荷の低減を扱います。",
+    "wrongChoiceExplanations": {
+      "0": "拡張性は柱の名称ではありません。",
+      "2": "回復性は柱の正式名称ではありません。",
+      "3": "移植性は柱ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 1,
+    "tags": [
+      "Well-Architected",
+      "持続可能性",
+      "ドリル"
+    ],
+    "beginnerNote": "6つ目＝持続可能性。"
+  },
+  {
+    "id": "qd-cc06-5",
+    "question": "【誤り探し】Well-Architectedの6つの柱に含まれないものはどれですか。",
+    "choices": [
+      "信頼性",
+      "運用上の優秀性",
+      "収益の最大化",
+      "セキュリティ"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "6つの柱は運用上の優秀性・セキュリティ・信頼性・パフォーマンス効率・コスト最適化・持続可能性です。収益最大化は含まれません。",
+    "wrongChoiceExplanations": {
+      "0": "信頼性は柱の一つです。",
+      "1": "運用上の優秀性は柱の一つです。",
+      "3": "セキュリティは柱の一つです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "Well-Architected",
+    "difficulty": 2,
+    "tags": [
+      "Well-Architected",
+      "ドリル"
+    ],
+    "beginnerNote": "収益最大化は柱ではない。"
+  },
+  {
+    "id": "qd-sec01-1",
+    "question": "【場面→責任者】「データセンターの入退室管理・物理セキュリティ」の責任は誰にありますか。",
+    "choices": [
+      "利用者",
+      "共同で自動",
+      "第三者ベンダー",
+      "AWS"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "物理施設のセキュリティは「クラウドそのもの」を守るAWSの責任です。",
+    "wrongChoiceExplanations": {
+      "0": "利用者の責任はクラウドの中身（データ・設定）です。",
+      "1": "物理は明確にAWS側の責任です。",
+      "2": "第三者ではなくAWSが担います。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 1,
+    "tags": [
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "物理・基盤＝AWS。"
+  },
+  {
+    "id": "qd-sec01-2",
+    "question": "【用語→意味】責任共有モデルの基本的な分け方として正しいものはどれですか。",
+    "choices": [
+      "AWSがクラウドそのもの、利用者がクラウドの中身を守る",
+      "すべてAWSが守る",
+      "すべて利用者が守る",
+      "責任の分担はない"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "AWSは基盤（of the cloud）、利用者はデータ・設定・権限（in the cloud）を守ります。",
+    "wrongChoiceExplanations": {
+      "1": "すべてAWSではありません。中身は利用者責任です。",
+      "2": "すべて利用者でもありません。基盤はAWSです。",
+      "3": "分担がある明確なモデルです。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 1,
+    "tags": [
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "of＝AWS、in＝利用者。"
+  },
+  {
+    "id": "qd-sec01-3",
+    "question": "【シナリオ】S3バケットを誤って公開設定にして情報が漏れました。これは主に誰の責任範囲ですか。",
+    "choices": [
+      "ハードウェアベンダー",
+      "利用者（設定・アクセス権の管理）",
+      "AWS",
+      "どちらの責任でもない"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "バケットの公開設定やアクセス権は利用者が管理する「中身」の責任範囲です。",
+    "wrongChoiceExplanations": {
+      "0": "ベンダーは関係ありません。",
+      "2": "AWSは基盤の責任で、設定ミスは対象外です。",
+      "3": "責任は利用者側に明確にあります。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 2,
+    "tags": [
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "設定・権限のミスは利用者責任。"
+  },
+  {
+    "id": "qd-sec01-4",
+    "question": "【穴埋め】AWSは「＿＿ the cloud」、利用者は「in the cloud」を守ります。＿＿に入るのはどれですか。",
+    "choices": [
+      "on",
+      "by",
+      "of",
+      "in"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "AWSはsecurity OF the cloud（基盤）、利用者はsecurity IN the cloud（中身）を担います。",
+    "wrongChoiceExplanations": {
+      "0": "onはこの文脈では使いません。",
+      "1": "byはこの文脈では使いません。",
+      "3": "inは利用者側の表現です。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 1,
+    "tags": [
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "OF＝AWS（基盤）。"
+  },
+  {
+    "id": "qd-sec01-5",
+    "question": "【誤り探し】責任共有モデルで、利用者の責任ではないものはどれですか。",
+    "choices": [
+      "IAMの設定",
+      "保存データの暗号化の選択",
+      "ゲストOSのパッチ適用",
+      "ハイパーバイザーやホストOSの管理"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ハイパーバイザーやホストOSなど基盤の管理はAWSの責任です。",
+    "wrongChoiceExplanations": {
+      "0": "IAM設定は利用者の責任です。",
+      "1": "暗号化の選択・設定は利用者の責任です。",
+      "2": "ゲストOSのパッチは利用者の責任です。"
+    },
+    "domain": "security",
+    "service": "責任共有モデル",
+    "difficulty": 2,
+    "tags": [
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "基盤（ハイパーバイザー等）＝AWS。"
+  },
+  {
+    "id": "qd-sec03-1",
+    "question": "【用途→機能】「複数のユーザーに同じ権限をまとめて付与」したいときに使うのはどれですか。",
+    "choices": [
+      "IAMグループ",
+      "IAMロール",
+      "アクセスキー",
+      "ルートユーザー"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "権限をまとめて配るにはIAMグループを使い、ユーザーをグループに入れます。",
+    "wrongChoiceExplanations": {
+      "1": "ロールは一時的に権限を借りる仕組みで、まとめ配布用ではありません。",
+      "2": "アクセスキーは認証情報で、権限のまとめ配布ではありません。",
+      "3": "ルートユーザーは最上位アカウントで、日常運用には使いません。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "まとめて権限＝グループ。"
+  },
+  {
+    "id": "qd-sec03-2",
+    "question": "【用語→説明】IAMロールの説明として正しいものはどれですか。",
+    "choices": [
+      "ネットワークの設定",
+      "一時的に権限を借りる仕組みで、鍵を配らずに付与できる",
+      "永久に使えるパスワード",
+      "課金の単位"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ロールは一時認証で権限を渡せる仕組みで、長期キーを配らずに済みます。",
+    "wrongChoiceExplanations": {
+      "0": "ネットワーク設定ではありません。",
+      "2": "永久パスワードではありません。",
+      "3": "課金単位ではありません。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ロール",
+      "ドリル"
+    ],
+    "beginnerNote": "鍵を配らず権限＝ロール。"
+  },
+  {
+    "id": "qd-sec03-3",
+    "question": "【シナリオ】EC2上のアプリからS3へアクセスさせたいです。最も安全な方法はどれですか。",
+    "choices": [
+      "ルート認証情報を使う",
+      "S3バケットを公開する",
+      "IAMロールをEC2に割り当てる",
+      "アクセスキーをコードに埋め込む"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "サービス間連携はIAMロールが基本です。長期キーを配らずに安全に権限を渡せます。",
+    "wrongChoiceExplanations": {
+      "0": "ルート認証情報の使用は避けるべきです。",
+      "1": "バケット公開はアクセス制御になりません。",
+      "3": "キーの直書きは漏洩リスクが高く危険です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": [
+      "IAM",
+      "ロール",
+      "ドリル"
+    ],
+    "beginnerNote": "サーバー→サービス＝ロール。"
+  },
+  {
+    "id": "qd-sec03-4",
+    "question": "【穴埋め】必要な権限だけを与える原則を「＿＿権限」といいます。＿＿に入るのはどれですか。",
+    "choices": [
+      "最大",
+      "管理者",
+      "共有",
+      "最小"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "必要最小限の権限だけを与えるのが最小権限の原則です。",
+    "wrongChoiceExplanations": {
+      "0": "最大権限はむしろ危険な発想です。",
+      "1": "管理者権限を全員に、はアンチパターンです。",
+      "2": "共有権限という原則はありません。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "最小権限",
+      "ドリル"
+    ],
+    "beginnerNote": "必要な分だけ＝最小権限。"
+  },
+  {
+    "id": "qd-sec03-5",
+    "question": "【誤り探し】IAMの使い方として不適切なものはどれですか。",
+    "choices": [
+      "すべてのユーザーにAdministratorAccessを付与する",
+      "グループで権限を配る",
+      "ロールでサービス連携する",
+      "最小権限を守る"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "全員に管理者権限を与えるのは最小権限に反し危険です。",
+    "wrongChoiceExplanations": {
+      "1": "グループでの配布は適切な運用です。",
+      "2": "ロールでの連携は推奨される方法です。",
+      "3": "最小権限の遵守は正しい運用です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": [
+      "IAM",
+      "最小権限",
+      "ドリル"
+    ],
+    "beginnerNote": "全員Adminはアンチパターン。"
+  },
+  {
+    "id": "qd-sec06-1",
+    "question": "【用途→サービス】「暗号鍵の作成・管理・利用を一元化」するサービスはどれですか。",
+    "choices": [
+      "AWS Config",
+      "AWS KMS",
+      "AWS WAF",
+      "Amazon Macie"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "KMS（Key Management Service）は暗号鍵を一元管理します。多くのサービスと連携します。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定変更の追跡・評価用です。",
+      "2": "WAFはWebアプリの攻撃を遮断するサービスです。",
+      "3": "MacieはS3内の機微データを検出します。"
+    },
+    "domain": "security",
+    "service": "暗号化",
+    "difficulty": 1,
+    "tags": [
+      "暗号化",
+      "KMS",
+      "ドリル"
+    ],
+    "beginnerNote": "鍵の管理＝KMS。"
+  },
+  {
+    "id": "qd-sec06-2",
+    "question": "【用語→意味】「保存データの暗号化（at rest）」の説明として正しいものはどれですか。",
+    "choices": [
+      "ログインを二要素にする",
+      "バックアップを取得する",
+      "ストレージ上のデータそのものを暗号化する",
+      "通信経路を暗号化する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "at restは、ディスクやストレージに保存されたデータを暗号化することです。",
+    "wrongChoiceExplanations": {
+      "0": "二要素はMFAで、暗号化ではありません。",
+      "1": "バックアップは暗号化とは別の対策です。",
+      "3": "通信の暗号化はin transitです。"
+    },
+    "domain": "security",
+    "service": "暗号化",
+    "difficulty": 1,
+    "tags": [
+      "暗号化",
+      "ドリル"
+    ],
+    "beginnerNote": "at rest＝保存時。"
+  },
+  {
+    "id": "qd-sec06-3",
+    "question": "【シナリオ】HTTPS用のTLS証明書を無料で発行し、自動更新もしたいです。使うべきサービスはどれですか。",
+    "choices": [
+      "AWS KMS",
+      "AWS Shield",
+      "AWS Secrets Manager",
+      "AWS Certificate Manager（ACM）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ACMはTLS証明書を無料で発行・自動更新できます。",
+    "wrongChoiceExplanations": {
+      "0": "KMSは暗号鍵の管理用です。",
+      "1": "ShieldはDDoS対策です。",
+      "2": "Secrets Managerは機密情報の保管用です。"
+    },
+    "domain": "security",
+    "service": "ACM",
+    "difficulty": 2,
+    "tags": [
+      "ACM",
+      "暗号化",
+      "ドリル"
+    ],
+    "beginnerNote": "TLS証明書＝ACM。"
+  },
+  {
+    "id": "qd-sec06-4",
+    "question": "【穴埋め】通信中のデータの暗号化は「in ＿＿＿」と呼ばれます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "transit",
+      "rest",
+      "storage",
+      "cloud"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "通信中はin transit、保存時はat restと呼びます。",
+    "wrongChoiceExplanations": {
+      "1": "restは保存時の表現です。",
+      "2": "storageはこの決まり文句では使いません。",
+      "3": "cloudはこの文脈の語ではありません。"
+    },
+    "domain": "security",
+    "service": "暗号化",
+    "difficulty": 1,
+    "tags": [
+      "暗号化",
+      "ドリル"
+    ],
+    "beginnerNote": "通信中＝in transit。"
+  },
+  {
+    "id": "qd-sec06-5",
+    "question": "【誤り探し】暗号化・鍵管理の説明として誤っているものはどれですか。",
+    "choices": [
+      "Secrets Managerは機密情報を保管する",
+      "KMSは通信の負荷分散を行うサービスである",
+      "KMSは暗号鍵を管理する",
+      "ACMはTLS証明書を扱う"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "KMSは鍵の管理サービスで、負荷分散は行いません（負荷分散はELB）。",
+    "wrongChoiceExplanations": {
+      "0": "Secrets Managerが機密を保管するのは正しい説明です。",
+      "2": "KMSが鍵を管理するのは正しい説明です。",
+      "3": "ACMがTLS証明書を扱うのは正しい説明です。"
+    },
+    "domain": "security",
+    "service": "暗号化",
+    "difficulty": 2,
+    "tags": [
+      "暗号化",
+      "KMS",
+      "ドリル"
+    ],
+    "beginnerNote": "KMS＝鍵管理（負荷分散ではない）。"
+  },
+  {
+    "id": "qd-tec01-1",
+    "question": "【用途→サービス】「表形式（SQL）のデータベースの運用管理をAWSに任せたい」ときに使うのはどれですか。",
+    "choices": [
+      "AWS Lambda",
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "RDSはSQLデータベースの管理をAWSに任せられるサービスです。",
+    "wrongChoiceExplanations": {
+      "0": "Lambdaはサーバーレスのコード実行です。",
+      "1": "EC2は仮想サーバーで、DB管理を自動化するものではありません。",
+      "3": "S3はファイル保存用のストレージです。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 1,
+    "tags": [
+      "コンピューティング",
+      "RDS",
+      "ドリル"
+    ],
+    "beginnerNote": "管理を任せるSQL＝RDS。"
+  },
+  {
+    "id": "qd-tec01-2",
+    "question": "【サービス→説明】Amazon S3の説明として正しいものはどれですか。",
+    "choices": [
+      "仮想サーバー",
+      "SQLデータベース",
+      "仮想ネットワーク",
+      "ファイルをオブジェクトとして保存する高耐久ストレージ"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "S3はオブジェクトストレージで、非常に高い耐久性を持ちます。",
+    "wrongChoiceExplanations": {
+      "0": "仮想サーバーはEC2です。",
+      "1": "SQLデータベースはRDSです。",
+      "2": "仮想ネットワークはVPCです。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 1,
+    "tags": [
+      "コンピューティング",
+      "S3",
+      "ドリル"
+    ],
+    "beginnerNote": "S3＝オブジェクトストレージ。"
+  },
+  {
+    "id": "qd-tec01-3",
+    "question": "【シナリオ】サーバー管理をせず、イベント発生時だけ短時間コードを実行したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Lambda",
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon VPC"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Lambdaはサーバーレスで、呼ばれたときだけ実行し使った分だけ課金されます。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は常時起動の仮想サーバーで、たまに動く処理には過剰です。",
+      "2": "RDSはデータベースです。",
+      "3": "VPCはネットワークです。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 2,
+    "tags": [
+      "コンピューティング",
+      "Lambda",
+      "ドリル"
+    ],
+    "beginnerNote": "イベント駆動・短時間＝Lambda。"
+  },
+  {
+    "id": "qd-tec01-4",
+    "question": "【穴埋め】仮想サーバーを提供する代表的サービスは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "VPC",
+      "EC2",
+      "S3",
+      "RDS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "EC2（Elastic Compute Cloud）が仮想サーバーの代表的サービスです。",
+    "wrongChoiceExplanations": {
+      "0": "VPCはネットワークです。",
+      "2": "S3はストレージです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 1,
+    "tags": [
+      "コンピューティング",
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "仮想サーバー＝EC2。"
+  },
+  {
+    "id": "qd-tec01-5",
+    "question": "【区別】サービスと役割の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon S3＝オブジェクトストレージ",
+      "AWS Lambda＝サーバーレス実行",
+      "Amazon DynamoDB＝リレーショナル（SQL）データベース",
+      "Amazon EC2＝仮想サーバー"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "DynamoDBはNoSQL（キー・バリュー）です。リレーショナル（SQL）はRDS/Auroraです。",
+    "wrongChoiceExplanations": {
+      "0": "S3＝オブジェクトストレージは正しい組合せです。",
+      "1": "Lambda＝サーバーレスは正しい組合せです。",
+      "3": "EC2＝仮想サーバーは正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 2,
+    "tags": [
+      "コンピューティング",
+      "ドリル"
+    ],
+    "beginnerNote": "DynamoDBはNoSQL、SQLはRDS。"
+  },
+  {
+    "id": "qd-tec05-1",
+    "question": "【用途→クラス】「めったに参照しないが、必要時は数時間待てる長期保管」を最も安くするクラスはどれですか。",
+    "choices": [
+      "S3 標準",
+      "S3 標準-IA",
+      "S3 One Zone-IA",
+      "S3 Glacier系（アーカイブ）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "長期アーカイブで取り出しの待ち時間を許容できるならGlacier系が最安です。",
+    "wrongChoiceExplanations": {
+      "0": "標準は頻繁アクセス向けで割高です。",
+      "1": "標準-IAは低頻度向けですが、Glacierほど安くありません。",
+      "2": "One Zone-IAも低頻度向けで、長期アーカイブの最安ではありません。"
+    },
+    "domain": "technology",
+    "service": "S3",
+    "difficulty": 1,
+    "tags": [
+      "S3",
+      "Glacier",
+      "ストレージクラス",
+      "ドリル"
+    ],
+    "beginnerNote": "長期・待てる＝Glacier。"
+  },
+  {
+    "id": "qd-tec05-2",
+    "question": "【用語→説明】S3 Intelligent-Tiering の説明として正しいものはどれですか。",
+    "choices": [
+      "アクセス頻度に応じて自動で最適なクラスへ移動する",
+      "常に最速だが最も高い",
+      "アーカイブ専用",
+      "無料で使える"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Intelligent-Tieringはアクセス状況を見て自動で最適クラスへ移し、手間なくコスト最適化します。",
+    "wrongChoiceExplanations": {
+      "1": "常に最速・最高価格という固定ではありません。",
+      "2": "アーカイブ専用ではありません。",
+      "3": "無料ではありません。"
+    },
+    "domain": "technology",
+    "service": "S3",
+    "difficulty": 1,
+    "tags": [
+      "S3",
+      "ストレージクラス",
+      "ドリル"
+    ],
+    "beginnerNote": "自動で最適化＝Intelligent-Tiering。"
+  },
+  {
+    "id": "qd-tec05-3",
+    "question": "【シナリオ】「作成から90日たったオブジェクトを自動的にGlacierへ移す」を実現するには何を設定しますか。",
+    "choices": [
+      "バケットポリシー",
+      "ライフサイクルルール",
+      "バージョニング",
+      "レプリケーション"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ライフサイクルルールで、経過日数に応じたクラス移動や削除を自動化できます。",
+    "wrongChoiceExplanations": {
+      "0": "バケットポリシーはアクセス制御です。",
+      "2": "バージョニングは版管理の機能です。",
+      "3": "レプリケーションは別リージョン等への複製です。"
+    },
+    "domain": "technology",
+    "service": "S3",
+    "difficulty": 2,
+    "tags": [
+      "S3",
+      "ライフサイクル",
+      "ドリル"
+    ],
+    "beginnerNote": "自動移動＝ライフサイクルルール。"
+  },
+  {
+    "id": "qd-tec05-4",
+    "question": "【穴埋め】S3の非常に高い耐久性は「イレブン＿＿＿」（9が11個）と表現されます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ファイブ",
+      "スリー",
+      "ナイン",
+      "セブン"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "S3標準の耐久性は99.999999999%（9が11個）で、イレブンナインと呼ばれます。",
+    "wrongChoiceExplanations": {
+      "0": "ファイブでは9が5個で、異なります。",
+      "1": "スリーでは9が3個で、異なります。",
+      "3": "セブンでは9が7個で、正しい表現ではありません。"
+    },
+    "domain": "technology",
+    "service": "S3",
+    "difficulty": 1,
+    "tags": [
+      "S3",
+      "ドリル"
+    ],
+    "beginnerNote": "イレブンナイン＝9が11個。"
+  },
+  {
+    "id": "qd-tec05-5",
+    "question": "【誤り探し】Amazon S3の説明として誤っているものはどれですか。",
+    "choices": [
+      "静的Webサイトを公開できる",
+      "非常に高い耐久性を持つ",
+      "ストレージクラスでコストを最適化できる",
+      "EC2に直接マウントして使うブロックストレージである"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "S3はオブジェクトストレージです。EC2に接続するブロックストレージはEBSです。",
+    "wrongChoiceExplanations": {
+      "0": "静的サイト公開は正しい説明です。",
+      "1": "高い耐久性は正しい説明です。",
+      "2": "クラスによるコスト最適化は正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "S3",
+    "difficulty": 2,
+    "tags": [
+      "S3",
+      "ストレージクラス",
+      "ドリル"
+    ],
+    "beginnerNote": "EC2に付けるブロック＝EBS、S3はオブジェクト。"
+  },
+  {
+    "id": "qd-tec06-1",
+    "question": "【用途→サービス】「ミリ秒応答・自動スケールのキー・バリュー型NoSQL」が必要なときに使うのはどれですか。",
+    "choices": [
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon Aurora"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "DynamoDBはキー・バリュー型NoSQLで、超高速・自動スケール・サーバーレスです。",
+    "wrongChoiceExplanations": {
+      "1": "RDSはリレーショナル（SQL）です。",
+      "2": "Redshiftは分析用のデータウェアハウスです。",
+      "3": "AuroraもSQL系です。"
+    },
+    "domain": "technology",
+    "service": "データベース",
+    "difficulty": 1,
+    "tags": [
+      "データベース",
+      "DynamoDB",
+      "NoSQL",
+      "ドリル"
+    ],
+    "beginnerNote": "キー・バリュー超高速＝DynamoDB。"
+  },
+  {
+    "id": "qd-tec06-2",
+    "question": "【サービス→説明】Amazon Auroraの説明として正しいものはどれですか。",
+    "choices": [
+      "インメモリのキャッシュ",
+      "AWSが最適化したMySQL/PostgreSQL互換の高性能リレーショナルDB",
+      "キー・バリューのNoSQL",
+      "分析専用のデータウェアハウス"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AuroraはMySQL/PostgreSQL互換で、高性能・高可用に最適化されたリレーショナルDBです。",
+    "wrongChoiceExplanations": {
+      "0": "キャッシュはElastiCacheです。",
+      "2": "NoSQLはDynamoDBです。",
+      "3": "データウェアハウスはRedshiftです。"
+    },
+    "domain": "technology",
+    "service": "データベース",
+    "difficulty": 1,
+    "tags": [
+      "データベース",
+      "Aurora",
+      "ドリル"
+    ],
+    "beginnerNote": "高性能な互換SQL＝Aurora。"
+  },
+  {
+    "id": "qd-tec06-3",
+    "question": "【シナリオ】全社データの大規模な集計・分析に特化したデータウェアハウスが欲しいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon DynamoDB",
+      "Amazon ElastiCache",
+      "Amazon Redshift",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "大規模分析に特化したデータウェアハウスはRedshiftです。",
+    "wrongChoiceExplanations": {
+      "0": "DynamoDBはNoSQLの運用系です。",
+      "1": "ElastiCacheはキャッシュです。",
+      "3": "RDSは運用系のリレーショナルDBです。"
+    },
+    "domain": "technology",
+    "service": "データベース",
+    "difficulty": 2,
+    "tags": [
+      "データベース",
+      "Redshift",
+      "ドリル"
+    ],
+    "beginnerNote": "大規模分析＝Redshift（DWH）。"
+  },
+  {
+    "id": "qd-tec06-4",
+    "question": "【穴埋め】よく使うデータをメモリ上に置いて高速化するのは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "Athena",
+      "Glacier",
+      "Kinesis",
+      "ElastiCache"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ElastiCache（Redis/Memcached）はインメモリキャッシュで高速化・DB負荷軽減に使います。",
+    "wrongChoiceExplanations": {
+      "0": "AthenaはS3を対象とした分析クエリです。",
+      "1": "GlacierはS3のアーカイブクラスです。",
+      "2": "Kinesisはリアルタイムデータ処理です。"
+    },
+    "domain": "technology",
+    "service": "データベース",
+    "difficulty": 1,
+    "tags": [
+      "データベース",
+      "ElastiCache",
+      "ドリル"
+    ],
+    "beginnerNote": "メモリで高速化＝ElastiCache。"
+  },
+  {
+    "id": "qd-tec06-5",
+    "question": "【区別】DBサービスと種類の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon Redshift＝インメモリのキャッシュサービス",
+      "Amazon DynamoDB＝NoSQL",
+      "Amazon RDS＝リレーショナル",
+      "Amazon Neptune＝グラフDB"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Redshiftはデータウェアハウス（分析用）で、キャッシュではありません（キャッシュはElastiCache）。",
+    "wrongChoiceExplanations": {
+      "1": "DynamoDB＝NoSQLは正しい組合せです。",
+      "2": "RDS＝リレーショナルは正しい組合せです。",
+      "3": "Neptune＝グラフDBは正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "データベース",
+    "difficulty": 2,
+    "tags": [
+      "データベース",
+      "ドリル"
+    ],
+    "beginnerNote": "Redshift＝DWH（キャッシュではない）。"
+  },
+  {
+    "id": "qd-tec09-1",
+    "question": "【用途→サービス】「複数のEC2へ受信トラフィックを振り分ける」のに使うのはどれですか。",
+    "choices": [
+      "Amazon Route 53",
+      "Elastic Load Balancing",
+      "Amazon EC2 Auto Scaling",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ELBは複数サーバーへトラフィックを分散し、可用性を高めます。",
+    "wrongChoiceExplanations": {
+      "0": "Route 53はDNSです。",
+      "2": "Auto Scalingは台数の増減が役割です。",
+      "3": "CloudFrontはコンテンツ配信（CDN）です。"
+    },
+    "domain": "technology",
+    "service": "ELB",
+    "difficulty": 1,
+    "tags": [
+      "ELB",
+      "可用性",
+      "ドリル"
+    ],
+    "beginnerNote": "振り分け＝ELB。"
+  },
+  {
+    "id": "qd-tec09-2",
+    "question": "【用語→説明】Auto Scalingの説明として正しいものはどれですか。",
+    "choices": [
+      "ドメイン名を解決する",
+      "コンテンツを配信する",
+      "負荷に応じてEC2の台数を自動で増減する",
+      "トラフィックを複数へ振り分ける"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Auto Scalingは負荷に合わせてEC2台数を自動で増減し、性能とコストを両立します。",
+    "wrongChoiceExplanations": {
+      "0": "DNS解決はRoute 53です。",
+      "1": "配信はCloudFrontです。",
+      "3": "振り分けはELBの役割です。"
+    },
+    "domain": "technology",
+    "service": "Auto Scaling",
+    "difficulty": 1,
+    "tags": [
+      "Auto Scaling",
+      "スケーリング",
+      "ドリル"
+    ],
+    "beginnerNote": "台数を自動増減＝Auto Scaling。"
+  },
+  {
+    "id": "qd-tec09-3",
+    "question": "【シナリオ】昼夜でアクセス差が大きいサービスで、コストと性能を両立したいです。最適なのはどれですか。",
+    "choices": [
+      "常に最大台数を起動しておく",
+      "毎回手動で台数を変える",
+      "1台に集約する",
+      "Auto Scalingで需要に応じ台数を自動増減する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Auto Scalingなら混雑時に増やし・空いたら減らして、コストと性能を両立できます。",
+    "wrongChoiceExplanations": {
+      "0": "常に最大は閑散時に無駄が出ます。",
+      "1": "手動は遅れやミスが生じます。",
+      "2": "1台集約は単一障害点になります。"
+    },
+    "domain": "technology",
+    "service": "Auto Scaling",
+    "difficulty": 2,
+    "tags": [
+      "Auto Scaling",
+      "可用性",
+      "ドリル"
+    ],
+    "beginnerNote": "需要に合わせ自動増減が最適。"
+  },
+  {
+    "id": "qd-tec09-4",
+    "question": "【穴埋め】HTTP/HTTPS向けのロードバランサーは「＿＿＿」（Application Load Balancer）です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ALB",
+      "NLB",
+      "CLB",
+      "GWLB"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "HTTP/HTTPS向けはALB、超高速なTCP向けはNLBです。",
+    "wrongChoiceExplanations": {
+      "1": "NLBは高速なTCP/UDP向けです。",
+      "2": "CLBは旧世代のロードバランサーです。",
+      "3": "GWLBはネットワークアプライアンス向けです。"
+    },
+    "domain": "technology",
+    "service": "ELB",
+    "difficulty": 1,
+    "tags": [
+      "ELB",
+      "ドリル"
+    ],
+    "beginnerNote": "HTTP向け＝ALB。"
+  },
+  {
+    "id": "qd-tec09-5",
+    "question": "【誤り探し】高可用性の構成に関する説明として誤っているものはどれですか。",
+    "choices": [
+      "ELBとAuto Scalingは併用できる",
+      "Auto Scalingはアクセスを直接振り分ける役割である",
+      "ELBは異常なインスタンスを切り離す",
+      "複数AZに配置して冗長化する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "アクセスの振り分けはELBの役割で、Auto Scalingは台数の増減を担います。",
+    "wrongChoiceExplanations": {
+      "0": "ELBとAuto Scalingの併用は定番構成です。",
+      "2": "ELBが異常インスタンスを外すのは正しい説明です。",
+      "3": "複数AZ配置による冗長化は正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "ELB",
+    "difficulty": 2,
+    "tags": [
+      "ELB",
+      "可用性",
+      "ドリル"
+    ],
+    "beginnerNote": "振り分け＝ELB、増減＝Auto Scaling。"
+  },
+  {
+    "id": "qd-bil02-1",
+    "question": "【用途→オプション】「中断されても再実行できるバッチを最も安く」回したいときに向くのはどれですか。",
+    "choices": [
+      "リザーブドインスタンス",
+      "Dedicated Host",
+      "スポットインスタンス",
+      "オンデマンド"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "中断を許容できる処理は、余剰キャパシティを大幅割引で使えるスポットが最安です。",
+    "wrongChoiceExplanations": {
+      "0": "リザーブドは常時稼働向けです。",
+      "1": "Dedicated Hostは物理占有の要件向けです。",
+      "3": "オンデマンドは割引がありません。"
+    },
+    "domain": "billing",
+    "service": "EC2料金",
+    "difficulty": 1,
+    "tags": [
+      "EC2料金",
+      "スポット",
+      "ドリル"
+    ],
+    "beginnerNote": "中断OKで最安＝スポット。"
+  },
+  {
+    "id": "qd-bil02-2",
+    "question": "【用語→説明】Savings Plansの説明として正しいものはどれですか。",
+    "choices": [
+      "中断ありの激安インスタンス",
+      "割引のない標準の買い方",
+      "物理サーバーを占有する契約",
+      "一定利用のコミットで対象コンピュートを柔軟に割引する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Savings Plansは「毎時いくら使う」というコミットで、対象コンピュートを柔軟に割引します。",
+    "wrongChoiceExplanations": {
+      "0": "中断ありの激安はスポットです。",
+      "1": "割引なしはオンデマンドです。",
+      "2": "物理占有はDedicated Hostです。"
+    },
+    "domain": "billing",
+    "service": "Savings Plans",
+    "difficulty": 1,
+    "tags": [
+      "Savings Plans",
+      "EC2料金",
+      "ドリル"
+    ],
+    "beginnerNote": "コミットで柔軟割引＝Savings Plans。"
+  },
+  {
+    "id": "qd-bil02-3",
+    "question": "【シナリオ】3年間ずっと同じEC2を稼働させる予定です。最も割引率が高い傾向の選び方はどれですか。",
+    "choices": [
+      "リザーブドインスタンス（3年・全額前払い）",
+      "オンデマンド",
+      "スポット",
+      "毎回手動で起動・停止"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "長期・確実な利用ほど、コミットの度合いが高いリザーブド（3年前払い）で最大級の割引になります。",
+    "wrongChoiceExplanations": {
+      "1": "オンデマンドは割引がありません。",
+      "2": "スポットは中断があり常時稼働に不向きです。",
+      "3": "手動運用は割引と無関係です。"
+    },
+    "domain": "billing",
+    "service": "EC2料金",
+    "difficulty": 2,
+    "tags": [
+      "EC2料金",
+      "リザーブド",
+      "ドリル"
+    ],
+    "beginnerNote": "長期確実＝リザーブドで割引最大。"
+  },
+  {
+    "id": "qd-bil02-4",
+    "question": "【穴埋め】割引はないが、いつでもすぐ使える標準的な買い方は「＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "Savings Plans",
+      "オンデマンド",
+      "リザーブド",
+      "スポット"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "オンデマンドは割引がない代わりに、いつでも柔軟に使えます。",
+    "wrongChoiceExplanations": {
+      "0": "Savings Plansはコミット型の割引です。",
+      "2": "リザーブドは長期コミットで割引される買い方です。",
+      "3": "スポットは中断ありの激安です。"
+    },
+    "domain": "billing",
+    "service": "EC2料金",
+    "difficulty": 1,
+    "tags": [
+      "EC2料金",
+      "オンデマンド",
+      "ドリル"
+    ],
+    "beginnerNote": "いつでも・割引なし＝オンデマンド。"
+  },
+  {
+    "id": "qd-bil02-5",
+    "question": "【誤り探し】EC2の購入オプションの説明として誤っているものはどれですか。",
+    "choices": [
+      "リザーブドは長期コミットで割引される",
+      "Savings Plansは柔軟に割引できる",
+      "スポットは中断されず、常に安定して使える",
+      "オンデマンドは割引がない"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "スポットは余剰キャパシティを使うため中断される可能性があります。安定重視の用途には不向きです。",
+    "wrongChoiceExplanations": {
+      "0": "リザーブドの長期割引は正しい説明です。",
+      "1": "Savings Plansの柔軟割引は正しい説明です。",
+      "3": "オンデマンドに割引がないのは正しい説明です。"
+    },
+    "domain": "billing",
+    "service": "EC2料金",
+    "difficulty": 2,
+    "tags": [
+      "EC2料金",
+      "スポット",
+      "ドリル"
+    ],
+    "beginnerNote": "スポットは中断あり＝安定用途はNG。"
+  },
+  {
+    "id": "qd-bil06-1",
+    "question": "【場面→プラン】「本番運用で24時間365日の技術サポートが必要」なとき、最低限どのプラン以上が必要ですか。",
+    "choices": [
+      "Basic",
+      "Developer",
+      "無料利用枠のみ",
+      "Business 以上"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "24時間365日の技術サポートはBusiness以上（Business/Business Support+以上）で利用できます。",
+    "wrongChoiceExplanations": {
+      "0": "Basicは無料で、24時間の技術ケース対応は含みません。",
+      "1": "Developerは開発時向けで、24時間対応には不十分です。",
+      "2": "無料利用枠はサポートプランとは別です。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 1,
+    "tags": [
+      "サポートプラン",
+      "ドリル"
+    ],
+    "beginnerNote": "本番24時間＝Business以上。"
+  },
+  {
+    "id": "qd-bil06-2",
+    "question": "【用語→プラン】専任のTAM（テクニカルアカウントマネージャー）が付くのはどのプランですか。",
+    "choices": [
+      "Enterprise",
+      "Business",
+      "Developer",
+      "Basic"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "専任TAMが付くのは最上位のEnterpriseサポートです。",
+    "wrongChoiceExplanations": {
+      "1": "Businessは手厚いですが専任TAMは付きません。",
+      "2": "Developerは開発時向けです。",
+      "3": "Basicは無料で最小限です。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 1,
+    "tags": [
+      "サポートプラン",
+      "TAM",
+      "ドリル"
+    ],
+    "beginnerNote": "専任TAM＝Enterprise。"
+  },
+  {
+    "id": "qd-bil06-3",
+    "question": "【シナリオ】個人が学習中で、請求とアカウントの質問だけできれば十分です。適したプランはどれですか。",
+    "choices": [
+      "Developer",
+      "Basic（無料）",
+      "Enterprise",
+      "Business"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Basicは無料で、アカウント・請求の質問やサービス上限の引き上げに対応します。",
+    "wrongChoiceExplanations": {
+      "0": "Developerは開発時の技術サポートで有料です。",
+      "2": "Enterpriseは最上位で、学習用途には過剰です。",
+      "3": "Businessは本番運用向けで有料です。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 2,
+    "tags": [
+      "サポートプラン",
+      "ドリル"
+    ],
+    "beginnerNote": "請求・アカウントだけ＝Basicで十分。"
+  },
+  {
+    "id": "qd-bil06-4",
+    "question": "【穴埋め】無料で全アカウントが使える最下位のサポートプランは「＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "Business",
+      "Enterprise",
+      "Basic",
+      "Developer"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Basicは無料で、すべてのアカウントが利用できます。",
+    "wrongChoiceExplanations": {
+      "0": "Businessは有料の本番向けプランです。",
+      "1": "Enterpriseは最上位の有料プランです。",
+      "3": "Developerは有料の開発向けプランです。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 1,
+    "tags": [
+      "サポートプラン",
+      "ドリル"
+    ],
+    "beginnerNote": "無料の最下位＝Basic。"
+  },
+  {
+    "id": "qd-bil06-5",
+    "question": "【誤り探し】サポートプランの説明として誤っているものはどれですか。",
+    "choices": [
+      "上位プランほど応答が速い",
+      "Enterpriseは最速の対応が受けられる",
+      "Businessは本番運用向けである",
+      "Basicで専任TAMと24時間の電話サポートが受けられる"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Basic（無料）には専任TAMや24時間の技術ケース対応は含まれません。",
+    "wrongChoiceExplanations": {
+      "0": "上位ほど応答が速いのは正しい説明です。",
+      "1": "Enterpriseが最速対応なのは正しい説明です。",
+      "2": "Businessが本番向けなのは正しい説明です。"
+    },
+    "domain": "billing",
+    "service": "サポートプラン",
+    "difficulty": 2,
+    "tags": [
+      "サポートプラン",
+      "ドリル"
+    ],
+    "beginnerNote": "BasicにTAM・24時間はない。"
   }
 ]

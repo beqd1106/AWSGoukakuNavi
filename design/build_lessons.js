@@ -471,20 +471,41 @@ const CHALLENGE = {
   "l-bil-06": ["qm-bil-06", "qm-bil-07"],
 };
 
+// ---- 反復ドリル（5パターン）の明示マッピング ----
+// design/build_drills.js で作成した「ドリル」問題（P1用途→/P2説明/P3シナリオ/P4穴埋め/P5誤り探し）を
+// 各レッスンに順番どおり割り当てる（パターンの流れを保つため出題順は固定）。
+const DRILL = {
+  "l-cc-02": ["qd-cc02-1", "qd-cc02-2", "qd-cc02-3", "qd-cc02-4", "qd-cc02-5"],
+  "l-cc-05": ["qd-cc05-1", "qd-cc05-2", "qd-cc05-3", "qd-cc05-4", "qd-cc05-5"],
+  "l-cc-06": ["qd-cc06-1", "qd-cc06-2", "qd-cc06-3", "qd-cc06-4", "qd-cc06-5"],
+  "l-sec-01": ["qd-sec01-1", "qd-sec01-2", "qd-sec01-3", "qd-sec01-4", "qd-sec01-5"],
+  "l-sec-03": ["qd-sec03-1", "qd-sec03-2", "qd-sec03-3", "qd-sec03-4", "qd-sec03-5"],
+  "l-sec-06": ["qd-sec06-1", "qd-sec06-2", "qd-sec06-3", "qd-sec06-4", "qd-sec06-5"],
+  "l-tec-01": ["qd-tec01-1", "qd-tec01-2", "qd-tec01-3", "qd-tec01-4", "qd-tec01-5"],
+  "l-tec-05": ["qd-tec05-1", "qd-tec05-2", "qd-tec05-3", "qd-tec05-4", "qd-tec05-5"],
+  "l-tec-06": ["qd-tec06-1", "qd-tec06-2", "qd-tec06-3", "qd-tec06-4", "qd-tec06-5"],
+  "l-tec-09": ["qd-tec09-1", "qd-tec09-2", "qd-tec09-3", "qd-tec09-4", "qd-tec09-5"],
+  "l-bil-02": ["qd-bil02-1", "qd-bil02-2", "qd-bil02-3", "qd-bil02-4", "qd-bil02-5"],
+  "l-bil-06": ["qd-bil06-1", "qd-bil06-2", "qd-bil06-3", "qd-bil06-4", "qd-bil06-5"],
+};
+
 // ---- quizIds 自動割当 ----
 const TARGET = 5; // 1レッスンあたりの目標問題数
 const MIN = 3;
 const used = new Set();
 const qIds = new Set(questions.map((q) => q.id));
 const isChallenge = (q) => (q.tags || []).includes("中級");
+// 基本の確認問題から除外する特別枠（中級チャレンジ・反復ドリル）
+const isSpecial = (q) => (q.tags || []).includes("中級") || (q.tags || []).includes("ドリル");
 
 const domainOrder = ["cloudConcepts", "security", "technology", "billing"];
 LESSONS.sort((a, b) => domainOrder.indexOf(a.domain) - domainOrder.indexOf(b.domain));
 
 let challengeTotal = 0;
+let drillTotal = 0;
 const out = LESSONS.map((L) => {
-  // 基本の確認問題は「中級」を除外（基礎は基礎のまま）
-  const matched = questions.filter((q) => q.domain === L.domain && !isChallenge(q) && qMatches(q, L.match));
+  // 基本の確認問題は「中級」「ドリル」を除外（基礎は基礎のまま）
+  const matched = questions.filter((q) => q.domain === L.domain && !isSpecial(q) && qMatches(q, L.match));
   // 難易度昇順→未使用優先で並べる
   const sorted = matched.slice().sort((a, b) => (a.difficulty || 2) - (b.difficulty || 2));
   const fresh = sorted.filter((q) => !used.has(q.id));
@@ -501,6 +522,9 @@ const out = LESSONS.map((L) => {
   const chal = (CHALLENGE[L.id] || []).filter((id) => qIds.has(id));
   const challengeQuizIds = chal.length >= 2 ? chal : [];
   challengeTotal += challengeQuizIds.length;
+  // 反復ドリル（存在する問題IDのみ）
+  const drillQuizIds = (DRILL[L.id] || []).filter((id) => qIds.has(id));
+  drillTotal += drillQuizIds.length;
   return {
     id: L.id,
     title: L.title,
@@ -510,6 +534,7 @@ const out = LESSONS.map((L) => {
     sections: L.sections,
     quizIds: pick.map((q) => q.id),
     challengeQuizIds,
+    drillQuizIds,
   };
 });
 
@@ -524,3 +549,4 @@ for (const d of domainOrder) {
 }
 console.log(`ユニーク割当問題（基本）: ${used.size}`);
 console.log(`中級チャレンジ: ${out.filter((l) => l.challengeQuizIds.length).length}レッスンに のべ${challengeTotal}問`);
+console.log(`反復ドリル: ${out.filter((l) => l.drillQuizIds.length).length}レッスンに のべ${drillTotal}問`);
