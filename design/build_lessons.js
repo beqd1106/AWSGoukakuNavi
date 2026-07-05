@@ -471,22 +471,14 @@ const CHALLENGE = {
   "l-bil-06": ["qm-bil-06", "qm-bil-07"],
 };
 
-// ---- 反復ドリル（5パターン）の明示マッピング ----
-// design/build_drills.js で作成した「ドリル」問題（P1用途→/P2説明/P3シナリオ/P4穴埋め/P5誤り探し）を
-// 各レッスンに順番どおり割り当てる（パターンの流れを保つため出題順は固定）。
-const DRILL = {
-  "l-cc-02": ["qd-cc02-1", "qd-cc02-2", "qd-cc02-3", "qd-cc02-4", "qd-cc02-5"],
-  "l-cc-05": ["qd-cc05-1", "qd-cc05-2", "qd-cc05-3", "qd-cc05-4", "qd-cc05-5"],
-  "l-cc-06": ["qd-cc06-1", "qd-cc06-2", "qd-cc06-3", "qd-cc06-4", "qd-cc06-5"],
-  "l-sec-01": ["qd-sec01-1", "qd-sec01-2", "qd-sec01-3", "qd-sec01-4", "qd-sec01-5"],
-  "l-sec-03": ["qd-sec03-1", "qd-sec03-2", "qd-sec03-3", "qd-sec03-4", "qd-sec03-5"],
-  "l-sec-06": ["qd-sec06-1", "qd-sec06-2", "qd-sec06-3", "qd-sec06-4", "qd-sec06-5"],
-  "l-tec-01": ["qd-tec01-1", "qd-tec01-2", "qd-tec01-3", "qd-tec01-4", "qd-tec01-5"],
-  "l-tec-05": ["qd-tec05-1", "qd-tec05-2", "qd-tec05-3", "qd-tec05-4", "qd-tec05-5"],
-  "l-tec-06": ["qd-tec06-1", "qd-tec06-2", "qd-tec06-3", "qd-tec06-4", "qd-tec06-5"],
-  "l-tec-09": ["qd-tec09-1", "qd-tec09-2", "qd-tec09-3", "qd-tec09-4", "qd-tec09-5"],
-  "l-bil-02": ["qd-bil02-1", "qd-bil02-2", "qd-bil02-3", "qd-bil02-4", "qd-bil02-5"],
-  "l-bil-06": ["qd-bil06-1", "qd-bil06-2", "qd-bil06-3", "qd-bil06-4", "qd-bil06-5"],
+// ---- 反復ドリル（5パターン）の割当 ----
+// design/build_drills.js で作成した「ドリル」問題を、id接頭辞でプール化して各レッスンへ割り当てる。
+// アプリ側でこのプールを毎回シャッフルし、ランダムに一定数を出題する（パターン表示はしない）。
+const DRILL_PREFIX = {
+  "l-cc-02": "qd-cc02", "l-cc-05": "qd-cc05", "l-cc-06": "qd-cc06",
+  "l-sec-01": "qd-sec01", "l-sec-03": "qd-sec03", "l-sec-06": "qd-sec06",
+  "l-tec-01": "qd-tec01", "l-tec-05": "qd-tec05", "l-tec-06": "qd-tec06", "l-tec-09": "qd-tec09",
+  "l-bil-02": "qd-bil02", "l-bil-06": "qd-bil06",
 };
 
 // ---- quizIds 自動割当 ----
@@ -522,8 +514,11 @@ const out = LESSONS.map((L) => {
   const chal = (CHALLENGE[L.id] || []).filter((id) => qIds.has(id));
   const challengeQuizIds = chal.length >= 2 ? chal : [];
   challengeTotal += challengeQuizIds.length;
-  // 反復ドリル（存在する問題IDのみ）
-  const drillQuizIds = (DRILL[L.id] || []).filter((id) => qIds.has(id));
+  // 反復ドリル（id接頭辞でプール化・「ドリル」タグの問題を全部集める）
+  const prefix = DRILL_PREFIX[L.id];
+  const drillQuizIds = prefix
+    ? questions.filter((q) => (q.tags || []).includes("ドリル") && q.id.startsWith(prefix + "-")).map((q) => q.id)
+    : [];
   drillTotal += drillQuizIds.length;
   return {
     id: L.id,

@@ -113,6 +113,11 @@ struct LessonDetailView: View {
     @State private var showQuiz = false
     @State private var showChallenge = false
     @State private var showDrill = false
+    /// ドリルは毎回シャッフルして一定数だけ出題する。タップ時に確定してここへ入れる。
+    @State private var drillQuestions: [QuizQuestion] = []
+
+    /// 1回のドリルで出題する問題数
+    private let drillSessionSize = 10
 
     private var isDone: Bool { store.isLessonCompleted(lesson.id) }
     private var challengeIds: [String] { lesson.challengeQuizIds ?? [] }
@@ -186,9 +191,16 @@ struct LessonDetailView: View {
         }
         .navigationDestination(isPresented: $showDrill) {
             QuizPlayerView(title: "反復ドリル・\(lesson.title)",
-                           questions: drillIds.compactMap { ContentRepository.shared.question(id: $0) },
+                           questions: drillQuestions,
                            showLessonLink: false)
         }
+    }
+
+    /// ドリルプールをシャッフルして出題分だけ取り出す
+    private func startDrill() {
+        let pool = drillIds.compactMap { ContentRepository.shared.question(id: $0) }
+        drillQuestions = Array(pool.shuffled().prefix(drillSessionSize))
+        showDrill = true
     }
 
     // 反復ドリル（同じ知識を5パターンで問い、定着させる）
@@ -204,15 +216,15 @@ struct LessonDetailView: View {
                         .background(Theme.teal.opacity(0.12)).clipShape(Capsule())
                     Spacer()
                 }
-                Text("同じ内容を「用途→サービス／説明／シナリオ／穴埋め／誤り探し」の5つの角度で出題。繰り返してしっかり定着させます。")
+                Text("同じ内容を5つの角度（用途・説明・シナリオ・穴埋め・誤り探し）で出題。毎回ランダムに\(drillSessionSize)問出るので、繰り返すほど定着します。")
                     .font(.system(size: 13)).foregroundStyle(Theme.inkSoft)
                     .fixedSize(horizontal: false, vertical: true)
                 Button {
-                    showDrill = true
+                    startDrill()
                 } label: {
                     HStack {
                         Image(systemName: "square.stack.3d.up.fill")
-                        Text("5パターンで反復（\(drillIds.count)問）").font(.system(size: 15, weight: .semibold))
+                        Text("ランダム\(min(drillSessionSize, drillIds.count))問に挑戦（全\(drillIds.count)問）").font(.system(size: 15, weight: .semibold))
                         Spacer()
                         Image(systemName: "chevron.right").font(.system(size: 13))
                     }
