@@ -123,7 +123,20 @@
       "q2-cc-03"
     ],
     "challengeQuizIds": [],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-cc03-1",
+      "qd-cc03-2",
+      "qd-cc03-3",
+      "qd-cc03-4",
+      "qd-cc03-5",
+      "qd-cc03-6",
+      "qd-cc03-7",
+      "qd-cc03-8",
+      "qd-cc03-9",
+      "qd-cc03-10",
+      "qd-cc03-11",
+      "qd-cc03-12"
+    ]
   },
   {
     "id": "l-cc-04",
@@ -153,7 +166,21 @@
       "q2-cc-09"
     ],
     "challengeQuizIds": [],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-cc04-1",
+      "qd-cc04-2",
+      "qd-cc04-3",
+      "qd-cc04-4",
+      "qd-cc04-5",
+      "qd-cc04-6",
+      "qd-cc04-7",
+      "qd-cc04-8",
+      "qd-cc04-9",
+      "qd-cc04-10",
+      "qd-cc04-11",
+      "qd-cc04-12",
+      "qd-cc04-13"
+    ]
   },
   {
     "id": "l-cc-05",
@@ -645,7 +672,23 @@
       "qm-sec-08",
       "qm-sec-09"
     ],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-sec08-1",
+      "qd-sec08-2",
+      "qd-sec08-3",
+      "qd-sec08-4",
+      "qd-sec08-5",
+      "qd-sec08-6",
+      "qd-sec08-7",
+      "qd-sec08-8",
+      "qd-sec08-9",
+      "qd-sec08-10",
+      "qd-sec08-11",
+      "qd-sec08-12",
+      "qd-sec08-13",
+      "qd-sec08-14",
+      "qd-sec08-15"
+    ]
   },
   {
     "id": "l-sec-09",
@@ -675,7 +718,23 @@
       "q-sec-022"
     ],
     "challengeQuizIds": [],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-sec09-1",
+      "qd-sec09-2",
+      "qd-sec09-3",
+      "qd-sec09-4",
+      "qd-sec09-5",
+      "qd-sec09-6",
+      "qd-sec09-7",
+      "qd-sec09-8",
+      "qd-sec09-9",
+      "qd-sec09-10",
+      "qd-sec09-11",
+      "qd-sec09-12",
+      "qd-sec09-13",
+      "qd-sec09-14",
+      "qd-sec09-15"
+    ]
   },
   {
     "id": "l-sec-10",
@@ -788,7 +847,22 @@
       "qm-tec-01",
       "qm-tec-02"
     ],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-tec02-1",
+      "qd-tec02-2",
+      "qd-tec02-3",
+      "qd-tec02-4",
+      "qd-tec02-5",
+      "qd-tec02-6",
+      "qd-tec02-7",
+      "qd-tec02-8",
+      "qd-tec02-9",
+      "qd-tec02-10",
+      "qd-tec02-11",
+      "qd-tec02-12",
+      "qd-tec02-13",
+      "qd-tec02-14"
+    ]
   },
   {
     "id": "l-tec-03",
@@ -821,7 +895,23 @@
       "qm-tec-03",
       "qm-tec-04"
     ],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-tec03-1",
+      "qd-tec03-2",
+      "qd-tec03-3",
+      "qd-tec03-4",
+      "qd-tec03-5",
+      "qd-tec03-6",
+      "qd-tec03-7",
+      "qd-tec03-8",
+      "qd-tec03-9",
+      "qd-tec03-10",
+      "qd-tec03-11",
+      "qd-tec03-12",
+      "qd-tec03-13",
+      "qd-tec03-14",
+      "qd-tec03-15"
+    ]
   },
   {
     "id": "l-tec-04",
@@ -851,7 +941,23 @@
       "q-tec-012"
     ],
     "challengeQuizIds": [],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-tec04-1",
+      "qd-tec04-2",
+      "qd-tec04-3",
+      "qd-tec04-4",
+      "qd-tec04-5",
+      "qd-tec04-6",
+      "qd-tec04-7",
+      "qd-tec04-8",
+      "qd-tec04-9",
+      "qd-tec04-10",
+      "qd-tec04-11",
+      "qd-tec04-12",
+      "qd-tec04-13",
+      "qd-tec04-14",
+      "qd-tec04-15"
+    ]
   },
   {
     "id": "l-tec-05",
@@ -1245,7 +1351,21 @@
       "qm-bil-01",
       "qm-bil-02"
     ],
-    "drillQuizIds": []
+    "drillQuizIds": [
+      "qd-bil01-1",
+      "qd-bil01-2",
+      "qd-bil01-3",
+      "qd-bil01-4",
+      "qd-bil01-5",
+      "qd-bil01-6",
+      "qd-bil01-7",
+      "qd-bil01-8",
+      "qd-bil01-9",
+      "qd-bil01-10",
+      "qd-bil01-11",
+      "qd-bil01-12",
+      "qd-bil01-13"
+    ]
   },
   {
     "id": "l-bil-02",

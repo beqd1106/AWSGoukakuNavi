@@ -22431,5 +22431,3118 @@
       "ドリル"
     ],
     "beginnerNote": "TAMはEnterprise。"
+  },
+  {
+    "id": "qd-cc03-1",
+    "question": "「すべてのシステムをAWS上で構築・運用する」形態を何と呼びますか。",
+    "choices": [
+      "クラウド",
+      "オンプレミス",
+      "ハイブリッド",
+      "マルチテナント"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "全面的にクラウド上で動かす形態をクラウド（オールイン）と呼びます。",
+    "wrongChoiceExplanations": {
+      "1": "オンプレミスは自社設備のみです。",
+      "2": "ハイブリッドは両方の接続です。",
+      "3": "マルチテナントは共有利用の概念で別軸です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 1,
+    "tags": [
+      "デプロイモデル",
+      "ドリル"
+    ],
+    "beginnerNote": "全部クラウド＝クラウド。"
+  },
+  {
+    "id": "qd-cc03-2",
+    "question": "「自社のデータセンターだけで運用する」形態を何と呼びますか。",
+    "choices": [
+      "サーバーレス",
+      "オンプレミス",
+      "クラウド",
+      "ハイブリッド"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "自社設備のみで運用する形態がオンプレミスです。",
+    "wrongChoiceExplanations": {
+      "0": "サーバーレスは実行方式で別軸です。",
+      "2": "クラウドはAWS上での運用です。",
+      "3": "ハイブリッドは両方の接続です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 1,
+    "tags": [
+      "デプロイモデル",
+      "オンプレミス",
+      "ドリル"
+    ],
+    "beginnerNote": "自社設備のみ＝オンプレミス。"
+  },
+  {
+    "id": "qd-cc03-3",
+    "question": "「社内システムとAWSを接続して併用する」形態を何と呼びますか。",
+    "choices": [
+      "オンプレミス",
+      "エッジ",
+      "ハイブリッド",
+      "クラウド"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "オンプレとクラウドをつないで併用するのがハイブリッドです。",
+    "wrongChoiceExplanations": {
+      "0": "オンプレミスは自社のみです。",
+      "1": "エッジは配信拠点の概念です。",
+      "3": "クラウドは全面クラウドです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 1,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "ドリル"
+    ],
+    "beginnerNote": "両方つなぐ＝ハイブリッド。"
+  },
+  {
+    "id": "qd-cc03-4",
+    "question": "ハイブリッド構成で、オンプレとAWSを安定・大容量でつなぐのに使うのはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "AWS Lambda",
+      "Amazon SNS",
+      "AWS Direct Connect"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "専用線のDirect Connectは、安定・低遅延・大容量のハイブリッド接続に向きます。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージです。",
+      "1": "Lambdaはサーバーレスです。",
+      "2": "SNSは通知です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 2,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "ドリル"
+    ],
+    "beginnerNote": "安定接続＝Direct Connect。"
+  },
+  {
+    "id": "qd-cc03-5",
+    "question": "ハイブリッドの説明として正しいものはどれですか。",
+    "choices": [
+      "オンプレミスとクラウドを接続して併用する形態",
+      "全システムをAWSに移す形態",
+      "自社設備のみで動かす形態",
+      "無料でのみ使える形態"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ハイブリッドは社内とAWSを接続して併用する形態です。",
+    "wrongChoiceExplanations": {
+      "1": "全面移行はクラウド（オールイン）です。",
+      "2": "自社のみはオンプレミスです。",
+      "3": "無料限定の概念ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 1,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "ドリル"
+    ],
+    "beginnerNote": "併用＝ハイブリッド。"
+  },
+  {
+    "id": "qd-cc03-6",
+    "question": "ハイブリッドが選ばれる典型的な理由として正しいものはどれですか。",
+    "choices": [
+      "暗号化が不要になる",
+      "法規制でデータを社内に置く必要がある、既存システムと連携したい、段階移行したい",
+      "通信を完全無料にできる",
+      "AWSを使わずに済む"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "法規制・既存連携・段階移行などの事情でハイブリッドが選ばれます。",
+    "wrongChoiceExplanations": {
+      "0": "暗号化の要否とは無関係です。",
+      "2": "通信無料化が理由ではありません。",
+      "3": "ハイブリッドはAWSも使います。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 2,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "ドリル"
+    ],
+    "beginnerNote": "事情があるとハイブリッド。"
+  },
+  {
+    "id": "qd-cc03-7",
+    "question": "法規制で一部データを社内に残す必要がありますが、新機能はクラウドで作りたいです。最適な形態はどれですか。",
+    "choices": [
+      "オンプレミスのみ",
+      "形態は関係ない",
+      "ハイブリッド",
+      "全面クラウド（オールイン）"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "残すべきデータは社内、新機能はクラウド、という併用はハイブリッドが適します。",
+    "wrongChoiceExplanations": {
+      "0": "オンプレのみではクラウドの利点を得られません。",
+      "1": "形態選択は重要です。",
+      "3": "全面クラウドは社内に残す要件と合いません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 2,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "ドリル"
+    ],
+    "beginnerNote": "一部社内＝ハイブリッド。"
+  },
+  {
+    "id": "qd-cc03-8",
+    "question": "新規スタートアップがゼロからすべてAWSで構築します。最も自然な形態はどれですか。",
+    "choices": [
+      "ハイブリッド",
+      "オンプレミス",
+      "形態は選べない",
+      "全面クラウド（オールイン）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "既存資産がなくゼロから作るなら、全面クラウドが自然です。",
+    "wrongChoiceExplanations": {
+      "0": "残す資産がなければハイブリッドの必要は薄いです。",
+      "1": "オンプレは初期投資が大きくなります。",
+      "2": "形態は選べます。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 2,
+    "tags": [
+      "デプロイモデル",
+      "ドリル"
+    ],
+    "beginnerNote": "新規ゼロ＝全面クラウド。"
+  },
+  {
+    "id": "qd-cc03-9",
+    "question": "社内とクラウドを併用する形態は「＿＿＿＿＿」です。＿＿＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ハイブリッド",
+      "オンプレミス",
+      "スタンドアロン",
+      "シングルAZ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "併用はハイブリッドです。",
+    "wrongChoiceExplanations": {
+      "1": "オンプレミスは自社のみです。",
+      "2": "スタンドアロンは単独の意味です。",
+      "3": "シングルAZは可用性の話です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 1,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "ドリル"
+    ],
+    "beginnerNote": "併用＝ハイブリッド。"
+  },
+  {
+    "id": "qd-cc03-10",
+    "question": "自社設備のみで運用する形態は「＿＿＿＿＿＿」です。＿＿に入るのはどれですか。",
+    "choices": [
+      "サーバーレス",
+      "オンプレミス",
+      "クラウド",
+      "ハイブリッド"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "自社設備のみはオンプレミスです。",
+    "wrongChoiceExplanations": {
+      "0": "サーバーレスは実行方式です。",
+      "2": "クラウドはAWS上です。",
+      "3": "ハイブリッドは併用です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 1,
+    "tags": [
+      "デプロイモデル",
+      "オンプレミス",
+      "ドリル"
+    ],
+    "beginnerNote": "自社のみ＝オンプレミス。"
+  },
+  {
+    "id": "qd-cc03-11",
+    "question": "デプロイモデルの説明として誤っているものはどれですか。",
+    "choices": [
+      "オンプレミスは自社設備のみ",
+      "ハイブリッドはオンプレとクラウドを接続する",
+      "ハイブリッドはAWSを一切使わない形態である",
+      "クラウドは全面的にAWS上で運用する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "ハイブリッドはオンプレとクラウドを併用する形態で、AWSも使います。",
+    "wrongChoiceExplanations": {
+      "0": "オンプレミスの説明は正しいです。",
+      "1": "ハイブリッドの接続は正しい説明です。",
+      "3": "クラウドの説明は正しいです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 2,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "ドリル"
+    ],
+    "beginnerNote": "ハイブリッドもAWSを使う。"
+  },
+  {
+    "id": "qd-cc03-12",
+    "question": "デプロイモデルの選択に関する説明として誤っているものはどれですか。",
+    "choices": [
+      "段階的な移行にはハイブリッドが有効",
+      "法規制がある場合ハイブリッドが選ばれることがある",
+      "新規ならクラウドが自然",
+      "既存の基幹システムがあっても必ず全面クラウドにすべきである"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "既存資産や制約がある場合、必ずしも全面クラウドが最適とは限りません。",
+    "wrongChoiceExplanations": {
+      "0": "段階移行にハイブリッドは有効で正しい説明です。",
+      "1": "法規制でハイブリッドは正しい説明です。",
+      "2": "新規ならクラウドが自然なのは正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "デプロイモデル",
+    "difficulty": 2,
+    "tags": [
+      "デプロイモデル",
+      "ドリル"
+    ],
+    "beginnerNote": "必ず全面クラウドとは限らない。"
+  },
+  {
+    "id": "qd-cc04-1",
+    "question": "「東京・大阪などの地理的なまとまり」を何と呼びますか。",
+    "choices": [
+      "リージョン",
+      "アベイラビリティーゾーン",
+      "エッジロケーション",
+      "サブネット"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "地理的な大きなまとまりがリージョンです。",
+    "wrongChoiceExplanations": {
+      "1": "AZはリージョン内の分離されたデータセンター群です。",
+      "2": "エッジは配信拠点です。",
+      "3": "サブネットはVPC内の区画です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 1,
+    "tags": [
+      "グローバルインフラ",
+      "リージョン",
+      "ドリル"
+    ],
+    "beginnerNote": "地理的まとまり＝リージョン。"
+  },
+  {
+    "id": "qd-cc04-2",
+    "question": "「リージョン内で物理的に離れたデータセンター群」を何と呼びますか。",
+    "choices": [
+      "VPC",
+      "アベイラビリティーゾーン（AZ）",
+      "リージョン",
+      "エッジロケーション"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "リージョン内の分離された拠点がAZです。複数AZ配置で可用性が上がります。",
+    "wrongChoiceExplanations": {
+      "0": "VPCは仮想ネットワークです。",
+      "2": "リージョンは地理的まとまりです。",
+      "3": "エッジは配信拠点です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 1,
+    "tags": [
+      "グローバルインフラ",
+      "アベイラビリティーゾーン",
+      "ドリル"
+    ],
+    "beginnerNote": "リージョン内の拠点＝AZ。"
+  },
+  {
+    "id": "qd-cc04-3",
+    "question": "「利用者の近くでCloudFrontなどが配信に使う拠点」を何と呼びますか。",
+    "choices": [
+      "リージョン",
+      "サブネット",
+      "エッジロケーション",
+      "アベイラビリティーゾーン"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "利用者の近くの配信拠点がエッジロケーションです。",
+    "wrongChoiceExplanations": {
+      "0": "リージョンは地理的まとまりです。",
+      "1": "サブネットはVPC内の区画です。",
+      "3": "AZはリージョン内の拠点です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 1,
+    "tags": [
+      "グローバルインフラ",
+      "エッジ",
+      "ドリル"
+    ],
+    "beginnerNote": "配信拠点＝エッジ。"
+  },
+  {
+    "id": "qd-cc04-4",
+    "question": "「片方のデータセンターが落ちても継続」させるための配置はどれですか。",
+    "choices": [
+      "単一のAZに集約する",
+      "1台に集約する",
+      "エッジのみに置く",
+      "複数のAZに分散して配置する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "複数AZ配置により、片方のAZ障害でも継続できます。",
+    "wrongChoiceExplanations": {
+      "0": "単一AZ集約は障害時に全停止します。",
+      "1": "1台集約は単一障害点です。",
+      "2": "エッジは配信用で運用基盤ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 2,
+    "tags": [
+      "グローバルインフラ",
+      "アベイラビリティーゾーン",
+      "ドリル"
+    ],
+    "beginnerNote": "複数AZで冗長化。"
+  },
+  {
+    "id": "qd-cc04-5",
+    "question": "リージョンの説明として正しいものはどれですか。",
+    "choices": [
+      "地理的に離れた、複数のAZを含む大きなまとまり",
+      "1つのサーバーラック",
+      "配信専用の拠点",
+      "仮想ネットワークの単位"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "リージョンは複数のAZを含む地理的なまとまりです。",
+    "wrongChoiceExplanations": {
+      "1": "サーバーラック単位ではありません。",
+      "2": "配信拠点はエッジです。",
+      "3": "仮想ネットワークはVPCです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 1,
+    "tags": [
+      "グローバルインフラ",
+      "リージョン",
+      "ドリル"
+    ],
+    "beginnerNote": "複数AZを含む地理的まとまり。"
+  },
+  {
+    "id": "qd-cc04-6",
+    "question": "アベイラビリティーゾーン（AZ）の説明として正しいものはどれですか。",
+    "choices": [
+      "課金の単位",
+      "リージョン内で物理的に分離された1つ以上のデータセンター群",
+      "世界に1つだけの拠点",
+      "利用者宅の端末"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AZは物理的に分離され、複数使うと高可用性を実現できます。",
+    "wrongChoiceExplanations": {
+      "0": "課金単位ではありません。",
+      "2": "世界に1つではありません。",
+      "3": "利用者端末ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 1,
+    "tags": [
+      "グローバルインフラ",
+      "アベイラビリティーゾーン",
+      "ドリル"
+    ],
+    "beginnerNote": "分離された拠点。"
+  },
+  {
+    "id": "qd-cc04-7",
+    "question": "エッジロケーションの説明として正しいものはどれですか。",
+    "choices": [
+      "データベース専用の拠点",
+      "課金の単位",
+      "利用者に近い配信拠点で、CloudFront等が使う",
+      "大規模な計算専用施設"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "エッジは利用者の近くから配信し、表示を速くします。",
+    "wrongChoiceExplanations": {
+      "0": "DB専用拠点ではありません。",
+      "1": "課金単位ではありません。",
+      "3": "計算専用施設ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 2,
+    "tags": [
+      "グローバルインフラ",
+      "エッジ",
+      "ドリル"
+    ],
+    "beginnerNote": "近くから配信。"
+  },
+  {
+    "id": "qd-cc04-8",
+    "question": "日本の利用者向けに低遅延で、かつ国内にデータを置きたいです。まず考慮すべきはどれですか。",
+    "choices": [
+      "最も遠いリージョンを選ぶ",
+      "リージョンは何でもよい",
+      "エッジだけで完結させる",
+      "利用者に近く、データ所在地の要件を満たすリージョンを選ぶ"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "低遅延（近さ）とデータ所在地（法令）を満たすリージョン選定が重要です。",
+    "wrongChoiceExplanations": {
+      "0": "遠いリージョンは遅延が増えます。",
+      "1": "リージョン選定は重要です。",
+      "2": "運用基盤はリージョンに置く必要があります。"
+    },
+    "domain": "cloudConcepts",
+    "service": "リージョン選定",
+    "difficulty": 2,
+    "tags": [
+      "グローバルインフラ",
+      "リージョン選定",
+      "ドリル"
+    ],
+    "beginnerNote": "近さ＋データ所在地。"
+  },
+  {
+    "id": "qd-cc04-9",
+    "question": "重要な本番システムを1つのAZだけで動かしています。可用性上の問題はどれですか。",
+    "choices": [
+      "そのAZが落ちると全体が止まる（単一障害点）",
+      "通信が無料にならない",
+      "暗号化できない",
+      "課金が増えるだけ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "単一AZは単一障害点で、AZ障害時に全停止します。複数AZ化が有効です。",
+    "wrongChoiceExplanations": {
+      "1": "通信料金の話ではありません。",
+      "2": "暗号化とは無関係です。",
+      "3": "主な問題は可用性です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 2,
+    "tags": [
+      "グローバルインフラ",
+      "アベイラビリティーゾーン",
+      "ドリル"
+    ],
+    "beginnerNote": "単一AZは危険。"
+  },
+  {
+    "id": "qd-cc04-10",
+    "question": "リージョンの中にある、物理的に分離された拠点群を「＿＿」と略します。＿＿に入るのはどれですか。",
+    "choices": [
+      "DNS",
+      "AZ",
+      "VPC",
+      "CDN"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "アベイラビリティーゾーン＝AZです。",
+    "wrongChoiceExplanations": {
+      "0": "DNSは名前解決です。",
+      "2": "VPCは仮想ネットワークです。",
+      "3": "CDNは配信網です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 1,
+    "tags": [
+      "グローバルインフラ",
+      "アベイラビリティーゾーン",
+      "ドリル"
+    ],
+    "beginnerNote": "AZ＝アベイラビリティーゾーン。"
+  },
+  {
+    "id": "qd-cc04-11",
+    "question": "利用者の近くから配信するための拠点を「＿＿＿ロケーション」と呼びます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ゾーン",
+      "コア",
+      "エッジ",
+      "リージョン"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "配信拠点はエッジロケーションです。",
+    "wrongChoiceExplanations": {
+      "0": "ゾーンはAZの一部語です。",
+      "1": "コアはこの文脈で使いません。",
+      "3": "リージョンは地理的まとまりです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 2,
+    "tags": [
+      "グローバルインフラ",
+      "エッジ",
+      "ドリル"
+    ],
+    "beginnerNote": "配信＝エッジロケーション。"
+  },
+  {
+    "id": "qd-cc04-12",
+    "question": "グローバルインフラの説明として誤っているものはどれですか。",
+    "choices": [
+      "リージョンは複数のAZを含む",
+      "複数AZ配置で可用性が高まる",
+      "エッジは配信に使う",
+      "1つのリージョンには必ず1つのAZしかない"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "1つのリージョンには複数のAZがあります（1つだけではありません）。",
+    "wrongChoiceExplanations": {
+      "0": "リージョンが複数AZを含むのは正しい説明です。",
+      "1": "複数AZで可用性向上は正しい説明です。",
+      "2": "エッジ＝配信は正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "グローバルインフラ",
+    "difficulty": 2,
+    "tags": [
+      "グローバルインフラ",
+      "ドリル"
+    ],
+    "beginnerNote": "リージョンに複数AZ。"
+  },
+  {
+    "id": "qd-cc04-13",
+    "question": "リージョン選定で考慮すべき点として誤っているものはどれですか。",
+    "choices": [
+      "常に最も遠いリージョンを選ぶべきである",
+      "利用者に近いこと（低遅延）",
+      "データ所在地・法令",
+      "使いたいサービスがあるか"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "むしろ利用者に近いリージョンが低遅延で有利です。最も遠い選択は不適切です。",
+    "wrongChoiceExplanations": {
+      "1": "近さ（低遅延）は正しい考慮点です。",
+      "2": "データ所在地は正しい考慮点です。",
+      "3": "サービス提供状況は正しい考慮点です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "リージョン選定",
+    "difficulty": 2,
+    "tags": [
+      "グローバルインフラ",
+      "リージョン選定",
+      "ドリル"
+    ],
+    "beginnerNote": "遠いほど良いは誤り。"
+  },
+  {
+    "id": "qd-sec08-1",
+    "question": "「EC2インスタンス単位で許可した通信だけを通す、ステートフルな仮想ファイアウォール」はどれですか。",
+    "choices": [
+      "インターネットゲートウェイ",
+      "セキュリティグループ",
+      "ネットワークACL",
+      "ルートテーブル"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "セキュリティグループはインスタンス単位・ステートフルで動作します。",
+    "wrongChoiceExplanations": {
+      "0": "IGWは外部接続の出入口です。",
+      "2": "ネットワークACLはサブネット単位・ステートレスです。",
+      "3": "ルートテーブルは経路制御です。"
+    },
+    "domain": "security",
+    "service": "セキュリティグループ",
+    "difficulty": 1,
+    "tags": [
+      "セキュリティグループ",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "インスタンス単位・ステートフル＝SG。"
+  },
+  {
+    "id": "qd-sec08-2",
+    "question": "「WebアプリへのSQLインジェクション等の攻撃をルールで遮断」するのはどれですか。",
+    "choices": [
+      "Amazon Macie",
+      "Amazon Inspector",
+      "AWS WAF",
+      "AWS Shield"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "WAFはWebアプリを狙う攻撃をルールで遮断します。",
+    "wrongChoiceExplanations": {
+      "0": "MacieはS3の機微データ検出です。",
+      "1": "Inspectorは脆弱性診断です。",
+      "3": "ShieldはDDoS対策です。"
+    },
+    "domain": "security",
+    "service": "WAF",
+    "difficulty": 1,
+    "tags": [
+      "WAF",
+      "ドリル"
+    ],
+    "beginnerNote": "Web攻撃遮断＝WAF。"
+  },
+  {
+    "id": "qd-sec08-3",
+    "question": "「大量アクセスでサービスを止めるDDoS攻撃から守る」のはどれですか。",
+    "choices": [
+      "AWS WAF",
+      "AWS Config",
+      "AWS Artifact",
+      "AWS Shield"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ShieldはDDoS攻撃から守り、Standardは無料で自動適用されます。",
+    "wrongChoiceExplanations": {
+      "0": "WAFはWeb攻撃の内容遮断です。",
+      "1": "Configは設定評価です。",
+      "2": "Artifactは監査資料です。"
+    },
+    "domain": "security",
+    "service": "Shield",
+    "difficulty": 1,
+    "tags": [
+      "Shield",
+      "DDoS",
+      "ドリル"
+    ],
+    "beginnerNote": "DDoS対策＝Shield。"
+  },
+  {
+    "id": "qd-sec08-4",
+    "question": "「サブネット単位で通信を制御する、ステートレスな仕組み」はどれですか。",
+    "choices": [
+      "ネットワークACL",
+      "セキュリティグループ",
+      "ルートテーブル",
+      "NATゲートウェイ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ネットワークACLはサブネット単位・ステートレスに動作します。",
+    "wrongChoiceExplanations": {
+      "1": "セキュリティグループはインスタンス単位・ステートフルです。",
+      "2": "ルートテーブルは経路制御です。",
+      "3": "NATは内部から外部への通信用です。"
+    },
+    "domain": "security",
+    "service": "ネットワーク",
+    "difficulty": 1,
+    "tags": [
+      "ネットワーク",
+      "セキュリティグループ",
+      "ドリル"
+    ],
+    "beginnerNote": "サブネット単位・ステートレス＝NACL。"
+  },
+  {
+    "id": "qd-sec08-5",
+    "question": "セキュリティグループの説明として正しいものはどれですか。",
+    "choices": [
+      "攻撃の内容を判定するWAF",
+      "インスタンス単位で動作し、戻りの通信は自動的に許可される（ステートフル）",
+      "サブネット単位で動作しステートレス",
+      "経路を決めるルート表"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "SGはインスタンス単位・ステートフルで、許可した通信の戻りは自動許可されます。",
+    "wrongChoiceExplanations": {
+      "0": "内容判定はWAFです。",
+      "2": "サブネット単位・ステートレスはNACLです。",
+      "3": "経路制御はルートテーブルです。"
+    },
+    "domain": "security",
+    "service": "セキュリティグループ",
+    "difficulty": 2,
+    "tags": [
+      "セキュリティグループ",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "SG＝ステートフル。"
+  },
+  {
+    "id": "qd-sec08-6",
+    "question": "AWS WAFの説明として正しいものはどれですか。",
+    "choices": [
+      "暗号鍵を管理する",
+      "監査レポートを配布する",
+      "Webアプリを狙う攻撃をルールで検知・遮断する",
+      "DDoS攻撃専用の対策"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "WAFはSQLインジェクションやXSSなどのWeb攻撃を遮断します。",
+    "wrongChoiceExplanations": {
+      "0": "鍵管理はKMSです。",
+      "1": "監査資料はArtifactです。",
+      "3": "DDoS対策はShieldです。"
+    },
+    "domain": "security",
+    "service": "WAF",
+    "difficulty": 2,
+    "tags": [
+      "WAF",
+      "ドリル"
+    ],
+    "beginnerNote": "Web攻撃をルールで遮断。"
+  },
+  {
+    "id": "qd-sec08-7",
+    "question": "AWS Shield Standardの説明として正しいものはどれですか。",
+    "choices": [
+      "有料でのみ利用できる",
+      "SQLインジェクションを遮断する",
+      "暗号化を行う",
+      "一般的なDDoS攻撃に対し無料で自動的に保護する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Shield StandardはDDoS対策を無料で自動提供します。Advancedは高度な保護です。",
+    "wrongChoiceExplanations": {
+      "0": "Standardは無料です。",
+      "1": "SQLインジェクション遮断はWAFです。",
+      "2": "暗号化はKMS/ACMです。"
+    },
+    "domain": "security",
+    "service": "Shield",
+    "difficulty": 2,
+    "tags": [
+      "Shield",
+      "DDoS",
+      "ドリル"
+    ],
+    "beginnerNote": "Standardは無料・自動。"
+  },
+  {
+    "id": "qd-sec08-8",
+    "question": "公開WebアプリがSQLインジェクションを受けています。最適な対策はどれですか。",
+    "choices": [
+      "AWS WAFでルールにより攻撃を遮断する",
+      "AWS Shieldに切り替える",
+      "セキュリティグループのポートを増やす",
+      "Macieを使う"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Web攻撃の内容遮断はWAFが適します。",
+    "wrongChoiceExplanations": {
+      "1": "ShieldはDDoS対策で内容遮断は主目的ではありません。",
+      "2": "ポート開放はむしろ危険です。",
+      "3": "MacieはS3の機微データ検出です。"
+    },
+    "domain": "security",
+    "service": "WAF",
+    "difficulty": 2,
+    "tags": [
+      "WAF",
+      "ドリル"
+    ],
+    "beginnerNote": "SQLi対策＝WAF。"
+  },
+  {
+    "id": "qd-sec08-9",
+    "question": "大量アクセスでサービスを停止させる攻撃への基本的な保護を、無料で自動的に得たいです。何を使いますか。",
+    "choices": [
+      "AWS Config",
+      "AWS Shield Standard",
+      "AWS WAF（有料ルール）",
+      "Amazon Inspector"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Shield StandardはDDoS保護を無料で自動提供します。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "2": "WAFはWeb攻撃遮断で、基本DDoSの自動無料保護はShieldです。",
+      "3": "Inspectorは脆弱性診断です。"
+    },
+    "domain": "security",
+    "service": "Shield",
+    "difficulty": 2,
+    "tags": [
+      "Shield",
+      "DDoS",
+      "ドリル"
+    ],
+    "beginnerNote": "無料DDoS保護＝Shield Standard。"
+  },
+  {
+    "id": "qd-sec08-10",
+    "question": "あるEC2に対し、特定のポートだけ通信を許可したいです。最適なのはどれですか。",
+    "choices": [
+      "KMSで鍵を作る",
+      "Route 53でDNSを設定する",
+      "セキュリティグループで許可ルールを設定する",
+      "バケットポリシーを設定する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "インスタンスへの通信許可はセキュリティグループで制御します。",
+    "wrongChoiceExplanations": {
+      "0": "KMSは鍵管理です。",
+      "1": "Route 53はDNSです。",
+      "3": "バケットポリシーはS3のアクセス制御です。"
+    },
+    "domain": "security",
+    "service": "セキュリティグループ",
+    "difficulty": 2,
+    "tags": [
+      "セキュリティグループ",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "インスタンスの通信＝SG。"
+  },
+  {
+    "id": "qd-sec08-11",
+    "question": "Webアプリを攻撃から守るファイアウォールは「AWS ＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "KMS",
+      "IAM",
+      "VPC",
+      "WAF"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Web Application FirewallはWAFです。",
+    "wrongChoiceExplanations": {
+      "0": "KMSは鍵管理です。",
+      "1": "IAMは権限管理です。",
+      "2": "VPCはネットワークです。"
+    },
+    "domain": "security",
+    "service": "WAF",
+    "difficulty": 1,
+    "tags": [
+      "WAF",
+      "ドリル"
+    ],
+    "beginnerNote": "Web＝WAF。"
+  },
+  {
+    "id": "qd-sec08-12",
+    "question": "DDoS攻撃対策のサービスは「AWS ＿＿＿＿＿」です。＿＿＿＿＿に入るのはどれですか。",
+    "choices": [
+      "Shield",
+      "WAF",
+      "Config",
+      "Macie"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "DDoS対策はShieldです。",
+    "wrongChoiceExplanations": {
+      "1": "WAFはWeb攻撃遮断です。",
+      "2": "Configは設定評価です。",
+      "3": "MacieはS3機微データ検出です。"
+    },
+    "domain": "security",
+    "service": "Shield",
+    "difficulty": 1,
+    "tags": [
+      "Shield",
+      "DDoS",
+      "ドリル"
+    ],
+    "beginnerNote": "DDoS＝Shield。"
+  },
+  {
+    "id": "qd-sec08-13",
+    "question": "セキュリティグループは「ステート＿＿＿」に動作し、戻りの通信を自動許可します。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ダウン",
+      "フル",
+      "レス",
+      "アップ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "セキュリティグループはステートフルです（NACLはステートレス）。",
+    "wrongChoiceExplanations": {
+      "0": "ステートダウンという語はありません。",
+      "2": "ステートレスはNACLです。",
+      "3": "ステートアップという語はありません。"
+    },
+    "domain": "security",
+    "service": "セキュリティグループ",
+    "difficulty": 2,
+    "tags": [
+      "セキュリティグループ",
+      "ドリル"
+    ],
+    "beginnerNote": "SG＝ステートフル。"
+  },
+  {
+    "id": "qd-sec08-14",
+    "question": "ネットワーク防御の説明として誤っているものはどれですか。",
+    "choices": [
+      "ShieldはDDoS対策",
+      "ネットワークACLはサブネット単位",
+      "セキュリティグループはサブネット単位でステートレスに動作する",
+      "WAFはWeb攻撃を遮断する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "セキュリティグループはインスタンス単位・ステートフルで、サブネット単位・ステートレスはNACLです。",
+    "wrongChoiceExplanations": {
+      "0": "Shield＝DDoS対策は正しい説明です。",
+      "1": "NACL＝サブネット単位は正しい説明です。",
+      "3": "WAF＝Web攻撃遮断は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "セキュリティグループ",
+    "difficulty": 2,
+    "tags": [
+      "セキュリティグループ",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "SGはインスタンス単位・ステートフル。"
+  },
+  {
+    "id": "qd-sec08-15",
+    "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "AWS WAF＝Web攻撃の遮断",
+      "セキュリティグループ＝インスタンスの通信制御",
+      "Amazon GuardDuty＝脅威検知",
+      "AWS Shield＝SQLインジェクションのルール遮断"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "SQLインジェクション等のWeb攻撃の遮断はWAFで、ShieldはDDoS対策です。",
+    "wrongChoiceExplanations": {
+      "0": "WAF＝Web攻撃遮断は正しい組合せです。",
+      "1": "SG＝通信制御は正しい組合せです。",
+      "2": "GuardDuty＝脅威検知は正しい組合せです。"
+    },
+    "domain": "security",
+    "service": "WAF",
+    "difficulty": 2,
+    "tags": [
+      "WAF",
+      "Shield",
+      "ドリル"
+    ],
+    "beginnerNote": "Web攻撃遮断＝WAF、Shieldは DDoS。"
+  },
+  {
+    "id": "qd-sec09-1",
+    "question": "「いつ・誰が・どのAPIを呼んだかを記録する（操作の履歴）」のはどれですか。",
+    "choices": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "CloudTrailは操作（API呼び出し）の履歴を記録します。",
+    "wrongChoiceExplanations": {
+      "1": "CloudWatchはメトリクス・ログの監視です。",
+      "2": "Configは設定の追跡・評価です。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "security",
+    "service": "CloudTrail",
+    "difficulty": 1,
+    "tags": [
+      "CloudTrail",
+      "監査",
+      "ドリル"
+    ],
+    "beginnerNote": "操作の記録＝CloudTrail。"
+  },
+  {
+    "id": "qd-sec09-2",
+    "question": "「リソースの設定変更を追跡し、ルール違反を継続評価」するのはどれですか。",
+    "choices": [
+      "AWS Shield",
+      "AWS Config",
+      "AWS CloudTrail",
+      "Amazon CloudWatch"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Configは設定の変更履歴とルール準拠を継続的に評価します。",
+    "wrongChoiceExplanations": {
+      "0": "ShieldはDDoS対策です。",
+      "2": "CloudTrailは操作の記録です。",
+      "3": "CloudWatchは監視です。"
+    },
+    "domain": "security",
+    "service": "Config",
+    "difficulty": 1,
+    "tags": [
+      "Config",
+      "ドリル"
+    ],
+    "beginnerNote": "設定の監視＝Config。"
+  },
+  {
+    "id": "qd-sec09-3",
+    "question": "「複数のAWSアカウントを束ね、全体に共通の上限（SCP）を設定」できるのはどれですか。",
+    "choices": [
+      "Amazon VPC",
+      "AWS Config",
+      "AWS Organizations",
+      "AWS IAM"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "OrganizationsはSCPで全アカウント共通の統制を設定できます。",
+    "wrongChoiceExplanations": {
+      "0": "VPCはネットワークです。",
+      "1": "Configは設定評価です。",
+      "3": "IAMは1アカウント内の権限管理です。"
+    },
+    "domain": "security",
+    "service": "Organizations",
+    "difficulty": 1,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "複数アカウント統制＝Organizations。"
+  },
+  {
+    "id": "qd-sec09-4",
+    "question": "「安全な複数アカウント環境を、ひな形から自動で構築」するのはどれですか。",
+    "choices": [
+      "AWS CloudTrail",
+      "Amazon Inspector",
+      "AWS Artifact",
+      "AWS Control Tower"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Control Towerは推奨構成に沿った複数アカウント環境を自動構築します。",
+    "wrongChoiceExplanations": {
+      "0": "CloudTrailは操作記録です。",
+      "1": "Inspectorは脆弱性診断です。",
+      "2": "Artifactは監査資料です。"
+    },
+    "domain": "security",
+    "service": "Control Tower",
+    "difficulty": 2,
+    "tags": [
+      "Control Tower",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "安全な複数アカウント自動構築。"
+  },
+  {
+    "id": "qd-sec09-5",
+    "question": "AWS CloudTrailの説明として正しいものはどれですか。",
+    "choices": [
+      "アカウント内のAPI操作を記録し、監査証跡に使える",
+      "CPU使用率などのメトリクスを監視する",
+      "設定のルール違反を評価する",
+      "DDoSを防ぐ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "CloudTrailは操作の記録で、不正操作の調査や監査に使います。",
+    "wrongChoiceExplanations": {
+      "1": "メトリクス監視はCloudWatchです。",
+      "2": "設定評価はConfigです。",
+      "3": "DDoS対策はShieldです。"
+    },
+    "domain": "security",
+    "service": "CloudTrail",
+    "difficulty": 2,
+    "tags": [
+      "CloudTrail",
+      "監査",
+      "ドリル"
+    ],
+    "beginnerNote": "API操作の記録。"
+  },
+  {
+    "id": "qd-sec09-6",
+    "question": "AWS Configの説明として正しいものはどれですか。",
+    "choices": [
+      "証明書を発行する",
+      "リソース設定の変更履歴を追跡し、あるべき状態からのズレを検知する",
+      "API操作を記録する",
+      "メトリクスを可視化する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Configは設定の追跡と準拠評価を行います。",
+    "wrongChoiceExplanations": {
+      "0": "証明書発行はACMです。",
+      "2": "API操作の記録はCloudTrailです。",
+      "3": "メトリクス可視化はCloudWatchです。"
+    },
+    "domain": "security",
+    "service": "Config",
+    "difficulty": 2,
+    "tags": [
+      "Config",
+      "ドリル"
+    ],
+    "beginnerNote": "設定のズレ検知。"
+  },
+  {
+    "id": "qd-sec09-7",
+    "question": "AWS Organizationsの説明として正しいものはどれですか。",
+    "choices": [
+      "仮想ネットワークを作る",
+      "脅威を検知する",
+      "複数アカウントを束ね、一括請求やSCPによる統制ができる",
+      "1アカウント内のIAM権限を管理する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Organizationsは複数アカウントの統制と一括請求を提供します。",
+    "wrongChoiceExplanations": {
+      "0": "仮想ネットワークはVPCです。",
+      "1": "脅威検知はGuardDutyです。",
+      "3": "1アカウントの権限管理はIAMです。"
+    },
+    "domain": "security",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "複数アカウントの統制。"
+  },
+  {
+    "id": "qd-sec09-8",
+    "question": "誰が不正に設定を変更したのかを後から調査したいです。最適なのはどれですか。",
+    "choices": [
+      "CloudWatchのCPUメトリクスを見る",
+      "Shieldを有効にする",
+      "VPCを分ける",
+      "CloudTrailの操作履歴を確認する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "誰が何をしたかの調査はCloudTrailの操作履歴が適します。",
+    "wrongChoiceExplanations": {
+      "0": "CPUメトリクスは操作者の特定には不向きです。",
+      "1": "ShieldはDDoS対策です。",
+      "2": "VPC分割は調査手段ではありません。"
+    },
+    "domain": "security",
+    "service": "CloudTrail",
+    "difficulty": 2,
+    "tags": [
+      "CloudTrail",
+      "監査",
+      "ドリル"
+    ],
+    "beginnerNote": "操作者の調査＝CloudTrail。"
+  },
+  {
+    "id": "qd-sec09-9",
+    "question": "「S3バケットは必ず暗号化する」というルールに違反していないか継続的に確認したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Configのルールで評価する",
+      "CloudTrailで記録する",
+      "WAFで遮断する",
+      "KMSで鍵を作る"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "設定の準拠を継続評価するのはConfigです。",
+    "wrongChoiceExplanations": {
+      "1": "CloudTrailは操作記録で、継続的な準拠評価は主目的ではありません。",
+      "2": "WAFはWeb攻撃遮断です。",
+      "3": "KMSは鍵管理です。"
+    },
+    "domain": "security",
+    "service": "Config",
+    "difficulty": 2,
+    "tags": [
+      "Config",
+      "ドリル"
+    ],
+    "beginnerNote": "準拠の継続評価＝Config。"
+  },
+  {
+    "id": "qd-sec09-10",
+    "question": "複数の部署アカウントで、特定の危険な操作を組織全体で一律に禁止したいです。最適なのはどれですか。",
+    "choices": [
+      "Route 53で制御する",
+      "OrganizationsのSCPで上限を設定する",
+      "各アカウントで個別にIAMを設定して回る",
+      "Shieldを有効にする"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "組織全体の一律統制はSCP（Organizations）が適します。",
+    "wrongChoiceExplanations": {
+      "0": "Route 53はDNSです。",
+      "2": "個別IAMは漏れやすく非効率です。",
+      "3": "ShieldはDDoS対策です。"
+    },
+    "domain": "security",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "一律統制＝SCP。"
+  },
+  {
+    "id": "qd-sec09-11",
+    "question": "「誰が何のAPIを呼んだか」を記録するのは AWS ＿＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Config",
+      "Shield",
+      "CloudTrail",
+      "CloudWatch"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "操作の記録はCloudTrailです。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "1": "ShieldはDDoS対策です。",
+      "3": "CloudWatchは監視です。"
+    },
+    "domain": "security",
+    "service": "CloudTrail",
+    "difficulty": 1,
+    "tags": [
+      "CloudTrail",
+      "監査",
+      "ドリル"
+    ],
+    "beginnerNote": "操作記録＝CloudTrail。"
+  },
+  {
+    "id": "qd-sec09-12",
+    "question": "複数アカウント共通の禁止ルールを定める仕組みを「＿＿＿」（サービスコントロールポリシー）と呼びます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ACL",
+      "MFA",
+      "VPC",
+      "SCP"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "組織全体の統制はSCP（Service Control Policy）です。",
+    "wrongChoiceExplanations": {
+      "0": "ACLはアクセス制御リストです。",
+      "1": "MFAは多要素認証です。",
+      "2": "VPCはネットワークです。"
+    },
+    "domain": "security",
+    "service": "Organizations",
+    "difficulty": 1,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "SCP＝サービスコントロールポリシー。"
+  },
+  {
+    "id": "qd-sec09-13",
+    "question": "リソース設定の変更を追跡・評価するのは AWS ＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Config",
+      "CloudTrail",
+      "IAM",
+      "KMS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "設定の追跡・評価はConfigです。",
+    "wrongChoiceExplanations": {
+      "1": "CloudTrailは操作記録です。",
+      "2": "IAMは権限管理です。",
+      "3": "KMSは鍵管理です。"
+    },
+    "domain": "security",
+    "service": "Config",
+    "difficulty": 1,
+    "tags": [
+      "Config",
+      "ドリル"
+    ],
+    "beginnerNote": "設定評価＝Config。"
+  },
+  {
+    "id": "qd-sec09-14",
+    "question": "監査・ガバナンスのサービスの説明として誤っているものはどれですか。",
+    "choices": [
+      "Organizationsは複数アカウントを統制する",
+      "CloudTrailはCPU使用率などのメトリクスを監視するサービスである",
+      "CloudTrailはAPI操作を記録する",
+      "Configは設定を評価する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "CPU使用率などのメトリクス監視はCloudWatchで、CloudTrailは操作の記録です。",
+    "wrongChoiceExplanations": {
+      "0": "Organizationsの統制は正しい説明です。",
+      "2": "CloudTrailのAPI記録は正しい説明です。",
+      "3": "Configの設定評価は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "CloudTrail",
+    "difficulty": 2,
+    "tags": [
+      "CloudTrail",
+      "監査",
+      "ドリル"
+    ],
+    "beginnerNote": "メトリクス＝CloudWatch。"
+  },
+  {
+    "id": "qd-sec09-15",
+    "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "AWS Organizations＝複数アカウント統制",
+      "AWS Control Tower＝複数アカウント環境の自動構築",
+      "AWS Config＝API操作の履歴記録",
+      "AWS CloudTrail＝API操作の履歴記録"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "API操作の記録はCloudTrailで、Configは設定の追跡・評価です。",
+    "wrongChoiceExplanations": {
+      "0": "Organizations＝統制は正しい組合せです。",
+      "1": "Control Tower＝自動構築は正しい組合せです。",
+      "3": "CloudTrail＝操作記録は正しい組合せです。"
+    },
+    "domain": "security",
+    "service": "Config",
+    "difficulty": 2,
+    "tags": [
+      "Config",
+      "CloudTrail",
+      "ドリル"
+    ],
+    "beginnerNote": "Configは設定、CloudTrailが操作記録。"
+  },
+  {
+    "id": "qd-tec02-1",
+    "question": "「OSから自分で管理できる自由度の高い仮想サーバー」はどれですか。",
+    "choices": [
+      "AWS Lambda",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon EC2"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "EC2は自由度の高い仮想サーバーで、OSから管理できます。",
+    "wrongChoiceExplanations": {
+      "0": "Lambdaはサーバーレスです。",
+      "1": "S3はストレージです。",
+      "2": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 1,
+    "tags": [
+      "EC2",
+      "コンピューティング",
+      "ドリル"
+    ],
+    "beginnerNote": "自由な仮想サーバー＝EC2。"
+  },
+  {
+    "id": "qd-tec02-2",
+    "question": "「EC2に接続して使う仮想ディスク（ブロックストレージ）」はどれですか。",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon EFS",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "EBSはEC2に接続する仮想ディスク（ブロックストレージ）です。",
+    "wrongChoiceExplanations": {
+      "1": "S3はオブジェクトストレージです。",
+      "2": "EFSは共有ファイルストレージです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 1,
+    "tags": [
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "EC2のディスク＝EBS。"
+  },
+  {
+    "id": "qd-tec02-3",
+    "question": "「OSや初期設定を含む、EC2起動用のテンプレート」はどれですか。",
+    "choices": [
+      "キーペア",
+      "AMI（Amazonマシンイメージ）",
+      "EBSスナップショット",
+      "セキュリティグループ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AMIはインスタンス起動のためのテンプレートです。",
+    "wrongChoiceExplanations": {
+      "0": "キーペアはログイン用の鍵です。",
+      "2": "スナップショットはEBSのバックアップです。",
+      "3": "セキュリティグループは通信制御です。"
+    },
+    "domain": "technology",
+    "service": "AMI",
+    "difficulty": 1,
+    "tags": [
+      "EC2",
+      "AMI",
+      "ドリル"
+    ],
+    "beginnerNote": "起動テンプレート＝AMI。"
+  },
+  {
+    "id": "qd-tec02-4",
+    "question": "「小規模サイトを、分かりやすい定額・簡単な構成で始めたい初心者」に向くのはどれですか。",
+    "choices": [
+      "Amazon EKS",
+      "AWS Batch",
+      "Amazon Lightsail",
+      "手動フル構築のEC2"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Lightsailは定額で簡単に始められ、初心者の小規模用途に向きます。",
+    "wrongChoiceExplanations": {
+      "0": "EKSはKubernetesの本格運用向けです。",
+      "1": "Batchはバッチ処理用です。",
+      "3": "EC2の手動構築は自由だが手間がかかります。"
+    },
+    "domain": "technology",
+    "service": "Lightsail",
+    "difficulty": 1,
+    "tags": [
+      "Lightsail",
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "小規模・簡単＝Lightsail。"
+  },
+  {
+    "id": "qd-tec02-5",
+    "question": "Amazon EC2の説明として正しいものはどれですか。",
+    "choices": [
+      "オブジェクトストレージ",
+      "サーバーレスのコード実行",
+      "DNSサービス",
+      "OSから管理できる自由度の高い仮想サーバー"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "EC2は仮想サーバーで、責任共有では中身（OS以上）を利用者が管理します。",
+    "wrongChoiceExplanations": {
+      "0": "オブジェクトストレージはS3です。",
+      "1": "サーバーレスはLambdaです。",
+      "2": "DNSはRoute 53です。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 1,
+    "tags": [
+      "EC2",
+      "コンピューティング",
+      "ドリル"
+    ],
+    "beginnerNote": "自由な仮想サーバー。"
+  },
+  {
+    "id": "qd-tec02-6",
+    "question": "EC2における利用者の責任として正しいものはどれですか。",
+    "choices": [
+      "ゲストOSのパッチ・アプリ・セキュリティグループ設定",
+      "ハイパーバイザーの管理",
+      "データセンターの物理警備",
+      "ハードウェアの保守"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "EC2はIaaS寄りで、OS以上は利用者の責任です。",
+    "wrongChoiceExplanations": {
+      "1": "ハイパーバイザーはAWSの責任です。",
+      "2": "物理警備はAWSの責任です。",
+      "3": "ハードウェア保守はAWSの責任です。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 2,
+    "tags": [
+      "EC2",
+      "コンピューティング",
+      "ドリル"
+    ],
+    "beginnerNote": "OS以上は利用者。"
+  },
+  {
+    "id": "qd-tec02-7",
+    "question": "Amazon EBSの説明として正しいものはどれですか。",
+    "choices": [
+      "仮想サーバー",
+      "EC2に接続して使うブロックストレージで、スナップショットでバックアップできる",
+      "複数サーバーから共有するファイルストレージ",
+      "オブジェクトストレージ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "EBSはEC2用のブロックストレージで、スナップショットを取れます。",
+    "wrongChoiceExplanations": {
+      "0": "仮想サーバーはEC2本体です。",
+      "2": "共有ファイルはEFSです。",
+      "3": "オブジェクトストレージはS3です。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 2,
+    "tags": [
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "EC2用ブロック＝EBS。"
+  },
+  {
+    "id": "qd-tec02-8",
+    "question": "既存アプリをほぼ改修せず移行し、OSも自分で管理したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "AWS Fargate",
+      "Amazon EC2",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "OSまで管理でき、そのまま載せられるのはEC2です。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージです。",
+      "1": "Fargateはコンテナ向けです。",
+      "3": "Lambdaはサーバーレスで既存常駐アプリに不向きです。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 2,
+    "tags": [
+      "EC2",
+      "コンピューティング",
+      "ドリル"
+    ],
+    "beginnerNote": "そのまま移行＝EC2。"
+  },
+  {
+    "id": "qd-tec02-9",
+    "question": "WordPressの小規模サイトを、月額が読みやすい形で手早く立ち上げたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon EKS",
+      "AWS Lambda",
+      "Amazon Redshift",
+      "Amazon Lightsail"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "定額・簡単構成のLightsailが小規模サイトに向きます。",
+    "wrongChoiceExplanations": {
+      "0": "EKSは本格的なコンテナ運用向けです。",
+      "1": "Lambdaは常駐サイトの単純運用と方向性が異なります。",
+      "2": "Redshiftは分析用です。"
+    },
+    "domain": "technology",
+    "service": "Lightsail",
+    "difficulty": 2,
+    "tags": [
+      "Lightsail",
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "小規模サイト＝Lightsail。"
+  },
+  {
+    "id": "qd-tec02-10",
+    "question": "EC2のディスク内容を丸ごとバックアップし、後で復元できるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "EBSのスナップショットを取得する",
+      "S3にログを送る",
+      "AMIを削除する",
+      "セキュリティグループを変更する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "EBSスナップショットでディスクをバックアップ・復元できます。",
+    "wrongChoiceExplanations": {
+      "1": "S3へのログ送信はバックアップとは別です。",
+      "2": "AMI削除はバックアップになりません。",
+      "3": "SG変更は通信制御です。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 2,
+    "tags": [
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "ディスクのバックアップ＝EBSスナップショット。"
+  },
+  {
+    "id": "qd-tec02-11",
+    "question": "EC2の仮想ディスクは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "RDS",
+      "EBS",
+      "S3",
+      "EFS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "EC2のブロックストレージはEBSです。",
+    "wrongChoiceExplanations": {
+      "0": "RDSはデータベースです。",
+      "2": "S3はオブジェクトストレージです。",
+      "3": "EFSは共有ファイルです。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 1,
+    "tags": [
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "EC2のディスク＝EBS。"
+  },
+  {
+    "id": "qd-tec02-12",
+    "question": "OSや設定を含むEC2起動用テンプレートを「＿＿＿」と呼びます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "IGW",
+      "SNS",
+      "AMI",
+      "VPC"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "起動テンプレートはAMI（Amazonマシンイメージ）です。",
+    "wrongChoiceExplanations": {
+      "0": "IGWはインターネットゲートウェイです。",
+      "1": "SNSは通知です。",
+      "3": "VPCはネットワークです。"
+    },
+    "domain": "technology",
+    "service": "AMI",
+    "difficulty": 1,
+    "tags": [
+      "EC2",
+      "AMI",
+      "ドリル"
+    ],
+    "beginnerNote": "テンプレート＝AMI。"
+  },
+  {
+    "id": "qd-tec02-13",
+    "question": "EC2に関する説明として誤っているものはどれですか。",
+    "choices": [
+      "EBSはEC2に接続するブロックストレージ",
+      "AMIは起動テンプレート",
+      "OSから自由に管理できる",
+      "ゲストOSのパッチ適用はAWSが自動で行う"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "EC2のゲストOSのパッチは利用者の責任で、AWSが自動適用するわけではありません。",
+    "wrongChoiceExplanations": {
+      "0": "EBSの説明は正しいです。",
+      "1": "AMIの説明は正しいです。",
+      "2": "自由な管理は正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 2,
+    "tags": [
+      "EC2",
+      "コンピューティング",
+      "ドリル"
+    ],
+    "beginnerNote": "OS更新は利用者。"
+  },
+  {
+    "id": "qd-tec02-14",
+    "question": "ストレージの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "EBS＝複数サーバーから同時に共有するファイルストレージ",
+      "EBS＝EC2に接続するブロックストレージ",
+      "EFS＝共有ファイルストレージ",
+      "S3＝オブジェクトストレージ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "EBSは基本1つのEC2に接続するブロックストレージで、共有ファイルはEFSです。",
+    "wrongChoiceExplanations": {
+      "1": "EBS＝ブロックは正しい説明です。",
+      "2": "EFS＝共有ファイルは正しい説明です。",
+      "3": "S3＝オブジェクトは正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "EC2",
+    "difficulty": 2,
+    "tags": [
+      "EC2",
+      "ドリル"
+    ],
+    "beginnerNote": "共有ファイル＝EFS、EBSはブロック。"
+  },
+  {
+    "id": "qd-tec03-1",
+    "question": "「サーバー管理なしで、イベント時だけコードを実行し使った分だけ課金」なのはどれですか。",
+    "choices": [
+      "Amazon EBS",
+      "AWS Lambda",
+      "Amazon EC2",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Lambdaはサーバーレスで、呼ばれたときだけ実行し使った分だけ課金です。",
+    "wrongChoiceExplanations": {
+      "0": "EBSはディスクです。",
+      "2": "EC2は常時起動の仮想サーバーです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "Lambda",
+    "difficulty": 1,
+    "tags": [
+      "Lambda",
+      "サーバーレス",
+      "ドリル"
+    ],
+    "beginnerNote": "イベント駆動＝Lambda。"
+  },
+  {
+    "id": "qd-tec03-2",
+    "question": "「コンテナを動かすが、土台のサーバー管理はしたくない」ときに使うのはどれですか。",
+    "choices": [
+      "AWS Batch",
+      "Amazon S3",
+      "AWS Fargate",
+      "Amazon EC2に手動でDocker"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Fargateはコンテナの土台となるサーバー管理を不要にします。",
+    "wrongChoiceExplanations": {
+      "0": "Batchはバッチ処理基盤です。",
+      "1": "S3はストレージです。",
+      "3": "EC2手動構築はサーバー管理が必要です。"
+    },
+    "domain": "technology",
+    "service": "Fargate",
+    "difficulty": 1,
+    "tags": [
+      "Fargate",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "サーバー管理不要＝Fargate。"
+  },
+  {
+    "id": "qd-tec03-3",
+    "question": "「コンテナの実行・管理を行うAWSのオーケストレーション」はどれですか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon Route 53",
+      "Amazon ECS"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ECSはコンテナの実行・管理を行います（Kubernetes版はEKS）。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージです。",
+      "1": "RDSはデータベースです。",
+      "2": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "ECS",
+    "difficulty": 1,
+    "tags": [
+      "ECS",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "コンテナ管理＝ECS。"
+  },
+  {
+    "id": "qd-tec03-4",
+    "question": "「コンテナイメージを保存・管理するレジストリ」はどれですか。",
+    "choices": [
+      "Amazon ECR",
+      "Amazon ECS",
+      "Amazon S3",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ECRはコンテナイメージの保管庫（レジストリ）です。",
+    "wrongChoiceExplanations": {
+      "1": "ECSはコンテナの実行管理です。",
+      "2": "S3は汎用ストレージです。",
+      "3": "Lambdaはサーバーレスです。"
+    },
+    "domain": "technology",
+    "service": "ECR",
+    "difficulty": 1,
+    "tags": [
+      "ECR",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "イメージ保管＝ECR。"
+  },
+  {
+    "id": "qd-tec03-5",
+    "question": "AWS Lambdaの説明として正しいものはどれですか。",
+    "choices": [
+      "DNSを解決する",
+      "サーバー管理なしでコードを実行するサーバーレスサービス",
+      "仮想サーバーを起動する",
+      "コンテナイメージを保管する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Lambdaはサーバーレスで、使った分だけ課金されます。",
+    "wrongChoiceExplanations": {
+      "0": "DNSはRoute 53です。",
+      "2": "仮想サーバーはEC2です。",
+      "3": "イメージ保管はECRです。"
+    },
+    "domain": "technology",
+    "service": "Lambda",
+    "difficulty": 1,
+    "tags": [
+      "Lambda",
+      "サーバーレス",
+      "ドリル"
+    ],
+    "beginnerNote": "サーバーレス実行。"
+  },
+  {
+    "id": "qd-tec03-6",
+    "question": "AWS Fargateの説明として正しいものはどれですか。",
+    "choices": [
+      "オブジェクトストレージ",
+      "DNSサービス",
+      "ECS/EKSの土台となるサーバー管理を不要にする実行環境",
+      "コンテナイメージの保管庫"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Fargateはコンテナのサーバーレス実行環境です。",
+    "wrongChoiceExplanations": {
+      "0": "オブジェクトストレージはS3です。",
+      "1": "DNSはRoute 53です。",
+      "3": "イメージ保管はECRです。"
+    },
+    "domain": "technology",
+    "service": "Fargate",
+    "difficulty": 2,
+    "tags": [
+      "Fargate",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "サーバー管理不要の実行環境。"
+  },
+  {
+    "id": "qd-tec03-7",
+    "question": "コンテナの説明として正しいものはどれですか。",
+    "choices": [
+      "物理サーバーそのもの",
+      "データベースの一種",
+      "課金の単位",
+      "アプリと必要な環境をまとめて動かす軽量な仕組み"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "コンテナはアプリを箱に固めて可搬性高く動かす技術です。",
+    "wrongChoiceExplanations": {
+      "0": "物理サーバーではありません。",
+      "1": "データベースではありません。",
+      "2": "課金単位ではありません。"
+    },
+    "domain": "technology",
+    "service": "コンテナ",
+    "difficulty": 2,
+    "tags": [
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "アプリを箱詰め＝コンテナ。"
+  },
+  {
+    "id": "qd-tec03-8",
+    "question": "画像アップロードのたびに一瞬だけ動くサムネイル生成を、サーバー管理なしで実装したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Lambda",
+      "常時起動のEC2",
+      "Amazon RDS",
+      "Amazon EFS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "短時間・イベント駆動はLambdaが最適です。",
+    "wrongChoiceExplanations": {
+      "1": "常時起動EC2は無駄が出ます。",
+      "2": "RDSはデータベースです。",
+      "3": "EFSはファイルストレージです。"
+    },
+    "domain": "technology",
+    "service": "Lambda",
+    "difficulty": 2,
+    "tags": [
+      "Lambda",
+      "サーバーレス",
+      "ドリル"
+    ],
+    "beginnerNote": "一瞬の処理＝Lambda。"
+  },
+  {
+    "id": "qd-tec03-9",
+    "question": "コンテナで本番アプリを運用したいが、基盤サーバーの管理はしたくないです。最適な組合せはどれですか。",
+    "choices": [
+      "S3でホスティング",
+      "ECS/EKS を Fargate で動かす",
+      "EC2にDockerを手動構築",
+      "Lambdaだけで常駐処理"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Fargateを使えば土台のサーバー管理が不要になります。",
+    "wrongChoiceExplanations": {
+      "0": "S3は実行環境ではありません。",
+      "2": "EC2手動構築は管理が必要です。",
+      "3": "Lambdaは常駐コンテナの一般的代替ではありません。"
+    },
+    "domain": "technology",
+    "service": "Fargate",
+    "difficulty": 2,
+    "tags": [
+      "Fargate",
+      "コンテナ",
+      "ECS",
+      "ドリル"
+    ],
+    "beginnerNote": "コンテナ＋管理不要＝Fargate。"
+  },
+  {
+    "id": "qd-tec03-10",
+    "question": "ビルドしたコンテナイメージを保存し、デプロイ時に取り出したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon RDS",
+      "Amazon SNS",
+      "Amazon ECR",
+      "Amazon S3 Glacier"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "コンテナイメージの保管はECRが適します。",
+    "wrongChoiceExplanations": {
+      "0": "RDSはデータベースです。",
+      "1": "SNSは通知です。",
+      "3": "Glacierはアーカイブ用途です。"
+    },
+    "domain": "technology",
+    "service": "ECR",
+    "difficulty": 2,
+    "tags": [
+      "ECR",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "イメージ保管＝ECR。"
+  },
+  {
+    "id": "qd-tec03-11",
+    "question": "サーバーレスでコードを実行するサービスは AWS ＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "EC2",
+      "ECR",
+      "VPC",
+      "Lambda"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "サーバーレス実行はLambdaです。",
+    "wrongChoiceExplanations": {
+      "0": "EC2は仮想サーバーです。",
+      "1": "ECRはイメージ保管です。",
+      "2": "VPCはネットワークです。"
+    },
+    "domain": "technology",
+    "service": "Lambda",
+    "difficulty": 1,
+    "tags": [
+      "Lambda",
+      "サーバーレス",
+      "ドリル"
+    ],
+    "beginnerNote": "サーバーレス＝Lambda。"
+  },
+  {
+    "id": "qd-tec03-12",
+    "question": "コンテナのサーバー管理を不要にする実行環境は AWS ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Fargate",
+      "Lambda",
+      "Batch",
+      "Config"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "コンテナのサーバーレス実行はFargateです。",
+    "wrongChoiceExplanations": {
+      "1": "Lambdaは関数のサーバーレス実行です。",
+      "2": "Batchはバッチ処理です。",
+      "3": "Configは設定評価です。"
+    },
+    "domain": "technology",
+    "service": "Fargate",
+    "difficulty": 1,
+    "tags": [
+      "Fargate",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "コンテナ管理不要＝Fargate。"
+  },
+  {
+    "id": "qd-tec03-13",
+    "question": "コンテナイメージの保管庫は Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "EFS",
+      "ECR",
+      "ECS",
+      "EKS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "イメージの保管庫はECRです。",
+    "wrongChoiceExplanations": {
+      "0": "EFSは共有ファイルです。",
+      "2": "ECSはコンテナ実行管理です。",
+      "3": "EKSはKubernetes管理です。"
+    },
+    "domain": "technology",
+    "service": "ECR",
+    "difficulty": 1,
+    "tags": [
+      "ECR",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "保管庫＝ECR。"
+  },
+  {
+    "id": "qd-tec03-14",
+    "question": "サーバーレス・コンテナの説明として誤っているものはどれですか。",
+    "choices": [
+      "Fargateはサーバー管理を不要にする",
+      "ECRはイメージ保管庫",
+      "Lambdaは常時サーバーを起動し続ける必要がある",
+      "Lambdaはサーバーレス"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Lambdaはサーバーレスで、常時起動は不要です（呼ばれたときだけ実行）。",
+    "wrongChoiceExplanations": {
+      "0": "Fargateの説明は正しいです。",
+      "1": "ECRの説明は正しいです。",
+      "3": "Lambda＝サーバーレスは正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "Lambda",
+    "difficulty": 2,
+    "tags": [
+      "Lambda",
+      "サーバーレス",
+      "ドリル"
+    ],
+    "beginnerNote": "Lambdaは常時起動不要。"
+  },
+  {
+    "id": "qd-tec03-15",
+    "question": "コンテナ関連サービスの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon ECS＝コンテナの実行管理",
+      "AWS Fargate＝サーバー管理不要の実行環境",
+      "Amazon ECR＝イメージの保管庫",
+      "Amazon ECR＝コンテナの実行管理（オーケストレーション）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ECRはイメージの保管庫で、実行管理（オーケストレーション）はECS/EKSです。",
+    "wrongChoiceExplanations": {
+      "0": "ECS＝実行管理は正しい組合せです。",
+      "1": "Fargate＝サーバー管理不要は正しい組合せです。",
+      "2": "ECR＝保管庫は正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "コンテナ",
+    "difficulty": 2,
+    "tags": [
+      "ECR",
+      "ECS",
+      "コンテナ",
+      "ドリル"
+    ],
+    "beginnerNote": "ECRは保管、ECSが実行管理。"
+  },
+  {
+    "id": "qd-tec04-1",
+    "question": "「ファイルをオブジェクトとしてまるごと保存する」ストレージはどれですか。",
+    "choices": [
+      "Amazon S3（オブジェクト）",
+      "Amazon EBS（ブロック）",
+      "Amazon EFS（ファイル）",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "S3はオブジェクトストレージです。",
+    "wrongChoiceExplanations": {
+      "1": "EBSはEC2用のブロックストレージです。",
+      "2": "EFSは共有ファイルストレージです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "ストレージ",
+    "difficulty": 1,
+    "tags": [
+      "ストレージ",
+      "S3",
+      "ドリル"
+    ],
+    "beginnerNote": "オブジェクト＝S3。"
+  },
+  {
+    "id": "qd-tec04-2",
+    "question": "「1つのEC2に接続する専用の仮想ディスク」はどれですか。",
+    "choices": [
+      "Amazon Glacier",
+      "Amazon EBS（ブロック）",
+      "Amazon S3（オブジェクト）",
+      "Amazon EFS（ファイル）"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "EBSはEC2に接続するブロックストレージです。",
+    "wrongChoiceExplanations": {
+      "0": "GlacierはS3のアーカイブです。",
+      "2": "S3はオブジェクトストレージです。",
+      "3": "EFSは複数から共有するファイルです。"
+    },
+    "domain": "technology",
+    "service": "EBS",
+    "difficulty": 1,
+    "tags": [
+      "ストレージ",
+      "EBS",
+      "ブロックストレージ",
+      "ドリル"
+    ],
+    "beginnerNote": "EC2専用ディスク＝EBS。"
+  },
+  {
+    "id": "qd-tec04-3",
+    "question": "「複数のEC2から同時にマウントして共有できる」ファイルストレージはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon DynamoDB",
+      "Amazon EFS",
+      "Amazon EBS"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "EFSは多数のEC2から同時共有できるファイルストレージです。",
+    "wrongChoiceExplanations": {
+      "0": "S3はオブジェクトストレージです。",
+      "1": "DynamoDBはNoSQLです。",
+      "3": "EBSは基本1台に接続する専用ディスクです。"
+    },
+    "domain": "technology",
+    "service": "EFS",
+    "difficulty": 1,
+    "tags": [
+      "ストレージ",
+      "EFS",
+      "ファイルストレージ",
+      "ドリル"
+    ],
+    "beginnerNote": "共有ファイル＝EFS。"
+  },
+  {
+    "id": "qd-tec04-4",
+    "question": "「オンプレのシステムとS3などをつなぐ橋渡し」を行うのはどれですか。",
+    "choices": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon SNS",
+      "AWS Storage Gateway"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Storage Gatewayはオンプレとクラウドストレージをつなぎます。",
+    "wrongChoiceExplanations": {
+      "0": "EC2は仮想サーバーです。",
+      "1": "Lambdaはサーバーレスです。",
+      "2": "SNSは通知です。"
+    },
+    "domain": "technology",
+    "service": "Storage Gateway",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "Storage Gateway",
+      "ドリル"
+    ],
+    "beginnerNote": "オンプレ連携＝Storage Gateway。"
+  },
+  {
+    "id": "qd-tec04-5",
+    "question": "「大量データを高速にAWSへ転送・同期」したいときに使うのはどれですか。",
+    "choices": [
+      "AWS DataSync",
+      "Amazon Athena",
+      "Amazon Kinesis",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "DataSyncは大量データを高速にAWSへ転送します。",
+    "wrongChoiceExplanations": {
+      "1": "Athenaは分析クエリです。",
+      "2": "Kinesisはリアルタイム処理です。",
+      "3": "Configは設定評価です。"
+    },
+    "domain": "technology",
+    "service": "DataSync",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "DataSync",
+      "ドリル"
+    ],
+    "beginnerNote": "高速転送＝DataSync。"
+  },
+  {
+    "id": "qd-tec04-6",
+    "question": "Amazon EBSの説明として正しいものはどれですか。",
+    "choices": [
+      "データベース",
+      "EC2に接続する仮想ディスク（ブロックストレージ）",
+      "複数から共有するファイルストレージ",
+      "オブジェクトストレージ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "EBSはEC2用のブロックストレージです。",
+    "wrongChoiceExplanations": {
+      "0": "データベースはRDSです。",
+      "2": "共有ファイルはEFSです。",
+      "3": "オブジェクトストレージはS3です。"
+    },
+    "domain": "technology",
+    "service": "EBS",
+    "difficulty": 1,
+    "tags": [
+      "ストレージ",
+      "EBS",
+      "ブロックストレージ",
+      "ドリル"
+    ],
+    "beginnerNote": "EC2のディスク＝EBS。"
+  },
+  {
+    "id": "qd-tec04-7",
+    "question": "Amazon EFSの説明として正しいものはどれですか。",
+    "choices": [
+      "オブジェクトストレージ",
+      "キャッシュ",
+      "複数のEC2から同時にマウントできる共有ファイルストレージ",
+      "1台のEC2専用の仮想ディスク"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "EFSは複数サーバーから共有できるファイルストレージです。",
+    "wrongChoiceExplanations": {
+      "0": "オブジェクトストレージはS3です。",
+      "1": "キャッシュはElastiCacheです。",
+      "3": "1台専用のディスクはEBSです。"
+    },
+    "domain": "technology",
+    "service": "EFS",
+    "difficulty": 1,
+    "tags": [
+      "ストレージ",
+      "EFS",
+      "ファイルストレージ",
+      "ドリル"
+    ],
+    "beginnerNote": "共有ファイル＝EFS。"
+  },
+  {
+    "id": "qd-tec04-8",
+    "question": "3種類のストレージ形式の説明として正しいものはどれですか。",
+    "choices": [
+      "すべて同じ形式",
+      "S3はブロックストレージ",
+      "EBSはオブジェクトストレージ",
+      "オブジェクト＝S3、ブロック＝EBS、ファイル＝EFS/FSx"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "オブジェクト（S3）・ブロック（EBS）・ファイル（EFS/FSx）で形式が異なります。",
+    "wrongChoiceExplanations": {
+      "0": "形式は異なります。",
+      "1": "S3はオブジェクトです。",
+      "2": "EBSはブロックです。"
+    },
+    "domain": "technology",
+    "service": "ストレージ",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "ドリル"
+    ],
+    "beginnerNote": "3形式を区別。"
+  },
+  {
+    "id": "qd-tec04-9",
+    "question": "複数のWebサーバーから同じファイル群を同時に読み書きしたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon EFS",
+      "Amazon EBS",
+      "Amazon S3 Glacier",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "複数サーバーからの同時共有はEFSが適します。",
+    "wrongChoiceExplanations": {
+      "1": "EBSは基本1台に接続します。",
+      "2": "Glacierはアーカイブです。",
+      "3": "DynamoDBはNoSQLです。"
+    },
+    "domain": "technology",
+    "service": "EFS",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "EFS",
+      "ドリル"
+    ],
+    "beginnerNote": "同時共有＝EFS。"
+  },
+  {
+    "id": "qd-tec04-10",
+    "question": "EC2のOSやデータを置く、そのインスタンス専用のディスクが必要です。最適なのはどれですか。",
+    "choices": [
+      "Amazon RDS",
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "EC2専用のディスクはEBS（ブロックストレージ）です。",
+    "wrongChoiceExplanations": {
+      "0": "RDSはデータベースです。",
+      "2": "EFSは共有ファイル用途です。",
+      "3": "S3はオブジェクトストレージです。"
+    },
+    "domain": "technology",
+    "service": "EBS",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "EBS",
+      "ドリル"
+    ],
+    "beginnerNote": "EC2専用ディスク＝EBS。"
+  },
+  {
+    "id": "qd-tec04-11",
+    "question": "社内サーバーのバックアップを、既存の使い勝手のままS3へ保存したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon EC2",
+      "Amazon SNS",
+      "AWS Storage Gateway",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "オンプレとS3の橋渡しはStorage Gatewayが適します。",
+    "wrongChoiceExplanations": {
+      "0": "EC2は仮想サーバーです。",
+      "1": "SNSは通知です。",
+      "3": "Lambdaはサーバーレス実行です。"
+    },
+    "domain": "technology",
+    "service": "Storage Gateway",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "Storage Gateway",
+      "ドリル"
+    ],
+    "beginnerNote": "オンプレ→S3＝Storage Gateway。"
+  },
+  {
+    "id": "qd-tec04-12",
+    "question": "EC2に接続するブロックストレージは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "S3",
+      "EFS",
+      "RDS",
+      "EBS"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ブロックストレージはEBSです。",
+    "wrongChoiceExplanations": {
+      "0": "S3はオブジェクトです。",
+      "1": "EFSは共有ファイルです。",
+      "2": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "EBS",
+    "difficulty": 1,
+    "tags": [
+      "ストレージ",
+      "EBS",
+      "ドリル"
+    ],
+    "beginnerNote": "ブロック＝EBS。"
+  },
+  {
+    "id": "qd-tec04-13",
+    "question": "複数サーバーから共有できるファイルストレージは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "EFS",
+      "EBS",
+      "S3",
+      "SQS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "共有ファイルストレージはEFSです。",
+    "wrongChoiceExplanations": {
+      "1": "EBSは専用ディスクです。",
+      "2": "S3はオブジェクトです。",
+      "3": "SQSはキューです。"
+    },
+    "domain": "technology",
+    "service": "EFS",
+    "difficulty": 1,
+    "tags": [
+      "ストレージ",
+      "EFS",
+      "ドリル"
+    ],
+    "beginnerNote": "共有ファイル＝EFS。"
+  },
+  {
+    "id": "qd-tec04-14",
+    "question": "ストレージの説明として誤っているものはどれですか。",
+    "choices": [
+      "S3はオブジェクトストレージ",
+      "S3はEC2に接続して使うブロックストレージである",
+      "EBSはEC2に接続するブロックストレージ",
+      "EFSは共有ファイルストレージ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "S3はオブジェクトストレージで、EC2に接続するブロックストレージはEBSです。",
+    "wrongChoiceExplanations": {
+      "0": "S3＝オブジェクトは正しい説明です。",
+      "2": "EBS＝ブロックは正しい説明です。",
+      "3": "EFS＝共有ファイルは正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "ストレージ",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "ドリル"
+    ],
+    "beginnerNote": "S3はオブジェクト、EBSがブロック。"
+  },
+  {
+    "id": "qd-tec04-15",
+    "question": "ストレージの用途の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "EFS＝複数サーバーでの共有",
+      "Storage Gateway＝オンプレ連携",
+      "EBS＝多数のサーバーから同時共有するのに最適",
+      "S3＝ファイル/バックアップの保存"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "多数から同時共有するのはEFSで、EBSは基本1台に接続します。",
+    "wrongChoiceExplanations": {
+      "0": "EFS＝共有は正しい組合せです。",
+      "1": "Storage Gateway＝オンプレ連携は正しい組合せです。",
+      "3": "S3＝保存は正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "ストレージ",
+    "difficulty": 2,
+    "tags": [
+      "ストレージ",
+      "ドリル"
+    ],
+    "beginnerNote": "同時共有＝EFS。"
+  },
+  {
+    "id": "qd-bil01-1",
+    "question": "AWS料金の基本的な考え方として最も適切なものはどれですか。",
+    "choices": [
+      "毎月固定額を必ず払う",
+      "一括で全額前払いする",
+      "常に無料で使える",
+      "使った分だけ支払う（従量課金）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "AWSの基本は従量課金（使った分だけ）です。",
+    "wrongChoiceExplanations": {
+      "0": "固定額前提ではありません。",
+      "1": "前払いは一部の割引方式です。",
+      "2": "常時無料ではありません。"
+    },
+    "domain": "billing",
+    "service": "料金モデル",
+    "difficulty": 1,
+    "tags": [
+      "料金モデル",
+      "従量課金",
+      "ドリル"
+    ],
+    "beginnerNote": "使った分だけ＝従量課金。"
+  },
+  {
+    "id": "qd-bil01-2",
+    "question": "AWSのデータ転送で、一般に「課金対象になりやすい」のはどちらですか。",
+    "choices": [
+      "AWSから外部インターネットへ出る通信（アウト）",
+      "AWSへ入ってくる通信（イン）",
+      "同一AZ内の通信のみ",
+      "すべて無料"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "インは基本無料、アウト（外部へ出る通信）が課金対象になりやすいです。",
+    "wrongChoiceExplanations": {
+      "1": "インは基本無料です。",
+      "2": "同一AZ内が特に課金という定型ではありません。",
+      "3": "すべて無料ではありません。"
+    },
+    "domain": "billing",
+    "service": "データ転送料金",
+    "difficulty": 1,
+    "tags": [
+      "データ転送料金",
+      "料金モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "出る通信に課金。"
+  },
+  {
+    "id": "qd-bil01-3",
+    "question": "AWSの無料利用枠のうち「期限なく無料で使える」種類はどれですか。",
+    "choices": [
+      "有料プランのみ",
+      "常に無料（Always Free）",
+      "12か月無料",
+      "トライアル"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "常に無料（Always Free）は期限なく、月間上限内で使えます。",
+    "wrongChoiceExplanations": {
+      "0": "有料プランは無料枠ではありません。",
+      "2": "12か月無料は期限があります。",
+      "3": "トライアルは短期です。"
+    },
+    "domain": "billing",
+    "service": "無料利用枠",
+    "difficulty": 1,
+    "tags": [
+      "無料利用枠",
+      "ドリル"
+    ],
+    "beginnerNote": "期限なし＝常に無料。"
+  },
+  {
+    "id": "qd-bil01-4",
+    "question": "従量課金（pay-as-you-go）の説明として正しいものはどれですか。",
+    "choices": [
+      "無料で無制限に使える",
+      "3年分を前払いする",
+      "使用量に応じて料金が変わる",
+      "毎月固定額を必ず払う"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "従量課金は使った分だけ支払う仕組みです。",
+    "wrongChoiceExplanations": {
+      "0": "無料ではありません。",
+      "1": "前払いは別方式です。",
+      "3": "固定額ではありません。"
+    },
+    "domain": "billing",
+    "service": "料金モデル",
+    "difficulty": 1,
+    "tags": [
+      "料金モデル",
+      "従量課金",
+      "ドリル"
+    ],
+    "beginnerNote": "使った分だけ。"
+  },
+  {
+    "id": "qd-bil01-5",
+    "question": "AWS無料利用枠の説明として正しいものはどれですか。",
+    "choices": [
+      "すべてのサービスが永久無料",
+      "法人は使えない",
+      "毎回申請が必要で実質有料",
+      "12か月無料・常に無料・トライアルの3種類がある"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "無料利用枠には従来3種類があります（2025年7月以降の新規は最大200ドルクレジット＋Free/Paidプランに変更。試験では従来の3種類も問われます）。",
+    "wrongChoiceExplanations": {
+      "0": "すべて永久無料ではありません。",
+      "1": "法人でも使えます。",
+      "2": "毎回の申請は不要です。"
+    },
+    "domain": "billing",
+    "service": "無料利用枠",
+    "difficulty": 2,
+    "tags": [
+      "無料利用枠",
+      "ドリル"
+    ],
+    "beginnerNote": "従来は3種類。2025年に新方式も。"
+  },
+  {
+    "id": "qd-bil01-6",
+    "question": "AWS料金の原則として正しいものはどれですか。",
+    "choices": [
+      "長期・大量に使うほど割引が効きやすい",
+      "使うほど単価が必ず上がる",
+      "前払いすると必ず無料になる",
+      "料金は固定で変わらない"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "長期コミットや大量利用ほど割引が効きやすいのが原則です。",
+    "wrongChoiceExplanations": {
+      "1": "使うほど単価が上がるわけではありません。",
+      "2": "前払いで無料にはなりません。",
+      "3": "従量制で変動します。"
+    },
+    "domain": "billing",
+    "service": "料金モデル",
+    "difficulty": 2,
+    "tags": [
+      "料金モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "長期・大量で割引。"
+  },
+  {
+    "id": "qd-bil01-7",
+    "question": "クラウドを学習で試したいが、うっかり課金は避けたいです。まず活用すべきものはどれですか。",
+    "choices": [
+      "前払いのリザーブドを大量購入する",
+      "無料利用枠（上限に注意して使う）",
+      "いきなりEnterpriseサポートでTAMに聞く",
+      "最大構成のEC2を常時起動する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "学習・検証は無料枠を活用し、上限超過に注意するのが基本です。",
+    "wrongChoiceExplanations": {
+      "0": "大量前払いは学習用途に不適切です。",
+      "2": "Enterpriseサポートは高額で学習には過剰です。",
+      "3": "最大構成の常時起動は高額です。"
+    },
+    "domain": "billing",
+    "service": "無料利用枠",
+    "difficulty": 2,
+    "tags": [
+      "無料利用枠",
+      "ドリル"
+    ],
+    "beginnerNote": "学習＝無料枠を活用。"
+  },
+  {
+    "id": "qd-bil01-8",
+    "question": "外部の利用者へ大量の動画を配信すると費用が増えました。主な要因はどれですか。",
+    "choices": [
+      "保存しているだけで高額になるから",
+      "無料枠だから無料のはず",
+      "AWSから外部へ出るデータ転送（アウト）に課金される",
+      "AWSへ入る通信が高いから"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "外部への配信（アウトバウンド転送）が課金要因になりやすいです。",
+    "wrongChoiceExplanations": {
+      "0": "保存のみで配信費用が主要因ではありません。",
+      "1": "大量配信は無料枠を超えます。",
+      "3": "インは基本無料です。"
+    },
+    "domain": "billing",
+    "service": "データ転送料金",
+    "difficulty": 2,
+    "tags": [
+      "データ転送料金",
+      "料金モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "配信＝アウト課金。"
+  },
+  {
+    "id": "qd-bil01-9",
+    "question": "使った分だけ支払う料金の考え方を「＿＿＿課金」と呼びます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "定額",
+      "固定",
+      "前払い",
+      "従量"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "使った分だけは従量課金です。",
+    "wrongChoiceExplanations": {
+      "0": "定額は使用量に依存しません。",
+      "1": "固定も同様です。",
+      "2": "前払いは別方式です。"
+    },
+    "domain": "billing",
+    "service": "料金モデル",
+    "difficulty": 1,
+    "tags": [
+      "料金モデル",
+      "従量課金",
+      "ドリル"
+    ],
+    "beginnerNote": "使った分＝従量課金。"
+  },
+  {
+    "id": "qd-bil01-10",
+    "question": "無料利用枠のうち期限なく使えるのは「＿＿無料（Always Free）」です。＿＿に入るのはどれですか。",
+    "choices": [
+      "常に",
+      "12か月",
+      "30日",
+      "1回だけ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "期限なしは常に無料（Always Free）です。",
+    "wrongChoiceExplanations": {
+      "1": "12か月無料は期限があります。",
+      "2": "30日はトライアル的です。",
+      "3": "1回だけではありません。"
+    },
+    "domain": "billing",
+    "service": "無料利用枠",
+    "difficulty": 1,
+    "tags": [
+      "無料利用枠",
+      "ドリル"
+    ],
+    "beginnerNote": "期限なし＝常に無料。"
+  },
+  {
+    "id": "qd-bil01-11",
+    "question": "AWSへ入ってくる通信（インバウンド）は基本「＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "定額課金",
+      "無料",
+      "最も高額",
+      "従量で高い"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "インバウンドは基本無料です。",
+    "wrongChoiceExplanations": {
+      "0": "定額ではありません。",
+      "2": "最も高額なのはアウトの傾向です。",
+      "3": "インは基本無料です。"
+    },
+    "domain": "billing",
+    "service": "データ転送料金",
+    "difficulty": 1,
+    "tags": [
+      "データ転送料金",
+      "ドリル"
+    ],
+    "beginnerNote": "入る通信＝無料。"
+  },
+  {
+    "id": "qd-bil01-12",
+    "question": "AWS料金・無料枠の説明として誤っているものはどれですか。",
+    "choices": [
+      "常に無料の枠がある",
+      "長期・大量で割引が効きやすい",
+      "AWSへ入ってくる通信（イン）が最も高額に課金される",
+      "従量課金が基本"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "インバウンドは基本無料で、課金対象になりやすいのはアウトバウンドです。",
+    "wrongChoiceExplanations": {
+      "0": "常に無料枠があるのは正しい説明です。",
+      "1": "長期・大量割引は正しい説明です。",
+      "3": "従量課金が基本は正しい説明です。"
+    },
+    "domain": "billing",
+    "service": "料金モデル",
+    "difficulty": 2,
+    "tags": [
+      "料金モデル",
+      "データ転送料金",
+      "ドリル"
+    ],
+    "beginnerNote": "インは基本無料。"
+  },
+  {
+    "id": "qd-bil01-13",
+    "question": "無料利用枠の説明として誤っているものはどれですか。",
+    "choices": [
+      "常に無料の枠が存在する",
+      "上限を超えると課金される",
+      "学習・検証に活用できる",
+      "すべてのAWSサービスが永久に無料で使える"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "すべてが永久無料ではなく、対象・期間・上限があります。",
+    "wrongChoiceExplanations": {
+      "0": "常に無料の枠があるのは正しい説明です。",
+      "1": "上限超過で課金は正しい説明です。",
+      "2": "学習活用は正しい説明です。"
+    },
+    "domain": "billing",
+    "service": "無料利用枠",
+    "difficulty": 2,
+    "tags": [
+      "無料利用枠",
+      "ドリル"
+    ],
+    "beginnerNote": "全部永久無料ではない。"
   }
 ]
