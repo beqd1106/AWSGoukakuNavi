@@ -478,7 +478,9 @@ const DRILL_PREFIX = {
   "l-cc-02": "qd-cc02", "l-cc-03": "qd-cc03", "l-cc-04": "qd-cc04", "l-cc-05": "qd-cc05", "l-cc-06": "qd-cc06",
   "l-sec-01": "qd-sec01", "l-sec-03": "qd-sec03", "l-sec-06": "qd-sec06", "l-sec-08": "qd-sec08", "l-sec-09": "qd-sec09",
   "l-tec-01": "qd-tec01", "l-tec-02": "qd-tec02", "l-tec-03": "qd-tec03", "l-tec-04": "qd-tec04",
-  "l-tec-05": "qd-tec05", "l-tec-06": "qd-tec06", "l-tec-09": "qd-tec09",
+  "l-tec-05": "qd-tec05", "l-tec-06": "qd-tec06", "l-tec-07": "qd-tec07", "l-tec-08": "qd-tec08",
+  "l-tec-09": "qd-tec09", "l-tec-10": "qd-tec10", "l-tec-11": "qd-tec11", "l-tec-12": "qd-tec12",
+  "l-tec-13": "qd-tec13", "l-tec-14": "qd-tec14",
   "l-bil-01": "qd-bil01", "l-bil-02": "qd-bil02", "l-bil-06": "qd-bil06",
 };
 

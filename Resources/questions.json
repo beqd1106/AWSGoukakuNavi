@@ -25544,5 +25544,2582 @@
       "ドリル"
     ],
     "beginnerNote": "全部永久無料ではない。"
+  },
+  {
+    "id": "qd-tec07-1",
+    "question": "「AWS上に作る自分専用の仮想ネットワーク」はどれですか。",
+    "choices": [
+      "Amazon VPC",
+      "Amazon EC2",
+      "Amazon S3",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "VPCはAWS上の自分専用の仮想ネットワークです。",
+    "wrongChoiceExplanations": {
+      "1": "EC2は仮想サーバーです。",
+      "2": "S3はストレージです。",
+      "3": "Lambdaはサーバーレスです。"
+    },
+    "domain": "technology",
+    "service": "VPC",
+    "difficulty": 1,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "自分専用の仮想NW＝VPC。"
+  },
+  {
+    "id": "qd-tec07-2",
+    "question": "「ドメイン名をIPアドレスに変換するDNSサービス」はどれですか。",
+    "choices": [
+      "Amazon EC2",
+      "Amazon Route 53",
+      "Amazon CloudFront",
+      "Amazon VPC"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Route 53はDNSサービスで、ドメイン登録やヘルスチェックもできます。",
+    "wrongChoiceExplanations": {
+      "0": "EC2は仮想サーバーです。",
+      "2": "CloudFrontはCDNです。",
+      "3": "VPCはネットワークです。"
+    },
+    "domain": "technology",
+    "service": "Route 53",
+    "difficulty": 1,
+    "tags": [
+      "Route 53",
+      "DNS",
+      "ドリル"
+    ],
+    "beginnerNote": "DNS＝Route 53。"
+  },
+  {
+    "id": "qd-tec07-3",
+    "question": "「VPCを外部インターネットと接続する出入口」はどれですか。",
+    "choices": [
+      "ルートテーブル",
+      "セキュリティグループ",
+      "インターネットゲートウェイ",
+      "NATゲートウェイ"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "インターネットゲートウェイがVPCと外部の接続点です。",
+    "wrongChoiceExplanations": {
+      "0": "ルートテーブルは経路制御です。",
+      "1": "セキュリティグループは通信許可の制御です。",
+      "3": "NATゲートウェイは内部から外部への通信用です。"
+    },
+    "domain": "technology",
+    "service": "ネットワーク",
+    "difficulty": 1,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "外部接続＝IGW。"
+  },
+  {
+    "id": "qd-tec07-4",
+    "question": "「プライベートサブネットの内部から外部へ安全に通信させる」ときに使うのはどれですか。",
+    "choices": [
+      "インターネットゲートウェイに直結",
+      "Route 53",
+      "CloudFront",
+      "NATゲートウェイ"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "NATゲートウェイで、内部サーバーから外部へ安全に出られます。",
+    "wrongChoiceExplanations": {
+      "0": "プライベートを直接IGWに晒すのは不適切です。",
+      "1": "Route 53はDNSです。",
+      "2": "CloudFrontはCDNです。"
+    },
+    "domain": "technology",
+    "service": "ネットワーク",
+    "difficulty": 2,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "内部→外部＝NATゲートウェイ。"
+  },
+  {
+    "id": "qd-tec07-5",
+    "question": "Amazon VPCの説明として正しいものはどれですか。",
+    "choices": [
+      "AWS上に作る、利用者専用の仮想ネットワーク",
+      "仮想サーバー",
+      "オブジェクトストレージ",
+      "DNSサービス"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "VPCは利用者専用の仮想ネットワークです。",
+    "wrongChoiceExplanations": {
+      "1": "仮想サーバーはEC2です。",
+      "2": "ストレージはS3です。",
+      "3": "DNSはRoute 53です。"
+    },
+    "domain": "technology",
+    "service": "VPC",
+    "difficulty": 1,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "専用仮想NW＝VPC。"
+  },
+  {
+    "id": "qd-tec07-6",
+    "question": "パブリックサブネットとプライベートサブネットの違いとして正しいものはどれですか。",
+    "choices": [
+      "違いはコストだけ",
+      "パブリックは外部公開向け、プライベートは内部専用",
+      "両者は同じ意味",
+      "プライベートが外部公開向け"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "パブリックは外に出せる区画、プライベートは内部専用の区画です。",
+    "wrongChoiceExplanations": {
+      "0": "違いは公開範囲です。",
+      "2": "同じ意味ではありません。",
+      "3": "公開向けはパブリックです。"
+    },
+    "domain": "technology",
+    "service": "ネットワーク",
+    "difficulty": 2,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "公開＝パブリック、内部＝プライベート。"
+  },
+  {
+    "id": "qd-tec07-7",
+    "question": "公開したいWebサーバーと、公開したくないDBサーバーを分けて配置したいです。適切な方法はどれですか。",
+    "choices": [
+      "すべてプライベートに置く",
+      "サブネットは分けない",
+      "Webはパブリックサブネット、DBはプライベートサブネットに置く",
+      "すべてパブリックに置く"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "公開が必要なものだけパブリック、内部専用はプライベートに分けます。",
+    "wrongChoiceExplanations": {
+      "0": "Webも内部専用だと外部提供できません。",
+      "1": "分けることでセキュリティが高まります。",
+      "3": "DBを公開に置くのは危険です。"
+    },
+    "domain": "technology",
+    "service": "VPC",
+    "difficulty": 2,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "公開/内部でサブネットを分ける。"
+  },
+  {
+    "id": "qd-tec07-8",
+    "question": "独自ドメインでWebサイトを公開し、名前解決も設定したいです。使うサービスはどれですか。",
+    "choices": [
+      "Amazon VPC",
+      "Amazon EBS",
+      "Amazon SQS",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ドメイン登録・DNS設定はRoute 53が担います。",
+    "wrongChoiceExplanations": {
+      "0": "VPCはネットワークです。",
+      "1": "EBSはディスクです。",
+      "2": "SQSはキューです。"
+    },
+    "domain": "technology",
+    "service": "Route 53",
+    "difficulty": 2,
+    "tags": [
+      "Route 53",
+      "DNS",
+      "ドリル"
+    ],
+    "beginnerNote": "ドメイン/DNS＝Route 53。"
+  },
+  {
+    "id": "qd-tec07-9",
+    "question": "内部のバッチサーバーからインターネット上の更新サーバーへ接続したいが、外部から内部へは入らせたくないです。適切なのはどれですか。",
+    "choices": [
+      "NATゲートウェイを使う",
+      "インターネットゲートウェイに直接置く",
+      "バケットを公開する",
+      "Route 53を使う"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "NATゲートウェイなら内部から外へは出られ、外からは入れません。",
+    "wrongChoiceExplanations": {
+      "1": "IGW直結は外部からの到達を許してしまいます。",
+      "2": "バケット公開は無関係で危険です。",
+      "3": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "ネットワーク",
+    "difficulty": 2,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "外に出るだけ＝NAT。"
+  },
+  {
+    "id": "qd-tec07-10",
+    "question": "AWS上の自分専用の仮想ネットワークは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "RDS",
+      "VPC",
+      "EC2",
+      "S3"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "仮想ネットワークはVPCです。",
+    "wrongChoiceExplanations": {
+      "0": "RDSはデータベースです。",
+      "2": "EC2は仮想サーバーです。",
+      "3": "S3はストレージです。"
+    },
+    "domain": "technology",
+    "service": "VPC",
+    "difficulty": 1,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "仮想NW＝VPC。"
+  },
+  {
+    "id": "qd-tec07-11",
+    "question": "ドメイン名をIPに変換するDNSサービスは Amazon ＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "VPC",
+      "SNS",
+      "Route 53",
+      "CloudFront"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "DNSはRoute 53です。",
+    "wrongChoiceExplanations": {
+      "0": "VPCはネットワークです。",
+      "1": "SNSは通知です。",
+      "3": "CloudFrontはCDNです。"
+    },
+    "domain": "technology",
+    "service": "Route 53",
+    "difficulty": 1,
+    "tags": [
+      "Route 53",
+      "DNS",
+      "ドリル"
+    ],
+    "beginnerNote": "DNS＝Route 53。"
+  },
+  {
+    "id": "qd-tec07-12",
+    "question": "VPC・ネットワークの説明として誤っているものはどれですか。",
+    "choices": [
+      "VPCは自分専用の仮想ネットワーク",
+      "インターネットゲートウェイは外部との接続点",
+      "Route 53はDNSサービス",
+      "プライベートサブネットは外部公開用のサブネットである"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "プライベートサブネットは内部専用で、外部公開用はパブリックサブネットです。",
+    "wrongChoiceExplanations": {
+      "0": "VPCの説明は正しいです。",
+      "1": "IGWの説明は正しいです。",
+      "2": "Route 53の説明は正しいです。"
+    },
+    "domain": "technology",
+    "service": "ネットワーク",
+    "difficulty": 2,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "ドリル"
+    ],
+    "beginnerNote": "公開＝パブリックサブネット。"
+  },
+  {
+    "id": "qd-tec07-13",
+    "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Route 53＝オブジェクトストレージ",
+      "VPC＝仮想ネットワーク",
+      "インターネットゲートウェイ＝外部接続",
+      "NATゲートウェイ＝内部から外部への通信"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Route 53はDNSで、オブジェクトストレージはS3です。",
+    "wrongChoiceExplanations": {
+      "1": "VPC＝仮想NWは正しい組合せです。",
+      "2": "IGW＝外部接続は正しい組合せです。",
+      "3": "NAT＝内部→外部は正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "ネットワーク",
+    "difficulty": 2,
+    "tags": [
+      "VPC",
+      "Route 53",
+      "ドリル"
+    ],
+    "beginnerNote": "Route 53はDNS。"
+  },
+  {
+    "id": "qd-tec08-1",
+    "question": "「世界中のエッジから低遅延でコンテンツを配信するCDN」はどれですか。",
+    "choices": [
+      "Amazon S3単体",
+      "Amazon CloudFront",
+      "AWS Direct Connect",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "CloudFrontはエッジから配信するCDNです。",
+    "wrongChoiceExplanations": {
+      "0": "S3単体では世界規模の低遅延配信はCDNが担います。",
+      "2": "Direct Connectは専用線接続です。",
+      "3": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "CloudFront",
+    "difficulty": 1,
+    "tags": [
+      "CloudFront",
+      "CDN",
+      "ドリル"
+    ],
+    "beginnerNote": "CDN＝CloudFront。"
+  },
+  {
+    "id": "qd-tec08-2",
+    "question": "「オンプレとAWSを、インターネットを介さず専用線で安定接続」するのはどれですか。",
+    "choices": [
+      "Amazon CloudFront",
+      "NATゲートウェイ",
+      "AWS Direct Connect",
+      "サイト間VPN"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Direct Connectは専用線で安定・低遅延・大容量の接続を提供します。",
+    "wrongChoiceExplanations": {
+      "0": "CloudFrontはCDNです。",
+      "1": "NATは内部→外部通信用です。",
+      "3": "VPNはインターネット経由の暗号化接続です。"
+    },
+    "domain": "technology",
+    "service": "Direct Connect",
+    "difficulty": 1,
+    "tags": [
+      "Direct Connect",
+      "ドリル"
+    ],
+    "beginnerNote": "専用線＝Direct Connect。"
+  },
+  {
+    "id": "qd-tec08-3",
+    "question": "「インターネット上に暗号化トンネルを作り、手軽にオンプレとつなぐ」のはどれですか。",
+    "choices": [
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "Amazon Route 53",
+      "サイト間VPN"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "VPNはインターネット上の暗号化トンネルで手軽に接続します。",
+    "wrongChoiceExplanations": {
+      "0": "Direct Connectは専用線です。",
+      "1": "CloudFrontはCDNです。",
+      "2": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "VPN",
+    "difficulty": 1,
+    "tags": [
+      "VPN",
+      "ドリル"
+    ],
+    "beginnerNote": "暗号化トンネル＝VPN。"
+  },
+  {
+    "id": "qd-tec08-4",
+    "question": "「遠距離のユーザーからの通信をAWSの高速網に載せ、安定・高速化」するのはどれですか。",
+    "choices": [
+      "AWS Global Accelerator",
+      "Amazon S3",
+      "AWS Lambda",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Global Acceleratorは通信をAWSの高速ネットワークに素早く載せます。",
+    "wrongChoiceExplanations": {
+      "1": "S3はストレージです。",
+      "2": "Lambdaはサーバーレスです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "Global Accelerator",
+    "difficulty": 2,
+    "tags": [
+      "Global Accelerator",
+      "ドリル"
+    ],
+    "beginnerNote": "広域高速化＝Global Accelerator。"
+  },
+  {
+    "id": "qd-tec08-5",
+    "question": "Amazon CloudFrontの説明として正しいものはどれですか。",
+    "choices": [
+      "仮想サーバーを起動する",
+      "エッジから配信し、低遅延化とオリジン負荷軽減を実現するCDN",
+      "専用線でオンプレと接続する",
+      "ドメイン名を解決する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "CloudFrontはCDNで、近い拠点から配信します。",
+    "wrongChoiceExplanations": {
+      "0": "仮想サーバーはEC2です。",
+      "2": "専用線接続はDirect Connectです。",
+      "3": "DNSはRoute 53です。"
+    },
+    "domain": "technology",
+    "service": "CloudFront",
+    "difficulty": 1,
+    "tags": [
+      "CloudFront",
+      "CDN",
+      "ドリル"
+    ],
+    "beginnerNote": "近くから配信＝CloudFront。"
+  },
+  {
+    "id": "qd-tec08-6",
+    "question": "Direct ConnectとVPNの違いとして正しいものはどれですか。",
+    "choices": [
+      "VPNの方が常に安定・高速",
+      "Direct Connectはインターネット経由",
+      "Direct Connectは専用線で安定重視、VPNはインターネット経由で手軽",
+      "両者は同じもの"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "安定重視ならDirect Connect、手軽さ重視ならVPNです。",
+    "wrongChoiceExplanations": {
+      "0": "安定はDirect Connectが上です。",
+      "1": "Direct Connectはインターネットを介しません。",
+      "3": "同じものではありません。"
+    },
+    "domain": "technology",
+    "service": "Direct Connect",
+    "difficulty": 2,
+    "tags": [
+      "Direct Connect",
+      "VPN",
+      "ドリル"
+    ],
+    "beginnerNote": "安定＝Direct Connect、手軽＝VPN。"
+  },
+  {
+    "id": "qd-tec08-7",
+    "question": "世界中の利用者へ動画を低遅延で配信し、オリジンの負荷も下げたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Direct Connect",
+      "Amazon Route 53",
+      "Amazon EBS",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "低遅延配信とオリジン負荷軽減はCDNのCloudFrontが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Direct Connectはオンプレ接続用です。",
+      "1": "Route 53はDNSです。",
+      "2": "EBSはディスクです。"
+    },
+    "domain": "technology",
+    "service": "CloudFront",
+    "difficulty": 2,
+    "tags": [
+      "CloudFront",
+      "CDN",
+      "ドリル"
+    ],
+    "beginnerNote": "低遅延配信＝CloudFront。"
+  },
+  {
+    "id": "qd-tec08-8",
+    "question": "オンプレとAWS間で、インターネットを介さず安定・大容量の通信が必要です。最適なのはどれですか。",
+    "choices": [
+      "AWS Direct Connect",
+      "サイト間VPN",
+      "CloudFront",
+      "NATゲートウェイ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "安定・大容量・低遅延の専用線接続はDirect Connectです。",
+    "wrongChoiceExplanations": {
+      "1": "VPNはインターネット経由で安定性は劣ります。",
+      "2": "CloudFrontはCDNです。",
+      "3": "NATは内部→外部通信です。"
+    },
+    "domain": "technology",
+    "service": "Direct Connect",
+    "difficulty": 2,
+    "tags": [
+      "Direct Connect",
+      "ドリル"
+    ],
+    "beginnerNote": "安定・大容量＝Direct Connect。"
+  },
+  {
+    "id": "qd-tec08-9",
+    "question": "低コストで手早くオンプレとAWSを暗号化接続したいです。最適なのはどれですか。",
+    "choices": [
+      "Transit Gateway",
+      "サイト間VPN",
+      "Direct Connect",
+      "Global Accelerator"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "手軽・低コストで始めるならVPN（暗号化トンネル）です。",
+    "wrongChoiceExplanations": {
+      "0": "Transit Gatewayは多拠点集約です。",
+      "2": "Direct Connectは専用線で導入に時間・コストがかかります。",
+      "3": "Global Acceleratorは広域高速化です。"
+    },
+    "domain": "technology",
+    "service": "VPN",
+    "difficulty": 2,
+    "tags": [
+      "VPN",
+      "ドリル"
+    ],
+    "beginnerNote": "手軽・低コスト＝VPN。"
+  },
+  {
+    "id": "qd-tec08-10",
+    "question": "世界中のエッジから配信するCDNは Amazon ＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "VPC",
+      "SQS",
+      "CloudFront",
+      "Route 53"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "CDNはCloudFrontです。",
+    "wrongChoiceExplanations": {
+      "0": "VPCはネットワークです。",
+      "1": "SQSはキューです。",
+      "3": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "CloudFront",
+    "difficulty": 1,
+    "tags": [
+      "CloudFront",
+      "CDN",
+      "ドリル"
+    ],
+    "beginnerNote": "CDN＝CloudFront。"
+  },
+  {
+    "id": "qd-tec08-11",
+    "question": "インターネットを介さない専用線接続は AWS ＿＿＿＿＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "VPN",
+      "CloudFront",
+      "Route 53",
+      "Direct Connect"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "専用線接続はDirect Connectです。",
+    "wrongChoiceExplanations": {
+      "0": "VPNはインターネット経由です。",
+      "1": "CloudFrontはCDNです。",
+      "2": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "Direct Connect",
+    "difficulty": 1,
+    "tags": [
+      "Direct Connect",
+      "ドリル"
+    ],
+    "beginnerNote": "専用線＝Direct Connect。"
+  },
+  {
+    "id": "qd-tec08-12",
+    "question": "接続・配信サービスの説明として誤っているものはどれですか。",
+    "choices": [
+      "Direct Connectはインターネット上に暗号化トンネルを作る接続である",
+      "CloudFrontはCDN",
+      "VPNは暗号化トンネル",
+      "Global Acceleratorは広域の通信を高速化する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "暗号化トンネルはVPNで、Direct Connectはインターネットを介さない専用線です。",
+    "wrongChoiceExplanations": {
+      "1": "CloudFront＝CDNは正しい説明です。",
+      "2": "VPN＝暗号化トンネルは正しい説明です。",
+      "3": "Global Acceleratorの説明は正しいです。"
+    },
+    "domain": "technology",
+    "service": "CloudFront",
+    "difficulty": 2,
+    "tags": [
+      "Direct Connect",
+      "VPN",
+      "ドリル"
+    ],
+    "beginnerNote": "トンネル＝VPN、専用線＝Direct Connect。"
+  },
+  {
+    "id": "qd-tec08-13",
+    "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon CloudFront＝CDN",
+      "Amazon CloudFront＝オンプレとの専用線接続",
+      "AWS Direct Connect＝専用線接続",
+      "サイト間VPN＝暗号化トンネル接続"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "CloudFrontはCDNで、専用線接続はDirect Connectです。",
+    "wrongChoiceExplanations": {
+      "0": "CloudFront＝CDNは正しい組合せです。",
+      "2": "Direct Connect＝専用線は正しい組合せです。",
+      "3": "VPN＝暗号化トンネルは正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "CloudFront",
+    "difficulty": 2,
+    "tags": [
+      "CloudFront",
+      "Direct Connect",
+      "ドリル"
+    ],
+    "beginnerNote": "CloudFrontはCDN。"
+  },
+  {
+    "id": "qd-tec10-1",
+    "question": "「メトリクスやログを収集し、しきい値超過をアラームで通知」するのはどれですか。",
+    "choices": [
+      "AWS Config",
+      "AWS CloudFormation",
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "CloudWatchは監視・アラーム・ログ収集を行います。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "1": "CloudFormationはIaCです。",
+      "3": "CloudTrailは操作の記録です。"
+    },
+    "domain": "technology",
+    "service": "CloudWatch",
+    "difficulty": 1,
+    "tags": [
+      "CloudWatch",
+      "監視",
+      "ドリル"
+    ],
+    "beginnerNote": "監視・アラーム＝CloudWatch。"
+  },
+  {
+    "id": "qd-tec10-2",
+    "question": "「インフラ構成をテンプレート（コード）で定義し、自動構築」するのはどれですか。",
+    "choices": [
+      "Amazon CloudWatch",
+      "AWS Config",
+      "AWS Lambda",
+      "AWS CloudFormation"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "CloudFormationはIaCの代表で、テンプレートから環境を自動構築します。",
+    "wrongChoiceExplanations": {
+      "0": "CloudWatchは監視です。",
+      "1": "Configは設定評価です。",
+      "2": "Lambdaはサーバーレスです。"
+    },
+    "domain": "technology",
+    "service": "CloudFormation",
+    "difficulty": 1,
+    "tags": [
+      "CloudFormation",
+      "IaC",
+      "ドリル"
+    ],
+    "beginnerNote": "IaC＝CloudFormation。"
+  },
+  {
+    "id": "qd-tec10-3",
+    "question": "「多数のサーバーへのパッチ適用や設定をまとめて実行」する運用サービスはどれですか。",
+    "choices": [
+      "AWS Systems Manager",
+      "Amazon CloudWatch",
+      "AWS Config",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Systems Managerは多数のサーバーの運用を一元化します。",
+    "wrongChoiceExplanations": {
+      "1": "CloudWatchは監視です。",
+      "2": "Configは設定評価です。",
+      "3": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "Systems Manager",
+    "difficulty": 1,
+    "tags": [
+      "Systems Manager",
+      "ドリル"
+    ],
+    "beginnerNote": "運用自動化＝Systems Manager。"
+  },
+  {
+    "id": "qd-tec10-4",
+    "question": "「アプリ内部の処理を追跡し、遅い箇所を可視化」するのはどれですか。",
+    "choices": [
+      "Amazon SNS",
+      "AWS X-Ray",
+      "Amazon CloudFront",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "X-Rayは分散トレースでボトルネックを可視化します。",
+    "wrongChoiceExplanations": {
+      "0": "SNSは通知です。",
+      "2": "CloudFrontはCDNです。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "technology",
+    "service": "X-Ray",
+    "difficulty": 2,
+    "tags": [
+      "X-Ray",
+      "監視",
+      "ドリル"
+    ],
+    "beginnerNote": "処理追跡＝X-Ray。"
+  },
+  {
+    "id": "qd-tec10-5",
+    "question": "Amazon CloudWatchの説明として正しいものはどれですか。",
+    "choices": [
+      "インフラをコードで構築する",
+      "ドメインを解決する",
+      "メトリクス・ログを収集し、アラームで通知する監視サービス",
+      "API操作を記録する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "CloudWatchは監視の中心となるサービスです。",
+    "wrongChoiceExplanations": {
+      "0": "IaCはCloudFormationです。",
+      "1": "DNSはRoute 53です。",
+      "3": "API記録はCloudTrailです。"
+    },
+    "domain": "technology",
+    "service": "CloudWatch",
+    "difficulty": 1,
+    "tags": [
+      "CloudWatch",
+      "監視",
+      "ドリル"
+    ],
+    "beginnerNote": "監視＝CloudWatch。"
+  },
+  {
+    "id": "qd-tec10-6",
+    "question": "IaC（Infrastructure as Code）の説明として正しいものはどれですか。",
+    "choices": [
+      "手作業で毎回サーバーを設定する",
+      "アプリのソースコードを書くこと",
+      "課金を止めること",
+      "インフラ構成をコードで定義し、再現性高く自動構築する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "IaCは構成をコード化し、同じ環境を自動で再現します。",
+    "wrongChoiceExplanations": {
+      "0": "手作業はIaCの逆です。",
+      "1": "アプリのコードとは異なります。",
+      "2": "課金停止機能ではありません。"
+    },
+    "domain": "technology",
+    "service": "CloudFormation",
+    "difficulty": 2,
+    "tags": [
+      "CloudFormation",
+      "IaC",
+      "ドリル"
+    ],
+    "beginnerNote": "構成をコード化＝IaC。"
+  },
+  {
+    "id": "qd-tec10-7",
+    "question": "EC2のCPU使用率が高いときにメールで通知を受けたいです。最適なのはどれですか。",
+    "choices": [
+      "CloudWatchアラームで通知する",
+      "CloudTrailを見る",
+      "CloudFormationを実行する",
+      "VPCを分ける"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "しきい値超過の通知はCloudWatchアラームが適します。",
+    "wrongChoiceExplanations": {
+      "1": "CloudTrailは操作記録です。",
+      "2": "CloudFormationはIaCです。",
+      "3": "VPC分割は通知手段ではありません。"
+    },
+    "domain": "technology",
+    "service": "CloudWatch",
+    "difficulty": 2,
+    "tags": [
+      "CloudWatch",
+      "監視",
+      "ドリル"
+    ],
+    "beginnerNote": "しきい値通知＝CloudWatchアラーム。"
+  },
+  {
+    "id": "qd-tec10-8",
+    "question": "同じ構成の環境を検証用・本番用で何度も正確に作りたいです。最適なのはどれですか。",
+    "choices": [
+      "口頭で手順を伝える",
+      "CloudFormationのテンプレートで自動構築する",
+      "毎回手作業で作る",
+      "スクリーンショットを撮って真似る"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "テンプレートによる自動構築（IaC）で再現性を確保できます。",
+    "wrongChoiceExplanations": {
+      "0": "口頭伝達は再現性が低いです。",
+      "2": "手作業はミスが生じます。",
+      "3": "スクショの模倣は不正確です。"
+    },
+    "domain": "technology",
+    "service": "CloudFormation",
+    "difficulty": 2,
+    "tags": [
+      "CloudFormation",
+      "IaC",
+      "ドリル"
+    ],
+    "beginnerNote": "再現性＝CloudFormation。"
+  },
+  {
+    "id": "qd-tec10-9",
+    "question": "数百台のEC2へOSパッチを一括で適用したいです。最適なのはどれですか。",
+    "choices": [
+      "CloudFrontを使う",
+      "Route 53を使う",
+      "AWS Systems Manager",
+      "1台ずつ手動でログインする"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "多数のサーバー運用の一括実行はSystems Managerが適します。",
+    "wrongChoiceExplanations": {
+      "0": "CloudFrontはCDNです。",
+      "1": "Route 53はDNSです。",
+      "3": "手動は非効率でミスが増えます。"
+    },
+    "domain": "technology",
+    "service": "Systems Manager",
+    "difficulty": 2,
+    "tags": [
+      "Systems Manager",
+      "ドリル"
+    ],
+    "beginnerNote": "一括運用＝Systems Manager。"
+  },
+  {
+    "id": "qd-tec10-10",
+    "question": "メトリクスやログを監視するサービスは Amazon ＿＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "CloudTrail",
+      "Config",
+      "Route 53",
+      "CloudWatch"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "監視はCloudWatchです。",
+    "wrongChoiceExplanations": {
+      "0": "CloudTrailは操作記録です。",
+      "1": "Configは設定評価です。",
+      "2": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "CloudWatch",
+    "difficulty": 1,
+    "tags": [
+      "CloudWatch",
+      "監視",
+      "ドリル"
+    ],
+    "beginnerNote": "監視＝CloudWatch。"
+  },
+  {
+    "id": "qd-tec10-11",
+    "question": "インフラをコードで定義・自動構築するのは AWS ＿＿＿＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "CloudFormation",
+      "CloudWatch",
+      "Systems Manager",
+      "Lambda"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "IaCはCloudFormationです。",
+    "wrongChoiceExplanations": {
+      "1": "CloudWatchは監視です。",
+      "2": "Systems Managerは運用自動化です。",
+      "3": "Lambdaはサーバーレスです。"
+    },
+    "domain": "technology",
+    "service": "CloudFormation",
+    "difficulty": 1,
+    "tags": [
+      "CloudFormation",
+      "IaC",
+      "ドリル"
+    ],
+    "beginnerNote": "IaC＝CloudFormation。"
+  },
+  {
+    "id": "qd-tec10-12",
+    "question": "監視・自動化の説明として誤っているものはどれですか。",
+    "choices": [
+      "Systems Managerは運用を自動化する",
+      "CloudWatchはインフラをコードで構築するサービスである",
+      "CloudWatchは監視・アラームを行う",
+      "CloudFormationはIaC"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "インフラをコードで構築するのはCloudFormationで、CloudWatchは監視サービスです。",
+    "wrongChoiceExplanations": {
+      "0": "Systems Managerの説明は正しいです。",
+      "2": "CloudWatch＝監視は正しい説明です。",
+      "3": "CloudFormation＝IaCは正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "CloudWatch",
+    "difficulty": 2,
+    "tags": [
+      "CloudWatch",
+      "監視",
+      "ドリル"
+    ],
+    "beginnerNote": "IaCはCloudFormation。"
+  },
+  {
+    "id": "qd-tec10-13",
+    "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon CloudWatch＝監視・アラーム",
+      "AWS Systems Manager＝運用自動化",
+      "Amazon CloudWatch＝API操作の履歴記録",
+      "AWS CloudFormation＝IaC"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "API操作の記録はCloudTrailで、CloudWatchは監視です。",
+    "wrongChoiceExplanations": {
+      "0": "CloudWatch＝監視は正しい組合せです。",
+      "1": "Systems Manager＝運用自動化は正しい組合せです。",
+      "3": "CloudFormation＝IaCは正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "CloudFormation",
+    "difficulty": 2,
+    "tags": [
+      "CloudWatch",
+      "監視",
+      "ドリル"
+    ],
+    "beginnerNote": "操作記録＝CloudTrail。"
+  },
+  {
+    "id": "qd-tec11-1",
+    "question": "「処理待ちのメッセージをためて、受け手が自分のペースで取り出す」キューはどれですか。",
+    "choices": [
+      "Amazon SNS",
+      "Amazon API Gateway",
+      "Amazon EC2",
+      "Amazon SQS"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "SQSはメッセージをためるキューで、疎結合の要です。",
+    "wrongChoiceExplanations": {
+      "0": "SNSは通知の一斉配信です。",
+      "1": "API GatewayはAPIの窓口です。",
+      "2": "EC2は仮想サーバーです。"
+    },
+    "domain": "technology",
+    "service": "SQS",
+    "difficulty": 1,
+    "tags": [
+      "SQS",
+      "疎結合",
+      "ドリル"
+    ],
+    "beginnerNote": "ためる＝SQS。"
+  },
+  {
+    "id": "qd-tec11-2",
+    "question": "「1つの通知を複数の受け手へ一斉配信（パブサブ）」するのはどれですか。",
+    "choices": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon API Gateway",
+      "AWS Lambda"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "SNSは1つの通知を複数へ配信するパブサブです。",
+    "wrongChoiceExplanations": {
+      "1": "SQSはためるキューです。",
+      "2": "API GatewayはAPIの窓口です。",
+      "3": "Lambdaはサーバーレスです。"
+    },
+    "domain": "technology",
+    "service": "SNS",
+    "difficulty": 1,
+    "tags": [
+      "SNS",
+      "ドリル"
+    ],
+    "beginnerNote": "配る＝SNS。"
+  },
+  {
+    "id": "qd-tec11-3",
+    "question": "「外部からのAPIリクエストを受け付け、バックエンドへつなぐ窓口」はどれですか。",
+    "choices": [
+      "Amazon S3",
+      "Amazon API Gateway",
+      "Amazon SQS",
+      "Amazon SNS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "API GatewayはAPIの受付窓口です。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージです。",
+      "2": "SQSはキューです。",
+      "3": "SNSは通知配信です。"
+    },
+    "domain": "technology",
+    "service": "API Gateway",
+    "difficulty": 1,
+    "tags": [
+      "API Gateway",
+      "ドリル"
+    ],
+    "beginnerNote": "APIの窓口＝API Gateway。"
+  },
+  {
+    "id": "qd-tec11-4",
+    "question": "「システム同士を直接つながず、間に仕組みを挟んで独立性を高める」考え方を何と呼びますか。",
+    "choices": [
+      "単一障害点",
+      "冗長化",
+      "疎結合",
+      "密結合"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "間に仕組みを挟んで独立させるのが疎結合です。",
+    "wrongChoiceExplanations": {
+      "0": "単一障害点は壊れると全停止する箇所です。",
+      "1": "冗長化は予備を持つことです。",
+      "3": "密結合は直接つながり依存が強い状態です。"
+    },
+    "domain": "technology",
+    "service": "疎結合",
+    "difficulty": 2,
+    "tags": [
+      "疎結合",
+      "ドリル"
+    ],
+    "beginnerNote": "間に挟む＝疎結合。"
+  },
+  {
+    "id": "qd-tec11-5",
+    "question": "Amazon SQSの説明として正しいものはどれですか。",
+    "choices": [
+      "1つの通知を複数へ配信する",
+      "APIの窓口になる",
+      "仮想サーバーを提供する",
+      "メッセージをためて受け手が自分のペースで取り出すキュー"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "SQSはためるキューで、負荷の波を吸収します。",
+    "wrongChoiceExplanations": {
+      "0": "一斉配信はSNSです。",
+      "1": "APIの窓口はAPI Gatewayです。",
+      "2": "仮想サーバーはEC2です。"
+    },
+    "domain": "technology",
+    "service": "SQS",
+    "difficulty": 1,
+    "tags": [
+      "SQS",
+      "疎結合",
+      "ドリル"
+    ],
+    "beginnerNote": "ためるキュー＝SQS。"
+  },
+  {
+    "id": "qd-tec11-6",
+    "question": "Amazon SNSの説明として正しいものはどれですか。",
+    "choices": [
+      "1つのメッセージを複数の宛先へ一斉配信するパブサブ",
+      "メッセージをためて順に処理する",
+      "APIの窓口になる",
+      "データベースを提供する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "SNSはパブサブで、複数へ一斉配信します。",
+    "wrongChoiceExplanations": {
+      "1": "ためるのはSQSです。",
+      "2": "APIの窓口はAPI Gatewayです。",
+      "3": "データベースはRDS等です。"
+    },
+    "domain": "technology",
+    "service": "SNS",
+    "difficulty": 1,
+    "tags": [
+      "SNS",
+      "ドリル"
+    ],
+    "beginnerNote": "一斉配信＝SNS。"
+  },
+  {
+    "id": "qd-tec11-7",
+    "question": "注文処理が急増しても取りこぼさないよう、処理をためて順に捌きたいです。最適なのはどれですか。",
+    "choices": [
+      "EBSに保存する",
+      "Amazon SQSでキューにためる",
+      "Amazon SNSで即時に全配信する",
+      "API Gatewayだけで処理する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "処理の波を吸収するにはSQSでためるのが適します。",
+    "wrongChoiceExplanations": {
+      "0": "EBSはディスクです。",
+      "2": "SNSは一斉配信で、順次処理のためる用途とは異なります。",
+      "3": "API Gatewayは窓口で処理待ちの吸収はしません。"
+    },
+    "domain": "technology",
+    "service": "SQS",
+    "difficulty": 2,
+    "tags": [
+      "SQS",
+      "疎結合",
+      "ドリル"
+    ],
+    "beginnerNote": "波の吸収＝SQS。"
+  },
+  {
+    "id": "qd-tec11-8",
+    "question": "あるイベントを、メール・SQS・Lambdaなど複数の宛先へ同時に知らせたいです。最適なのはどれですか。",
+    "choices": [
+      "API Gatewayで受ける",
+      "Route 53で通知する",
+      "Amazon SNSで一斉配信する",
+      "Amazon SQSでためる"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "1つのイベントを複数へ配るのはSNSが適します。",
+    "wrongChoiceExplanations": {
+      "0": "API Gatewayは受付窓口です。",
+      "1": "Route 53はDNSです。",
+      "3": "SQSはためる用途です。"
+    },
+    "domain": "technology",
+    "service": "SNS",
+    "difficulty": 2,
+    "tags": [
+      "SNS",
+      "ドリル"
+    ],
+    "beginnerNote": "複数へ配る＝SNS。"
+  },
+  {
+    "id": "qd-tec11-9",
+    "question": "Lambdaで作った処理を、外部から呼べるREST APIとして公開したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon EBS",
+      "Amazon API Gateway"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "APIの受付・公開はAPI Gatewayが担い、Lambdaと組み合わせます。",
+    "wrongChoiceExplanations": {
+      "0": "SQSはキューです。",
+      "1": "SNSは通知です。",
+      "2": "EBSはディスクです。"
+    },
+    "domain": "technology",
+    "service": "API Gateway",
+    "difficulty": 2,
+    "tags": [
+      "API Gateway",
+      "ドリル"
+    ],
+    "beginnerNote": "API公開＝API Gateway。"
+  },
+  {
+    "id": "qd-tec11-10",
+    "question": "メッセージをためるキューは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "SQS",
+      "SNS",
+      "EC2",
+      "VPC"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ためるキューはSQSです。",
+    "wrongChoiceExplanations": {
+      "1": "SNSは一斉配信です。",
+      "2": "EC2は仮想サーバーです。",
+      "3": "VPCはネットワークです。"
+    },
+    "domain": "technology",
+    "service": "SQS",
+    "difficulty": 1,
+    "tags": [
+      "SQS",
+      "ドリル"
+    ],
+    "beginnerNote": "ためる＝SQS。"
+  },
+  {
+    "id": "qd-tec11-11",
+    "question": "1つの通知を複数へ配信するのは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "S3",
+      "SNS",
+      "SQS",
+      "RDS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "一斉配信はSNSです。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージです。",
+      "2": "SQSはためるキューです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "SNS",
+    "difficulty": 1,
+    "tags": [
+      "SNS",
+      "ドリル"
+    ],
+    "beginnerNote": "配る＝SNS。"
+  },
+  {
+    "id": "qd-tec11-12",
+    "question": "アプリ連携の説明として誤っているものはどれですか。",
+    "choices": [
+      "SNSは一斉配信のパブサブ",
+      "API GatewayはAPIの窓口",
+      "SQSは1つの通知を複数の宛先へ一斉配信するサービスである",
+      "SQSはメッセージをためるキュー"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "一斉配信はSNSで、SQSはためるキューです。",
+    "wrongChoiceExplanations": {
+      "0": "SNS＝一斉配信は正しい説明です。",
+      "1": "API Gateway＝窓口は正しい説明です。",
+      "3": "SQS＝ためるは正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "SQS",
+    "difficulty": 2,
+    "tags": [
+      "SQS",
+      "SNS",
+      "ドリル"
+    ],
+    "beginnerNote": "ためる＝SQS、配る＝SNS。"
+  },
+  {
+    "id": "qd-tec11-13",
+    "question": "疎結合の説明として誤っているものはどれですか。",
+    "choices": [
+      "間に仕組みを挟んで独立性を高める",
+      "一方が遅れても全体が止まりにくくなる",
+      "SQSやSNSが要になる",
+      "システム同士を直接つなぐほど良い設計である"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "直接つなぐのは密結合で、疎結合は間に仕組みを挟んで独立させます。",
+    "wrongChoiceExplanations": {
+      "0": "独立性を高めるのは正しい説明です。",
+      "1": "止まりにくくなるのは正しい説明です。",
+      "2": "SQS/SNSが要なのは正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "疎結合",
+    "difficulty": 2,
+    "tags": [
+      "疎結合",
+      "ドリル"
+    ],
+    "beginnerNote": "直接つなぐは密結合。"
+  },
+  {
+    "id": "qd-tec12-1",
+    "question": "「S3のデータを、サーバー不要でそのままSQLで分析」できるのはどれですか。",
+    "choices": [
+      "Amazon Athena",
+      "Amazon Redshift",
+      "Amazon Kinesis",
+      "Amazon EMR"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "AthenaはS3を直接SQLで分析でき、サーバー準備が不要です。",
+    "wrongChoiceExplanations": {
+      "1": "Redshiftは本格的なDWHです。",
+      "2": "Kinesisはリアルタイム処理です。",
+      "3": "EMRは大規模バッチ分析です。"
+    },
+    "domain": "technology",
+    "service": "Athena",
+    "difficulty": 1,
+    "tags": [
+      "Athena",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "S3を直接SQL＝Athena。"
+  },
+  {
+    "id": "qd-tec12-2",
+    "question": "「大規模データを継続的に分析するデータウェアハウス」はどれですか。",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon Redshift",
+      "Amazon Athena",
+      "Amazon QuickSight"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Redshiftは大規模分析に特化したデータウェアハウスです。",
+    "wrongChoiceExplanations": {
+      "0": "Kinesisはリアルタイム処理です。",
+      "2": "Athenaは手軽なアドホック分析向けです。",
+      "3": "QuickSightは可視化ツールです。"
+    },
+    "domain": "technology",
+    "service": "Redshift",
+    "difficulty": 1,
+    "tags": [
+      "Redshift",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "大規模DWH＝Redshift。"
+  },
+  {
+    "id": "qd-tec12-3",
+    "question": "「絶え間なく流れるデータをリアルタイムに取り込み・処理」するのはどれですか。",
+    "choices": [
+      "Amazon Redshift",
+      "AWS Glue",
+      "Amazon Kinesis",
+      "Amazon Athena"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Kinesisはストリーミングデータをリアルタイムに扱います。",
+    "wrongChoiceExplanations": {
+      "0": "RedshiftはDWHです。",
+      "1": "GlueはETLです。",
+      "3": "AthenaはS3への分析クエリです。"
+    },
+    "domain": "technology",
+    "service": "Kinesis",
+    "difficulty": 1,
+    "tags": [
+      "Kinesis",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "リアルタイム＝Kinesis。"
+  },
+  {
+    "id": "qd-tec12-4",
+    "question": "「グラフやダッシュボードでデータを見える化」するのはどれですか。",
+    "choices": [
+      "Amazon Athena",
+      "AWS Glue",
+      "Amazon Kinesis",
+      "Amazon QuickSight"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "QuickSightはBI・可視化のサービスです。",
+    "wrongChoiceExplanations": {
+      "0": "Athenaは分析クエリです。",
+      "1": "GlueはETLです。",
+      "2": "Kinesisはリアルタイム処理です。"
+    },
+    "domain": "technology",
+    "service": "QuickSight",
+    "difficulty": 1,
+    "tags": [
+      "QuickSight",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "可視化＝QuickSight。"
+  },
+  {
+    "id": "qd-tec12-5",
+    "question": "「データの抽出・変換・統合（ETL）で分析の下ごしらえ」をするのはどれですか。",
+    "choices": [
+      "AWS Glue",
+      "Amazon QuickSight",
+      "Amazon Athena",
+      "Amazon Redshift"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "GlueはETL（抽出・変換・ロード）を担います。",
+    "wrongChoiceExplanations": {
+      "1": "QuickSightは可視化です。",
+      "2": "Athenaは分析クエリです。",
+      "3": "RedshiftはDWHです。"
+    },
+    "domain": "technology",
+    "service": "Glue",
+    "difficulty": 2,
+    "tags": [
+      "Glue",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "ETL＝Glue。"
+  },
+  {
+    "id": "qd-tec12-6",
+    "question": "Amazon Athenaの説明として正しいものはどれですか。",
+    "choices": [
+      "リアルタイムに処理する",
+      "S3のデータをサーバーレスでSQL分析できる",
+      "大規模DWHで継続分析する",
+      "データを可視化する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AthenaはS3を直接SQLで分析するサーバーレスサービスです。",
+    "wrongChoiceExplanations": {
+      "0": "リアルタイムはKinesisです。",
+      "2": "継続的な大規模分析はRedshiftです。",
+      "3": "可視化はQuickSightです。"
+    },
+    "domain": "technology",
+    "service": "Athena",
+    "difficulty": 2,
+    "tags": [
+      "Athena",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "手軽なS3分析。"
+  },
+  {
+    "id": "qd-tec12-7",
+    "question": "AthenaとRedshiftの使い分けとして正しいものはどれですか。",
+    "choices": [
+      "Athenaが大規模DWH",
+      "Redshiftは可視化ツール",
+      "手軽・アドホックはAthena、本格・継続的大規模分析はRedshift",
+      "両者は同じ"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "手軽ならAthena、本格的な大規模分析はRedshiftです。",
+    "wrongChoiceExplanations": {
+      "0": "大規模DWHはRedshiftです。",
+      "1": "可視化はQuickSightです。",
+      "3": "同じではありません。"
+    },
+    "domain": "technology",
+    "service": "Redshift",
+    "difficulty": 2,
+    "tags": [
+      "Redshift",
+      "Athena",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "手軽＝Athena、本格＝Redshift。"
+  },
+  {
+    "id": "qd-tec12-8",
+    "question": "S3にたまったアクセスログを、DBへ移さず手早くSQLで集計したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Redshiftに移してから分析",
+      "Amazon Kinesis",
+      "Amazon QuickSightだけ",
+      "Amazon Athena"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "S3を直接SQL分析するAthenaが手早く適します。",
+    "wrongChoiceExplanations": {
+      "0": "わざわざ移す必要はありません。",
+      "1": "Kinesisはリアルタイム処理用です。",
+      "2": "QuickSightは可視化で分析クエリ自体は行いません。"
+    },
+    "domain": "technology",
+    "service": "Athena",
+    "difficulty": 2,
+    "tags": [
+      "Athena",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "S3を直接＝Athena。"
+  },
+  {
+    "id": "qd-tec12-9",
+    "question": "IoTセンサーから絶え間なく届くデータを、その場で取り込み処理したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon Athena",
+      "Amazon Redshift",
+      "AWS Glue"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "リアルタイムのストリーミング処理はKinesisが適します。",
+    "wrongChoiceExplanations": {
+      "1": "Athenaは蓄積データのクエリ向けです。",
+      "2": "Redshiftは継続的な大規模分析向けです。",
+      "3": "GlueはETLです。"
+    },
+    "domain": "technology",
+    "service": "Kinesis",
+    "difficulty": 2,
+    "tags": [
+      "Kinesis",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "リアルタイム＝Kinesis。"
+  },
+  {
+    "id": "qd-tec12-10",
+    "question": "分析結果を経営層向けにグラフのダッシュボードで共有したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon QuickSight",
+      "Amazon Athena",
+      "AWS Glue"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ダッシュボードでの可視化・共有はQuickSightが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Kinesisはリアルタイム処理です。",
+      "2": "Athenaは分析クエリです。",
+      "3": "GlueはETLです。"
+    },
+    "domain": "technology",
+    "service": "QuickSight",
+    "difficulty": 2,
+    "tags": [
+      "QuickSight",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "可視化＝QuickSight。"
+  },
+  {
+    "id": "qd-tec12-11",
+    "question": "S3を直接SQLで分析するサーバーレスサービスは Amazon ＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Glue",
+      "Kinesis",
+      "Athena",
+      "Redshift"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "S3を直接SQLはAthenaです。",
+    "wrongChoiceExplanations": {
+      "0": "GlueはETLです。",
+      "1": "Kinesisはリアルタイム処理です。",
+      "3": "Redshiftは大規模DWHです。"
+    },
+    "domain": "technology",
+    "service": "Athena",
+    "difficulty": 1,
+    "tags": [
+      "Athena",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "S3直接SQL＝Athena。"
+  },
+  {
+    "id": "qd-tec12-12",
+    "question": "大規模分析のデータウェアハウスは Amazon ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Athena",
+      "QuickSight",
+      "Glue",
+      "Redshift"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "DWHはRedshiftです。",
+    "wrongChoiceExplanations": {
+      "0": "Athenaは手軽なクエリです。",
+      "1": "QuickSightは可視化です。",
+      "2": "GlueはETLです。"
+    },
+    "domain": "technology",
+    "service": "Redshift",
+    "difficulty": 1,
+    "tags": [
+      "Redshift",
+      "分析",
+      "ドリル"
+    ],
+    "beginnerNote": "DWH＝Redshift。"
+  },
+  {
+    "id": "qd-tec12-13",
+    "question": "分析サービスの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon QuickSight＝データの抽出・変換・統合（ETL）",
+      "Amazon Athena＝S3をSQL分析",
+      "Amazon Redshift＝データウェアハウス",
+      "Amazon Kinesis＝リアルタイム処理"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ETLはGlueで、QuickSightは可視化ツールです。",
+    "wrongChoiceExplanations": {
+      "1": "Athena＝S3分析は正しい組合せです。",
+      "2": "Redshift＝DWHは正しい組合せです。",
+      "3": "Kinesis＝リアルタイムは正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "分析",
+    "difficulty": 2,
+    "tags": [
+      "分析",
+      "QuickSight",
+      "ドリル"
+    ],
+    "beginnerNote": "ETL＝Glue、QuickSightは可視化。"
+  },
+  {
+    "id": "qd-tec12-14",
+    "question": "分析サービスの説明として誤っているものはどれですか。",
+    "choices": [
+      "Kinesisはリアルタイム処理向け",
+      "Athenaは大規模データを継続分析する専用のデータウェアハウスである",
+      "Athenaは手軽にS3をSQL分析できる",
+      "Redshiftは大規模分析向け"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "大規模な継続分析のDWHはRedshiftで、Athenaは手軽なサーバーレス分析です。",
+    "wrongChoiceExplanations": {
+      "0": "Kinesisのリアルタイムは正しい説明です。",
+      "2": "Athenaの手軽な分析は正しい説明です。",
+      "3": "Redshiftの大規模分析は正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "分析",
+    "difficulty": 2,
+    "tags": [
+      "分析",
+      "Athena",
+      "ドリル"
+    ],
+    "beginnerNote": "DWHはRedshift。"
+  },
+  {
+    "id": "qd-tec13-1",
+    "question": "「機械学習モデルの構築・学習・デプロイを一気通貫で行う土台」はどれですか。",
+    "choices": [
+      "Amazon Polly",
+      "Amazon Bedrock",
+      "Amazon SageMaker",
+      "Amazon Rekognition"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "SageMakerはMLの構築〜デプロイを担う土台です。",
+    "wrongChoiceExplanations": {
+      "0": "Pollyは文字→音声です。",
+      "1": "Bedrockは生成AIの利用です。",
+      "3": "Rekognitionは画像認識です。"
+    },
+    "domain": "technology",
+    "service": "SageMaker",
+    "difficulty": 1,
+    "tags": [
+      "SageMaker",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "モデル自作＝SageMaker。"
+  },
+  {
+    "id": "qd-tec13-2",
+    "question": "「画像・動画から物体や顔を認識する」AIサービスはどれですか。",
+    "choices": [
+      "Amazon Transcribe",
+      "Amazon Translate",
+      "Amazon Polly",
+      "Amazon Rekognition"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Rekognitionは画像・動画の認識を行います。",
+    "wrongChoiceExplanations": {
+      "0": "Transcribeは音声→文字です。",
+      "1": "Translateは翻訳です。",
+      "2": "Pollyは文字→音声です。"
+    },
+    "domain": "technology",
+    "service": "Rekognition",
+    "difficulty": 1,
+    "tags": [
+      "Rekognition",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "画像認識＝Rekognition。"
+  },
+  {
+    "id": "qd-tec13-3",
+    "question": "「さまざまな基盤モデル（生成AI）をAPIで手軽に利用」できるのはどれですか。",
+    "choices": [
+      "Amazon Bedrock",
+      "Amazon SageMaker",
+      "Amazon Comprehend",
+      "Amazon Textract"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Bedrockは生成AIをAPIで利用する入り口です。",
+    "wrongChoiceExplanations": {
+      "1": "SageMakerは自作ML基盤です。",
+      "2": "Comprehendは文章解析です。",
+      "3": "Textractは文書抽出です。"
+    },
+    "domain": "technology",
+    "service": "Bedrock",
+    "difficulty": 1,
+    "tags": [
+      "Bedrock",
+      "生成AI",
+      "ドリル"
+    ],
+    "beginnerNote": "生成AI＝Bedrock。"
+  },
+  {
+    "id": "qd-tec13-4",
+    "question": "「音声を文字（テキスト）に変換する」AIサービスはどれですか。",
+    "choices": [
+      "Amazon Rekognition",
+      "Amazon Transcribe",
+      "Amazon Polly",
+      "Amazon Translate"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Transcribeは音声→文字（文字起こし）を行います。",
+    "wrongChoiceExplanations": {
+      "0": "Rekognitionは画像認識です。",
+      "2": "Pollyは文字→音声です。",
+      "3": "Translateは翻訳です。"
+    },
+    "domain": "technology",
+    "service": "Transcribe",
+    "difficulty": 1,
+    "tags": [
+      "Transcribe",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "音声→文字＝Transcribe。"
+  },
+  {
+    "id": "qd-tec13-5",
+    "question": "「文字（テキスト）を音声に変換する」AIサービスはどれですか。",
+    "choices": [
+      "Amazon Comprehend",
+      "Amazon Translate",
+      "Amazon Polly",
+      "Amazon Transcribe"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Pollyは文字→音声（読み上げ）を行います。",
+    "wrongChoiceExplanations": {
+      "0": "Comprehendは文章解析です。",
+      "1": "Translateは翻訳です。",
+      "3": "Transcribeは音声→文字です。"
+    },
+    "domain": "technology",
+    "service": "Polly",
+    "difficulty": 1,
+    "tags": [
+      "Polly",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "文字→音声＝Polly。"
+  },
+  {
+    "id": "qd-tec13-6",
+    "question": "Amazon SageMakerの説明として正しいものはどれですか。",
+    "choices": [
+      "すぐ使える画像認識API",
+      "生成AIのチャットサービス",
+      "翻訳の専用サービス",
+      "独自の機械学習モデルを構築・学習・デプロイできる土台"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "SageMakerは自前でモデルを作りたいときの総合環境です。",
+    "wrongChoiceExplanations": {
+      "0": "すぐ使える画像認識はRekognitionです。",
+      "1": "生成AIの利用はBedrockです。",
+      "2": "翻訳はTranslateです。"
+    },
+    "domain": "technology",
+    "service": "SageMaker",
+    "difficulty": 2,
+    "tags": [
+      "SageMaker",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "自作ML基盤。"
+  },
+  {
+    "id": "qd-tec13-7",
+    "question": "Amazon Bedrockの説明として正しいものはどれですか。",
+    "choices": [
+      "複数の基盤モデル（生成AI）をAPIで利用できる",
+      "機械学習モデルを自分で一から学習する土台",
+      "画像を認識する",
+      "音声を文字にする"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Bedrockは生成AIを手軽にアプリへ組み込める入り口です。",
+    "wrongChoiceExplanations": {
+      "1": "自作ML基盤はSageMakerです。",
+      "2": "画像認識はRekognitionです。",
+      "3": "音声→文字はTranscribeです。"
+    },
+    "domain": "technology",
+    "service": "Bedrock",
+    "difficulty": 2,
+    "tags": [
+      "Bedrock",
+      "生成AI",
+      "ドリル"
+    ],
+    "beginnerNote": "生成AIの入り口。"
+  },
+  {
+    "id": "qd-tec13-8",
+    "question": "アップロードされた写真に不適切な画像が含まれないか自動判定したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Transcribe",
+      "Amazon Rekognition",
+      "Amazon Polly",
+      "Amazon Translate"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "画像の内容判定はRekognitionが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Transcribeは音声→文字です。",
+      "2": "Pollyは文字→音声です。",
+      "3": "Translateは翻訳です。"
+    },
+    "domain": "technology",
+    "service": "Rekognition",
+    "difficulty": 2,
+    "tags": [
+      "Rekognition",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "画像判定＝Rekognition。"
+  },
+  {
+    "id": "qd-tec13-9",
+    "question": "会議の録音データを自動で文字起こししたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Rekognition",
+      "Amazon Comprehend",
+      "Amazon Transcribe",
+      "Amazon Polly"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "音声→文字はTranscribeが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Rekognitionは画像認識です。",
+      "1": "Comprehendは文章解析です。",
+      "3": "Pollyは文字→音声です。"
+    },
+    "domain": "technology",
+    "service": "Transcribe",
+    "difficulty": 2,
+    "tags": [
+      "Transcribe",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "文字起こし＝Transcribe。"
+  },
+  {
+    "id": "qd-tec13-10",
+    "question": "自社アプリにチャットや文章生成の生成AI機能を、モデルの自作なしで組み込みたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon SageMakerで一から学習",
+      "Amazon Rekognition",
+      "Amazon Athena",
+      "Amazon Bedrock"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "生成AIを手軽に組み込むならBedrockが適します。",
+    "wrongChoiceExplanations": {
+      "0": "一から学習はSageMakerで手間がかかります。",
+      "1": "Rekognitionは画像認識です。",
+      "2": "Athenaは分析です。"
+    },
+    "domain": "technology",
+    "service": "Bedrock",
+    "difficulty": 2,
+    "tags": [
+      "Bedrock",
+      "生成AI",
+      "ドリル"
+    ],
+    "beginnerNote": "生成AI組込＝Bedrock。"
+  },
+  {
+    "id": "qd-tec13-11",
+    "question": "機械学習モデルを自分で構築・学習する土台は Amazon ＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "SageMaker",
+      "Rekognition",
+      "Polly",
+      "Translate"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "自作ML基盤はSageMakerです。",
+    "wrongChoiceExplanations": {
+      "1": "Rekognitionは画像認識です。",
+      "2": "Pollyは文字→音声です。",
+      "3": "Translateは翻訳です。"
+    },
+    "domain": "technology",
+    "service": "SageMaker",
+    "difficulty": 1,
+    "tags": [
+      "SageMaker",
+      "AI/ML",
+      "ドリル"
+    ],
+    "beginnerNote": "自作＝SageMaker。"
+  },
+  {
+    "id": "qd-tec13-12",
+    "question": "生成AIをAPIで手軽に使えるサービスは Amazon ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Textract",
+      "Bedrock",
+      "SageMaker",
+      "Comprehend"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "生成AIの利用はBedrockです。",
+    "wrongChoiceExplanations": {
+      "0": "Textractは文書抽出です。",
+      "2": "SageMakerは自作ML基盤です。",
+      "3": "Comprehendは文章解析です。"
+    },
+    "domain": "technology",
+    "service": "Bedrock",
+    "difficulty": 1,
+    "tags": [
+      "Bedrock",
+      "生成AI",
+      "ドリル"
+    ],
+    "beginnerNote": "生成AI＝Bedrock。"
+  },
+  {
+    "id": "qd-tec13-13",
+    "question": "AIサービスと用途の組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon Translate＝翻訳",
+      "Amazon Transcribe＝音声を文字に変換する",
+      "Amazon Polly＝音声を文字に変換する",
+      "Amazon Rekognition＝画像認識"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Pollyは文字→音声で、音声→文字はTranscribeです。",
+    "wrongChoiceExplanations": {
+      "0": "Translate＝翻訳は正しい組合せです。",
+      "1": "Transcribe＝音声→文字は正しい組合せです。",
+      "3": "Rekognition＝画像認識は正しい組合せです。"
+    },
+    "domain": "technology",
+    "service": "AI/ML",
+    "difficulty": 2,
+    "tags": [
+      "AI/ML",
+      "Polly",
+      "ドリル"
+    ],
+    "beginnerNote": "Pollyは文字→音声。"
+  },
+  {
+    "id": "qd-tec13-14",
+    "question": "AIサービスの説明として誤っているものはどれですか。",
+    "choices": [
+      "SageMakerはモデルを自作する土台",
+      "Bedrockは生成AIの利用",
+      "Rekognitionは画像認識",
+      "SageMakerはすぐ使える画像認識の完成APIである"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "すぐ使える画像認識APIはRekognitionで、SageMakerはモデルを自作する土台です。",
+    "wrongChoiceExplanations": {
+      "0": "SageMaker＝自作土台は正しい説明です。",
+      "1": "Bedrock＝生成AIは正しい説明です。",
+      "2": "Rekognition＝画像認識は正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "AI/ML",
+    "difficulty": 2,
+    "tags": [
+      "AI/ML",
+      "SageMaker",
+      "ドリル"
+    ],
+    "beginnerNote": "すぐ使う画像＝Rekognition。"
+  },
+  {
+    "id": "qd-tec14-1",
+    "question": "「ブラウザ上のGUIでAWSを操作する」手段はどれですか。",
+    "choices": [
+      "マネジメントコンソール",
+      "AWS CLI",
+      "AWS SDK",
+      "AWS CloudFormation"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "マネジメントコンソールはブラウザのGUIで操作する手段です。",
+    "wrongChoiceExplanations": {
+      "1": "CLIはコマンド操作です。",
+      "2": "SDKはプログラムからの操作です。",
+      "3": "CloudFormationはIaCです。"
+    },
+    "domain": "technology",
+    "service": "マネジメントコンソール",
+    "difficulty": 1,
+    "tags": [
+      "マネジメントコンソール",
+      "ドリル"
+    ],
+    "beginnerNote": "GUI＝コンソール。"
+  },
+  {
+    "id": "qd-tec14-2",
+    "question": "「コマンドでAWSを操作し、自動化に向く」手段はどれですか。",
+    "choices": [
+      "Elastic Beanstalk",
+      "AWS CLI",
+      "マネジメントコンソール",
+      "AWS SDK"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AWS CLIはコマンド操作で、スクリプトによる自動化に向きます。",
+    "wrongChoiceExplanations": {
+      "0": "Beanstalkはデプロイ支援です。",
+      "2": "コンソールはGUIです。",
+      "3": "SDKはプログラムからの操作です。"
+    },
+    "domain": "technology",
+    "service": "CLI",
+    "difficulty": 1,
+    "tags": [
+      "CLI",
+      "ドリル"
+    ],
+    "beginnerNote": "コマンド＝CLI。"
+  },
+  {
+    "id": "qd-tec14-3",
+    "question": "「プログラム（コード）からAWSを操作する」手段はどれですか。",
+    "choices": [
+      "AWS CLI",
+      "AWS Config",
+      "AWS SDK",
+      "マネジメントコンソール"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "SDKはアプリのコードからAWSを操作するライブラリ群です。",
+    "wrongChoiceExplanations": {
+      "0": "CLIはコマンドです。",
+      "1": "Configは設定評価です。",
+      "3": "コンソールはGUIです。"
+    },
+    "domain": "technology",
+    "service": "SDK",
+    "difficulty": 1,
+    "tags": [
+      "SDK",
+      "ドリル"
+    ],
+    "beginnerNote": "プログラム＝SDK。"
+  },
+  {
+    "id": "qd-tec14-4",
+    "question": "「コードを上げるだけで、裏のEC2やELBを自動用意して公開」できるPaaSはどれですか。",
+    "choices": [
+      "Amazon EC2を手動構築",
+      "AWS Lambda",
+      "Amazon S3",
+      "AWS Elastic Beanstalk"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Beanstalkはインフラを自動構成し、素早く公開できるPaaSです。",
+    "wrongChoiceExplanations": {
+      "0": "EC2手動構築は手間がかかります。",
+      "1": "Lambdaはサーバーレス実行です。",
+      "2": "S3はストレージです。"
+    },
+    "domain": "technology",
+    "service": "Elastic Beanstalk",
+    "difficulty": 2,
+    "tags": [
+      "Elastic Beanstalk",
+      "ドリル"
+    ],
+    "beginnerNote": "手早く公開＝Beanstalk。"
+  },
+  {
+    "id": "qd-tec14-5",
+    "question": "AWS CLIの説明として正しいものはどれですか。",
+    "choices": [
+      "コマンドでAWSを操作し、自動化に向く",
+      "ブラウザのGUIで操作する",
+      "裏でインフラを自動構成するPaaS",
+      "監視サービス"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "CLIはコマンド操作で、スクリプト化・自動化に向きます。",
+    "wrongChoiceExplanations": {
+      "1": "GUIはコンソールです。",
+      "2": "PaaSはBeanstalkです。",
+      "3": "監視はCloudWatchです。"
+    },
+    "domain": "technology",
+    "service": "CLI",
+    "difficulty": 1,
+    "tags": [
+      "CLI",
+      "ドリル"
+    ],
+    "beginnerNote": "コマンド操作＝CLI。"
+  },
+  {
+    "id": "qd-tec14-6",
+    "question": "AWS Elastic Beanstalkの説明として正しいものはどれですか。",
+    "choices": [
+      "DNSサービス",
+      "コードをアップするだけで裏の実行環境を自動構成するPaaS",
+      "仮想サーバーを1台ずつ手動構築する",
+      "オブジェクトストレージ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Beanstalkはインフラ構築を任せて素早く公開できるPaaSです。",
+    "wrongChoiceExplanations": {
+      "0": "DNSはRoute 53です。",
+      "2": "手動構築はBeanstalkの逆です。",
+      "3": "ストレージはS3です。"
+    },
+    "domain": "technology",
+    "service": "Elastic Beanstalk",
+    "difficulty": 2,
+    "tags": [
+      "Elastic Beanstalk",
+      "ドリル"
+    ],
+    "beginnerNote": "PaaS＝Beanstalk。"
+  },
+  {
+    "id": "qd-tec14-7",
+    "question": "多数のAWS操作をスクリプトで自動化したいです。最適な手段はどれですか。",
+    "choices": [
+      "電話サポートに依頼",
+      "スクリーンショットで記録",
+      "AWS CLI",
+      "マネジメントコンソールで手作業"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "自動化にはコマンドのAWS CLIが適します。",
+    "wrongChoiceExplanations": {
+      "0": "電話サポートは操作代行ではありません。",
+      "1": "スクショは自動化になりません。",
+      "3": "手作業のコンソールは自動化に不向きです。"
+    },
+    "domain": "technology",
+    "service": "CLI",
+    "difficulty": 2,
+    "tags": [
+      "CLI",
+      "ドリル"
+    ],
+    "beginnerNote": "自動化＝CLI。"
+  },
+  {
+    "id": "qd-tec14-8",
+    "question": "インフラ構築に時間をかけず、アプリを素早く公開したいです。最適なのはどれですか。",
+    "choices": [
+      "EC2をゼロから手動構築",
+      "オンプレに構築",
+      "Route 53だけで公開",
+      "AWS Elastic Beanstalk"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "素早い公開はPaaSのBeanstalkが適します。",
+    "wrongChoiceExplanations": {
+      "0": "ゼロから手動構築は時間がかかります。",
+      "1": "オンプレ構築は本題と逆です。",
+      "2": "Route 53はDNSのみです。"
+    },
+    "domain": "technology",
+    "service": "Elastic Beanstalk",
+    "difficulty": 2,
+    "tags": [
+      "Elastic Beanstalk",
+      "ドリル"
+    ],
+    "beginnerNote": "素早く公開＝Beanstalk。"
+  },
+  {
+    "id": "qd-tec14-9",
+    "question": "テストからデプロイまでの流れを自動化したいです。使うサービス群はどれですか。",
+    "choices": [
+      "CodePipeline/CodeBuild/CodeDeploy",
+      "Amazon S3/Glacier",
+      "Route 53/CloudFront",
+      "EBS/EFS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "CI/CDの自動化はCodePipeline等の開発者ツールが担います。",
+    "wrongChoiceExplanations": {
+      "1": "S3/Glacierはストレージです。",
+      "2": "Route 53/CloudFrontはDNS/CDNです。",
+      "3": "EBS/EFSはストレージです。"
+    },
+    "domain": "technology",
+    "service": "CI/CD",
+    "difficulty": 2,
+    "tags": [
+      "CI/CD",
+      "開発者ツール",
+      "ドリル"
+    ],
+    "beginnerNote": "CI/CD＝Codeシリーズ。"
+  },
+  {
+    "id": "qd-tec14-10",
+    "question": "コマンドでAWSを操作するのは AWS ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "IaC",
+      "CLI",
+      "SDK",
+      "GUI"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "コマンド操作はCLIです。",
+    "wrongChoiceExplanations": {
+      "0": "IaCは構成のコード化です。",
+      "2": "SDKはプログラムからの操作です。",
+      "3": "GUIはコンソールの操作方法です。"
+    },
+    "domain": "technology",
+    "service": "CLI",
+    "difficulty": 1,
+    "tags": [
+      "CLI",
+      "ドリル"
+    ],
+    "beginnerNote": "コマンド＝CLI。"
+  },
+  {
+    "id": "qd-tec14-11",
+    "question": "コードを上げるだけで実行環境を自動構成するPaaSは AWS Elastic ＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Container",
+      "Cache",
+      "Beanstalk",
+      "Compute"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "PaaSはElastic Beanstalkです。",
+    "wrongChoiceExplanations": {
+      "0": "Containerは容器の意味です。",
+      "1": "Cacheはキャッシュです。",
+      "3": "Elastic Computeは別概念です。"
+    },
+    "domain": "technology",
+    "service": "Elastic Beanstalk",
+    "difficulty": 1,
+    "tags": [
+      "Elastic Beanstalk",
+      "ドリル"
+    ],
+    "beginnerNote": "PaaS＝Beanstalk。"
+  },
+  {
+    "id": "qd-tec14-12",
+    "question": "AWSの操作手段の説明として誤っているものはどれですか。",
+    "choices": [
+      "コンソールはブラウザのGUI",
+      "CLIはコマンド操作",
+      "SDKはプログラムからの操作",
+      "マネジメントコンソールはコマンドでのみ操作する手段である"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "マネジメントコンソールはブラウザのGUIで、コマンド操作はCLIです。",
+    "wrongChoiceExplanations": {
+      "0": "コンソール＝GUIは正しい説明です。",
+      "1": "CLI＝コマンドは正しい説明です。",
+      "2": "SDK＝プログラムは正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "CLI",
+    "difficulty": 2,
+    "tags": [
+      "マネジメントコンソール",
+      "CLI",
+      "ドリル"
+    ],
+    "beginnerNote": "コンソールはGUI。"
+  },
+  {
+    "id": "qd-tec14-13",
+    "question": "デプロイ支援の説明として誤っているものはどれですか。",
+    "choices": [
+      "Elastic Beanstalkは監視専用のサービスである",
+      "Beanstalkは裏の環境を自動構成するPaaS",
+      "CodePipelineはCI/CDを自動化する",
+      "Amplifyはフロント/モバイル開発を支援する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Beanstalkはデプロイ支援のPaaSで、監視はCloudWatchです。",
+    "wrongChoiceExplanations": {
+      "1": "Beanstalk＝PaaSは正しい説明です。",
+      "2": "CodePipeline＝CI/CDは正しい説明です。",
+      "3": "Amplify＝フロント支援は正しい説明です。"
+    },
+    "domain": "technology",
+    "service": "Elastic Beanstalk",
+    "difficulty": 2,
+    "tags": [
+      "Elastic Beanstalk",
+      "ドリル"
+    ],
+    "beginnerNote": "監視はCloudWatch。"
   }
 ]
