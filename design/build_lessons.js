@@ -475,13 +475,17 @@ const CHALLENGE = {
 // design/build_drills.js で作成した「ドリル」問題を、id接頭辞でプール化して各レッスンへ割り当てる。
 // アプリ側でこのプールを毎回シャッフルし、ランダムに一定数を出題する（パターン表示はしない）。
 const DRILL_PREFIX = {
-  "l-cc-02": "qd-cc02", "l-cc-03": "qd-cc03", "l-cc-04": "qd-cc04", "l-cc-05": "qd-cc05", "l-cc-06": "qd-cc06",
-  "l-sec-01": "qd-sec01", "l-sec-03": "qd-sec03", "l-sec-06": "qd-sec06", "l-sec-08": "qd-sec08", "l-sec-09": "qd-sec09",
+  "l-cc-01": "qd-cc01", "l-cc-02": "qd-cc02", "l-cc-03": "qd-cc03", "l-cc-04": "qd-cc04",
+  "l-cc-05": "qd-cc05", "l-cc-06": "qd-cc06", "l-cc-07": "qd-cc07", "l-cc-08": "qd-cc08",
+  "l-sec-01": "qd-sec01", "l-sec-02": "qd-sec02", "l-sec-03": "qd-sec03", "l-sec-04": "qd-sec04",
+  "l-sec-05": "qd-sec05", "l-sec-06": "qd-sec06", "l-sec-07": "qd-sec07", "l-sec-08": "qd-sec08",
+  "l-sec-09": "qd-sec09", "l-sec-10": "qd-sec10",
   "l-tec-01": "qd-tec01", "l-tec-02": "qd-tec02", "l-tec-03": "qd-tec03", "l-tec-04": "qd-tec04",
   "l-tec-05": "qd-tec05", "l-tec-06": "qd-tec06", "l-tec-07": "qd-tec07", "l-tec-08": "qd-tec08",
   "l-tec-09": "qd-tec09", "l-tec-10": "qd-tec10", "l-tec-11": "qd-tec11", "l-tec-12": "qd-tec12",
   "l-tec-13": "qd-tec13", "l-tec-14": "qd-tec14",
-  "l-bil-01": "qd-bil01", "l-bil-02": "qd-bil02", "l-bil-06": "qd-bil06",
+  "l-bil-01": "qd-bil01", "l-bil-02": "qd-bil02", "l-bil-03": "qd-bil03", "l-bil-04": "qd-bil04",
+  "l-bil-05": "qd-bil05", "l-bil-06": "qd-bil06",
 };
 
 // ---- quizIds 自動割当 ----

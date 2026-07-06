@@ -28121,5 +28121,3483 @@
       "ドリル"
     ],
     "beginnerNote": "監視はCloudWatch。"
+  },
+  {
+    "id": "qd-cc01-1",
+    "question": "クラウドを一言で表すと、最も近いのはどれですか。",
+    "choices": [
+      "社内にだけ置く仕組み",
+      "ネット経由で必要な分だけ借りて使う仕組み",
+      "必ずサーバーを買って所有する仕組み",
+      "無料で無制限に使える仕組み"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "クラウドは買わずに、必要なだけネット経由で借りて使う仕組みです。",
+    "wrongChoiceExplanations": {
+      "0": "社内限定はオンプレミスです。",
+      "2": "購入・所有はオンプレの発想です。",
+      "3": "無料無制限ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 1,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "買わずに借りる＝クラウド。"
+  },
+  {
+    "id": "qd-cc01-2",
+    "question": "「自社でサーバーを購入し、設置・運用まで自前で行う」形態を何と呼びますか。",
+    "choices": [
+      "ハイブリッド",
+      "サーバーレス",
+      "オンプレミス",
+      "クラウド"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "自前で購入・運用するのがオンプレミスです。",
+    "wrongChoiceExplanations": {
+      "0": "ハイブリッドは併用です。",
+      "1": "サーバーレスは実行方式です。",
+      "3": "クラウドは借りて使います。"
+    },
+    "domain": "cloudConcepts",
+    "service": "オンプレミス",
+    "difficulty": 1,
+    "tags": [
+      "オンプレミス",
+      "ドリル"
+    ],
+    "beginnerNote": "自前所有＝オンプレミス。"
+  },
+  {
+    "id": "qd-cc01-3",
+    "question": "クラウドの代表的な利点として最も適切なものはどれですか。",
+    "choices": [
+      "初期に大きな設備投資が必要",
+      "一度契約すると増減できない",
+      "必ず自社DCが必要",
+      "初期投資が小さく、使った分だけ払え、すぐ増減できる"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "小さな初期投資・従量課金・俊敏な増減がクラウドの核です。",
+    "wrongChoiceExplanations": {
+      "0": "大きな初期投資はオンプレの特徴です。",
+      "1": "増減できるのがクラウドの利点です。",
+      "2": "自社DCは不要です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 1,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "小さく始めて増減自在。"
+  },
+  {
+    "id": "qd-cc01-4",
+    "question": "クラウドとオンプレミスの違いとして正しいものはどれですか。",
+    "choices": [
+      "クラウドは借りて使い、オンプレは自前で購入・運用する",
+      "両者は同じ",
+      "クラウドは必ず社内に置く",
+      "オンプレは使った分だけ課金"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "借りるクラウド、買うオンプレ、という違いです。",
+    "wrongChoiceExplanations": {
+      "1": "同じではありません。",
+      "2": "クラウドは社内限定ではありません。",
+      "3": "従量課金はクラウドの特徴です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 1,
+    "tags": [
+      "クラウドの価値",
+      "オンプレミス",
+      "ドリル"
+    ],
+    "beginnerNote": "借りる/買うの違い。"
+  },
+  {
+    "id": "qd-cc01-5",
+    "question": "「電力会社から使った分だけ電気を買う」例えが表すクラウドの性質はどれですか。",
+    "choices": [
+      "前払い",
+      "従量課金（使った分だけ払う）",
+      "固定料金",
+      "無料"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "電気の例えは従量課金（使った分だけ）を表します。",
+    "wrongChoiceExplanations": {
+      "0": "前払いでもありません。",
+      "2": "固定料金ではありません。",
+      "3": "無料ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 2,
+    "tags": [
+      "クラウドの価値",
+      "従量課金",
+      "ドリル"
+    ],
+    "beginnerNote": "電気の例え＝従量課金。"
+  },
+  {
+    "id": "qd-cc01-6",
+    "question": "サーバーの置き場所・電源・故障対応を自社で抱えたくないです。適した選択はどれですか。",
+    "choices": [
+      "必ず両方を自前で持つ",
+      "何も選ばない",
+      "クラウドを使い、運用をAWSに任せる",
+      "オンプレで自前運用する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "物理運用をAWSに任せられるクラウドが適します。",
+    "wrongChoiceExplanations": {
+      "0": "両方自前は負担が増えます。",
+      "1": "選択は重要です。",
+      "3": "オンプレは自前運用が必要です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 2,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "運用を任せる＝クラウド。"
+  },
+  {
+    "id": "qd-cc01-7",
+    "question": "少ない初期費用で新規サービスをすぐ立ち上げたいスタートアップに適するのはどれですか。",
+    "choices": [
+      "オンプレ（大型の初期投資）",
+      "自社DC新設",
+      "形態は無関係",
+      "クラウド（小さな初期投資で素早く開始）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "小さな初期投資と素早い立ち上げはクラウドが適します。",
+    "wrongChoiceExplanations": {
+      "0": "オンプレは初期投資が大きくなります。",
+      "1": "DC新設は資本的支出が大です。",
+      "2": "形態選択は重要です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 2,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "小さく素早く＝クラウド。"
+  },
+  {
+    "id": "qd-cc01-8",
+    "question": "買わずに必要なだけ借りて使うのが「＿＿＿＿＿」です。＿＿＿＿＿に入るのはどれですか。",
+    "choices": [
+      "クラウド",
+      "オンプレミス",
+      "データセンター",
+      "メインフレーム"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "借りて使うのはクラウドです。",
+    "wrongChoiceExplanations": {
+      "1": "オンプレミスは自前所有です。",
+      "2": "データセンターは施設です。",
+      "3": "メインフレームは大型計算機です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 1,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "借りる＝クラウド。"
+  },
+  {
+    "id": "qd-cc01-9",
+    "question": "自社設備を購入して自前運用するのが「＿＿＿＿＿＿」です。＿＿に入るのはどれですか。",
+    "choices": [
+      "ハイブリッド",
+      "オンプレミス",
+      "クラウド",
+      "サーバーレス"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "自前運用はオンプレミスです。",
+    "wrongChoiceExplanations": {
+      "0": "ハイブリッドは併用です。",
+      "2": "クラウドは借りて使います。",
+      "3": "サーバーレスは実行方式です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "オンプレミス",
+    "difficulty": 1,
+    "tags": [
+      "オンプレミス",
+      "ドリル"
+    ],
+    "beginnerNote": "自前＝オンプレミス。"
+  },
+  {
+    "id": "qd-cc01-10",
+    "question": "クラウドの説明として誤っているものはどれですか。",
+    "choices": [
+      "必要に応じてすぐ増減できる",
+      "運用の一部をAWSに任せられる",
+      "利用には必ず自社サーバーの購入が必要である",
+      "使った分だけ払える"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "クラウドは自社サーバーを購入せず、借りて使います。",
+    "wrongChoiceExplanations": {
+      "0": "素早い増減は正しい説明です。",
+      "1": "運用を任せられるのは正しい説明です。",
+      "3": "従量課金は正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 2,
+    "tags": [
+      "クラウドの価値",
+      "ドリル"
+    ],
+    "beginnerNote": "購入必須はオンプレ発想。"
+  },
+  {
+    "id": "qd-cc01-11",
+    "question": "オンプレミスの説明として誤っているものはどれですか。",
+    "choices": [
+      "自社でサーバーを購入する",
+      "設置・運用を自前で行う",
+      "故障対応も自社の責任",
+      "使った分だけ課金され、初期投資が不要である"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "従量課金・初期投資不要はクラウドの特徴で、オンプレは購入・自前運用です。",
+    "wrongChoiceExplanations": {
+      "0": "自社購入は正しい説明です。",
+      "1": "自前運用は正しい説明です。",
+      "2": "故障対応の責任は正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "オンプレミス",
+    "difficulty": 2,
+    "tags": [
+      "オンプレミス",
+      "ドリル"
+    ],
+    "beginnerNote": "従量課金はクラウド。"
+  },
+  {
+    "id": "qd-cc07-1",
+    "question": "「組織がクラウド導入を計画・実行するための指針をまとめた枠組み」はどれですか。",
+    "choices": [
+      "AWS CAF（クラウド導入フレームワーク）",
+      "Well-Architected",
+      "AWS Organizations",
+      "Trusted Advisor"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "AWS CAFは会社全体のクラウド移行を導く枠組みです。",
+    "wrongChoiceExplanations": {
+      "1": "Well-Architectedは設計の柱です。",
+      "2": "Organizationsは複数アカウント統制です。",
+      "3": "Trusted Advisorは点検助言です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 1,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "移行の指針＝CAF。"
+  },
+  {
+    "id": "qd-cc07-2",
+    "question": "CAFで「従業員の再教育・スキル移行」を扱うのはどの視点（パースペクティブ）ですか。",
+    "choices": [
+      "オペレーション",
+      "人材（People）",
+      "プラットフォーム",
+      "セキュリティ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "人・組織の準備は人材（People）の視点です。",
+    "wrongChoiceExplanations": {
+      "0": "オペレーションは運用の視点です。",
+      "2": "プラットフォームは技術基盤の視点です。",
+      "3": "セキュリティは保護の視点です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "再教育＝People。"
+  },
+  {
+    "id": "qd-cc07-3",
+    "question": "CAFの視点のうち「経営・組織」寄りの3つに含まれるのはどれですか。",
+    "choices": [
+      "EC2・S3・RDS",
+      "可用性・信頼性・性能",
+      "ビジネス・人材・ガバナンス",
+      "プラットフォーム・セキュリティ・オペレーション"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "前半3つ（ビジネス・人材・ガバナンス）が経営・組織の視点です。",
+    "wrongChoiceExplanations": {
+      "0": "サービス名は視点ではありません。",
+      "1": "Well-Architectedの柱とは異なります。",
+      "3": "後半3つは技術寄りの視点です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "経営寄り＝ビジネス/人材/ガバナンス。"
+  },
+  {
+    "id": "qd-cc07-4",
+    "question": "AWS CAFの説明として正しいものはどれですか。",
+    "choices": [
+      "個々のシステム設計を点検する柱",
+      "複数アカウントを統制する仕組み",
+      "料金を見積もるツール",
+      "技術だけでなく人や組織も含め、クラウド移行を進める指針"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "CAFは組織全体の移行を6つの視点で整理します。",
+    "wrongChoiceExplanations": {
+      "0": "設計の点検はWell-Architectedです。",
+      "1": "複数アカウント統制はOrganizationsです。",
+      "2": "見積りはPricing Calculatorです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 1,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "組織全体の移行指針。"
+  },
+  {
+    "id": "qd-cc07-5",
+    "question": "CAFとWell-Architectedの違いとして正しいものはどれですか。",
+    "choices": [
+      "CAFは組織の移行の進め方、Well-Architectedは個々の設計の点検",
+      "両者は同じもの",
+      "CAFは設計の柱",
+      "Well-Architectedは移行の枠組み"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "CAFは移行の進め方、Well-Architectedは設計のチェックリストです。",
+    "wrongChoiceExplanations": {
+      "1": "同じではありません。",
+      "2": "設計の柱はWell-Architectedです。",
+      "3": "移行の枠組みはCAFです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "Well-Architected",
+      "ドリル"
+    ],
+    "beginnerNote": "移行＝CAF、設計＝Well-Architected。"
+  },
+  {
+    "id": "qd-cc07-6",
+    "question": "クラウド移行に向け、従業員のスキルアップ計画を立てたいです。CAFのどの視点で扱いますか。",
+    "choices": [
+      "オペレーション",
+      "人材（People）",
+      "プラットフォーム",
+      "セキュリティ"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "スキル・人材育成は人材（People）の視点です。",
+    "wrongChoiceExplanations": {
+      "0": "オペレーションは運用です。",
+      "2": "プラットフォームは技術基盤です。",
+      "3": "セキュリティは保護です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "人材育成＝People。"
+  },
+  {
+    "id": "qd-cc07-7",
+    "question": "全社的なクラウド移行を、技術と組織の両面から体系的に進めたいです。参照すべき枠組みはどれですか。",
+    "choices": [
+      "Trusted Advisorのみ",
+      "Cost Explorerのみ",
+      "AWS CAF",
+      "Well-Architectedのみ"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "全社移行の体系的な指針はCAFです。",
+    "wrongChoiceExplanations": {
+      "0": "Trusted Advisorは点検助言です。",
+      "1": "Cost Explorerはコスト分析です。",
+      "3": "Well-Architectedは設計中心です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "全社移行＝CAF。"
+  },
+  {
+    "id": "qd-cc07-8",
+    "question": "クラウド導入フレームワークの略称は「AWS ＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "WAF",
+      "IAM",
+      "VPC",
+      "CAF"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "クラウド導入フレームワークはCAF（Cloud Adoption Framework）です。",
+    "wrongChoiceExplanations": {
+      "0": "WAFはWebアプリファイアウォールです。",
+      "1": "IAMは権限管理です。",
+      "2": "VPCはネットワークです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 1,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "導入枠組み＝CAF。"
+  },
+  {
+    "id": "qd-cc07-9",
+    "question": "CAFの視点（パースペクティブ）は全部で「＿＿」つあります。＿＿に入るのはどれですか。",
+    "choices": [
+      "6",
+      "4",
+      "3",
+      "8"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ビジネス・人材・ガバナンス・プラットフォーム・セキュリティ・オペレーションの6つです。",
+    "wrongChoiceExplanations": {
+      "1": "4つではありません。",
+      "2": "3つではありません。",
+      "3": "8つではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "CAFは6視点。"
+  },
+  {
+    "id": "qd-cc07-10",
+    "question": "AWS CAFの説明として誤っているものはどれですか。",
+    "choices": [
+      "人や組織の準備も扱う",
+      "個々のシステムの技術設計だけを点検する枠組みである",
+      "組織全体のクラウド移行を導く",
+      "6つの視点で整理する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "個々の設計点検はWell-Architectedで、CAFは組織全体の移行を導きます。",
+    "wrongChoiceExplanations": {
+      "0": "人・組織を扱うのは正しい説明です。",
+      "2": "組織全体の移行を導くのは正しい説明です。",
+      "3": "6視点で整理は正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "設計点検はWell-Architected。"
+  },
+  {
+    "id": "qd-cc07-11",
+    "question": "CAFの視点として当てはまらないものはどれですか。",
+    "choices": [
+      "人材（People）",
+      "ガバナンス",
+      "収益最大化",
+      "ビジネス"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "収益最大化はCAFの視点ではありません。",
+    "wrongChoiceExplanations": {
+      "0": "人材は視点の一つです。",
+      "1": "ガバナンスは視点の一つです。",
+      "3": "ビジネスは視点の一つです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 2,
+    "tags": [
+      "CAF",
+      "ドリル"
+    ],
+    "beginnerNote": "収益最大化は視点でない。"
+  },
+  {
+    "id": "qd-cc08-1",
+    "question": "「アプリをほぼ改修せずそのまま移す（リフト＆シフト）」移行方式はどれですか。",
+    "choices": [
+      "リファクタリング",
+      "リパーチェス",
+      "リタイア",
+      "リホスト"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "そのまま移すのはリホスト（リフト＆シフト）です。",
+    "wrongChoiceExplanations": {
+      "0": "リファクタリングは作り替えです。",
+      "1": "リパーチェスは買い替えです。",
+      "2": "リタイアは廃止です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 1,
+    "tags": [
+      "移行",
+      "リホスト",
+      "ドリル"
+    ],
+    "beginnerNote": "そのまま移す＝リホスト。"
+  },
+  {
+    "id": "qd-cc08-2",
+    "question": "「クラウド最適化のために大きく作り替える」移行方式はどれですか。",
+    "choices": [
+      "リファクタリング",
+      "リホスト",
+      "リタイア",
+      "リテイン"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "作り替えてクラウドに最適化するのがリファクタリングです。",
+    "wrongChoiceExplanations": {
+      "1": "リホストはそのまま移します。",
+      "2": "リタイアは廃止です。",
+      "3": "リテインは残すことです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 1,
+    "tags": [
+      "移行",
+      "ドリル"
+    ],
+    "beginnerNote": "作り替え＝リファクタリング。"
+  },
+  {
+    "id": "qd-cc08-3",
+    "question": "「自社運用をやめてSaaSなどに買い替える」移行方式はどれですか。",
+    "choices": [
+      "リテイン",
+      "リパーチェス",
+      "リホスト",
+      "リタイア"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "SaaS等へ買い替えるのがリパーチェスです。",
+    "wrongChoiceExplanations": {
+      "0": "リテインは残すことです。",
+      "2": "リホストはそのまま移します。",
+      "3": "リタイアは廃止です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 1,
+    "tags": [
+      "移行",
+      "ドリル"
+    ],
+    "beginnerNote": "買い替え＝リパーチェス。"
+  },
+  {
+    "id": "qd-cc08-4",
+    "question": "「不要なので移行せず廃止する」判断を何と呼びますか。",
+    "choices": [
+      "リプラットフォーム",
+      "リテイン",
+      "リタイア",
+      "リホスト"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "不要なものを廃止するのがリタイアです。",
+    "wrongChoiceExplanations": {
+      "0": "リプラットフォームは少し手直しして移します。",
+      "1": "リテインは今は残すことです。",
+      "3": "リホストはそのまま移します。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 2,
+    "tags": [
+      "移行",
+      "ドリル"
+    ],
+    "beginnerNote": "廃止＝リタイア。"
+  },
+  {
+    "id": "qd-cc08-5",
+    "question": "リホスト（リフト＆シフト）の説明として正しいものはどれですか。",
+    "choices": [
+      "一から作り替える",
+      "SaaSに買い替える",
+      "移行せず廃止する",
+      "ほぼ改修せずそのままクラウドへ移す"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "リホストは手をかけず素早く移す方式です。",
+    "wrongChoiceExplanations": {
+      "0": "作り替えはリファクタリングです。",
+      "1": "買い替えはリパーチェスです。",
+      "2": "廃止はリタイアです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 1,
+    "tags": [
+      "移行",
+      "リホスト",
+      "ドリル"
+    ],
+    "beginnerNote": "そのまま移す。"
+  },
+  {
+    "id": "qd-cc08-6",
+    "question": "「今は移さず現状のまま残す」判断を何と呼びますか。",
+    "choices": [
+      "リテイン",
+      "リタイア",
+      "リホスト",
+      "リパーチェス"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "今は残す判断がリテインです。",
+    "wrongChoiceExplanations": {
+      "1": "リタイアは廃止です。",
+      "2": "リホストはそのまま移します。",
+      "3": "リパーチェスは買い替えです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 2,
+    "tags": [
+      "移行",
+      "ドリル"
+    ],
+    "beginnerNote": "残す＝リテイン。"
+  },
+  {
+    "id": "qd-cc08-7",
+    "question": "とにかく素早くクラウドへ移したい（最適化は後回し）です。最適な方式はどれですか。",
+    "choices": [
+      "リテイン",
+      "リホスト（リフト＆シフト）",
+      "リファクタリング",
+      "リタイア"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "速さ優先なら、手をかけないリホストが適します。",
+    "wrongChoiceExplanations": {
+      "0": "リテインは残す判断です。",
+      "2": "リファクタリングは時間がかかります。",
+      "3": "リタイアは廃止です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 2,
+    "tags": [
+      "移行",
+      "リホスト",
+      "ドリル"
+    ],
+    "beginnerNote": "速さ優先＝リホスト。"
+  },
+  {
+    "id": "qd-cc08-8",
+    "question": "クラウドの利点を最大限に活かすため、根本から作り替えたいです。最適な方式はどれですか。",
+    "choices": [
+      "リタイア",
+      "リパーチェス",
+      "リファクタリング",
+      "リホスト"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "最適化を優先するなら作り替えのリファクタリングです。",
+    "wrongChoiceExplanations": {
+      "0": "リタイアは廃止です。",
+      "1": "リパーチェスは買い替えです。",
+      "3": "リホストは手をかけません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 2,
+    "tags": [
+      "移行",
+      "ドリル"
+    ],
+    "beginnerNote": "最適化優先＝リファクタリング。"
+  },
+  {
+    "id": "qd-cc08-9",
+    "question": "移行作業全体の進捗を追跡・管理したいです。使うサービスはどれですか。",
+    "choices": [
+      "Amazon S3",
+      "AWS Lambda",
+      "Amazon SNS",
+      "AWS Migration Hub"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "移行の進捗管理はMigration Hubが担います。",
+    "wrongChoiceExplanations": {
+      "0": "S3はストレージです。",
+      "1": "Lambdaはサーバーレスです。",
+      "2": "SNSは通知です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 2,
+    "tags": [
+      "移行",
+      "Migration Hub",
+      "ドリル"
+    ],
+    "beginnerNote": "移行管理＝Migration Hub。"
+  },
+  {
+    "id": "qd-cc08-10",
+    "question": "そのまま移す移行方式は「リ＿＿＿」（リフト＆シフト）です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ホスト",
+      "ファクタ",
+      "タイア",
+      "テイン"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "そのまま移すのはリホストです。",
+    "wrongChoiceExplanations": {
+      "1": "リファクタは作り替えです。",
+      "2": "リタイアは廃止です。",
+      "3": "リテインは残すことです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 1,
+    "tags": [
+      "移行",
+      "リホスト",
+      "ドリル"
+    ],
+    "beginnerNote": "そのまま＝リホスト。"
+  },
+  {
+    "id": "qd-cc08-11",
+    "question": "不要なシステムを移行せず廃止するのは「リ＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "パーチェス",
+      "タイア",
+      "ホスト",
+      "テイン"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "廃止はリタイアです。",
+    "wrongChoiceExplanations": {
+      "0": "リパーチェスは買い替えです。",
+      "2": "リホストはそのまま移します。",
+      "3": "リテインは残すことです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 1,
+    "tags": [
+      "移行",
+      "ドリル"
+    ],
+    "beginnerNote": "廃止＝リタイア。"
+  },
+  {
+    "id": "qd-cc08-12",
+    "question": "クラウド移行方式の説明として誤っているものはどれですか。",
+    "choices": [
+      "リファクタリングは作り替える",
+      "リパーチェスはSaaS等へ買い替える",
+      "リホストは一から作り替える方式である",
+      "リホストはそのまま移す"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "リホストはそのまま移す方式で、作り替えはリファクタリングです。",
+    "wrongChoiceExplanations": {
+      "0": "リファクタリング＝作り替えは正しい説明です。",
+      "1": "リパーチェス＝買い替えは正しい説明です。",
+      "3": "リホスト＝そのまま移すは正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 2,
+    "tags": [
+      "移行",
+      "リホスト",
+      "ドリル"
+    ],
+    "beginnerNote": "作り替え＝リファクタリング。"
+  },
+  {
+    "id": "qd-cc08-13",
+    "question": "移行戦略に関する説明として誤っているものはどれですか。",
+    "choices": [
+      "不要なら廃止（リタイア）も選択肢",
+      "今は残す（リテイン）も選択肢",
+      "目的に応じて方式を選ぶ",
+      "すべてのシステムを必ずクラウドへ移す必要がある"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "すべてを移す必要はなく、廃止・保留も立派な戦略です。",
+    "wrongChoiceExplanations": {
+      "0": "リタイアは正しい選択肢です。",
+      "1": "リテインは正しい選択肢です。",
+      "2": "目的に応じた選択は正しい説明です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 2,
+    "tags": [
+      "移行",
+      "ドリル"
+    ],
+    "beginnerNote": "やめる・残すも戦略。"
+  },
+  {
+    "id": "qd-sec02-1",
+    "question": "「人やアプリのIDを表す」IAMの要素はどれですか。",
+    "choices": [
+      "ユーザー",
+      "グループ",
+      "ロール",
+      "ポリシー"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ユーザーは人やアプリのIDを表します。",
+    "wrongChoiceExplanations": {
+      "1": "グループはユーザーの束です。",
+      "2": "ロールは一時権限の仕組みです。",
+      "3": "ポリシーは許可内容の文書です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "ID＝ユーザー。"
+  },
+  {
+    "id": "qd-sec02-2",
+    "question": "「ユーザーをまとめて、権限を一括で付与する」IAMの要素はどれですか。",
+    "choices": [
+      "キーペア",
+      "グループ",
+      "ロール",
+      "ポリシー"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "グループはユーザーの束で、権限をまとめて配れます。",
+    "wrongChoiceExplanations": {
+      "0": "キーペアはログイン用の鍵です。",
+      "2": "ロールは一時権限の仕組みです。",
+      "3": "ポリシーは許可の文書です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "束＝グループ。"
+  },
+  {
+    "id": "qd-sec02-3",
+    "question": "「サービスやユーザーが一時的に権限を借りる」IAMの要素はどれですか。",
+    "choices": [
+      "ユーザー",
+      "ポリシー",
+      "ロール",
+      "グループ"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "ロールは一時的に権限を借りる仕組みです。",
+    "wrongChoiceExplanations": {
+      "0": "ユーザーはIDです。",
+      "1": "ポリシーは許可の文書です。",
+      "3": "グループはユーザーの束です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ロール",
+      "ドリル"
+    ],
+    "beginnerNote": "一時権限＝ロール。"
+  },
+  {
+    "id": "qd-sec02-4",
+    "question": "IAMユーザーの説明として正しいものはどれですか。",
+    "choices": [
+      "一時的に権限を借りる仕組み",
+      "ユーザーをまとめる束",
+      "許可内容を書いた文書",
+      "個々の人やアプリを表すIDで、権限を割り当てられる"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ユーザーはIDで、権限（ポリシー）を割り当てて使います。",
+    "wrongChoiceExplanations": {
+      "0": "一時権限はロールです。",
+      "1": "束はグループです。",
+      "2": "許可の文書はポリシーです。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "ID＝ユーザー。"
+  },
+  {
+    "id": "qd-sec02-5",
+    "question": "IAMロールが便利な理由として正しいものはどれですか。",
+    "choices": [
+      "長期のアクセスキーを配らずに権限を渡せる",
+      "パスワードを永久に固定できる",
+      "課金を止められる",
+      "通信を暗号化できる"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ロールは一時認証で権限を渡せ、鍵の配布・漏洩リスクを避けられます。",
+    "wrongChoiceExplanations": {
+      "1": "永久固定ではありません。",
+      "2": "課金停止機能ではありません。",
+      "3": "暗号化はTLS/KMSの役割です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": [
+      "IAM",
+      "ロール",
+      "ドリル"
+    ],
+    "beginnerNote": "鍵を配らず権限＝ロール。"
+  },
+  {
+    "id": "qd-sec02-6",
+    "question": "EC2上のアプリからS3へアクセスさせる、最も安全な方法はどれですか。",
+    "choices": [
+      "バケットを公開する",
+      "EC2にIAMロールを割り当てる",
+      "アクセスキーをコードに埋め込む",
+      "ルート認証情報を使う"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "サービス間連携はIAMロールが基本です。",
+    "wrongChoiceExplanations": {
+      "0": "公開は逆効果です。",
+      "2": "キー直書きは漏洩リスクです。",
+      "3": "ルート利用は危険です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": [
+      "IAM",
+      "ロール",
+      "ドリル"
+    ],
+    "beginnerNote": "サーバー→サービス＝ロール。"
+  },
+  {
+    "id": "qd-sec02-7",
+    "question": "10人の開発者に同じ権限を効率よく付与したいです。最適な方法はどれですか。",
+    "choices": [
+      "全員でルートを共有する",
+      "アクセスキーを配る",
+      "グループにポリシーを付け、10人を追加する",
+      "1人ずつ個別に権限を設定する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "共通権限はグループでまとめて配るのが効率的です。",
+    "wrongChoiceExplanations": {
+      "0": "ルート共有は危険です。",
+      "1": "キー配布は不適切です。",
+      "3": "個別設定は手間とミスが増えます。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": [
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "共通権限＝グループ。"
+  },
+  {
+    "id": "qd-sec02-8",
+    "question": "ユーザーをまとめて権限を配る単位を「＿＿＿＿」と呼びます。＿＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ロール",
+      "ポリシー",
+      "キー",
+      "グループ"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ユーザーの束はグループです。",
+    "wrongChoiceExplanations": {
+      "0": "ロールは一時権限です。",
+      "1": "ポリシーは許可の文書です。",
+      "2": "キーは認証情報です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "束＝グループ。"
+  },
+  {
+    "id": "qd-sec02-9",
+    "question": "一時的に権限を借りる仕組みを「＿＿＿」と呼びます。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ロール",
+      "グループ",
+      "ユーザー",
+      "タグ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "一時権限はロールです。",
+    "wrongChoiceExplanations": {
+      "1": "グループは束です。",
+      "2": "ユーザーはIDです。",
+      "3": "タグはラベルです。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 1,
+    "tags": [
+      "IAM",
+      "ロール",
+      "ドリル"
+    ],
+    "beginnerNote": "一時権限＝ロール。"
+  },
+  {
+    "id": "qd-sec02-10",
+    "question": "IAMの基本要素の説明として誤っているものはどれですか。",
+    "choices": [
+      "ポリシーは許可内容の文書",
+      "ロールは複数ユーザーをまとめる束である",
+      "ユーザーは人やアプリのID",
+      "グループはユーザーの束"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ユーザーをまとめる束はグループで、ロールは一時的に権限を借りる仕組みです。",
+    "wrongChoiceExplanations": {
+      "0": "ポリシー＝許可の文書は正しい説明です。",
+      "2": "ユーザー＝IDは正しい説明です。",
+      "3": "グループ＝束は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": [
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "束はグループ、ロールは一時権限。"
+  },
+  {
+    "id": "qd-sec02-11",
+    "question": "IAMの使い方の説明として誤っているものはどれですか。",
+    "choices": [
+      "共通権限はグループで配る",
+      "最小権限を守る",
+      "サービス連携にはアクセスキーの直書きが推奨される",
+      "サービス連携にはロールを使う"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "サービス連携はロールが推奨で、キー直書きは避けるべきです。",
+    "wrongChoiceExplanations": {
+      "0": "グループでの配布は正しい説明です。",
+      "1": "最小権限は正しい説明です。",
+      "3": "ロールでの連携は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 2,
+    "tags": [
+      "IAM",
+      "ロール",
+      "ドリル"
+    ],
+    "beginnerNote": "直書きは非推奨。"
+  },
+  {
+    "id": "qd-sec04-1",
+    "question": "「アカウント作成時のメールでログインする、全権限を持つ最上位アカウント」はどれですか。",
+    "choices": [
+      "IAMユーザー",
+      "IAMロール",
+      "フェデレーテッドユーザー",
+      "ルートユーザー"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "ルートユーザーは全権限を持つ最上位アカウントです。",
+    "wrongChoiceExplanations": {
+      "0": "IAMユーザーは権限を絞れます。",
+      "1": "ロールは一時権限です。",
+      "2": "フェデレーテッドは外部ID連携です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 1,
+    "tags": [
+      "ルートユーザー",
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "最上位＝ルート。"
+  },
+  {
+    "id": "qd-sec04-2",
+    "question": "「パスワードに加え、スマホの数字コードなど2つ目の要素を要求」する仕組みはどれですか。",
+    "choices": [
+      "MFA（多要素認証）",
+      "SSO",
+      "アクセスキー",
+      "ポリシー"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "MFAは2つ目の要素で認証を強化します。",
+    "wrongChoiceExplanations": {
+      "1": "SSOは一度のログインで複数に入る仕組みです。",
+      "2": "アクセスキーは認証情報です。",
+      "3": "ポリシーは許可の文書です。"
+    },
+    "domain": "security",
+    "service": "MFA",
+    "difficulty": 1,
+    "tags": [
+      "MFA",
+      "ドリル"
+    ],
+    "beginnerNote": "二段構え＝MFA。"
+  },
+  {
+    "id": "qd-sec04-3",
+    "question": "ルートユーザーの日常運用に関する原則として正しいものはどれですか。",
+    "choices": [
+      "ルートのアクセスキーを量産する",
+      "日常業務には使わず、権限を絞ったIAMユーザーで作業する",
+      "毎日ルートで作業する",
+      "全員でルートを共有する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ルートは大切に保管し、日常はIAMユーザーで作業します。",
+    "wrongChoiceExplanations": {
+      "0": "ルートのキーは作らないのが原則です。",
+      "2": "日常のルート作業は避けます。",
+      "3": "共有は厳禁です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 2,
+    "tags": [
+      "ルートユーザー",
+      "ドリル"
+    ],
+    "beginnerNote": "ルートはしまう。"
+  },
+  {
+    "id": "qd-sec04-4",
+    "question": "MFA（多要素認証）の説明として正しいものはどれですか。",
+    "choices": [
+      "通信を暗号化する",
+      "権限をまとめて配る",
+      "パスワードともう一つの要素で本人確認を強化する",
+      "パスワードを不要にする"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "MFAは2要素で認証を強化します。パスワードが漏れても入りにくくなります。",
+    "wrongChoiceExplanations": {
+      "0": "暗号化はTLSです。",
+      "1": "権限配布はグループです。",
+      "3": "パスワードが不要になるわけではありません。"
+    },
+    "domain": "security",
+    "service": "MFA",
+    "difficulty": 1,
+    "tags": [
+      "MFA",
+      "ドリル"
+    ],
+    "beginnerNote": "要素を足して強化。"
+  },
+  {
+    "id": "qd-sec04-5",
+    "question": "ルートユーザーでしか実行できない作業の例として正しいものはどれですか。",
+    "choices": [
+      "日常のEC2起動",
+      "S3へのファイル保存",
+      "IAMユーザーの作成",
+      "アカウントの解約やサポートプランの変更"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "アカウント解約など一部の操作はルートでしか行えません。",
+    "wrongChoiceExplanations": {
+      "0": "日常のEC2起動はIAMユーザーで可能です。",
+      "1": "S3保存はIAMユーザーで可能です。",
+      "2": "IAMユーザー作成もIAMで可能です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 2,
+    "tags": [
+      "ルートユーザー",
+      "ドリル"
+    ],
+    "beginnerNote": "解約等はルート専用。"
+  },
+  {
+    "id": "qd-sec04-6",
+    "question": "ルートユーザーのセキュリティを高めたいです。まず行うべきことはどれですか。",
+    "choices": [
+      "MFAを有効化する",
+      "ルートのアクセスキーを作る",
+      "パスワードを全員に配る",
+      "毎日ルートでログインする"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ルートにはMFAを有効化し、二重の防御をかけます。",
+    "wrongChoiceExplanations": {
+      "1": "ルートのキーは作らないのが原則です。",
+      "2": "共有は厳禁です。",
+      "3": "日常のルート利用は避けます。"
+    },
+    "domain": "security",
+    "service": "MFA",
+    "difficulty": 2,
+    "tags": [
+      "ルートユーザー",
+      "MFA",
+      "ドリル"
+    ],
+    "beginnerNote": "ルートにMFA。"
+  },
+  {
+    "id": "qd-sec04-7",
+    "question": "日常の運用作業は、どのアカウントで行うのが原則ですか。",
+    "choices": [
+      "匿名アクセス",
+      "権限を絞ったIAMユーザー／ロール",
+      "ルートユーザー",
+      "共有アカウント"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "日常は最小権限のIAMユーザー／ロールで行います。",
+    "wrongChoiceExplanations": {
+      "0": "匿名アクセスは不適切です。",
+      "2": "ルートは日常運用に使いません。",
+      "3": "共有アカウントは不適切です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 2,
+    "tags": [
+      "ルートユーザー",
+      "IAM",
+      "ドリル"
+    ],
+    "beginnerNote": "日常＝IAMユーザー。"
+  },
+  {
+    "id": "qd-sec04-8",
+    "question": "多要素認証の略称は「＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "ACL",
+      "KMS",
+      "MFA",
+      "SSO"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "多要素認証＝MFAです。",
+    "wrongChoiceExplanations": {
+      "0": "ACLはアクセス制御リストです。",
+      "1": "KMSは鍵管理です。",
+      "3": "SSOはシングルサインオンです。"
+    },
+    "domain": "security",
+    "service": "MFA",
+    "difficulty": 1,
+    "tags": [
+      "MFA",
+      "ドリル"
+    ],
+    "beginnerNote": "多要素＝MFA。"
+  },
+  {
+    "id": "qd-sec04-9",
+    "question": "全権限を持つ最上位アカウントは「＿＿＿ユーザー」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "IAM",
+      "ゲスト",
+      "フェデレーテッド",
+      "ルート"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "最上位はルートユーザーです。",
+    "wrongChoiceExplanations": {
+      "0": "IAMユーザーは権限を絞れます。",
+      "1": "ゲストユーザーは別概念です。",
+      "2": "フェデレーテッドは外部連携です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 1,
+    "tags": [
+      "ルートユーザー",
+      "ドリル"
+    ],
+    "beginnerNote": "最上位＝ルート。"
+  },
+  {
+    "id": "qd-sec04-10",
+    "question": "ルートユーザーの扱いとして誤っているものはどれですか。",
+    "choices": [
+      "日常の運用はすべてルートユーザーで行うべきである",
+      "MFAを有効化する",
+      "アクセスキーは作らない",
+      "日常はIAMユーザーで作業する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ルートは日常運用に使わず、大切に保管するのが原則です。",
+    "wrongChoiceExplanations": {
+      "1": "MFA有効化は正しい対応です。",
+      "2": "キーを作らないのは正しい対応です。",
+      "3": "日常はIAMユーザーが正しい運用です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 2,
+    "tags": [
+      "ルートユーザー",
+      "ドリル"
+    ],
+    "beginnerNote": "日常のルート作業はNG。"
+  },
+  {
+    "id": "qd-sec04-11",
+    "question": "MFAの説明として誤っているものはどれですか。",
+    "choices": [
+      "漏洩時のリスクを下げる",
+      "MFAを使うとパスワードは不要になる",
+      "パスワードに要素を足して強化する",
+      "ルートユーザーには有効化が推奨"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "MFAはパスワードに追加の要素を足すもので、パスワードが不要になるわけではありません。",
+    "wrongChoiceExplanations": {
+      "0": "リスク低減は正しい説明です。",
+      "2": "要素を足して強化は正しい説明です。",
+      "3": "ルートへの有効化推奨は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "MFA",
+    "difficulty": 2,
+    "tags": [
+      "MFA",
+      "ドリル"
+    ],
+    "beginnerNote": "パスワードは不要にならない。"
+  },
+  {
+    "id": "qd-sec05-1",
+    "question": "「一度のログインで複数のAWSアカウントやアプリに入れる（社員向け）」のはどれですか。",
+    "choices": [
+      "AWS Directory Service",
+      "AWS STS",
+      "IAM Identity Center",
+      "Amazon Cognito"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "IAM Identity Center（旧AWS SSO）は社員のシングルサインオンを提供します。",
+    "wrongChoiceExplanations": {
+      "0": "Directory ServiceはAD連携です。",
+      "1": "STSは一時認証情報の発行です。",
+      "3": "Cognitoはアプリ利用者の認証です。"
+    },
+    "domain": "security",
+    "service": "Identity Center",
+    "difficulty": 1,
+    "tags": [
+      "Identity Center",
+      "シングルサインオン",
+      "ドリル"
+    ],
+    "beginnerNote": "社員SSO＝Identity Center。"
+  },
+  {
+    "id": "qd-sec05-2",
+    "question": "「自社アプリのサインアップ／ログイン機能（エンドユーザー向け）」を提供するのはどれですか。",
+    "choices": [
+      "IAM Identity Center",
+      "AWS Directory Service",
+      "AWS STS",
+      "Amazon Cognito"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Cognitoはアプリ利用者の認証を担います。",
+    "wrongChoiceExplanations": {
+      "0": "Identity Centerは社員向けSSOです。",
+      "1": "Directory ServiceはAD連携です。",
+      "2": "STSは一時認証です。"
+    },
+    "domain": "security",
+    "service": "Cognito",
+    "difficulty": 1,
+    "tags": [
+      "Cognito",
+      "ドリル"
+    ],
+    "beginnerNote": "アプリ利用者＝Cognito。"
+  },
+  {
+    "id": "qd-sec05-3",
+    "question": "「短時間だけ有効な一時認証情報を発行」するのはどれですか。",
+    "choices": [
+      "AWS STS",
+      "Amazon Cognito",
+      "IAM Identity Center",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "STSは一時的な認証情報を発行します。",
+    "wrongChoiceExplanations": {
+      "1": "Cognitoはアプリ利用者認証です。",
+      "2": "Identity Centerは社員SSOです。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "security",
+    "service": "STS",
+    "difficulty": 1,
+    "tags": [
+      "STS",
+      "ドリル"
+    ],
+    "beginnerNote": "一時認証＝STS。"
+  },
+  {
+    "id": "qd-sec05-4",
+    "question": "「社内のMicrosoft Active DirectoryをAWSと連携」させるのはどれですか。",
+    "choices": [
+      "Amazon Macie",
+      "AWS Directory Service",
+      "Amazon Cognito",
+      "AWS STS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Directory ServiceはADをAWSと連携させます。",
+    "wrongChoiceExplanations": {
+      "0": "MacieはS3機微データ検出です。",
+      "2": "Cognitoはアプリ利用者認証です。",
+      "3": "STSは一時認証です。"
+    },
+    "domain": "security",
+    "service": "Directory Service",
+    "difficulty": 2,
+    "tags": [
+      "Directory Service",
+      "ドリル"
+    ],
+    "beginnerNote": "AD連携＝Directory Service。"
+  },
+  {
+    "id": "qd-sec05-5",
+    "question": "IAM Identity Centerの説明として正しいものはどれですか。",
+    "choices": [
+      "一時認証情報を発行する",
+      "脅威を検知する",
+      "社員が一度のログインで複数アカウント／アプリに入れる",
+      "アプリ利用者のサインアップを担う"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Identity Centerは社員向けのシングルサインオンです。",
+    "wrongChoiceExplanations": {
+      "0": "一時認証はSTSです。",
+      "1": "脅威検知はGuardDutyです。",
+      "3": "アプリ利用者認証はCognitoです。"
+    },
+    "domain": "security",
+    "service": "Identity Center",
+    "difficulty": 2,
+    "tags": [
+      "Identity Center",
+      "シングルサインオン",
+      "ドリル"
+    ],
+    "beginnerNote": "社員SSO。"
+  },
+  {
+    "id": "qd-sec05-6",
+    "question": "Amazon Cognitoの説明として正しいものはどれですか。",
+    "choices": [
+      "社員向けのSSO",
+      "一時認証情報の発行",
+      "監査レポートの配布",
+      "モバイル／Webアプリの利用者向けサインアップ・ログインを提供"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Cognitoはエンドユーザー（アプリ利用者）の認証を担います。",
+    "wrongChoiceExplanations": {
+      "0": "社員向けSSOはIdentity Centerです。",
+      "1": "一時認証はSTSです。",
+      "2": "監査資料はArtifactです。"
+    },
+    "domain": "security",
+    "service": "Cognito",
+    "difficulty": 2,
+    "tags": [
+      "Cognito",
+      "ドリル"
+    ],
+    "beginnerNote": "アプリ利用者の認証。"
+  },
+  {
+    "id": "qd-sec05-7",
+    "question": "社員が複数のAWSアカウントに、一度のログインで安全に入れるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "IAM Identity Center",
+      "Amazon Cognito",
+      "AWS STS",
+      "Amazon Inspector"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "社員の複数アカウントSSOはIdentity Centerが適します。",
+    "wrongChoiceExplanations": {
+      "1": "Cognitoはアプリ利用者向けです。",
+      "2": "STSは一時認証の発行です。",
+      "3": "Inspectorは脆弱性診断です。"
+    },
+    "domain": "security",
+    "service": "Identity Center",
+    "difficulty": 2,
+    "tags": [
+      "Identity Center",
+      "シングルサインオン",
+      "ドリル"
+    ],
+    "beginnerNote": "社員SSO＝Identity Center。"
+  },
+  {
+    "id": "qd-sec05-8",
+    "question": "作成中のスマホアプリに、利用者の会員登録とログイン機能を追加したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Config",
+      "Amazon Cognito",
+      "IAM Identity Center",
+      "AWS Organizations"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "アプリ利用者の認証はCognitoが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "2": "Identity Centerは社員向けです。",
+      "3": "Organizationsはアカウント統制です。"
+    },
+    "domain": "security",
+    "service": "Cognito",
+    "difficulty": 2,
+    "tags": [
+      "Cognito",
+      "ドリル"
+    ],
+    "beginnerNote": "アプリの会員機能＝Cognito。"
+  },
+  {
+    "id": "qd-sec05-9",
+    "question": "アプリ利用者の認証を担うのは Amazon ＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Macie",
+      "Athena",
+      "Cognito",
+      "Inspector"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "アプリ利用者の認証はCognitoです。",
+    "wrongChoiceExplanations": {
+      "0": "MacieはS3機微データ検出です。",
+      "1": "Athenaは分析です。",
+      "3": "Inspectorは脆弱性診断です。"
+    },
+    "domain": "security",
+    "service": "Cognito",
+    "difficulty": 1,
+    "tags": [
+      "Cognito",
+      "ドリル"
+    ],
+    "beginnerNote": "利用者認証＝Cognito。"
+  },
+  {
+    "id": "qd-sec05-10",
+    "question": "短時間だけ有効な一時認証情報を発行するのは AWS ＿＿＿ です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "WAF",
+      "KMS",
+      "VPC",
+      "STS"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "一時認証情報の発行はSTSです。",
+    "wrongChoiceExplanations": {
+      "0": "WAFはWeb攻撃遮断です。",
+      "1": "KMSは鍵管理です。",
+      "2": "VPCはネットワークです。"
+    },
+    "domain": "security",
+    "service": "STS",
+    "difficulty": 1,
+    "tags": [
+      "STS",
+      "ドリル"
+    ],
+    "beginnerNote": "一時認証＝STS。"
+  },
+  {
+    "id": "qd-sec05-11",
+    "question": "認証・アクセス管理サービスの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon Cognito＝社員向けの複数アカウントSSO",
+      "IAM Identity Center＝社員向けSSO",
+      "AWS STS＝一時認証情報の発行",
+      "AWS Directory Service＝AD連携"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "社員向けSSOはIdentity Centerで、Cognitoはアプリ利用者の認証です。",
+    "wrongChoiceExplanations": {
+      "1": "Identity Center＝社員SSOは正しい組合せです。",
+      "2": "STS＝一時認証は正しい組合せです。",
+      "3": "Directory Service＝AD連携は正しい組合せです。"
+    },
+    "domain": "security",
+    "service": "Identity Center",
+    "difficulty": 2,
+    "tags": [
+      "Identity Center",
+      "Cognito",
+      "ドリル"
+    ],
+    "beginnerNote": "社員＝Identity Center、利用者＝Cognito。"
+  },
+  {
+    "id": "qd-sec05-12",
+    "question": "認証サービスの説明として誤っているものはどれですか。",
+    "choices": [
+      "Identity Centerは社員のSSO",
+      "STSは永続的なパスワードを発行するサービスである",
+      "STSは一時認証情報を発行する",
+      "Cognitoはアプリ利用者の認証"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "STSは一時的な認証情報を発行するもので、永続パスワードではありません。",
+    "wrongChoiceExplanations": {
+      "0": "Identity Center＝社員SSOは正しい説明です。",
+      "2": "STS＝一時認証は正しい説明です。",
+      "3": "Cognito＝利用者認証は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "Cognito",
+    "difficulty": 2,
+    "tags": [
+      "STS",
+      "Cognito",
+      "ドリル"
+    ],
+    "beginnerNote": "STSは一時認証。"
+  },
+  {
+    "id": "qd-sec07-1",
+    "question": "「ログを分析し、不正アクセスや異常な通信などの怪しい挙動を検知」するのはどれですか。",
+    "choices": [
+      "Amazon Macie",
+      "AWS Artifact",
+      "Amazon GuardDuty",
+      "Amazon Inspector"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "GuardDutyは挙動を分析して脅威を検知する見張り役です。",
+    "wrongChoiceExplanations": {
+      "0": "MacieはS3の機微データ検出です。",
+      "1": "Artifactは監査資料です。",
+      "3": "Inspectorは脆弱性診断です。"
+    },
+    "domain": "security",
+    "service": "GuardDuty",
+    "difficulty": 1,
+    "tags": [
+      "GuardDuty",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "挙動監視＝GuardDuty。"
+  },
+  {
+    "id": "qd-sec07-2",
+    "question": "「EC2やコンテナの脆弱性・危険な設定を自動でスキャン」するのはどれですか。",
+    "choices": [
+      "Amazon GuardDuty",
+      "Amazon Macie",
+      "AWS Config",
+      "Amazon Inspector"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Inspectorは脆弱性の自動診断を行います。",
+    "wrongChoiceExplanations": {
+      "0": "GuardDutyは挙動の脅威検知です。",
+      "1": "Macieは機微データ検出です。",
+      "2": "Configは設定評価です。"
+    },
+    "domain": "security",
+    "service": "Inspector",
+    "difficulty": 1,
+    "tags": [
+      "Inspector",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "脆弱性診断＝Inspector。"
+  },
+  {
+    "id": "qd-sec07-3",
+    "question": "「S3の中から個人情報などの機微データを見つけ出す」のはどれですか。",
+    "choices": [
+      "Amazon Macie",
+      "Amazon GuardDuty",
+      "Amazon Inspector",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "MacieはS3内の機微データを機械学習で検出します。",
+    "wrongChoiceExplanations": {
+      "1": "GuardDutyは挙動の脅威検知です。",
+      "2": "Inspectorは脆弱性診断です。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "security",
+    "service": "Macie",
+    "difficulty": 1,
+    "tags": [
+      "Macie",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "機微データ発見＝Macie。"
+  },
+  {
+    "id": "qd-sec07-4",
+    "question": "Amazon GuardDutyの説明として正しいものはどれですか。",
+    "choices": [
+      "証明書を発行する",
+      "ログを自動分析し、脅威（怪しい挙動）を検知する",
+      "脆弱性を診断する",
+      "S3の個人情報を検出する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "GuardDutyは挙動から脅威を検知します。",
+    "wrongChoiceExplanations": {
+      "0": "証明書発行はACMです。",
+      "2": "脆弱性診断はInspectorです。",
+      "3": "機微データ検出はMacieです。"
+    },
+    "domain": "security",
+    "service": "GuardDuty",
+    "difficulty": 2,
+    "tags": [
+      "GuardDuty",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "脅威検知。"
+  },
+  {
+    "id": "qd-sec07-5",
+    "question": "Amazon Inspectorの説明として正しいものはどれですか。",
+    "choices": [
+      "S3の機微データを検出する",
+      "DDoSを防ぐ",
+      "EC2やコンテナの既知の脆弱性・危険な設定を洗い出す",
+      "不正な挙動を検知する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Inspectorは脆弱性・設定リスクを診断します。",
+    "wrongChoiceExplanations": {
+      "0": "機微データ検出はMacieです。",
+      "1": "DDoS対策はShieldです。",
+      "3": "挙動の検知はGuardDutyです。"
+    },
+    "domain": "security",
+    "service": "Inspector",
+    "difficulty": 2,
+    "tags": [
+      "Inspector",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "脆弱性の健康診断。"
+  },
+  {
+    "id": "qd-sec07-6",
+    "question": "アカウントに対する不審なAPI呼び出しや異常通信を継続的に検知したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Inspector",
+      "Amazon Macie",
+      "AWS Artifact",
+      "Amazon GuardDuty"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "怪しい挙動の継続検知はGuardDutyが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Inspectorは脆弱性診断です。",
+      "1": "Macieは機微データ検出です。",
+      "2": "Artifactは監査資料です。"
+    },
+    "domain": "security",
+    "service": "GuardDuty",
+    "difficulty": 2,
+    "tags": [
+      "GuardDuty",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "挙動検知＝GuardDuty。"
+  },
+  {
+    "id": "qd-sec07-7",
+    "question": "S3バケットに個人情報が誤って保存されていないか自動で発見したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Macie",
+      "Amazon GuardDuty",
+      "Amazon Inspector",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "S3内の機微データ発見はMacieが適します。",
+    "wrongChoiceExplanations": {
+      "1": "GuardDutyは挙動検知です。",
+      "2": "Inspectorは脆弱性診断です。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "security",
+    "service": "Macie",
+    "difficulty": 2,
+    "tags": [
+      "Macie",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "S3の個人情報＝Macie。"
+  },
+  {
+    "id": "qd-sec07-8",
+    "question": "EC2に既知の脆弱性が残っていないか自動でスキャンしたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Config",
+      "Amazon Inspector",
+      "Amazon Macie",
+      "Amazon GuardDuty"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "脆弱性の自動スキャンはInspectorが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "2": "Macieは機微データ検出です。",
+      "3": "GuardDutyは挙動検知です。"
+    },
+    "domain": "security",
+    "service": "Inspector",
+    "difficulty": 2,
+    "tags": [
+      "Inspector",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "脆弱性スキャン＝Inspector。"
+  },
+  {
+    "id": "qd-sec07-9",
+    "question": "怪しい挙動を検知する脅威検知サービスは Amazon ＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Macie",
+      "Config",
+      "GuardDuty",
+      "Inspector"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "挙動の脅威検知はGuardDutyです。",
+    "wrongChoiceExplanations": {
+      "0": "Macieは機微データ検出です。",
+      "1": "Configは設定評価です。",
+      "3": "Inspectorは脆弱性診断です。"
+    },
+    "domain": "security",
+    "service": "GuardDuty",
+    "difficulty": 1,
+    "tags": [
+      "GuardDuty",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "脅威検知＝GuardDuty。"
+  },
+  {
+    "id": "qd-sec07-10",
+    "question": "S3内の機微データを検出するのは Amazon ＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Inspector",
+      "GuardDuty",
+      "Athena",
+      "Macie"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "機微データ検出はMacieです。",
+    "wrongChoiceExplanations": {
+      "0": "Inspectorは脆弱性診断です。",
+      "1": "GuardDutyは挙動検知です。",
+      "2": "Athenaは分析です。"
+    },
+    "domain": "security",
+    "service": "Macie",
+    "difficulty": 1,
+    "tags": [
+      "Macie",
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "機微データ＝Macie。"
+  },
+  {
+    "id": "qd-sec07-11",
+    "question": "脅威検知サービスの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Amazon Macie＝EC2の脆弱性診断",
+      "Amazon GuardDuty＝挙動の脅威検知",
+      "Amazon Inspector＝脆弱性診断",
+      "Amazon Macie＝S3の機微データ検出"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "EC2の脆弱性診断はInspectorで、MacieはS3の機微データ検出です。",
+    "wrongChoiceExplanations": {
+      "1": "GuardDuty＝挙動検知は正しい組合せです。",
+      "2": "Inspector＝脆弱性診断は正しい組合せです。",
+      "3": "Macie＝機微データ検出は正しい組合せです。"
+    },
+    "domain": "security",
+    "service": "GuardDuty",
+    "difficulty": 2,
+    "tags": [
+      "脅威検知",
+      "ドリル"
+    ],
+    "beginnerNote": "脆弱性＝Inspector、機微データ＝Macie。"
+  },
+  {
+    "id": "qd-sec07-12",
+    "question": "脅威検知サービスの説明として誤っているものはどれですか。",
+    "choices": [
+      "Macieは機微データを検出",
+      "GuardDutyはS3内の個人情報を検出するサービスである",
+      "GuardDutyは挙動から脅威を検知",
+      "Inspectorは脆弱性を診断"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "S3内の個人情報検出はMacieで、GuardDutyは挙動の脅威検知です。",
+    "wrongChoiceExplanations": {
+      "0": "Macie＝機微データ検出は正しい説明です。",
+      "2": "GuardDuty＝挙動検知は正しい説明です。",
+      "3": "Inspector＝脆弱性診断は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "Inspector",
+    "difficulty": 2,
+    "tags": [
+      "GuardDuty",
+      "Macie",
+      "ドリル"
+    ],
+    "beginnerNote": "機微データ＝Macie。"
+  },
+  {
+    "id": "qd-sec10-1",
+    "question": "「SOCやISOなどAWSの第三者監査レポートをダウンロード」できるのはどれですか。",
+    "choices": [
+      "AWS Config",
+      "Amazon Inspector",
+      "AWS Artifact",
+      "Amazon GuardDuty"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Artifactは第三者監査の報告書を入手できる場所です。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "1": "Inspectorは脆弱性診断です。",
+      "3": "GuardDutyは脅威検知です。"
+    },
+    "domain": "security",
+    "service": "Artifact",
+    "difficulty": 1,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "ドリル"
+    ],
+    "beginnerNote": "監査資料＝Artifact。"
+  },
+  {
+    "id": "qd-sec10-2",
+    "question": "コンプライアンス（法令順守）における責任分担の考え方として正しいものはどれですか。",
+    "choices": [
+      "すべてAWSが法令順守を保証する",
+      "すべて利用者が単独で行う",
+      "法令順守は不要",
+      "AWSは基盤の認証を取得し、利用者は自分の使い方が規制に合うか担保する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "コンプライアンスも責任共有で、AWSと利用者が役割を分担します。",
+    "wrongChoiceExplanations": {
+      "0": "AWSがすべて保証するわけではありません。",
+      "1": "AWSの認証も活用できます。",
+      "2": "法令順守は必要です。"
+    },
+    "domain": "security",
+    "service": "コンプライアンス",
+    "difficulty": 2,
+    "tags": [
+      "コンプライアンス",
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "コンプラも責任共有。"
+  },
+  {
+    "id": "qd-sec10-3",
+    "question": "AWS Artifactの説明として正しいものはどれですか。",
+    "choices": [
+      "AWSが取得した第三者監査レポート等を入手できる",
+      "脅威を検知する",
+      "脆弱性を診断する",
+      "証明書を発行する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Artifactは監査対応で必要なAWS側の証拠を入手できます。",
+    "wrongChoiceExplanations": {
+      "1": "脅威検知はGuardDutyです。",
+      "2": "脆弱性診断はInspectorです。",
+      "3": "証明書発行はACMです。"
+    },
+    "domain": "security",
+    "service": "Artifact",
+    "difficulty": 1,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "ドリル"
+    ],
+    "beginnerNote": "監査証拠の入手。"
+  },
+  {
+    "id": "qd-sec10-4",
+    "question": "監査人に「AWSが各種基準に準拠している証明」を提出する必要があります。まず参照すべきはどれですか。",
+    "choices": [
+      "Amazon Route 53",
+      "AWS Artifact",
+      "Amazon Macie",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AWS側の準拠証明はArtifactから入手します。",
+    "wrongChoiceExplanations": {
+      "0": "Route 53はDNSです。",
+      "2": "MacieはS3機微データ検出です。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "security",
+    "service": "コンプライアンス",
+    "difficulty": 2,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "ドリル"
+    ],
+    "beginnerNote": "準拠証明＝Artifact。"
+  },
+  {
+    "id": "qd-sec10-5",
+    "question": "自社の監査対応でSOCレポートが必要です。どこから入手しますか。",
+    "choices": [
+      "Configで生成する",
+      "GuardDutyで作成する",
+      "AWS Artifactからダウンロードする",
+      "サポートに電話して郵送してもらう"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "SOCレポート等はArtifactからダウンロードできます。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価で監査レポート発行ではありません。",
+      "1": "GuardDutyは脅威検知です。",
+      "3": "郵送ではなくオンラインで入手できます。"
+    },
+    "domain": "security",
+    "service": "Artifact",
+    "difficulty": 2,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "ドリル"
+    ],
+    "beginnerNote": "レポート＝Artifactから。"
+  },
+  {
+    "id": "qd-sec10-6",
+    "question": "「暗号化やアクセス制御の設定が規制に合っているか」の担保は主に誰の責任ですか。",
+    "choices": [
+      "AWS（基盤の認証だけで完結）",
+      "監査法人",
+      "通信事業者",
+      "利用者（自分の使い方・設定）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "自社の設定・使い方が規制に合うかは利用者の責任です（コンプラも責任共有）。",
+    "wrongChoiceExplanations": {
+      "0": "AWSの認証だけでは自社設定は担保されません。",
+      "1": "監査法人は評価者で担保主体ではありません。",
+      "2": "通信事業者は関係ありません。"
+    },
+    "domain": "security",
+    "service": "コンプライアンス",
+    "difficulty": 2,
+    "tags": [
+      "コンプライアンス",
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "自社設定は利用者責任。"
+  },
+  {
+    "id": "qd-sec10-7",
+    "question": "AWSの監査レポートを入手できるサービスは AWS ＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Artifact",
+      "Config",
+      "Inspector",
+      "Shield"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "監査レポートの入手はArtifactです。",
+    "wrongChoiceExplanations": {
+      "1": "Configは設定評価です。",
+      "2": "Inspectorは脆弱性診断です。",
+      "3": "ShieldはDDoS対策です。"
+    },
+    "domain": "security",
+    "service": "Artifact",
+    "difficulty": 1,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "ドリル"
+    ],
+    "beginnerNote": "監査資料＝Artifact。"
+  },
+  {
+    "id": "qd-sec10-8",
+    "question": "コンプライアンスもまた「＿＿＿＿」で成り立ちます（AWSと利用者が分担）。＿＿＿＿に入るのはどれですか。",
+    "choices": [
+      "第三者委任",
+      "責任共有",
+      "AWS単独",
+      "利用者単独"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "コンプライアンスも責任共有モデルで成り立ちます。",
+    "wrongChoiceExplanations": {
+      "0": "第三者委任でもありません。",
+      "2": "AWS単独ではありません。",
+      "3": "利用者単独でもありません。"
+    },
+    "domain": "security",
+    "service": "コンプライアンス",
+    "difficulty": 2,
+    "tags": [
+      "コンプライアンス",
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "コンプラ＝責任共有。"
+  },
+  {
+    "id": "qd-sec10-9",
+    "question": "コンプライアンス・Artifactの説明として誤っているものはどれですか。",
+    "choices": [
+      "コンプライアンスも責任共有で成り立つ",
+      "利用者は自分の設定の準拠を担保する",
+      "Artifactは脅威の挙動を検知するサービスである",
+      "Artifactは監査レポートを入手できる"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "挙動の脅威検知はGuardDutyで、Artifactは監査レポートの入手です。",
+    "wrongChoiceExplanations": {
+      "0": "コンプラの責任共有は正しい説明です。",
+      "1": "利用者の担保は正しい説明です。",
+      "3": "Artifact＝監査レポートは正しい説明です。"
+    },
+    "domain": "security",
+    "service": "Artifact",
+    "difficulty": 2,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "ドリル"
+    ],
+    "beginnerNote": "脅威検知＝GuardDuty。"
+  },
+  {
+    "id": "qd-sec10-10",
+    "question": "コンプライアンスの説明として誤っているものはどれですか。",
+    "choices": [
+      "AWSは基盤の第三者認証を取得する",
+      "利用者は自分の使い方の準拠を担保する",
+      "Artifactで証拠を入手できる",
+      "AWSがすべての法令順守を利用者に代わって保証する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "AWSがすべての法令順守を保証するわけではなく、利用者の使い方は利用者の責任です。",
+    "wrongChoiceExplanations": {
+      "0": "AWSの基盤認証は正しい説明です。",
+      "1": "利用者の担保は正しい説明です。",
+      "2": "Artifactでの入手は正しい説明です。"
+    },
+    "domain": "security",
+    "service": "コンプライアンス",
+    "difficulty": 2,
+    "tags": [
+      "コンプライアンス",
+      "責任共有モデル",
+      "ドリル"
+    ],
+    "beginnerNote": "すべて保証ではない。"
+  },
+  {
+    "id": "qd-bil03-1",
+    "question": "「これから作る構成の月額を、導入前に見積もる」ツールはどれですか。",
+    "choices": [
+      "AWS Pricing Calculator",
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "Cost and Usage Report"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Pricing Calculatorは事前の費用見積りに使います。",
+    "wrongChoiceExplanations": {
+      "1": "Budgetsは予算超過のアラートです。",
+      "2": "Cost Explorerは過去の分析です。",
+      "3": "CURは詳細明細です。"
+    },
+    "domain": "billing",
+    "service": "Pricing Calculator",
+    "difficulty": 1,
+    "tags": [
+      "Pricing Calculator",
+      "見積もり",
+      "ドリル"
+    ],
+    "beginnerNote": "事前見積り＝Calculator。"
+  },
+  {
+    "id": "qd-bil03-2",
+    "question": "「予算を決めて、超過しそうなときにアラート通知」するのはどれですか。",
+    "choices": [
+      "Cost and Usage Report",
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Budgetsは予算を設定して超過を通知します（先回りの管理）。",
+    "wrongChoiceExplanations": {
+      "0": "CURは詳細明細です。",
+      "2": "Cost Explorerは振り返りの分析です。",
+      "3": "Calculatorは事前見積りです。"
+    },
+    "domain": "billing",
+    "service": "Budgets",
+    "difficulty": 1,
+    "tags": [
+      "Budgets",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "予算アラート＝Budgets。"
+  },
+  {
+    "id": "qd-bil03-3",
+    "question": "「過去にかかったコストをグラフで分析・可視化」するのはどれですか。",
+    "choices": [
+      "AWS Pricing Calculator",
+      "AWS Organizations",
+      "AWS Cost Explorer",
+      "AWS Budgets"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Cost Explorerは過去コストの分析（振り返り）に使います。",
+    "wrongChoiceExplanations": {
+      "0": "Calculatorは事前見積りです。",
+      "1": "Organizationsはアカウント統制です。",
+      "3": "Budgetsは予算超過の通知です。"
+    },
+    "domain": "billing",
+    "service": "Cost Explorer",
+    "difficulty": 1,
+    "tags": [
+      "Cost Explorer",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "振り返り＝Cost Explorer。"
+  },
+  {
+    "id": "qd-bil03-4",
+    "question": "「部署やプロジェクト単位で費用を分けて見る」ために使うのはどれですか。",
+    "choices": [
+      "無料利用枠",
+      "リザーブド",
+      "スポット",
+      "コスト配分タグ"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "コスト配分タグで費用を分類して見られます。",
+    "wrongChoiceExplanations": {
+      "0": "無料利用枠は無料の枠です。",
+      "1": "リザーブドは購入方式です。",
+      "2": "スポットは購入方式です。"
+    },
+    "domain": "billing",
+    "service": "コスト配分タグ",
+    "difficulty": 2,
+    "tags": [
+      "コスト配分タグ",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "費用の内訳＝コスト配分タグ。"
+  },
+  {
+    "id": "qd-bil03-5",
+    "question": "AWS Budgetsの説明として正しいものはどれですか。",
+    "choices": [
+      "予算を決め、超過（見込み）をアラートで知らせる",
+      "過去コストをグラフ分析する",
+      "事前に月額を見積もる",
+      "複数アカウントを統制する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Budgetsは先回りの予算管理・アラートです。",
+    "wrongChoiceExplanations": {
+      "1": "過去分析はCost Explorerです。",
+      "2": "事前見積りはCalculatorです。",
+      "3": "統制はOrganizationsです。"
+    },
+    "domain": "billing",
+    "service": "Budgets",
+    "difficulty": 1,
+    "tags": [
+      "Budgets",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "予算・アラート＝Budgets。"
+  },
+  {
+    "id": "qd-bil03-6",
+    "question": "BudgetsとCost Explorerの使い分けとして正しいものはどれですか。",
+    "choices": [
+      "Cost Explorerが予算アラート",
+      "決める（先回り）＝Budgets、振り返る（分析）＝Cost Explorer",
+      "両者は同じ",
+      "Budgetsが過去分析"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "先回りの管理はBudgets、振り返りの分析はCost Explorerです。",
+    "wrongChoiceExplanations": {
+      "0": "予算アラートはBudgetsです。",
+      "2": "同じではありません。",
+      "3": "過去分析はCost Explorerです。"
+    },
+    "domain": "billing",
+    "service": "Cost Explorer",
+    "difficulty": 2,
+    "tags": [
+      "Budgets",
+      "Cost Explorer",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "決める＝Budgets、振り返る＝Cost Explorer。"
+  },
+  {
+    "id": "qd-bil03-7",
+    "question": "月のコストが予算を超えそうなときに、早めにメールで気づきたいです。最適なのはどれですか。",
+    "choices": [
+      "Pricing Calculatorで見積もる",
+      "Trusted Advisorを見る",
+      "AWS Budgetsでアラートを設定する",
+      "Cost Explorerであとから見る"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "超過の事前通知はBudgetsが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Calculatorは導入前の見積りです。",
+      "1": "Trusted Advisorは総合点検です。",
+      "3": "Cost Explorerは事後の分析です。"
+    },
+    "domain": "billing",
+    "service": "Budgets",
+    "difficulty": 2,
+    "tags": [
+      "Budgets",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "事前通知＝Budgets。"
+  },
+  {
+    "id": "qd-bil03-8",
+    "question": "新しい構成を作る前に、月額のおおよそを把握して予算を組みたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "Cost and Usage Report",
+      "AWS Pricing Calculator"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "導入前の試算はPricing Calculatorが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Cost Explorerは過去分析です。",
+      "1": "Budgetsは予算アラートです。",
+      "2": "CURは詳細明細です。"
+    },
+    "domain": "billing",
+    "service": "Pricing Calculator",
+    "difficulty": 2,
+    "tags": [
+      "Pricing Calculator",
+      "見積もり",
+      "ドリル"
+    ],
+    "beginnerNote": "導入前試算＝Calculator。"
+  },
+  {
+    "id": "qd-bil03-9",
+    "question": "どのサービスにいくらかかっているか、過去数か月の傾向を分析したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "AWS Budgets",
+      "AWS Artifact"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "過去コストの傾向分析はCost Explorerが適します。",
+    "wrongChoiceExplanations": {
+      "1": "Calculatorは事前見積りです。",
+      "2": "Budgetsは予算アラートです。",
+      "3": "Artifactは監査資料です。"
+    },
+    "domain": "billing",
+    "service": "Cost Explorer",
+    "difficulty": 2,
+    "tags": [
+      "Cost Explorer",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "傾向分析＝Cost Explorer。"
+  },
+  {
+    "id": "qd-bil03-10",
+    "question": "予算を決めて超過を通知するのは AWS ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Organizations",
+      "Budgets",
+      "Cost Explorer",
+      "Pricing Calculator"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "予算アラートはBudgetsです。",
+    "wrongChoiceExplanations": {
+      "0": "Organizationsは統制です。",
+      "2": "Cost Explorerは分析です。",
+      "3": "Calculatorは見積りです。"
+    },
+    "domain": "billing",
+    "service": "Budgets",
+    "difficulty": 1,
+    "tags": [
+      "Budgets",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "予算＝Budgets。"
+  },
+  {
+    "id": "qd-bil03-11",
+    "question": "過去のコストを分析・可視化するのは AWS Cost ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Budgets",
+      "Report",
+      "Explorer",
+      "Calculator"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "過去分析はCost Explorerです。",
+    "wrongChoiceExplanations": {
+      "0": "Budgetsは予算アラートです。",
+      "1": "ReportはCURの一部語です。",
+      "3": "CalculatorはPricing Calculatorです。"
+    },
+    "domain": "billing",
+    "service": "Cost Explorer",
+    "difficulty": 1,
+    "tags": [
+      "Cost Explorer",
+      "コスト管理",
+      "ドリル"
+    ],
+    "beginnerNote": "分析＝Cost Explorer。"
+  },
+  {
+    "id": "qd-bil03-12",
+    "question": "コスト管理ツールの説明として誤っているものはどれですか。",
+    "choices": [
+      "Budgetsは予算超過を通知する",
+      "Cost Explorerは過去コストを分析する",
+      "Pricing Calculatorは事前に見積もる",
+      "AWS Budgetsは過去コストをグラフで分析するツールである"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "過去コストの分析はCost Explorerで、Budgetsは予算超過の通知です。",
+    "wrongChoiceExplanations": {
+      "0": "Budgets＝予算通知は正しい説明です。",
+      "1": "Cost Explorer＝分析は正しい説明です。",
+      "2": "Calculator＝見積りは正しい説明です。"
+    },
+    "domain": "billing",
+    "service": "Budgets",
+    "difficulty": 2,
+    "tags": [
+      "Budgets",
+      "Cost Explorer",
+      "ドリル"
+    ],
+    "beginnerNote": "分析＝Cost Explorer。"
+  },
+  {
+    "id": "qd-bil03-13",
+    "question": "コスト管理ツールの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Pricing Calculator＝過去コストの分析",
+      "Pricing Calculator＝導入前の見積り",
+      "Budgets＝予算アラート",
+      "Cost Explorer＝過去コストの分析"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "過去コストの分析はCost Explorerで、Pricing Calculatorは導入前の見積りです。",
+    "wrongChoiceExplanations": {
+      "1": "Calculator＝見積りは正しい組合せです。",
+      "2": "Budgets＝アラートは正しい組合せです。",
+      "3": "Cost Explorer＝分析は正しい組合せです。"
+    },
+    "domain": "billing",
+    "service": "Pricing Calculator",
+    "difficulty": 2,
+    "tags": [
+      "Pricing Calculator",
+      "Cost Explorer",
+      "ドリル"
+    ],
+    "beginnerNote": "見積り＝Calculator、分析＝Cost Explorer。"
+  },
+  {
+    "id": "qd-bil04-1",
+    "question": "「アカウントを自動点検し、コスト・セキュリティ・性能などの改善点を助言」するのはどれですか。",
+    "choices": [
+      "Amazon Inspector",
+      "AWS Trusted Advisor",
+      "AWS Budgets",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Trusted Advisorは複数観点でアカウントを点検し助言します。",
+    "wrongChoiceExplanations": {
+      "0": "Inspectorは脆弱性診断です。",
+      "2": "Budgetsは予算アラートです。",
+      "3": "Cost Explorerは過去分析です。"
+    },
+    "domain": "billing",
+    "service": "Trusted Advisor",
+    "difficulty": 1,
+    "tags": [
+      "Trusted Advisor",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "総合点検＝Trusted Advisor。"
+  },
+  {
+    "id": "qd-bil04-2",
+    "question": "「実際の使用状況から、最適なインスタンスサイズを提案」するのはどれですか。",
+    "choices": [
+      "AWS Budgets",
+      "AWS Config",
+      "AWS Compute Optimizer",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Compute Optimizerは過大・過小を分析し最適サイズを提案します。",
+    "wrongChoiceExplanations": {
+      "0": "Budgetsは予算アラートです。",
+      "1": "Configは設定評価です。",
+      "3": "Trusted Advisorは総合点検です。"
+    },
+    "domain": "billing",
+    "service": "Compute Optimizer",
+    "difficulty": 1,
+    "tags": [
+      "Compute Optimizer",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "サイズ最適化＝Compute Optimizer。"
+  },
+  {
+    "id": "qd-bil04-3",
+    "question": "コスト最適化の基本動作として最も適切なものはどれですか。",
+    "choices": [
+      "常に最大構成で動かす",
+      "何も見直さない",
+      "高性能な1台に集約する",
+      "使っていない資源を止め、適正サイズにし、割引プランを使う"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "未使用停止・適正化・割引活用がコスト最適化の基本です。",
+    "wrongChoiceExplanations": {
+      "0": "常時最大は無駄です。",
+      "1": "見直さないと最適化できません。",
+      "2": "1台集約は可用性面でも不利です。"
+    },
+    "domain": "billing",
+    "service": "コスト最適化",
+    "difficulty": 2,
+    "tags": [
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "止める・適正化・割引。"
+  },
+  {
+    "id": "qd-bil04-4",
+    "question": "AWS Trusted Advisorの説明として正しいものはどれですか。",
+    "choices": [
+      "コスト・セキュリティ・信頼性・性能・上限の観点で改善点を助言する",
+      "過去コストをグラフ分析する",
+      "予算超過を通知する",
+      "証明書を発行する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Trusted Advisorは複数観点の総合点検・助言を行います。",
+    "wrongChoiceExplanations": {
+      "1": "過去分析はCost Explorerです。",
+      "2": "予算通知はBudgetsです。",
+      "3": "証明書発行はACMです。"
+    },
+    "domain": "billing",
+    "service": "Trusted Advisor",
+    "difficulty": 1,
+    "tags": [
+      "Trusted Advisor",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "多観点の点検・助言。"
+  },
+  {
+    "id": "qd-bil04-5",
+    "question": "AWS Compute Optimizerの説明として正しいものはどれですか。",
+    "choices": [
+      "脅威を検知する",
+      "使用状況を分析し、過大・過小なインスタンスの最適サイズを提案する",
+      "予算を決めて通知する",
+      "監査レポートを配布する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "Compute Optimizerは適正サイズを提案し、無駄な支払いを減らします。",
+    "wrongChoiceExplanations": {
+      "0": "脅威検知はGuardDutyです。",
+      "2": "予算通知はBudgetsです。",
+      "3": "監査資料はArtifactです。"
+    },
+    "domain": "billing",
+    "service": "Compute Optimizer",
+    "difficulty": 2,
+    "tags": [
+      "Compute Optimizer",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "適正サイズ提案。"
+  },
+  {
+    "id": "qd-bil04-6",
+    "question": "アカウント全体で、使っていない資源やセキュリティ上の改善点をまとめて把握したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Artifact",
+      "Amazon Macie",
+      "AWS Trusted Advisor",
+      "AWS Pricing Calculator"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "総合的な点検・助言はTrusted Advisorが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Artifactは監査資料です。",
+      "1": "MacieはS3機微データ検出です。",
+      "3": "Calculatorは事前見積りです。"
+    },
+    "domain": "billing",
+    "service": "Trusted Advisor",
+    "difficulty": 2,
+    "tags": [
+      "Trusted Advisor",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "総合点検＝Trusted Advisor。"
+  },
+  {
+    "id": "qd-bil04-7",
+    "question": "多くのEC2が過剰スペックで無駄が出ていないか分析し、最適サイズを知りたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "AWS WAF",
+      "AWS Compute Optimizer"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "適正サイズの提案はCompute Optimizerが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Budgetsは予算アラートです。",
+      "1": "Cost Explorerは傾向分析です。",
+      "2": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "billing",
+    "service": "Compute Optimizer",
+    "difficulty": 2,
+    "tags": [
+      "Compute Optimizer",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "サイズ提案＝Compute Optimizer。"
+  },
+  {
+    "id": "qd-bil04-8",
+    "question": "アカウントを多観点で点検し助言するのは AWS ＿＿＿＿＿＿ Advisor です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Trusted",
+      "Cost",
+      "Security",
+      "Budget"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "総合点検はTrusted Advisorです。",
+    "wrongChoiceExplanations": {
+      "1": "Cost AdvisorやSecurity Advisorという名称ではありません。",
+      "2": "同上。",
+      "3": "Budget Advisorではありません。"
+    },
+    "domain": "billing",
+    "service": "Trusted Advisor",
+    "difficulty": 1,
+    "tags": [
+      "Trusted Advisor",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "Trusted Advisor。"
+  },
+  {
+    "id": "qd-bil04-9",
+    "question": "最適なインスタンスサイズを提案するのは AWS Compute ＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "Calculator",
+      "Optimizer",
+      "Explorer",
+      "Manager"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "サイズ最適化はCompute Optimizerです。",
+    "wrongChoiceExplanations": {
+      "0": "CalculatorはPricing Calculatorの語です。",
+      "2": "ExplorerはCost Explorerの語です。",
+      "3": "Managerは別語です。"
+    },
+    "domain": "billing",
+    "service": "Compute Optimizer",
+    "difficulty": 1,
+    "tags": [
+      "Compute Optimizer",
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "Compute Optimizer。"
+  },
+  {
+    "id": "qd-bil04-10",
+    "question": "コスト最適化の説明として誤っているものはどれですか。",
+    "choices": [
+      "適正なサイズに変える",
+      "割引プランを活用する",
+      "常に最大構成で動かし続けるのが最適である",
+      "使っていない資源を止める"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "常に最大構成は無駄を生み、最適化の逆です。",
+    "wrongChoiceExplanations": {
+      "0": "適正サイズ化は正しい説明です。",
+      "1": "割引活用は正しい説明です。",
+      "3": "未使用停止は正しい説明です。"
+    },
+    "domain": "billing",
+    "service": "コスト最適化",
+    "difficulty": 2,
+    "tags": [
+      "コスト最適化",
+      "ドリル"
+    ],
+    "beginnerNote": "常時最大は無駄。"
+  },
+  {
+    "id": "qd-bil04-11",
+    "question": "サービスの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "Trusted Advisor＝多観点の総合点検・助言",
+      "Compute Optimizer＝サイズ最適化の提案",
+      "Budgets＝予算アラート",
+      "AWS Trusted Advisor＝最適なインスタンスサイズだけを提案する専用ツール"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "サイズ提案専用はCompute Optimizerで、Trusted Advisorは多観点の総合点検です。",
+    "wrongChoiceExplanations": {
+      "0": "Trusted Advisor＝総合点検は正しい組合せです。",
+      "1": "Compute Optimizer＝サイズ提案は正しい組合せです。",
+      "2": "Budgets＝アラートは正しい組合せです。"
+    },
+    "domain": "billing",
+    "service": "Trusted Advisor",
+    "difficulty": 2,
+    "tags": [
+      "Trusted Advisor",
+      "Compute Optimizer",
+      "ドリル"
+    ],
+    "beginnerNote": "サイズ専用＝Compute Optimizer。"
+  },
+  {
+    "id": "qd-bil05-1",
+    "question": "「複数のAWSアカウントを束ね、請求を1つにまとめる（一括請求）」のはどれですか。",
+    "choices": [
+      "AWS Organizations",
+      "AWS IAM",
+      "AWS Budgets",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Organizationsは複数アカウントの一括請求と統制を提供します。",
+    "wrongChoiceExplanations": {
+      "1": "IAMは1アカウント内の権限管理です。",
+      "2": "Budgetsは予算アラートです。",
+      "3": "Configは設定評価です。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 1,
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "ドリル"
+    ],
+    "beginnerNote": "一括請求＝Organizations。"
+  },
+  {
+    "id": "qd-bil05-2",
+    "question": "「複数アカウント共通の禁止ルールを組織全体に適用」する仕組みはどれですか。",
+    "choices": [
+      "VPC",
+      "SCP（サービスコントロールポリシー）",
+      "IAMポリシー単体",
+      "MFA"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "SCPで組織全体に共通の上限（統制）を設定できます。",
+    "wrongChoiceExplanations": {
+      "0": "VPCはネットワークです。",
+      "2": "IAMポリシー単体は1アカウント内向けです。",
+      "3": "MFAは認証強化です。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "組織統制＝SCP。"
+  },
+  {
+    "id": "qd-bil05-3",
+    "question": "「サードパーティ製ソフトを購入し、AWSの請求にまとめられる」のはどれですか。",
+    "choices": [
+      "Amazon Cognito",
+      "AWS Config",
+      "AWS Marketplace",
+      "AWS Artifact"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "Marketplaceは調達と支払いをAWS請求に一本化できます。",
+    "wrongChoiceExplanations": {
+      "0": "Cognitoはアプリ利用者認証です。",
+      "1": "Configは設定評価です。",
+      "3": "Artifactは監査資料です。"
+    },
+    "domain": "billing",
+    "service": "Marketplace",
+    "difficulty": 1,
+    "tags": [
+      "Marketplace",
+      "請求管理",
+      "ドリル"
+    ],
+    "beginnerNote": "調達＝Marketplace。"
+  },
+  {
+    "id": "qd-bil05-4",
+    "question": "一括請求（Consolidated Billing）の利点として正しいものはどれですか。",
+    "choices": [
+      "アカウントごとに割高になる",
+      "請求書が増えて管理が煩雑になる",
+      "割引が一切効かなくなる",
+      "使用量が合算され、ボリューム割引が効きやすくなる"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "使用量の合算でボリューム割引が効きやすくなります。",
+    "wrongChoiceExplanations": {
+      "0": "割高にはなりません。",
+      "1": "むしろ請求は1本化されます。",
+      "2": "割引はむしろ効きやすくなります。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 1,
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "ドリル"
+    ],
+    "beginnerNote": "合算で割引。"
+  },
+  {
+    "id": "qd-bil05-5",
+    "question": "AWS Organizationsの説明として正しいものはどれですか。",
+    "choices": [
+      "複数アカウントを束ね、一括請求とSCPによる統制ができる",
+      "1アカウント内のIAM権限を管理する",
+      "仮想ネットワークを作る",
+      "脅威を検知する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "Organizationsは複数アカウントの請求集約と統制を担います。",
+    "wrongChoiceExplanations": {
+      "1": "1アカウントの権限はIAMです。",
+      "2": "仮想ネットワークはVPCです。",
+      "3": "脅威検知はGuardDutyです。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "ドリル"
+    ],
+    "beginnerNote": "束ねて請求・統制。"
+  },
+  {
+    "id": "qd-bil05-6",
+    "question": "部署ごとに分かれた複数アカウントの請求を1本化し、割引も効かせたいです。最適なのはどれですか。",
+    "choices": [
+      "Cost Explorerで支払う",
+      "AWS Organizationsの一括請求",
+      "各アカウントで個別に支払う",
+      "IAMで請求を管理する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "複数アカウントの請求集約はOrganizationsの一括請求です。",
+    "wrongChoiceExplanations": {
+      "0": "Cost Explorerは分析ツールです。",
+      "2": "個別支払いは割引・管理面で不利です。",
+      "3": "IAMは権限管理で請求集約ではありません。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "ドリル"
+    ],
+    "beginnerNote": "請求集約＝Organizations。"
+  },
+  {
+    "id": "qd-bil05-7",
+    "question": "組織全体で特定の危険な操作を一律に禁止したいです。最適なのはどれですか。",
+    "choices": [
+      "MFAを有効化する",
+      "VPCを分ける",
+      "OrganizationsのSCPで制限する",
+      "各アカウントで個別にIAMを設定する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "組織横断の一律統制はSCP（Organizations）が適します。",
+    "wrongChoiceExplanations": {
+      "0": "MFAは認証強化です。",
+      "1": "VPC分割は統制手段ではありません。",
+      "3": "個別IAMは漏れやすく非効率です。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "一律禁止＝SCP。"
+  },
+  {
+    "id": "qd-bil05-8",
+    "question": "複数アカウントを束ねて請求を1本化するのは AWS ＿＿＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+    "choices": [
+      "IAM",
+      "Budgets",
+      "Config",
+      "Organizations"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "一括請求はOrganizationsです。",
+    "wrongChoiceExplanations": {
+      "0": "IAMは権限管理です。",
+      "1": "Budgetsは予算アラートです。",
+      "2": "Configは設定評価です。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 1,
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "ドリル"
+    ],
+    "beginnerNote": "束ねる＝Organizations。"
+  },
+  {
+    "id": "qd-bil05-9",
+    "question": "複数アカウント共通の上限を定める仕組みは「＿＿＿」です。＿＿＿に入るのはどれですか。",
+    "choices": [
+      "SCP",
+      "ACL",
+      "MFA",
+      "CDN"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "組織全体の統制はSCP（サービスコントロールポリシー）です。",
+    "wrongChoiceExplanations": {
+      "1": "ACLはアクセス制御リストです。",
+      "2": "MFAは多要素認証です。",
+      "3": "CDNは配信網です。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 1,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "ドリル"
+    ],
+    "beginnerNote": "統制＝SCP。"
+  },
+  {
+    "id": "qd-bil05-10",
+    "question": "アカウント管理・一括請求の説明として誤っているものはどれですか。",
+    "choices": [
+      "SCPで統制できる",
+      "一括請求にすると使用量が分割され、割引が効きにくくなる",
+      "複数アカウントを束ねられる",
+      "使用量が合算され割引が効きやすい"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "一括請求では使用量が合算され、むしろ割引が効きやすくなります。",
+    "wrongChoiceExplanations": {
+      "0": "SCPでの統制は正しい説明です。",
+      "2": "複数アカウントを束ねるのは正しい説明です。",
+      "3": "合算で割引が効きやすいのは正しい説明です。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "ドリル"
+    ],
+    "beginnerNote": "合算で割引が効く。"
+  },
+  {
+    "id": "qd-bil05-11",
+    "question": "サービスの組合せとして誤っているものはどれですか。",
+    "choices": [
+      "SCP＝組織全体の統制",
+      "AWS Marketplace＝サードパーティ製品の調達",
+      "AWS IAM＝複数アカウントの一括請求",
+      "AWS Organizations＝複数アカウントの一括請求・統制"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "複数アカウントの一括請求はOrganizationsで、IAMは1アカウント内の権限管理です。",
+    "wrongChoiceExplanations": {
+      "0": "SCP＝統制は正しい組合せです。",
+      "1": "Marketplace＝調達は正しい組合せです。",
+      "3": "Organizations＝一括請求は正しい組合せです。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 2,
+    "tags": [
+      "Organizations",
+      "ドリル"
+    ],
+    "beginnerNote": "一括請求＝Organizations。"
   }
 ]
