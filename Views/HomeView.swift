@@ -17,6 +17,7 @@ struct HomeView: View {
                         continueLessonCard
                         quickActions
                         todaySection
+                        weakAreaCard
                         categorySection
                         roadmapCard
                     }
@@ -203,6 +204,41 @@ struct HomeView: View {
                 Spacer()
                 Image(systemName: "chevron.right").foregroundStyle(Theme.inkSoft).font(.system(size: 13))
             }
+        }
+    }
+
+    // MARK: - 苦手克服のおすすめ（苦手分析連動）
+
+    @ViewBuilder private var weakAreaCard: some View {
+        if let rec = store.weakAreaRecommendation() {
+            NavigationLink(value: HomeRoute.lesson(rec.lesson.id)) {
+                Card {
+                    VStack(alignment: .leading, spacing: Theme.Space.s) {
+                        HStack {
+                            Label("苦手克服のおすすめ", systemImage: "target")
+                                .font(.system(size: 15, weight: .bold)).foregroundStyle(Theme.orange)
+                            Spacer()
+                            Text("\(rec.domain.shortTitle) 正答率 \(Int(rec.rate * 100))%")
+                                .font(.system(size: 12, weight: .semibold))
+                                .foregroundStyle(rec.rate >= 0.7 ? Theme.green : Theme.red)
+                        }
+                        HStack(spacing: Theme.Space.m) {
+                            Image(systemName: rec.domain.systemIcon).foregroundStyle(.white)
+                                .frame(width: 40, height: 40).background(rec.domain.color)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text("\(rec.domain.title)を集中的に固めよう")
+                                    .font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.ink)
+                                    .lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                                Text("「\(rec.lesson.title)」の反復ドリルで基礎から").captionStyle()
+                            }
+                            Spacer(minLength: 0)
+                            Image(systemName: "chevron.right").foregroundStyle(Theme.inkSoft).font(.system(size: 13))
+                        }
+                    }
+                }
+            }
+            .buttonStyle(.plain)
         }
     }
 

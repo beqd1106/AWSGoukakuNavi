@@ -221,6 +221,18 @@ final class StudyStore: ObservableObject {
         return answered.min { (rates[$0] ?? 0) < (rates[$1] ?? 0) }
     }
 
+    /// 苦手克服のおすすめ（最も苦手な分野・その正答率・取り組むべきレッスン）。
+    /// 十分な回答実績（3問以上）がある分野が無ければ nil。
+    func weakAreaRecommendation() -> (domain: ExamDomain, rate: Double, lesson: Lesson)? {
+        guard let domain = weakestDomain() else { return nil }
+        let rate = correctRateByDomain()[domain] ?? 0
+        // その分野の未履修レッスンを優先、無ければ先頭のレッスン
+        let doneIds = Set(((try? context.fetch(FetchDescriptor<LessonProgress>())) ?? []).map(\.lessonId))
+        let lessons = repo.lessons(in: domain)
+        guard let lesson = lessons.first(where: { !doneIds.contains($0.id) }) ?? lessons.first else { return nil }
+        return (domain, rate, lesson)
+    }
+
     // MARK: - 模擬試験結果
 
     func saveMockResult(_ result: MockExamResult) {
