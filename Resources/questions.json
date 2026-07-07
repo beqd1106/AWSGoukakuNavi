@@ -31599,5 +31599,1837 @@
       "ドリル"
     ],
     "beginnerNote": "一括請求＝Organizations。"
+  },
+  {
+    "id": "qm-cc01-1",
+    "question": "季節によって需要が10倍変動する事業を運営しています。オンプレミスで最大需要に合わせて設備を購入する場合と比べた、クラウドの最大の利点はどれですか。",
+    "choices": [
+      "設備を資産として長期保有できる",
+      "社内に物理サーバーを設置できる",
+      "通信費が完全に無料になる",
+      "需要に応じて増減でき、使った分だけ支払える"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "需要変動が大きいほど、必要な分だけ増減し使った分だけ払えるクラウドの利点が効きます。",
+    "wrongChoiceExplanations": {
+      "0": "資産保有は主眼ではなく、むしろ大型投資を避けられるのが利点です。",
+      "1": "物理設置はオンプレの特徴です。",
+      "2": "通信費が無料になるわけではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 3,
+    "tags": [
+      "クラウドの価値",
+      "変動費",
+      "中級"
+    ],
+    "beginnerNote": "変動需要こそクラウド有利。"
+  },
+  {
+    "id": "qm-cc01-2",
+    "question": "資金の乏しいスタートアップが、新サービスをできるだけ早く・小さな初期費用で立ち上げたいです。最も適した選択はどれですか。",
+    "choices": [
+      "クラウドで小さく始め、必要に応じて拡張する",
+      "自社データセンターを新設する",
+      "大型サーバーを一括購入する",
+      "3年分の利用料を前払いする"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "小さな初期投資と俊敏な調達ができるクラウドが、素早い立ち上げに適します。",
+    "wrongChoiceExplanations": {
+      "1": "DC新設は大きな初期投資が必要です。",
+      "2": "一括購入はオンプレの発想です。",
+      "3": "前払いは素早い立ち上げの本質ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 3,
+    "tags": [
+      "クラウドの価値",
+      "俊敏性",
+      "中級"
+    ],
+    "beginnerNote": "小さく素早く＝クラウド。"
+  },
+  {
+    "id": "qm-cc01-3",
+    "question": "経営層に「クラウドは電気の使い方に似ている」と説明します。この例えが最もよく表すのはどれですか。",
+    "choices": [
+      "一括前払いの契約",
+      "使った分だけ支払う従量課金",
+      "毎月固定額の支払い",
+      "無料で無制限に使えること"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "電気のように使った分だけ払うのが従量課金で、クラウド料金の基本です。",
+    "wrongChoiceExplanations": {
+      "0": "前払い前提でもありません。",
+      "2": "固定額ではありません。",
+      "3": "無料無制限ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "クラウドの価値",
+    "difficulty": 3,
+    "tags": [
+      "クラウドの価値",
+      "従量課金",
+      "中級"
+    ],
+    "beginnerNote": "電気の例え＝従量課金。"
+  },
+  {
+    "id": "qm-cc03b-1",
+    "question": "法規制で一部の機微データは社内に保持する必要がありますが、新機能はクラウドの俊敏性を活かして開発したいです。最適な形態はどれですか。",
+    "choices": [
+      "オンプレミスのみ",
+      "形態は関係ない",
+      "ハイブリッド",
+      "全面クラウド（オールイン）"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "残すべきものは社内、新機能はクラウド、という併用はハイブリッドが適します。",
+    "wrongChoiceExplanations": {
+      "0": "オンプレのみではクラウドの利点を得られません。",
+      "1": "形態選択は重要です。",
+      "3": "全面クラウドは社内保持の要件に反します。"
+    },
+    "domain": "cloudConcepts",
+    "service": "ハイブリッド",
+    "difficulty": 3,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "中級"
+    ],
+    "beginnerNote": "一部社内＝ハイブリッド。"
+  },
+  {
+    "id": "qm-cc03b-2",
+    "question": "大規模な既存基幹システムがあり、一度に全部はクラウドへ移せません。段階的に移行を進めたい場合に適した形態はどれですか。",
+    "choices": [
+      "即時に全面クラウドへ一括移行",
+      "オンプレのまま何もしない",
+      "新規アカウントを作り直す",
+      "ハイブリッド（社内とクラウドを接続して段階移行）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "段階移行では、社内とクラウドをつなぐハイブリッドが現実的です。",
+    "wrongChoiceExplanations": {
+      "0": "一括移行はリスクが高くなります。",
+      "1": "何もしなければ移行は進みません。",
+      "2": "アカウント作り直しは解決策ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "ハイブリッド",
+    "difficulty": 3,
+    "tags": [
+      "デプロイモデル",
+      "ハイブリッド",
+      "中級"
+    ],
+    "beginnerNote": "段階移行＝ハイブリッド。"
+  },
+  {
+    "id": "qm-cc03b-3",
+    "question": "ハイブリッド構成で、オンプレミスとAWSをインターネットを介さず安定・低遅延・大容量で常時接続したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Direct Connect",
+      "サイト間VPN",
+      "Amazon CloudFront",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "安定・大容量・低遅延の専用線接続はDirect Connectが適します。",
+    "wrongChoiceExplanations": {
+      "1": "VPNはインターネット経由で安定性は劣ります。",
+      "2": "CloudFrontはCDNです。",
+      "3": "S3はストレージです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "ハイブリッド",
+    "difficulty": 3,
+    "tags": [
+      "デプロイモデル",
+      "Direct Connect",
+      "中級"
+    ],
+    "beginnerNote": "安定接続＝Direct Connect。"
+  },
+  {
+    "id": "qm-cc04b-1",
+    "question": "重要な本番システムを単一のアベイラビリティーゾーンだけで運用しています。可用性上の主な弱点と対策として正しいものはどれですか。",
+    "choices": [
+      "何も問題はなく対策は不要",
+      "単一障害点になっており、複数AZへ分散すべき",
+      "通信が無料でないことが弱点で、契約変更が必要",
+      "暗号化されていないことが弱点で、鍵を作るべき"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "単一AZは単一障害点で、AZ障害時に全停止します。複数AZ配置が有効です。",
+    "wrongChoiceExplanations": {
+      "0": "単一AZは可用性上の弱点です。",
+      "2": "可用性の弱点は料金ではありません。",
+      "3": "可用性の弱点は暗号化の有無ではありません。"
+    },
+    "domain": "cloudConcepts",
+    "service": "アベイラビリティーゾーン",
+    "difficulty": 3,
+    "tags": [
+      "グローバルインフラ",
+      "アベイラビリティーゾーン",
+      "中級"
+    ],
+    "beginnerNote": "単一AZ＝単一障害点。"
+  },
+  {
+    "id": "qm-cc04b-2",
+    "question": "日本の利用者向けに低遅延で提供し、かつデータを国内に保持する必要があります。リージョン選定でまず考慮すべきことはどれですか。",
+    "choices": [
+      "リージョンは料金だけで選ぶ",
+      "エッジロケーションだけで完結させる",
+      "利用者に近く、データ所在地の要件を満たすリージョンを選ぶ",
+      "最も遠いリージョンを選ぶ"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "低遅延（近さ）とデータ所在地（法令）を満たすリージョン選定が重要です。",
+    "wrongChoiceExplanations": {
+      "0": "料金だけで選ぶと要件を満たせないことがあります。",
+      "1": "運用基盤はリージョンに置く必要があります。",
+      "3": "遠いリージョンは遅延が増えます。"
+    },
+    "domain": "cloudConcepts",
+    "service": "リージョン選定",
+    "difficulty": 3,
+    "tags": [
+      "グローバルインフラ",
+      "リージョン選定",
+      "中級"
+    ],
+    "beginnerNote": "近さ＋データ所在地。"
+  },
+  {
+    "id": "qm-cc04b-3",
+    "question": "世界中の利用者へ画像や動画を低遅延で届け、オリジンサーバーの負荷も下げたいです。活用すべきインフラ／サービスはどれですか。",
+    "choices": [
+      "単一リージョンのEC2からの直接配信",
+      "Direct Connect",
+      "Amazon RDS",
+      "エッジロケーションから配信するCloudFront（CDN）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "エッジから配信するCDN（CloudFront）が低遅延化とオリジン負荷軽減に有効です。",
+    "wrongChoiceExplanations": {
+      "0": "単一拠点からの直接配信は遠方で遅くなります。",
+      "1": "Direct Connectはオンプレ接続用です。",
+      "2": "RDSはデータベースです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "エッジ",
+    "difficulty": 3,
+    "tags": [
+      "グローバルインフラ",
+      "エッジ",
+      "中級"
+    ],
+    "beginnerNote": "世界配信＝エッジ/CloudFront。"
+  },
+  {
+    "id": "qm-cc07b-1",
+    "question": "全社的なクラウド移行にあたり、従業員のスキル再教育や役割の見直しが大きな課題です。AWS CAFのどの視点で扱いますか。",
+    "choices": [
+      "人材（People）",
+      "プラットフォーム",
+      "セキュリティ",
+      "オペレーション"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "人・組織・スキルの準備は人材（People）の視点で扱います。",
+    "wrongChoiceExplanations": {
+      "1": "プラットフォームは技術基盤の視点です。",
+      "2": "セキュリティは保護の視点です。",
+      "3": "オペレーションは運用の視点です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 3,
+    "tags": [
+      "CAF",
+      "中級"
+    ],
+    "beginnerNote": "再教育＝People。"
+  },
+  {
+    "id": "qm-cc07b-2",
+    "question": "「組織全体の移行の進め方」を整理する枠組みと、「個々のシステム設計の良し悪し」を点検する枠組みを使い分けたいです。正しい組合せはどれですか。",
+    "choices": [
+      "どちらもWell-Architected",
+      "移行の進め方＝CAF、設計の点検＝Well-Architected",
+      "移行＝Well-Architected、設計＝CAF",
+      "どちらもCAF"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "CAFは組織移行の指針、Well-Architectedは設計のチェックリストです。",
+    "wrongChoiceExplanations": {
+      "0": "移行の枠組みはCAFです。",
+      "2": "役割が逆です。",
+      "3": "設計点検はWell-Architectedです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 3,
+    "tags": [
+      "CAF",
+      "Well-Architected",
+      "中級"
+    ],
+    "beginnerNote": "移行＝CAF、設計＝Well-Architected。"
+  },
+  {
+    "id": "qm-cc07b-3",
+    "question": "CAFの視点のうち、技術面（基盤・保護・運用）に関わる後半3つに含まれるのはどれですか。",
+    "choices": [
+      "EC2・S3・RDS",
+      "可用性・信頼性・コスト最適化",
+      "プラットフォーム・セキュリティ・オペレーション",
+      "ビジネス・人材・ガバナンス"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "後半3つ（プラットフォーム・セキュリティ・オペレーション）が技術寄りの視点です。",
+    "wrongChoiceExplanations": {
+      "0": "サービス名は視点ではありません。",
+      "1": "Well-Architectedの柱とは異なります。",
+      "3": "前半3つは経営・組織寄りです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "CAF",
+    "difficulty": 3,
+    "tags": [
+      "CAF",
+      "中級"
+    ],
+    "beginnerNote": "技術寄り＝後半3視点。"
+  },
+  {
+    "id": "qm-cc08b-1",
+    "question": "既存アプリを、まずは最短でクラウドへ移し、最適化は移行後に検討したいです。最適な移行方式はどれですか。",
+    "choices": [
+      "リファクタリング",
+      "リタイア",
+      "リテイン",
+      "リホスト（リフト＆シフト）"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "速さ優先なら手をかけずそのまま移すリホストが適します。",
+    "wrongChoiceExplanations": {
+      "0": "リファクタリングは作り替えで時間がかかります。",
+      "1": "リタイアは廃止です。",
+      "2": "リテインは残す判断です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "リホスト",
+    "difficulty": 3,
+    "tags": [
+      "移行",
+      "リホスト",
+      "中級"
+    ],
+    "beginnerNote": "速さ優先＝リホスト。"
+  },
+  {
+    "id": "qm-cc08b-2",
+    "question": "自社運用してきたメールシステムをやめ、SaaSに切り替えることにしました。この移行方式はどれですか。",
+    "choices": [
+      "リパーチェス（買い替え）",
+      "リホスト",
+      "リファクタリング",
+      "リテイン"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "自社運用をやめてSaaS等へ買い替えるのがリパーチェスです。",
+    "wrongChoiceExplanations": {
+      "1": "リホストはそのまま移します。",
+      "2": "リファクタリングは作り替えです。",
+      "3": "リテインは残す判断です。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 3,
+    "tags": [
+      "移行",
+      "中級"
+    ],
+    "beginnerNote": "SaaSへ買い替え＝リパーチェス。"
+  },
+  {
+    "id": "qm-cc08b-3",
+    "question": "クラウドの利点を最大限に引き出すため、アプリを根本から作り替える方針にしました。この移行方式はどれですか。",
+    "choices": [
+      "リタイア",
+      "リファクタリング",
+      "リホスト",
+      "リパーチェス"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "クラウド最適化を優先して作り替えるのがリファクタリングです。",
+    "wrongChoiceExplanations": {
+      "0": "リタイアは廃止です。",
+      "2": "リホストは手をかけません。",
+      "3": "リパーチェスは買い替えです。"
+    },
+    "domain": "cloudConcepts",
+    "service": "移行",
+    "difficulty": 3,
+    "tags": [
+      "移行",
+      "中級"
+    ],
+    "beginnerNote": "最適化優先＝リファクタリング。"
+  },
+  {
+    "id": "qm-sec02b-1",
+    "question": "EC2上のアプリからS3へアクセスさせます。長期的なアクセスキーを配布せず、最も安全に権限を渡す方法はどれですか。",
+    "choices": [
+      "ルートユーザーの認証情報を使う",
+      "S3バケットを公開する",
+      "EC2にIAMロールを割り当てる",
+      "アクセスキーをアプリの設定ファイルに保存する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "サービス間連携はIAMロールが基本で、鍵を配らず一時認証で権限を渡せます。",
+    "wrongChoiceExplanations": {
+      "0": "ルート利用は避けるべきです。",
+      "1": "公開はアクセス制御になりません。",
+      "3": "キーの保存は漏洩リスクがあります。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 3,
+    "tags": [
+      "IAM",
+      "ロール",
+      "中級"
+    ],
+    "beginnerNote": "サーバー→サービス＝ロール。"
+  },
+  {
+    "id": "qm-sec02b-2",
+    "question": "新しく参加した10名の開発者に、同じ権限セットを効率よく・一貫して付与したいです。最適な方法はどれですか。",
+    "choices": [
+      "1人ずつ個別に同じ権限を設定する",
+      "全員でルートユーザーを共有する",
+      "共通のアクセスキーを配る",
+      "IAMグループにポリシーを付け、10名を追加する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "共通権限はグループにまとめて配ると効率的で一貫します。",
+    "wrongChoiceExplanations": {
+      "0": "個別設定は手間とミスが増えます。",
+      "1": "ルート共有は厳禁です。",
+      "2": "キー共有は不適切です。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 3,
+    "tags": [
+      "IAM",
+      "中級"
+    ],
+    "beginnerNote": "共通権限＝グループ。"
+  },
+  {
+    "id": "qm-sec02b-3",
+    "question": "IAMの要素を使い分けます。「一時的に権限を借りてサービス間で連携する」目的に最も適したものはどれですか。",
+    "choices": [
+      "ロール",
+      "グループ",
+      "ユーザー",
+      "アクセスキー"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "一時的な権限付与・サービス連携はロールが適します。",
+    "wrongChoiceExplanations": {
+      "1": "グループは人の権限のまとめ配布向けです。",
+      "2": "ユーザーは恒久的なIDです。",
+      "3": "アクセスキーは配布・漏洩リスクがあります。"
+    },
+    "domain": "security",
+    "service": "IAM",
+    "difficulty": 3,
+    "tags": [
+      "IAM",
+      "ロール",
+      "中級"
+    ],
+    "beginnerNote": "一時権限・連携＝ロール。"
+  },
+  {
+    "id": "qm-sec04b-1",
+    "question": "新しいAWSアカウントのルートユーザーを保護します。最初に行うべき最優先の対応はどれですか。",
+    "choices": [
+      "毎日ルートユーザーで作業する",
+      "MFAを有効化し、日常はIAMユーザーで作業する",
+      "ルートのアクセスキーを複数作成する",
+      "ルートのパスワードをチームで共有する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "ルートにはMFAを有効化し、日常は権限を絞ったIAMユーザーで作業します。",
+    "wrongChoiceExplanations": {
+      "0": "日常のルート作業は避けます。",
+      "2": "ルートのアクセスキーは作らない・削除が原則です。",
+      "3": "共有は厳禁です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 3,
+    "tags": [
+      "ルートユーザー",
+      "MFA",
+      "中級"
+    ],
+    "beginnerNote": "ルートはMFA＋しまう。"
+  },
+  {
+    "id": "qm-sec04b-2",
+    "question": "次のうち、ルートユーザーでしか実行できない作業として正しいものはどれですか。",
+    "choices": [
+      "S3へのファイルアップロード",
+      "IAMユーザーの作成",
+      "AWSアカウントの解約",
+      "EC2インスタンスの起動"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "アカウント解約など一部の操作はルートユーザーでしか行えません。",
+    "wrongChoiceExplanations": {
+      "0": "S3アップロードはIAMユーザーで可能です。",
+      "1": "IAMユーザー作成もIAMで可能です。",
+      "3": "EC2起動はIAMユーザーで可能です。"
+    },
+    "domain": "security",
+    "service": "ルートユーザー",
+    "difficulty": 3,
+    "tags": [
+      "ルートユーザー",
+      "中級"
+    ],
+    "beginnerNote": "解約等＝ルート専用。"
+  },
+  {
+    "id": "qm-sec04b-3",
+    "question": "パスワードが漏洩しても不正ログインされにくくしたいです。最も効果的な対策はどれですか。",
+    "choices": [
+      "パスワードを少し長くする",
+      "アクセスキーを追加で発行する",
+      "バケットを公開する",
+      "MFA（多要素認証）を有効化する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "MFAは2つ目の要素を要求するため、パスワード漏洩時のリスクを大きく下げます。",
+    "wrongChoiceExplanations": {
+      "0": "長くするだけでは漏洩時の防御になりません。",
+      "1": "キー発行は防御になりません。",
+      "2": "公開は逆にリスクです。"
+    },
+    "domain": "security",
+    "service": "MFA",
+    "difficulty": 3,
+    "tags": [
+      "MFA",
+      "中級"
+    ],
+    "beginnerNote": "漏洩対策＝MFA。"
+  },
+  {
+    "id": "qm-sec05b-1",
+    "question": "社員が複数のAWSアカウントに、一度のログインで安全にアクセスできるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "IAM Identity Center",
+      "Amazon Cognito",
+      "AWS STS",
+      "AWS Directory Serviceのみ"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "社員向けの複数アカウントのシングルサインオンはIAM Identity Centerが適します。",
+    "wrongChoiceExplanations": {
+      "1": "Cognitoはアプリ利用者向けです。",
+      "2": "STSは一時認証情報の発行です。",
+      "3": "Directory ServiceはAD連携で単体ではSSOの主目的と異なります。"
+    },
+    "domain": "security",
+    "service": "Identity Center",
+    "difficulty": 3,
+    "tags": [
+      "Identity Center",
+      "シングルサインオン",
+      "中級"
+    ],
+    "beginnerNote": "社員SSO＝Identity Center。"
+  },
+  {
+    "id": "qm-sec05b-2",
+    "question": "開発中のモバイルアプリに、利用者（エンドユーザー）のサインアップとログイン機能を追加したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Config",
+      "Amazon Cognito",
+      "IAM Identity Center",
+      "AWS Organizations"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "アプリ利用者の認証・サインアップはCognitoが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "2": "Identity Centerは社員向けです。",
+      "3": "Organizationsはアカウント統制です。"
+    },
+    "domain": "security",
+    "service": "Cognito",
+    "difficulty": 3,
+    "tags": [
+      "Cognito",
+      "中級"
+    ],
+    "beginnerNote": "アプリ利用者＝Cognito。"
+  },
+  {
+    "id": "qm-sec05b-3",
+    "question": "社内で使っているMicrosoft Active DirectoryをAWSと連携させ、既存のIDを活かしたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS STS",
+      "Amazon Macie",
+      "AWS Directory Service",
+      "Amazon Cognito"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "既存のADとの連携はDirectory Serviceが適します。",
+    "wrongChoiceExplanations": {
+      "0": "STSは一時認証です。",
+      "1": "MacieはS3機微データ検出です。",
+      "3": "Cognitoはアプリ利用者向けです。"
+    },
+    "domain": "security",
+    "service": "Directory Service",
+    "difficulty": 3,
+    "tags": [
+      "Directory Service",
+      "中級"
+    ],
+    "beginnerNote": "AD連携＝Directory Service。"
+  },
+  {
+    "id": "qm-sec07b-1",
+    "question": "アカウントに対する不審なAPI呼び出しや異常な通信を、ログから自動で継続的に検知したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Inspector",
+      "Amazon Macie",
+      "AWS Artifact",
+      "Amazon GuardDuty"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "挙動から脅威を継続検知するのはGuardDutyです。",
+    "wrongChoiceExplanations": {
+      "0": "Inspectorは脆弱性診断です。",
+      "1": "Macieは機微データ検出です。",
+      "2": "Artifactは監査資料です。"
+    },
+    "domain": "security",
+    "service": "GuardDuty",
+    "difficulty": 3,
+    "tags": [
+      "GuardDuty",
+      "脅威検知",
+      "中級"
+    ],
+    "beginnerNote": "挙動検知＝GuardDuty。"
+  },
+  {
+    "id": "qm-sec07b-2",
+    "question": "S3バケットに個人情報などの機微データが誤って保存されていないかを自動で発見したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Macie",
+      "Amazon GuardDuty",
+      "Amazon Inspector",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "S3内の機微データ発見はMacieが適します。",
+    "wrongChoiceExplanations": {
+      "1": "GuardDutyは挙動検知です。",
+      "2": "Inspectorは脆弱性診断です。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "security",
+    "service": "Macie",
+    "difficulty": 3,
+    "tags": [
+      "Macie",
+      "脅威検知",
+      "中級"
+    ],
+    "beginnerNote": "S3の個人情報＝Macie。"
+  },
+  {
+    "id": "qm-sec07b-3",
+    "question": "EC2やコンテナイメージに既知の脆弱性が残っていないかを自動でスキャンしたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Config",
+      "Amazon Inspector",
+      "Amazon Macie",
+      "Amazon GuardDuty"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "脆弱性の自動スキャンはInspectorが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Configは設定評価です。",
+      "2": "Macieは機微データ検出です。",
+      "3": "GuardDutyは挙動検知です。"
+    },
+    "domain": "security",
+    "service": "Inspector",
+    "difficulty": 3,
+    "tags": [
+      "Inspector",
+      "脅威検知",
+      "中級"
+    ],
+    "beginnerNote": "脆弱性スキャン＝Inspector。"
+  },
+  {
+    "id": "qm-sec09b-1",
+    "question": "誰がいつ設定を変更したのかを後から調査できるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Shieldを有効にする",
+      "VPCを分割する",
+      "AWS CloudTrailで操作履歴を記録する",
+      "Amazon CloudWatchでCPUを監視する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "誰が何をしたかの記録はCloudTrail（操作履歴）が適します。",
+    "wrongChoiceExplanations": {
+      "0": "ShieldはDDoS対策です。",
+      "1": "VPC分割は監査手段ではありません。",
+      "3": "CloudWatchはメトリクス監視で操作者特定には不向きです。"
+    },
+    "domain": "security",
+    "service": "CloudTrail",
+    "difficulty": 3,
+    "tags": [
+      "CloudTrail",
+      "監査",
+      "中級"
+    ],
+    "beginnerNote": "操作者の調査＝CloudTrail。"
+  },
+  {
+    "id": "qm-sec09b-2",
+    "question": "「S3バケットは必ず暗号化する」というルールに違反した設定がないか、継続的に評価したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS CloudTrailで記録する",
+      "AWS WAFで遮断する",
+      "AWS KMSで鍵を作る",
+      "AWS Configのルールで評価する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "設定の準拠を継続評価するのはConfigです。",
+    "wrongChoiceExplanations": {
+      "0": "CloudTrailは操作の記録で、継続的な準拠評価が主目的ではありません。",
+      "1": "WAFはWeb攻撃遮断です。",
+      "2": "KMSは鍵管理です。"
+    },
+    "domain": "security",
+    "service": "Config",
+    "difficulty": 3,
+    "tags": [
+      "Config",
+      "中級"
+    ],
+    "beginnerNote": "準拠の継続評価＝Config。"
+  },
+  {
+    "id": "qm-sec09b-3",
+    "question": "複数の部署アカウントに対し、特定の危険な操作を組織全体で一律に禁止したいです。最適なのはどれですか。",
+    "choices": [
+      "OrganizationsのSCPで制限する",
+      "各アカウントで個別にIAMを設定して回る",
+      "AWS Shieldを有効にする",
+      "Route 53で制御する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "組織横断の一律統制はSCP（Organizations）が適します。",
+    "wrongChoiceExplanations": {
+      "1": "個別IAMは漏れやすく非効率です。",
+      "2": "ShieldはDDoS対策です。",
+      "3": "Route 53はDNSです。"
+    },
+    "domain": "security",
+    "service": "Organizations",
+    "difficulty": 3,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "中級"
+    ],
+    "beginnerNote": "一律統制＝SCP。"
+  },
+  {
+    "id": "qm-sec10b-1",
+    "question": "監査対応で、AWSが各種基準に準拠していることを示す第三者監査レポート（SOC等）を提出する必要があります。まず参照すべきなのはどれですか。",
+    "choices": [
+      "Amazon GuardDuty",
+      "AWS Artifact",
+      "Amazon Macie",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "AWS側の準拠証明（監査レポート）はArtifactから入手します。",
+    "wrongChoiceExplanations": {
+      "0": "GuardDutyは脅威検知です。",
+      "2": "MacieはS3機微データ検出です。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "security",
+    "service": "Artifact",
+    "difficulty": 3,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "中級"
+    ],
+    "beginnerNote": "準拠証明＝Artifact。"
+  },
+  {
+    "id": "qm-sec10b-2",
+    "question": "コンプライアンス（法令順守）における責任分担の考え方として、最も適切なものはどれですか。",
+    "choices": [
+      "すべて利用者が単独で対応する",
+      "コンプライアンスは不要",
+      "AWSは基盤の認証を取得し、利用者は自分の使い方・設定が規制に合うか担保する",
+      "AWSがすべての法令順守を保証する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "コンプライアンスも責任共有で、AWSと利用者が役割を分担します。",
+    "wrongChoiceExplanations": {
+      "0": "利用者単独でもありません。",
+      "1": "法令順守は必要です。",
+      "3": "AWSがすべてを保証するわけではありません。"
+    },
+    "domain": "security",
+    "service": "コンプライアンス",
+    "difficulty": 3,
+    "tags": [
+      "コンプライアンス",
+      "責任共有モデル",
+      "中級"
+    ],
+    "beginnerNote": "コンプラも責任共有。"
+  },
+  {
+    "id": "qm-sec10b-3",
+    "question": "AWS Artifactの主な用途として正しいものはどれですか。",
+    "choices": [
+      "脅威の挙動を検知する",
+      "脆弱性を診断する",
+      "暗号鍵を管理する",
+      "AWSが取得した監査レポートやコンプライアンス文書を入手する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "Artifactは監査対応でAWS側の証拠（レポート）を入手する場所です。",
+    "wrongChoiceExplanations": {
+      "0": "挙動検知はGuardDutyです。",
+      "1": "脆弱性診断はInspectorです。",
+      "2": "鍵管理はKMSです。"
+    },
+    "domain": "security",
+    "service": "Artifact",
+    "difficulty": 3,
+    "tags": [
+      "Artifact",
+      "コンプライアンス",
+      "中級"
+    ],
+    "beginnerNote": "監査資料の入手＝Artifact。"
+  },
+  {
+    "id": "qm-tec01b-1",
+    "question": "MySQL互換のデータベースを使いたいが、バックアップやパッチなどの運用管理はAWSに任せたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon RDS",
+      "EC2にMySQLを自前構築",
+      "Amazon S3",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "SQLデータベースの運用をAWSに任せられるのはRDSです。",
+    "wrongChoiceExplanations": {
+      "1": "EC2への自前構築は運用管理が必要です。",
+      "2": "S3はストレージです。",
+      "3": "DynamoDBはNoSQLです。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 3,
+    "tags": [
+      "コンピューティング",
+      "RDS",
+      "中級"
+    ],
+    "beginnerNote": "管理を任せるSQL＝RDS。"
+  },
+  {
+    "id": "qm-tec01b-2",
+    "question": "サービスを役割で選びます。「サーバーを意識せず、イベント時だけ短時間コードを実行し、使った分だけ課金」に最も合うのはどれですか。",
+    "choices": [
+      "Amazon VPC",
+      "AWS Lambda",
+      "Amazon EC2",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "イベント駆動・短時間・従量課金はサーバーレスのLambdaが適します。",
+    "wrongChoiceExplanations": {
+      "0": "VPCはネットワークです。",
+      "2": "EC2は常時起動の仮想サーバーです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 3,
+    "tags": [
+      "コンピューティング",
+      "Lambda",
+      "中級"
+    ],
+    "beginnerNote": "イベント駆動＝Lambda。"
+  },
+  {
+    "id": "qm-tec01b-3",
+    "question": "大量アクセスに自動で対応し、ミリ秒で応答するキー・バリュー型のデータストアが必要です。最適なのはどれですか。",
+    "choices": [
+      "Amazon Redshift",
+      "Amazon S3",
+      "Amazon DynamoDB",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "超高速・自動スケールのキー・バリューNoSQLはDynamoDBです。",
+    "wrongChoiceExplanations": {
+      "0": "Redshiftは分析用です。",
+      "1": "S3はストレージです。",
+      "3": "RDSはSQLでスケール特性が異なります。"
+    },
+    "domain": "technology",
+    "service": "コンピューティング",
+    "difficulty": 3,
+    "tags": [
+      "コンピューティング",
+      "DynamoDB",
+      "中級"
+    ],
+    "beginnerNote": "高速・自動スケール＝DynamoDB。"
+  },
+  {
+    "id": "qm-tec04b-1",
+    "question": "複数のEC2から同じファイル群を同時に読み書きして共有したいです。最適なストレージはどれですか。",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3 Glacier",
+      "Amazon DynamoDB",
+      "Amazon EFS"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "複数サーバーからの同時共有はファイルストレージのEFSが適します。",
+    "wrongChoiceExplanations": {
+      "0": "EBSは基本1台に接続する専用ディスクです。",
+      "1": "Glacierはアーカイブです。",
+      "2": "DynamoDBはNoSQLです。"
+    },
+    "domain": "technology",
+    "service": "EFS",
+    "difficulty": 3,
+    "tags": [
+      "ストレージ",
+      "EFS",
+      "中級"
+    ],
+    "beginnerNote": "同時共有＝EFS。"
+  },
+  {
+    "id": "qm-tec04b-2",
+    "question": "1台のEC2のOSやデータを置く、そのインスタンス専用の仮想ディスクが必要です。最適なのはどれですか。",
+    "choices": [
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon S3",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "EC2専用のブロックストレージはEBSです。",
+    "wrongChoiceExplanations": {
+      "1": "EFSは複数から共有するファイルストレージです。",
+      "2": "S3はオブジェクトストレージです。",
+      "3": "RDSはデータベースです。"
+    },
+    "domain": "technology",
+    "service": "EBS",
+    "difficulty": 3,
+    "tags": [
+      "ストレージ",
+      "EBS",
+      "中級"
+    ],
+    "beginnerNote": "EC2専用ディスク＝EBS。"
+  },
+  {
+    "id": "qm-tec04b-3",
+    "question": "社内サーバーのバックアップを、既存の使い勝手のままAWS（S3等）へ保存できるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon SNS",
+      "AWS Storage Gateway",
+      "AWS Lambda",
+      "Amazon EC2"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "オンプレとクラウドストレージの橋渡しはStorage Gatewayが適します。",
+    "wrongChoiceExplanations": {
+      "0": "SNSは通知です。",
+      "2": "Lambdaはサーバーレス実行です。",
+      "3": "EC2は仮想サーバーです。"
+    },
+    "domain": "technology",
+    "service": "Storage Gateway",
+    "difficulty": 3,
+    "tags": [
+      "ストレージ",
+      "Storage Gateway",
+      "中級"
+    ],
+    "beginnerNote": "オンプレ→S3＝Storage Gateway。"
+  },
+  {
+    "id": "qm-tec07b-1",
+    "question": "外部公開するWebサーバーと、外部に晒したくないDBサーバーを1つのVPC内で安全に分離したいです。適切な配置はどれですか。",
+    "choices": [
+      "両方ともプライベートサブネットに置く",
+      "サブネットを分けない",
+      "Webはパブリックサブネット、DBはプライベートサブネットに置く",
+      "両方ともパブリックサブネットに置く"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "公開が必要なものはパブリック、内部専用はプライベートに分けて配置します。",
+    "wrongChoiceExplanations": {
+      "0": "Webも内部専用だと外部提供できません。",
+      "1": "分けないとセキュリティが低下します。",
+      "3": "DBを公開に置くのは危険です。"
+    },
+    "domain": "technology",
+    "service": "VPC",
+    "difficulty": 3,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "中級"
+    ],
+    "beginnerNote": "公開/内部でサブネット分離。"
+  },
+  {
+    "id": "qm-tec07b-2",
+    "question": "プライベートサブネットの内部サーバーから、外部の更新サーバーへ通信させたいが、外部から内部へは入らせたくないです。最適なのはどれですか。",
+    "choices": [
+      "インターネットゲートウェイに直接接続する",
+      "S3バケットを公開する",
+      "Route 53を使う",
+      "NATゲートウェイを使う"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "NATゲートウェイなら内部から外へは出られ、外からは入れません。",
+    "wrongChoiceExplanations": {
+      "0": "IGW直結は外部からの到達を許してしまいます。",
+      "1": "バケット公開は無関係で危険です。",
+      "2": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "ネットワーク",
+    "difficulty": 3,
+    "tags": [
+      "VPC",
+      "ネットワーク",
+      "中級"
+    ],
+    "beginnerNote": "外に出るだけ＝NAT。"
+  },
+  {
+    "id": "qm-tec07b-3",
+    "question": "独自ドメインでサービスを公開し、ドメイン名からIPへの名前解決も設定したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Route 53",
+      "Amazon VPC",
+      "Amazon EBS",
+      "Amazon SQS"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "ドメイン登録・DNS設定はRoute 53が担います。",
+    "wrongChoiceExplanations": {
+      "1": "VPCはネットワークです。",
+      "2": "EBSはディスクです。",
+      "3": "SQSはキューです。"
+    },
+    "domain": "technology",
+    "service": "Route 53",
+    "difficulty": 3,
+    "tags": [
+      "Route 53",
+      "DNS",
+      "中級"
+    ],
+    "beginnerNote": "ドメイン/DNS＝Route 53。"
+  },
+  {
+    "id": "qm-tec10b-1",
+    "question": "EC2のCPU使用率が一定を超えたら、担当者にメールで通知したいです。最適なのはどれですか。",
+    "choices": [
+      "Route 53を設定する",
+      "CloudWatchアラームで通知する",
+      "CloudTrailの履歴を確認する",
+      "CloudFormationを実行する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "しきい値超過の通知はCloudWatchアラームが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Route 53はDNSです。",
+      "2": "CloudTrailは操作記録です。",
+      "3": "CloudFormationはIaCです。"
+    },
+    "domain": "technology",
+    "service": "CloudWatch",
+    "difficulty": 3,
+    "tags": [
+      "CloudWatch",
+      "監視",
+      "中級"
+    ],
+    "beginnerNote": "しきい値通知＝CloudWatch。"
+  },
+  {
+    "id": "qm-tec10b-2",
+    "question": "検証用と本番用で、まったく同じ構成の環境を何度でも正確に作成できるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "スクリーンショットを見ながら真似る",
+      "口頭で手順を伝える",
+      "CloudFormationのテンプレートで自動構築する",
+      "毎回手作業で環境を作る"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "テンプレートによる自動構築（IaC）で再現性を確保できます。",
+    "wrongChoiceExplanations": {
+      "0": "スクショの模倣は不正確です。",
+      "1": "口頭伝達は再現性が低いです。",
+      "3": "手作業はミスが生じます。"
+    },
+    "domain": "technology",
+    "service": "CloudFormation",
+    "difficulty": 3,
+    "tags": [
+      "CloudFormation",
+      "IaC",
+      "中級"
+    ],
+    "beginnerNote": "再現性＝CloudFormation。"
+  },
+  {
+    "id": "qm-tec10b-3",
+    "question": "数百台のEC2に対し、OSパッチの適用や設定変更をまとめて実行したいです。最適なのはどれですか。",
+    "choices": [
+      "1台ずつ手動でログインする",
+      "Amazon CloudFront",
+      "Amazon Route 53",
+      "AWS Systems Manager"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "多数のサーバー運用の一括実行はSystems Managerが適します。",
+    "wrongChoiceExplanations": {
+      "0": "手動は非効率でミスが増えます。",
+      "1": "CloudFrontはCDNです。",
+      "2": "Route 53はDNSです。"
+    },
+    "domain": "technology",
+    "service": "Systems Manager",
+    "difficulty": 3,
+    "tags": [
+      "Systems Manager",
+      "中級"
+    ],
+    "beginnerNote": "一括運用＝Systems Manager。"
+  },
+  {
+    "id": "qm-tec11b-1",
+    "question": "注文が急増しても取りこぼさないよう、処理をいったんためて、受け手が自分のペースで順に捌けるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon SQSでキューにためる",
+      "Amazon SNSで即時に全配信する",
+      "API Gatewayだけで処理する",
+      "EBSに保存する"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "処理の波を吸収してためるにはSQSが適します。",
+    "wrongChoiceExplanations": {
+      "1": "SNSは一斉配信で、順次処理のためる用途とは異なります。",
+      "2": "API Gatewayは窓口で処理待ちの吸収はしません。",
+      "3": "EBSはディスクです。"
+    },
+    "domain": "technology",
+    "service": "SQS",
+    "difficulty": 3,
+    "tags": [
+      "SQS",
+      "疎結合",
+      "中級"
+    ],
+    "beginnerNote": "波の吸収＝SQS。"
+  },
+  {
+    "id": "qm-tec11b-2",
+    "question": "あるイベントを、メール・SQS・Lambdaなど複数の宛先へ同時に知らせたいです。最適なのはどれですか。",
+    "choices": [
+      "Route 53で通知する",
+      "Amazon SNSで一斉配信する",
+      "Amazon SQSでためる",
+      "API Gatewayで受ける"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "1つのイベントを複数へ配るのはSNS（パブサブ）が適します。",
+    "wrongChoiceExplanations": {
+      "0": "Route 53はDNSです。",
+      "2": "SQSはためる用途です。",
+      "3": "API Gatewayは受付窓口です。"
+    },
+    "domain": "technology",
+    "service": "SNS",
+    "difficulty": 3,
+    "tags": [
+      "SNS",
+      "中級"
+    ],
+    "beginnerNote": "複数へ配る＝SNS。"
+  },
+  {
+    "id": "qm-tec11b-3",
+    "question": "Lambdaで作った処理を、外部のクライアントから呼べるREST APIとして公開したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon SNS",
+      "Amazon EBS",
+      "Amazon API Gateway",
+      "Amazon SQS"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "APIの受付・公開はAPI Gatewayが担い、Lambdaと組み合わせます。",
+    "wrongChoiceExplanations": {
+      "0": "SNSは通知です。",
+      "1": "EBSはディスクです。",
+      "3": "SQSはキューです。"
+    },
+    "domain": "technology",
+    "service": "API Gateway",
+    "difficulty": 3,
+    "tags": [
+      "API Gateway",
+      "中級"
+    ],
+    "beginnerNote": "API公開＝API Gateway。"
+  },
+  {
+    "id": "qm-tec12b-1",
+    "question": "S3にたまったアクセスログを、データベースへ移さず手早くSQLで集計・分析したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Redshiftへ移してから分析",
+      "Amazon Kinesis",
+      "Amazon QuickSightだけ",
+      "Amazon Athena"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "S3を直接SQLで分析するAthenaが手早く適します。",
+    "wrongChoiceExplanations": {
+      "0": "わざわざ移す必要はありません。",
+      "1": "Kinesisはリアルタイム処理向けです。",
+      "2": "QuickSightは可視化で分析クエリ自体は行いません。"
+    },
+    "domain": "technology",
+    "service": "Athena",
+    "difficulty": 3,
+    "tags": [
+      "Athena",
+      "分析",
+      "中級"
+    ],
+    "beginnerNote": "S3を直接＝Athena。"
+  },
+  {
+    "id": "qm-tec12b-2",
+    "question": "全社の大量データを継続的に集計・分析する、本格的なデータウェアハウスが欲しいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Redshift",
+      "Amazon Athena",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "本格的な大規模継続分析はデータウェアハウスのRedshiftが適します。",
+    "wrongChoiceExplanations": {
+      "1": "Athenaは手軽なアドホック分析向けです。",
+      "2": "DynamoDBは運用系NoSQLです。",
+      "3": "ElastiCacheはキャッシュです。"
+    },
+    "domain": "technology",
+    "service": "Redshift",
+    "difficulty": 3,
+    "tags": [
+      "Redshift",
+      "分析",
+      "中級"
+    ],
+    "beginnerNote": "本格分析＝Redshift。"
+  },
+  {
+    "id": "qm-tec12b-3",
+    "question": "IoTセンサーから絶え間なく届くデータを、その場でリアルタイムに取り込み・処理したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Glue",
+      "Amazon Kinesis",
+      "Amazon Athena",
+      "Amazon Redshift"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "リアルタイムのストリーミング処理はKinesisが適します。",
+    "wrongChoiceExplanations": {
+      "0": "GlueはETLです。",
+      "2": "Athenaは蓄積データのクエリ向けです。",
+      "3": "Redshiftは継続的な大規模分析向けです。"
+    },
+    "domain": "technology",
+    "service": "Kinesis",
+    "difficulty": 3,
+    "tags": [
+      "Kinesis",
+      "分析",
+      "中級"
+    ],
+    "beginnerNote": "リアルタイム＝Kinesis。"
+  },
+  {
+    "id": "qm-tec13b-1",
+    "question": "アップロードされた写真に不適切な画像や特定の物体が含まれるかを自動で判定したいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Translate",
+      "Amazon Transcribe",
+      "Amazon Rekognition",
+      "Amazon Polly"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "画像・動画の内容判定はRekognitionが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Translateは翻訳です。",
+      "1": "Transcribeは音声→文字です。",
+      "3": "Pollyは文字→音声です。"
+    },
+    "domain": "technology",
+    "service": "Rekognition",
+    "difficulty": 3,
+    "tags": [
+      "Rekognition",
+      "AI/ML",
+      "中級"
+    ],
+    "beginnerNote": "画像判定＝Rekognition。"
+  },
+  {
+    "id": "qm-tec13b-2",
+    "question": "会議の録音データを自動で文字起こししたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Polly",
+      "Amazon Rekognition",
+      "Amazon Comprehend",
+      "Amazon Transcribe"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "音声→文字（文字起こし）はTranscribeが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Pollyは文字→音声です。",
+      "1": "Rekognitionは画像認識です。",
+      "2": "Comprehendは文章解析です。"
+    },
+    "domain": "technology",
+    "service": "Transcribe",
+    "difficulty": 3,
+    "tags": [
+      "Transcribe",
+      "AI/ML",
+      "中級"
+    ],
+    "beginnerNote": "文字起こし＝Transcribe。"
+  },
+  {
+    "id": "qm-tec13b-3",
+    "question": "自社アプリに、モデルの自作なしでチャットや文章生成といった生成AI機能を組み込みたいです。最適なのはどれですか。",
+    "choices": [
+      "Amazon Bedrock",
+      "Amazon SageMakerで一から学習する",
+      "Amazon Rekognition",
+      "Amazon Athena"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "生成AIを手軽に組み込むならBedrockが適します。",
+    "wrongChoiceExplanations": {
+      "1": "一から学習はSageMakerで手間がかかります。",
+      "2": "Rekognitionは画像認識です。",
+      "3": "Athenaは分析です。"
+    },
+    "domain": "technology",
+    "service": "Bedrock",
+    "difficulty": 3,
+    "tags": [
+      "Bedrock",
+      "生成AI",
+      "中級"
+    ],
+    "beginnerNote": "生成AI組込＝Bedrock。"
+  },
+  {
+    "id": "qm-tec14b-1",
+    "question": "多数のAWS操作を、スクリプトで自動化・繰り返し実行したいです。最適な操作手段はどれですか。",
+    "choices": [
+      "スクリーンショットで記録する",
+      "AWS CLI",
+      "マネジメントコンソールで手作業する",
+      "電話サポートに依頼する"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "自動化にはコマンドのAWS CLIが適します。",
+    "wrongChoiceExplanations": {
+      "0": "スクショは自動化になりません。",
+      "2": "手作業のコンソールは自動化に不向きです。",
+      "3": "電話サポートは操作代行ではありません。"
+    },
+    "domain": "technology",
+    "service": "CLI",
+    "difficulty": 3,
+    "tags": [
+      "CLI",
+      "中級"
+    ],
+    "beginnerNote": "自動化＝CLI。"
+  },
+  {
+    "id": "qm-tec14b-2",
+    "question": "インフラ構築に時間をかけず、コードをアップするだけでアプリを素早く公開したいです。最適なのはどれですか。",
+    "choices": [
+      "オンプレに構築する",
+      "Route 53だけで公開する",
+      "AWS Elastic Beanstalk",
+      "EC2をゼロから手動構築する"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "裏の環境を自動構成して素早く公開できるPaaSのBeanstalkが適します。",
+    "wrongChoiceExplanations": {
+      "0": "オンプレ構築は本題と逆です。",
+      "1": "Route 53はDNSのみです。",
+      "3": "ゼロから手動構築は時間がかかります。"
+    },
+    "domain": "technology",
+    "service": "Elastic Beanstalk",
+    "difficulty": 3,
+    "tags": [
+      "Elastic Beanstalk",
+      "中級"
+    ],
+    "beginnerNote": "素早く公開＝Beanstalk。"
+  },
+  {
+    "id": "qm-tec14b-3",
+    "question": "テストからデプロイまでの流れ（CI/CD）を自動化したいです。使うサービス群として最適なのはどれですか。",
+    "choices": [
+      "Amazon S3 / Glacier",
+      "Route 53 / CloudFront",
+      "EBS / EFS",
+      "CodePipeline / CodeBuild / CodeDeploy"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "CI/CDの自動化はCodePipeline等の開発者ツールが担います。",
+    "wrongChoiceExplanations": {
+      "0": "S3/Glacierはストレージです。",
+      "1": "Route 53/CloudFrontはDNS/CDNです。",
+      "2": "EBS/EFSはストレージです。"
+    },
+    "domain": "technology",
+    "service": "CI/CD",
+    "difficulty": 3,
+    "tags": [
+      "CI/CD",
+      "開発者ツール",
+      "中級"
+    ],
+    "beginnerNote": "CI/CD＝Codeシリーズ。"
+  },
+  {
+    "id": "qm-bil03b-1",
+    "question": "月のコストが予算を超えそうなときに、早めにメールで気づけるようにしたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Budgetsでアラートを設定する",
+      "AWS Cost Explorerで後から見る",
+      "AWS Pricing Calculatorで見積もる",
+      "AWS Trusted Advisorを見る"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "超過の事前通知（先回りの管理）はBudgetsが適します。",
+    "wrongChoiceExplanations": {
+      "1": "Cost Explorerは事後の分析です。",
+      "2": "Calculatorは導入前の見積りです。",
+      "3": "Trusted Advisorは総合点検です。"
+    },
+    "domain": "billing",
+    "service": "Budgets",
+    "difficulty": 3,
+    "tags": [
+      "Budgets",
+      "コスト管理",
+      "中級"
+    ],
+    "beginnerNote": "事前通知＝Budgets。"
+  },
+  {
+    "id": "qm-bil03b-2",
+    "question": "どのサービスにいくらかかっているか、過去数か月の傾向を分析したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Artifact",
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "AWS Budgets"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "過去コストの傾向分析（振り返り）はCost Explorerが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Artifactは監査資料です。",
+      "2": "Calculatorは事前見積りです。",
+      "3": "Budgetsは予算アラートです。"
+    },
+    "domain": "billing",
+    "service": "Cost Explorer",
+    "difficulty": 3,
+    "tags": [
+      "Cost Explorer",
+      "コスト管理",
+      "中級"
+    ],
+    "beginnerNote": "傾向分析＝Cost Explorer。"
+  },
+  {
+    "id": "qm-bil03b-3",
+    "question": "新しい構成を作る前に、月額のおおよそを把握して予算を組みたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Budgets",
+      "Cost and Usage Report",
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "導入前の費用試算はPricing Calculatorが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Budgetsは予算アラートです。",
+      "1": "CURは詳細明細です。",
+      "3": "Cost Explorerは過去分析です。"
+    },
+    "domain": "billing",
+    "service": "Pricing Calculator",
+    "difficulty": 3,
+    "tags": [
+      "Pricing Calculator",
+      "見積もり",
+      "中級"
+    ],
+    "beginnerNote": "導入前試算＝Calculator。"
+  },
+  {
+    "id": "qm-bil04b-1",
+    "question": "アカウント全体で、使っていない資源やセキュリティ・性能の改善点をまとめて把握したいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Pricing Calculator",
+      "AWS Artifact",
+      "Amazon Macie",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "複数観点の総合点検・助言はTrusted Advisorが適します。",
+    "wrongChoiceExplanations": {
+      "0": "Calculatorは事前見積りです。",
+      "1": "Artifactは監査資料です。",
+      "2": "MacieはS3機微データ検出です。"
+    },
+    "domain": "billing",
+    "service": "Trusted Advisor",
+    "difficulty": 3,
+    "tags": [
+      "Trusted Advisor",
+      "コスト最適化",
+      "中級"
+    ],
+    "beginnerNote": "総合点検＝Trusted Advisor。"
+  },
+  {
+    "id": "qm-bil04b-2",
+    "question": "多くのEC2が過剰スペックで無駄が出ていないかを分析し、最適なサイズの提案を受けたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Compute Optimizer",
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "使用状況から適正サイズを提案するのはCompute Optimizerです。",
+    "wrongChoiceExplanations": {
+      "1": "Budgetsは予算アラートです。",
+      "2": "Cost Explorerは傾向分析です。",
+      "3": "WAFはWeb攻撃遮断です。"
+    },
+    "domain": "billing",
+    "service": "Compute Optimizer",
+    "difficulty": 3,
+    "tags": [
+      "Compute Optimizer",
+      "コスト最適化",
+      "中級"
+    ],
+    "beginnerNote": "サイズ提案＝Compute Optimizer。"
+  },
+  {
+    "id": "qm-bil04b-3",
+    "question": "コスト最適化の基本動作として、最も適切なものはどれですか。",
+    "choices": [
+      "すべてを1台に集約する",
+      "使っていない資源を止め、適正サイズにし、割引プランを活用する",
+      "常に最大構成のまま動かし続ける",
+      "一切見直しをしない"
+    ],
+    "correctAnswers": [
+      1
+    ],
+    "explanation": "未使用停止・適正化・割引活用がコスト最適化の基本です。",
+    "wrongChoiceExplanations": {
+      "0": "1台集約は可用性面でも不利です。",
+      "2": "常時最大は無駄を生みます。",
+      "3": "見直さないと最適化できません。"
+    },
+    "domain": "billing",
+    "service": "コスト最適化",
+    "difficulty": 3,
+    "tags": [
+      "コスト最適化",
+      "中級"
+    ],
+    "beginnerNote": "止める・適正化・割引。"
+  },
+  {
+    "id": "qm-bil05b-1",
+    "question": "部署ごとに分かれた複数のAWSアカウントの請求を1本化し、ボリューム割引も効かせたいです。最適なのはどれですか。",
+    "choices": [
+      "IAMで請求を管理する",
+      "Cost Explorerで支払う",
+      "AWS Organizationsの一括請求",
+      "各アカウントで個別に支払う"
+    ],
+    "correctAnswers": [
+      2
+    ],
+    "explanation": "複数アカウントの請求集約・ボリューム割引はOrganizationsの一括請求が適します。",
+    "wrongChoiceExplanations": {
+      "0": "IAMは権限管理で請求集約ではありません。",
+      "1": "Cost Explorerは分析ツールです。",
+      "3": "個別支払いは割引・管理面で不利です。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 3,
+    "tags": [
+      "Organizations",
+      "一括請求",
+      "中級"
+    ],
+    "beginnerNote": "請求集約＝Organizations。"
+  },
+  {
+    "id": "qm-bil05b-2",
+    "question": "組織全体で、特定の危険な操作をすべてのアカウントで一律に禁止したいです。最適なのはどれですか。",
+    "choices": [
+      "各アカウントで個別にIAMを設定する",
+      "MFAを有効化する",
+      "VPCを分割する",
+      "OrganizationsのSCPで制限する"
+    ],
+    "correctAnswers": [
+      3
+    ],
+    "explanation": "組織横断の一律統制はSCP（Organizations）が適します。",
+    "wrongChoiceExplanations": {
+      "0": "個別IAMは漏れやすく非効率です。",
+      "1": "MFAは認証強化です。",
+      "2": "VPC分割は統制手段ではありません。"
+    },
+    "domain": "billing",
+    "service": "Organizations",
+    "difficulty": 3,
+    "tags": [
+      "Organizations",
+      "ガバナンス",
+      "中級"
+    ],
+    "beginnerNote": "一律禁止＝SCP。"
+  },
+  {
+    "id": "qm-bil05b-3",
+    "question": "サードパーティ製のソフトウェアを購入し、その費用をAWSの請求にまとめたいです。最適なのはどれですか。",
+    "choices": [
+      "AWS Marketplace",
+      "AWS Artifact",
+      "Amazon Cognito",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      0
+    ],
+    "explanation": "サードパーティ製品の調達・支払い一本化はMarketplaceが適します。",
+    "wrongChoiceExplanations": {
+      "1": "Artifactは監査資料です。",
+      "2": "Cognitoはアプリ利用者認証です。",
+      "3": "Configは設定評価です。"
+    },
+    "domain": "billing",
+    "service": "Marketplace",
+    "difficulty": 3,
+    "tags": [
+      "Marketplace",
+      "請求管理",
+      "中級"
+    ],
+    "beginnerNote": "調達＝Marketplace。"
   }
 ]
