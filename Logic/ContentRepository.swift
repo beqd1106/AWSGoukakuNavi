@@ -73,6 +73,16 @@ final class ContentRepository {
         questions.filter { $0.domain == domain }
     }
 
+    /// 模試に使う代表的な問題プール。反復ドリル（基礎固め・変種が多い）は本番の難易度感から
+    /// 外れるため除外し、基本問題・中級問題・オリジナル問題で本番に近い構成にする。
+    var examPool: [QuizQuestion] {
+        questions.filter { !$0.tags.contains("ドリル") }
+    }
+
+    func examPool(in domain: ExamDomain) -> [QuizQuestion] {
+        examPool.filter { $0.domain == domain }
+    }
+
     func lessons(in domain: ExamDomain) -> [Lesson] {
         lessons.filter { $0.domain == domain }
     }
@@ -91,23 +101,28 @@ final class ContentRepository {
         }
     }
 
-    /// 模擬試験用：公式配点に近い比率で出題を組み立てる。
+    /// 模擬試験用：公式配点に近い比率で出題を組み立てる（反復ドリルは除外＝本番相応）。
     /// 問題数が限られていても各分野の比率を保つよう抽選する。
     func buildMockExam(count: Int) -> [QuizQuestion] {
         var picked: [QuizQuestion] = []
         for domain in ExamDomain.allCases {
             let target = max(1, Int((Double(count) * domain.weight).rounded()))
-            let pool = questions(in: domain).shuffled()
-            picked.append(contentsOf: pool.prefix(target))
+            picked.append(contentsOf: examPool(in: domain).shuffled().prefix(target))
         }
         // 不足・超過を調整
         if picked.count > count {
             picked = Array(picked.shuffled().prefix(count))
         } else if picked.count < count {
-            let remaining = questions.filter { q in !picked.contains(where: { $0.id == q.id }) }
+            let ids = Set(picked.map(\.id))
+            let remaining = examPool.filter { !ids.contains($0.id) }
             picked.append(contentsOf: remaining.shuffled().prefix(count - picked.count))
         }
         return picked.shuffled()
+    }
+
+    /// 分野別ミニ模試：指定分野の代表問題からランダムに出題する。
+    func buildDomainMock(domain: ExamDomain, count: Int) -> [QuizQuestion] {
+        Array(examPool(in: domain).shuffled().prefix(count))
     }
 
     // MARK: - ローダ
