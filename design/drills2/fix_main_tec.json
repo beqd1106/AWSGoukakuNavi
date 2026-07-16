@@ -1,0 +1,386 @@
+[
+ { "id": "q-tec-005", "choices": [
+   "Amazon RDS（マネージドDB）",
+   "AWS IAM（権限の管理）",
+   "Amazon CloudFront",
+   "Amazon SQS（メッセージキュー）"
+ ]},
+ { "id": "q-tec-012", "choices": [
+   "Amazon EC2（仮想サーバー）",
+   "Amazon RDS（マネージドDB）",
+   "Amazon VPC（仮想ネットワーク）",
+   "Amazon S3 Glacier"
+ ]},
+ { "id": "q-tec-014", "choices": [
+   "Amazon S3（オブジェクトストレージ）",
+   "Elastic Load Balancing（ELB）",
+   "Amazon Macie（機密データ検出）",
+   "AWS Budgets（予算超過の通知）"
+ ]},
+ { "id": "q-tec-023", "choices": [
+   "Amazon EC2（仮想サーバー）",
+   "Amazon S3（ストレージ）",
+   "Amazon Translate",
+   "AWS Shield（DDoS対策）"
+ ]},
+ { "id": "q-tec-024", "choices": [
+   "Amazon Macie（機密データ検出）",
+   "Amazon EBS（ブロックストレージ）",
+   "AWS Budgets（予算超過の通知）",
+   "Amazon API Gateway"
+ ]},
+ { "id": "q-tec-030", "choices": [
+   "AWS Shield（DDoS対策）",
+   "Amazon QuickSight",
+   "Amazon EC2（仮想サーバー）",
+   "Amazon SQS（メッセージキュー）"
+ ]},
+ { "id": "q2-tech-01", "choices": [
+   "Amazon S3（オブジェクトストレージ）",
+   "AWS Artifact（監査文書の入手）",
+   "Amazon Macie（機密データ検出）",
+   "Amazon EC2 Auto Scaling"
+ ]},
+ { "id": "q2-tech-02", "choices": [
+   "Elastic Load Balancing（ELB）",
+   "AWS KMS（暗号鍵の作成と管理）",
+   "Amazon Comprehend（自然言語処理）",
+   "Amazon S3（オブジェクトストレージ）"
+ ]},
+ { "id": "q2-tech-07", "choices": [
+   "Amazon EC2（仮想サーバー）",
+   "Amazon S3 Glacier",
+   "AWS Shield（DDoS対策）",
+   "Amazon EBS（ブロックストレージ）"
+ ]},
+ { "id": "q2-tech-14", "choices": [
+   "AWS Elastic Beanstalk",
+   "AWS KMS（暗号鍵の管理）",
+   "Amazon Athena（クエリ分析）",
+   "Amazon S3（ストレージ）"
+ ]},
+ { "id": "q2-tech-16", "choices": [
+   "Amazon Route 53（DNS・名前解決）",
+   "AWS WAF（Webアプリの防御）",
+   "AWS Snow Family（Snowball など）",
+   "Amazon CloudFront（コンテンツ配信）"
+ ]},
+ { "id": "q3-tech-06", "choices": [
+   "Amazon Macie（機密データ検出）",
+   "AWS Step Functions",
+   "Amazon S3（ストレージ）",
+   "AWS Budgets（予算超過の通知）"
+ ]},
+ { "id": "q3-tech-10", "choices": [
+   "Amazon SNS（メッセージの発行と通知の配信を行う）",
+   "AWS Database Migration Service（DMS）",
+   "AWS Budgets（予算の設定と超過の通知）",
+   "Amazon CloudWatch（監視とログ収集）"
+ ]},
+ { "id": "q3-tech-17", "choices": [
+   "Amazon CloudFront でエッジキャッシュ配信する",
+   "1台のEC2インスタンスから全世界へ直接配信する",
+   "S3 Glacier（長期保管）から直接配信する",
+   "Amazon Route 53（DNS）だけで配信する"
+ ]},
+ { "id": "q3-tech-20", "choices": [
+   "CloudFrontのキャッシュ配信",
+   "EBSボリュームのスナップショット",
+   "S3 Intelligent-Tiering",
+   "S3 標準クラスのみで固定して使う"
+ ]},
+ { "id": "q4-tech-04", "choices": [
+   "AWS Budgets（予算超過の通知）",
+   "Amazon Macie（機密データ検出）",
+   "Amazon EBS（ブロックストレージ）",
+   "Amazon EventBridge"
+ ]},
+ { "id": "q4-tech-05", "choices": [
+   "Amazon ECR（Elastic Container Registry）",
+   "Amazon S3 Glacier（長期アーカイブ保管）",
+   "Amazon Athena（S3上のデータをSQLで分析する）",
+   "AWS KMS（暗号鍵の作成と管理）"
+ ]},
+ { "id": "q4-tech-06", "choices": [
+   "AWS Budgets（予算超過の通知）",
+   "AWS Global Accelerator",
+   "Amazon S3（ストレージ）",
+   "Amazon Inspector（脆弱性診断）"
+ ]},
+ { "id": "q4-tech-10", "choices": [
+   "Amazon Route 53（DNS・名前解決）",
+   "Amazon CloudWatch Logs",
+   "AWS Artifact（監査文書の入手）",
+   "AWS KMS（暗号鍵の管理）"
+ ]},
+ { "id": "q4-tech-12", "choices": [
+   "セキュリティグループ（通信の許可ルール）",
+   "リージョン（AWSの地理的な地域）",
+   "EBSスナップショット（ボリュームの複製）",
+   "AMI（Amazon Machine Image）"
+ ]},
+ { "id": "q4-tech-14", "choices": [
+   "IAM（権限管理）＋KMS（暗号鍵管理）",
+   "CloudWatchアラーム＋EC2 Auto Scaling",
+   "CloudTrail（操作履歴）＋S3（保存）",
+   "Route 53（DNS）＋Budgets（予算通知）"
+ ]},
+ { "id": "q4-tech-16", "choices": [
+   "コスト配分タグ（費用の集計用ラベル）",
+   "エッジロケーション（配信の拠点）",
+   "インターネットゲートウェイ（外部接続）",
+   "VPCエンドポイント（PrivateLink）"
+ ]},
+ { "id": "q5-tech-06", "choices": [
+   "AWS Budgets（予算超過の通知）",
+   "Amazon EBS（ブロックストレージ）",
+   "Amazon Route 53（DNS・名前解決）",
+   "Amazon OpenSearch Service"
+ ]},
+ { "id": "q5-tech-07", "choices": [
+   "Amazon SES（Simple Email Service）",
+   "Amazon EBS（Elastic Block Store）",
+   "Amazon SQS（Simple Queue Service）",
+   "Amazon SNS（Simple Notification Service）"
+ ]},
+ { "id": "q5-tech-11", "choices": [
+   "AWS Service Catalog",
+   "Amazon Athena（クエリ分析）",
+   "Amazon SNS（通知の配信）",
+   "AWS WAF（Webアプリの防御）"
+ ]},
+ { "id": "q5-tech-12", "choices": [
+   "AWS Budgets（予算の設定と超過の通知）",
+   "AWS CDK（Cloud Development Kit）",
+   "Amazon Cognito（アプリ利用者の認証）",
+   "Amazon S3 Glacier（長期アーカイブ保管）"
+ ]},
+ { "id": "q5-tech-13", "choices": [
+   "常に最も小さいインスタンスタイプを選べば良い",
+   "常に最も大きいインスタンスタイプを選べば良い",
+   "ワークロードの特性に合うインスタンスタイプを選ぶ",
+   "インスタンスタイプは性能に影響しない"
+ ]},
+ { "id": "q5-tech-15", "choices": [
+   "API Gateway＋Lambda（サーバーレス）",
+   "Redshiftクラスターを常時稼働させる構成",
+   "EC2インスタンスを24時間起動しておく構成",
+   "オンプレミスのサーバーを常時稼働させる構成"
+ ]},
+ { "id": "q5-tech-16", "choices": [
+   "S3 Glacier（長期保管）から直接配信する",
+   "S3の静的ウェブサイトホスティング（＋CloudFront）",
+   "Amazon RDS（データベース）でHTMLを配信する",
+   "EC2インスタンスを複数台常時起動しておく"
+ ]},
+ { "id": "q5-tech-17", "choices": [
+   "リードレプリカ（読み取り用の複製）のみ",
+   "セキュリティグループ（通信ルール）の追加",
+   "マルチAZ配置（スタンバイへ自動フェイルオーバー）",
+   "スナップショット（定期バックアップ）のみ"
+ ]},
+ { "id": "q5-tech-18", "choices": [
+   "リザーブドインスタンス（長期利用の割引）",
+   "IAMロール（一時的な権限の付与）",
+   "S3バージョニング（世代の保持）",
+   "CloudWatch ダッシュボード"
+ ]},
+ { "id": "q6-tech-01", "choices": [
+   "Amazon Aurora Serverless",
+   "Amazon S3（オブジェクトストレージ）",
+   "Amazon Redshift（データウェアハウス）",
+   "Aurora（容量固定のインスタンス構成）"
+ ]},
+ { "id": "q6-tech-02", "choices": [
+   "Amazon Route 53（DNS・名前解決）",
+   "Amazon Kinesis Data Firehose",
+   "Amazon SQS（メッセージキュー）",
+   "AWS KMS（暗号鍵の作成と管理）"
+ ]},
+ { "id": "q6-tech-13", "choices": [
+   "AWS Application Migration Service（MGN）",
+   "AWS KMS（データ暗号化に使う鍵の作成と管理）",
+   "Amazon Athena（S3上のデータをSQLで分析する）",
+   "Amazon CloudFront（世界中の拠点から配信する）"
+ ]},
+ { "id": "q6-tech-15", "choices": [
+   "リザーブドインスタンス（長期利用の割引）",
+   "Auto Scaling（台数の自動増減）",
+   "AWS Resource Groups とタグエディタ",
+   "セキュリティグループ（通信の許可ルール）"
+ ]},
+ { "id": "q6-tech-16", "choices": [
+   "AWS WAF（Webアプリへの攻撃を防御する）",
+   "AWS Pricing Calculator（料金の見積り）",
+   "Amazon QuickSight（データの可視化）",
+   "AWS Health Dashboard（アカウント固有のイベント）"
+ ]},
+ { "id": "q6-tech-18", "choices": [
+   "EBSスナップショット（ボリュームの複製）",
+   "S3 Transfer Acceleration",
+   "S3ライフサイクル（保存期間の管理）",
+   "S3バージョニング（世代の保持）"
+ ]},
+ { "id": "q6-tech-20", "choices": [
+   "S3の静的ウェブサイトホスティングだけで構成する",
+   "1台のEC2インスタンス＋Elastic IPで構成する",
+   "RDSの単一インスタンスだけで構成する",
+   "複数AZのAuto Scalingグループ＋ロードバランサー"
+ ]},
+ { "id": "q7-tech-02", "choices": [
+   "アプリを動かすための仮想サーバー",
+   "ファイルを保存するストレージ（倉庫）",
+   "通信を振り分けるロードバランサー",
+   "データを管理するデータベースエンジン"
+ ]},
+ { "id": "q7-tech-03", "choices": [
+   "利用者へ通知のメッセージを送るための仕組み",
+   "画像などのファイルを保存するストレージ",
+   "AWSが管理してくれるリレーショナルデータベース",
+   "ドメイン名を管理するDNSサービス"
+ ]},
+ { "id": "q7-tech-05", "choices": [
+   "AWS上に作る自分専用の仮想ネットワーク",
+   "ファイルを保存するためのサービス",
+   "料金の請求を確認するための管理画面",
+   "アプリを動かすための仮想サーバー"
+ ]},
+ { "id": "q7-tech-06", "choices": [
+   "暗号化に使う鍵を管理する仕組み",
+   "世界中の拠点から速く配信するCDN",
+   "データを保存するデータベース",
+   "アプリを動かす仮想サーバー"
+ ]},
+ { "id": "q7-tech-07", "choices": [
+   "予算の超過を知らせてくれるアラート機能",
+   "ファイルを長期保存するためのサービス",
+   "ドメイン名をIPアドレスに変換するDNSサービス",
+   "アプリを動かすための仮想サーバー"
+ ]},
+ { "id": "q7-tech-08", "choices": [
+   "画像を自動で加工したり変換したりするサービス",
+   "大量のメールをまとめて送信するためのサービス",
+   "暗号化に使う鍵を管理するためのサービス",
+   "AWSの状態（メトリクスやログ）を監視するサービス"
+ ]},
+ { "id": "q7-tech-11", "choices": [
+   "KMSキー（暗号鍵）",
+   "S3バケット（保存先）",
+   "ロードバランサー（ELB）",
+   "IAMロール（権限）"
+ ]},
+ { "id": "q8-tech-07", "choices": [
+   "IAM（権限管理）＋KMS（暗号鍵管理）",
+   "Auto Scaling＋ロードバランサー（ELB）",
+   "S3（保存）＋Glacier（長期保管）",
+   "Route 53（DNS）＋Budgets（予算通知）"
+ ]},
+ { "id": "q9-tech-10", "choices": [
+   "AWS Application Discovery Service",
+   "Amazon SQS（メッセージキューの管理）",
+   "AWS KMS（データ暗号化に使う鍵の管理）",
+   "Amazon CloudFront（世界中の拠点から配信）"
+ ]},
+ { "id": "q9-tech-11", "choices": [
+   "Amazon EC2（仮想サーバー）",
+   "S3 Glacier 系（アーカイブ）",
+   "S3 標準（頻繁なアクセス向け）",
+   "Amazon EBS（ブロックストレージ）"
+ ]},
+ { "id": "q9-tech-14", "choices": [
+   "複数リージョン/AZ＋CloudFront＋ロードバランシング",
+   "オンプレミスのサーバー1台にすべて集約する構成",
+   "S3 Glacier（長期アーカイブ保管）のみの構成",
+   "1つのリージョンの1つのAZに集約する構成"
+ ]},
+ { "id": "q10-tech-03", "choices": [
+   "AWS Global Accelerator",
+   "Amazon SQS（メッセージキュー）",
+   "AWS KMS（暗号鍵の管理）",
+   "Amazon S3（オブジェクトストレージ）"
+ ]},
+ { "id": "q10-tech-05", "choices": [
+   "Amazon SNS（メッセージの発行と通知配信）",
+   "AWS WAF（Webアプリへの攻撃を防御）",
+   "Amazon Aurora Global Database",
+   "Amazon S3 Glacier（長期アーカイブ保管）"
+ ]},
+ { "id": "q11-tech-03", "choices": [
+   "EC2インスタンスを手動で構築・管理する",
+   "S3バケットに置くだけで動かす",
+   "RDS（データベース）で実行する",
+   "ECS（またはEKS）＋Fargate"
+ ]},
+ { "id": "q11-tech-04", "choices": [
+   "Amazon FSx for Windows File Server",
+   "Amazon S3 Glacier（長期アーカイブ保管）",
+   "Amazon EBS（EC2に付けるブロックストレージ）",
+   "Amazon DynamoDB（NoSQLデータベース）"
+ ]},
+ { "id": "q11-tech-05", "choices": [
+   "Amazon S3 Glacier（長期アーカイブ保管）",
+   "Amazon OpenSearch Service",
+   "AWS KMS（暗号鍵の管理）",
+   "Amazon Redshift（データウェアハウス）"
+ ]},
+ { "id": "q12-tech-03", "choices": [
+   "Amazon Athena（S3上のデータをSQLで分析）",
+   "Amazon CloudFront（世界中の拠点から配信）",
+   "AWS Elastic Disaster Recovery（DRS）",
+   "AWS Budgets（予算の設定と超過の通知）"
+ ]},
+ { "id": "q12-tech-06", "choices": [
+   "Amazon ElastiCache（インメモリキャッシュ）",
+   "Amazon QLDB（Quantum Ledger Database）",
+   "Amazon RDS（マネージドのリレーショナルDB）",
+   "Amazon S3（オブジェクトストレージ）"
+ ]},
+ { "id": "qm-tec-05", "choices": [
+   "S3 Glacier系（アーカイブ向け）",
+   "S3 標準（頻繁なアクセス向け）",
+   "S3 標準-IA（低頻度アクセス向け）",
+   "Amazon EBS（EC2用のディスク）"
+ ]},
+ { "id": "qm-tec-06", "choices": [
+   "Amazon EFS（共有ファイル）へ移す",
+   "S3 Intelligent-Tiering を使う",
+   "常にS3 標準クラスに固定して使う",
+   "管理者が毎月手動でストレージクラスを変更する"
+ ]},
+ { "id": "qm-tec04b-3", "choices": [
+   "Amazon SNS（通知の配信）",
+   "AWS Storage Gateway",
+   "AWS Lambda（サーバーレス実行）",
+   "Amazon EC2（仮想サーバー）"
+ ]},
+ { "id": "qm-tec07b-1", "choices": [
+   "WebサーバーもDBも両方プライベートサブネットに置く",
+   "WebとDBでサブネットをまったく分けない",
+   "Webはパブリックサブネット、DBはプライベートサブネットに置く",
+   "WebサーバーもDBも両方パブリックサブネットに置く"
+ ]},
+ { "id": "qm-tec10b-2", "choices": [
+   "スクリーンショットを見ながら手作業で同じ構成を作る",
+   "担当者へ口頭で手順を伝えて作ってもらう",
+   "CloudFormationのテンプレートで自動構築する",
+   "毎回すべて手作業で環境を作り直す"
+ ]},
+ { "id": "qm-tec11b-3", "choices": [
+   "Amazon SNS（通知の配信）",
+   "Amazon EBS（ブロックストレージ）",
+   "Amazon API Gateway",
+   "Amazon SQS（メッセージキュー）"
+ ]},
+ { "id": "qm-tec14b-2", "choices": [
+   "オンプレミスの環境に自前で構築する",
+   "Amazon Route 53だけで公開する",
+   "AWS Elastic Beanstalk",
+   "EC2インスタンスをゼロから手動構築する"
+ ]},
+ { "id": "qm-tec14b-3", "choices": [
+   "Amazon S3 / S3 Glacier / Storage Gateway",
+   "Amazon Route 53 / CloudFront / Global Accelerator",
+   "Amazon EBS / Amazon EFS / Amazon FSx",
+   "CodePipeline / CodeBuild / CodeDeploy"
+ ]}
+]

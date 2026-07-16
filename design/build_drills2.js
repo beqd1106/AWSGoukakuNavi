@@ -10,7 +10,7 @@ const ROOT = path.join(__dirname, "..");
 const file = path.join(ROOT, "Resources/questions.json");
 const existing = JSON.parse(fs.readFileSync(file, "utf8"));
 
-const MODULES = ["cc", "sec", "tec1", "tec2", "bil"];
+const MODULES = ["cc", "sec", "tec1", "tec2", "bil", "main"];
 let addAll = [];
 let fixAll = [];
 for (const m of MODULES) {

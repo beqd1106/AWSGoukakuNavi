@@ -1,0 +1,1986 @@
+[
+ {
+  "id": "q-cc-005",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 1.71,
+  "cl": 29,
+  "wl": 17
+ },
+ {
+  "id": "q-sec-002",
+  "domain": "security",
+  "diff": 6,
+  "ratio": 1.38,
+  "cl": 22,
+  "wl": 16
+ },
+ {
+  "id": "q-sec-003",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 1.37,
+  "cl": 26,
+  "wl": 19
+ },
+ {
+  "id": "q-tec-005",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.7,
+  "cl": 17,
+  "wl": 10
+ },
+ {
+  "id": "q-bil-001",
+  "domain": "billing",
+  "diff": 19,
+  "ratio": 2.58,
+  "cl": 31,
+  "wl": 12
+ },
+ {
+  "id": "q-cc-006",
+  "domain": "cloudConcepts",
+  "diff": 16,
+  "ratio": 1.94,
+  "cl": 33,
+  "wl": 17
+ },
+ {
+  "id": "q-cc-008",
+  "domain": "cloudConcepts",
+  "diff": 11,
+  "ratio": 1.79,
+  "cl": 25,
+  "wl": 14
+ },
+ {
+  "id": "q-cc-009",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.53,
+  "cl": 26,
+  "wl": 17
+ },
+ {
+  "id": "q-cc-011",
+  "domain": "cloudConcepts",
+  "diff": 7,
+  "ratio": 1.47,
+  "cl": 22,
+  "wl": 15
+ },
+ {
+  "id": "q-cc-012",
+  "domain": "cloudConcepts",
+  "diff": 15,
+  "ratio": 2,
+  "cl": 30,
+  "wl": 15
+ },
+ {
+  "id": "q-cc-013",
+  "domain": "cloudConcepts",
+  "diff": 7,
+  "ratio": 1.37,
+  "cl": 26,
+  "wl": 19
+ },
+ {
+  "id": "q-cc-016",
+  "domain": "cloudConcepts",
+  "diff": 8,
+  "ratio": 1.53,
+  "cl": 23,
+  "wl": 15
+ },
+ {
+  "id": "q-cc-018",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 1.75,
+  "cl": 28,
+  "wl": 16
+ },
+ {
+  "id": "q-cc-019",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 1.8,
+  "cl": 27,
+  "wl": 15
+ },
+ {
+  "id": "q-cc-020",
+  "domain": "cloudConcepts",
+  "diff": 14,
+  "ratio": 2.08,
+  "cl": 27,
+  "wl": 13
+ },
+ {
+  "id": "q-cc-022",
+  "domain": "cloudConcepts",
+  "diff": 13,
+  "ratio": 2.18,
+  "cl": 24,
+  "wl": 11
+ },
+ {
+  "id": "q-sec-007",
+  "domain": "security",
+  "diff": 17,
+  "ratio": 2.55,
+  "cl": 28,
+  "wl": 11
+ },
+ {
+  "id": "q-sec-011",
+  "domain": "security",
+  "diff": 14,
+  "ratio": 1.82,
+  "cl": 31,
+  "wl": 17
+ },
+ {
+  "id": "q-sec-016",
+  "domain": "security",
+  "diff": 6,
+  "ratio": 1.5,
+  "cl": 18,
+  "wl": 12
+ },
+ {
+  "id": "q-sec-018",
+  "domain": "security",
+  "diff": 10,
+  "ratio": 1.77,
+  "cl": 23,
+  "wl": 13
+ },
+ {
+  "id": "q-sec-019",
+  "domain": "security",
+  "diff": 8,
+  "ratio": 1.73,
+  "cl": 19,
+  "wl": 11
+ },
+ {
+  "id": "q-sec-024",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 1.47,
+  "cl": 28,
+  "wl": 19
+ },
+ {
+  "id": "q-sec-025",
+  "domain": "security",
+  "diff": 17,
+  "ratio": 1.81,
+  "cl": 38,
+  "wl": 21
+ },
+ {
+  "id": "q-sec-028",
+  "domain": "security",
+  "diff": 12,
+  "ratio": 2.09,
+  "cl": 23,
+  "wl": 11
+ },
+ {
+  "id": "q-tec-012",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.7,
+  "cl": 17,
+  "wl": 10
+ },
+ {
+  "id": "q-tec-014",
+  "domain": "technology",
+  "diff": 15,
+  "ratio": 2.25,
+  "cl": 27,
+  "wl": 12
+ },
+ {
+  "id": "q-tec-023",
+  "domain": "technology",
+  "diff": 6,
+  "ratio": 1.6,
+  "cl": 16,
+  "wl": 10
+ },
+ {
+  "id": "q-tec-024",
+  "domain": "technology",
+  "diff": 6,
+  "ratio": 1.5,
+  "cl": 18,
+  "wl": 12
+ },
+ {
+  "id": "q-tec-030",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.7,
+  "cl": 17,
+  "wl": 10
+ },
+ {
+  "id": "q-bil-006",
+  "domain": "billing",
+  "diff": 6,
+  "ratio": 1.46,
+  "cl": 19,
+  "wl": 13
+ },
+ {
+  "id": "q-bil-008",
+  "domain": "billing",
+  "diff": 36,
+  "ratio": 4,
+  "cl": 48,
+  "wl": 12
+ },
+ {
+  "id": "q-bil-009",
+  "domain": "billing",
+  "diff": 12,
+  "ratio": 1.63,
+  "cl": 31,
+  "wl": 19
+ },
+ {
+  "id": "q-bil-012",
+  "domain": "billing",
+  "diff": 14,
+  "ratio": 2.4,
+  "cl": 24,
+  "wl": 10
+ },
+ {
+  "id": "q2-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 16,
+  "ratio": 2.78,
+  "cl": 25,
+  "wl": 9
+ },
+ {
+  "id": "q2-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 27,
+  "ratio": 5.5,
+  "cl": 33,
+  "wl": 6
+ },
+ {
+  "id": "q2-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.82,
+  "cl": 20,
+  "wl": 11
+ },
+ {
+  "id": "q2-cc-08",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 2.5,
+  "cl": 20,
+  "wl": 8
+ },
+ {
+  "id": "q2-cc-09",
+  "domain": "cloudConcepts",
+  "diff": 11,
+  "ratio": 1.61,
+  "cl": 29,
+  "wl": 18
+ },
+ {
+  "id": "q2-cc-10",
+  "domain": "cloudConcepts",
+  "diff": 35,
+  "ratio": 3.92,
+  "cl": 47,
+  "wl": 12
+ },
+ {
+  "id": "q2-cc-11",
+  "domain": "cloudConcepts",
+  "diff": 10,
+  "ratio": 1.48,
+  "cl": 31,
+  "wl": 21
+ },
+ {
+  "id": "q2-sec-01",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 1.37,
+  "cl": 26,
+  "wl": 19
+ },
+ {
+  "id": "q2-sec-02",
+  "domain": "security",
+  "diff": 22,
+  "ratio": 3,
+  "cl": 33,
+  "wl": 11
+ },
+ {
+  "id": "q2-sec-03",
+  "domain": "security",
+  "diff": 23,
+  "ratio": 3.09,
+  "cl": 34,
+  "wl": 11
+ },
+ {
+  "id": "q2-sec-05",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 1.35,
+  "cl": 35,
+  "wl": 26
+ },
+ {
+  "id": "q2-sec-13",
+  "domain": "security",
+  "diff": 21,
+  "ratio": 3.33,
+  "cl": 30,
+  "wl": 9
+ },
+ {
+  "id": "q2-tech-01",
+  "domain": "technology",
+  "diff": 11,
+  "ratio": 1.92,
+  "cl": 23,
+  "wl": 12
+ },
+ {
+  "id": "q2-tech-02",
+  "domain": "technology",
+  "diff": 10,
+  "ratio": 1.59,
+  "cl": 27,
+  "wl": 17
+ },
+ {
+  "id": "q2-tech-07",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.7,
+  "cl": 17,
+  "wl": 10
+ },
+ {
+  "id": "q2-tech-14",
+  "domain": "technology",
+  "diff": 8,
+  "ratio": 1.62,
+  "cl": 21,
+  "wl": 13
+ },
+ {
+  "id": "q2-tech-16",
+  "domain": "technology",
+  "diff": 11,
+  "ratio": 1.65,
+  "cl": 28,
+  "wl": 17
+ },
+ {
+  "id": "q2-bill-08",
+  "domain": "billing",
+  "diff": 10,
+  "ratio": 1.77,
+  "cl": 23,
+  "wl": 13
+ },
+ {
+  "id": "q3-cc-01",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 2.09,
+  "cl": 23,
+  "wl": 11
+ },
+ {
+  "id": "q3-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 18,
+  "ratio": 3.57,
+  "cl": 25,
+  "wl": 7
+ },
+ {
+  "id": "q3-cc-03",
+  "domain": "cloudConcepts",
+  "diff": 15,
+  "ratio": 3.5,
+  "cl": 21,
+  "wl": 6
+ },
+ {
+  "id": "q3-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 1.71,
+  "cl": 29,
+  "wl": 17
+ },
+ {
+  "id": "q3-cc-05",
+  "domain": "cloudConcepts",
+  "diff": 11,
+  "ratio": 1.65,
+  "cl": 28,
+  "wl": 17
+ },
+ {
+  "id": "q3-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 19,
+  "ratio": 2.73,
+  "cl": 30,
+  "wl": 11
+ },
+ {
+  "id": "q3-cc-07",
+  "domain": "cloudConcepts",
+  "diff": 21,
+  "ratio": 4.5,
+  "cl": 27,
+  "wl": 6
+ },
+ {
+  "id": "q3-cc-08",
+  "domain": "cloudConcepts",
+  "diff": 7,
+  "ratio": 1.39,
+  "cl": 25,
+  "wl": 18
+ },
+ {
+  "id": "q3-sec-04",
+  "domain": "security",
+  "diff": 16,
+  "ratio": 2.33,
+  "cl": 28,
+  "wl": 12
+ },
+ {
+  "id": "q3-sec-05",
+  "domain": "security",
+  "diff": 14,
+  "ratio": 2.4,
+  "cl": 24,
+  "wl": 10
+ },
+ {
+  "id": "q3-sec-07",
+  "domain": "security",
+  "diff": 18,
+  "ratio": 1.95,
+  "cl": 37,
+  "wl": 19
+ },
+ {
+  "id": "q3-tech-06",
+  "domain": "technology",
+  "diff": 6,
+  "ratio": 1.5,
+  "cl": 18,
+  "wl": 12
+ },
+ {
+  "id": "q3-tech-10",
+  "domain": "technology",
+  "diff": 18,
+  "ratio": 2.06,
+  "cl": 35,
+  "wl": 17
+ },
+ {
+  "id": "q3-tech-17",
+  "domain": "technology",
+  "diff": 13,
+  "ratio": 1.72,
+  "cl": 31,
+  "wl": 18
+ },
+ {
+  "id": "q3-tech-20",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.47,
+  "cl": 22,
+  "wl": 15
+ },
+ {
+  "id": "q3-bill-02",
+  "domain": "billing",
+  "diff": 10,
+  "ratio": 1.5,
+  "cl": 30,
+  "wl": 20
+ },
+ {
+  "id": "q3-bill-07",
+  "domain": "billing",
+  "diff": 16,
+  "ratio": 2.6,
+  "cl": 26,
+  "wl": 10
+ },
+ {
+  "id": "q3-bill-08",
+  "domain": "billing",
+  "diff": 13,
+  "ratio": 1.72,
+  "cl": 31,
+  "wl": 18
+ },
+ {
+  "id": "q4-cc-01",
+  "domain": "cloudConcepts",
+  "diff": 14,
+  "ratio": 4.5,
+  "cl": 18,
+  "wl": 4
+ },
+ {
+  "id": "q4-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 20,
+  "ratio": 2.33,
+  "cl": 35,
+  "wl": 15
+ },
+ {
+  "id": "q4-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 7,
+  "ratio": 1.88,
+  "cl": 15,
+  "wl": 8
+ },
+ {
+  "id": "q4-cc-05",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 2,
+  "cl": 24,
+  "wl": 12
+ },
+ {
+  "id": "q4-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 16,
+  "ratio": 2.23,
+  "cl": 29,
+  "wl": 13
+ },
+ {
+  "id": "q4-cc-08",
+  "domain": "cloudConcepts",
+  "diff": 21,
+  "ratio": 4.5,
+  "cl": 27,
+  "wl": 6
+ },
+ {
+  "id": "q4-sec-01",
+  "domain": "security",
+  "diff": 19,
+  "ratio": 2.58,
+  "cl": 31,
+  "wl": 12
+ },
+ {
+  "id": "q4-sec-02",
+  "domain": "security",
+  "diff": 6,
+  "ratio": 1.5,
+  "cl": 18,
+  "wl": 12
+ },
+ {
+  "id": "q4-sec-05",
+  "domain": "security",
+  "diff": 8,
+  "ratio": 1.53,
+  "cl": 23,
+  "wl": 15
+ },
+ {
+  "id": "q4-sec-07",
+  "domain": "security",
+  "diff": 14,
+  "ratio": 2.4,
+  "cl": 24,
+  "wl": 10
+ },
+ {
+  "id": "q4-sec-08",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 1.75,
+  "cl": 21,
+  "wl": 12
+ },
+ {
+  "id": "q4-sec-10",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 2,
+  "cl": 14,
+  "wl": 7
+ },
+ {
+  "id": "q4-sec-11",
+  "domain": "security",
+  "diff": 8,
+  "ratio": 1.4,
+  "cl": 28,
+  "wl": 20
+ },
+ {
+  "id": "q4-sec-12",
+  "domain": "security",
+  "diff": 10,
+  "ratio": 3.5,
+  "cl": 14,
+  "wl": 4
+ },
+ {
+  "id": "q4-tech-04",
+  "domain": "technology",
+  "diff": 6,
+  "ratio": 1.5,
+  "cl": 18,
+  "wl": 12
+ },
+ {
+  "id": "q4-tech-05",
+  "domain": "technology",
+  "diff": 21,
+  "ratio": 2.24,
+  "cl": 38,
+  "wl": 17
+ },
+ {
+  "id": "q4-tech-06",
+  "domain": "technology",
+  "diff": 6,
+  "ratio": 1.38,
+  "cl": 22,
+  "wl": 16
+ },
+ {
+  "id": "q4-tech-10",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.47,
+  "cl": 22,
+  "wl": 15
+ },
+ {
+  "id": "q4-tech-12",
+  "domain": "technology",
+  "diff": 14,
+  "ratio": 2.27,
+  "cl": 25,
+  "wl": 11
+ },
+ {
+  "id": "q4-tech-14",
+  "domain": "technology",
+  "diff": 15,
+  "ratio": 1.94,
+  "cl": 31,
+  "wl": 16
+ },
+ {
+  "id": "q4-tech-16",
+  "domain": "technology",
+  "diff": 10,
+  "ratio": 1.77,
+  "cl": 23,
+  "wl": 13
+ },
+ {
+  "id": "q4-bill-02",
+  "domain": "billing",
+  "diff": 51,
+  "ratio": 6.1,
+  "cl": 61,
+  "wl": 10
+ },
+ {
+  "id": "q4-bill-03",
+  "domain": "billing",
+  "diff": 16,
+  "ratio": 2.07,
+  "cl": 31,
+  "wl": 15
+ },
+ {
+  "id": "q5-cc-03",
+  "domain": "cloudConcepts",
+  "diff": 14,
+  "ratio": 1.88,
+  "cl": 30,
+  "wl": 16
+ },
+ {
+  "id": "q5-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 11,
+  "ratio": 1.92,
+  "cl": 23,
+  "wl": 12
+ },
+ {
+  "id": "q5-cc-05",
+  "domain": "cloudConcepts",
+  "diff": 7,
+  "ratio": 1.47,
+  "cl": 22,
+  "wl": 15
+ },
+ {
+  "id": "q5-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 17,
+  "ratio": 2.55,
+  "cl": 28,
+  "wl": 11
+ },
+ {
+  "id": "q5-cc-07",
+  "domain": "cloudConcepts",
+  "diff": 11,
+  "ratio": 2.1,
+  "cl": 21,
+  "wl": 10
+ },
+ {
+  "id": "q5-cc-10",
+  "domain": "cloudConcepts",
+  "diff": 10,
+  "ratio": 1.67,
+  "cl": 25,
+  "wl": 15
+ },
+ {
+  "id": "q5-sec-02",
+  "domain": "security",
+  "diff": 19,
+  "ratio": 2.58,
+  "cl": 31,
+  "wl": 12
+ },
+ {
+  "id": "q5-sec-03",
+  "domain": "security",
+  "diff": 10,
+  "ratio": 1.45,
+  "cl": 32,
+  "wl": 22
+ },
+ {
+  "id": "q5-sec-05",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 1.5,
+  "cl": 21,
+  "wl": 14
+ },
+ {
+  "id": "q5-sec-07",
+  "domain": "security",
+  "diff": 10,
+  "ratio": 1.63,
+  "cl": 26,
+  "wl": 16
+ },
+ {
+  "id": "q5-sec-08",
+  "domain": "security",
+  "diff": 20,
+  "ratio": 3,
+  "cl": 30,
+  "wl": 10
+ },
+ {
+  "id": "q5-sec-10",
+  "domain": "security",
+  "diff": 20,
+  "ratio": 3,
+  "cl": 30,
+  "wl": 10
+ },
+ {
+  "id": "q5-tech-06",
+  "domain": "technology",
+  "diff": 10,
+  "ratio": 1.67,
+  "cl": 25,
+  "wl": 15
+ },
+ {
+  "id": "q5-tech-07",
+  "domain": "technology",
+  "diff": 22,
+  "ratio": 3.2,
+  "cl": 32,
+  "wl": 10
+ },
+ {
+  "id": "q5-tech-11",
+  "domain": "technology",
+  "diff": 6,
+  "ratio": 1.46,
+  "cl": 19,
+  "wl": 13
+ },
+ {
+  "id": "q5-tech-12",
+  "domain": "technology",
+  "diff": 13,
+  "ratio": 1.76,
+  "cl": 30,
+  "wl": 17
+ },
+ {
+  "id": "q5-tech-13",
+  "domain": "technology",
+  "diff": 11,
+  "ratio": 1.85,
+  "cl": 24,
+  "wl": 13
+ },
+ {
+  "id": "q5-tech-15",
+  "domain": "technology",
+  "diff": 8,
+  "ratio": 1.44,
+  "cl": 26,
+  "wl": 18
+ },
+ {
+  "id": "q5-tech-16",
+  "domain": "technology",
+  "diff": 17,
+  "ratio": 2.31,
+  "cl": 30,
+  "wl": 13
+ },
+ {
+  "id": "q5-tech-17",
+  "domain": "technology",
+  "diff": 12,
+  "ratio": 1.92,
+  "cl": 25,
+  "wl": 13
+ },
+ {
+  "id": "q5-tech-18",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.64,
+  "cl": 18,
+  "wl": 11
+ },
+ {
+  "id": "q5-bill-02",
+  "domain": "billing",
+  "diff": 36,
+  "ratio": 4,
+  "cl": 48,
+  "wl": 12
+ },
+ {
+  "id": "q5-bill-03",
+  "domain": "billing",
+  "diff": 7,
+  "ratio": 1.58,
+  "cl": 19,
+  "wl": 12
+ },
+ {
+  "id": "q5-bill-04",
+  "domain": "billing",
+  "diff": 14,
+  "ratio": 2.4,
+  "cl": 24,
+  "wl": 10
+ },
+ {
+  "id": "q5-bill-05",
+  "domain": "billing",
+  "diff": 19,
+  "ratio": 2.36,
+  "cl": 33,
+  "wl": 14
+ },
+ {
+  "id": "q5-bill-06",
+  "domain": "billing",
+  "diff": 14,
+  "ratio": 1.88,
+  "cl": 30,
+  "wl": 16
+ },
+ {
+  "id": "q6-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 15,
+  "ratio": 2.5,
+  "cl": 25,
+  "wl": 10
+ },
+ {
+  "id": "q6-cc-03",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 2.5,
+  "cl": 20,
+  "wl": 8
+ },
+ {
+  "id": "q6-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.56,
+  "cl": 25,
+  "wl": 16
+ },
+ {
+  "id": "q6-cc-05",
+  "domain": "cloudConcepts",
+  "diff": 22,
+  "ratio": 3,
+  "cl": 33,
+  "wl": 11
+ },
+ {
+  "id": "q6-sec-03",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 1.75,
+  "cl": 21,
+  "wl": 12
+ },
+ {
+  "id": "q6-sec-04",
+  "domain": "security",
+  "diff": 13,
+  "ratio": 1.72,
+  "cl": 31,
+  "wl": 18
+ },
+ {
+  "id": "q6-sec-06",
+  "domain": "security",
+  "diff": 17,
+  "ratio": 2.21,
+  "cl": 31,
+  "wl": 14
+ },
+ {
+  "id": "q6-sec-09",
+  "domain": "security",
+  "diff": 12,
+  "ratio": 1.67,
+  "cl": 30,
+  "wl": 18
+ },
+ {
+  "id": "q6-sec-10",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 1.64,
+  "cl": 23,
+  "wl": 14
+ },
+ {
+  "id": "q6-tech-01",
+  "domain": "technology",
+  "diff": 8,
+  "ratio": 1.5,
+  "cl": 24,
+  "wl": 16
+ },
+ {
+  "id": "q6-tech-02",
+  "domain": "technology",
+  "diff": 13,
+  "ratio": 1.87,
+  "cl": 28,
+  "wl": 15
+ },
+ {
+  "id": "q6-tech-13",
+  "domain": "technology",
+  "diff": 21,
+  "ratio": 2.24,
+  "cl": 38,
+  "wl": 17
+ },
+ {
+  "id": "q6-tech-15",
+  "domain": "technology",
+  "diff": 15,
+  "ratio": 2.25,
+  "cl": 27,
+  "wl": 12
+ },
+ {
+  "id": "q6-tech-16",
+  "domain": "technology",
+  "diff": 12,
+  "ratio": 1.55,
+  "cl": 34,
+  "wl": 22
+ },
+ {
+  "id": "q6-tech-18",
+  "domain": "technology",
+  "diff": 13,
+  "ratio": 2.18,
+  "cl": 24,
+  "wl": 11
+ },
+ {
+  "id": "q6-tech-20",
+  "domain": "technology",
+  "diff": 13,
+  "ratio": 1.76,
+  "cl": 30,
+  "wl": 17
+ },
+ {
+  "id": "q6-bill-01",
+  "domain": "billing",
+  "diff": 13,
+  "ratio": 1.76,
+  "cl": 30,
+  "wl": 17
+ },
+ {
+  "id": "q6-bill-03",
+  "domain": "billing",
+  "diff": 17,
+  "ratio": 2.13,
+  "cl": 32,
+  "wl": 15
+ },
+ {
+  "id": "q6-bill-04",
+  "domain": "billing",
+  "diff": 14,
+  "ratio": 2.08,
+  "cl": 27,
+  "wl": 13
+ },
+ {
+  "id": "q6-bill-05",
+  "domain": "billing",
+  "diff": 40,
+  "ratio": 3.35,
+  "cl": 57,
+  "wl": 17
+ },
+ {
+  "id": "q6-bill-06",
+  "domain": "billing",
+  "diff": 27,
+  "ratio": 2.8,
+  "cl": 42,
+  "wl": 15
+ },
+ {
+  "id": "q7-cc-01",
+  "domain": "cloudConcepts",
+  "diff": 13,
+  "ratio": 1.76,
+  "cl": 30,
+  "wl": 17
+ },
+ {
+  "id": "q7-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 10,
+  "ratio": 1.83,
+  "cl": 22,
+  "wl": 12
+ },
+ {
+  "id": "q7-cc-03",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.82,
+  "cl": 20,
+  "wl": 11
+ },
+ {
+  "id": "q7-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 19,
+  "ratio": 2.9,
+  "cl": 29,
+  "wl": 10
+ },
+ {
+  "id": "q7-cc-05",
+  "domain": "cloudConcepts",
+  "diff": 6,
+  "ratio": 1.55,
+  "cl": 17,
+  "wl": 11
+ },
+ {
+  "id": "q7-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 6,
+  "ratio": 1.46,
+  "cl": 19,
+  "wl": 13
+ },
+ {
+  "id": "q7-cc-07",
+  "domain": "cloudConcepts",
+  "diff": 8,
+  "ratio": 1.73,
+  "cl": 19,
+  "wl": 11
+ },
+ {
+  "id": "q7-cc-09",
+  "domain": "cloudConcepts",
+  "diff": 15,
+  "ratio": 2.25,
+  "cl": 27,
+  "wl": 12
+ },
+ {
+  "id": "q7-cc-10",
+  "domain": "cloudConcepts",
+  "diff": 13,
+  "ratio": 2.3,
+  "cl": 23,
+  "wl": 10
+ },
+ {
+  "id": "q7-cc-11",
+  "domain": "cloudConcepts",
+  "diff": 25,
+  "ratio": 5.17,
+  "cl": 31,
+  "wl": 6
+ },
+ {
+  "id": "q7-cc-12",
+  "domain": "cloudConcepts",
+  "diff": 18,
+  "ratio": 2.38,
+  "cl": 31,
+  "wl": 13
+ },
+ {
+  "id": "q7-sec-01",
+  "domain": "security",
+  "diff": 16,
+  "ratio": 3.29,
+  "cl": 23,
+  "wl": 7
+ },
+ {
+  "id": "q7-sec-02",
+  "domain": "security",
+  "diff": 11,
+  "ratio": 1.92,
+  "cl": 23,
+  "wl": 12
+ },
+ {
+  "id": "q7-sec-03",
+  "domain": "security",
+  "diff": 13,
+  "ratio": 2.08,
+  "cl": 25,
+  "wl": 12
+ },
+ {
+  "id": "q7-sec-04",
+  "domain": "security",
+  "diff": 10,
+  "ratio": 2,
+  "cl": 20,
+  "wl": 10
+ },
+ {
+  "id": "q7-sec-05",
+  "domain": "security",
+  "diff": 14,
+  "ratio": 2.56,
+  "cl": 23,
+  "wl": 9
+ },
+ {
+  "id": "q7-sec-06",
+  "domain": "security",
+  "diff": 16,
+  "ratio": 2.45,
+  "cl": 27,
+  "wl": 11
+ },
+ {
+  "id": "q7-sec-07",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 1.9,
+  "cl": 19,
+  "wl": 10
+ },
+ {
+  "id": "q7-sec-10",
+  "domain": "security",
+  "diff": 10,
+  "ratio": 1.67,
+  "cl": 25,
+  "wl": 15
+ },
+ {
+  "id": "q7-tech-02",
+  "domain": "technology",
+  "diff": 8,
+  "ratio": 1.8,
+  "cl": 18,
+  "wl": 10
+ },
+ {
+  "id": "q7-tech-03",
+  "domain": "technology",
+  "diff": 12,
+  "ratio": 2,
+  "cl": 24,
+  "wl": 12
+ },
+ {
+  "id": "q7-tech-05",
+  "domain": "technology",
+  "diff": 10,
+  "ratio": 2,
+  "cl": 20,
+  "wl": 10
+ },
+ {
+  "id": "q7-tech-06",
+  "domain": "technology",
+  "diff": 11,
+  "ratio": 2.83,
+  "cl": 17,
+  "wl": 6
+ },
+ {
+  "id": "q7-tech-07",
+  "domain": "technology",
+  "diff": 14,
+  "ratio": 2.4,
+  "cl": 24,
+  "wl": 10
+ },
+ {
+  "id": "q7-tech-08",
+  "domain": "technology",
+  "diff": 14,
+  "ratio": 2.27,
+  "cl": 25,
+  "wl": 11
+ },
+ {
+  "id": "q7-tech-11",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 2.17,
+  "cl": 13,
+  "wl": 6
+ },
+ {
+  "id": "q7-bill-01",
+  "domain": "billing",
+  "diff": 8,
+  "ratio": 2.14,
+  "cl": 15,
+  "wl": 7
+ },
+ {
+  "id": "q7-bill-02",
+  "domain": "billing",
+  "diff": 11,
+  "ratio": 2,
+  "cl": 22,
+  "wl": 11
+ },
+ {
+  "id": "q7-bill-04",
+  "domain": "billing",
+  "diff": 7,
+  "ratio": 1.7,
+  "cl": 17,
+  "wl": 10
+ },
+ {
+  "id": "q7-bill-05",
+  "domain": "billing",
+  "diff": 6,
+  "ratio": 1.38,
+  "cl": 22,
+  "wl": 16
+ },
+ {
+  "id": "q8-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 8,
+  "ratio": 1.73,
+  "cl": 19,
+  "wl": 11
+ },
+ {
+  "id": "q8-cc-05",
+  "domain": "cloudConcepts",
+  "diff": 7,
+  "ratio": 1.78,
+  "cl": 16,
+  "wl": 9
+ },
+ {
+  "id": "q8-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 17,
+  "ratio": 2.21,
+  "cl": 31,
+  "wl": 14
+ },
+ {
+  "id": "q8-cc-07",
+  "domain": "cloudConcepts",
+  "diff": 6,
+  "ratio": 1.46,
+  "cl": 19,
+  "wl": 13
+ },
+ {
+  "id": "q8-cc-08",
+  "domain": "cloudConcepts",
+  "diff": 15,
+  "ratio": 2.25,
+  "cl": 27,
+  "wl": 12
+ },
+ {
+  "id": "q8-sec-07",
+  "domain": "security",
+  "diff": 6,
+  "ratio": 1.46,
+  "cl": 19,
+  "wl": 13
+ },
+ {
+  "id": "q8-tech-07",
+  "domain": "technology",
+  "diff": 10,
+  "ratio": 1.63,
+  "cl": 26,
+  "wl": 16
+ },
+ {
+  "id": "q8-bill-04",
+  "domain": "billing",
+  "diff": 21,
+  "ratio": 2.5,
+  "cl": 35,
+  "wl": 14
+ },
+ {
+  "id": "q8-bill-05",
+  "domain": "billing",
+  "diff": 13,
+  "ratio": 2.3,
+  "cl": 23,
+  "wl": 10
+ },
+ {
+  "id": "q8-bill-07",
+  "domain": "billing",
+  "diff": 6,
+  "ratio": 1.38,
+  "cl": 22,
+  "wl": 16
+ },
+ {
+  "id": "q9-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 13,
+  "ratio": 2.18,
+  "cl": 24,
+  "wl": 11
+ },
+ {
+  "id": "q9-cc-03",
+  "domain": "cloudConcepts",
+  "diff": 13,
+  "ratio": 2.3,
+  "cl": 23,
+  "wl": 10
+ },
+ {
+  "id": "q9-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.9,
+  "cl": 19,
+  "wl": 10
+ },
+ {
+  "id": "q9-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 14,
+  "ratio": 2.4,
+  "cl": 24,
+  "wl": 10
+ },
+ {
+  "id": "q9-cc-07",
+  "domain": "cloudConcepts",
+  "diff": 8,
+  "ratio": 1.5,
+  "cl": 24,
+  "wl": 16
+ },
+ {
+  "id": "q9-cc-08",
+  "domain": "cloudConcepts",
+  "diff": 6,
+  "ratio": 1.55,
+  "cl": 17,
+  "wl": 11
+ },
+ {
+  "id": "q9-sec-04",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 1.54,
+  "cl": 20,
+  "wl": 13
+ },
+ {
+  "id": "q9-tech-10",
+  "domain": "technology",
+  "diff": 16,
+  "ratio": 1.94,
+  "cl": 33,
+  "wl": 17
+ },
+ {
+  "id": "q9-tech-11",
+  "domain": "technology",
+  "diff": 14,
+  "ratio": 3.8,
+  "cl": 19,
+  "wl": 5
+ },
+ {
+  "id": "q9-tech-14",
+  "domain": "technology",
+  "diff": 19,
+  "ratio": 2.58,
+  "cl": 31,
+  "wl": 12
+ },
+ {
+  "id": "q9-bill-03",
+  "domain": "billing",
+  "diff": 10,
+  "ratio": 1.5,
+  "cl": 30,
+  "wl": 20
+ },
+ {
+  "id": "q10-cc-01",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.6,
+  "cl": 24,
+  "wl": 15
+ },
+ {
+  "id": "q10-cc-02",
+  "domain": "cloudConcepts",
+  "diff": 16,
+  "ratio": 2.78,
+  "cl": 25,
+  "wl": 9
+ },
+ {
+  "id": "q10-cc-03",
+  "domain": "cloudConcepts",
+  "diff": 17,
+  "ratio": 2.89,
+  "cl": 26,
+  "wl": 9
+ },
+ {
+  "id": "q10-cc-06",
+  "domain": "cloudConcepts",
+  "diff": 13,
+  "ratio": 1.93,
+  "cl": 27,
+  "wl": 14
+ },
+ {
+  "id": "q10-sec-01",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 2,
+  "cl": 18,
+  "wl": 9
+ },
+ {
+  "id": "q10-tech-03",
+  "domain": "technology",
+  "diff": 12,
+  "ratio": 2.2,
+  "cl": 22,
+  "wl": 10
+ },
+ {
+  "id": "q10-tech-05",
+  "domain": "technology",
+  "diff": 12,
+  "ratio": 1.71,
+  "cl": 29,
+  "wl": 17
+ },
+ {
+  "id": "q10-bill-01",
+  "domain": "billing",
+  "diff": 14,
+  "ratio": 3.8,
+  "cl": 19,
+  "wl": 5
+ },
+ {
+  "id": "q10-bill-02",
+  "domain": "billing",
+  "diff": 7,
+  "ratio": 1.7,
+  "cl": 17,
+  "wl": 10
+ },
+ {
+  "id": "q10-bill-04",
+  "domain": "billing",
+  "diff": 7,
+  "ratio": 1.58,
+  "cl": 19,
+  "wl": 12
+ },
+ {
+  "id": "q10-bill-05",
+  "domain": "billing",
+  "diff": 14,
+  "ratio": 2.17,
+  "cl": 26,
+  "wl": 12
+ },
+ {
+  "id": "q11-cc-01",
+  "domain": "cloudConcepts",
+  "diff": 14,
+  "ratio": 1.78,
+  "cl": 32,
+  "wl": 18
+ },
+ {
+  "id": "q11-sec-02",
+  "domain": "security",
+  "diff": 8,
+  "ratio": 1.67,
+  "cl": 20,
+  "wl": 12
+ },
+ {
+  "id": "q11-tech-03",
+  "domain": "technology",
+  "diff": 7,
+  "ratio": 1.58,
+  "cl": 19,
+  "wl": 12
+ },
+ {
+  "id": "q11-tech-04",
+  "domain": "technology",
+  "diff": 17,
+  "ratio": 2,
+  "cl": 34,
+  "wl": 17
+ },
+ {
+  "id": "q11-tech-05",
+  "domain": "technology",
+  "diff": 8,
+  "ratio": 1.47,
+  "cl": 25,
+  "wl": 17
+ },
+ {
+  "id": "q12-sec-01",
+  "domain": "security",
+  "diff": 9,
+  "ratio": 1.47,
+  "cl": 28,
+  "wl": 19
+ },
+ {
+  "id": "q12-sec-02",
+  "domain": "security",
+  "diff": 6,
+  "ratio": 1.38,
+  "cl": 22,
+  "wl": 16
+ },
+ {
+  "id": "q12-sec-03",
+  "domain": "security",
+  "diff": 11,
+  "ratio": 2.1,
+  "cl": 21,
+  "wl": 10
+ },
+ {
+  "id": "q12-sec-05",
+  "domain": "security",
+  "diff": 13,
+  "ratio": 1.93,
+  "cl": 27,
+  "wl": 14
+ },
+ {
+  "id": "q12-sec-08",
+  "domain": "security",
+  "diff": 15,
+  "ratio": 2.5,
+  "cl": 25,
+  "wl": 10
+ },
+ {
+  "id": "q12-sec-09",
+  "domain": "security",
+  "diff": 16,
+  "ratio": 2,
+  "cl": 32,
+  "wl": 16
+ },
+ {
+  "id": "q12-sec-10",
+  "domain": "security",
+  "diff": 15,
+  "ratio": 2.15,
+  "cl": 28,
+  "wl": 13
+ },
+ {
+  "id": "q12-sec-11",
+  "domain": "security",
+  "diff": 12,
+  "ratio": 1.75,
+  "cl": 28,
+  "wl": 16
+ },
+ {
+  "id": "q12-sec-13",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 1.7,
+  "cl": 17,
+  "wl": 10
+ },
+ {
+  "id": "q12-sec-14",
+  "domain": "security",
+  "diff": 18,
+  "ratio": 2.38,
+  "cl": 31,
+  "wl": 13
+ },
+ {
+  "id": "q12-sec-15",
+  "domain": "security",
+  "diff": 19,
+  "ratio": 3.11,
+  "cl": 28,
+  "wl": 9
+ },
+ {
+  "id": "q12-sec-16",
+  "domain": "security",
+  "diff": 8,
+  "ratio": 1.33,
+  "cl": 32,
+  "wl": 24
+ },
+ {
+  "id": "q12-sec-19",
+  "domain": "security",
+  "diff": 12,
+  "ratio": 1.71,
+  "cl": 29,
+  "wl": 17
+ },
+ {
+  "id": "q12-sec-20",
+  "domain": "security",
+  "diff": 18,
+  "ratio": 2.8,
+  "cl": 28,
+  "wl": 10
+ },
+ {
+  "id": "q12-sec-22",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 1.5,
+  "cl": 21,
+  "wl": 14
+ },
+ {
+  "id": "q12-sec-23",
+  "domain": "security",
+  "diff": 12,
+  "ratio": 1.75,
+  "cl": 28,
+  "wl": 16
+ },
+ {
+  "id": "q12-tech-03",
+  "domain": "technology",
+  "diff": 17,
+  "ratio": 2,
+  "cl": 34,
+  "wl": 17
+ },
+ {
+  "id": "q12-tech-06",
+  "domain": "technology",
+  "diff": 18,
+  "ratio": 2,
+  "cl": 36,
+  "wl": 18
+ },
+ {
+  "id": "qm-cc-03",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.41,
+  "cl": 31,
+  "wl": 22
+ },
+ {
+  "id": "qm-cc-04",
+  "domain": "cloudConcepts",
+  "diff": 13,
+  "ratio": 1.65,
+  "cl": 33,
+  "wl": 20
+ },
+ {
+  "id": "qm-tec-05",
+  "domain": "technology",
+  "diff": 10,
+  "ratio": 2,
+  "cl": 20,
+  "wl": 10
+ },
+ {
+  "id": "qm-tec-06",
+  "domain": "technology",
+  "diff": 9,
+  "ratio": 1.53,
+  "cl": 26,
+  "wl": 17
+ },
+ {
+  "id": "qm-bil-01",
+  "domain": "billing",
+  "diff": 16,
+  "ratio": 1.7,
+  "cl": 39,
+  "wl": 23
+ },
+ {
+  "id": "qm-bil-03",
+  "domain": "billing",
+  "diff": 6,
+  "ratio": 1.4,
+  "cl": 21,
+  "wl": 15
+ },
+ {
+  "id": "qm-cc01-1",
+  "domain": "cloudConcepts",
+  "diff": 6,
+  "ratio": 1.4,
+  "cl": 21,
+  "wl": 15
+ },
+ {
+  "id": "qm-cc01-2",
+  "domain": "cloudConcepts",
+  "diff": 7,
+  "ratio": 1.5,
+  "cl": 21,
+  "wl": 14
+ },
+ {
+  "id": "qm-cc03b-2",
+  "domain": "cloudConcepts",
+  "diff": 10,
+  "ratio": 1.71,
+  "cl": 24,
+  "wl": 14
+ },
+ {
+  "id": "qm-cc04b-2",
+  "domain": "cloudConcepts",
+  "diff": 11,
+  "ratio": 1.65,
+  "cl": 28,
+  "wl": 17
+ },
+ {
+  "id": "qm-cc04b-3",
+  "domain": "cloudConcepts",
+  "diff": 12,
+  "ratio": 1.67,
+  "cl": 30,
+  "wl": 18
+ },
+ {
+  "id": "qm-cc07b-3",
+  "domain": "cloudConcepts",
+  "diff": 9,
+  "ratio": 1.64,
+  "cl": 23,
+  "wl": 14
+ },
+ {
+  "id": "qm-sec02b-2",
+  "domain": "security",
+  "diff": 8,
+  "ratio": 1.5,
+  "cl": 24,
+  "wl": 16
+ },
+ {
+  "id": "qm-sec04b-1",
+  "domain": "security",
+  "diff": 6,
+  "ratio": 1.33,
+  "cl": 24,
+  "wl": 18
+ },
+ {
+  "id": "qm-sec05b-3",
+  "domain": "security",
+  "diff": 7,
+  "ratio": 1.5,
+  "cl": 21,
+  "wl": 14
+ },
+ {
+  "id": "qm-sec10b-2",
+  "domain": "security",
+  "diff": 21,
+  "ratio": 2.24,
+  "cl": 38,
+  "wl": 17
+ },
+ {
+  "id": "qm-sec10b-3",
+  "domain": "security",
+  "diff": 20,
+  "ratio": 3,
+  "cl": 30,
+  "wl": 10
+ },
+ {
+  "id": "qm-tec04b-3",
+  "domain": "technology",
+  "diff": 9,
+  "ratio": 1.9,
+  "cl": 19,
+  "wl": 10
+ },
+ {
+  "id": "qm-tec07b-1",
+  "domain": "technology",
+  "diff": 14,
+  "ratio": 1.78,
+  "cl": 32,
+  "wl": 18
+ },
+ {
+  "id": "qm-tec10b-2",
+  "domain": "technology",
+  "diff": 11,
+  "ratio": 1.65,
+  "cl": 28,
+  "wl": 17
+ },
+ {
+  "id": "qm-tec11b-3",
+  "domain": "technology",
+  "diff": 8,
+  "ratio": 1.8,
+  "cl": 18,
+  "wl": 10
+ },
+ {
+  "id": "qm-tec14b-2",
+  "domain": "technology",
+  "diff": 6,
+  "ratio": 1.4,
+  "cl": 21,
+  "wl": 15
+ },
+ {
+  "id": "qm-tec14b-3",
+  "domain": "technology",
+  "diff": 16,
+  "ratio": 1.76,
+  "cl": 37,
+  "wl": 21
+ },
+ {
+  "id": "qm-bil04b-3",
+  "domain": "billing",
+  "diff": 15,
+  "ratio": 2,
+  "cl": 30,
+  "wl": 15
+ }
+]
