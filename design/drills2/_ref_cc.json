@@ -1,0 +1,3854 @@
+{
+ "domain": "cc",
+ "need": {
+  "qd-cc01": {
+   "have": 11,
+   "target": 30,
+   "addNeeded": 19
+  },
+  "qd-cc02": {
+   "have": 32,
+   "target": 30,
+   "addNeeded": 0
+  },
+  "qd-cc03": {
+   "have": 12,
+   "target": 30,
+   "addNeeded": 18
+  },
+  "qd-cc04": {
+   "have": 13,
+   "target": 30,
+   "addNeeded": 17
+  },
+  "qd-cc05": {
+   "have": 27,
+   "target": 30,
+   "addNeeded": 3
+  },
+  "qd-cc06": {
+   "have": 22,
+   "target": 30,
+   "addNeeded": 8
+  },
+  "qd-cc07": {
+   "have": 11,
+   "target": 30,
+   "addNeeded": 19
+  },
+  "qd-cc08": {
+   "have": 13,
+   "target": 30,
+   "addNeeded": 17
+  }
+ },
+ "questions": [
+  {
+   "id": "qd-cc02-1",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "「大きな初期投資をせず、使った分だけ支払える」という利点を最もよく表す言葉はどれですか。",
+   "choices": [
+    "変動費化（従量課金）",
+    "規模の経済",
+    "俊敏性",
+    "グローバル展開"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "規模の経済は多くの利用者が集まり単価が下がる利点です。",
+    "2": "俊敏性は素早く調達できる利点です。",
+    "3": "グローバル展開は世界に素早く広げられる利点です。"
+   },
+   "lens": [
+    10,
+    5,
+    3,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-2",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "「多くの利用者の需要が集約され、結果として単価が下がる」利点を何と呼びますか。",
+   "choices": [
+    "弾力性",
+    "規模の経済",
+    "変動費化",
+    "俊敏性"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "弾力性は自動で増減する性質です。",
+    "2": "変動費化は使った分だけ払う利点です。",
+    "3": "俊敏性は素早い調達の利点です。"
+   },
+   "lens": [
+    3,
+    5,
+    4,
+    3
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-3",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "「将来どれだけ必要になるかを事前に正確に見積もる必要がない」利点はどれですか。",
+   "choices": [
+    "運用負荷の削減",
+    "グローバル展開",
+    "キャパシティ予測が不要",
+    "規模の経済"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "運用負荷の削減は保守から解放される利点です。",
+    "1": "グローバル展開は展開の速さの利点です。",
+    "3": "規模の経済はコスト面の利点です。"
+   },
+   "lens": [
+    7,
+    7,
+    11,
+    5
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-4",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "「数分で必要なリソースを調達できる素早さ」を表す利点はどれですか。",
+   "choices": [
+    "規模の経済",
+    "変動費化",
+    "持続可能性",
+    "俊敏性（アジリティ）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "規模の経済はコストの利点です。",
+    "1": "変動費化は支払い方の利点です。",
+    "2": "持続可能性はWell-Architectedの柱で、ここでは無関係です。"
+   },
+   "lens": [
+    5,
+    4,
+    5,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-5",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "「サーバーの設置・電源・故障対応などデータセンター運用から解放される」利点はどれですか。",
+   "choices": [
+    "運用負荷の削減",
+    "規模の経済",
+    "キャパシティ予測不要",
+    "変動費化"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "規模の経済はコストの利点です。",
+    "2": "予測不要は需要見積りの利点です。",
+    "3": "変動費化は支払い方の利点です。"
+   },
+   "lens": [
+    7,
+    5,
+    10,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-1",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 1,
+   "question": "「1台が故障してもサービスが止まらない状態」を何と呼びますか。",
+   "choices": [
+    "高可用性",
+    "弾力性",
+    "俊敏性",
+    "規模の経済"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "弾力性は自動増減です。",
+    "2": "俊敏性は調達の速さです。",
+    "3": "規模の経済はコストの利点です。"
+   },
+   "lens": [
+    4,
+    3,
+    3,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-2",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 1,
+   "question": "「同じ役割の予備を複数用意して備える」考え方を何と呼びますか。",
+   "choices": [
+    "前払い",
+    "冗長化",
+    "単一化",
+    "集約"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "前払いは料金の話です。",
+    "2": "単一化は逆で、単一障害点を生みます。",
+    "3": "集約は1か所に集めることです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-3",
+   "theme": "qd-cc05",
+   "service": "スケーラビリティ",
+   "difficulty": 1,
+   "question": "「台数を増やして負荷を分散する」拡張方法を何と呼びますか。",
+   "choices": [
+    "スケールイン",
+    "スケールダウン",
+    "スケールアウト（水平）",
+    "スケールアップ（垂直）"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "スケールインは台数を減らす方向です。",
+    "1": "スケールダウンは性能を下げる方向です。",
+    "3": "スケールアップは1台の性能を上げる垂直方向です。"
+   },
+   "lens": [
+    6,
+    7,
+    11,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-4",
+   "theme": "qd-cc05",
+   "service": "スケーラビリティ",
+   "difficulty": 1,
+   "question": "「1台をより高性能なものに変える」拡張方法を何と呼びますか。",
+   "choices": [
+    "スケールアウト（水平）",
+    "スケールイン",
+    "レプリケーション",
+    "スケールアップ（垂直）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "スケールアウトは台数を増やす水平方向です。",
+    "1": "スケールインは台数を減らす方向です。",
+    "2": "レプリケーションは複製です。"
+   },
+   "lens": [
+    11,
+    6,
+    8,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-5",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 1,
+   "question": "「システムの一部が壊れても全体が動き続けられる設計」を何と呼びますか。",
+   "choices": [
+    "フォールトトレランス（耐障害性）",
+    "単一障害点",
+    "レイテンシ",
+    "スループット"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "単一障害点は逆で、そこが壊れると全体が止まります。",
+    "2": "レイテンシは遅延です。",
+    "3": "スループットは処理量です。"
+   },
+   "lens": [
+    16,
+    5,
+    5,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-1",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「バックアップと復旧計画を整え、障害に備える」はどの柱ですか。",
+   "choices": [
+    "コスト最適化",
+    "セキュリティ",
+    "持続可能性",
+    "信頼性"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "コスト最適化は支払いの無駄をなくす柱です。",
+    "1": "セキュリティは保護の柱です。",
+    "2": "持続可能性は環境負荷の柱です。"
+   },
+   "lens": [
+    6,
+    6,
+    5,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-2",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「不正アクセスを防ぎ、データや権限を守る」はどの柱ですか。",
+   "choices": [
+    "セキュリティ",
+    "信頼性",
+    "パフォーマンス効率",
+    "持続可能性"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "信頼性は回復に関する柱です。",
+    "2": "パフォーマンス効率は資源活用の柱です。",
+    "3": "持続可能性は環境の柱です。"
+   },
+   "lens": [
+    6,
+    3,
+    9,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-3",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「使っていない資源への支払いを見直す」はどの柱ですか。",
+   "choices": [
+    "運用上の優秀性",
+    "コスト最適化",
+    "信頼性",
+    "セキュリティ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "運用上の優秀性は運用・改善の柱です。",
+    "2": "信頼性は回復の柱です。",
+    "3": "セキュリティは保護の柱です。"
+   },
+   "lens": [
+    7,
+    6,
+    3,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-4",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「リソースを無駄なく効率的に使えているか」を扱うのはどの柱ですか。",
+   "choices": [
+    "セキュリティ",
+    "信頼性",
+    "パフォーマンス効率",
+    "コスト最適化"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "セキュリティは保護の柱です。",
+    "1": "信頼性は回復の柱です。",
+    "3": "コスト最適化は支払いの無駄の柱です。"
+   },
+   "lens": [
+    6,
+    3,
+    9,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-5",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「監視・自動化・手順の改善で運用を良くする」はどの柱ですか。",
+   "choices": [
+    "信頼性",
+    "持続可能性",
+    "セキュリティ",
+    "運用上の優秀性"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "信頼性は回復の柱です。",
+    "1": "持続可能性は環境の柱です。",
+    "2": "セキュリティは保護の柱です。"
+   },
+   "lens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-6",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "「新サービスを世界中の顧客へ数分で展開できる」利点はどれですか。",
+   "choices": [
+    "運用負荷の削減",
+    "グローバル展開",
+    "変動費化",
+    "規模の経済"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "運用負荷の削減は保守からの解放です。",
+    "2": "変動費化は支払い方の利点です。",
+    "3": "規模の経済はコストの利点です。"
+   },
+   "lens": [
+    7,
+    7,
+    4,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-7",
+   "theme": "qd-cc02",
+   "service": "弾力性",
+   "difficulty": 1,
+   "question": "「需要に応じてリソースを自動で増やしたり減らしたりできる」性質はどれですか。",
+   "choices": [
+    "変動費化",
+    "俊敏性",
+    "弾力性（エラスティシティ）",
+    "規模の経済"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "変動費化は支払い方です。",
+    "1": "俊敏性は調達の速さです。",
+    "3": "規模の経済はコストの利点です。"
+   },
+   "lens": [
+    4,
+    3,
+    13,
+    5
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-8",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "クラウドにおける「規模の経済」の説明として正しいものはどれですか。",
+   "choices": [
+    "1社専用の設備を持つほど安くなる",
+    "前払いすると必ず無料になる",
+    "物理サーバーを買うほど得になる",
+    "多数の利用者の需要が集まることで単価が下がる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "1社専用はむしろ割高になりがちです。",
+    "1": "前払いは割引の一手段で無料化ではありません。",
+    "2": "物理購入は規模の経済の説明ではありません。"
+   },
+   "lens": [
+    16,
+    13,
+    15,
+    22
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-9",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "「従量課金（pay-as-you-go）」の説明として正しいものはどれですか。",
+   "choices": [
+    "使用量に応じて料金が変わる",
+    "毎月固定額を必ず払う",
+    "無料で無制限に使える",
+    "3年分を前払いする"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "固定額ではなく使用量に応じて変わります。",
+    "2": "無料ではありません。",
+    "3": "前払いは別の割引方式です。"
+   },
+   "lens": [
+    13,
+    10,
+    10,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-10",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "「俊敏性（アジリティ）」がもたらす効果として正しいものはどれですか。",
+   "choices": [
+    "法令が自動で順守される",
+    "新しいリソースを数分で用意し、試行錯誤を素早く行える",
+    "物理サーバーの寿命が延びる",
+    "データ通信が常に無料になる"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "法令順守が自動化されるわけではありません。",
+    "2": "物理サーバーの寿命とは関係ありません。",
+    "3": "通信が無料になるわけではありません。"
+   },
+   "lens": [
+    11,
+    26,
+    13,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-11",
+   "theme": "qd-cc02",
+   "service": "変動費",
+   "difficulty": 2,
+   "question": "「設備投資（CapEx）を運用支出（OpEx）に変える」の意味として正しいものはどれですか。",
+   "choices": [
+    "一括で3年分購入する",
+    "無料枠だけで運用する",
+    "サーバーを買い込む代わりに、使った分を運用費として払う",
+    "毎月の固定費を増やす"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "一括購入はCapExそのものです。",
+    "1": "無料枠限定の話ではありません。",
+    "3": "固定費を増やすのは逆方向です。"
+   },
+   "lens": [
+    10,
+    10,
+    27,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-12",
+   "theme": "qd-cc02",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "「弾力性」と「スケーラビリティ」の違いとして正しいものはどれですか。",
+   "choices": [
+    "両者はまったく同じ意味",
+    "弾力性は課金方式、スケーラビリティは暗号化",
+    "どちらもセキュリティ機能",
+    "弾力性は需要に応じ自動で増減、スケーラビリティは規模を拡大できる能力"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "同義ではなくニュアンスが異なります。",
+    "1": "課金や暗号化の用語ではありません。",
+    "2": "セキュリティ機能ではありません。"
+   },
+   "lens": [
+    11,
+    21,
+    12,
+    34
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-13",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "クラウドの「運用負荷の削減」が意味するものはどれですか。",
+   "choices": [
+    "データセンターの物理運用をAWSに任せられる",
+    "アプリのバグが自動修正される",
+    "従業員が不要になる",
+    "通信が無料になる"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "バグの自動修正ではありません。",
+    "2": "従業員が不要になるわけではありません。",
+    "3": "通信無料化ではありません。"
+   },
+   "lens": [
+    22,
+    14,
+    9,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-14",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "「キャパシティ予測が不要」がもたらす利点はどれですか。",
+   "choices": [
+    "増減が一切できなくなる",
+    "過不足の心配なく、必要に応じて増減できる",
+    "必ず最大構成で固定される",
+    "将来の需要を正確に当てる必要がある"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "増減できるのが利点です。",
+    "2": "最大構成固定ではありません。",
+    "3": "予測が必要なのはオンプレの発想です。"
+   },
+   "lens": [
+    11,
+    20,
+    12,
+    17
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-15",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "需要予測が難しい新サービスを立ち上げます。オンプレでの大量購入と比べたクラウドの主な利点はどれですか。",
+   "choices": [
+    "物理サーバーを自社管理できる",
+    "通信費が無料になる",
+    "使った分だけ払い、需要に応じて増減できる",
+    "資産計上できる"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "自社管理はオンプレの特徴です。",
+    "1": "通信費無料ではありません。",
+    "3": "資産計上は主眼ではありません。"
+   },
+   "lens": [
+    14,
+    9,
+    20,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-16",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "世界中の利用者へ数分でサービスを広げたいです。これはどの利点に当たりますか。",
+   "choices": [
+    "規模の経済",
+    "運用負荷の削減",
+    "変動費化",
+    "グローバル展開"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "規模の経済はコスト面です。",
+    "1": "運用負荷の削減は保守面です。",
+    "2": "変動費化は支払い面です。"
+   },
+   "lens": [
+    5,
+    7,
+    4,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-17",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "セール時だけ需要が急増するECサイトです。無駄なく対応する考え方はどれですか。",
+   "choices": [
+    "弾力性を活かし需要に応じて自動増減する",
+    "常に最大構成を用意する",
+    "増設は年1回だけ行う",
+    "1台に集約する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "常時最大は無駄が出ます。",
+    "2": "年1回の増設では急増に追従できません。",
+    "3": "1台集約は上限・障害の面で不利です。"
+   },
+   "lens": [
+    19,
+    11,
+    10,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-18",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "サーバーの設置場所や電源・故障対応の負担を減らしたい企業に響く利点はどれですか。",
+   "choices": [
+    "グローバル展開",
+    "運用負荷の削減（DC運用から解放）",
+    "規模の経済",
+    "キャパシティ予測不要"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "グローバル展開は展開速度面です。",
+    "2": "規模の経済はコスト面です。",
+    "3": "予測不要は需要見積り面です。"
+   },
+   "lens": [
+    7,
+    17,
+    5,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-19",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "スタートアップが初期費用を抑えて素早く始めたいです。最も響く利点の組合せはどれですか。",
+   "choices": [
+    "物理購入＋長期契約",
+    "自社DC構築＋人員増",
+    "初期投資が小さい＋数分で調達できる",
+    "前払い必須＋固定費増"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "物理購入・長期契約はオンプレ発想です。",
+    "1": "自社DC構築はクラウドの利点と逆です。",
+    "3": "前払い必須・固定費増は逆です。"
+   },
+   "lens": [
+    9,
+    10,
+    17,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-20",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "利用が増えるほど単価が下がる恩恵を受けたい。関係する利点はどれですか。",
+   "choices": [
+    "俊敏性",
+    "弾力性",
+    "運用負荷の削減",
+    "規模の経済"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "俊敏性は調達速度です。",
+    "1": "弾力性は自動増減です。",
+    "2": "運用負荷削減は保守面です。"
+   },
+   "lens": [
+    3,
+    3,
+    7,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-21",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "検証環境を素早く作っては壊す開発をしたいです。効くクラウドの利点はどれですか。",
+   "choices": [
+    "俊敏性（数分で調達・破棄できる）",
+    "規模の経済",
+    "持続可能性",
+    "データ主権"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "規模の経済はコスト面です。",
+    "2": "持続可能性は環境負荷の話です。",
+    "3": "データ主権は所在地の話です。"
+   },
+   "lens": [
+    16,
+    5,
+    5,
+    5
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-22",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "俊敏性は英語で「＿＿＿」とも呼ばれます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "スループット",
+    "アジリティ",
+    "スケーラビリティ",
+    "レイテンシ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "スループットは処理量です。",
+    "2": "スケーラビリティは拡張性です。",
+    "3": "レイテンシは遅延です。"
+   },
+   "lens": [
+    6,
+    5,
+    8,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-23",
+   "theme": "qd-cc02",
+   "service": "弾力性",
+   "difficulty": 1,
+   "question": "弾力性は英語で「＿＿＿」とも呼ばれます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "デュラビリティ",
+    "アベイラビリティ",
+    "エラスティシティ",
+    "アジリティ"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "デュラビリティは耐久性です。",
+    "1": "アベイラビリティは可用性です。",
+    "3": "アジリティは俊敏性です。"
+   },
+   "lens": [
+    7,
+    8,
+    8,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-24",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "従量課金は英語で「＿＿＿」と表現されます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "all-you-can-eat",
+    "up-front-only",
+    "flat-rate",
+    "pay-as-you-go"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "all-you-can-eatは定額食べ放題の比喩で不適切です。",
+    "1": "up-front-onlyは前払い限定の意味です。",
+    "2": "flat-rateは定額です。"
+   },
+   "lens": [
+    15,
+    13,
+    9,
+    13
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-25",
+   "theme": "qd-cc02",
+   "service": "変動費",
+   "difficulty": 1,
+   "question": "設備投資は「＿＿＿」、運用支出は「OpEx」と略されます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "CapEx",
+    "TCO",
+    "ROI",
+    "KPI"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "TCOは総所有コストです。",
+    "2": "ROIは投資利益率です。",
+    "3": "KPIは重要業績評価指標です。"
+   },
+   "lens": [
+    5,
+    3,
+    3,
+    3
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-26",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "規模の経済は英語で「economies of ＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "storage",
+    "scale",
+    "speed",
+    "scope"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "storageは保存で無関係です。",
+    "2": "speedは速度で異なります。",
+    "3": "scopeは範囲で別概念です。"
+   },
+   "lens": [
+    7,
+    5,
+    5,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-27",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "「必要なときに必要なだけ増減する」という考え方の中心にあるのは＿＿＿性です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "冗長",
+    "移植",
+    "弾力",
+    "堅牢"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "冗長性は予備を持つことです。",
+    "1": "移植性は他環境へ移せることです。",
+    "3": "堅牢性は壊れにくさです。"
+   },
+   "lens": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-28",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "AWSへ入る通信（インバウンド）は基本＿＿＿です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "最も高額",
+    "従量で高い",
+    "定額",
+    "無料"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "最も高額なのはむしろアウトです。",
+    "1": "インは基本無料です。",
+    "2": "定額ではありません。"
+   },
+   "lens": [
+    4,
+    5,
+    2,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-29",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "クラウドのメリットの説明として誤っているものはどれですか。",
+   "choices": [
+    "サーバーは必ず自社で購入・所有する必要がある",
+    "使った分だけ支払える",
+    "必要に応じてすぐ増減できる",
+    "データセンター運用の負担が減る"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "従量課金は正しい説明です。",
+    "2": "俊敏な増減は正しい説明です。",
+    "3": "運用負担軽減は正しい説明です。"
+   },
+   "lens": [
+    22,
+    10,
+    13,
+    15
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-30",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "「規模の経済」の説明として誤っているものはどれですか。",
+   "choices": [
+    "AWS全体の規模拡大が低価格につながること",
+    "1社が専用設備を増やすほど単価が下がること",
+    "多くの利用者の需要が集約されること",
+    "スケールメリットで安くなること"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "規模拡大による低価格は正しい説明です。",
+    "2": "需要集約は正しい説明です。",
+    "3": "スケールメリットは正しい説明です。"
+   },
+   "lens": [
+    21,
+    21,
+    17,
+    15
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc02-31",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "従量課金の説明として誤っているものはどれですか。",
+   "choices": [
+    "初期の大型投資が不要",
+    "無料利用枠を活用できる",
+    "利用量に関わらず毎月固定額を必ず支払う",
+    "使った分だけ支払う"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "初期投資不要は正しい説明です。",
+    "1": "無料枠の活用は正しい説明です。",
+    "3": "使った分だけ払うのは正しい説明です。"
+   },
+   "lens": [
+    10,
+    11,
+    19,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc02-32",
+   "theme": "qd-cc02",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "クラウドの俊敏性の説明として誤っているものはどれですか。",
+   "choices": [
+    "数分でリソースを用意できる",
+    "試行錯誤を素早く行える",
+    "需要変化に素早く対応できる",
+    "リソースの調達に数週間〜数か月かかる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "数分で用意は正しい説明です。",
+    "1": "素早い試行錯誤は正しい説明です。",
+    "2": "素早い対応は正しい説明です。"
+   },
+   "lens": [
+    13,
+    11,
+    13,
+    18
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-6",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "「そこが壊れると全体が止まる箇所」を何と呼びますか。",
+   "choices": [
+    "負荷分散",
+    "単一障害点（SPOF）",
+    "冗長化",
+    "高可用性"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "負荷分散はELBの働きです。",
+    "2": "冗長化は単一障害点を減らす手段です。",
+    "3": "高可用性は目指す状態です。"
+   },
+   "lens": [
+    4,
+    11,
+    3,
+    4
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-7",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "需要に応じてEC2の台数を自動で増減する仕組みは何ですか。",
+   "choices": [
+    "スナップショット",
+    "リザーブド",
+    "Auto Scaling",
+    "ロードバランサー"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "スナップショットはバックアップです。",
+    "1": "リザーブドは購入方式です。",
+    "3": "ロードバランサーは振り分けです。"
+   },
+   "lens": [
+    8,
+    5,
+    12,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-8",
+   "theme": "qd-cc05",
+   "service": "弾力性",
+   "difficulty": 1,
+   "question": "弾力性（エラスティシティ）の意味として正しいものはどれですか。",
+   "choices": [
+    "1台を高性能にする",
+    "障害から復旧する",
+    "世界展開する",
+    "需要に応じてリソースを自動で増減する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "1台の高性能化はスケールアップです。",
+    "1": "復旧は可用性・信頼性の話です。",
+    "2": "世界展開はグローバル展開です。"
+   },
+   "lens": [
+    9,
+    8,
+    6,
+    18
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-9",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 1,
+   "question": "高可用性の説明として正しいものはどれですか。",
+   "choices": [
+    "障害が起きてもサービスを継続できる状態",
+    "常に最速で応答すること",
+    "料金が最も安いこと",
+    "暗号化されていること"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "応答速度はパフォーマンスの話です。",
+    "2": "料金の安さは別の観点です。",
+    "3": "暗号化はセキュリティの話です。"
+   },
+   "lens": [
+    19,
+    11,
+    9,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-10",
+   "theme": "qd-cc05",
+   "service": "スケーラビリティ",
+   "difficulty": 1,
+   "question": "スケーラビリティの説明として正しいものはどれですか。",
+   "choices": [
+    "通信を無料にする機能",
+    "負荷に応じて処理能力を拡張できる能力",
+    "データを暗号化する能力",
+    "課金を止める機能"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "通信無料化ではありません。",
+    "2": "暗号化は別機能です。",
+    "3": "課金停止機能ではありません。"
+   },
+   "lens": [
+    10,
+    18,
+    11,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-11",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "冗長化の説明として正しいものはどれですか。",
+   "choices": [
+    "バックアップを取らない",
+    "1AZに集中させる",
+    "同じ役割の構成要素を複数用意して備える",
+    "構成を1つに集約する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "バックアップ不要ではありません。",
+    "1": "1AZ集中は単一障害点を生みます。",
+    "3": "集約は冗長化と逆です。"
+   },
+   "lens": [
+    11,
+    9,
+    19,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-12",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "「複数AZに分散配置する」ことの主なねらいは何ですか。",
+   "choices": [
+    "通信料金を無料にする",
+    "暗号鍵を管理する",
+    "課金を止める",
+    "1つのデータセンターが落ちても継続できるようにする"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "料金無料化ではありません。",
+    "1": "鍵管理はKMSの役割です。",
+    "2": "課金停止ではありません。"
+   },
+   "lens": [
+    10,
+    8,
+    6,
+    25
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-13",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "スケールアウトがクラウドと相性が良い理由として正しいものはどれですか。",
+   "choices": [
+    "台数を柔軟に増減でき、可用性とコストを両立しやすい",
+    "1台の性能に上限がないから",
+    "暗号化が不要になるから",
+    "通信が無料になるから"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "1台の性能には上限があります。",
+    "2": "暗号化の要否とは無関係です。",
+    "3": "通信無料化とは無関係です。"
+   },
+   "lens": [
+    25,
+    13,
+    11,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-14",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "1AZの1台のEC2で運用中。可用性を高める最初の一手として最適なものはどれですか。",
+   "choices": [
+    "リージョンを変更する",
+    "複数AZに分散し、ELBで振り分け、Auto Scalingで増減する",
+    "1台のスペックを上げるだけにする",
+    "バックアップ頻度を上げる"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "リージョン変更は可用性向上策ではありません。",
+    "2": "1台の増強では単一障害点が残ります。",
+    "3": "バックアップは復旧用で稼働中の可用性は上がりません。"
+   },
+   "lens": [
+    10,
+    35,
+    16,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-15",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "昼夜でアクセス差が大きいサービスで、性能とコストを両立するには何を使いますか。",
+   "choices": [
+    "毎回手動で台数を変える",
+    "1台に集約する",
+    "Auto Scalingで自動増減する",
+    "常に最大台数を起動する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "手動は遅れやミスが生じます。",
+    "1": "1台集約は単一障害点になります。",
+    "3": "常時最大は無駄が出ます。"
+   },
+   "lens": [
+    11,
+    7,
+    19,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-16",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "「1台が落ちても止めたくない」要件に最も効く基本方針はどれですか。",
+   "choices": [
+    "1台を高性能化する",
+    "バックアップだけ強化する",
+    "スポットのみで構成する",
+    "単一障害点をなくす（冗長化・複数AZ）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "高性能化だけでは1台依存が残ります。",
+    "1": "バックアップは復旧用です。",
+    "2": "スポットのみは中断リスクがあります。"
+   },
+   "lens": [
+    9,
+    12,
+    11,
+    19
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-17",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "急なアクセス集中で応答が遅くなります。まず検討すべきなのはどれですか。",
+   "choices": [
+    "ELBで分散しつつAuto Scalingで台数を増やす",
+    "バックアップを取る",
+    "暗号化を有効にする",
+    "リージョンを削除する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "バックアップは負荷対策になりません。",
+    "2": "暗号化は負荷とは別です。",
+    "3": "リージョン削除は不適切です。"
+   },
+   "lens": [
+    28,
+    9,
+    9,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-18",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "閑散時のコストが気になります。弾力性を活かす方針はどれですか。",
+   "choices": [
+    "何も変えない",
+    "空いている時間帯は台数を自動で減らす",
+    "常に最大台数のままにする",
+    "1台の性能を上げ続ける"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "放置では最適化されません。",
+    "2": "常時最大は無駄です。",
+    "3": "性能増強はコスト削減になりません。"
+   },
+   "lens": [
+    6,
+    18,
+    12,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-19",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "重要な社内システムを「片方のデータセンター障害でも動かし続けたい」です。妥当な配置はどれですか。",
+   "choices": [
+    "1台に全機能を集約する",
+    "バックアップのみ強化する",
+    "複数のアベイラビリティーゾーンに分散配置する",
+    "1つのAZに集約する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "1台集約は単一障害点です。",
+    "1": "バックアップは復旧用です。",
+    "3": "1AZ集約は障害時に全停止します。"
+   },
+   "lens": [
+    11,
+    12,
+    22,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc05-20",
+   "theme": "qd-cc05",
+   "service": "スケーラビリティ",
+   "difficulty": 1,
+   "question": "台数を増やして分散するのは「スケール＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "アップ",
+    "イン",
+    "バック",
+    "アウト"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "アップは1台強化です。",
+    "1": "インは台数減です。",
+    "2": "バックはこの用語では使いません。"
+   },
+   "lens": [
+    3,
+    2,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-21",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 1,
+   "question": "可用性は英語で「＿＿＿」と表現されます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "アベイラビリティ",
+    "デュラビリティ",
+    "スケーラビリティ",
+    "エラスティシティ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "デュラビリティは耐久性です。",
+    "2": "スケーラビリティは拡張性です。",
+    "3": "エラスティシティは弾力性です。"
+   },
+   "lens": [
+    8,
+    7,
+    8,
+    8
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-22",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "そこが壊れると全体が止まる箇所を「＿＿＿障害点」と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "冗長",
+    "単一",
+    "複数",
+    "分散"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "冗長は予備を持つことです。",
+    "2": "複数障害点という定型語はありません。",
+    "3": "分散は逆の考え方です。"
+   },
+   "lens": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-23",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "負荷に応じて自動で台数を増減する仕組みは「＿＿＿ Scaling」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "Fixed",
+    "Reserved",
+    "Auto",
+    "Manual"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Fixedは固定です。",
+    "1": "Reservedは購入方式です。",
+    "3": "Manualは手動です。"
+   },
+   "lens": [
+    5,
+    8,
+    4,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-24",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 1,
+   "question": "耐障害性は英語で「フォールト＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "バランス",
+    "アウト",
+    "チェック",
+    "トレランス"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "バランスは均衡で異なります。",
+    "1": "アウトは外への意味です。",
+    "2": "チェックは点検です。"
+   },
+   "lens": [
+    4,
+    3,
+    4,
+    5
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-25",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "可用性を高める方法として誤っているものはどれですか。",
+   "choices": [
+    "単一のAZに全リソースを集約する",
+    "複数のAZに分散する",
+    "ロードバランサーで振り分ける",
+    "Auto Scalingで冗長性を保つ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "複数AZ分散は可用性を高めます。",
+    "2": "ロードバランサーは有効です。",
+    "3": "Auto Scalingは冗長性に寄与します。"
+   },
+   "lens": [
+    16,
+    10,
+    14,
+    19
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-26",
+   "theme": "qd-cc05",
+   "service": "スケーラビリティ",
+   "difficulty": 2,
+   "question": "スケーリングの説明として誤っているものはどれですか。",
+   "choices": [
+    "クラウドはスケールアウトと相性が良い",
+    "スケールアウトは1台の性能を上げること",
+    "スケールアウトは台数を増やすこと",
+    "スケールアップは1台を高性能化すること"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "スケールアウトとの相性は正しい説明です。",
+    "2": "台数を増やすは正しい説明です。",
+    "3": "1台高性能化はスケールアップで正しい説明です。"
+   },
+   "lens": [
+    18,
+    19,
+    16,
+    19
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc05-27",
+   "theme": "qd-cc05",
+   "service": "可用性",
+   "difficulty": 2,
+   "question": "弾力性の説明として誤っているものはどれですか。",
+   "choices": [
+    "需要が減れば減らせる",
+    "コスト最適化に役立つ",
+    "一度増やしたリソースは減らせない",
+    "需要に応じて増やせる"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "減らせるのは正しい説明です。",
+    "1": "コスト最適化への寄与は正しい説明です。",
+    "3": "需要に応じ増やせるのは正しい説明です。"
+   },
+   "lens": [
+    10,
+    10,
+    16,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-6",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「環境負荷（エネルギー等）を減らす」はどの柱ですか。",
+   "choices": [
+    "持続可能性",
+    "コスト最適化",
+    "信頼性",
+    "パフォーマンス効率"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "コスト最適化は支払いの柱です。",
+    "2": "信頼性は回復の柱です。",
+    "3": "パフォーマンス効率は資源活用の柱です。"
+   },
+   "lens": [
+    5,
+    6,
+    3,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-7",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「信頼性」の柱が主に扱うのはどれですか。",
+   "choices": [
+    "誰がアクセスできるか",
+    "障害から回復し、意図した機能を果たし続けられるか",
+    "支払いの無駄がないか",
+    "環境への負荷"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "アクセスはセキュリティです。",
+    "2": "支払いはコスト最適化です。",
+    "3": "環境負荷は持続可能性です。"
+   },
+   "lens": [
+    10,
+    24,
+    10,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-8",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "「パフォーマンス効率」の柱が主に扱うのはどれですか。",
+   "choices": [
+    "支払いを止められるか",
+    "物理施設の警備",
+    "リソースを効率的に使い、要求に応えられているか",
+    "法令を守れているか"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "支払い停止機能ではありません。",
+    "1": "物理警備はAWS側の話です。",
+    "3": "法令順守は主眼ではありません。"
+   },
+   "lens": [
+    10,
+    7,
+    23,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-9",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "「コスト最適化」の柱の説明として正しいものはどれですか。",
+   "choices": [
+    "とにかく最速にする",
+    "常に最大構成にする",
+    "暗号化を必須にする",
+    "必要な性能を保ちつつ最も低いコストで運用する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "最速化はパフォーマンスの話です。",
+    "1": "最大構成は無駄を生みます。",
+    "2": "暗号化はセキュリティの話です。"
+   },
+   "lens": [
+    9,
+    9,
+    9,
+    22
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-10",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "「持続可能性」の柱の説明として正しいものはどれですか。",
+   "choices": [
+    "クラウド利用の環境影響を最小化する",
+    "収益を最大化する",
+    "応答を最速化する",
+    "権限を最小化する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "収益最大化は柱ではありません。",
+    "2": "応答最速化はパフォーマンスの話です。",
+    "3": "権限最小化はセキュリティの実践です。"
+   },
+   "lens": [
+    17,
+    8,
+    8,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-11",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "「復旧手順を整え、障害時の影響を最小化したい」。関係が深い柱はどれですか。",
+   "choices": [
+    "パフォーマンス効率",
+    "信頼性",
+    "コスト最適化",
+    "持続可能性"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "パフォーマンス効率は資源活用の柱です。",
+    "2": "コスト最適化は支払いの柱です。",
+    "3": "持続可能性は環境の柱です。"
+   },
+   "lens": [
+    9,
+    3,
+    6,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-12",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "「使っていないリソースを止めて支払いを減らしたい」。関係が深い柱はどれですか。",
+   "choices": [
+    "セキュリティ",
+    "運用上の優秀性",
+    "コスト最適化",
+    "信頼性"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "セキュリティは保護の柱です。",
+    "1": "運用上の優秀性は運用改善の柱です。",
+    "3": "信頼性は回復の柱です。"
+   },
+   "lens": [
+    6,
+    7,
+    6,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-13",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "「アクセス権限を最小化し、監査ログを残したい」。関係が深い柱はどれですか。",
+   "choices": [
+    "パフォーマンス効率",
+    "持続可能性",
+    "コスト最適化",
+    "セキュリティ"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "パフォーマンス効率は資源活用の柱です。",
+    "1": "持続可能性は環境の柱です。",
+    "2": "コスト最適化は支払いの柱です。"
+   },
+   "lens": [
+    9,
+    5,
+    6,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-14",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "「不要なリソースを減らし、環境負荷を下げたい」。関係が深い柱はどれですか。",
+   "choices": [
+    "持続可能性",
+    "信頼性",
+    "セキュリティ",
+    "運用上の優秀性"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "信頼性は回復の柱です。",
+    "2": "セキュリティは保護の柱です。",
+    "3": "運用上の優秀性は運用改善の柱です。"
+   },
+   "lens": [
+    5,
+    3,
+    6,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-15",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "「運用手順を自動化し、変更を安全に行いたい」。関係が深い柱はどれですか。",
+   "choices": [
+    "パフォーマンス効率",
+    "運用上の優秀性",
+    "信頼性",
+    "コスト最適化"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "パフォーマンス効率は資源活用の柱です。",
+    "2": "信頼性は回復の柱です。",
+    "3": "コスト最適化は支払いの柱です。"
+   },
+   "lens": [
+    9,
+    7,
+    3,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-16",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "2021年に追加された6つ目の柱は「＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "移植性",
+    "拡張性",
+    "持続可能性",
+    "回復性"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "移植性は柱ではありません。",
+    "1": "拡張性は柱の名称ではありません。",
+    "3": "回復性は柱の正式名称ではありません。"
+   },
+   "lens": [
+    3,
+    3,
+    5,
+    3
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-17",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "Well-Architectedフレームワークの柱は全部で「＿＿」つです。＿＿に入るのはどれですか。",
+   "choices": [
+    "4",
+    "8",
+    "3",
+    "6"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "4つではありません。",
+    "1": "8つではありません。",
+    "2": "3つではありません。"
+   },
+   "lens": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-18",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "障害からの回復力を扱う柱は「＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "信頼性",
+    "効率性",
+    "経済性",
+    "操作性"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "効率性はパフォーマンス効率に近い別語です。",
+    "2": "経済性はコスト最適化に近い別語です。",
+    "3": "操作性は柱の名称ではありません。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-19",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 1,
+   "question": "Well-Architectedは「良い設計の＿＿＿リスト」と捉えると理解しやすいです。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "招待",
+    "チェック",
+    "買い物",
+    "出席"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "招待リストではありません。",
+    "2": "買い物リストではありません。",
+    "3": "出席リストではありません。"
+   },
+   "lens": [
+    2,
+    4,
+    3,
+    2
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc06-20",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "Well-Architectedの6つの柱に含まれないものはどれですか。",
+   "choices": [
+    "信頼性",
+    "運用上の優秀性",
+    "収益の最大化",
+    "セキュリティ"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "信頼性は柱の一つです。",
+    "1": "運用上の優秀性は柱の一つです。",
+    "3": "セキュリティは柱の一つです。"
+   },
+   "lens": [
+    3,
+    7,
+    6,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-21",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "Well-Architectedの柱に含まれないものはどれですか。",
+   "choices": [
+    "持続可能性",
+    "パフォーマンス効率",
+    "コスト最適化",
+    "市場シェア拡大"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "持続可能性は柱の一つです。",
+    "1": "パフォーマンス効率は柱の一つです。",
+    "2": "コスト最適化は柱の一つです。"
+   },
+   "lens": [
+    5,
+    9,
+    6,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc06-22",
+   "theme": "qd-cc06",
+   "service": "Well-Architected",
+   "difficulty": 2,
+   "question": "柱と目的の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "コスト最適化＝応答を最速にすること",
+    "信頼性＝障害から回復できること",
+    "セキュリティ＝データと権限を守ること",
+    "持続可能性＝環境負荷を減らすこと"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "信頼性＝回復は正しい組合せです。",
+    "2": "セキュリティ＝保護は正しい組合せです。",
+    "3": "持続可能性＝環境負荷低減は正しい組合せです。"
+   },
+   "lens": [
+    17,
+    15,
+    18,
+    16
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-1",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 1,
+   "question": "「すべてのシステムをAWS上で構築・運用する」形態を何と呼びますか。",
+   "choices": [
+    "クラウド",
+    "オンプレミス",
+    "ハイブリッド",
+    "マルチテナント"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "オンプレミスは自社設備のみです。",
+    "2": "ハイブリッドは両方の接続です。",
+    "3": "マルチテナントは共有利用の概念で別軸です。"
+   },
+   "lens": [
+    4,
+    6,
+    6,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-2",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 1,
+   "question": "「自社のデータセンターだけで運用する」形態を何と呼びますか。",
+   "choices": [
+    "サーバーレス",
+    "オンプレミス",
+    "クラウド",
+    "ハイブリッド"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "サーバーレスは実行方式で別軸です。",
+    "2": "クラウドはAWS上での運用です。",
+    "3": "ハイブリッドは両方の接続です。"
+   },
+   "lens": [
+    6,
+    6,
+    4,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-3",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 1,
+   "question": "「社内システムとAWSを接続して併用する」形態を何と呼びますか。",
+   "choices": [
+    "オンプレミス",
+    "エッジ",
+    "ハイブリッド",
+    "クラウド"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "オンプレミスは自社のみです。",
+    "1": "エッジは配信拠点の概念です。",
+    "3": "クラウドは全面クラウドです。"
+   },
+   "lens": [
+    6,
+    3,
+    6,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-4",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 2,
+   "question": "ハイブリッド構成で、オンプレとAWSを安定・大容量でつなぐのに使うのはどれですか。",
+   "choices": [
+    "Amazon S3",
+    "AWS Lambda",
+    "Amazon SNS",
+    "AWS Direct Connect"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "S3はストレージです。",
+    "1": "Lambdaはサーバーレスです。",
+    "2": "SNSは通知です。"
+   },
+   "lens": [
+    9,
+    10,
+    10,
+    18
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc03-5",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 1,
+   "question": "ハイブリッドの説明として正しいものはどれですか。",
+   "choices": [
+    "オンプレミスとクラウドを接続して併用する形態",
+    "全システムをAWSに移す形態",
+    "自社設備のみで動かす形態",
+    "無料でのみ使える形態"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "全面移行はクラウド（オールイン）です。",
+    "2": "自社のみはオンプレミスです。",
+    "3": "無料限定の概念ではありません。"
+   },
+   "lens": [
+    22,
+    14,
+    12,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc03-6",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 2,
+   "question": "ハイブリッドが選ばれる典型的な理由として正しいものはどれですか。",
+   "choices": [
+    "暗号化が不要になる",
+    "法規制でデータを社内に置く必要がある、既存システムと連携したい、段階移行したい",
+    "通信を完全無料にできる",
+    "AWSを使わずに済む"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "暗号化の要否とは無関係です。",
+    "2": "通信無料化が理由ではありません。",
+    "3": "ハイブリッドはAWSも使います。"
+   },
+   "lens": [
+    9,
+    39,
+    11,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc03-7",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 2,
+   "question": "法規制で一部データを社内に残す必要がありますが、新機能はクラウドで作りたいです。最適な形態はどれですか。",
+   "choices": [
+    "オンプレミスのみ",
+    "形態は関係ない",
+    "ハイブリッド",
+    "全面クラウド（オールイン）"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "オンプレのみではクラウドの利点を得られません。",
+    "1": "形態選択は重要です。",
+    "3": "全面クラウドは社内に残す要件と合いません。"
+   },
+   "lens": [
+    8,
+    7,
+    6,
+    13
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-8",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 2,
+   "question": "新規スタートアップがゼロからすべてAWSで構築します。最も自然な形態はどれですか。",
+   "choices": [
+    "ハイブリッド",
+    "オンプレミス",
+    "形態は選べない",
+    "全面クラウド（オールイン）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "残す資産がなければハイブリッドの必要は薄いです。",
+    "1": "オンプレは初期投資が大きくなります。",
+    "2": "形態は選べます。"
+   },
+   "lens": [
+    6,
+    6,
+    7,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc03-9",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 1,
+   "question": "社内とクラウドを併用する形態は「＿＿＿＿＿」です。＿＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ハイブリッド",
+    "オンプレミス",
+    "スタンドアロン",
+    "シングルAZ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "オンプレミスは自社のみです。",
+    "2": "スタンドアロンは単独の意味です。",
+    "3": "シングルAZは可用性の話です。"
+   },
+   "lens": [
+    6,
+    6,
+    7,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-10",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 1,
+   "question": "自社設備のみで運用する形態は「＿＿＿＿＿＿」です。＿＿に入るのはどれですか。",
+   "choices": [
+    "サーバーレス",
+    "オンプレミス",
+    "クラウド",
+    "ハイブリッド"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "サーバーレスは実行方式です。",
+    "2": "クラウドはAWS上です。",
+    "3": "ハイブリッドは併用です。"
+   },
+   "lens": [
+    6,
+    6,
+    4,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-11",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 2,
+   "question": "デプロイモデルの説明として誤っているものはどれですか。",
+   "choices": [
+    "オンプレミスは自社設備のみ",
+    "ハイブリッドはオンプレとクラウドを接続する",
+    "ハイブリッドはAWSを一切使わない形態である",
+    "クラウドは全面的にAWS上で運用する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "オンプレミスの説明は正しいです。",
+    "1": "ハイブリッドの接続は正しい説明です。",
+    "3": "クラウドの説明は正しいです。"
+   },
+   "lens": [
+    13,
+    21,
+    22,
+    18
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc03-12",
+   "theme": "qd-cc03",
+   "service": "デプロイモデル",
+   "difficulty": 2,
+   "question": "デプロイモデルの選択に関する説明として誤っているものはどれですか。",
+   "choices": [
+    "段階的な移行にはハイブリッドが有効",
+    "法規制がある場合ハイブリッドが選ばれることがある",
+    "新規ならクラウドが自然",
+    "既存の基幹システムがあっても必ず全面クラウドにすべきである"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "段階移行にハイブリッドは有効で正しい説明です。",
+    "1": "法規制でハイブリッドは正しい説明です。",
+    "2": "新規ならクラウドが自然なのは正しい説明です。"
+   },
+   "lens": [
+    17,
+    24,
+    11,
+    29
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc04-1",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 1,
+   "question": "「東京・大阪などの地理的なまとまり」を何と呼びますか。",
+   "choices": [
+    "リージョン",
+    "アベイラビリティーゾーン",
+    "エッジロケーション",
+    "サブネット"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "AZはリージョン内の分離されたデータセンター群です。",
+    "2": "エッジは配信拠点です。",
+    "3": "サブネットはVPC内の区画です。"
+   },
+   "lens": [
+    5,
+    12,
+    9,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc04-2",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 1,
+   "question": "「リージョン内で物理的に離れたデータセンター群」を何と呼びますか。",
+   "choices": [
+    "VPC",
+    "アベイラビリティーゾーン（AZ）",
+    "リージョン",
+    "エッジロケーション"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "VPCは仮想ネットワークです。",
+    "2": "リージョンは地理的まとまりです。",
+    "3": "エッジは配信拠点です。"
+   },
+   "lens": [
+    3,
+    16,
+    5,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-3",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 1,
+   "question": "「利用者の近くでCloudFrontなどが配信に使う拠点」を何と呼びますか。",
+   "choices": [
+    "リージョン",
+    "サブネット",
+    "エッジロケーション",
+    "アベイラビリティーゾーン"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "リージョンは地理的まとまりです。",
+    "1": "サブネットはVPC内の区画です。",
+    "3": "AZはリージョン内の拠点です。"
+   },
+   "lens": [
+    5,
+    5,
+    9,
+    12
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc04-4",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 2,
+   "question": "「片方のデータセンターが落ちても継続」させるための配置はどれですか。",
+   "choices": [
+    "単一のAZに集約する",
+    "1台に集約する",
+    "エッジのみに置く",
+    "複数のAZに分散して配置する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "単一AZ集約は障害時に全停止します。",
+    "1": "1台集約は単一障害点です。",
+    "2": "エッジは配信用で運用基盤ではありません。"
+   },
+   "lens": [
+    10,
+    7,
+    8,
+    14
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-5",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 1,
+   "question": "リージョンの説明として正しいものはどれですか。",
+   "choices": [
+    "地理的に離れた、複数のAZを含む大きなまとまり",
+    "1つのサーバーラック",
+    "配信専用の拠点",
+    "仮想ネットワークの単位"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "サーバーラック単位ではありません。",
+    "2": "配信拠点はエッジです。",
+    "3": "仮想ネットワークはVPCです。"
+   },
+   "lens": [
+    23,
+    10,
+    7,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-6",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 1,
+   "question": "アベイラビリティーゾーン（AZ）の説明として正しいものはどれですか。",
+   "choices": [
+    "課金の単位",
+    "リージョン内で物理的に分離された1つ以上のデータセンター群",
+    "世界に1つだけの拠点",
+    "利用者宅の端末"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "課金単位ではありません。",
+    "2": "世界に1つではありません。",
+    "3": "利用者端末ではありません。"
+   },
+   "lens": [
+    5,
+    29,
+    10,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-7",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 2,
+   "question": "エッジロケーションの説明として正しいものはどれですか。",
+   "choices": [
+    "データベース専用の拠点",
+    "課金の単位",
+    "利用者に近い配信拠点で、CloudFront等が使う",
+    "大規模な計算専用施設"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "DB専用拠点ではありません。",
+    "1": "課金単位ではありません。",
+    "3": "計算専用施設ではありません。"
+   },
+   "lens": [
+    11,
+    5,
+    26,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-8",
+   "theme": "qd-cc04",
+   "service": "リージョン選定",
+   "difficulty": 2,
+   "question": "日本の利用者向けに低遅延で、かつ国内にデータを置きたいです。まず考慮すべきはどれですか。",
+   "choices": [
+    "最も遠いリージョンを選ぶ",
+    "リージョンは何でもよい",
+    "エッジだけで完結させる",
+    "利用者に近く、データ所在地の要件を満たすリージョンを選ぶ"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "遠いリージョンは遅延が増えます。",
+    "1": "リージョン選定は重要です。",
+    "2": "運用基盤はリージョンに置く必要があります。"
+   },
+   "lens": [
+    12,
+    11,
+    11,
+    28
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-9",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 2,
+   "question": "重要な本番システムを1つのAZだけで動かしています。可用性上の問題はどれですか。",
+   "choices": [
+    "そのAZが落ちると全体が止まる（単一障害点）",
+    "通信が無料にならない",
+    "暗号化できない",
+    "課金が増えるだけ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "通信料金の話ではありません。",
+    "2": "暗号化とは無関係です。",
+    "3": "主な問題は可用性です。"
+   },
+   "lens": [
+    22,
+    10,
+    7,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-10",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 1,
+   "question": "リージョンの中にある、物理的に分離された拠点群を「＿＿」と略します。＿＿に入るのはどれですか。",
+   "choices": [
+    "DNS",
+    "AZ",
+    "VPC",
+    "CDN"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "DNSは名前解決です。",
+    "2": "VPCは仮想ネットワークです。",
+    "3": "CDNは配信網です。"
+   },
+   "lens": [
+    3,
+    2,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc04-11",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 2,
+   "question": "利用者の近くから配信するための拠点を「＿＿＿ロケーション」と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ゾーン",
+    "コア",
+    "エッジ",
+    "リージョン"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ゾーンはAZの一部語です。",
+    "1": "コアはこの文脈で使いません。",
+    "3": "リージョンは地理的まとまりです。"
+   },
+   "lens": [
+    3,
+    2,
+    3,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc04-12",
+   "theme": "qd-cc04",
+   "service": "グローバルインフラ",
+   "difficulty": 2,
+   "question": "グローバルインフラの説明として誤っているものはどれですか。",
+   "choices": [
+    "リージョンは複数のAZを含む",
+    "複数AZ配置で可用性が高まる",
+    "エッジは配信に使う",
+    "1つのリージョンには必ず1つのAZしかない"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "リージョンが複数AZを含むのは正しい説明です。",
+    "1": "複数AZで可用性向上は正しい説明です。",
+    "2": "エッジ＝配信は正しい説明です。"
+   },
+   "lens": [
+    14,
+    14,
+    9,
+    21
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc04-13",
+   "theme": "qd-cc04",
+   "service": "リージョン選定",
+   "difficulty": 2,
+   "question": "リージョン選定で考慮すべき点として誤っているものはどれですか。",
+   "choices": [
+    "常に最も遠いリージョンを選ぶべきである",
+    "利用者に近いこと（低遅延）",
+    "データ所在地・法令",
+    "使いたいサービスがあるか"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "近さ（低遅延）は正しい考慮点です。",
+    "2": "データ所在地は正しい考慮点です。",
+    "3": "サービス提供状況は正しい考慮点です。"
+   },
+   "lens": [
+    19,
+    13,
+    9,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc01-1",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "クラウドを一言で表すと、最も近いのはどれですか。",
+   "choices": [
+    "社内にだけ置く仕組み",
+    "ネット経由で必要な分だけ借りて使う仕組み",
+    "必ずサーバーを買って所有する仕組み",
+    "無料で無制限に使える仕組み"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "社内限定はオンプレミスです。",
+    "2": "購入・所有はオンプレの発想です。",
+    "3": "無料無制限ではありません。"
+   },
+   "lens": [
+    10,
+    20,
+    17,
+    13
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc01-2",
+   "theme": "qd-cc01",
+   "service": "オンプレミス",
+   "difficulty": 1,
+   "question": "「自社でサーバーを購入し、設置・運用まで自前で行う」形態を何と呼びますか。",
+   "choices": [
+    "ハイブリッド",
+    "サーバーレス",
+    "オンプレミス",
+    "クラウド"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ハイブリッドは併用です。",
+    "1": "サーバーレスは実行方式です。",
+    "3": "クラウドは借りて使います。"
+   },
+   "lens": [
+    6,
+    6,
+    6,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc01-3",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "クラウドの代表的な利点として最も適切なものはどれですか。",
+   "choices": [
+    "初期に大きな設備投資が必要",
+    "一度契約すると増減できない",
+    "必ず自社DCが必要",
+    "初期投資が小さく、使った分だけ払え、すぐ増減できる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "大きな初期投資はオンプレの特徴です。",
+    "1": "増減できるのがクラウドの利点です。",
+    "2": "自社DCは不要です。"
+   },
+   "lens": [
+    13,
+    13,
+    9,
+    25
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc01-4",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "クラウドとオンプレミスの違いとして正しいものはどれですか。",
+   "choices": [
+    "クラウドは借りて使い、オンプレは自前で購入・運用する",
+    "両者は同じ",
+    "クラウドは必ず社内に置く",
+    "オンプレは使った分だけ課金"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "同じではありません。",
+    "2": "クラウドは社内限定ではありません。",
+    "3": "従量課金はクラウドの特徴です。"
+   },
+   "lens": [
+    26,
+    5,
+    12,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc01-5",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "「電力会社から使った分だけ電気を買う」例えが表すクラウドの性質はどれですか。",
+   "choices": [
+    "前払い",
+    "従量課金（使った分だけ払う）",
+    "固定料金",
+    "無料"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "前払いでもありません。",
+    "2": "固定料金ではありません。",
+    "3": "無料ではありません。"
+   },
+   "lens": [
+    3,
+    14,
+    4,
+    2
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc01-6",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "サーバーの置き場所・電源・故障対応を自社で抱えたくないです。適した選択はどれですか。",
+   "choices": [
+    "必ず両方を自前で持つ",
+    "何も選ばない",
+    "クラウドを使い、運用をAWSに任せる",
+    "オンプレで自前運用する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "両方自前は負担が増えます。",
+    "1": "選択は重要です。",
+    "3": "オンプレは自前運用が必要です。"
+   },
+   "lens": [
+    10,
+    6,
+    18,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc01-7",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "少ない初期費用で新規サービスをすぐ立ち上げたいスタートアップに適するのはどれですか。",
+   "choices": [
+    "オンプレ（大型の初期投資）",
+    "自社DC新設",
+    "形態は無関係",
+    "クラウド（小さな初期投資で素早く開始）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "オンプレは初期投資が大きくなります。",
+    "1": "DC新設は資本的支出が大です。",
+    "2": "形態選択は重要です。"
+   },
+   "lens": [
+    13,
+    6,
+    6,
+    19
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc01-8",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 1,
+   "question": "買わずに必要なだけ借りて使うのが「＿＿＿＿＿」です。＿＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "クラウド",
+    "オンプレミス",
+    "データセンター",
+    "メインフレーム"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "オンプレミスは自前所有です。",
+    "2": "データセンターは施設です。",
+    "3": "メインフレームは大型計算機です。"
+   },
+   "lens": [
+    4,
+    6,
+    7,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc01-9",
+   "theme": "qd-cc01",
+   "service": "オンプレミス",
+   "difficulty": 1,
+   "question": "自社設備を購入して自前運用するのが「＿＿＿＿＿＿」です。＿＿に入るのはどれですか。",
+   "choices": [
+    "ハイブリッド",
+    "オンプレミス",
+    "クラウド",
+    "サーバーレス"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "ハイブリッドは併用です。",
+    "2": "クラウドは借りて使います。",
+    "3": "サーバーレスは実行方式です。"
+   },
+   "lens": [
+    6,
+    6,
+    4,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc01-10",
+   "theme": "qd-cc01",
+   "service": "クラウドの価値",
+   "difficulty": 2,
+   "question": "クラウドの説明として誤っているものはどれですか。",
+   "choices": [
+    "必要に応じてすぐ増減できる",
+    "運用の一部をAWSに任せられる",
+    "利用には必ず自社サーバーの購入が必要である",
+    "使った分だけ払える"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "素早い増減は正しい説明です。",
+    "1": "運用を任せられるのは正しい説明です。",
+    "3": "従量課金は正しい説明です。"
+   },
+   "lens": [
+    13,
+    15,
+    21,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc01-11",
+   "theme": "qd-cc01",
+   "service": "オンプレミス",
+   "difficulty": 2,
+   "question": "オンプレミスの説明として誤っているものはどれですか。",
+   "choices": [
+    "自社でサーバーを購入する",
+    "設置・運用を自前で行う",
+    "故障対応も自社の責任",
+    "使った分だけ課金され、初期投資が不要である"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "自社購入は正しい説明です。",
+    "1": "自前運用は正しい説明です。",
+    "2": "故障対応の責任は正しい説明です。"
+   },
+   "lens": [
+    12,
+    11,
+    10,
+    21
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc07-1",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 1,
+   "question": "「組織がクラウド導入を計画・実行するための指針をまとめた枠組み」はどれですか。",
+   "choices": [
+    "AWS CAF（クラウド導入フレームワーク）",
+    "Well-Architected",
+    "AWS Organizations",
+    "Trusted Advisor"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Well-Architectedは設計の柱です。",
+    "2": "Organizationsは複数アカウント統制です。",
+    "3": "Trusted Advisorは点検助言です。"
+   },
+   "lens": [
+    22,
+    16,
+    17,
+    15
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc07-2",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "CAFで「従業員の再教育・スキル移行」を扱うのはどの視点（パースペクティブ）ですか。",
+   "choices": [
+    "オペレーション",
+    "人材（People）",
+    "プラットフォーム",
+    "セキュリティ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "オペレーションは運用の視点です。",
+    "2": "プラットフォームは技術基盤の視点です。",
+    "3": "セキュリティは保護の視点です。"
+   },
+   "lens": [
+    7,
+    10,
+    8,
+    6
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc07-3",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "CAFの視点のうち「経営・組織」寄りの3つに含まれるのはどれですか。",
+   "choices": [
+    "EC2・S3・RDS",
+    "可用性・信頼性・性能",
+    "ビジネス・人材・ガバナンス",
+    "プラットフォーム・セキュリティ・オペレーション"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "サービス名は視点ではありません。",
+    "1": "Well-Architectedの柱とは異なります。",
+    "3": "後半3つは技術寄りの視点です。"
+   },
+   "lens": [
+    10,
+    10,
+    13,
+    23
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc07-4",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 1,
+   "question": "AWS CAFの説明として正しいものはどれですか。",
+   "choices": [
+    "個々のシステム設計を点検する柱",
+    "複数アカウントを統制する仕組み",
+    "料金を見積もるツール",
+    "技術だけでなく人や組織も含め、クラウド移行を進める指針"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "設計の点検はWell-Architectedです。",
+    "1": "複数アカウント統制はOrganizationsです。",
+    "2": "見積りはPricing Calculatorです。"
+   },
+   "lens": [
+    15,
+    15,
+    10,
+    27
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc07-5",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "CAFとWell-Architectedの違いとして正しいものはどれですか。",
+   "choices": [
+    "CAFは組織の移行の進め方、Well-Architectedは個々の設計の点検",
+    "両者は同じもの",
+    "CAFは設計の柱",
+    "Well-Architectedは移行の枠組み"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "同じではありません。",
+    "2": "設計の柱はWell-Architectedです。",
+    "3": "移行の枠組みはCAFです。"
+   },
+   "lens": [
+    39,
+    7,
+    8,
+    23
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc07-6",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "クラウド移行に向け、従業員のスキルアップ計画を立てたいです。CAFのどの視点で扱いますか。",
+   "choices": [
+    "オペレーション",
+    "人材（People）",
+    "プラットフォーム",
+    "セキュリティ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "オペレーションは運用です。",
+    "2": "プラットフォームは技術基盤です。",
+    "3": "セキュリティは保護です。"
+   },
+   "lens": [
+    7,
+    10,
+    8,
+    6
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-cc07-7",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "全社的なクラウド移行を、技術と組織の両面から体系的に進めたいです。参照すべき枠組みはどれですか。",
+   "choices": [
+    "Trusted Advisorのみ",
+    "Cost Explorerのみ",
+    "AWS CAF",
+    "Well-Architectedのみ"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Trusted Advisorは点検助言です。",
+    "1": "Cost Explorerはコスト分析です。",
+    "3": "Well-Architectedは設計中心です。"
+   },
+   "lens": [
+    17,
+    15,
+    7,
+    18
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc07-8",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 1,
+   "question": "クラウド導入フレームワークの略称は「AWS ＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "WAF",
+    "IAM",
+    "VPC",
+    "CAF"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "WAFはWebアプリファイアウォールです。",
+    "1": "IAMは権限管理です。",
+    "2": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc07-9",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "CAFの視点（パースペクティブ）は全部で「＿＿」つあります。＿＿に入るのはどれですか。",
+   "choices": [
+    "6",
+    "4",
+    "3",
+    "8"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "4つではありません。",
+    "2": "3つではありません。",
+    "3": "8つではありません。"
+   },
+   "lens": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc07-10",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "AWS CAFの説明として誤っているものはどれですか。",
+   "choices": [
+    "人や組織の準備も扱う",
+    "個々のシステムの技術設計だけを点検する枠組みである",
+    "組織全体のクラウド移行を導く",
+    "6つの視点で整理する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "人・組織を扱うのは正しい説明です。",
+    "2": "組織全体の移行を導くのは正しい説明です。",
+    "3": "6視点で整理は正しい説明です。"
+   },
+   "lens": [
+    10,
+    25,
+    14,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc07-11",
+   "theme": "qd-cc07",
+   "service": "CAF",
+   "difficulty": 2,
+   "question": "CAFの視点として当てはまらないものはどれですか。",
+   "choices": [
+    "人材（People）",
+    "ガバナンス",
+    "収益最大化",
+    "ビジネス"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "人材は視点の一つです。",
+    "1": "ガバナンスは視点の一つです。",
+    "3": "ビジネスは視点の一つです。"
+   },
+   "lens": [
+    10,
+    5,
+    5,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc08-1",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 1,
+   "question": "「アプリをほぼ改修せずそのまま移す（リフト＆シフト）」移行方式はどれですか。",
+   "choices": [
+    "リファクタリング",
+    "リパーチェス",
+    "リタイア",
+    "リホスト"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "リファクタリングは作り替えです。",
+    "1": "リパーチェスは買い替えです。",
+    "2": "リタイアは廃止です。"
+   },
+   "lens": [
+    8,
+    6,
+    4,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc08-2",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 1,
+   "question": "「クラウド最適化のために大きく作り替える」移行方式はどれですか。",
+   "choices": [
+    "リファクタリング",
+    "リホスト",
+    "リタイア",
+    "リテイン"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "リホストはそのまま移します。",
+    "2": "リタイアは廃止です。",
+    "3": "リテインは残すことです。"
+   },
+   "lens": [
+    8,
+    4,
+    4,
+    4
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc08-3",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 1,
+   "question": "「自社運用をやめてSaaSなどに買い替える」移行方式はどれですか。",
+   "choices": [
+    "リテイン",
+    "リパーチェス",
+    "リホスト",
+    "リタイア"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "リテインは残すことです。",
+    "2": "リホストはそのまま移します。",
+    "3": "リタイアは廃止です。"
+   },
+   "lens": [
+    4,
+    6,
+    4,
+    4
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc08-4",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 2,
+   "question": "「不要なので移行せず廃止する」判断を何と呼びますか。",
+   "choices": [
+    "リプラットフォーム",
+    "リテイン",
+    "リタイア",
+    "リホスト"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "リプラットフォームは少し手直しして移します。",
+    "1": "リテインは今は残すことです。",
+    "3": "リホストはそのまま移します。"
+   },
+   "lens": [
+    9,
+    4,
+    4,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc08-5",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 1,
+   "question": "リホスト（リフト＆シフト）の説明として正しいものはどれですか。",
+   "choices": [
+    "一から作り替える",
+    "SaaSに買い替える",
+    "移行せず廃止する",
+    "ほぼ改修せずそのままクラウドへ移す"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "作り替えはリファクタリングです。",
+    "1": "買い替えはリパーチェスです。",
+    "2": "廃止はリタイアです。"
+   },
+   "lens": [
+    8,
+    10,
+    8,
+    17
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc08-6",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 2,
+   "question": "「今は移さず現状のまま残す」判断を何と呼びますか。",
+   "choices": [
+    "リテイン",
+    "リタイア",
+    "リホスト",
+    "リパーチェス"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "リタイアは廃止です。",
+    "2": "リホストはそのまま移します。",
+    "3": "リパーチェスは買い替えです。"
+   },
+   "lens": [
+    4,
+    4,
+    4,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc08-7",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 2,
+   "question": "とにかく素早くクラウドへ移したい（最適化は後回し）です。最適な方式はどれですか。",
+   "choices": [
+    "リテイン",
+    "リホスト（リフト＆シフト）",
+    "リファクタリング",
+    "リタイア"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "リテインは残す判断です。",
+    "2": "リファクタリングは時間がかかります。",
+    "3": "リタイアは廃止です。"
+   },
+   "lens": [
+    4,
+    13,
+    8,
+    4
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc08-8",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 2,
+   "question": "クラウドの利点を最大限に活かすため、根本から作り替えたいです。最適な方式はどれですか。",
+   "choices": [
+    "リタイア",
+    "リパーチェス",
+    "リファクタリング",
+    "リホスト"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "リタイアは廃止です。",
+    "1": "リパーチェスは買い替えです。",
+    "3": "リホストは手をかけません。"
+   },
+   "lens": [
+    4,
+    6,
+    8,
+    4
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc08-9",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 2,
+   "question": "移行作業全体の進捗を追跡・管理したいです。使うサービスはどれですか。",
+   "choices": [
+    "Amazon S3",
+    "AWS Lambda",
+    "Amazon SNS",
+    "AWS Migration Hub"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "S3はストレージです。",
+    "1": "Lambdaはサーバーレスです。",
+    "2": "SNSは通知です。"
+   },
+   "lens": [
+    9,
+    10,
+    10,
+    17
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-cc08-10",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 1,
+   "question": "そのまま移す移行方式は「リ＿＿＿」（リフト＆シフト）です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ホスト",
+    "ファクタ",
+    "タイア",
+    "テイン"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "リファクタは作り替えです。",
+    "2": "リタイアは廃止です。",
+    "3": "リテインは残すことです。"
+   },
+   "lens": [
+    3,
+    4,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc08-11",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 1,
+   "question": "不要なシステムを移行せず廃止するのは「リ＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "パーチェス",
+    "タイア",
+    "ホスト",
+    "テイン"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "リパーチェスは買い替えです。",
+    "2": "リホストはそのまま移します。",
+    "3": "リテインは残すことです。"
+   },
+   "lens": [
+    5,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc08-12",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 2,
+   "question": "クラウド移行方式の説明として誤っているものはどれですか。",
+   "choices": [
+    "リファクタリングは作り替える",
+    "リパーチェスはSaaS等へ買い替える",
+    "リホストは一から作り替える方式である",
+    "リホストはそのまま移す"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "リファクタリング＝作り替えは正しい説明です。",
+    "1": "リパーチェス＝買い替えは正しい説明です。",
+    "3": "リホスト＝そのまま移すは正しい説明です。"
+   },
+   "lens": [
+    14,
+    18,
+    18,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-cc08-13",
+   "theme": "qd-cc08",
+   "service": "移行",
+   "difficulty": 2,
+   "question": "移行戦略に関する説明として誤っているものはどれですか。",
+   "choices": [
+    "不要なら廃止（リタイア）も選択肢",
+    "今は残す（リテイン）も選択肢",
+    "目的に応じて方式を選ぶ",
+    "すべてのシステムを必ずクラウドへ移す必要がある"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "リタイアは正しい選択肢です。",
+    "1": "リテインは正しい選択肢です。",
+    "2": "目的に応じた選択は正しい説明です。"
+   },
+   "lens": [
+    16,
+    14,
+    11,
+    23
+   ],
+   "tell": true,
+   "strong": true
+  }
+ ]
+}

@@ -1,0 +1,2170 @@
+{
+ "domain": "bil",
+ "need": {
+  "qd-bil01": {
+   "have": 13,
+   "target": 30,
+   "addNeeded": 17
+  },
+  "qd-bil02": {
+   "have": 16,
+   "target": 30,
+   "addNeeded": 14
+  },
+  "qd-bil03": {
+   "have": 13,
+   "target": 30,
+   "addNeeded": 17
+  },
+  "qd-bil04": {
+   "have": 11,
+   "target": 30,
+   "addNeeded": 19
+  },
+  "qd-bil05": {
+   "have": 11,
+   "target": 30,
+   "addNeeded": 19
+  },
+  "qd-bil06": {
+   "have": 15,
+   "target": 30,
+   "addNeeded": 15
+  }
+ },
+ "questions": [
+  {
+   "id": "qd-bil02-1",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 1,
+   "question": "「中断されても再実行できるバッチを最も安く」回したいときに向くのはどれですか。",
+   "choices": [
+    "Dedicated Host",
+    "スポットインスタンス",
+    "オンデマンド",
+    "リザーブドインスタンス"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Dedicated Hostは物理占有向けです。",
+    "2": "オンデマンドは割引がありません。",
+    "3": "リザーブドは常時稼働向けです。"
+   },
+   "lens": [
+    14,
+    10,
+    6,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-2",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 1,
+   "question": "「3年間ずっと同じEC2を使う」予定で割引を最大化したいときに向くのはどれですか。",
+   "choices": [
+    "スポット",
+    "毎回手動で購入",
+    "リザーブドインスタンス（長期コミット）",
+    "オンデマンド"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "スポットは中断があり常時稼働に不向きです。",
+    "1": "手動購入は最適化になりません。",
+    "3": "オンデマンドは割引なしです。"
+   },
+   "lens": [
+    4,
+    7,
+    19,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil02-3",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 1,
+   "question": "「割引はないが、いつでもすぐ使える」標準的な買い方はどれですか。",
+   "choices": [
+    "リザーブド",
+    "スポット",
+    "Savings Plans",
+    "オンデマンド"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "リザーブドは長期コミットの割引です。",
+    "1": "スポットは中断ありの激安です。",
+    "2": "Savings Plansはコミット型割引です。"
+   },
+   "lens": [
+    5,
+    4,
+    13,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-4",
+   "theme": "qd-bil02",
+   "service": "Savings Plans",
+   "difficulty": 1,
+   "question": "「毎時いくら使うとコミットして、幅広いコンピュートを柔軟に割引」したいときに使うのはどれですか。",
+   "choices": [
+    "Savings Plans",
+    "スポット",
+    "オンデマンド",
+    "Dedicated Host"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "スポットは中断ありの激安です。",
+    "2": "オンデマンドは割引なしです。",
+    "3": "Dedicated Hostは物理占有向けです。"
+   },
+   "lens": [
+    13,
+    4,
+    6,
+    14
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-5",
+   "theme": "qd-bil02",
+   "service": "Savings Plans",
+   "difficulty": 1,
+   "question": "Savings Plansの説明として正しいものはどれですか。",
+   "choices": [
+    "物理サーバーを占有する契約",
+    "一定利用のコミットで対象コンピュートを柔軟に割引する",
+    "中断ありの激安インスタンス",
+    "割引のない標準の買い方"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "物理占有はDedicated Hostです。",
+    "2": "中断ありの激安はスポットです。",
+    "3": "割引なしはオンデマンドです。"
+   },
+   "lens": [
+    13,
+    26,
+    13,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil06-1",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "「本番運用で24時間365日の技術サポートが必要」なとき、最低限どのプラン以上が必要ですか。",
+   "choices": [
+    "無料利用枠のみ",
+    "Business 以上",
+    "Basic",
+    "Developer"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "無料枠はサポートプランとは別です。",
+    "2": "Basicは技術ケースの24時間対応を含みません。",
+    "3": "Developerは24時間対応には不十分です。"
+   },
+   "lens": [
+    7,
+    11,
+    5,
+    9
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-2",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "「専任のTAM（テクニカルアカウントマネージャー）が付く」のはどのプランですか。",
+   "choices": [
+    "Developer",
+    "Basic",
+    "Enterprise",
+    "Business"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Developerは開発時向けです。",
+    "1": "Basicは無料で最小限です。",
+    "3": "Businessは手厚いですが専任TAMは付きません。"
+   },
+   "lens": [
+    9,
+    5,
+    10,
+    8
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-3",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "「無料で全アカウントが使える」最下位のサポートプランはどれですか。",
+   "choices": [
+    "Developer",
+    "Business",
+    "Enterprise",
+    "Basic"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Developerは有料の開発向けです。",
+    "1": "Businessは有料の本番向けです。",
+    "2": "Enterpriseは最上位の有料です。"
+   },
+   "lens": [
+    9,
+    8,
+    10,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-4",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "「開発中にメールで技術的な質問をしたい」個人開発者に、最も費用対効果が高いのはどれですか。",
+   "choices": [
+    "Developer",
+    "Enterprise",
+    "Business",
+    "無料利用枠"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Enterpriseは最上位で個人には過剰です。",
+    "2": "Businessは本番運用向けで割高になりがちです。",
+    "3": "無料枠はサポートプランとは別です。"
+   },
+   "lens": [
+    9,
+    10,
+    8,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-5",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "Basicサポートの説明として正しいものはどれですか。",
+   "choices": [
+    "本番の緊急対応を保証する",
+    "無料で、アカウント・請求の質問やサービス上限の引き上げに対応",
+    "24時間の電話サポートが付く",
+    "専任TAMが付く"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "本番の緊急対応はBusiness以上です。",
+    "2": "24時間の技術ケース対応はBusiness以上です。",
+    "3": "専任TAMはEnterpriseです。"
+   },
+   "lens": [
+    12,
+    30,
+    14,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil02-6",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 1,
+   "question": "スポットインスタンスの説明として正しいものはどれですか。",
+   "choices": [
+    "3年コミットの割引",
+    "物理占有の契約",
+    "余剰キャパシティを大幅割引で使えるが中断される可能性がある",
+    "割引がなくいつでも使える"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "3年コミットはリザーブドです。",
+    "1": "物理占有はDedicated Hostです。",
+    "3": "割引なしはオンデマンドです。"
+   },
+   "lens": [
+    9,
+    7,
+    29,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil02-7",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 2,
+   "question": "リザーブドインスタンスの説明として正しいものはどれですか。",
+   "choices": [
+    "中断される代わりに激安",
+    "割引はないが柔軟",
+    "従量課金のみ",
+    "1〜3年の利用をコミットする代わりに大幅割引を受けられる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "中断ありの激安はスポットです。",
+    "1": "割引なし・柔軟はオンデマンドです。",
+    "2": "従量課金のみはオンデマンドの特徴です。"
+   },
+   "lens": [
+    11,
+    8,
+    6,
+    28
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil02-8",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 1,
+   "question": "オンデマンドの説明として正しいものはどれですか。",
+   "choices": [
+    "割引はないが、必要なときにいつでも起動・停止できる",
+    "長期コミットで最も安い",
+    "中断される",
+    "物理サーバーを占有する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "長期コミットで安いのはリザーブド/Savings Plansです。",
+    "2": "中断されるのはスポットです。",
+    "3": "物理占有はDedicated Hostです。"
+   },
+   "lens": [
+    25,
+    11,
+    5,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil02-9",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 2,
+   "question": "開発中でいつ止めるか分からない検証サーバーを短期間だけ使います。最適なのはどれですか。",
+   "choices": [
+    "Dedicated Host",
+    "オンデマンド",
+    "3年リザーブド",
+    "スポット（本番の重要処理）"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Dedicated Hostは物理占有要件向けです。",
+    "2": "3年リザーブドは短期利用に不向きです。",
+    "3": "中断が許容できない重要処理にスポットは不向きです。"
+   },
+   "lens": [
+    14,
+    6,
+    7,
+    13
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-10",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 2,
+   "question": "中断されても再実行できる大量の画像変換バッチを最安で回したいです。最適なのはどれですか。",
+   "choices": [
+    "リザーブド",
+    "専有ホスト",
+    "スポットインスタンス",
+    "オンデマンド"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "リザーブドは常時稼働向けです。",
+    "1": "専有ホストは物理占有向けです。",
+    "3": "オンデマンドは割引なしです。"
+   },
+   "lens": [
+    5,
+    5,
+    10,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil02-11",
+   "theme": "qd-bil02",
+   "service": "Savings Plans",
+   "difficulty": 2,
+   "question": "稼働量は続くが、使うインスタンスの種類は柔軟に変えたいです。割引を得るのに最適なのはどれですか。",
+   "choices": [
+    "構成を固定するスタンダードなリザーブド",
+    "オンデマンド",
+    "スポット",
+    "Savings Plans"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "構成固定のリザーブドは柔軟性で劣ります。",
+    "1": "オンデマンドは割引なしです。",
+    "2": "スポットは中断ありです。"
+   },
+   "lens": [
+    19,
+    6,
+    4,
+    13
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-12",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 1,
+   "question": "割引はないが、いつでもすぐ使える買い方は「＿＿＿＿＿」です。＿＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "オンデマンド",
+    "リザーブド",
+    "スポット",
+    "Savings Plans"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "リザーブドは長期コミット割引です。",
+    "2": "スポットは中断ありの激安です。",
+    "3": "Savings Plansはコミット割引です。"
+   },
+   "lens": [
+    6,
+    5,
+    4,
+    13
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-13",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 1,
+   "question": "余剰キャパシティを最大約90%割引で使えるが中断されるのは「＿＿＿＿」です。＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "専有ホスト",
+    "スポット",
+    "リザーブド",
+    "オンデマンド"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "専有ホストは物理占有です。",
+    "2": "リザーブドは中断されません。",
+    "3": "オンデマンドは割引なしです。"
+   },
+   "lens": [
+    5,
+    4,
+    5,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-14",
+   "theme": "qd-bil02",
+   "service": "Savings Plans",
+   "difficulty": 1,
+   "question": "「1時間あたりの利用額をコミットして柔軟に割引する」のは＿＿＿＿ Plans です。＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "Spot",
+    "Support",
+    "Savings",
+    "Reserved"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Spotは中断ありの激安です。",
+    "1": "Supportはサポートプランです。",
+    "3": "Reserved Instanceは別方式です。"
+   },
+   "lens": [
+    4,
+    7,
+    7,
+    8
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-15",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 2,
+   "question": "EC2の購入オプションの説明として誤っているものはどれですか。",
+   "choices": [
+    "オンデマンドは割引がない",
+    "リザーブドは長期コミットで割引される",
+    "Savings Plansは柔軟に割引できる",
+    "スポットは中断されず、常に安定して使える"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "オンデマンドに割引がないのは正しい説明です。",
+    "1": "リザーブドの長期割引は正しい説明です。",
+    "2": "Savings Plansの柔軟割引は正しい説明です。"
+   },
+   "lens": [
+    12,
+    18,
+    22,
+    20
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil02-16",
+   "theme": "qd-bil02",
+   "service": "EC2料金",
+   "difficulty": 2,
+   "question": "購入オプションの説明として誤っているものはどれですか。",
+   "choices": [
+    "オンデマンドは長期コミットで最も割引率が高い",
+    "スポットは中断され得る",
+    "リザーブドは1〜3年コミット",
+    "Savings Plansはコミットで割引"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "スポットの中断は正しい説明です。",
+    "2": "リザーブドのコミット期間は正しい説明です。",
+    "3": "Savings Plansのコミット割引は正しい説明です。"
+   },
+   "lens": [
+    22,
+    11,
+    14,
+    21
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-6",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 2,
+   "question": "Enterpriseサポートの説明として正しいものはどれですか。",
+   "choices": [
+    "開発時のみ有効",
+    "請求の質問だけに対応",
+    "専任TAMが付き、最速級の応答が受けられる最上位プラン",
+    "無料で使える"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "開発時のみではありません。",
+    "1": "請求だけではありません。",
+    "3": "無料ではありません。"
+   },
+   "lens": [
+    7,
+    10,
+    27,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil06-7",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 2,
+   "question": "Trusted Advisorの全チェック項目をフルに使えるのは、どのプランからですか。",
+   "choices": [
+    "Basic",
+    "Developer",
+    "無料利用枠",
+    "Business 以上"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Basicは一部項目に限られます。",
+    "1": "Developerでも全項目は使えません。",
+    "2": "無料枠は関係ありません。"
+   },
+   "lens": [
+    5,
+    9,
+    5,
+    11
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-8",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 2,
+   "question": "個人が学習中で、請求とアカウントの質問だけできれば十分です。適したプランはどれですか。",
+   "choices": [
+    "Basic（無料）",
+    "Enterprise",
+    "Business",
+    "Developer"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Enterpriseは過剰です。",
+    "2": "Businessは本番向けで割高です。",
+    "3": "Developerは開発時向けで有料です。"
+   },
+   "lens": [
+    9,
+    10,
+    8,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-9",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 2,
+   "question": "本番システムを24時間監視し、緊急時にすぐ技術サポートを受けたいです。最低限どのプランが必要ですか。",
+   "choices": [
+    "無料利用枠",
+    "Business 以上",
+    "Basic",
+    "Developer"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "無料枠はサポートではありません。",
+    "2": "Basicは技術ケースの24時間対応がありません。",
+    "3": "Developerは24時間対応に不十分です。"
+   },
+   "lens": [
+    5,
+    11,
+    5,
+    9
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-10",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 2,
+   "question": "大企業が専任担当と伴走支援、最速の応答を求めています。最適なプランはどれですか。",
+   "choices": [
+    "Developer",
+    "Basic",
+    "Enterprise",
+    "Business"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Developerは開発時向けです。",
+    "1": "Basicは無料で最小限です。",
+    "3": "Businessには専任TAMが付きません。"
+   },
+   "lens": [
+    9,
+    5,
+    10,
+    8
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-11",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "無料で全員が使える最下位のサポートプランは「＿＿＿＿」です。＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "Developer",
+    "Business",
+    "Enterprise",
+    "Basic"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Developerは有料です。",
+    "1": "Businessは有料です。",
+    "2": "Enterpriseは最上位の有料です。"
+   },
+   "lens": [
+    9,
+    8,
+    10,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-12",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "専任TAMが付く最上位のサポートプランは「＿＿＿＿＿＿＿＿＿＿」です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Enterprise",
+    "Business",
+    "Developer",
+    "Basic"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Businessに専任TAMは付きません。",
+    "2": "Developerは開発時向けです。",
+    "3": "Basicは無料です。"
+   },
+   "lens": [
+    10,
+    8,
+    9,
+    5
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-13",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 1,
+   "question": "本番運用で24時間365日の技術サポートを受けるには、最低「＿＿＿＿＿＿＿＿」以上が必要です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Developer",
+    "Business",
+    "Basic",
+    "無料枠"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Developerは24時間対応に不十分です。",
+    "2": "Basicは含みません。",
+    "3": "無料枠はサポートではありません。"
+   },
+   "lens": [
+    9,
+    8,
+    5,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-14",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 2,
+   "question": "サポートプランの説明として誤っているものはどれですか。",
+   "choices": [
+    "Enterpriseは最速級の対応が受けられる",
+    "Businessは本番運用向けである",
+    "Basicで専任TAMと24時間の電話サポートが受けられる",
+    "上位プランほど応答が速い"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Enterpriseの最速対応は正しい説明です。",
+    "1": "Businessが本番向けなのは正しい説明です。",
+    "3": "上位ほど速いのは正しい説明です。"
+   },
+   "lens": [
+    23,
+    18,
+    29,
+    12
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil06-15",
+   "theme": "qd-bil06",
+   "service": "サポートプラン",
+   "difficulty": 2,
+   "question": "サポートプランの説明として誤っているものはどれですか。",
+   "choices": [
+    "専任TAMはEnterpriseに付く",
+    "24時間対応はBusiness以上",
+    "Basicは無料",
+    "専任のTAMはBasicプランに付属する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "専任TAM＝Enterpriseは正しい説明です。",
+    "1": "24時間＝Business以上は正しい説明です。",
+    "2": "Basicが無料なのは正しい説明です。"
+   },
+   "lens": [
+    19,
+    17,
+    8,
+    20
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil01-1",
+   "theme": "qd-bil01",
+   "service": "料金モデル",
+   "difficulty": 1,
+   "question": "AWS料金の基本的な考え方として最も適切なものはどれですか。",
+   "choices": [
+    "毎月固定額を必ず払う",
+    "一括で全額前払いする",
+    "常に無料で使える",
+    "使った分だけ支払う（従量課金）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "固定額前提ではありません。",
+    "1": "前払いは一部の割引方式です。",
+    "2": "常時無料ではありません。"
+   },
+   "lens": [
+    10,
+    10,
+    8,
+    15
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-2",
+   "theme": "qd-bil01",
+   "service": "データ転送料金",
+   "difficulty": 1,
+   "question": "AWSのデータ転送で、一般に「課金対象になりやすい」のはどちらですか。",
+   "choices": [
+    "AWSから外部インターネットへ出る通信（アウト）",
+    "AWSへ入ってくる通信（イン）",
+    "同一AZ内の通信のみ",
+    "すべて無料"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "インは基本無料です。",
+    "2": "同一AZ内が特に課金という定型ではありません。",
+    "3": "すべて無料ではありません。"
+   },
+   "lens": [
+    24,
+    15,
+    10,
+    5
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-3",
+   "theme": "qd-bil01",
+   "service": "無料利用枠",
+   "difficulty": 1,
+   "question": "AWSの無料利用枠のうち「期限なく無料で使える」種類はどれですか。",
+   "choices": [
+    "有料プランのみ",
+    "常に無料（Always Free）",
+    "12か月無料",
+    "トライアル"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "有料プランは無料枠ではありません。",
+    "2": "12か月無料は期限があります。",
+    "3": "トライアルは短期です。"
+   },
+   "lens": [
+    7,
+    17,
+    6,
+    5
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-4",
+   "theme": "qd-bil01",
+   "service": "料金モデル",
+   "difficulty": 1,
+   "question": "従量課金（pay-as-you-go）の説明として正しいものはどれですか。",
+   "choices": [
+    "無料で無制限に使える",
+    "3年分を前払いする",
+    "使用量に応じて料金が変わる",
+    "毎月固定額を必ず払う"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "無料ではありません。",
+    "1": "前払いは別方式です。",
+    "3": "固定額ではありません。"
+   },
+   "lens": [
+    10,
+    9,
+    13,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-5",
+   "theme": "qd-bil01",
+   "service": "無料利用枠",
+   "difficulty": 2,
+   "question": "AWS無料利用枠の説明として正しいものはどれですか。",
+   "choices": [
+    "すべてのサービスが永久無料",
+    "法人は使えない",
+    "毎回申請が必要で実質有料",
+    "12か月無料・常に無料・トライアルの3種類がある"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "すべて永久無料ではありません。",
+    "1": "法人でも使えます。",
+    "2": "毎回の申請は不要です。"
+   },
+   "lens": [
+    13,
+    7,
+    12,
+    24
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-6",
+   "theme": "qd-bil01",
+   "service": "料金モデル",
+   "difficulty": 2,
+   "question": "AWS料金の原則として正しいものはどれですか。",
+   "choices": [
+    "長期・大量に使うほど割引が効きやすい",
+    "使うほど単価が必ず上がる",
+    "前払いすると必ず無料になる",
+    "料金は固定で変わらない"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "使うほど単価が上がるわけではありません。",
+    "2": "前払いで無料にはなりません。",
+    "3": "従量制で変動します。"
+   },
+   "lens": [
+    18,
+    12,
+    13,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-7",
+   "theme": "qd-bil01",
+   "service": "無料利用枠",
+   "difficulty": 2,
+   "question": "クラウドを学習で試したいが、うっかり課金は避けたいです。まず活用すべきものはどれですか。",
+   "choices": [
+    "前払いのリザーブドを大量購入する",
+    "無料利用枠（上限に注意して使う）",
+    "いきなりEnterpriseサポートでTAMに聞く",
+    "最大構成のEC2を常時起動する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "大量前払いは学習用途に不適切です。",
+    "2": "Enterpriseサポートは高額で学習には過剰です。",
+    "3": "最大構成の常時起動は高額です。"
+   },
+   "lens": [
+    16,
+    16,
+    25,
+    15
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil01-8",
+   "theme": "qd-bil01",
+   "service": "データ転送料金",
+   "difficulty": 2,
+   "question": "外部の利用者へ大量の動画を配信すると費用が増えました。主な要因はどれですか。",
+   "choices": [
+    "保存しているだけで高額になるから",
+    "無料枠だから無料のはず",
+    "AWSから外部へ出るデータ転送（アウト）に課金される",
+    "AWSへ入る通信が高いから"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "保存のみで配信費用が主要因ではありません。",
+    "1": "大量配信は無料枠を超えます。",
+    "3": "インは基本無料です。"
+   },
+   "lens": [
+    16,
+    11,
+    26,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-9",
+   "theme": "qd-bil01",
+   "service": "料金モデル",
+   "difficulty": 1,
+   "question": "使った分だけ支払う料金の考え方を「＿＿＿課金」と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "定額",
+    "固定",
+    "前払い",
+    "従量"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "定額は使用量に依存しません。",
+    "1": "固定も同様です。",
+    "2": "前払いは別方式です。"
+   },
+   "lens": [
+    2,
+    2,
+    3,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil01-10",
+   "theme": "qd-bil01",
+   "service": "無料利用枠",
+   "difficulty": 1,
+   "question": "無料利用枠のうち期限なく使えるのは「＿＿無料（Always Free）」です。＿＿に入るのはどれですか。",
+   "choices": [
+    "常に",
+    "12か月",
+    "30日",
+    "1回だけ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "12か月無料は期限があります。",
+    "2": "30日はトライアル的です。",
+    "3": "1回だけではありません。"
+   },
+   "lens": [
+    2,
+    4,
+    3,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil01-11",
+   "theme": "qd-bil01",
+   "service": "データ転送料金",
+   "difficulty": 1,
+   "question": "AWSへ入ってくる通信（インバウンド）は基本「＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "定額課金",
+    "無料",
+    "最も高額",
+    "従量で高い"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "定額ではありません。",
+    "2": "最も高額なのはアウトの傾向です。",
+    "3": "インは基本無料です。"
+   },
+   "lens": [
+    4,
+    2,
+    4,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil01-12",
+   "theme": "qd-bil01",
+   "service": "料金モデル",
+   "difficulty": 2,
+   "question": "AWS料金・無料枠の説明として誤っているものはどれですか。",
+   "choices": [
+    "常に無料の枠がある",
+    "長期・大量で割引が効きやすい",
+    "AWSへ入ってくる通信（イン）が最も高額に課金される",
+    "従量課金が基本"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "常に無料枠があるのは正しい説明です。",
+    "1": "長期・大量割引は正しい説明です。",
+    "3": "従量課金が基本は正しい説明です。"
+   },
+   "lens": [
+    9,
+    14,
+    26,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil01-13",
+   "theme": "qd-bil01",
+   "service": "無料利用枠",
+   "difficulty": 2,
+   "question": "無料利用枠の説明として誤っているものはどれですか。",
+   "choices": [
+    "常に無料の枠が存在する",
+    "上限を超えると課金される",
+    "学習・検証に活用できる",
+    "すべてのAWSサービスが永久に無料で使える"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "常に無料の枠があるのは正しい説明です。",
+    "1": "上限超過で課金は正しい説明です。",
+    "2": "学習活用は正しい説明です。"
+   },
+   "lens": [
+    11,
+    12,
+    11,
+    21
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil03-1",
+   "theme": "qd-bil03",
+   "service": "Pricing Calculator",
+   "difficulty": 1,
+   "question": "「これから作る構成の月額を、導入前に見積もる」ツールはどれですか。",
+   "choices": [
+    "AWS Pricing Calculator",
+    "AWS Budgets",
+    "AWS Cost Explorer",
+    "Cost and Usage Report"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Budgetsは予算超過のアラートです。",
+    "2": "Cost Explorerは過去の分析です。",
+    "3": "CURは詳細明細です。"
+   },
+   "lens": [
+    22,
+    11,
+    17,
+    21
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-2",
+   "theme": "qd-bil03",
+   "service": "Budgets",
+   "difficulty": 1,
+   "question": "「予算を決めて、超過しそうなときにアラート通知」するのはどれですか。",
+   "choices": [
+    "Cost and Usage Report",
+    "AWS Budgets",
+    "AWS Cost Explorer",
+    "AWS Pricing Calculator"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "CURは詳細明細です。",
+    "2": "Cost Explorerは振り返りの分析です。",
+    "3": "Calculatorは事前見積りです。"
+   },
+   "lens": [
+    21,
+    11,
+    17,
+    22
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-3",
+   "theme": "qd-bil03",
+   "service": "Cost Explorer",
+   "difficulty": 1,
+   "question": "「過去にかかったコストをグラフで分析・可視化」するのはどれですか。",
+   "choices": [
+    "AWS Pricing Calculator",
+    "AWS Organizations",
+    "AWS Cost Explorer",
+    "AWS Budgets"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Calculatorは事前見積りです。",
+    "1": "Organizationsはアカウント統制です。",
+    "3": "Budgetsは予算超過の通知です。"
+   },
+   "lens": [
+    22,
+    17,
+    17,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-4",
+   "theme": "qd-bil03",
+   "service": "コスト配分タグ",
+   "difficulty": 2,
+   "question": "「部署やプロジェクト単位で費用を分けて見る」ために使うのはどれですか。",
+   "choices": [
+    "無料利用枠",
+    "リザーブド",
+    "スポット",
+    "コスト配分タグ"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "無料利用枠は無料の枠です。",
+    "1": "リザーブドは購入方式です。",
+    "2": "スポットは購入方式です。"
+   },
+   "lens": [
+    5,
+    5,
+    4,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil03-5",
+   "theme": "qd-bil03",
+   "service": "Budgets",
+   "difficulty": 1,
+   "question": "AWS Budgetsの説明として正しいものはどれですか。",
+   "choices": [
+    "予算を決め、超過（見込み）をアラートで知らせる",
+    "過去コストをグラフ分析する",
+    "事前に月額を見積もる",
+    "複数アカウントを統制する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "過去分析はCost Explorerです。",
+    "2": "事前見積りはCalculatorです。",
+    "3": "統制はOrganizationsです。"
+   },
+   "lens": [
+    23,
+    13,
+    10,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil03-6",
+   "theme": "qd-bil03",
+   "service": "Cost Explorer",
+   "difficulty": 2,
+   "question": "BudgetsとCost Explorerの使い分けとして正しいものはどれですか。",
+   "choices": [
+    "Cost Explorerが予算アラート",
+    "決める（先回り）＝Budgets、振り返る（分析）＝Cost Explorer",
+    "両者は同じ",
+    "Budgetsが過去分析"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "予算アラートはBudgetsです。",
+    "2": "同じではありません。",
+    "3": "過去分析はCost Explorerです。"
+   },
+   "lens": [
+    20,
+    39,
+    5,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil03-7",
+   "theme": "qd-bil03",
+   "service": "Budgets",
+   "difficulty": 2,
+   "question": "月のコストが予算を超えそうなときに、早めにメールで気づきたいです。最適なのはどれですか。",
+   "choices": [
+    "Pricing Calculatorで見積もる",
+    "Trusted Advisorを見る",
+    "AWS Budgetsでアラートを設定する",
+    "Cost Explorerであとから見る"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Calculatorは導入前の見積りです。",
+    "1": "Trusted Advisorは総合点検です。",
+    "3": "Cost Explorerは事後の分析です。"
+   },
+   "lens": [
+    23,
+    18,
+    21,
+    20
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-8",
+   "theme": "qd-bil03",
+   "service": "Pricing Calculator",
+   "difficulty": 2,
+   "question": "新しい構成を作る前に、月額のおおよそを把握して予算を組みたいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Cost Explorer",
+    "AWS Budgets",
+    "Cost and Usage Report",
+    "AWS Pricing Calculator"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Cost Explorerは過去分析です。",
+    "1": "Budgetsは予算アラートです。",
+    "2": "CURは詳細明細です。"
+   },
+   "lens": [
+    17,
+    11,
+    21,
+    22
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-9",
+   "theme": "qd-bil03",
+   "service": "Cost Explorer",
+   "difficulty": 2,
+   "question": "どのサービスにいくらかかっているか、過去数か月の傾向を分析したいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Cost Explorer",
+    "AWS Pricing Calculator",
+    "AWS Budgets",
+    "AWS Artifact"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Calculatorは事前見積りです。",
+    "2": "Budgetsは予算アラートです。",
+    "3": "Artifactは監査資料です。"
+   },
+   "lens": [
+    17,
+    22,
+    11,
+    12
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-10",
+   "theme": "qd-bil03",
+   "service": "Budgets",
+   "difficulty": 1,
+   "question": "予算を決めて超過を通知するのは AWS ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Organizations",
+    "Budgets",
+    "Cost Explorer",
+    "Pricing Calculator"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Organizationsは統制です。",
+    "2": "Cost Explorerは分析です。",
+    "3": "Calculatorは見積りです。"
+   },
+   "lens": [
+    13,
+    7,
+    13,
+    18
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-11",
+   "theme": "qd-bil03",
+   "service": "Cost Explorer",
+   "difficulty": 1,
+   "question": "過去のコストを分析・可視化するのは AWS Cost ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Budgets",
+    "Report",
+    "Explorer",
+    "Calculator"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Budgetsは予算アラートです。",
+    "1": "ReportはCURの一部語です。",
+    "3": "CalculatorはPricing Calculatorです。"
+   },
+   "lens": [
+    7,
+    6,
+    8,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-12",
+   "theme": "qd-bil03",
+   "service": "Budgets",
+   "difficulty": 2,
+   "question": "コスト管理ツールの説明として誤っているものはどれですか。",
+   "choices": [
+    "Budgetsは予算超過を通知する",
+    "Cost Explorerは過去コストを分析する",
+    "Pricing Calculatorは事前に見積もる",
+    "AWS Budgetsは過去コストをグラフで分析するツールである"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Budgets＝予算通知は正しい説明です。",
+    "1": "Cost Explorer＝分析は正しい説明です。",
+    "2": "Calculator＝見積りは正しい説明です。"
+   },
+   "lens": [
+    17,
+    24,
+    26,
+    32
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil03-13",
+   "theme": "qd-bil03",
+   "service": "Pricing Calculator",
+   "difficulty": 2,
+   "question": "コスト管理ツールの組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Pricing Calculator＝過去コストの分析",
+    "Pricing Calculator＝導入前の見積り",
+    "Budgets＝予算アラート",
+    "Cost Explorer＝過去コストの分析"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Calculator＝見積りは正しい組合せです。",
+    "2": "Budgets＝アラートは正しい組合せです。",
+    "3": "Cost Explorer＝分析は正しい組合せです。"
+   },
+   "lens": [
+    27,
+    26,
+    14,
+    22
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil04-1",
+   "theme": "qd-bil04",
+   "service": "Trusted Advisor",
+   "difficulty": 1,
+   "question": "「アカウントを自動点検し、コスト・セキュリティ・性能などの改善点を助言」するのはどれですか。",
+   "choices": [
+    "Amazon Inspector",
+    "AWS Trusted Advisor",
+    "AWS Budgets",
+    "AWS Cost Explorer"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Inspectorは脆弱性診断です。",
+    "2": "Budgetsは予算アラートです。",
+    "3": "Cost Explorerは過去分析です。"
+   },
+   "lens": [
+    16,
+    19,
+    11,
+    17
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil04-2",
+   "theme": "qd-bil04",
+   "service": "Compute Optimizer",
+   "difficulty": 1,
+   "question": "「実際の使用状況から、最適なインスタンスサイズを提案」するのはどれですか。",
+   "choices": [
+    "AWS Budgets",
+    "AWS Config",
+    "AWS Compute Optimizer",
+    "AWS Trusted Advisor"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Budgetsは予算アラートです。",
+    "1": "Configは設定評価です。",
+    "3": "Trusted Advisorは総合点検です。"
+   },
+   "lens": [
+    11,
+    10,
+    21,
+    19
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil04-3",
+   "theme": "qd-bil04",
+   "service": "コスト最適化",
+   "difficulty": 2,
+   "question": "コスト最適化の基本動作として最も適切なものはどれですか。",
+   "choices": [
+    "常に最大構成で動かす",
+    "何も見直さない",
+    "高性能な1台に集約する",
+    "使っていない資源を止め、適正サイズにし、割引プランを使う"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "常時最大は無駄です。",
+    "1": "見直さないと最適化できません。",
+    "2": "1台集約は可用性面でも不利です。"
+   },
+   "lens": [
+    10,
+    7,
+    11,
+    28
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil04-4",
+   "theme": "qd-bil04",
+   "service": "Trusted Advisor",
+   "difficulty": 1,
+   "question": "AWS Trusted Advisorの説明として正しいものはどれですか。",
+   "choices": [
+    "コスト・セキュリティ・信頼性・性能・上限の観点で改善点を助言する",
+    "過去コストをグラフ分析する",
+    "予算超過を通知する",
+    "証明書を発行する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "過去分析はCost Explorerです。",
+    "2": "予算通知はBudgetsです。",
+    "3": "証明書発行はACMです。"
+   },
+   "lens": [
+    32,
+    13,
+    9,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil04-5",
+   "theme": "qd-bil04",
+   "service": "Compute Optimizer",
+   "difficulty": 2,
+   "question": "AWS Compute Optimizerの説明として正しいものはどれですか。",
+   "choices": [
+    "脅威を検知する",
+    "使用状況を分析し、過大・過小なインスタンスの最適サイズを提案する",
+    "予算を決めて通知する",
+    "監査レポートを配布する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "脅威検知はGuardDutyです。",
+    "2": "予算通知はBudgetsです。",
+    "3": "監査資料はArtifactです。"
+   },
+   "lens": [
+    7,
+    32,
+    10,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil04-6",
+   "theme": "qd-bil04",
+   "service": "Trusted Advisor",
+   "difficulty": 2,
+   "question": "アカウント全体で、使っていない資源やセキュリティ上の改善点をまとめて把握したいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Artifact",
+    "Amazon Macie",
+    "AWS Trusted Advisor",
+    "AWS Pricing Calculator"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Artifactは監査資料です。",
+    "1": "MacieはS3機微データ検出です。",
+    "3": "Calculatorは事前見積りです。"
+   },
+   "lens": [
+    12,
+    12,
+    19,
+    22
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil04-7",
+   "theme": "qd-bil04",
+   "service": "Compute Optimizer",
+   "difficulty": 2,
+   "question": "多くのEC2が過剰スペックで無駄が出ていないか分析し、最適サイズを知りたいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Budgets",
+    "AWS Cost Explorer",
+    "AWS WAF",
+    "AWS Compute Optimizer"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Budgetsは予算アラートです。",
+    "1": "Cost Explorerは傾向分析です。",
+    "2": "WAFはWeb攻撃遮断です。"
+   },
+   "lens": [
+    11,
+    17,
+    7,
+    21
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil04-8",
+   "theme": "qd-bil04",
+   "service": "Trusted Advisor",
+   "difficulty": 1,
+   "question": "アカウントを多観点で点検し助言するのは AWS ＿＿＿＿＿＿ Advisor です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Trusted",
+    "Cost",
+    "Security",
+    "Budget"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Cost AdvisorやSecurity Advisorという名称ではありません。",
+    "2": "同上。",
+    "3": "Budget Advisorではありません。"
+   },
+   "lens": [
+    7,
+    4,
+    8,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil04-9",
+   "theme": "qd-bil04",
+   "service": "Compute Optimizer",
+   "difficulty": 1,
+   "question": "最適なインスタンスサイズを提案するのは AWS Compute ＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Calculator",
+    "Optimizer",
+    "Explorer",
+    "Manager"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "CalculatorはPricing Calculatorの語です。",
+    "2": "ExplorerはCost Explorerの語です。",
+    "3": "Managerは別語です。"
+   },
+   "lens": [
+    10,
+    9,
+    8,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil04-10",
+   "theme": "qd-bil04",
+   "service": "コスト最適化",
+   "difficulty": 2,
+   "question": "コスト最適化の説明として誤っているものはどれですか。",
+   "choices": [
+    "適正なサイズに変える",
+    "割引プランを活用する",
+    "常に最大構成で動かし続けるのが最適である",
+    "使っていない資源を止める"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "適正サイズ化は正しい説明です。",
+    "1": "割引活用は正しい説明です。",
+    "3": "未使用停止は正しい説明です。"
+   },
+   "lens": [
+    10,
+    10,
+    20,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil04-11",
+   "theme": "qd-bil04",
+   "service": "Trusted Advisor",
+   "difficulty": 2,
+   "question": "サービスの組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Trusted Advisor＝多観点の総合点検・助言",
+    "Compute Optimizer＝サイズ最適化の提案",
+    "Budgets＝予算アラート",
+    "AWS Trusted Advisor＝最適なインスタンスサイズだけを提案する専用ツール"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Trusted Advisor＝総合点検は正しい組合せです。",
+    "1": "Compute Optimizer＝サイズ提案は正しい組合せです。",
+    "2": "Budgets＝アラートは正しい組合せです。"
+   },
+   "lens": [
+    27,
+    27,
+    14,
+    44
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil05-1",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 1,
+   "question": "「複数のAWSアカウントを束ね、請求を1つにまとめる（一括請求）」のはどれですか。",
+   "choices": [
+    "AWS Organizations",
+    "AWS IAM",
+    "AWS Budgets",
+    "AWS Config"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "IAMは1アカウント内の権限管理です。",
+    "2": "Budgetsは予算アラートです。",
+    "3": "Configは設定評価です。"
+   },
+   "lens": [
+    17,
+    7,
+    11,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil05-2",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "「複数アカウント共通の禁止ルールを組織全体に適用」する仕組みはどれですか。",
+   "choices": [
+    "VPC",
+    "SCP（サービスコントロールポリシー）",
+    "IAMポリシー単体",
+    "MFA"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "VPCはネットワークです。",
+    "2": "IAMポリシー単体は1アカウント内向けです。",
+    "3": "MFAは認証強化です。"
+   },
+   "lens": [
+    3,
+    19,
+    9,
+    3
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil05-3",
+   "theme": "qd-bil05",
+   "service": "Marketplace",
+   "difficulty": 1,
+   "question": "「サードパーティ製ソフトを購入し、AWSの請求にまとめられる」のはどれですか。",
+   "choices": [
+    "Amazon Cognito",
+    "AWS Config",
+    "AWS Marketplace",
+    "AWS Artifact"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Cognitoはアプリ利用者認証です。",
+    "1": "Configは設定評価です。",
+    "3": "Artifactは監査資料です。"
+   },
+   "lens": [
+    14,
+    10,
+    15,
+    12
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil05-4",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 1,
+   "question": "一括請求（Consolidated Billing）の利点として正しいものはどれですか。",
+   "choices": [
+    "アカウントごとに割高になる",
+    "請求書が増えて管理が煩雑になる",
+    "割引が一切効かなくなる",
+    "使用量が合算され、ボリューム割引が効きやすくなる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "割高にはなりません。",
+    "1": "むしろ請求は1本化されます。",
+    "2": "割引はむしろ効きやすくなります。"
+   },
+   "lens": [
+    13,
+    15,
+    11,
+    24
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil05-5",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "AWS Organizationsの説明として正しいものはどれですか。",
+   "choices": [
+    "複数アカウントを束ね、一括請求とSCPによる統制ができる",
+    "1アカウント内のIAM権限を管理する",
+    "仮想ネットワークを作る",
+    "脅威を検知する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "1アカウントの権限はIAMです。",
+    "2": "仮想ネットワークはVPCです。",
+    "3": "脅威検知はGuardDutyです。"
+   },
+   "lens": [
+    28,
+    18,
+    11,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil05-6",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "部署ごとに分かれた複数アカウントの請求を1本化し、割引も効かせたいです。最適なのはどれですか。",
+   "choices": [
+    "Cost Explorerで支払う",
+    "AWS Organizationsの一括請求",
+    "各アカウントで個別に支払う",
+    "IAMで請求を管理する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Cost Explorerは分析ツールです。",
+    "2": "個別支払いは割引・管理面で不利です。",
+    "3": "IAMは権限管理で請求集約ではありません。"
+   },
+   "lens": [
+    17,
+    22,
+    13,
+    11
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil05-7",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "組織全体で特定の危険な操作を一律に禁止したいです。最適なのはどれですか。",
+   "choices": [
+    "MFAを有効化する",
+    "VPCを分ける",
+    "OrganizationsのSCPで制限する",
+    "各アカウントで個別にIAMを設定する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "MFAは認証強化です。",
+    "1": "VPC分割は統制手段ではありません。",
+    "3": "個別IAMは漏れやすく非効率です。"
+   },
+   "lens": [
+    9,
+    7,
+    22,
+    18
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-bil05-8",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 1,
+   "question": "複数アカウントを束ねて請求を1本化するのは AWS ＿＿＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "IAM",
+    "Budgets",
+    "Config",
+    "Organizations"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "IAMは権限管理です。",
+    "1": "Budgetsは予算アラートです。",
+    "2": "Configは設定評価です。"
+   },
+   "lens": [
+    3,
+    7,
+    6,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil05-9",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 1,
+   "question": "複数アカウント共通の上限を定める仕組みは「＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "SCP",
+    "ACL",
+    "MFA",
+    "CDN"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "ACLはアクセス制御リストです。",
+    "2": "MFAは多要素認証です。",
+    "3": "CDNは配信網です。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-bil05-10",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "アカウント管理・一括請求の説明として誤っているものはどれですか。",
+   "choices": [
+    "SCPで統制できる",
+    "一括請求にすると使用量が分割され、割引が効きにくくなる",
+    "複数アカウントを束ねられる",
+    "使用量が合算され割引が効きやすい"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "SCPでの統制は正しい説明です。",
+    "2": "複数アカウントを束ねるのは正しい説明です。",
+    "3": "合算で割引が効きやすいのは正しい説明です。"
+   },
+   "lens": [
+    9,
+    27,
+    13,
+    16
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-bil05-11",
+   "theme": "qd-bil05",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "サービスの組合せとして誤っているものはどれですか。",
+   "choices": [
+    "SCP＝組織全体の統制",
+    "AWS Marketplace＝サードパーティ製品の調達",
+    "AWS IAM＝複数アカウントの一括請求",
+    "AWS Organizations＝複数アカウントの一括請求・統制"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "SCP＝統制は正しい組合せです。",
+    "1": "Marketplace＝調達は正しい組合せです。",
+    "3": "Organizations＝一括請求は正しい組合せです。"
+   },
+   "lens": [
+    11,
+    28,
+    20,
+    33
+   ],
+   "tell": false,
+   "strong": false
+  }
+ ]
+}

@@ -1,0 +1,2958 @@
+{
+ "domain": "tec1",
+ "need": {
+  "qd-tec01": {
+   "have": 19,
+   "target": 30,
+   "addNeeded": 11
+  },
+  "qd-tec02": {
+   "have": 14,
+   "target": 30,
+   "addNeeded": 16
+  },
+  "qd-tec03": {
+   "have": 15,
+   "target": 30,
+   "addNeeded": 15
+  },
+  "qd-tec04": {
+   "have": 15,
+   "target": 30,
+   "addNeeded": 15
+  },
+  "qd-tec05": {
+   "have": 15,
+   "target": 30,
+   "addNeeded": 15
+  },
+  "qd-tec06": {
+   "have": 17,
+   "target": 30,
+   "addNeeded": 13
+  },
+  "qd-tec07": {
+   "have": 13,
+   "target": 30,
+   "addNeeded": 17
+  }
+ },
+ "questions": [
+  {
+   "id": "qd-tec01-1",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "「表形式（SQL）のデータベースの運用管理をAWSに任せたい」ときに使うのはどれですか。",
+   "choices": [
+    "Amazon RDS",
+    "Amazon S3",
+    "AWS Lambda",
+    "Amazon EC2"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "S3はファイル保存です。",
+    "2": "Lambdaはサーバーレス実行です。",
+    "3": "EC2は仮想サーバーです。"
+   },
+   "lens": [
+    10,
+    9,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-2",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "「画像やバックアップなどファイルを保存」したいときに使うのはどれですか。",
+   "choices": [
+    "AWS IAM",
+    "Amazon S3",
+    "Amazon RDS",
+    "Amazon VPC"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "IAMは権限管理です。",
+    "2": "RDSはデータベースです。",
+    "3": "VPCはネットワークです。"
+   },
+   "lens": [
+    7,
+    9,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-3",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "「OSから自由に管理できる仮想サーバー」が欲しいときに使うのはどれですか。",
+   "choices": [
+    "Amazon DynamoDB",
+    "Amazon CloudFront",
+    "Amazon EC2",
+    "Amazon S3"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "DynamoDBはNoSQLです。",
+    "1": "CloudFrontはCDNです。",
+    "3": "S3はストレージです。"
+   },
+   "lens": [
+    15,
+    17,
+    10,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-4",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "「サーバー管理なしでイベント時だけコードを実行」したいときに使うのはどれですか。",
+   "choices": [
+    "Amazon EC2",
+    "Amazon RDS",
+    "Amazon EBS",
+    "AWS Lambda"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "EC2は常時起動の仮想サーバーです。",
+    "1": "RDSはデータベースです。",
+    "2": "EBSはEC2用のディスクです。"
+   },
+   "lens": [
+    10,
+    10,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-5",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "「キー・バリュー型で超高速なNoSQLデータベース」が欲しいときに使うのはどれですか。",
+   "choices": [
+    "Amazon DynamoDB",
+    "Amazon RDS",
+    "Amazon Redshift",
+    "Amazon EFS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "RDSはSQLです。",
+    "2": "Redshiftは分析用DWHです。",
+    "3": "EFSは共有ファイルストレージです。"
+   },
+   "lens": [
+    15,
+    10,
+    15,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-1",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "「めったに参照しないが、必要時は数時間待てる長期保管」を最も安くするクラスはどれですか。",
+   "choices": [
+    "S3 標準",
+    "S3 標準-IA",
+    "S3 One Zone-IA",
+    "S3 Glacier系（アーカイブ）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "標準は頻繁アクセス向けで割高です。",
+    "1": "標準-IAはGlacierほど安くありません。",
+    "2": "One Zone-IAも最安のアーカイブではありません。"
+   },
+   "lens": [
+    5,
+    8,
+    14,
+    18
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-2",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "「アクセス頻度が読めないデータを、手間なく自動で最適化」したいときに使うクラスはどれですか。",
+   "choices": [
+    "S3 Intelligent-Tiering",
+    "S3 標準に固定",
+    "S3 Glacier Deep Archive",
+    "S3 標準-IAに固定"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "標準固定は低頻度データにも割高です。",
+    "2": "Deep Archiveは最長期保管向けで、頻度不明の汎用ではありません。",
+    "3": "標準-IA固定は自動最適化ではありません。"
+   },
+   "lens": [
+    22,
+    8,
+    23,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-3",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "「頻繁にアクセスする一般的なデータ」に使う標準的なクラスはどれですか。",
+   "choices": [
+    "S3 One Zone-IA",
+    "S3 標準",
+    "S3 Glacier",
+    "S3 Glacier Deep Archive"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "One Zone-IAは低頻度・単一AZ向けです。",
+    "2": "Glacierはアーカイブ向けです。",
+    "3": "Deep Archiveは最長期保管向けです。"
+   },
+   "lens": [
+    14,
+    5,
+    10,
+    23
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-4",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "「静的なWebサイト（HTML/画像）をサーバーレスで公開」したいときに使えるのはどれですか。",
+   "choices": [
+    "Amazon RDS",
+    "Amazon VPC",
+    "Amazon S3の静的ウェブサイトホスティング",
+    "Amazon EC2の常時起動"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "RDSはデータベースです。",
+    "1": "VPCはネットワークです。",
+    "3": "EC2常時起動はサーバー管理が必要です。"
+   },
+   "lens": [
+    10,
+    10,
+    24,
+    15
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec05-5",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "S3 Intelligent-Tiering の説明として正しいものはどれですか。",
+   "choices": [
+    "常に最速だが最も高い",
+    "アーカイブ専用である",
+    "無料で使える",
+    "アクセス頻度に応じて自動で最適なクラスへ移動する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "最速・最高価格の固定ではありません。",
+    "1": "アーカイブ専用ではありません。",
+    "2": "無料ではありません。"
+   },
+   "lens": [
+    10,
+    10,
+    6,
+    24
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-1",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "「ミリ秒応答・自動スケールのキー・バリュー型NoSQL」が必要なときに使うのはどれですか。",
+   "choices": [
+    "Amazon Redshift",
+    "Amazon Aurora",
+    "Amazon DynamoDB",
+    "Amazon RDS"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Redshiftは分析用DWHです。",
+    "1": "AuroraもSQL系です。",
+    "3": "RDSはSQLです。"
+   },
+   "lens": [
+    15,
+    13,
+    15,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-2",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "「MySQL/PostgreSQLの管理をAWSに任せたい」ときに使うのはどれですか。",
+   "choices": [
+    "Amazon DynamoDB",
+    "Amazon Redshift",
+    "Amazon ElastiCache",
+    "Amazon RDS"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "DynamoDBはNoSQLです。",
+    "1": "Redshiftは分析用です。",
+    "2": "ElastiCacheはキャッシュです。"
+   },
+   "lens": [
+    15,
+    15,
+    18,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-3",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "「大規模データの集計・分析に特化したデータウェアハウス」が欲しいときに使うのはどれですか。",
+   "choices": [
+    "Amazon Redshift",
+    "Amazon RDS",
+    "Amazon DynamoDB",
+    "Amazon ElastiCache"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "RDSは運用系のSQLです。",
+    "2": "DynamoDBはNoSQL運用系です。",
+    "3": "ElastiCacheはキャッシュです。"
+   },
+   "lens": [
+    15,
+    10,
+    15,
+    18
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-4",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "「よく使うデータをメモリに置いて高速化」したいときに使うのはどれですか。",
+   "choices": [
+    "Amazon Kinesis",
+    "Amazon ElastiCache",
+    "Amazon Athena",
+    "Amazon S3 Glacier"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Kinesisはリアルタイム処理です。",
+    "2": "AthenaはS3への分析クエリです。",
+    "3": "GlacierはS3のアーカイブです。"
+   },
+   "lens": [
+    14,
+    18,
+    13,
+    17
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-5",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "「AWS最適化の高性能・高可用なMySQL/PostgreSQL互換DB」が欲しいときに使うのはどれですか。",
+   "choices": [
+    "Amazon Redshift",
+    "Amazon Neptune",
+    "Amazon Aurora",
+    "Amazon DynamoDB"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Redshiftは分析用です。",
+    "1": "Neptuneはグラフです。",
+    "3": "DynamoDBはNoSQLです。"
+   },
+   "lens": [
+    15,
+    14,
+    13,
+    15
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-6",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "「自分専用の仮想ネットワークを作る」ときに使うのはどれですか。",
+   "choices": [
+    "AWS Lambda",
+    "Amazon VPC",
+    "Amazon EC2",
+    "Amazon S3"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Lambdaはサーバーレスです。",
+    "2": "EC2は仮想サーバーです。",
+    "3": "S3はストレージです。"
+   },
+   "lens": [
+    10,
+    10,
+    10,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-7",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "「コンテンツを世界中の近くの拠点から高速配信」したいときに使うのはどれですか。",
+   "choices": [
+    "Amazon EC2",
+    "Amazon RDS",
+    "Amazon CloudFront",
+    "Amazon S3単体"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "EC2は仮想サーバーです。",
+    "1": "RDSはデータベースです。",
+    "3": "S3単体では世界規模の低遅延配信はCDNが担います。"
+   },
+   "lens": [
+    10,
+    10,
+    17,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec01-8",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "Amazon S3の説明として正しいものはどれですか。",
+   "choices": [
+    "仮想サーバー",
+    "SQLデータベース",
+    "仮想ネットワーク",
+    "ファイルをオブジェクトとして保存する高耐久ストレージ"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "仮想サーバーはEC2です。",
+    "1": "SQL DBはRDSです。",
+    "2": "仮想ネットワークはVPCです。"
+   },
+   "lens": [
+    6,
+    9,
+    8,
+    26
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec01-9",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "AWS Lambdaの説明として正しいものはどれですか。",
+   "choices": [
+    "サーバー管理なしでコードを実行するサーバーレスサービス",
+    "仮想サーバーを起動するサービス",
+    "ファイルを保存するストレージ",
+    "仮想ネットワーク"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "仮想サーバーはEC2です。",
+    "2": "ストレージはS3です。",
+    "3": "ネットワークはVPCです。"
+   },
+   "lens": [
+    27,
+    15,
+    14,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec01-10",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "Amazon EC2の説明として正しいものはどれですか。",
+   "choices": [
+    "DNSサービス",
+    "OSから自分で管理できる仮想サーバー",
+    "オブジェクトストレージ",
+    "キー・バリューのNoSQL"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "DNSはRoute 53です。",
+    "2": "オブジェクトストレージはS3です。",
+    "3": "NoSQLはDynamoDBです。"
+   },
+   "lens": [
+    7,
+    18,
+    11,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec01-11",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 2,
+   "question": "Amazon RDSの説明として正しいものはどれですか。",
+   "choices": [
+    "仮想サーバー",
+    "CDN",
+    "リレーショナル（SQL）DBの管理をAWSに任せられるサービス",
+    "キー・バリューのNoSQL"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "仮想サーバーはEC2です。",
+    "1": "CDNはCloudFrontです。",
+    "3": "NoSQLはDynamoDBです。"
+   },
+   "lens": [
+    6,
+    3,
+    31,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec01-12",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 2,
+   "question": "既存アプリをほぼ改修せず移行し、OSも自分で管理し続けたいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Lambda",
+    "Amazon S3",
+    "Amazon DynamoDB",
+    "Amazon EC2"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Lambdaはサーバーレスで既存常駐アプリに不向きです。",
+    "1": "S3はストレージです。",
+    "2": "DynamoDBはNoSQLです。"
+   },
+   "lens": [
+    10,
+    9,
+    15,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-13",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 2,
+   "question": "アップロードのたびに一瞬だけ動く処理を、常時サーバーを持たずに実装したいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Lambda",
+    "常時起動のEC2",
+    "Amazon RDS",
+    "Amazon EBS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "常時起動EC2は無駄なコストが出ます。",
+    "2": "RDSはデータベースです。",
+    "3": "EBSはディスクです。"
+   },
+   "lens": [
+    10,
+    8,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-14",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 2,
+   "question": "大量アクセスのゲームのスコアを、ミリ秒応答・自動スケールで保存したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon S3 Glacier",
+    "Amazon DynamoDB",
+    "Amazon RDS",
+    "Amazon Redshift"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Glacierはアーカイブです。",
+    "2": "RDSはSQLでスケール特性が異なります。",
+    "3": "Redshiftは分析用です。"
+   },
+   "lens": [
+    17,
+    15,
+    10,
+    15
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-15",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "仮想サーバーを提供する代表的サービスは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "RDS",
+    "VPC",
+    "EC2",
+    "S3"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "RDSはデータベースです。",
+    "1": "VPCはネットワークです。",
+    "3": "S3はストレージです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-16",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "サーバーレスでコードを実行するサービスは AWS ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "EC2",
+    "EBS",
+    "VPC",
+    "Lambda"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "EC2は仮想サーバーです。",
+    "1": "EBSはディスクです。",
+    "2": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec01-17",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 1,
+   "question": "ファイルをオブジェクトとして保存するのは Amazon ＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "S3",
+    "EC2",
+    "RDS",
+    "SNS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "EC2は仮想サーバーです。",
+    "2": "RDSはデータベースです。",
+    "3": "SNSは通知配信です。"
+   },
+   "lens": [
+    2,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec01-18",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 2,
+   "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "AWS Lambda＝サーバーレス実行",
+    "Amazon DynamoDB＝リレーショナル（SQL）データベース",
+    "Amazon EC2＝仮想サーバー",
+    "Amazon S3＝オブジェクトストレージ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Lambda＝サーバーレスは正しい組合せです。",
+    "2": "EC2＝仮想サーバーは正しい組合せです。",
+    "3": "S3＝オブジェクトストレージは正しい組合せです。"
+   },
+   "lens": [
+    19,
+    34,
+    17,
+    21
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec01-19",
+   "theme": "qd-tec01",
+   "service": "コンピューティング",
+   "difficulty": 2,
+   "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Amazon RDS＝リレーショナルDB",
+    "AWS Lambda＝サーバーレス",
+    "Amazon VPC＝オブジェクトストレージ",
+    "Amazon EC2＝仮想サーバー"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "RDS＝リレーショナルDBは正しい組合せです。",
+    "1": "Lambda＝サーバーレスは正しい組合せです。",
+    "3": "EC2＝仮想サーバーは正しい組合せです。"
+   },
+   "lens": [
+    20,
+    17,
+    22,
+    17
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-6",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 2,
+   "question": "S3 Glacier系の説明として正しいものはどれですか。",
+   "choices": [
+    "非常に安価だが、取り出しに時間がかかることがあるアーカイブ向け",
+    "頻繁アクセス向けで最速",
+    "ブロックストレージ",
+    "仮想サーバー"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "頻繁アクセス・最速は標準クラスです。",
+    "2": "ブロックストレージはEBSです。",
+    "3": "仮想サーバーはEC2です。"
+   },
+   "lens": [
+    31,
+    11,
+    9,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec05-7",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 2,
+   "question": "S3の耐久性に関する説明として正しいものはどれですか。",
+   "choices": [
+    "耐久性は保証されない",
+    "非常に高い耐久性（イレブンナイン）を持つ",
+    "データはすぐ消える",
+    "1回書くと読めない"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "高い耐久性が特長です。",
+    "2": "すぐ消えることはありません。",
+    "3": "書いたデータは読めます。"
+   },
+   "lens": [
+    10,
+    20,
+    9,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec05-8",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 2,
+   "question": "「作成から90日たったオブジェクトを自動でGlacierへ移す」を実現するには何を設定しますか。",
+   "choices": [
+    "レプリケーション",
+    "バケットポリシー",
+    "ライフサイクルルール",
+    "バージョニング"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "レプリケーションは複製です。",
+    "1": "バケットポリシーはアクセス制御です。",
+    "3": "バージョニングは版管理です。"
+   },
+   "lens": [
+    8,
+    8,
+    10,
+    7
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-9",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 2,
+   "question": "年に数回しか使わない大量のログを、できるだけ安く長期保管したいです。最適なのはどれですか。",
+   "choices": [
+    "S3標準のまま置く",
+    "EBSに保存する",
+    "EC2のローカルディスクに置く",
+    "S3 Glacier系へ保管する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "標準は割高です。",
+    "1": "EBSはEC2用ディスクで用途が異なります。",
+    "2": "EC2ローカルは永続性・コスト面で不利です。"
+   },
+   "lens": [
+    9,
+    8,
+    15,
+    16
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-10",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 2,
+   "question": "アクセス頻度が予測できないデータのコストを、運用の手間をかけずに抑えたいです。最適なのはどれですか。",
+   "choices": [
+    "S3 Intelligent-Tiering を使う",
+    "毎月手動でクラスを変える",
+    "常に標準クラスにする",
+    "EFSに移す"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "手動変更は手間とミスが生じます。",
+    "2": "標準固定は割高です。",
+    "3": "EFSは共有ファイル用途です。"
+   },
+   "lens": [
+    26,
+    12,
+    10,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec05-11",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "S3の非常に高い耐久性は「イレブン＿＿＿」（9が11個）と表現されます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "スリー",
+    "ナイン",
+    "セブン",
+    "ファイブ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "スリーでは9が3個です。",
+    "2": "セブンでは9が7個です。",
+    "3": "ファイブでは9が5個です。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-12",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "経過日数に応じてクラスを自動で移す設定を「＿＿＿ルール」と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "レプリケーション",
+    "ロギング",
+    "ライフサイクル",
+    "バージョニング"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "レプリケーションは複製です。",
+    "1": "ロギングはアクセス記録です。",
+    "3": "バージョニングは版管理です。"
+   },
+   "lens": [
+    8,
+    4,
+    7,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-13",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 1,
+   "question": "最も安価で長期アーカイブ向けのS3クラスは「S3 ＿＿＿」系です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "標準",
+    "Intelligent-Tiering",
+    "One Zone",
+    "Glacier"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "標準は頻繁アクセス向けです。",
+    "1": "Intelligent-Tieringは自動最適化用です。",
+    "2": "One Zoneは単一AZの低頻度向けです。"
+   },
+   "lens": [
+    2,
+    19,
+    8,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec05-14",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 2,
+   "question": "Amazon S3の説明として誤っているものはどれですか。",
+   "choices": [
+    "EC2に直接マウントして使うブロックストレージである",
+    "静的Webサイトを公開できる",
+    "非常に高い耐久性を持つ",
+    "ストレージクラスでコスト最適化できる"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "静的サイト公開は正しい説明です。",
+    "2": "高い耐久性は正しい説明です。",
+    "3": "クラスによる最適化は正しい説明です。"
+   },
+   "lens": [
+    26,
+    14,
+    11,
+    18
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec05-15",
+   "theme": "qd-tec05",
+   "service": "S3",
+   "difficulty": 2,
+   "question": "S3ストレージクラスの説明として誤っているものはどれですか。",
+   "choices": [
+    "Glacierは長期保管向けで安価",
+    "Glacierは頻繁アクセス向けで最速の取り出しができる",
+    "標準は頻繁アクセス向け",
+    "Intelligent-Tieringは自動で最適化する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Glacierが安価な長期保管なのは正しい説明です。",
+    "2": "標準が頻繁アクセス向けなのは正しい説明です。",
+    "3": "Intelligent-Tieringの自動最適化は正しい説明です。"
+   },
+   "lens": [
+    17,
+    28,
+    11,
+    28
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-6",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "Amazon Auroraの説明として正しいものはどれですか。",
+   "choices": [
+    "キー・バリューのNoSQL",
+    "分析専用のデータウェアハウス",
+    "インメモリのキャッシュ",
+    "AWSが最適化したMySQL/PostgreSQL互換の高性能リレーショナルDB"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "NoSQLはDynamoDBです。",
+    "1": "DWHはRedshiftです。",
+    "2": "キャッシュはElastiCacheです。"
+   },
+   "lens": [
+    13,
+    14,
+    11,
+    40
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-7",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "Amazon DynamoDBの説明として正しいものはどれですか。",
+   "choices": [
+    "サーバーレスで自動スケールするキー・バリュー型NoSQL",
+    "MySQL互換のリレーショナルDB",
+    "データウェアハウス",
+    "キャッシュ専用"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "MySQL互換はRDS/Auroraです。",
+    "2": "DWHはRedshiftです。",
+    "3": "キャッシュはElastiCacheです。"
+   },
+   "lens": [
+    28,
+    17,
+    9,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-8",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 2,
+   "question": "Amazon Redshiftの説明として正しいものはどれですか。",
+   "choices": [
+    "仮想ネットワーク",
+    "大規模データの分析に特化したデータウェアハウス",
+    "キー・バリューのNoSQL",
+    "インメモリキャッシュ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "仮想ネットワークはVPCです。",
+    "2": "NoSQLはDynamoDBです。",
+    "3": "キャッシュはElastiCacheです。"
+   },
+   "lens": [
+    8,
+    23,
+    13,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-9",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 2,
+   "question": "Amazon ElastiCacheの説明として正しいものはどれですか。",
+   "choices": [
+    "リレーショナルDB",
+    "データウェアハウス",
+    "Redis/Memcached互換の超高速なインメモリキャッシュ",
+    "オブジェクトストレージ"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "リレーショナルはRDSです。",
+    "1": "DWHはRedshiftです。",
+    "3": "オブジェクトストレージはS3です。"
+   },
+   "lens": [
+    9,
+    9,
+    32,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-10",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 2,
+   "question": "急増するアクセスに自動で対応する、キー・バリューの高速DBが必要です。最適なのはどれですか。",
+   "choices": [
+    "Amazon RDS",
+    "Amazon Redshift",
+    "Amazon Neptune",
+    "Amazon DynamoDB"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "RDSはSQLでスケール特性が異なります。",
+    "1": "Redshiftは分析用です。",
+    "2": "Neptuneはグラフ用です。"
+   },
+   "lens": [
+    10,
+    15,
+    14,
+    15
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-11",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 2,
+   "question": "読み取りが多いアプリで、DBの負荷を下げて応答を速くしたいです。最適なのはどれですか。",
+   "choices": [
+    "ElastiCacheでよく使うデータをキャッシュする",
+    "Glacierに移す",
+    "Athenaで分析する",
+    "VPCを分ける"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Glacierはアーカイブで逆効果です。",
+    "2": "Athenaは分析用です。",
+    "3": "VPC分割は負荷軽減策ではありません。"
+   },
+   "lens": [
+    27,
+    10,
+    11,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-12",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 2,
+   "question": "全社の売上データをまとめて集計・分析したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon RDS（1台）",
+    "Amazon Redshift",
+    "Amazon DynamoDB",
+    "Amazon ElastiCache"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "小規模運用系のRDS単体は大規模分析に不向きです。",
+    "2": "DynamoDBは運用系NoSQLです。",
+    "3": "ElastiCacheはキャッシュです。"
+   },
+   "lens": [
+    14,
+    15,
+    15,
+    18
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-13",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "キー・バリュー型のNoSQLデータベースは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "Redshift",
+    "VPC",
+    "DynamoDB",
+    "RDS"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Redshiftは分析用です。",
+    "1": "VPCはネットワークです。",
+    "3": "RDSはSQLです。"
+   },
+   "lens": [
+    8,
+    3,
+    8,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-14",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "分析特化のデータウェアハウスは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "Aurora",
+    "DynamoDB",
+    "EFS",
+    "Redshift"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "AuroraはリレーショナルDBです。",
+    "1": "DynamoDBはNoSQLです。",
+    "2": "EFSはファイルストレージです。"
+   },
+   "lens": [
+    6,
+    8,
+    3,
+    8
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec06-15",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 1,
+   "question": "インメモリのキャッシュサービスは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ElastiCache",
+    "Athena",
+    "Glacier",
+    "SNS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Athenaは分析です。",
+    "2": "GlacierはS3アーカイブです。",
+    "3": "SNSは通知です。"
+   },
+   "lens": [
+    11,
+    6,
+    7,
+    3
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-16",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 2,
+   "question": "DBサービスと種類の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Amazon Neptune＝グラフDB",
+    "Amazon Redshift＝インメモリのキャッシュサービス",
+    "Amazon DynamoDB＝NoSQL",
+    "Amazon RDS＝リレーショナル"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Neptune＝グラフDBは正しい組合せです。",
+    "2": "DynamoDB＝NoSQLは正しい組合せです。",
+    "3": "RDS＝リレーショナルは正しい組合せです。"
+   },
+   "lens": [
+    20,
+    31,
+    21,
+    18
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec06-17",
+   "theme": "qd-tec06",
+   "service": "データベース",
+   "difficulty": 2,
+   "question": "データベースの説明として誤っているものはどれですか。",
+   "choices": [
+    "ElastiCacheはインメモリキャッシュ",
+    "RDSはマネージドなリレーショナルDB",
+    "DynamoDBはSQLを主とするリレーショナルDBである",
+    "AuroraはMySQL/PostgreSQL互換"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ElastiCacheの説明は正しいです。",
+    "1": "RDSの説明は正しいです。",
+    "3": "Auroraの互換性は正しい説明です。"
+   },
+   "lens": [
+    22,
+    19,
+    29,
+    25
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-1",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 1,
+   "question": "「OSから自分で管理できる自由度の高い仮想サーバー」はどれですか。",
+   "choices": [
+    "AWS Lambda",
+    "Amazon S3",
+    "Amazon RDS",
+    "Amazon EC2"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Lambdaはサーバーレスです。",
+    "1": "S3はストレージです。",
+    "2": "RDSはデータベースです。"
+   },
+   "lens": [
+    10,
+    9,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-2",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 1,
+   "question": "「EC2に接続して使う仮想ディスク（ブロックストレージ）」はどれですか。",
+   "choices": [
+    "Amazon EBS",
+    "Amazon S3",
+    "Amazon EFS",
+    "Amazon RDS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "S3はオブジェクトストレージです。",
+    "2": "EFSは共有ファイルストレージです。",
+    "3": "RDSはデータベースです。"
+   },
+   "lens": [
+    10,
+    9,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-3",
+   "theme": "qd-tec02",
+   "service": "AMI",
+   "difficulty": 1,
+   "question": "「OSや初期設定を含む、EC2起動用のテンプレート」はどれですか。",
+   "choices": [
+    "キーペア",
+    "AMI（Amazonマシンイメージ）",
+    "EBSスナップショット",
+    "セキュリティグループ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "キーペアはログイン用の鍵です。",
+    "2": "スナップショットはEBSのバックアップです。",
+    "3": "セキュリティグループは通信制御です。"
+   },
+   "lens": [
+    4,
+    18,
+    11,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec02-4",
+   "theme": "qd-tec02",
+   "service": "Lightsail",
+   "difficulty": 1,
+   "question": "「小規模サイトを、分かりやすい定額・簡単な構成で始めたい初心者」に向くのはどれですか。",
+   "choices": [
+    "Amazon EKS",
+    "AWS Batch",
+    "Amazon Lightsail",
+    "手動フル構築のEC2"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "EKSはKubernetesの本格運用向けです。",
+    "1": "Batchはバッチ処理用です。",
+    "3": "EC2の手動構築は自由だが手間がかかります。"
+   },
+   "lens": [
+    10,
+    9,
+    16,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec02-5",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 1,
+   "question": "Amazon EC2の説明として正しいものはどれですか。",
+   "choices": [
+    "オブジェクトストレージ",
+    "サーバーレスのコード実行",
+    "DNSサービス",
+    "OSから管理できる自由度の高い仮想サーバー"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "オブジェクトストレージはS3です。",
+    "1": "サーバーレスはLambdaです。",
+    "2": "DNSはRoute 53です。"
+   },
+   "lens": [
+    11,
+    12,
+    7,
+    21
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec02-6",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 2,
+   "question": "EC2における利用者の責任として正しいものはどれですか。",
+   "choices": [
+    "ゲストOSのパッチ・アプリ・セキュリティグループ設定",
+    "ハイパーバイザーの管理",
+    "データセンターの物理警備",
+    "ハードウェアの保守"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "ハイパーバイザーはAWSの責任です。",
+    "2": "物理警備はAWSの責任です。",
+    "3": "ハードウェア保守はAWSの責任です。"
+   },
+   "lens": [
+    26,
+    11,
+    12,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec02-7",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 2,
+   "question": "Amazon EBSの説明として正しいものはどれですか。",
+   "choices": [
+    "仮想サーバー",
+    "EC2に接続して使うブロックストレージで、スナップショットでバックアップできる",
+    "複数サーバーから共有するファイルストレージ",
+    "オブジェクトストレージ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "仮想サーバーはEC2本体です。",
+    "2": "共有ファイルはEFSです。",
+    "3": "オブジェクトストレージはS3です。"
+   },
+   "lens": [
+    6,
+    39,
+    21,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec02-8",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 2,
+   "question": "既存アプリをほぼ改修せず移行し、OSも自分で管理したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon S3",
+    "AWS Fargate",
+    "Amazon EC2",
+    "AWS Lambda"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "S3はストレージです。",
+    "1": "Fargateはコンテナ向けです。",
+    "3": "Lambdaはサーバーレスで既存常駐アプリに不向きです。"
+   },
+   "lens": [
+    9,
+    11,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-9",
+   "theme": "qd-tec02",
+   "service": "Lightsail",
+   "difficulty": 2,
+   "question": "WordPressの小規模サイトを、月額が読みやすい形で手早く立ち上げたいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon EKS",
+    "AWS Lambda",
+    "Amazon Redshift",
+    "Amazon Lightsail"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "EKSは本格的なコンテナ運用向けです。",
+    "1": "Lambdaは常駐サイトの単純運用と方向性が異なります。",
+    "2": "Redshiftは分析用です。"
+   },
+   "lens": [
+    10,
+    10,
+    15,
+    16
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-10",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 2,
+   "question": "EC2のディスク内容を丸ごとバックアップし、後で復元できるようにしたいです。最適なのはどれですか。",
+   "choices": [
+    "EBSのスナップショットを取得する",
+    "S3にログを送る",
+    "AMIを削除する",
+    "セキュリティグループを変更する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "S3へのログ送信はバックアップとは別です。",
+    "2": "AMI削除はバックアップになりません。",
+    "3": "SG変更は通信制御です。"
+   },
+   "lens": [
+    17,
+    8,
+    8,
+    15
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-11",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 1,
+   "question": "EC2の仮想ディスクは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "RDS",
+    "EBS",
+    "S3",
+    "EFS"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "RDSはデータベースです。",
+    "2": "S3はオブジェクトストレージです。",
+    "3": "EFSは共有ファイルです。"
+   },
+   "lens": [
+    3,
+    3,
+    2,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-12",
+   "theme": "qd-tec02",
+   "service": "AMI",
+   "difficulty": 1,
+   "question": "OSや設定を含むEC2起動用テンプレートを「＿＿＿」と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "IGW",
+    "SNS",
+    "AMI",
+    "VPC"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "IGWはインターネットゲートウェイです。",
+    "1": "SNSは通知です。",
+    "3": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-13",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 2,
+   "question": "EC2に関する説明として誤っているものはどれですか。",
+   "choices": [
+    "EBSはEC2に接続するブロックストレージ",
+    "AMIは起動テンプレート",
+    "OSから自由に管理できる",
+    "ゲストOSのパッチ適用はAWSが自動で行う"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "EBSの説明は正しいです。",
+    "1": "AMIの説明は正しいです。",
+    "2": "自由な管理は正しい説明です。"
+   },
+   "lens": [
+    21,
+    12,
+    12,
+    21
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec02-14",
+   "theme": "qd-tec02",
+   "service": "EC2",
+   "difficulty": 2,
+   "question": "ストレージの組合せとして誤っているものはどれですか。",
+   "choices": [
+    "EBS＝複数サーバーから同時に共有するファイルストレージ",
+    "EBS＝EC2に接続するブロックストレージ",
+    "EFS＝共有ファイルストレージ",
+    "S3＝オブジェクトストレージ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "EBS＝ブロックは正しい説明です。",
+    "2": "EFS＝共有ファイルは正しい説明です。",
+    "3": "S3＝オブジェクトは正しい説明です。"
+   },
+   "lens": [
+    28,
+    21,
+    15,
+    14
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec03-1",
+   "theme": "qd-tec03",
+   "service": "Lambda",
+   "difficulty": 1,
+   "question": "「サーバー管理なしで、イベント時だけコードを実行し使った分だけ課金」なのはどれですか。",
+   "choices": [
+    "Amazon EBS",
+    "AWS Lambda",
+    "Amazon EC2",
+    "Amazon RDS"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "EBSはディスクです。",
+    "2": "EC2は常時起動の仮想サーバーです。",
+    "3": "RDSはデータベースです。"
+   },
+   "lens": [
+    10,
+    10,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-2",
+   "theme": "qd-tec03",
+   "service": "Fargate",
+   "difficulty": 1,
+   "question": "「コンテナを動かすが、土台のサーバー管理はしたくない」ときに使うのはどれですか。",
+   "choices": [
+    "AWS Batch",
+    "Amazon S3",
+    "AWS Fargate",
+    "Amazon EC2に手動でDocker"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Batchはバッチ処理基盤です。",
+    "1": "S3はストレージです。",
+    "3": "EC2手動構築はサーバー管理が必要です。"
+   },
+   "lens": [
+    9,
+    9,
+    11,
+    20
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-3",
+   "theme": "qd-tec03",
+   "service": "ECS",
+   "difficulty": 1,
+   "question": "「コンテナの実行・管理を行うAWSのオーケストレーション」はどれですか。",
+   "choices": [
+    "Amazon S3",
+    "Amazon RDS",
+    "Amazon Route 53",
+    "Amazon ECS"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "S3はストレージです。",
+    "1": "RDSはデータベースです。",
+    "2": "Route 53はDNSです。"
+   },
+   "lens": [
+    9,
+    10,
+    15,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-4",
+   "theme": "qd-tec03",
+   "service": "ECR",
+   "difficulty": 1,
+   "question": "「コンテナイメージを保存・管理するレジストリ」はどれですか。",
+   "choices": [
+    "Amazon ECR",
+    "Amazon ECS",
+    "Amazon S3",
+    "AWS Lambda"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "ECSはコンテナの実行管理です。",
+    "2": "S3は汎用ストレージです。",
+    "3": "Lambdaはサーバーレスです。"
+   },
+   "lens": [
+    10,
+    10,
+    9,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-5",
+   "theme": "qd-tec03",
+   "service": "Lambda",
+   "difficulty": 1,
+   "question": "AWS Lambdaの説明として正しいものはどれですか。",
+   "choices": [
+    "DNSを解決する",
+    "サーバー管理なしでコードを実行するサーバーレスサービス",
+    "仮想サーバーを起動する",
+    "コンテナイメージを保管する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "DNSはRoute 53です。",
+    "2": "仮想サーバーはEC2です。",
+    "3": "イメージ保管はECRです。"
+   },
+   "lens": [
+    8,
+    27,
+    11,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec03-6",
+   "theme": "qd-tec03",
+   "service": "Fargate",
+   "difficulty": 2,
+   "question": "AWS Fargateの説明として正しいものはどれですか。",
+   "choices": [
+    "オブジェクトストレージ",
+    "DNSサービス",
+    "ECS/EKSの土台となるサーバー管理を不要にする実行環境",
+    "コンテナイメージの保管庫"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "オブジェクトストレージはS3です。",
+    "1": "DNSはRoute 53です。",
+    "3": "イメージ保管はECRです。"
+   },
+   "lens": [
+    11,
+    7,
+    29,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec03-7",
+   "theme": "qd-tec03",
+   "service": "コンテナ",
+   "difficulty": 2,
+   "question": "コンテナの説明として正しいものはどれですか。",
+   "choices": [
+    "物理サーバーそのもの",
+    "データベースの一種",
+    "課金の単位",
+    "アプリと必要な環境をまとめて動かす軽量な仕組み"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "物理サーバーではありません。",
+    "1": "データベースではありません。",
+    "2": "課金単位ではありません。"
+   },
+   "lens": [
+    10,
+    9,
+    5,
+    23
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec03-8",
+   "theme": "qd-tec03",
+   "service": "Lambda",
+   "difficulty": 2,
+   "question": "画像アップロードのたびに一瞬だけ動くサムネイル生成を、サーバー管理なしで実装したいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Lambda",
+    "常時起動のEC2",
+    "Amazon RDS",
+    "Amazon EFS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "常時起動EC2は無駄が出ます。",
+    "2": "RDSはデータベースです。",
+    "3": "EFSはファイルストレージです。"
+   },
+   "lens": [
+    10,
+    8,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-9",
+   "theme": "qd-tec03",
+   "service": "Fargate",
+   "difficulty": 2,
+   "question": "コンテナで本番アプリを運用したいが、基盤サーバーの管理はしたくないです。最適な組合せはどれですか。",
+   "choices": [
+    "S3でホスティング",
+    "ECS/EKS を Fargate で動かす",
+    "EC2にDockerを手動構築",
+    "Lambdaだけで常駐処理"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "S3は実行環境ではありません。",
+    "2": "EC2手動構築は管理が必要です。",
+    "3": "Lambdaは常駐コンテナの一般的代替ではありません。"
+   },
+   "lens": [
+    9,
+    22,
+    15,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec03-10",
+   "theme": "qd-tec03",
+   "service": "ECR",
+   "difficulty": 2,
+   "question": "ビルドしたコンテナイメージを保存し、デプロイ時に取り出したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon RDS",
+    "Amazon SNS",
+    "Amazon ECR",
+    "Amazon S3 Glacier"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "RDSはデータベースです。",
+    "1": "SNSは通知です。",
+    "3": "Glacierはアーカイブ用途です。"
+   },
+   "lens": [
+    10,
+    10,
+    10,
+    17
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-11",
+   "theme": "qd-tec03",
+   "service": "Lambda",
+   "difficulty": 1,
+   "question": "サーバーレスでコードを実行するサービスは AWS ＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "EC2",
+    "ECR",
+    "VPC",
+    "Lambda"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "EC2は仮想サーバーです。",
+    "1": "ECRはイメージ保管です。",
+    "2": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec03-12",
+   "theme": "qd-tec03",
+   "service": "Fargate",
+   "difficulty": 1,
+   "question": "コンテナのサーバー管理を不要にする実行環境は AWS ＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Fargate",
+    "Lambda",
+    "Batch",
+    "Config"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Lambdaは関数のサーバーレス実行です。",
+    "2": "Batchはバッチ処理です。",
+    "3": "Configは設定評価です。"
+   },
+   "lens": [
+    7,
+    6,
+    5,
+    6
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-13",
+   "theme": "qd-tec03",
+   "service": "ECR",
+   "difficulty": 1,
+   "question": "コンテナイメージの保管庫は Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "EFS",
+    "ECR",
+    "ECS",
+    "EKS"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "EFSは共有ファイルです。",
+    "2": "ECSはコンテナ実行管理です。",
+    "3": "EKSはKubernetes管理です。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-14",
+   "theme": "qd-tec03",
+   "service": "Lambda",
+   "difficulty": 2,
+   "question": "サーバーレス・コンテナの説明として誤っているものはどれですか。",
+   "choices": [
+    "Fargateはサーバー管理を不要にする",
+    "ECRはイメージ保管庫",
+    "Lambdaは常時サーバーを起動し続ける必要がある",
+    "Lambdaはサーバーレス"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Fargateの説明は正しいです。",
+    "1": "ECRの説明は正しいです。",
+    "3": "Lambda＝サーバーレスは正しい説明です。"
+   },
+   "lens": [
+    20,
+    11,
+    25,
+    13
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec03-15",
+   "theme": "qd-tec03",
+   "service": "コンテナ",
+   "difficulty": 2,
+   "question": "コンテナ関連サービスの組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Amazon ECS＝コンテナの実行管理",
+    "AWS Fargate＝サーバー管理不要の実行環境",
+    "Amazon ECR＝イメージの保管庫",
+    "Amazon ECR＝コンテナの実行管理（オーケストレーション）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "ECS＝実行管理は正しい組合せです。",
+    "1": "Fargate＝サーバー管理不要は正しい組合せです。",
+    "2": "ECR＝保管庫は正しい組合せです。"
+   },
+   "lens": [
+    20,
+    25,
+    19,
+    32
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-1",
+   "theme": "qd-tec04",
+   "service": "ストレージ",
+   "difficulty": 1,
+   "question": "「ファイルをオブジェクトとしてまるごと保存する」ストレージはどれですか。",
+   "choices": [
+    "Amazon S3（オブジェクト）",
+    "Amazon EBS（ブロック）",
+    "Amazon EFS（ファイル）",
+    "Amazon RDS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "EBSはEC2用のブロックストレージです。",
+    "2": "EFSは共有ファイルストレージです。",
+    "3": "RDSはデータベースです。"
+   },
+   "lens": [
+    17,
+    16,
+    16,
+    10
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-2",
+   "theme": "qd-tec04",
+   "service": "EBS",
+   "difficulty": 1,
+   "question": "「1つのEC2に接続する専用の仮想ディスク」はどれですか。",
+   "choices": [
+    "Amazon Glacier",
+    "Amazon EBS（ブロック）",
+    "Amazon S3（オブジェクト）",
+    "Amazon EFS（ファイル）"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "GlacierはS3のアーカイブです。",
+    "2": "S3はオブジェクトストレージです。",
+    "3": "EFSは複数から共有するファイルです。"
+   },
+   "lens": [
+    14,
+    16,
+    17,
+    16
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-3",
+   "theme": "qd-tec04",
+   "service": "EFS",
+   "difficulty": 1,
+   "question": "「複数のEC2から同時にマウントして共有できる」ファイルストレージはどれですか。",
+   "choices": [
+    "Amazon S3",
+    "Amazon DynamoDB",
+    "Amazon EFS",
+    "Amazon EBS"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "S3はオブジェクトストレージです。",
+    "1": "DynamoDBはNoSQLです。",
+    "3": "EBSは基本1台に接続する専用ディスクです。"
+   },
+   "lens": [
+    9,
+    15,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-4",
+   "theme": "qd-tec04",
+   "service": "Storage Gateway",
+   "difficulty": 2,
+   "question": "「オンプレのシステムとS3などをつなぐ橋渡し」を行うのはどれですか。",
+   "choices": [
+    "Amazon EC2",
+    "AWS Lambda",
+    "Amazon SNS",
+    "AWS Storage Gateway"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "EC2は仮想サーバーです。",
+    "1": "Lambdaはサーバーレスです。",
+    "2": "SNSは通知です。"
+   },
+   "lens": [
+    10,
+    10,
+    10,
+    19
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec04-5",
+   "theme": "qd-tec04",
+   "service": "DataSync",
+   "difficulty": 2,
+   "question": "「大量データを高速にAWSへ転送・同期」したいときに使うのはどれですか。",
+   "choices": [
+    "AWS DataSync",
+    "Amazon Athena",
+    "Amazon Kinesis",
+    "AWS Config"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Athenaは分析クエリです。",
+    "2": "Kinesisはリアルタイム処理です。",
+    "3": "Configは設定評価です。"
+   },
+   "lens": [
+    12,
+    13,
+    14,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-6",
+   "theme": "qd-tec04",
+   "service": "EBS",
+   "difficulty": 1,
+   "question": "Amazon EBSの説明として正しいものはどれですか。",
+   "choices": [
+    "データベース",
+    "EC2に接続する仮想ディスク（ブロックストレージ）",
+    "複数から共有するファイルストレージ",
+    "オブジェクトストレージ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "データベースはRDSです。",
+    "2": "共有ファイルはEFSです。",
+    "3": "オブジェクトストレージはS3です。"
+   },
+   "lens": [
+    6,
+    25,
+    17,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec04-7",
+   "theme": "qd-tec04",
+   "service": "EFS",
+   "difficulty": 1,
+   "question": "Amazon EFSの説明として正しいものはどれですか。",
+   "choices": [
+    "オブジェクトストレージ",
+    "キャッシュ",
+    "複数のEC2から同時にマウントできる共有ファイルストレージ",
+    "1台のEC2専用の仮想ディスク"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "オブジェクトストレージはS3です。",
+    "1": "キャッシュはElastiCacheです。",
+    "3": "1台専用のディスクはEBSです。"
+   },
+   "lens": [
+    11,
+    5,
+    29,
+    15
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec04-8",
+   "theme": "qd-tec04",
+   "service": "ストレージ",
+   "difficulty": 2,
+   "question": "3種類のストレージ形式の説明として正しいものはどれですか。",
+   "choices": [
+    "すべて同じ形式",
+    "S3はブロックストレージ",
+    "EBSはオブジェクトストレージ",
+    "オブジェクト＝S3、ブロック＝EBS、ファイル＝EFS/FSx"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "形式は異なります。",
+    "1": "S3はオブジェクトです。",
+    "2": "EBSはブロックです。"
+   },
+   "lens": [
+    7,
+    12,
+    15,
+    31
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec04-9",
+   "theme": "qd-tec04",
+   "service": "EFS",
+   "difficulty": 2,
+   "question": "複数のWebサーバーから同じファイル群を同時に読み書きしたいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon EFS",
+    "Amazon EBS",
+    "Amazon S3 Glacier",
+    "Amazon DynamoDB"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "EBSは基本1台に接続します。",
+    "2": "Glacierはアーカイブです。",
+    "3": "DynamoDBはNoSQLです。"
+   },
+   "lens": [
+    10,
+    10,
+    17,
+    15
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-10",
+   "theme": "qd-tec04",
+   "service": "EBS",
+   "difficulty": 2,
+   "question": "EC2のOSやデータを置く、そのインスタンス専用のディスクが必要です。最適なのはどれですか。",
+   "choices": [
+    "Amazon RDS",
+    "Amazon EBS",
+    "Amazon EFS",
+    "Amazon S3"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "RDSはデータベースです。",
+    "2": "EFSは共有ファイル用途です。",
+    "3": "S3はオブジェクトストレージです。"
+   },
+   "lens": [
+    10,
+    10,
+    10,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-11",
+   "theme": "qd-tec04",
+   "service": "Storage Gateway",
+   "difficulty": 2,
+   "question": "社内サーバーのバックアップを、既存の使い勝手のままS3へ保存したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon EC2",
+    "Amazon SNS",
+    "AWS Storage Gateway",
+    "AWS Lambda"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "EC2は仮想サーバーです。",
+    "1": "SNSは通知です。",
+    "3": "Lambdaはサーバーレス実行です。"
+   },
+   "lens": [
+    10,
+    10,
+    19,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec04-12",
+   "theme": "qd-tec04",
+   "service": "EBS",
+   "difficulty": 1,
+   "question": "EC2に接続するブロックストレージは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "S3",
+    "EFS",
+    "RDS",
+    "EBS"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "S3はオブジェクトです。",
+    "1": "EFSは共有ファイルです。",
+    "2": "RDSはデータベースです。"
+   },
+   "lens": [
+    2,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-13",
+   "theme": "qd-tec04",
+   "service": "EFS",
+   "difficulty": 1,
+   "question": "複数サーバーから共有できるファイルストレージは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "EFS",
+    "EBS",
+    "S3",
+    "SQS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "EBSは専用ディスクです。",
+    "2": "S3はオブジェクトです。",
+    "3": "SQSはキューです。"
+   },
+   "lens": [
+    3,
+    3,
+    2,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-14",
+   "theme": "qd-tec04",
+   "service": "ストレージ",
+   "difficulty": 2,
+   "question": "ストレージの説明として誤っているものはどれですか。",
+   "choices": [
+    "S3はオブジェクトストレージ",
+    "S3はEC2に接続して使うブロックストレージである",
+    "EBSはEC2に接続するブロックストレージ",
+    "EFSは共有ファイルストレージ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "S3＝オブジェクトは正しい説明です。",
+    "2": "EBS＝ブロックは正しい説明です。",
+    "3": "EFS＝共有ファイルは正しい説明です。"
+   },
+   "lens": [
+    14,
+    25,
+    21,
+    15
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec04-15",
+   "theme": "qd-tec04",
+   "service": "ストレージ",
+   "difficulty": 2,
+   "question": "ストレージの用途の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "EFS＝複数サーバーでの共有",
+    "Storage Gateway＝オンプレ連携",
+    "EBS＝多数のサーバーから同時共有するのに最適",
+    "S3＝ファイル/バックアップの保存"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "EFS＝共有は正しい組合せです。",
+    "1": "Storage Gateway＝オンプレ連携は正しい組合せです。",
+    "3": "S3＝保存は正しい組合せです。"
+   },
+   "lens": [
+    14,
+    22,
+    23,
+    17
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-1",
+   "theme": "qd-tec07",
+   "service": "VPC",
+   "difficulty": 1,
+   "question": "「AWS上に作る自分専用の仮想ネットワーク」はどれですか。",
+   "choices": [
+    "Amazon VPC",
+    "Amazon EC2",
+    "Amazon S3",
+    "AWS Lambda"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "EC2は仮想サーバーです。",
+    "2": "S3はストレージです。",
+    "3": "Lambdaはサーバーレスです。"
+   },
+   "lens": [
+    10,
+    10,
+    9,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-2",
+   "theme": "qd-tec07",
+   "service": "Route 53",
+   "difficulty": 1,
+   "question": "「ドメイン名をIPアドレスに変換するDNSサービス」はどれですか。",
+   "choices": [
+    "Amazon EC2",
+    "Amazon Route 53",
+    "Amazon CloudFront",
+    "Amazon VPC"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "EC2は仮想サーバーです。",
+    "2": "CloudFrontはCDNです。",
+    "3": "VPCはネットワークです。"
+   },
+   "lens": [
+    10,
+    15,
+    17,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-3",
+   "theme": "qd-tec07",
+   "service": "ネットワーク",
+   "difficulty": 1,
+   "question": "「VPCを外部インターネットと接続する出入口」はどれですか。",
+   "choices": [
+    "ルートテーブル",
+    "セキュリティグループ",
+    "インターネットゲートウェイ",
+    "NATゲートウェイ"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ルートテーブルは経路制御です。",
+    "1": "セキュリティグループは通信許可の制御です。",
+    "3": "NATゲートウェイは内部から外部への通信用です。"
+   },
+   "lens": [
+    7,
+    10,
+    13,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec07-4",
+   "theme": "qd-tec07",
+   "service": "ネットワーク",
+   "difficulty": 2,
+   "question": "「プライベートサブネットの内部から外部へ安全に通信させる」ときに使うのはどれですか。",
+   "choices": [
+    "インターネットゲートウェイに直結",
+    "Route 53",
+    "CloudFront",
+    "NATゲートウェイ"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "プライベートを直接IGWに晒すのは不適切です。",
+    "1": "Route 53はDNSです。",
+    "2": "CloudFrontはCDNです。"
+   },
+   "lens": [
+    16,
+    8,
+    10,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-5",
+   "theme": "qd-tec07",
+   "service": "VPC",
+   "difficulty": 1,
+   "question": "Amazon VPCの説明として正しいものはどれですか。",
+   "choices": [
+    "AWS上に作る、利用者専用の仮想ネットワーク",
+    "仮想サーバー",
+    "オブジェクトストレージ",
+    "DNSサービス"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "仮想サーバーはEC2です。",
+    "2": "ストレージはS3です。",
+    "3": "DNSはRoute 53です。"
+   },
+   "lens": [
+    22,
+    6,
+    11,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec07-6",
+   "theme": "qd-tec07",
+   "service": "ネットワーク",
+   "difficulty": 2,
+   "question": "パブリックサブネットとプライベートサブネットの違いとして正しいものはどれですか。",
+   "choices": [
+    "違いはコストだけ",
+    "パブリックは外部公開向け、プライベートは内部専用",
+    "両者は同じ意味",
+    "プライベートが外部公開向け"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "違いは公開範囲です。",
+    "2": "同じ意味ではありません。",
+    "3": "公開向けはパブリックです。"
+   },
+   "lens": [
+    8,
+    24,
+    7,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec07-7",
+   "theme": "qd-tec07",
+   "service": "VPC",
+   "difficulty": 2,
+   "question": "公開したいWebサーバーと、公開したくないDBサーバーを分けて配置したいです。適切な方法はどれですか。",
+   "choices": [
+    "すべてプライベートに置く",
+    "サブネットは分けない",
+    "Webはパブリックサブネット、DBはプライベートサブネットに置く",
+    "すべてパブリックに置く"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Webも内部専用だと外部提供できません。",
+    "1": "分けることでセキュリティが高まります。",
+    "3": "DBを公開に置くのは危険です。"
+   },
+   "lens": [
+    12,
+    10,
+    32,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec07-8",
+   "theme": "qd-tec07",
+   "service": "Route 53",
+   "difficulty": 2,
+   "question": "独自ドメインでWebサイトを公開し、名前解決も設定したいです。使うサービスはどれですか。",
+   "choices": [
+    "Amazon VPC",
+    "Amazon EBS",
+    "Amazon SQS",
+    "Amazon Route 53"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "VPCはネットワークです。",
+    "1": "EBSはディスクです。",
+    "2": "SQSはキューです。"
+   },
+   "lens": [
+    10,
+    10,
+    10,
+    15
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-tec07-9",
+   "theme": "qd-tec07",
+   "service": "ネットワーク",
+   "difficulty": 2,
+   "question": "内部のバッチサーバーからインターネット上の更新サーバーへ接続したいが、外部から内部へは入らせたくないです。適切なのはどれですか。",
+   "choices": [
+    "NATゲートウェイを使う",
+    "インターネットゲートウェイに直接置く",
+    "バケットを公開する",
+    "Route 53を使う"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "IGW直結は外部からの到達を許してしまいます。",
+    "2": "バケット公開は無関係で危険です。",
+    "3": "Route 53はDNSです。"
+   },
+   "lens": [
+    12,
+    18,
+    9,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-10",
+   "theme": "qd-tec07",
+   "service": "VPC",
+   "difficulty": 1,
+   "question": "AWS上の自分専用の仮想ネットワークは Amazon ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "RDS",
+    "VPC",
+    "EC2",
+    "S3"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "RDSはデータベースです。",
+    "2": "EC2は仮想サーバーです。",
+    "3": "S3はストレージです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-11",
+   "theme": "qd-tec07",
+   "service": "Route 53",
+   "difficulty": 1,
+   "question": "ドメイン名をIPに変換するDNSサービスは Amazon ＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "VPC",
+    "SNS",
+    "Route 53",
+    "CloudFront"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "VPCはネットワークです。",
+    "1": "SNSは通知です。",
+    "3": "CloudFrontはCDNです。"
+   },
+   "lens": [
+    3,
+    3,
+    8,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-12",
+   "theme": "qd-tec07",
+   "service": "ネットワーク",
+   "difficulty": 2,
+   "question": "VPC・ネットワークの説明として誤っているものはどれですか。",
+   "choices": [
+    "VPCは自分専用の仮想ネットワーク",
+    "インターネットゲートウェイは外部との接続点",
+    "Route 53はDNSサービス",
+    "プライベートサブネットは外部公開用のサブネットである"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "VPCの説明は正しいです。",
+    "1": "IGWの説明は正しいです。",
+    "2": "Route 53の説明は正しいです。"
+   },
+   "lens": [
+    17,
+    21,
+    16,
+    26
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-tec07-13",
+   "theme": "qd-tec07",
+   "service": "ネットワーク",
+   "difficulty": 2,
+   "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Route 53＝オブジェクトストレージ",
+    "VPC＝仮想ネットワーク",
+    "インターネットゲートウェイ＝外部接続",
+    "NATゲートウェイ＝内部から外部への通信"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "VPC＝仮想NWは正しい組合せです。",
+    "2": "IGW＝外部接続は正しい組合せです。",
+    "3": "NAT＝内部→外部は正しい組合せです。"
+   },
+   "lens": [
+    20,
+    12,
+    18,
+    20
+   ],
+   "tell": false,
+   "strong": false
+  }
+ ]
+}

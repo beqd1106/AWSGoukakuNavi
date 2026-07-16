@@ -1,0 +1,3972 @@
+{
+ "domain": "sec",
+ "need": {
+  "qd-sec01": {
+   "have": 20,
+   "target": 30,
+   "addNeeded": 10
+  },
+  "qd-sec02": {
+   "have": 11,
+   "target": 30,
+   "addNeeded": 19
+  },
+  "qd-sec03": {
+   "have": 22,
+   "target": 30,
+   "addNeeded": 8
+  },
+  "qd-sec04": {
+   "have": 11,
+   "target": 30,
+   "addNeeded": 19
+  },
+  "qd-sec05": {
+   "have": 12,
+   "target": 30,
+   "addNeeded": 18
+  },
+  "qd-sec06": {
+   "have": 17,
+   "target": 30,
+   "addNeeded": 13
+  },
+  "qd-sec07": {
+   "have": 12,
+   "target": 30,
+   "addNeeded": 18
+  },
+  "qd-sec08": {
+   "have": 15,
+   "target": 30,
+   "addNeeded": 15
+  },
+  "qd-sec09": {
+   "have": 15,
+   "target": 30,
+   "addNeeded": 15
+  },
+  "qd-sec10": {
+   "have": 10,
+   "target": 30,
+   "addNeeded": 20
+  }
+ },
+ "questions": [
+  {
+   "id": "qd-sec01-1",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "「データセンターの入退室管理・物理セキュリティ」の責任者は誰ですか。",
+   "choices": [
+    "第三者ベンダー",
+    "AWS",
+    "利用者",
+    "共同で自動"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "第三者ではなくAWSです。",
+    "2": "利用者の責任はデータ・設定などの中身です。",
+    "3": "物理は明確にAWS側です。"
+   },
+   "lens": [
+    7,
+    3,
+    3,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec01-2",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "「IAMポリシーの設定」の責任者は誰ですか。",
+   "choices": [
+    "共同で自動",
+    "ハードウェアベンダー",
+    "利用者",
+    "AWS"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "自動共同ではありません。",
+    "1": "ベンダーは関係ありません。",
+    "3": "AWSは基盤側の責任です。"
+   },
+   "lens": [
+    5,
+    10,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec01-3",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "「ハイパーバイザーやホストOSの管理」の責任者は誰ですか。",
+   "choices": [
+    "利用者",
+    "共同",
+    "利用者のISP",
+    "AWS"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "利用者はゲストOS以上を管理します。",
+    "1": "自動共同ではありません。",
+    "2": "ISPは関係ありません。"
+   },
+   "lens": [
+    3,
+    2,
+    7,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec01-4",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "「EC2のゲストOSへのパッチ適用」の責任者は誰ですか。",
+   "choices": [
+    "利用者",
+    "AWS",
+    "AWSが自動適用",
+    "誰でもない"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "AWSは基盤の責任で、ゲストOSは含みません。",
+    "2": "自動適用はされません。",
+    "3": "責任は利用者側で明確です。"
+   },
+   "lens": [
+    3,
+    3,
+    8,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec01-5",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "「S3に置くデータを暗号化するかどうかの選択」の責任者は誰ですか。",
+   "choices": [
+    "監査法人",
+    "利用者",
+    "AWS",
+    "共同で自動"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "監査法人は関係ありません。",
+    "2": "AWSは基盤の責任です。",
+    "3": "自動共同ではありません。"
+   },
+   "lens": [
+    4,
+    3,
+    3,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-1",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「複数のユーザーに同じ権限をまとめて付与」したいときに使うのはどれですか。",
+   "choices": [
+    "ルートユーザー",
+    "IAMグループ",
+    "IAMロール",
+    "アクセスキー"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "ルートは日常運用に使いません。",
+    "2": "ロールは一時的に権限を借りる仕組みです。",
+    "3": "アクセスキーは認証情報です。"
+   },
+   "lens": [
+    7,
+    7,
+    6,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-2",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「EC2からS3へ、鍵を配らずに権限を渡したい」ときに使うのはどれですか。",
+   "choices": [
+    "アクセスキー直書き",
+    "ルートユーザー",
+    "IAMロール",
+    "IAMグループ"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "キー直書きは漏洩リスクがあります。",
+    "1": "ルートは使うべきではありません。",
+    "3": "グループは人の権限管理向けです。"
+   },
+   "lens": [
+    9,
+    7,
+    6,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-3",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「ログイン時にパスワード＋スマホの数字コードを要求」する仕組みは何ですか。",
+   "choices": [
+    "SSO",
+    "IAMポリシー",
+    "アクセスキー",
+    "MFA（多要素認証）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "SSOは一度のログインで複数に入る仕組みです。",
+    "1": "ポリシーは許可内容の定義です。",
+    "2": "アクセスキーは認証情報です。"
+   },
+   "lens": [
+    3,
+    7,
+    6,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-4",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「許可の内容（誰が・何を・どこまで）を書いた文書」は何ですか。",
+   "choices": [
+    "ポリシー",
+    "ロール",
+    "グループ",
+    "キーペア"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "ロールは権限を借りる仕組みです。",
+    "2": "グループはユーザーの束です。",
+    "3": "キーペアは鍵です。"
+   },
+   "lens": [
+    4,
+    3,
+    4,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-5",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「アカウント作成時の全権限を持つ最上位アカウント」は何ですか。",
+   "choices": [
+    "フェデレーテッドユーザー",
+    "ルートユーザー",
+    "IAMユーザー",
+    "IAMロール"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "フェデレーテッドは外部ID連携です。",
+    "2": "IAMユーザーは権限を絞れる通常のユーザーです。",
+    "3": "ロールは一時権限の仕組みです。"
+   },
+   "lens": [
+    12,
+    7,
+    7,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-1",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 1,
+   "question": "「暗号鍵の作成・管理・利用を一元化」するサービスはどれですか。",
+   "choices": [
+    "AWS WAF",
+    "Amazon Macie",
+    "AWS Config",
+    "AWS KMS"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "WAFはWeb攻撃の遮断です。",
+    "1": "MacieはS3の機微データ検出です。",
+    "2": "Configは設定の追跡・評価です。"
+   },
+   "lens": [
+    7,
+    12,
+    10,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-2",
+   "theme": "qd-sec06",
+   "service": "ACM",
+   "difficulty": 1,
+   "question": "「HTTPS用のTLS証明書を無料で発行・自動更新」するサービスはどれですか。",
+   "choices": [
+    "AWS Certificate Manager（ACM）",
+    "AWS KMS",
+    "AWS Shield",
+    "AWS Secrets Manager"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "KMSは鍵管理です。",
+    "2": "ShieldはDDoS対策です。",
+    "3": "Secrets Managerは機密保管です。"
+   },
+   "lens": [
+    28,
+    7,
+    10,
+    19
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec06-3",
+   "theme": "qd-sec06",
+   "service": "Secrets Manager",
+   "difficulty": 1,
+   "question": "「DBパスワードなどの機密を安全に保管し、自動ローテーションもしたい」ときに使うのはどれですか。",
+   "choices": [
+    "Amazon CloudWatch",
+    "AWS Secrets Manager",
+    "Amazon S3",
+    "AWS Config"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "CloudWatchは監視です。",
+    "2": "S3は汎用ストレージです。",
+    "3": "Configは設定評価です。"
+   },
+   "lens": [
+    17,
+    19,
+    9,
+    10
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-4",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 1,
+   "question": "「専用ハードウェアで暗号鍵を厳格に管理」したいときに使うのはどれですか。",
+   "choices": [
+    "Amazon Inspector",
+    "AWS Artifact",
+    "AWS CloudHSM",
+    "AWS WAF"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Inspectorは脆弱性診断です。",
+    "1": "Artifactは監査資料です。",
+    "3": "WAFはWeb攻撃遮断です。"
+   },
+   "lens": [
+    16,
+    12,
+    12,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-5",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 1,
+   "question": "「保存データの暗号化（at rest）」の説明として正しいものはどれですか。",
+   "choices": [
+    "通信経路を暗号化する",
+    "ログインを二要素にする",
+    "バックアップを取得する",
+    "ストレージ上のデータそのものを暗号化する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "通信の暗号化はin transitです。",
+    "1": "二要素はMFAです。",
+    "2": "バックアップは別対策です。"
+   },
+   "lens": [
+    10,
+    11,
+    11,
+    20
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-6",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "「ストレージ機器の物理的な廃棄・破壊」の責任者は誰ですか。",
+   "choices": [
+    "共同",
+    "利用者の総務部",
+    "AWS",
+    "利用者"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "自動共同ではありません。",
+    "1": "総務部は関係ありません。",
+    "3": "利用者はデータ・設定を管理します。"
+   },
+   "lens": [
+    2,
+    7,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec01-7",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "責任共有モデルの基本的な分け方として正しいものはどれですか。",
+   "choices": [
+    "すべてAWSが守る",
+    "すべて利用者が守る",
+    "分担はない",
+    "AWSがクラウドそのもの、利用者がクラウドの中身を守る"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "すべてAWSではありません。",
+    "1": "すべて利用者でもありません。",
+    "2": "明確な分担があります。"
+   },
+   "lens": [
+    9,
+    9,
+    5,
+    27
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-8",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "マネージドサービス（例：S3）を使う場合の責任分担として正しいものはどれですか。",
+   "choices": [
+    "AWSの担う範囲が広がるが、アクセス権や暗号化の設定は利用者が担う",
+    "すべてAWSに移り利用者の責任はゼロになる",
+    "利用者がストレージ機器を保守する",
+    "AWSがバケットの公開可否を決める"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "利用者の責任がゼロにはなりません。",
+    "2": "機器保守はAWSです。",
+    "3": "公開可否は利用者が決めます。"
+   },
+   "lens": [
+    33,
+    21,
+    16,
+    17
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-9",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "責任共有モデルにおける「セキュリティ of the cloud」の意味として正しいものはどれですか。",
+   "choices": [
+    "MFAの設定",
+    "AWSが担う、基盤（施設・ハードウェア・仮想化）の保護",
+    "利用者が担うデータ保護",
+    "通信の暗号化のみ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "MFA設定は利用者側です。",
+    "2": "データ保護は in the cloud（利用者）です。",
+    "3": "通信暗号化のみを指す語ではありません。"
+   },
+   "lens": [
+    6,
+    27,
+    11,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-10",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "責任共有モデルにおける「セキュリティ in the cloud」の意味として正しいものはどれですか。",
+   "choices": [
+    "ハイパーバイザーの管理",
+    "ハードウェアの保守",
+    "利用者が担う、データ・権限・設定の保護",
+    "AWSが担う物理施設の保護"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ハイパーバイザー管理はAWSです。",
+    "1": "ハードウェア保守はAWSです。",
+    "3": "物理施設はAWSです。"
+   },
+   "lens": [
+    11,
+    9,
+    19,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-11",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "S3バケットを誤って公開設定にし情報が漏れました。主に誰の責任範囲ですか。",
+   "choices": [
+    "AWS",
+    "どちらでもない",
+    "ハードウェアベンダー",
+    "利用者（設定・アクセス権の管理）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "AWSは基盤の責任です。",
+    "1": "責任は利用者側にあります。",
+    "2": "ベンダーは関係ありません。"
+   },
+   "lens": [
+    3,
+    7,
+    10,
+    16
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-12",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "EC2の古いOSの脆弱性を突かれて侵入されました。主に誰の責任範囲ですか。",
+   "choices": [
+    "利用者（ゲストOSのパッチ管理）",
+    "AWS",
+    "AWSの自動更新の不具合",
+    "通信事業者"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "AWSは基盤側の責任です。",
+    "2": "自動更新はされません。",
+    "3": "通信事業者は関係ありません。"
+   },
+   "lens": [
+    16,
+    3,
+    12,
+    5
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-13",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "AWSのデータセンターで機器が物理的に故障しました。責任範囲はどちらですか。",
+   "choices": [
+    "監査法人",
+    "AWS（基盤のハードウェア）",
+    "利用者",
+    "利用者の情シス"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "監査法人は関係ありません。",
+    "2": "利用者は中身を管理します。",
+    "3": "情シスの範囲外です。"
+   },
+   "lens": [
+    4,
+    14,
+    3,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-14",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "監査で「保存データが暗号化されていない」と指摘されました。是正の主担当は誰ですか。",
+   "choices": [
+    "AWSサポート",
+    "リージョン管理者",
+    "利用者（暗号化設定を行う）",
+    "AWS"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "サポートが代行するものではありません。",
+    "1": "リージョン管理者という役割は関与しません。",
+    "3": "AWSは基盤の責任です。"
+   },
+   "lens": [
+    7,
+    8,
+    13,
+    3
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-15",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "AWSは「＿＿ the cloud」を守ります。＿＿に入るのはどれですか。",
+   "choices": [
+    "in",
+    "on",
+    "around",
+    "of"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "inは利用者側です。",
+    "1": "onはこの文脈で使いません。",
+    "2": "aroundはこの文脈で使いません。"
+   },
+   "lens": [
+    2,
+    2,
+    6,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec01-16",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 1,
+   "question": "利用者は「＿＿ the cloud」を守ります。＿＿に入るのはどれですか。",
+   "choices": [
+    "in",
+    "of",
+    "by",
+    "to"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "ofはAWS側です。",
+    "2": "byはこの文脈で使いません。",
+    "3": "toはこの文脈で使いません。"
+   },
+   "lens": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec01-17",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "責任共有モデルでは、境界はサービスの種類によって「＿＿＿」します。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "逆転",
+    "変化（移動）",
+    "固定",
+    "消滅"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "逆転する固定ルールでもありません。",
+    "2": "固定ではありません。",
+    "3": "消滅はしません。"
+   },
+   "lens": [
+    2,
+    6,
+    2,
+    2
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-18",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "責任共有モデルで、利用者の責任ではないものはどれですか。",
+   "choices": [
+    "保存データの暗号化の選択",
+    "ゲストOSのパッチ適用",
+    "ハイパーバイザーやホストOSの管理",
+    "IAMの設定"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "暗号化の選択は利用者の責任です。",
+    "1": "ゲストOSのパッチは利用者の責任です。",
+    "3": "IAM設定は利用者の責任です。"
+   },
+   "lens": [
+    12,
+    11,
+    17,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-19",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "責任共有モデルの説明として誤っているものはどれですか。",
+   "choices": [
+    "AWSは物理施設を守る",
+    "利用者はアクセス権を管理する",
+    "境界はサービスにより変わる",
+    "マネージドサービスでは利用者の責任は完全にゼロになる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "AWSが物理施設を守るのは正しい説明です。",
+    "1": "利用者がアクセス権を管理するのは正しい説明です。",
+    "2": "境界がサービスで変わるのは正しい説明です。"
+   },
+   "lens": [
+    11,
+    14,
+    13,
+    26
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec01-20",
+   "theme": "qd-sec01",
+   "service": "責任共有モデル",
+   "difficulty": 2,
+   "question": "AWSの責任として誤っているものはどれですか。",
+   "choices": [
+    "利用者のIAMユーザーへの権限付与",
+    "データセンターの物理警備",
+    "ハードウェアの保守",
+    "ハイパーバイザーの管理"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "物理警備はAWSの責任です。",
+    "2": "ハードウェア保守はAWSの責任です。",
+    "3": "ハイパーバイザー管理はAWSの責任です。"
+   },
+   "lens": [
+    17,
+    12,
+    9,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-6",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「必要な権限だけを与える原則」を何と呼びますか。",
+   "choices": [
+    "共有権限の原則",
+    "一時権限の原則",
+    "最小権限の原則",
+    "最大権限の原則"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "共有権限という原則はありません。",
+    "1": "一時権限は原則名ではありません。",
+    "3": "最大権限はむしろ危険です。"
+   },
+   "lens": [
+    7,
+    7,
+    7,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-7",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "IAMロールの説明として正しいものはどれですか。",
+   "choices": [
+    "永久に使えるパスワード",
+    "課金の単位",
+    "ネットワークの設定",
+    "一時的に権限を借りる仕組みで、鍵を配らずに付与できる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "永久パスワードではありません。",
+    "1": "課金単位ではありません。",
+    "2": "ネットワーク設定ではありません。"
+   },
+   "lens": [
+    11,
+    5,
+    9,
+    26
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-8",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "IAMグループの説明として正しいものはどれですか。",
+   "choices": [
+    "ユーザーの束で、権限をまとめて付与できる",
+    "一時的に権限を借りる仕組み",
+    "暗号鍵の保管庫",
+    "仮想サーバー"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "一時権限はロールです。",
+    "2": "鍵の保管はKMS/Secrets Managerです。",
+    "3": "仮想サーバーはEC2です。"
+   },
+   "lens": [
+    20,
+    13,
+    7,
+    6
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-9",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "IAMのポリシー評価で、明示的なDenyと明示的なAllowが同時に該当した場合の結果はどれですか。",
+   "choices": [
+    "ランダムに決まる",
+    "拒否される（明示的Denyが優先）",
+    "許可される",
+    "エラーで中断する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "評価は決定的です。",
+    "2": "Allowより明示的Denyが優先されます。",
+    "3": "中断はしません。"
+   },
+   "lens": [
+    8,
+    17,
+    5,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-10",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "MFAの説明として正しいものはどれですか。",
+   "choices": [
+    "通信を暗号化する",
+    "権限をまとめて配る",
+    "パスワードに加え、もう一つの要素で本人確認を強化する",
+    "パスワードを不要にする"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "通信暗号化はTLSの役割です。",
+    "1": "権限配布はグループの役割です。",
+    "3": "パスワードが不要になるわけではありません。"
+   },
+   "lens": [
+    8,
+    9,
+    26,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-11",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "最小権限の原則の説明として正しいものはどれですか。",
+   "choices": [
+    "最初に管理者権限を与え、後で絞る",
+    "全員に同じ広い権限を配る",
+    "権限を一切与えない",
+    "業務に必要な最小限の権限だけを与える"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "先に広く与えるのは危険な発想です。",
+    "1": "全員に広い権限はアンチパターンです。",
+    "2": "一切与えないと業務ができません。"
+   },
+   "lens": [
+    16,
+    12,
+    9,
+    18
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-12",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "開発者に本番S3バケットの読み取りだけを許可したいです。最適な方法はどれですか。",
+   "choices": [
+    "読み取り権限だけのポリシーを付与する",
+    "AdministratorAccessを付与する",
+    "ルート認証情報を共有する",
+    "アクセスキーをコードに埋め込む"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "管理者権限は過剰で危険です。",
+    "2": "ルート共有は避けるべきです。",
+    "3": "キー直書きは漏洩リスクです。"
+   },
+   "lens": [
+    18,
+    24,
+    12,
+    15
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-13",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "アプリの認証情報をコードに直書きしていました。改善策として最適なのはどれですか。",
+   "choices": [
+    "バケットを公開する",
+    "IAMロールやSecrets Managerを使い、キーの直書きをやめる",
+    "キーをもっと長くする",
+    "ルート認証情報に切り替える"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "公開は逆効果です。",
+    "2": "キーを長くしても直書きの根本問題は残ります。",
+    "3": "ルート利用は危険です。"
+   },
+   "lens": [
+    9,
+    36,
+    10,
+    13
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-14",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "ルートユーザーの保護として最も推奨される対応はどれですか。",
+   "choices": [
+    "パスワードを全員に共有する",
+    "ルートで毎日作業する",
+    "MFAを有効化し、日常はIAMユーザーで作業する",
+    "ルートのアクセスキーを大量に作る"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "共有は厳禁です。",
+    "1": "日常のルート作業は避けます。",
+    "3": "ルートのアクセスキーは作らない・削除が原則です。"
+   },
+   "lens": [
+    13,
+    10,
+    24,
+    16
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-15",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "複数のユーザーに共通の権限を効率よく与えたいです。最適な方法はどれですか。",
+   "choices": [
+    "各ユーザーに個別で同じ権限を毎回設定する",
+    "ルート認証情報を配る",
+    "アクセスキーを共有する",
+    "IAMグループにポリシーを付け、ユーザーを追加する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "個別設定は手間とミスが増えます。",
+    "1": "ルート配布は危険です。",
+    "2": "キー共有は不適切です。"
+   },
+   "lens": [
+    20,
+    10,
+    11,
+    25
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-16",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "必要な権限だけを与える原則を「＿＿権限」と呼びます。＿＿に入るのはどれですか。",
+   "choices": [
+    "最小",
+    "最大",
+    "管理者",
+    "共有"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "最大権限は危険です。",
+    "2": "管理者権限を全員には不適切です。",
+    "3": "共有権限という語はありません。"
+   },
+   "lens": [
+    2,
+    2,
+    3,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-17",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "多要素認証は略して「＿＿＿」と呼ばれます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "VPC",
+    "MFA",
+    "SSO",
+    "ACL"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "VPCは仮想ネットワークです。",
+    "2": "SSOはシングルサインオンです。",
+    "3": "ACLはアクセス制御リストです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-18",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "IAMポリシーでは、明示的な「＿＿＿」が許可より常に優先されます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "Grant",
+    "Permit",
+    "Deny",
+    "Allow"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Grantは付与の意味で定型語ではありません。",
+    "1": "Permitも定型語ではありません。",
+    "3": "Allowは許可で、Denyに負けます。"
+   },
+   "lens": [
+    5,
+    6,
+    4,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-19",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "全権限を持つ最上位アカウントを「＿＿＿ユーザー」と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "マスター",
+    "スーパー",
+    "プライム",
+    "ルート"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "マスターユーザーはこの文脈の正式名ではありません。",
+    "1": "スーパーユーザーはOSの用語です。",
+    "2": "プライムユーザーではありません。"
+   },
+   "lens": [
+    4,
+    4,
+    4,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-20",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "IAMの使い方として不適切なものはどれですか。",
+   "choices": [
+    "すべてのユーザーにAdministratorAccessを付与する",
+    "グループで権限を配る",
+    "ロールでサービス連携する",
+    "最小権限を守る"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "グループでの配布は適切です。",
+    "2": "ロールでの連携は推奨です。",
+    "3": "最小権限の遵守は正しい運用です。"
+   },
+   "lens": [
+    33,
+    10,
+    12,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec03-21",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "ルートユーザーの扱いとして誤っているものはどれですか。",
+   "choices": [
+    "日常はIAMユーザーで作業する",
+    "日常の運用作業はルートユーザーで行う",
+    "MFAを有効化する",
+    "アクセスキーは作らない・削除する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "日常はIAMユーザーが正しい運用です。",
+    "2": "MFA有効化は正しい対応です。",
+    "3": "ルートのキーを作らないのは正しい対応です。"
+   },
+   "lens": [
+    15,
+    18,
+    9,
+    16
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec03-22",
+   "theme": "qd-sec03",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "IAMの用語の説明として誤っているものはどれですか。",
+   "choices": [
+    "ポリシーは許可内容を書いた文書である",
+    "ユーザーは人やアプリのIDである",
+    "ロールは永久に有効なパスワードのことである",
+    "グループはユーザーの束である"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ポリシー＝許可の文書は正しい説明です。",
+    "1": "ユーザー＝IDは正しい説明です。",
+    "3": "グループ＝ユーザーの束は正しい説明です。"
+   },
+   "lens": [
+    18,
+    16,
+    21,
+    14
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-6",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 1,
+   "question": "「通信データの暗号化（in transit）」の例として正しいものはどれですか。",
+   "choices": [
+    "HTTPS/TLSでやり取りを保護する",
+    "S3のオブジェクトを保存時に暗号化する",
+    "IAMグループを作る",
+    "スナップショットを取る"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "保存時の暗号化はat restです。",
+    "2": "IAMグループは権限管理です。",
+    "3": "スナップショットはバックアップです。"
+   },
+   "lens": [
+    19,
+    19,
+    10,
+    11
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-7",
+   "theme": "qd-sec06",
+   "service": "KMS",
+   "difficulty": 1,
+   "question": "AWS KMSの説明として正しいものはどれですか。",
+   "choices": [
+    "監査レポートを配布するサービス",
+    "暗号鍵の作成・管理・利用を一元化するサービス",
+    "通信の負荷を分散するサービス",
+    "脆弱性を診断するサービス"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "監査レポートはArtifactです。",
+    "2": "負荷分散はELBです。",
+    "3": "脆弱性診断はInspectorです。"
+   },
+   "lens": [
+    15,
+    22,
+    14,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec06-8",
+   "theme": "qd-sec06",
+   "service": "ACM",
+   "difficulty": 2,
+   "question": "AWS Certificate Manager（ACM）の説明として正しいものはどれですか。",
+   "choices": [
+    "機密情報を保管する",
+    "攻撃を遮断する",
+    "TLS/SSL証明書の発行・管理・自動更新を行う",
+    "暗号鍵を保管する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "機密保管はSecrets Managerです。",
+    "1": "攻撃遮断はWAFです。",
+    "3": "鍵の保管はKMSです。"
+   },
+   "lens": [
+    9,
+    7,
+    24,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec06-9",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 2,
+   "question": "S3に保存する機密ファイルを、保存された状態で暗号化したいです。最適なのはどれですか。",
+   "choices": [
+    "通信をVPNにする",
+    "MFAを有効化する",
+    "バケットを公開する",
+    "KMSと連携してS3のオブジェクトを暗号化する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "VPNは通信経路の話です。",
+    "1": "MFAは認証強化です。",
+    "2": "公開は逆効果です。"
+   },
+   "lens": [
+    9,
+    9,
+    9,
+    23
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec06-10",
+   "theme": "qd-sec06",
+   "service": "ACM",
+   "difficulty": 2,
+   "question": "WebサイトをHTTPS化し、証明書の更新忘れも防ぎたいです。最適なのはどれですか。",
+   "choices": [
+    "ACMで証明書を発行・自動更新する",
+    "証明書を手動で毎年買い直す",
+    "KMSで証明書を発行する",
+    "WAFで証明書を管理する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "手動購入は更新忘れのリスクがあります。",
+    "2": "KMSは鍵管理で証明書発行ではありません。",
+    "3": "WAFは攻撃遮断で証明書管理ではありません。"
+   },
+   "lens": [
+    17,
+    13,
+    12,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec06-11",
+   "theme": "qd-sec06",
+   "service": "Secrets Manager",
+   "difficulty": 2,
+   "question": "データベースのパスワードを定期的に自動で変更（ローテーション）したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon CloudWatch",
+    "AWS Secrets Manager",
+    "AWS KMS単体",
+    "Amazon S3"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "CloudWatchは監視です。",
+    "2": "KMS単体は鍵管理で、DBパスワードのローテーション機能とは異なります。",
+    "3": "S3は汎用ストレージです。"
+   },
+   "lens": [
+    17,
+    19,
+    9,
+    9
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-12",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 1,
+   "question": "通信中のデータの暗号化は「in ＿＿＿」と呼ばれます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "storage",
+    "cloud",
+    "transit",
+    "rest"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "storageはこの定型語では使いません。",
+    "1": "cloudはこの文脈の語ではありません。",
+    "3": "restは保存時です。"
+   },
+   "lens": [
+    7,
+    5,
+    7,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-13",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 1,
+   "question": "保存データの暗号化は「＿＿ rest」と呼ばれます。＿＿に入るのはどれですか。",
+   "choices": [
+    "in",
+    "on",
+    "by",
+    "at"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "inはin transit（通信時）で使います。",
+    "1": "onはこの文脈で使いません。",
+    "2": "byはこの文脈で使いません。"
+   },
+   "lens": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-14",
+   "theme": "qd-sec06",
+   "service": "KMS",
+   "difficulty": 1,
+   "question": "暗号鍵を管理するサービスは「AWS ＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "KMS",
+    "WAF",
+    "IAM",
+    "VPC"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "WAFは攻撃遮断です。",
+    "2": "IAMは権限管理です。",
+    "3": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-15",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 2,
+   "question": "暗号化・鍵管理の説明として誤っているものはどれですか。",
+   "choices": [
+    "Secrets Managerは機密情報を保管する",
+    "KMSは通信の負荷分散を行うサービスである",
+    "KMSは暗号鍵を管理する",
+    "ACMはTLS証明書を扱う"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Secrets Managerが機密を保管するのは正しい説明です。",
+    "2": "KMSが鍵を管理するのは正しい説明です。",
+    "3": "ACMがTLS証明書を扱うのは正しい説明です。"
+   },
+   "lens": [
+    25,
+    21,
+    12,
+    13
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec06-16",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 2,
+   "question": "暗号化の種類の説明として誤っているものはどれですか。",
+   "choices": [
+    "in transitは通信中のデータの暗号化",
+    "S3はKMSと連携して暗号化できる",
+    "TLSによる通信の保護は保存データ（at rest）の暗号化である",
+    "at restは保存されたデータの暗号化"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "in transitの説明は正しいです。",
+    "1": "S3とKMSの連携は正しい説明です。",
+    "3": "at restの説明は正しいです。"
+   },
+   "lens": [
+    22,
+    17,
+    33,
+    20
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec06-17",
+   "theme": "qd-sec06",
+   "service": "暗号化",
+   "difficulty": 2,
+   "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "KMS＝暗号鍵の管理",
+    "Secrets Manager＝機密情報の保管",
+    "CloudHSM＝専用ハードウェアでの鍵管理",
+    "ACM＝暗号鍵の一元管理"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "KMS＝鍵管理は正しい組合せです。",
+    "1": "Secrets Manager＝機密保管は正しい組合せです。",
+    "2": "CloudHSM＝専用HW鍵管理は正しい組合せです。"
+   },
+   "lens": [
+    10,
+    23,
+    22,
+    12
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-1",
+   "theme": "qd-sec08",
+   "service": "セキュリティグループ",
+   "difficulty": 1,
+   "question": "「EC2インスタンス単位で許可した通信だけを通す、ステートフルな仮想ファイアウォール」はどれですか。",
+   "choices": [
+    "インターネットゲートウェイ",
+    "セキュリティグループ",
+    "ネットワークACL",
+    "ルートテーブル"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "IGWは外部接続の出入口です。",
+    "2": "ネットワークACLはサブネット単位・ステートレスです。",
+    "3": "ルートテーブルは経路制御です。"
+   },
+   "lens": [
+    13,
+    10,
+    9,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-2",
+   "theme": "qd-sec08",
+   "service": "WAF",
+   "difficulty": 1,
+   "question": "「WebアプリへのSQLインジェクション等の攻撃をルールで遮断」するのはどれですか。",
+   "choices": [
+    "Amazon Macie",
+    "Amazon Inspector",
+    "AWS WAF",
+    "AWS Shield"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "MacieはS3の機微データ検出です。",
+    "1": "Inspectorは脆弱性診断です。",
+    "3": "ShieldはDDoS対策です。"
+   },
+   "lens": [
+    12,
+    16,
+    7,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-3",
+   "theme": "qd-sec08",
+   "service": "Shield",
+   "difficulty": 1,
+   "question": "「大量アクセスでサービスを止めるDDoS攻撃から守る」のはどれですか。",
+   "choices": [
+    "AWS WAF",
+    "AWS Config",
+    "AWS Artifact",
+    "AWS Shield"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "WAFはWeb攻撃の内容遮断です。",
+    "1": "Configは設定評価です。",
+    "2": "Artifactは監査資料です。"
+   },
+   "lens": [
+    7,
+    10,
+    12,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-4",
+   "theme": "qd-sec08",
+   "service": "ネットワーク",
+   "difficulty": 1,
+   "question": "「サブネット単位で通信を制御する、ステートレスな仕組み」はどれですか。",
+   "choices": [
+    "ネットワークACL",
+    "セキュリティグループ",
+    "ルートテーブル",
+    "NATゲートウェイ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "セキュリティグループはインスタンス単位・ステートフルです。",
+    "2": "ルートテーブルは経路制御です。",
+    "3": "NATは内部から外部への通信用です。"
+   },
+   "lens": [
+    9,
+    10,
+    7,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-5",
+   "theme": "qd-sec08",
+   "service": "セキュリティグループ",
+   "difficulty": 2,
+   "question": "セキュリティグループの説明として正しいものはどれですか。",
+   "choices": [
+    "攻撃の内容を判定するWAF",
+    "インスタンス単位で動作し、戻りの通信は自動的に許可される（ステートフル）",
+    "サブネット単位で動作しステートレス",
+    "経路を決めるルート表"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "内容判定はWAFです。",
+    "2": "サブネット単位・ステートレスはNACLです。",
+    "3": "経路制御はルートテーブルです。"
+   },
+   "lens": [
+    13,
+    36,
+    17,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec08-6",
+   "theme": "qd-sec08",
+   "service": "WAF",
+   "difficulty": 2,
+   "question": "AWS WAFの説明として正しいものはどれですか。",
+   "choices": [
+    "暗号鍵を管理する",
+    "監査レポートを配布する",
+    "Webアプリを狙う攻撃をルールで検知・遮断する",
+    "DDoS攻撃専用の対策"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "鍵管理はKMSです。",
+    "1": "監査資料はArtifactです。",
+    "3": "DDoS対策はShieldです。"
+   },
+   "lens": [
+    8,
+    11,
+    23,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec08-7",
+   "theme": "qd-sec08",
+   "service": "Shield",
+   "difficulty": 2,
+   "question": "AWS Shield Standardの説明として正しいものはどれですか。",
+   "choices": [
+    "有料でのみ利用できる",
+    "SQLインジェクションを遮断する",
+    "暗号化を行う",
+    "一般的なDDoS攻撃に対し無料で自動的に保護する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Standardは無料です。",
+    "1": "SQLインジェクション遮断はWAFです。",
+    "2": "暗号化はKMS/ACMです。"
+   },
+   "lens": [
+    10,
+    16,
+    6,
+    24
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec08-8",
+   "theme": "qd-sec08",
+   "service": "WAF",
+   "difficulty": 2,
+   "question": "公開WebアプリがSQLインジェクションを受けています。最適な対策はどれですか。",
+   "choices": [
+    "AWS WAFでルールにより攻撃を遮断する",
+    "AWS Shieldに切り替える",
+    "セキュリティグループのポートを増やす",
+    "Macieを使う"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "ShieldはDDoS対策で内容遮断は主目的ではありません。",
+    "2": "ポート開放はむしろ危険です。",
+    "3": "MacieはS3の機微データ検出です。"
+   },
+   "lens": [
+    21,
+    16,
+    18,
+    8
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-9",
+   "theme": "qd-sec08",
+   "service": "Shield",
+   "difficulty": 2,
+   "question": "大量アクセスでサービスを停止させる攻撃への基本的な保護を、無料で自動的に得たいです。何を使いますか。",
+   "choices": [
+    "AWS Config",
+    "AWS Shield Standard",
+    "AWS WAF（有料ルール）",
+    "Amazon Inspector"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Configは設定評価です。",
+    "2": "WAFはWeb攻撃遮断で、基本DDoSの自動無料保護はShieldです。",
+    "3": "Inspectorは脆弱性診断です。"
+   },
+   "lens": [
+    10,
+    19,
+    14,
+    16
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-10",
+   "theme": "qd-sec08",
+   "service": "セキュリティグループ",
+   "difficulty": 2,
+   "question": "あるEC2に対し、特定のポートだけ通信を許可したいです。最適なのはどれですか。",
+   "choices": [
+    "KMSで鍵を作る",
+    "Route 53でDNSを設定する",
+    "セキュリティグループで許可ルールを設定する",
+    "バケットポリシーを設定する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "KMSは鍵管理です。",
+    "1": "Route 53はDNSです。",
+    "3": "バケットポリシーはS3のアクセス制御です。"
+   },
+   "lens": [
+    8,
+    17,
+    21,
+    13
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-11",
+   "theme": "qd-sec08",
+   "service": "WAF",
+   "difficulty": 1,
+   "question": "Webアプリを攻撃から守るファイアウォールは「AWS ＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "KMS",
+    "IAM",
+    "VPC",
+    "WAF"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "KMSは鍵管理です。",
+    "1": "IAMは権限管理です。",
+    "2": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-12",
+   "theme": "qd-sec08",
+   "service": "Shield",
+   "difficulty": 1,
+   "question": "DDoS攻撃対策のサービスは「AWS ＿＿＿＿＿」です。＿＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "Shield",
+    "WAF",
+    "Config",
+    "Macie"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "WAFはWeb攻撃遮断です。",
+    "2": "Configは設定評価です。",
+    "3": "MacieはS3機微データ検出です。"
+   },
+   "lens": [
+    6,
+    3,
+    6,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-13",
+   "theme": "qd-sec08",
+   "service": "セキュリティグループ",
+   "difficulty": 2,
+   "question": "セキュリティグループは「ステート＿＿＿」に動作し、戻りの通信を自動許可します。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ダウン",
+    "フル",
+    "レス",
+    "アップ"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "ステートダウンという語はありません。",
+    "2": "ステートレスはNACLです。",
+    "3": "ステートアップという語はありません。"
+   },
+   "lens": [
+    3,
+    2,
+    2,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec08-14",
+   "theme": "qd-sec08",
+   "service": "セキュリティグループ",
+   "difficulty": 2,
+   "question": "ネットワーク防御の説明として誤っているものはどれですか。",
+   "choices": [
+    "ShieldはDDoS対策",
+    "ネットワークACLはサブネット単位",
+    "セキュリティグループはサブネット単位でステートレスに動作する",
+    "WAFはWeb攻撃を遮断する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Shield＝DDoS対策は正しい説明です。",
+    "1": "NACL＝サブネット単位は正しい説明です。",
+    "3": "WAF＝Web攻撃遮断は正しい説明です。"
+   },
+   "lens": [
+    13,
+    17,
+    30,
+    14
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec08-15",
+   "theme": "qd-sec08",
+   "service": "WAF",
+   "difficulty": 2,
+   "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "AWS WAF＝Web攻撃の遮断",
+    "セキュリティグループ＝インスタンスの通信制御",
+    "Amazon GuardDuty＝脅威検知",
+    "AWS Shield＝SQLインジェクションのルール遮断"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "WAF＝Web攻撃遮断は正しい組合せです。",
+    "1": "SG＝通信制御は正しい組合せです。",
+    "2": "GuardDuty＝脅威検知は正しい組合せです。"
+   },
+   "lens": [
+    16,
+    22,
+    21,
+    28
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-1",
+   "theme": "qd-sec09",
+   "service": "CloudTrail",
+   "difficulty": 1,
+   "question": "「いつ・誰が・どのAPIを呼んだかを記録する（操作の履歴）」のはどれですか。",
+   "choices": [
+    "AWS CloudTrail",
+    "Amazon CloudWatch",
+    "AWS Config",
+    "AWS WAF"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "CloudWatchはメトリクス・ログの監視です。",
+    "2": "Configは設定の追跡・評価です。",
+    "3": "WAFはWeb攻撃遮断です。"
+   },
+   "lens": [
+    14,
+    17,
+    10,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-2",
+   "theme": "qd-sec09",
+   "service": "Config",
+   "difficulty": 1,
+   "question": "「リソースの設定変更を追跡し、ルール違反を継続評価」するのはどれですか。",
+   "choices": [
+    "AWS Shield",
+    "AWS Config",
+    "AWS CloudTrail",
+    "Amazon CloudWatch"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "ShieldはDDoS対策です。",
+    "2": "CloudTrailは操作の記録です。",
+    "3": "CloudWatchは監視です。"
+   },
+   "lens": [
+    10,
+    10,
+    14,
+    17
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-3",
+   "theme": "qd-sec09",
+   "service": "Organizations",
+   "difficulty": 1,
+   "question": "「複数のAWSアカウントを束ね、全体に共通の上限（SCP）を設定」できるのはどれですか。",
+   "choices": [
+    "Amazon VPC",
+    "AWS Config",
+    "AWS Organizations",
+    "AWS IAM"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "VPCはネットワークです。",
+    "1": "Configは設定評価です。",
+    "3": "IAMは1アカウント内の権限管理です。"
+   },
+   "lens": [
+    10,
+    10,
+    17,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec09-4",
+   "theme": "qd-sec09",
+   "service": "Control Tower",
+   "difficulty": 2,
+   "question": "「安全な複数アカウント環境を、ひな形から自動で構築」するのはどれですか。",
+   "choices": [
+    "AWS CloudTrail",
+    "Amazon Inspector",
+    "AWS Artifact",
+    "AWS Control Tower"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "CloudTrailは操作記録です。",
+    "1": "Inspectorは脆弱性診断です。",
+    "2": "Artifactは監査資料です。"
+   },
+   "lens": [
+    14,
+    16,
+    12,
+    17
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-5",
+   "theme": "qd-sec09",
+   "service": "CloudTrail",
+   "difficulty": 2,
+   "question": "AWS CloudTrailの説明として正しいものはどれですか。",
+   "choices": [
+    "アカウント内のAPI操作を記録し、監査証跡に使える",
+    "CPU使用率などのメトリクスを監視する",
+    "設定のルール違反を評価する",
+    "DDoSを防ぐ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "メトリクス監視はCloudWatchです。",
+    "2": "設定評価はConfigです。",
+    "3": "DDoS対策はShieldです。"
+   },
+   "lens": [
+    25,
+    19,
+    13,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec09-6",
+   "theme": "qd-sec09",
+   "service": "Config",
+   "difficulty": 2,
+   "question": "AWS Configの説明として正しいものはどれですか。",
+   "choices": [
+    "証明書を発行する",
+    "リソース設定の変更履歴を追跡し、あるべき状態からのズレを検知する",
+    "API操作を記録する",
+    "メトリクスを可視化する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "証明書発行はACMです。",
+    "2": "API操作の記録はCloudTrailです。",
+    "3": "メトリクス可視化はCloudWatchです。"
+   },
+   "lens": [
+    8,
+    32,
+    10,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec09-7",
+   "theme": "qd-sec09",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "AWS Organizationsの説明として正しいものはどれですか。",
+   "choices": [
+    "仮想ネットワークを作る",
+    "脅威を検知する",
+    "複数アカウントを束ね、一括請求やSCPによる統制ができる",
+    "1アカウント内のIAM権限を管理する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "仮想ネットワークはVPCです。",
+    "1": "脅威検知はGuardDutyです。",
+    "3": "1アカウントの権限管理はIAMです。"
+   },
+   "lens": [
+    11,
+    7,
+    28,
+    18
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec09-8",
+   "theme": "qd-sec09",
+   "service": "CloudTrail",
+   "difficulty": 2,
+   "question": "誰が不正に設定を変更したのかを後から調査したいです。最適なのはどれですか。",
+   "choices": [
+    "CloudWatchのCPUメトリクスを見る",
+    "Shieldを有効にする",
+    "VPCを分ける",
+    "CloudTrailの操作履歴を確認する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "CPUメトリクスは操作者の特定には不向きです。",
+    "1": "ShieldはDDoS対策です。",
+    "2": "VPC分割は調査手段ではありません。"
+   },
+   "lens": [
+    22,
+    12,
+    7,
+    20
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-9",
+   "theme": "qd-sec09",
+   "service": "Config",
+   "difficulty": 2,
+   "question": "「S3バケットは必ず暗号化する」というルールに違反していないか継続的に確認したいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Configのルールで評価する",
+    "CloudTrailで記録する",
+    "WAFで遮断する",
+    "KMSで鍵を作る"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "CloudTrailは操作記録で、継続的な準拠評価は主目的ではありません。",
+    "2": "WAFはWeb攻撃遮断です。",
+    "3": "KMSは鍵管理です。"
+   },
+   "lens": [
+    19,
+    15,
+    8,
+    8
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-10",
+   "theme": "qd-sec09",
+   "service": "Organizations",
+   "difficulty": 2,
+   "question": "複数の部署アカウントで、特定の危険な操作を組織全体で一律に禁止したいです。最適なのはどれですか。",
+   "choices": [
+    "Route 53で制御する",
+    "OrganizationsのSCPで上限を設定する",
+    "各アカウントで個別にIAMを設定して回る",
+    "Shieldを有効にする"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Route 53はDNSです。",
+    "2": "個別IAMは漏れやすく非効率です。",
+    "3": "ShieldはDDoS対策です。"
+   },
+   "lens": [
+    13,
+    25,
+    20,
+    12
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-11",
+   "theme": "qd-sec09",
+   "service": "CloudTrail",
+   "difficulty": 1,
+   "question": "「誰が何のAPIを呼んだか」を記録するのは AWS ＿＿＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Config",
+    "Shield",
+    "CloudTrail",
+    "CloudWatch"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Configは設定評価です。",
+    "1": "ShieldはDDoS対策です。",
+    "3": "CloudWatchは監視です。"
+   },
+   "lens": [
+    6,
+    6,
+    10,
+    10
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-12",
+   "theme": "qd-sec09",
+   "service": "Organizations",
+   "difficulty": 1,
+   "question": "複数アカウント共通の禁止ルールを定める仕組みを「＿＿＿」（サービスコントロールポリシー）と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ACL",
+    "MFA",
+    "VPC",
+    "SCP"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "ACLはアクセス制御リストです。",
+    "1": "MFAは多要素認証です。",
+    "2": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-13",
+   "theme": "qd-sec09",
+   "service": "Config",
+   "difficulty": 1,
+   "question": "リソース設定の変更を追跡・評価するのは AWS ＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Config",
+    "CloudTrail",
+    "IAM",
+    "KMS"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "CloudTrailは操作記録です。",
+    "2": "IAMは権限管理です。",
+    "3": "KMSは鍵管理です。"
+   },
+   "lens": [
+    6,
+    10,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec09-14",
+   "theme": "qd-sec09",
+   "service": "CloudTrail",
+   "difficulty": 2,
+   "question": "監査・ガバナンスのサービスの説明として誤っているものはどれですか。",
+   "choices": [
+    "Organizationsは複数アカウントを統制する",
+    "CloudTrailはCPU使用率などのメトリクスを監視するサービスである",
+    "CloudTrailはAPI操作を記録する",
+    "Configは設定を評価する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Organizationsの統制は正しい説明です。",
+    "2": "CloudTrailのAPI記録は正しい説明です。",
+    "3": "Configの設定評価は正しい説明です。"
+   },
+   "lens": [
+    26,
+    37,
+    21,
+    14
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec09-15",
+   "theme": "qd-sec09",
+   "service": "Config",
+   "difficulty": 2,
+   "question": "サービスと役割の組合せとして誤っているものはどれですか。",
+   "choices": [
+    "AWS Organizations＝複数アカウント統制",
+    "AWS Control Tower＝複数アカウント環境の自動構築",
+    "AWS Config＝API操作の履歴記録",
+    "AWS CloudTrail＝API操作の履歴記録"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Organizations＝統制は正しい組合せです。",
+    "1": "Control Tower＝自動構築は正しい組合せです。",
+    "3": "CloudTrail＝操作記録は正しい組合せです。"
+   },
+   "lens": [
+    27,
+    32,
+    21,
+    25
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec02-1",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「人やアプリのIDを表す」IAMの要素はどれですか。",
+   "choices": [
+    "ユーザー",
+    "グループ",
+    "ロール",
+    "ポリシー"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "グループはユーザーの束です。",
+    "2": "ロールは一時権限の仕組みです。",
+    "3": "ポリシーは許可内容の文書です。"
+   },
+   "lens": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec02-2",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「ユーザーをまとめて、権限を一括で付与する」IAMの要素はどれですか。",
+   "choices": [
+    "キーペア",
+    "グループ",
+    "ロール",
+    "ポリシー"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "キーペアはログイン用の鍵です。",
+    "2": "ロールは一時権限の仕組みです。",
+    "3": "ポリシーは許可の文書です。"
+   },
+   "lens": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec02-3",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "「サービスやユーザーが一時的に権限を借りる」IAMの要素はどれですか。",
+   "choices": [
+    "ユーザー",
+    "ポリシー",
+    "ロール",
+    "グループ"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ユーザーはIDです。",
+    "1": "ポリシーは許可の文書です。",
+    "3": "グループはユーザーの束です。"
+   },
+   "lens": [
+    4,
+    4,
+    3,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec02-4",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "IAMユーザーの説明として正しいものはどれですか。",
+   "choices": [
+    "一時的に権限を借りる仕組み",
+    "ユーザーをまとめる束",
+    "許可内容を書いた文書",
+    "個々の人やアプリを表すIDで、権限を割り当てられる"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "一時権限はロールです。",
+    "1": "束はグループです。",
+    "2": "許可の文書はポリシーです。"
+   },
+   "lens": [
+    13,
+    10,
+    10,
+    25
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec02-5",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "IAMロールが便利な理由として正しいものはどれですか。",
+   "choices": [
+    "長期のアクセスキーを配らずに権限を渡せる",
+    "パスワードを永久に固定できる",
+    "課金を止められる",
+    "通信を暗号化できる"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "永久固定ではありません。",
+    "2": "課金停止機能ではありません。",
+    "3": "暗号化はTLS/KMSの役割です。"
+   },
+   "lens": [
+    20,
+    14,
+    8,
+    9
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec02-6",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "EC2上のアプリからS3へアクセスさせる、最も安全な方法はどれですか。",
+   "choices": [
+    "バケットを公開する",
+    "EC2にIAMロールを割り当てる",
+    "アクセスキーをコードに埋め込む",
+    "ルート認証情報を使う"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "公開は逆効果です。",
+    "2": "キー直書きは漏洩リスクです。",
+    "3": "ルート利用は危険です。"
+   },
+   "lens": [
+    9,
+    16,
+    15,
+    10
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec02-7",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "10人の開発者に同じ権限を効率よく付与したいです。最適な方法はどれですか。",
+   "choices": [
+    "全員でルートを共有する",
+    "アクセスキーを配る",
+    "グループにポリシーを付け、10人を追加する",
+    "1人ずつ個別に権限を設定する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ルート共有は危険です。",
+    "1": "キー配布は不適切です。",
+    "3": "個別設定は手間とミスが増えます。"
+   },
+   "lens": [
+    11,
+    9,
+    21,
+    14
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec02-8",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "ユーザーをまとめて権限を配る単位を「＿＿＿＿」と呼びます。＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ロール",
+    "ポリシー",
+    "キー",
+    "グループ"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "ロールは一時権限です。",
+    "1": "ポリシーは許可の文書です。",
+    "2": "キーは認証情報です。"
+   },
+   "lens": [
+    3,
+    4,
+    2,
+    4
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec02-9",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 1,
+   "question": "一時的に権限を借りる仕組みを「＿＿＿」と呼びます。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ロール",
+    "グループ",
+    "ユーザー",
+    "タグ"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "グループは束です。",
+    "2": "ユーザーはIDです。",
+    "3": "タグはラベルです。"
+   },
+   "lens": [
+    3,
+    4,
+    4,
+    2
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec02-10",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "IAMの基本要素の説明として誤っているものはどれですか。",
+   "choices": [
+    "ポリシーは許可内容の文書",
+    "ロールは複数ユーザーをまとめる束である",
+    "ユーザーは人やアプリのID",
+    "グループはユーザーの束"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "ポリシー＝許可の文書は正しい説明です。",
+    "2": "ユーザー＝IDは正しい説明です。",
+    "3": "グループ＝束は正しい説明です。"
+   },
+   "lens": [
+    12,
+    19,
+    13,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec02-11",
+   "theme": "qd-sec02",
+   "service": "IAM",
+   "difficulty": 2,
+   "question": "IAMの使い方の説明として誤っているものはどれですか。",
+   "choices": [
+    "共通権限はグループで配る",
+    "最小権限を守る",
+    "サービス連携にはアクセスキーの直書きが推奨される",
+    "サービス連携にはロールを使う"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "グループでの配布は正しい説明です。",
+    "1": "最小権限は正しい説明です。",
+    "3": "ロールでの連携は正しい説明です。"
+   },
+   "lens": [
+    12,
+    7,
+    24,
+    14
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec04-1",
+   "theme": "qd-sec04",
+   "service": "ルートユーザー",
+   "difficulty": 1,
+   "question": "「アカウント作成時のメールでログインする、全権限を持つ最上位アカウント」はどれですか。",
+   "choices": [
+    "IAMユーザー",
+    "IAMロール",
+    "フェデレーテッドユーザー",
+    "ルートユーザー"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "IAMユーザーは権限を絞れます。",
+    "1": "ロールは一時権限です。",
+    "2": "フェデレーテッドは外部ID連携です。"
+   },
+   "lens": [
+    7,
+    6,
+    12,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec04-2",
+   "theme": "qd-sec04",
+   "service": "MFA",
+   "difficulty": 1,
+   "question": "「パスワードに加え、スマホの数字コードなど2つ目の要素を要求」する仕組みはどれですか。",
+   "choices": [
+    "MFA（多要素認証）",
+    "SSO",
+    "アクセスキー",
+    "ポリシー"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "SSOは一度のログインで複数に入る仕組みです。",
+    "2": "アクセスキーは認証情報です。",
+    "3": "ポリシーは許可の文書です。"
+   },
+   "lens": [
+    10,
+    3,
+    6,
+    4
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec04-3",
+   "theme": "qd-sec04",
+   "service": "ルートユーザー",
+   "difficulty": 2,
+   "question": "ルートユーザーの日常運用に関する原則として正しいものはどれですか。",
+   "choices": [
+    "ルートのアクセスキーを量産する",
+    "日常業務には使わず、権限を絞ったIAMユーザーで作業する",
+    "毎日ルートで作業する",
+    "全員でルートを共有する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "ルートのキーは作らないのが原則です。",
+    "2": "日常のルート作業は避けます。",
+    "3": "共有は厳禁です。"
+   },
+   "lens": [
+    15,
+    28,
+    10,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec04-4",
+   "theme": "qd-sec04",
+   "service": "MFA",
+   "difficulty": 1,
+   "question": "MFA（多要素認証）の説明として正しいものはどれですか。",
+   "choices": [
+    "通信を暗号化する",
+    "権限をまとめて配る",
+    "パスワードともう一つの要素で本人確認を強化する",
+    "パスワードを不要にする"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "暗号化はTLSです。",
+    "1": "権限配布はグループです。",
+    "3": "パスワードが不要になるわけではありません。"
+   },
+   "lens": [
+    8,
+    9,
+    23,
+    11
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec04-5",
+   "theme": "qd-sec04",
+   "service": "ルートユーザー",
+   "difficulty": 2,
+   "question": "ルートユーザーでしか実行できない作業の例として正しいものはどれですか。",
+   "choices": [
+    "日常のEC2起動",
+    "S3へのファイル保存",
+    "IAMユーザーの作成",
+    "アカウントの解約やサポートプランの変更"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "日常のEC2起動はIAMユーザーで可能です。",
+    "1": "S3保存はIAMユーザーで可能です。",
+    "2": "IAMユーザー作成もIAMで可能です。"
+   },
+   "lens": [
+    8,
+    10,
+    10,
+    19
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec04-6",
+   "theme": "qd-sec04",
+   "service": "MFA",
+   "difficulty": 2,
+   "question": "ルートユーザーのセキュリティを高めたいです。まず行うべきことはどれですか。",
+   "choices": [
+    "MFAを有効化する",
+    "ルートのアクセスキーを作る",
+    "パスワードを全員に配る",
+    "毎日ルートでログインする"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "ルートのキーは作らないのが原則です。",
+    "2": "共有は厳禁です。",
+    "3": "日常のルート利用は避けます。"
+   },
+   "lens": [
+    9,
+    13,
+    11,
+    12
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec04-7",
+   "theme": "qd-sec04",
+   "service": "ルートユーザー",
+   "difficulty": 2,
+   "question": "日常の運用作業は、どのアカウントで行うのが原則ですか。",
+   "choices": [
+    "匿名アクセス",
+    "権限を絞ったIAMユーザー／ロール",
+    "ルートユーザー",
+    "共有アカウント"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "匿名アクセスは不適切です。",
+    "2": "ルートは日常運用に使いません。",
+    "3": "共有アカウントは不適切です。"
+   },
+   "lens": [
+    6,
+    17,
+    7,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec04-8",
+   "theme": "qd-sec04",
+   "service": "MFA",
+   "difficulty": 1,
+   "question": "多要素認証の略称は「＿＿＿」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "ACL",
+    "KMS",
+    "MFA",
+    "SSO"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "ACLはアクセス制御リストです。",
+    "1": "KMSは鍵管理です。",
+    "3": "SSOはシングルサインオンです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec04-9",
+   "theme": "qd-sec04",
+   "service": "ルートユーザー",
+   "difficulty": 1,
+   "question": "全権限を持つ最上位アカウントは「＿＿＿ユーザー」です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "IAM",
+    "ゲスト",
+    "フェデレーテッド",
+    "ルート"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "IAMユーザーは権限を絞れます。",
+    "1": "ゲストユーザーは別概念です。",
+    "2": "フェデレーテッドは外部連携です。"
+   },
+   "lens": [
+    3,
+    3,
+    8,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec04-10",
+   "theme": "qd-sec04",
+   "service": "ルートユーザー",
+   "difficulty": 2,
+   "question": "ルートユーザーの扱いとして誤っているものはどれですか。",
+   "choices": [
+    "日常の運用はすべてルートユーザーで行うべきである",
+    "MFAを有効化する",
+    "アクセスキーは作らない",
+    "日常はIAMユーザーで作業する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "MFA有効化は正しい対応です。",
+    "2": "キーを作らないのは正しい対応です。",
+    "3": "日常はIAMユーザーが正しい運用です。"
+   },
+   "lens": [
+    24,
+    9,
+    11,
+    15
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec04-11",
+   "theme": "qd-sec04",
+   "service": "MFA",
+   "difficulty": 2,
+   "question": "MFAの説明として誤っているものはどれですか。",
+   "choices": [
+    "漏洩時のリスクを下げる",
+    "MFAを使うとパスワードは不要になる",
+    "パスワードに要素を足して強化する",
+    "ルートユーザーには有効化が推奨"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "リスク低減は正しい説明です。",
+    "2": "要素を足して強化は正しい説明です。",
+    "3": "ルートへの有効化推奨は正しい説明です。"
+   },
+   "lens": [
+    11,
+    18,
+    16,
+    15
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-1",
+   "theme": "qd-sec05",
+   "service": "Identity Center",
+   "difficulty": 1,
+   "question": "「一度のログインで複数のAWSアカウントやアプリに入れる（社員向け）」のはどれですか。",
+   "choices": [
+    "AWS Directory Service",
+    "AWS STS",
+    "IAM Identity Center",
+    "Amazon Cognito"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Directory ServiceはAD連携です。",
+    "1": "STSは一時認証情報の発行です。",
+    "3": "Cognitoはアプリ利用者の認証です。"
+   },
+   "lens": [
+    21,
+    7,
+    19,
+    14
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-2",
+   "theme": "qd-sec05",
+   "service": "Cognito",
+   "difficulty": 1,
+   "question": "「自社アプリのサインアップ／ログイン機能（エンドユーザー向け）」を提供するのはどれですか。",
+   "choices": [
+    "IAM Identity Center",
+    "AWS Directory Service",
+    "AWS STS",
+    "Amazon Cognito"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Identity Centerは社員向けSSOです。",
+    "1": "Directory ServiceはAD連携です。",
+    "2": "STSは一時認証です。"
+   },
+   "lens": [
+    19,
+    21,
+    7,
+    14
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-3",
+   "theme": "qd-sec05",
+   "service": "STS",
+   "difficulty": 1,
+   "question": "「短時間だけ有効な一時認証情報を発行」するのはどれですか。",
+   "choices": [
+    "AWS STS",
+    "Amazon Cognito",
+    "IAM Identity Center",
+    "AWS WAF"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Cognitoはアプリ利用者認証です。",
+    "2": "Identity Centerは社員SSOです。",
+    "3": "WAFはWeb攻撃遮断です。"
+   },
+   "lens": [
+    7,
+    14,
+    19,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-4",
+   "theme": "qd-sec05",
+   "service": "Directory Service",
+   "difficulty": 2,
+   "question": "「社内のMicrosoft Active DirectoryをAWSと連携」させるのはどれですか。",
+   "choices": [
+    "Amazon Macie",
+    "AWS Directory Service",
+    "Amazon Cognito",
+    "AWS STS"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "MacieはS3機微データ検出です。",
+    "2": "Cognitoはアプリ利用者認証です。",
+    "3": "STSは一時認証です。"
+   },
+   "lens": [
+    12,
+    21,
+    14,
+    7
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec05-5",
+   "theme": "qd-sec05",
+   "service": "Identity Center",
+   "difficulty": 2,
+   "question": "IAM Identity Centerの説明として正しいものはどれですか。",
+   "choices": [
+    "一時認証情報を発行する",
+    "脅威を検知する",
+    "社員が一度のログインで複数アカウント／アプリに入れる",
+    "アプリ利用者のサインアップを担う"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "一時認証はSTSです。",
+    "1": "脅威検知はGuardDutyです。",
+    "3": "アプリ利用者認証はCognitoです。"
+   },
+   "lens": [
+    11,
+    7,
+    26,
+    16
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec05-6",
+   "theme": "qd-sec05",
+   "service": "Cognito",
+   "difficulty": 2,
+   "question": "Amazon Cognitoの説明として正しいものはどれですか。",
+   "choices": [
+    "社員向けのSSO",
+    "一時認証情報の発行",
+    "監査レポートの配布",
+    "モバイル／Webアプリの利用者向けサインアップ・ログインを提供"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "社員向けSSOはIdentity Centerです。",
+    "1": "一時認証はSTSです。",
+    "2": "監査資料はArtifactです。"
+   },
+   "lens": [
+    8,
+    9,
+    9,
+    31
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec05-7",
+   "theme": "qd-sec05",
+   "service": "Identity Center",
+   "difficulty": 2,
+   "question": "社員が複数のAWSアカウントに、一度のログインで安全に入れるようにしたいです。最適なのはどれですか。",
+   "choices": [
+    "IAM Identity Center",
+    "Amazon Cognito",
+    "AWS STS",
+    "Amazon Inspector"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Cognitoはアプリ利用者向けです。",
+    "2": "STSは一時認証の発行です。",
+    "3": "Inspectorは脆弱性診断です。"
+   },
+   "lens": [
+    19,
+    14,
+    7,
+    16
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-8",
+   "theme": "qd-sec05",
+   "service": "Cognito",
+   "difficulty": 2,
+   "question": "作成中のスマホアプリに、利用者の会員登録とログイン機能を追加したいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Config",
+    "Amazon Cognito",
+    "IAM Identity Center",
+    "AWS Organizations"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Configは設定評価です。",
+    "2": "Identity Centerは社員向けです。",
+    "3": "Organizationsはアカウント統制です。"
+   },
+   "lens": [
+    10,
+    14,
+    19,
+    17
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-9",
+   "theme": "qd-sec05",
+   "service": "Cognito",
+   "difficulty": 1,
+   "question": "アプリ利用者の認証を担うのは Amazon ＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Macie",
+    "Athena",
+    "Cognito",
+    "Inspector"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "MacieはS3機微データ検出です。",
+    "1": "Athenaは分析です。",
+    "3": "Inspectorは脆弱性診断です。"
+   },
+   "lens": [
+    5,
+    6,
+    7,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-10",
+   "theme": "qd-sec05",
+   "service": "STS",
+   "difficulty": 1,
+   "question": "短時間だけ有効な一時認証情報を発行するのは AWS ＿＿＿ です。＿＿＿に入るのはどれですか。",
+   "choices": [
+    "WAF",
+    "KMS",
+    "VPC",
+    "STS"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "WAFはWeb攻撃遮断です。",
+    "1": "KMSは鍵管理です。",
+    "2": "VPCはネットワークです。"
+   },
+   "lens": [
+    3,
+    3,
+    3,
+    3
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-11",
+   "theme": "qd-sec05",
+   "service": "Identity Center",
+   "difficulty": 2,
+   "question": "認証・アクセス管理サービスの組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Amazon Cognito＝社員向けの複数アカウントSSO",
+    "IAM Identity Center＝社員向けSSO",
+    "AWS STS＝一時認証情報の発行",
+    "AWS Directory Service＝AD連携"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Identity Center＝社員SSOは正しい組合せです。",
+    "2": "STS＝一時認証は正しい組合せです。",
+    "3": "Directory Service＝AD連携は正しい組合せです。"
+   },
+   "lens": [
+    30,
+    27,
+    17,
+    26
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec05-12",
+   "theme": "qd-sec05",
+   "service": "Cognito",
+   "difficulty": 2,
+   "question": "認証サービスの説明として誤っているものはどれですか。",
+   "choices": [
+    "Identity Centerは社員のSSO",
+    "STSは永続的なパスワードを発行するサービスである",
+    "STSは一時認証情報を発行する",
+    "Cognitoはアプリ利用者の認証"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Identity Center＝社員SSOは正しい説明です。",
+    "2": "STS＝一時認証は正しい説明です。",
+    "3": "Cognito＝利用者認証は正しい説明です。"
+   },
+   "lens": [
+    22,
+    25,
+    15,
+    17
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-1",
+   "theme": "qd-sec07",
+   "service": "GuardDuty",
+   "difficulty": 1,
+   "question": "「ログを分析し、不正アクセスや異常な通信などの怪しい挙動を検知」するのはどれですか。",
+   "choices": [
+    "Amazon Macie",
+    "AWS Artifact",
+    "Amazon GuardDuty",
+    "Amazon Inspector"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "MacieはS3の機微データ検出です。",
+    "1": "Artifactは監査資料です。",
+    "3": "Inspectorは脆弱性診断です。"
+   },
+   "lens": [
+    12,
+    12,
+    16,
+    16
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-2",
+   "theme": "qd-sec07",
+   "service": "Inspector",
+   "difficulty": 1,
+   "question": "「EC2やコンテナの脆弱性・危険な設定を自動でスキャン」するのはどれですか。",
+   "choices": [
+    "Amazon GuardDuty",
+    "Amazon Macie",
+    "AWS Config",
+    "Amazon Inspector"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "GuardDutyは挙動の脅威検知です。",
+    "1": "Macieは機微データ検出です。",
+    "2": "Configは設定評価です。"
+   },
+   "lens": [
+    16,
+    12,
+    10,
+    16
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-3",
+   "theme": "qd-sec07",
+   "service": "Macie",
+   "difficulty": 1,
+   "question": "「S3の中から個人情報などの機微データを見つけ出す」のはどれですか。",
+   "choices": [
+    "Amazon Macie",
+    "Amazon GuardDuty",
+    "Amazon Inspector",
+    "AWS WAF"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "GuardDutyは挙動の脅威検知です。",
+    "2": "Inspectorは脆弱性診断です。",
+    "3": "WAFはWeb攻撃遮断です。"
+   },
+   "lens": [
+    12,
+    16,
+    16,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-4",
+   "theme": "qd-sec07",
+   "service": "GuardDuty",
+   "difficulty": 2,
+   "question": "Amazon GuardDutyの説明として正しいものはどれですか。",
+   "choices": [
+    "証明書を発行する",
+    "ログを自動分析し、脅威（怪しい挙動）を検知する",
+    "脆弱性を診断する",
+    "S3の個人情報を検出する"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "証明書発行はACMです。",
+    "2": "脆弱性診断はInspectorです。",
+    "3": "機微データ検出はMacieです。"
+   },
+   "lens": [
+    8,
+    23,
+    8,
+    12
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec07-5",
+   "theme": "qd-sec07",
+   "service": "Inspector",
+   "difficulty": 2,
+   "question": "Amazon Inspectorの説明として正しいものはどれですか。",
+   "choices": [
+    "S3の機微データを検出する",
+    "DDoSを防ぐ",
+    "EC2やコンテナの既知の脆弱性・危険な設定を洗い出す",
+    "不正な挙動を検知する"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "機微データ検出はMacieです。",
+    "1": "DDoS対策はShieldです。",
+    "3": "挙動の検知はGuardDutyです。"
+   },
+   "lens": [
+    13,
+    7,
+    26,
+    10
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec07-6",
+   "theme": "qd-sec07",
+   "service": "GuardDuty",
+   "difficulty": 2,
+   "question": "アカウントに対する不審なAPI呼び出しや異常通信を継続的に検知したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon Inspector",
+    "Amazon Macie",
+    "AWS Artifact",
+    "Amazon GuardDuty"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Inspectorは脆弱性診断です。",
+    "1": "Macieは機微データ検出です。",
+    "2": "Artifactは監査資料です。"
+   },
+   "lens": [
+    16,
+    12,
+    12,
+    16
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-7",
+   "theme": "qd-sec07",
+   "service": "Macie",
+   "difficulty": 2,
+   "question": "S3バケットに個人情報が誤って保存されていないか自動で発見したいです。最適なのはどれですか。",
+   "choices": [
+    "Amazon Macie",
+    "Amazon GuardDuty",
+    "Amazon Inspector",
+    "AWS WAF"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "GuardDutyは挙動検知です。",
+    "2": "Inspectorは脆弱性診断です。",
+    "3": "WAFはWeb攻撃遮断です。"
+   },
+   "lens": [
+    12,
+    16,
+    16,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-8",
+   "theme": "qd-sec07",
+   "service": "Inspector",
+   "difficulty": 2,
+   "question": "EC2に既知の脆弱性が残っていないか自動でスキャンしたいです。最適なのはどれですか。",
+   "choices": [
+    "AWS Config",
+    "Amazon Inspector",
+    "Amazon Macie",
+    "Amazon GuardDuty"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Configは設定評価です。",
+    "2": "Macieは機微データ検出です。",
+    "3": "GuardDutyは挙動検知です。"
+   },
+   "lens": [
+    10,
+    16,
+    12,
+    16
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-9",
+   "theme": "qd-sec07",
+   "service": "GuardDuty",
+   "difficulty": 1,
+   "question": "怪しい挙動を検知する脅威検知サービスは Amazon ＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Macie",
+    "Config",
+    "GuardDuty",
+    "Inspector"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Macieは機微データ検出です。",
+    "1": "Configは設定評価です。",
+    "3": "Inspectorは脆弱性診断です。"
+   },
+   "lens": [
+    5,
+    6,
+    9,
+    9
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-10",
+   "theme": "qd-sec07",
+   "service": "Macie",
+   "difficulty": 1,
+   "question": "S3内の機微データを検出するのは Amazon ＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Inspector",
+    "GuardDuty",
+    "Athena",
+    "Macie"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "Inspectorは脆弱性診断です。",
+    "1": "GuardDutyは挙動検知です。",
+    "2": "Athenaは分析です。"
+   },
+   "lens": [
+    9,
+    9,
+    6,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-11",
+   "theme": "qd-sec07",
+   "service": "GuardDuty",
+   "difficulty": 2,
+   "question": "脅威検知サービスの組合せとして誤っているものはどれですか。",
+   "choices": [
+    "Amazon Macie＝EC2の脆弱性診断",
+    "Amazon GuardDuty＝挙動の脅威検知",
+    "Amazon Inspector＝脆弱性診断",
+    "Amazon Macie＝S3の機微データ検出"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "GuardDuty＝挙動検知は正しい組合せです。",
+    "2": "Inspector＝脆弱性診断は正しい組合せです。",
+    "3": "Macie＝機微データ検出は正しい組合せです。"
+   },
+   "lens": [
+    22,
+    24,
+    22,
+    23
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec07-12",
+   "theme": "qd-sec07",
+   "service": "Inspector",
+   "difficulty": 2,
+   "question": "脅威検知サービスの説明として誤っているものはどれですか。",
+   "choices": [
+    "Macieは機微データを検出",
+    "GuardDutyはS3内の個人情報を検出するサービスである",
+    "GuardDutyは挙動から脅威を検知",
+    "Inspectorは脆弱性を診断"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Macie＝機微データ検出は正しい説明です。",
+    "2": "GuardDuty＝挙動検知は正しい説明です。",
+    "3": "Inspector＝脆弱性診断は正しい説明です。"
+   },
+   "lens": [
+    14,
+    30,
+    19,
+    16
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec10-1",
+   "theme": "qd-sec10",
+   "service": "Artifact",
+   "difficulty": 1,
+   "question": "「SOCやISOなどAWSの第三者監査レポートをダウンロード」できるのはどれですか。",
+   "choices": [
+    "AWS Config",
+    "Amazon Inspector",
+    "AWS Artifact",
+    "Amazon GuardDuty"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Configは設定評価です。",
+    "1": "Inspectorは脆弱性診断です。",
+    "3": "GuardDutyは脅威検知です。"
+   },
+   "lens": [
+    10,
+    16,
+    12,
+    16
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec10-2",
+   "theme": "qd-sec10",
+   "service": "コンプライアンス",
+   "difficulty": 2,
+   "question": "コンプライアンス（法令順守）における責任分担の考え方として正しいものはどれですか。",
+   "choices": [
+    "すべてAWSが法令順守を保証する",
+    "すべて利用者が単独で行う",
+    "法令順守は不要",
+    "AWSは基盤の認証を取得し、利用者は自分の使い方が規制に合うか担保する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "AWSがすべて保証するわけではありません。",
+    "1": "AWSの認証も活用できます。",
+    "2": "法令順守は必要です。"
+   },
+   "lens": [
+    16,
+    12,
+    7,
+    35
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec10-3",
+   "theme": "qd-sec10",
+   "service": "Artifact",
+   "difficulty": 1,
+   "question": "AWS Artifactの説明として正しいものはどれですか。",
+   "choices": [
+    "AWSが取得した第三者監査レポート等を入手できる",
+    "脅威を検知する",
+    "脆弱性を診断する",
+    "証明書を発行する"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "脅威検知はGuardDutyです。",
+    "2": "脆弱性診断はInspectorです。",
+    "3": "証明書発行はACMです。"
+   },
+   "lens": [
+    24,
+    7,
+    8,
+    8
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec10-4",
+   "theme": "qd-sec10",
+   "service": "コンプライアンス",
+   "difficulty": 2,
+   "question": "監査人に「AWSが各種基準に準拠している証明」を提出する必要があります。まず参照すべきはどれですか。",
+   "choices": [
+    "Amazon Route 53",
+    "AWS Artifact",
+    "Amazon Macie",
+    "AWS WAF"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "Route 53はDNSです。",
+    "2": "MacieはS3機微データ検出です。",
+    "3": "WAFはWeb攻撃遮断です。"
+   },
+   "lens": [
+    15,
+    12,
+    12,
+    7
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec10-5",
+   "theme": "qd-sec10",
+   "service": "Artifact",
+   "difficulty": 2,
+   "question": "自社の監査対応でSOCレポートが必要です。どこから入手しますか。",
+   "choices": [
+    "Configで生成する",
+    "GuardDutyで作成する",
+    "AWS Artifactからダウンロードする",
+    "サポートに電話して郵送してもらう"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "Configは設定評価で監査レポート発行ではありません。",
+    "1": "GuardDutyは脅威検知です。",
+    "3": "郵送ではなくオンラインで入手できます。"
+   },
+   "lens": [
+    11,
+    14,
+    22,
+    16
+   ],
+   "tell": true,
+   "strong": true
+  },
+  {
+   "id": "qd-sec10-6",
+   "theme": "qd-sec10",
+   "service": "コンプライアンス",
+   "difficulty": 2,
+   "question": "「暗号化やアクセス制御の設定が規制に合っているか」の担保は主に誰の責任ですか。",
+   "choices": [
+    "AWS（基盤の認証だけで完結）",
+    "監査法人",
+    "通信事業者",
+    "利用者（自分の使い方・設定）"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "AWSの認証だけでは自社設定は担保されません。",
+    "1": "監査法人は評価者で担保主体ではありません。",
+    "2": "通信事業者は関係ありません。"
+   },
+   "lens": [
+    15,
+    4,
+    5,
+    14
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec10-7",
+   "theme": "qd-sec10",
+   "service": "Artifact",
+   "difficulty": 1,
+   "question": "AWSの監査レポートを入手できるサービスは AWS ＿＿＿＿＿＿＿＿ です。＿＿に入るのはどれですか。",
+   "choices": [
+    "Artifact",
+    "Config",
+    "Inspector",
+    "Shield"
+   ],
+   "correctIndex": 0,
+   "wrongChoiceExplanations": {
+    "1": "Configは設定評価です。",
+    "2": "Inspectorは脆弱性診断です。",
+    "3": "ShieldはDDoS対策です。"
+   },
+   "lens": [
+    8,
+    6,
+    9,
+    6
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec10-8",
+   "theme": "qd-sec10",
+   "service": "コンプライアンス",
+   "difficulty": 2,
+   "question": "コンプライアンスもまた「＿＿＿＿」で成り立ちます（AWSと利用者が分担）。＿＿＿＿に入るのはどれですか。",
+   "choices": [
+    "第三者委任",
+    "責任共有",
+    "AWS単独",
+    "利用者単独"
+   ],
+   "correctIndex": 1,
+   "wrongChoiceExplanations": {
+    "0": "第三者委任でもありません。",
+    "2": "AWS単独ではありません。",
+    "3": "利用者単独でもありません。"
+   },
+   "lens": [
+    5,
+    4,
+    5,
+    5
+   ],
+   "tell": false,
+   "strong": false
+  },
+  {
+   "id": "qd-sec10-9",
+   "theme": "qd-sec10",
+   "service": "Artifact",
+   "difficulty": 2,
+   "question": "コンプライアンス・Artifactの説明として誤っているものはどれですか。",
+   "choices": [
+    "コンプライアンスも責任共有で成り立つ",
+    "利用者は自分の設定の準拠を担保する",
+    "Artifactは脅威の挙動を検知するサービスである",
+    "Artifactは監査レポートを入手できる"
+   ],
+   "correctIndex": 2,
+   "wrongChoiceExplanations": {
+    "0": "コンプラの責任共有は正しい説明です。",
+    "1": "利用者の担保は正しい説明です。",
+    "3": "Artifact＝監査レポートは正しい説明です。"
+   },
+   "lens": [
+    18,
+    17,
+    26,
+    21
+   ],
+   "tell": true,
+   "strong": false
+  },
+  {
+   "id": "qd-sec10-10",
+   "theme": "qd-sec10",
+   "service": "コンプライアンス",
+   "difficulty": 2,
+   "question": "コンプライアンスの説明として誤っているものはどれですか。",
+   "choices": [
+    "AWSは基盤の第三者認証を取得する",
+    "利用者は自分の使い方の準拠を担保する",
+    "Artifactで証拠を入手できる",
+    "AWSがすべての法令順守を利用者に代わって保証する"
+   ],
+   "correctIndex": 3,
+   "wrongChoiceExplanations": {
+    "0": "AWSの基盤認証は正しい説明です。",
+    "1": "利用者の担保は正しい説明です。",
+    "2": "Artifactでの入手は正しい説明です。"
+   },
+   "lens": [
+    17,
+    18,
+    17,
+    25
+   ],
+   "tell": true,
+   "strong": true
+  }
+ ]
+}
