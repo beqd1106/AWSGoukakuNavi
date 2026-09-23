@@ -3,6 +3,7 @@ import Foundation
 /// 忘却曲線を意識した間隔反復のロジック（純粋関数中心でテストしやすい）。
 /// 間違えた問題は翌日、以降は正解するたびに 1日→3日→7日→14日→30日 と間隔を広げる。
 /// 不正解なら段階を0に戻し、翌日に再出題する。
+/// ヒントを使って正解した場合は「自力で解けた」とはみなさず、段階を据え置いて同じ間隔で再出題する。
 enum SpacedRepetition {
 
     /// reviewLevel に対応する次回までの日数
@@ -17,13 +18,15 @@ enum SpacedRepetition {
     /// - Parameters:
     ///   - currentLevel: 現在の復習段階
     ///   - correct: 今回正解したか
+    ///   - usedHint: ヒントを使ったか（使っていたら段階を進めない）
     ///   - now: 基準日時（テスト用に注入可能）
     /// - Returns: (次の段階, 次回復習日)
-    static func next(currentLevel: Int, correct: Bool, now: Date = .now)
+    static func next(currentLevel: Int, correct: Bool, usedHint: Bool = false, now: Date = .now)
         -> (level: Int, nextDate: Date) {
         let newLevel: Int
         if correct {
-            newLevel = min(currentLevel + 1, intervals.count - 1)
+            // ヒントつきの正解は段階を据え置き、現在の間隔でもう一度出す
+            newLevel = usedHint ? max(currentLevel, 0) : min(currentLevel + 1, intervals.count - 1)
         } else {
             newLevel = 0
         }
