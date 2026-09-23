@@ -1,9 +1,11 @@
 import Foundation
 
 /// 忘却曲線を意識した間隔反復のロジック（純粋関数中心でテストしやすい）。
-/// 間違えた問題は翌日、以降は正解するたびに 1日→3日→7日→14日→30日 と間隔を広げる。
-/// 不正解なら段階を0に戻し、翌日に再出題する。
-/// ヒントを使って正解した場合は「自力で解けた」とはみなさず、段階を据え置いて同じ間隔で再出題する。
+///
+/// - 間違えた問題は **その場で復習リストに入る**（翌日まで待たせない）。
+///   「間違えた＝すぐ復習したい」という学習者の期待に合わせ、次回復習日を現在時刻にする。
+/// - 自力で正解するたびに 1日→3日→7日→14日→30日 と間隔を広げる。
+/// - ヒントを使って正解した場合は「自力で解けた」とはみなさず、段階を据え置いて同じ間隔で再出題する。
 enum SpacedRepetition {
 
     /// reviewLevel に対応する次回までの日数
@@ -23,16 +25,20 @@ enum SpacedRepetition {
     /// - Returns: (次の段階, 次回復習日)
     static func next(currentLevel: Int, correct: Bool, usedHint: Bool = false, now: Date = .now)
         -> (level: Int, nextDate: Date) {
-        let newLevel: Int
-        if correct {
-            // ヒントつきの正解は段階を据え置き、現在の間隔でもう一度出す
-            newLevel = usedHint ? max(currentLevel, 0) : min(currentLevel + 1, intervals.count - 1)
-        } else {
-            newLevel = 0
+        // 不正解：段階を0に戻し、すぐ復習できるようにする
+        guard correct else { return (0, now) }
+
+        // ヒントつきの正解：段階は据え置き、現在の間隔でもう一度出す
+        if usedHint {
+            return (max(currentLevel, 0), date(afterDays: interval(forLevel: currentLevel), from: now))
         }
-        let days = interval(forLevel: newLevel)
-        let next = Calendar.current.date(byAdding: .day, value: days,
-                                         to: Calendar.current.startOfDay(for: now)) ?? now
-        return (newLevel, next)
+
+        let newLevel = min(currentLevel + 1, intervals.count - 1)
+        return (newLevel, date(afterDays: interval(forLevel: newLevel), from: now))
+    }
+
+    private static func date(afterDays days: Int, from now: Date) -> Date {
+        let cal = Calendar.current
+        return cal.date(byAdding: .day, value: days, to: cal.startOfDay(for: now)) ?? now
     }
 }

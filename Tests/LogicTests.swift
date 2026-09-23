@@ -12,10 +12,19 @@ final class LogicTests: XCTestCase {
     }
 
     func testSpacedRepetitionResetsOnWrong() {
-        let r = SpacedRepetition.next(currentLevel: 3, correct: false)
+        let now = Date()
+        let r = SpacedRepetition.next(currentLevel: 3, correct: false, now: now)
         XCTAssertEqual(r.level, 0)               // 間違えたら段階0へ
-        let days = SpacedRepetition.interval(forLevel: 0)
-        XCTAssertEqual(days, 1)                   // 翌日再出題
+        XCTAssertEqual(r.nextDate, now)          // その場で復習対象になる
+    }
+
+    /// 間違えた問題はその日のうちに復習リストへ出てくる（翌日まで待たされない）
+    func testWrongAnswerBecomesDueImmediately() {
+        let now = Date()
+        let r = SpacedRepetition.next(currentLevel: 0, correct: false, now: now)
+        let item = ReviewItem(questionId: "q1", nextReviewDate: r.nextDate,
+                              reviewLevel: r.level, lastResultCorrect: false)
+        XCTAssertTrue(item.isDue, "間違えた問題はすぐ復習できる状態であるべき")
     }
 
     /// ヒントを使って正解した場合は段階を進めない（自力で解けたわけではないため）
