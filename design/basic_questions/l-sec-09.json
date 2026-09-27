@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-sec-09-01",
+  "question": "不正な操作がなかったかを調査するため、まず確認すべき操作履歴はどれですか。",
+  "choices": [
+   "AWS Config",
+   "AWS CloudTrail",
+   "AWS Organizations",
+   "AWS Control Tower"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS CloudTrailは、いつ・誰が・どのAPI操作を行ったかを記録するサービスです。不正な操作がなかったかを後から調査する際の操作履歴として使います。設定の状態を追跡するAWS Configとは、記録する対象が『操作』か『状態』かで区別されます。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Configはリソースの設定変更を追跡するサービスです。",
+   "2": "AWS Organizationsは複数アカウントを統括するサービスです。",
+   "3": "AWS Control Towerは複数アカウント環境を自動構築するサービスです。"
+  },
+  "domain": "security",
+  "service": "AWS CloudTrail",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS CloudTrail"
+  ],
+  "beginnerNote": "『誰が・いつ・何をしたか』を記録するのは何かを考えましょう。",
+  "basis": "レッスン本文『AWS CloudTrailは「いつ・誰が・どのAPIを呼んだか」を記録します』"
+ },
+ {
+  "id": "b-sec-09-02",
+  "question": "「S3の暗号化必須」のようなルールへの準拠を継続チェックしたいときに使うのはどれですか。",
+  "choices": [
+   "AWS CloudTrail",
+   "AWS Organizations",
+   "AWS Config",
+   "Amazon Inspector"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Configはリソースの設定変更を継続的に記録し、あらかじめ決めたルールに準拠しているかを評価するサービスです。『S3は暗号化必須』のような設定基準からのズレを検知したいときに使います。誰が操作したかを記録するCloudTrailとは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "AWS CloudTrailはAPI操作の履歴を記録するサービスです。",
+   "1": "AWS Organizationsは複数アカウントを統括するサービスです。",
+   "3": "Amazon InspectorはEC2やコンテナの脆弱性をスキャンするサービスです。"
+  },
+  "domain": "security",
+  "service": "AWS Config",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Config"
+  ],
+  "beginnerNote": "『設定が基準通りか』を継続チェックする点に注目しましょう。",
+  "basis": "レッスン本文『AWS Configはリソースの設定変更を追跡し、ルールに違反していないか継続的に評価します』"
+ },
+ {
+  "id": "b-sec-09-03",
+  "question": "AWS CloudTrailとAWS Configの違いとして正しいものはどれですか。",
+  "choices": [
+   "両方とも状態のみを記録する",
+   "Configは操作、CloudTrailは状態",
+   "両方とも操作のみを記録する",
+   "CloudTrailは操作、Configは状態"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：AWS CloudTrailは『誰が・いつ・何をしたか』という操作の履歴を記録し、AWS Configは『リソースが今どんな設定になっているか』という状態の変化とルール準拠を記録・評価します。記録する対象が操作か状態かという点が、両サービスの基本的な違いです。",
+  "wrongChoiceExplanations": {
+   "0": "操作を記録するのはCloudTrailの役割であり、Configの役割ではありません。",
+   "1": "操作を記録するのはCloudTrail、状態を記録するのはConfigです。",
+   "2": "状態を記録するのはConfigの役割であり、CloudTrailの役割ではありません。"
+  },
+  "domain": "security",
+  "service": "監査ガバナンス",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "監査ガバナンス"
+  ],
+  "beginnerNote": "『操作の記録』と『状態の記録』のどちらがどちらかを整理しましょう。",
+  "basis": "レッスン本文『CloudTrailは操作の履歴…Configは設定変更を追跡』"
+ },
+ {
+  "question": "GuardDutyやInspectorなどの検出結果を1か所にまとめて確認できるサービスはどれですか。",
+  "choices": [
+   "Amazon Route 53",
+   "AWS Organizations",
+   "AWS Artifact",
+   "AWS Security Hub"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「AWS Security Hub」。Security Hubは、GuardDuty・Inspector・Macieなどのセキュリティサービスが出した検出結果を1か所に集めて確認でき、ベストプラクティスに沿っているかのチェックも行える。Organizationsは複数アカウントの管理、Artifactは監査レポートの入手、Route 53はDNSのサービスである。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon Route 53はドメイン名を管理するDNSサービスである。",
+   "1": "AWS Organizationsは複数のアカウントを束ねて管理するサービスである。",
+   "2": "AWS ArtifactはAWSの監査レポートなどを入手するサービスである。"
+  },
+  "beginnerNote": "セキュリティの結果を集める「ハブ（中心）」を考える。",
+  "service": "AWS Security Hub",
+  "tags": [
+   "基礎",
+   "AWS Security Hub"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-sec-09-04",
+  "domain": "security"
+ },
+ {
+  "id": "b-sec-09-05",
+  "question": "SCP（サービスコントロールポリシー）が決めるものとして正しいものはどれですか。",
+  "choices": [
+   "個々のユーザーの権限だけを決める",
+   "アカウントで許される操作の上限を決める",
+   "個別のリソースにだけ許可を出す",
+   "S3バケットにだけ許可を出す"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「アカウントで許される操作の上限を決める」。SCPはAWS Organizationsの機能で、組織内のアカウント（や組織単位）に対して、使ってよい操作の上限（ガードレール）を一律に決める。SCPそのものが権限を与えるわけではなく、実際に操作できるのはIAMで許可され、かつSCPの上限内のものに限られる。",
+  "wrongChoiceExplanations": {
+   "0": "個々のユーザーに権限を与えるのはIAMポリシーの役割で、SCPはアカウント全体の上限を決める。",
+   "2": "個別のリソースへの許可はリソースベースのポリシーなどで行い、SCPの役割ではない。",
+   "3": "S3バケットへの許可はバケットポリシーなどで行い、SCPはアカウント全体を対象にする。"
+  },
+  "domain": "security",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "組織の中のアカウント全体に「枠」をはめるイメージで考える。",
+  "basis": "Opus修正（全数レビュー）"
+ },
+ {
+  "id": "b-sec-09-06",
+  "question": "Organizationsで、部門など目的別にアカウントをまとめるグループを何と呼びますか。",
+  "choices": [
+   "リージョン",
+   "アベイラビリティーゾーン",
+   "組織単位（OU）",
+   "リソースグループ"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Organizationsでは、部門やプロジェクトなど目的別にアカウントをまとめる単位を『組織単位（OU：Organizational Unit）』と呼びます。OUごとにSCPなどのルールを適用できます。地理的な区分であるリージョンやAZとは、まったく異なる分類軸です。",
+  "wrongChoiceExplanations": {
+   "0": "リージョンはAWSのデータセンターが存在する地理的なまとまりです。",
+   "1": "アベイラビリティーゾーンはリージョン内の独立した設備群です。",
+   "3": "リソースグループは条件でリソースをまとめて管理する機能です。"
+  },
+  "domain": "security",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "地理的な区分ではなく、管理上のグループ分けである点に注目しましょう。",
+  "basis": "既存問題『Organizationsで複数アカウントを…まとめるグループを何と呼びますか。正解:組織単位（OU）』"
+ },
+ {
+  "id": "b-sec-09-07",
+  "question": "ベストプラクティスに沿った複数アカウント環境を、自動でひな形から構築したい場合はどれですか。",
+  "choices": [
+   "AWS Control Tower",
+   "AWS Organizations",
+   "AWS CloudTrail",
+   "AWS Config"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS Control Towerは、セキュリティやガバナンスのベストプラクティスに沿った複数アカウント環境を、ひな形（ランディングゾーン）から自動的に構築するサービスです。既存のアカウントを束ねて統制するAWS Organizationsを土台として使う点も特徴です。",
+  "wrongChoiceExplanations": {
+   "1": "AWS Organizationsは既存の複数アカウントを束ね統制する仕組みです。",
+   "2": "AWS CloudTrailはAPI操作の履歴を記録するサービスです。",
+   "3": "AWS Configはリソースの設定状態を評価するサービスです。"
+  },
+  "domain": "security",
+  "service": "Control Tower",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Control Tower"
+  ],
+  "beginnerNote": "『既存の束ね方』ではなく『自動で新しく作る』点に注目しましょう。",
+  "basis": "レッスン本文『Control Towerは安全な複数アカウント環境をひな形から自動構築します』"
+ },
+ {
+  "id": "b-sec-09-08",
+  "question": "AWS CloudTrailの操作ログを長く保管する先として、よく使われるものはどれか。",
+  "choices": [
+   "Amazon S3のバケット",
+   "EC2インスタンスのメモリ",
+   "AWS Artifactのレポート",
+   "Amazon Route 53のゾーン"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「Amazon S3のバケット」。CloudTrailは、AWSアカウントでの操作（API呼び出し）の履歴を記録するサービスで、証跡（トレイル）を作ると操作ログをS3のバケットへ送り、長く保管できる。監査や、不正な操作がなかったかの調査にこのログを使う。メモリは電源を切ると消えるので、長期保管には向かない。",
+  "wrongChoiceExplanations": {
+   "1": "EC2のメモリは一時的な記憶領域で、ログを長く保管する場所には向かない。",
+   "2": "AWS ArtifactはAWSの監査レポートを入手する場所で、利用者のログの保管先ではない。",
+   "3": "Route 53のゾーンはドメイン名の設定を管理するもので、ログの保管先ではない。"
+  },
+  "domain": "security",
+  "service": "AWS CloudTrail",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS CloudTrail"
+  ],
+  "beginnerNote": "大量のファイルを安く長く保存できるストレージを思い浮かべる。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-sec-09-09",
+  "question": "監査に必要な証拠の収集を自動化し、監査準備を支援するのはどれですか。",
+  "choices": [
+   "AWS CloudTrail",
+   "AWS Audit Manager",
+   "AWS Organizations",
+   "AWS Artifact"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS Audit Managerは、監査に必要な証拠（ログや設定情報など）の収集を自動化し、監査の準備を支援するサービスです。記録そのものを行うCloudTrailやConfigとは異なり、それらの情報を監査対応向けにまとめる役割を担います。",
+  "wrongChoiceExplanations": {
+   "0": "AWS CloudTrailはAPI操作の履歴そのものを記録するサービスです。",
+   "2": "AWS Organizationsは複数アカウントを統括するサービスです。",
+   "3": "AWS ArtifactはAWS自身の第三者監査レポートを入手するサービスです。"
+  },
+  "domain": "security",
+  "service": "Audit Manager",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Audit Manager"
+  ],
+  "beginnerNote": "記録そのものではなく『証拠のとりまとめ』を助ける点に注目しましょう。",
+  "basis": "既存問題『コンプライアンス対応に必要な証拠の収集を自動化し、監査準備を支援するサービス…正解:AWS Audit Manager』"
+ },
+ {
+  "id": "b-sec-09-10",
+  "question": "組織全体でタグの命名やキーの付け方を統一したい場合に使う仕組みはどれですか。",
+  "choices": [
+   "タグポリシー",
+   "SCP",
+   "IAMポリシー",
+   "バケットポリシー"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS Organizationsのタグポリシーは、組織全体でタグのキーや値の命名ルールを統一するための仕組みです。操作の上限を定めるSCPとは異なり、リソースの分類や管理を目的としたルールである点が特徴です。",
+  "wrongChoiceExplanations": {
+   "1": "SCPは操作の可否そのものを制限する仕組みで、タグの命名規則は扱いません。",
+   "2": "IAMポリシーは個々のユーザーやロールへの権限付与を扱う仕組みです。",
+   "3": "バケットポリシーはS3バケットへのアクセス制御を扱う仕組みです。"
+  },
+  "domain": "security",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "制限するのが『操作』か『タグの付け方』かを区別しましょう。",
+  "basis": "既存問題『組織全体でタグ付けのルール（命名やキーの標準化）を強制したい。使うのはどれですか。正解:タグポリシー』"
+ }
+]

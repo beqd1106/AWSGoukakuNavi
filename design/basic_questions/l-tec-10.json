@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-10-01",
+  "question": "AWSリソースのメトリクスやログを収集し、しきい値超過を検知して通知する監視サービスはどれですか。",
+  "choices": [
+   "AWS CloudTrail",
+   "Amazon CloudWatch",
+   "AWS Config",
+   "AWS Trusted Advisor"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論はAmazon CloudWatchです。CPU使用率などのメトリクスやログを収集し、しきい値を超えるとアラームで通知する、サービスの状態を測る計器の役割を果たします。CloudTrailはAPI操作の履歴記録が目的で、役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "AWS CloudTrailはAPI呼び出しなど操作の履歴を記録するサービスです。",
+   "2": "AWS Configはリソースの構成変更を記録・評価するサービスです。",
+   "3": "AWS Trusted Advisorはコストやセキュリティの改善点を助言するサービスです。"
+  },
+  "domain": "technology",
+  "service": "CloudWatch",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CloudWatch"
+  ],
+  "beginnerNote": "システムの状態を数値やログで測り、異常を知らせる「計器」をイメージしましょう。",
+  "basis": "レッスン本文『CloudWatchはメトリクスやログを収集し、しきい値を超えたらアラームで通知します』"
+ },
+ {
+  "id": "b-tec-10-02",
+  "question": "インフラの構成をテンプレート（コード）で記述し、同じ環境を繰り返し自動で構築できるサービスはどれですか。",
+  "choices": [
+   "AWS CloudFormation",
+   "AWS X-Ray",
+   "AWS Systems Manager",
+   "AWS Service Catalog"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論はAWS CloudFormationです。インフラの構成をテンプレートというコードで記述し、検証環境や本番環境など同じ構成を何度でも正確に自動構築できます。手作業によるミスを防ぎ、再現性を高めるIaCの中心的サービスです。",
+  "wrongChoiceExplanations": {
+   "1": "AWS X-Rayはアプリ内部の処理を追跡し可視化するサービスです。",
+   "2": "AWS Systems Managerは多数のサーバーへの運用操作をまとめて実行するサービスです。",
+   "3": "AWS Service Catalogは承認済みの構成をカタログ化し、利用者に展開させるサービスです。"
+  },
+  "domain": "technology",
+  "service": "CloudFormation",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CloudFormation"
+  ],
+  "beginnerNote": "同じ構成の環境を、手作業ではなくコードから何度も作れる仕組みを考えましょう。",
+  "basis": "レッスン本文『CloudFormationはインフラ構成をテンプレート（コード）で定義し、同じ環境を何度でも自動で作れる』"
+ },
+ {
+  "id": "b-tec-10-03",
+  "question": "多数のEC2サーバーへ、OSパッチの適用や設定変更をまとめて実行できるサービスはどれですか。",
+  "choices": [
+   "AWS Systems Manager",
+   "AWS Trusted Advisor",
+   "AWS X-Ray",
+   "Amazon CloudWatch"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論はAWS Systems Managerです。多数のEC2サーバーに対して、OSパッチの適用や設定変更、コマンド実行などの運用作業を一括で自動実行できます。個々のサーバーへ手作業で対応する手間を減らします。",
+  "wrongChoiceExplanations": {
+   "1": "AWS Trusted Advisorはコストやセキュリティなどの改善点を助言するサービスです。",
+   "2": "AWS X-Rayはアプリ内部の処理を追跡し可視化するサービスです。",
+   "3": "Amazon CloudWatchはメトリクスやログを収集し監視するサービスです。"
+  },
+  "domain": "technology",
+  "service": "Systems Manager",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Systems Manager"
+  ],
+  "beginnerNote": "たくさんのサーバーへの作業を、1台ずつ手作業でやらずにまとめて行う方法を考えましょう。",
+  "basis": "レッスン本文『Systems Managerは多数のサーバーへのパッチ適用や設定をまとめて実行』"
+ },
+ {
+  "id": "b-tec-10-04",
+  "question": "アプリケーション内部の処理の流れを追跡し、遅い箇所を可視化できるサービスはどれですか。",
+  "choices": [
+   "Amazon CloudWatch",
+   "AWS CloudFormation",
+   "AWS Systems Manager",
+   "AWS X-Ray"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論はAWS X-Rayです。リクエストが複数のサービスをまたいで処理される様子を追跡し、どこで時間がかかっているかを可視化できます。全体のメトリクスを集めるCloudWatchとは異なり、個々の処理経路の分析に向きます。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon CloudWatchはメトリクスやログを収集し監視するサービスです。",
+   "1": "AWS CloudFormationはインフラ構成をコードで自動構築するサービスです。",
+   "2": "AWS Systems Managerは多数のサーバーへの運用操作をまとめて実行するサービスです。"
+  },
+  "domain": "technology",
+  "service": "X-Ray",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "X-Ray"
+  ],
+  "beginnerNote": "処理がどこで詰まっているかを、経路をたどって調べる仕組みを考えましょう。",
+  "basis": "レッスン本文『X-Rayはアプリ内部の処理を追跡し、遅い箇所を可視化します』"
+ },
+ {
+  "id": "b-tec-10-05",
+  "question": "「IaC」という略語が指すものとして正しいものはどれですか。",
+  "choices": [
+   "Infrastructure as a Cloud",
+   "Infrastructure as Code",
+   "Internet as a Concept",
+   "Integration as a Component"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論はInfrastructure as Codeです。インフラの構成を人手ではなくコードとして記述し、自動的に構築・管理する考え方を指します。CloudFormationはこの考え方を実現する代表的なAWSサービスです。",
+  "wrongChoiceExplanations": {
+   "0": "Infrastructure as a Cloudという名称の略語は存在しません。",
+   "2": "Internet as a Conceptという名称の略語は存在しません。",
+   "3": "Integration as a Componentという名称の略語は存在しません。"
+  },
+  "domain": "technology",
+  "service": "監視・自動化",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "監視・自動化"
+  ],
+  "beginnerNote": "インフラをどうやって定義するか、という考え方の英語表現を考えましょう。",
+  "basis": "レッスン本文『IaC＝Infrastructure as Code』"
+ },
+ {
+  "id": "b-tec-10-06",
+  "question": "CPU使用率など、時系列で収集される測定データを何と呼びますか。",
+  "choices": [
+   "テンプレート",
+   "アラーム",
+   "メトリクス",
+   "スナップショット"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論はメトリクスです。CPU使用率や通信量など、時間の経過とともに収集される数値の測定データを指します。CloudWatchはこのメトリクスを集めて監視し、しきい値超過時にアラームという別の仕組みで通知します。",
+  "wrongChoiceExplanations": {
+   "0": "テンプレートはCloudFormationなどでインフラ構成を記述するコードのファイルです。",
+   "1": "アラームはしきい値を超えたときに通知や動作を行う仕組みです。",
+   "3": "スナップショットはある時点のデータやディスクの状態を保存したものです。"
+  },
+  "domain": "technology",
+  "service": "CloudWatch",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CloudWatch"
+  ],
+  "beginnerNote": "時間の経過とともに記録されていく、数値の測定データをイメージしましょう。",
+  "basis": "レッスン本文『CloudWatchはメトリクス（CPU使用率など）やログを収集』"
+ },
+ {
+  "id": "b-tec-10-07",
+  "question": "リクエストが複数のサービスを経由する処理の流れを、追跡して可視化することを何と呼びますか。",
+  "choices": [
+   "トレーシング",
+   "モニタリング",
+   "プロビジョニング",
+   "オーケストレーション"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論はトレーシングです。リクエストが複数のサービスをまたいで処理される経路をたどり、どこで時間がかかっているかを可視化することを指します。X-Rayはこのトレーシングを行う代表的なAWSサービスです。モニタリングは状態を継続的に観測する、より広い意味の言葉です。",
+  "wrongChoiceExplanations": {
+   "1": "モニタリングはシステムの状態を継続的に観測することを指す、より広い意味の言葉です。",
+   "2": "プロビジョニングは必要なリソースを準備・割り当てることを指します。",
+   "3": "オーケストレーションは複数の処理や構成要素をまとめて自動で連携・制御することを指します。"
+  },
+  "domain": "technology",
+  "service": "X-Ray",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "X-Ray"
+  ],
+  "beginnerNote": "1件のリクエストがどのサービスを通って処理されたか、経路をたどる作業をイメージしましょう。",
+  "basis": "レッスン本文『X-Rayはアプリ内部の処理を追跡し、遅い箇所を可視化します』（トレーシングという一般的なIT用語知識）"
+ },
+ {
+  "id": "b-tec-10-08",
+  "question": "OSやソフトウェアの不具合を修正するために適用する更新プログラムを何と呼びますか。",
+  "choices": [
+   "テンプレート",
+   "スナップショット",
+   "メトリクス",
+   "パッチ"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論はパッチです。OSやソフトウェアの不具合を修正したり、セキュリティ上の弱点をふさいだりするために適用する更新プログラムを指します。Systems Managerは多数のサーバーへこのパッチ適用を一括で自動実行できます。",
+  "wrongChoiceExplanations": {
+   "0": "テンプレートはCloudFormationなどでインフラ構成を記述するコードのファイルです。",
+   "1": "スナップショットはある時点のデータやディスクの状態を保存したものです。",
+   "2": "メトリクスは時系列で収集される数値の測定データです。"
+  },
+  "domain": "technology",
+  "service": "Systems Manager",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Systems Manager"
+  ],
+  "beginnerNote": "ソフトウェアの不具合を直すために、あとから当てる修正プログラムをイメージしましょう。",
+  "basis": "レッスン本文『Systems Managerは多数のサーバーへのパッチ適用や設定をまとめて実行』"
+ },
+ {
+  "id": "b-tec-10-09",
+  "question": "CloudWatchで、メトリクスがしきい値を超えたときに通知や動作を行う仕組みを何と呼びますか。",
+  "choices": [
+   "ダッシュボード",
+   "ログ グループ",
+   "アラーム",
+   "トレーシング"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論はアラームです。CloudWatchが収集したメトリクスがしきい値を超えたときに、通知メールの送信やAuto Scalingのトリガーなど、あらかじめ決めた動作を実行する仕組みを指します。ダッシュボードは複数の情報を1画面にまとめて表示するための機能です。",
+  "wrongChoiceExplanations": {
+   "0": "ダッシュボードは複数のメトリクスやログを1つの画面にまとめて表示する機能です。",
+   "1": "ログ グループはCloudWatch Logsでログを整理して保存する単位です。",
+   "3": "トレーシングは複数サービスをまたぐ処理経路を追跡することです。"
+  },
+  "domain": "technology",
+  "service": "CloudWatch",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CloudWatch"
+  ],
+  "beginnerNote": "数値が一定の基準を超えたときに、何かを知らせたり動かしたりする仕組みを考えましょう。",
+  "basis": "レッスン本文『しきい値を超えたらアラームで通知します』"
+ },
+ {
+  "id": "b-tec-10-10",
+  "question": "CloudFormationで、構築したいインフラの構成を記述したコードのファイルを何と呼びますか。",
+  "choices": [
+   "スナップショット",
+   "テンプレート",
+   "メトリクス",
+   "パッチ"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論はテンプレートです。CloudFormationで構築したいインフラの構成をコードとして記述したファイルを指し、これを読み込むことで同じ環境を何度でも正確に自動構築できます。スナップショットはある時点のデータの状態を保存したもので、意味が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "スナップショットはある時点のデータやディスクの状態を保存したものです。",
+   "2": "メトリクスは時系列で収集される数値の測定データです。",
+   "3": "パッチはソフトウェアの不具合を修正するための更新プログラムです。"
+  },
+  "domain": "technology",
+  "service": "CloudFormation",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CloudFormation"
+  ],
+  "beginnerNote": "インフラの設計図をコードとして書いたファイルをイメージしましょう。",
+  "basis": "レッスン本文『CloudFormationはインフラ構成をテンプレート（コード）で定義』"
+ }
+]

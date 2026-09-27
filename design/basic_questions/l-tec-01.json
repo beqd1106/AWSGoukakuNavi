@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-01-01",
+  "question": "コードをアップロードするだけで環境構築・運用をAWSに任せられるのはどれですか。",
+  "choices": [
+   "AWS Systems Manager",
+   "AWS CloudFormation",
+   "Elastic Beanstalk",
+   "AWS Direct Connect"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Elastic Beanstalkはコードをアップロードするだけで、サーバーの構築や環境設定をAWSに任せられるサービスです。インフラの詳細を意識せずアプリを公開できる点が特徴で、テンプレートでインフラを構築するCloudFormationとは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Systems ManagerはEC2などの運用管理をまとめて行うサービスです。",
+   "1": "CloudFormationはテンプレートでインフラを構築するIaCの仕組みです。",
+   "3": "Direct Connectは専用線でオンプレとAWSを接続するサービスです。"
+  },
+  "domain": "technology",
+  "service": "Elastic Beanstalk",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Elastic Beanstalk"
+  ],
+  "beginnerNote": "「環境構築を任せる」という言葉に注目しましょう。",
+  "basis": "AWS公式のElastic Beanstalkの説明：コードのアップロードのみでデプロイと環境管理を自動化するPaaS"
+ },
+ {
+  "id": "b-tec-01-02",
+  "question": "MySQL・PostgreSQL互換で高い性能を持つ、AWSのマネージドDBはどれですか。",
+  "choices": [
+   "Amazon Redshift",
+   "Amazon Aurora",
+   "Amazon DynamoDB",
+   "Amazon Neptune"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：Amazon AuroraはMySQL・PostgreSQL互換で、標準より高い性能と可用性を持つRDSファミリーのマネージドDBです。表形式（SQL）データを扱う点はRDSと共通ですが、分析特化のRedshiftやグラフDBのNeptuneとは用途が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Redshiftは大規模データ分析向けのデータウェアハウスです。",
+   "2": "DynamoDBはキー・バリュー型のNoSQLデータベースです。",
+   "3": "Neptuneはつながり（グラフ）データに特化したDBです。"
+  },
+  "domain": "technology",
+  "service": "Amazon Aurora",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Aurora"
+  ],
+  "beginnerNote": "「互換性」と「高性能」という2つの特徴に注目しましょう。",
+  "basis": "AWS公式のAuroraの説明：MySQL/PostgreSQL互換で高性能・高可用なリレーショナルDB"
+ },
+ {
+  "id": "b-tec-01-03",
+  "question": "Amazon RDSとAmazon Redshiftの使い分けとして正しいものはどれか。",
+  "choices": [
+   "どちらもメッセージをためておくキューである",
+   "日々の業務データはRedshift、大量の集計分析はRDS",
+   "日々の業務データはRDS、大量の集計分析はRedshift",
+   "どちらもコンテンツを配信するCDNである"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「日々の業務データはRDS、大量の集計分析はRedshift」。RDSは注文や会員情報のような日々の業務データを記録・更新するリレーショナルデータベース、Redshiftは大量のデータを集計・分析するためのデータウェアハウスである。メッセージをためておくキューはSQS、コンテンツ配信のCDNはCloudFrontで、どちらでもない。",
+  "wrongChoiceExplanations": {
+   "0": "メッセージをためておくキューはAmazon SQSである。",
+   "1": "説明が逆である。日々の業務データを扱うのがRDS、大量の集計分析がRedshiftである。",
+   "3": "コンテンツを配信するCDNはAmazon CloudFrontである。"
+  },
+  "domain": "technology",
+  "service": "Amazon Redshift",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Redshift"
+  ],
+  "beginnerNote": "「記録する」ためのDBか、「集計・分析する」ための倉庫かで分ける。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-tec-01-04",
+  "question": "Amazon SQSとAmazon SNSの違いとして正しいものはどれか。",
+  "choices": [
+   "どちらもデータを集計分析するサービス",
+   "SQSは一斉に配り、SNSはためて取り出す",
+   "どちらもドメイン名を管理するサービス",
+   "SQSはためて取り出し、SNSは一斉に配る"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「SQSはためて取り出し、SNSは一斉に配る」。SQSはメッセージをキューにためておき、受け取る側が自分のペースで取り出して処理する仕組みで、アプリ同士を疎結合にする。SNSは1つのメッセージを複数の宛先へ一斉に配信する通知の仕組みである。ドメイン名の管理はRoute 53、集計分析はRedshiftなどが担う。",
+  "wrongChoiceExplanations": {
+   "0": "大量データの集計分析はAmazon Redshiftなどの役割である。",
+   "1": "説明が逆である。ためて取り出すのがSQS、一斉に配信するのがSNSである。",
+   "2": "ドメイン名を管理するのはAmazon Route 53である。"
+  },
+  "domain": "technology",
+  "service": "Amazon SQS",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon SQS"
+  ],
+  "beginnerNote": "「キュー（待ち行列）」と「通知」という言葉の違いから考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-tec-01-05",
+  "question": "複数の宛先へメールやSMSなどの通知を配信するサービスはどれですか。",
+  "choices": [
+   "Amazon SNS",
+   "Amazon SQS",
+   "Amazon Pinpoint",
+   "Amazon SES"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：Amazon SNSは1つのメッセージを複数の宛先（メール・SMS・アプリなど）へまとめて配信するpub/sub型の通知サービスです。メッセージをためておくSQSとは異なり、SNSは即座に複数の受け手へ配信する点が特徴です。",
+  "wrongChoiceExplanations": {
+   "1": "SQSはメッセージをキューにためておく仕組みです。",
+   "2": "Pinpointはマーケティング配信に特化したサービスです。",
+   "3": "SESはメール送信に特化したサービスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon SNS",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon SNS"
+  ],
+  "beginnerNote": "「複数の宛先へ一斉に」という配信の形に注目しましょう。",
+  "basis": "AWS公式のSNSの説明：複数の宛先へメッセージを配信するpub/sub型の通知サービス"
+ },
+ {
+  "id": "b-tec-01-06",
+  "question": "複数のEC2インスタンスへアクセスを振り分ける仕組みはどれですか。",
+  "choices": [
+   "AWS Auto Scaling",
+   "Elastic Load Balancing",
+   "Amazon Route 53",
+   "AWS Global Accelerator"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：Elastic Load Balancing（ELB）は複数のEC2インスタンスへアクセスを自動で振り分け、負荷を分散させる仕組みです。台数を増減させるAuto Scalingとは役割が異なり、両者を組み合わせて可用性を高めるのが基本形です。",
+  "wrongChoiceExplanations": {
+   "0": "Auto Scalingは需要に応じてインスタンス数を増減させる仕組みです。",
+   "2": "Route 53はドメイン名をIPアドレスに変換するDNSサービスです。",
+   "3": "Global Acceleratorは世界中からの接続を高速化する仕組みです。"
+  },
+  "domain": "technology",
+  "service": "Elastic Load Balancing",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Elastic Load Balancing"
+  ],
+  "beginnerNote": "「振り分ける」という言葉が示す役割を考えましょう。",
+  "basis": "AWS公式のELBの説明：複数のターゲットへトラフィックを自動分散する仕組み"
+ },
+ {
+  "id": "b-tec-01-07",
+  "question": "Amazon Route 53で登録・管理できるものとして正しいものはどれか。",
+  "choices": [
+   "ドメイン名",
+   "IAMユーザー",
+   "EC2の台数",
+   "S3の保存容量"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「ドメイン名」。Route 53はAWSのDNSサービスで、ドメイン名をIPアドレスに変換するほか、ドメイン名そのものの登録や管理もできる。IAMユーザーの管理はIAM、EC2の台数の自動調整はAuto Scaling、S3の保存はS3自体の機能で、Route 53の役割ではない。",
+  "wrongChoiceExplanations": {
+   "1": "IAMユーザーはAWS IAMで作成・管理する。",
+   "2": "EC2の台数を自動で増減させるのはAuto Scalingである。",
+   "3": "S3に保存するデータの管理はS3自体で行い、Route 53は関係しない。"
+  },
+  "domain": "technology",
+  "service": "Amazon Route 53",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Route 53"
+  ],
+  "beginnerNote": "DNSサービスが扱う「名前」が何かを考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-tec-01-08",
+  "question": "テンプレートを使いインフラをコードとして構築・管理する仕組みはどれですか。",
+  "choices": [
+   "AWS Elastic Beanstalk",
+   "AWS CodeDeploy",
+   "AWS OpsWorks",
+   "AWS CloudFormation"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：AWS CloudFormationはテンプレートに書いた内容どおりにインフラを自動構築・管理する仕組みです。コードのみでデプロイを任せるElastic Beanstalkとは異なり、インフラ構成そのものをコード化して繰り返し再現できる点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "Elastic Beanstalkはコードのアップロードのみで環境構築を任せる仕組みです。",
+   "1": "CodeDeployはビルド済みアプリを自動でデプロイするサービスです。",
+   "2": "OpsWorksは構成管理ツールを使ったサーバー管理サービスです。"
+  },
+  "domain": "technology",
+  "service": "AWS CloudFormation",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS CloudFormation"
+  ],
+  "beginnerNote": "「テンプレート通りに再現する」という点に注目しましょう。",
+  "basis": "AWS公式のCloudFormationの説明：テンプレートに基づきインフラをコードとして構築・管理する仕組み"
+ },
+ {
+  "id": "b-tec-01-09",
+  "question": "よく使うデータを高速なメモリ上に置き、応答を速くする仕組みはどれですか。",
+  "choices": [
+   "Amazon ElastiCache",
+   "Amazon DynamoDB",
+   "Amazon RDS（マネージドDB）",
+   "Amazon S3（オブジェクト保存）"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：Amazon ElastiCacheはよく使うデータをメモリ上に置き、DBへの問い合わせを減らして応答を高速化するキャッシュサービスです。ディスクベースで永続化するRDSやS3とは異なり、一時的な高速アクセス用途に使います。",
+  "wrongChoiceExplanations": {
+   "1": "DynamoDBはディスクベースで永続化するNoSQLデータベースです。",
+   "2": "RDSはディスクベースで永続化するリレーショナルDBです。",
+   "3": "S3はファイルを永続的に保存するオブジェクトストレージです。"
+  },
+  "domain": "technology",
+  "service": "Amazon ElastiCache",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon ElastiCache"
+  ],
+  "beginnerNote": "「メモリ上に置く」ことの目的を考えましょう。",
+  "basis": "AWS公式のElastiCacheの説明：インメモリでデータを保持し応答を高速化するキャッシュサービス"
+ },
+ {
+  "id": "b-tec-01-10",
+  "question": "アプリ向けのAPIを作成・公開・管理できるAWSのサービスはどれですか。",
+  "choices": [
+   "AWS Lambda",
+   "Amazon API Gateway",
+   "Amazon CloudFront（CDN）",
+   "AWS AppSync（GraphQL）"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：Amazon API Gatewayはアプリが呼び出すAPIを作成・公開・管理できるサービスです。認証やアクセス制御、Lambdaなどバックエンドとの連携をまとめて扱えます。処理自体を実行するLambdaとは役割が異なる点に注意します。",
+  "wrongChoiceExplanations": {
+   "0": "Lambdaはサーバー管理なしでコードを実行するサービスです。",
+   "2": "CloudFrontはコンテンツを高速配信するCDNです。",
+   "3": "AppSyncはGraphQL APIに特化したサービスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon API Gateway",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon API Gateway"
+  ],
+  "beginnerNote": "「APIの窓口」という役割をイメージしましょう。",
+  "basis": "AWS公式のAPI Gatewayの説明：APIの作成・公開・保護・管理を行うマネージドサービス"
+ }
+]

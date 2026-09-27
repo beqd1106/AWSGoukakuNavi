@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-bil-03-01",
+  "question": "AWSのサービスを使い始める前に、月額料金の見積もりができるツールはどれですか。",
+  "choices": [
+   "Pricing Calculator（見積り）",
+   "Budgets（予算アラート）",
+   "Cost Explorer（分析）",
+   "Cost and Usage Report（明細）"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS Pricing Calculatorは、構成を入力して事前に月額料金を見積もれるツールです。導入前に予算を組む際に使います。実際に使い始めた後の予算超過を知らせるBudgetsや、過去の実績を分析するCost Explorerとは、使うタイミングが異なります。",
+  "wrongChoiceExplanations": {
+   "1": "Budgetsは予算を決めて超過をアラート通知する、利用中に使うツールです。",
+   "2": "Cost Explorerは過去のコストをグラフで分析する、利用後に使うツールです。",
+   "3": "Cost and Usage Reportは最も詳細な利用明細を出力するレポートです。"
+  },
+  "domain": "billing",
+  "service": "Pricing Calculator",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Pricing Calculator"
+  ],
+  "beginnerNote": "『使う前』というタイミングに注目しましょう。",
+  "basis": "レッスン本文『AWS Pricing Calculatorは、構成を入力して事前に月額を見積もるツール』"
+ },
+ {
+  "id": "b-bil-03-02",
+  "question": "予算を決めておき、超過しそうなときにアラートで知らせてくれるサービスはどれですか。",
+  "choices": [
+   "Cost Explorer（分析）",
+   "Pricing Calculator（見積り）",
+   "AWS Budgets（予算アラート）",
+   "Cost and Usage Report"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Budgetsは、あらかじめ決めた予算のしきい値を超えそうなときにアラートで知らせてくれるサービスです。使いすぎを先回りして防ぐための仕組みです。過去の実績を振り返るCost Explorerとは役割が異なり、通知という点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "Cost Explorerは過去のコストをグラフで分析する、振り返り用のツールです。",
+   "1": "Pricing Calculatorは使い始める前に月額を見積もるツールです。",
+   "3": "Cost and Usage Reportは最も詳細な利用明細を出力するレポートです。"
+  },
+  "domain": "billing",
+  "service": "AWS Budgets",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Budgets"
+  ],
+  "beginnerNote": "『超えそうなときに知らせる』という先回りの動きに注目しましょう。",
+  "basis": "レッスン本文『AWS Budgetsは予算を決めて超過をアラート通知（＝先回りの管理）』"
+ },
+ {
+  "id": "b-bil-03-03",
+  "question": "過去にかかったコストの推移を、サービス別・時系列などでグラフ分析できるのはどれですか。",
+  "choices": [
+   "Cost and Usage Report",
+   "AWS Budgets（予算アラート）",
+   "Cost Explorer（分析）",
+   "Pricing Calculator（見積り）"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Cost Explorerは、過去にかかったコストをサービス別・時系列などの切り口でグラフ表示し、傾向を振り返って分析できるサービスです。予算超過を先回りで知らせるBudgetsとは対照的に、実績を後から確認する役割です。",
+  "wrongChoiceExplanations": {
+   "0": "Cost and Usage Reportは最も詳細な明細データを出力するレポートです。",
+   "1": "AWS Budgetsは予算を決めて超過をアラートで知らせるサービスです。",
+   "3": "Pricing Calculatorは使い始める前に月額を見積もるツールです。"
+  },
+  "domain": "billing",
+  "service": "Cost Explorer",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Cost Explorer"
+  ],
+  "beginnerNote": "『過去を振り返る』という点に注目しましょう。",
+  "basis": "レッスン本文『Cost Explorerは過去のコストをグラフで分析（＝振り返り）』"
+ },
+ {
+  "id": "b-bil-03-04",
+  "question": "利用明細のうち、最も詳細なレベルでコストと使用量を出力できるのはどれですか。",
+  "choices": [
+   "AWS Budgets",
+   "Pricing Calculator（見積り）",
+   "Cost Explorer（分析）",
+   "Cost and Usage Report"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：Cost and Usage Report（CUR）は、最も詳細なレベルで利用状況とコストの内訳を出力できるレポートです。詳細な分析や独自の集計を行いたいときに使います。グラフでの傾向把握を目的とするCost Explorerより粒度が細かい点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Budgetsは予算を決めて超過をアラートで知らせるサービスです。",
+   "1": "Pricing Calculatorは使い始める前に月額を見積もるツールです。",
+   "2": "Cost Explorerは過去のコストをグラフで分析する、振り返り用のツールです。"
+  },
+  "domain": "billing",
+  "service": "Cost and Usage Report",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Cost and Usage Report"
+  ],
+  "beginnerNote": "『最も詳細』という言葉に注目しましょう。",
+  "basis": "レッスン本文『Cost and Usage Report（CUR）は最も詳しい利用明細を出力』"
+ },
+ {
+  "id": "b-bil-03-05",
+  "question": "部署やプロジェクトごとに費用を分けて把握したいときに使う仕組みはどれですか。",
+  "choices": [
+   "コスト配分タグ（分類）",
+   "AWS Budgets（予算アラート）",
+   "Pricing Calculator",
+   "Cost Explorer（分析）"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：コスト配分タグは、リソースにタグを付けることで、部署やプロジェクトなど任意の単位に費用を分けて把握できる仕組みです。全体の予算管理をするBudgetsや、傾向を分析するCost Explorerとは異なり、費用を分類する役割を担います。",
+  "wrongChoiceExplanations": {
+   "1": "AWS Budgetsは予算を決めて超過をアラートで知らせるサービスです。",
+   "2": "Pricing Calculatorは使い始める前に月額を見積もるツールです。",
+   "3": "Cost Explorerは過去のコストをグラフで分析するツールです。"
+  },
+  "domain": "billing",
+  "service": "コスト配分タグ",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "コスト配分タグ"
+  ],
+  "beginnerNote": "『分けて見る』という目的に注目しましょう。",
+  "basis": "レッスン本文『コスト配分タグを付けると、部署やプロジェクト単位で費用を分けて見られます』"
+ },
+ {
+  "id": "b-bil-03-06",
+  "question": "AWS BudgetsとCost Explorerの役割の違いとして正しいものはどれですか。",
+  "choices": [
+   "両方とも過去の実績だけを分析する",
+   "Budgetsは通知、Explorerは分析",
+   "両方とも使い始める前の見積り専用である",
+   "Budgetsは分析、Explorerは通知である"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS Budgetsは予算を決めて超過を先回りでアラート通知する役割、Cost Explorerは過去のコストを振り返って分析する役割です。どちらもコスト管理のツールですが、通知（これから）と分析（すでに起きたこと）という時間軸の違いがあります。",
+  "wrongChoiceExplanations": {
+   "0": "Budgetsは先回りの通知が中心で、過去分析専用ではありません。",
+   "2": "見積り専用のツールはPricing Calculatorです。",
+   "3": "役割が入れ替わっており、実際には逆の説明です。（Budgetsが通知、Explorerが分析）"
+  },
+  "domain": "billing",
+  "service": "コスト管理ツール",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "コスト管理ツール"
+  ],
+  "beginnerNote": "『これから』と『すでに』のどちらを見る仕組みかを考えましょう。",
+  "basis": "レッスン本文『決める＝Budgets／振り返る＝Cost Explorer』"
+ },
+ {
+  "id": "b-bil-03-07",
+  "question": "普段と異なる急なコストの増加を、機械学習で自動的に検知して知らせてくれるのはどれですか。",
+  "choices": [
+   "Pricing Calculator（見積り）",
+   "Cost Anomaly Detection",
+   "コスト配分タグ（部署別に分類）",
+   "Cost and Usage Report（明細）"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS Cost Anomaly Detectionは、普段の利用パターンと異なる急なコスト増加を機械学習で自動的に検知し、アラートで知らせてくれるサービスです。あらかじめ決めた予算のしきい値で通知するBudgetsとは異なり、異常な変化そのものを検出する点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "Pricing Calculatorは使い始める前に月額を見積もるツールです。",
+   "2": "コスト配分タグは費用を部署やプロジェクト別に分類する仕組みです。",
+   "3": "Cost and Usage Reportは最も詳細な利用明細を出力するレポートです。"
+  },
+  "domain": "billing",
+  "service": "Cost Anomaly Detection",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Cost Anomaly Detection"
+  ],
+  "beginnerNote": "『しきい値ではなく、普段との違い』を検知する点がヒントです。",
+  "basis": "既存問題『普段と異なる急なコスト増加を機械学習で自動検知...正解:AWS Cost Anomaly Detection』"
+ },
+ {
+  "id": "b-bil-03-08",
+  "question": "AWS Budgetsで、通知だけでなく特定操作の制限などを自動実行できる機能はどれですか。",
+  "choices": [
+   "Cost Explorer（分析）",
+   "Pricing Calculator（見積り）",
+   "Cost and Usage Report（明細）",
+   "AWS Budgets Actions"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：AWS Budgets Actionsは、予算超過時にメール通知だけでなく、特定の操作を制限するなどのアクションを自動的に実行できる機能です。通知のみのシンプルな予算アラートより、一歩進んだ自動対応ができる点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "Cost Explorerは過去のコストをグラフで分析するツールです。",
+   "1": "Pricing Calculatorは使い始める前に月額を見積もるツールです。",
+   "2": "Cost and Usage Reportは最も詳細な利用明細を出力するレポートです。"
+  },
+  "domain": "billing",
+  "service": "AWS Budgets",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Budgets"
+  ],
+  "beginnerNote": "『通知の先、自動で何かを実行する』点に注目しましょう。",
+  "basis": "既存問題『予算超過時に、通知だけでなくアクションを自動実行できる機能はどれですか。正解:AWS Budgets Actions』"
+ },
+ {
+  "question": "AWS Cost Explorerで、過去の実績の分析に加えて確認できるものはどれですか。",
+  "choices": [
+   "今後のコストの予測",
+   "他社のAWS利用料金",
+   "サービスの障害履歴",
+   "IAMユーザーの一覧"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「今後のコストの予測」。Cost Explorerは、これまでのコストや使用量をグラフで分析できるほか、過去の傾向をもとに今後のコストの予測も確認できる。予算を決めて超えそうなときに通知するのはAWS Budgetsである。他社の料金は見られず、障害の情報やIAMユーザーの一覧は別の画面で扱う。",
+  "wrongChoiceExplanations": {
+   "1": "Cost Explorerで見られるのは自分のアカウント（組織）のコストで、他社の料金は見られない。",
+   "2": "サービスの障害の情報はAWS Healthなどで確認し、Cost Explorerでは扱わない。",
+   "3": "IAMユーザーの一覧はIAMで確認し、Cost Explorerでは扱わない。"
+  },
+  "beginnerNote": "過去の実績から、その先に何が分かるかを考える。",
+  "service": "Cost Explorer",
+  "tags": [
+   "基礎",
+   "Cost Explorer"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-bil-03-09",
+  "domain": "billing"
+ },
+ {
+  "id": "b-bil-03-10",
+  "question": "Cost and Usage ReportとPricing Calculatorの役割の違いとして正しいものはどれですか。",
+  "choices": [
+   "両方ともまったく同じ役割のツールである",
+   "CUR＝事後、Calculator＝事前",
+   "両方とも予算超過を通知するツールである",
+   "CURは見積り専用のツールであるとされる"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：Cost and Usage Report（CUR）はすでに発生した利用状況を詳細に出力する事後の明細レポート、Pricing Calculatorはこれから使う構成の月額を見積もる事前のツールです。名前や分野は似ていますが、使うタイミングと目的がまったく異なります。",
+  "wrongChoiceExplanations": {
+   "0": "CURとCalculatorは役割が異なり、同じツールではありません。",
+   "2": "予算超過の通知はAWS Budgetsの役割です。",
+   "3": "CURは見積りではなく、詳細な利用明細を出力するレポートです。"
+  },
+  "domain": "billing",
+  "service": "コスト管理ツール",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "コスト管理ツール"
+  ],
+  "beginnerNote": "『事前』と『事後』、どちらのタイミングのツールかを比べましょう。",
+  "basis": "レッスン本文『事前見積り＝Pricing Calculator』『詳細な明細=CUR』"
+ }
+]

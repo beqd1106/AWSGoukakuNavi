@@ -1,0 +1,282 @@
+[
+ {
+  "question": "S3・EBS・EFSとストレージの形式の組み合わせとして正しいものはどれですか。",
+  "choices": [
+   "S3＝ブロック、EBS＝ファイル、EFS＝オブジェクト",
+   "S3＝オブジェクト、EBS＝ブロック、EFS＝ファイル",
+   "S3＝ファイル、EBS＝オブジェクト、EFS＝ブロック",
+   "3つとも同じオブジェクトストレージである"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「S3＝オブジェクト、EBS＝ブロック、EFS＝ファイル」。S3はファイルをまるごと保管するオブジェクトストレージ、EBSはEC2に付ける仮想ディスクであるブロックストレージ、EFSは複数のサーバーから共有するファイルストレージである。形式が違えば得意な用途も違うので、まずこの3つの対応を押さえる。",
+  "wrongChoiceExplanations": {
+   "0": "S3はオブジェクト、EBSはブロック、EFSはファイルで、この組み合わせは誤りである。",
+   "2": "S3はオブジェクト、EBSはブロック、EFSはファイルで、この組み合わせも誤りである。",
+   "3": "3つは形式が異なり、同じオブジェクトストレージではない。"
+  },
+  "beginnerNote": "「EC2に付けるディスク」「共有の置き場」がそれぞれどれかから考える。",
+  "service": "ストレージ",
+  "tags": [
+   "基礎",
+   "ストレージ"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-04-01",
+  "domain": "technology"
+ },
+ {
+  "question": "複数のEC2インスタンスから同時に使える、共有のファイル置き場はどれですか。",
+  "choices": [
+   "Amazon EBS",
+   "Amazon EFS",
+   "インスタンスストア",
+   "Amazon ECR"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「Amazon EFS」。EFSは多数のEC2から同時にマウントして共有できるファイルストレージで、複数のサーバーで同じファイルを使いたいときに選ぶ。EBSは基本的に1つのEC2に接続する専用のディスク、インスタンスストアはEC2に内蔵された一時的な領域である。「共有したい＝EFS」が判断の軸になる。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon EBSは基本的に1つのEC2に接続して使う専用のディスクである。",
+   "2": "インスタンスストアはEC2に内蔵された一時的な領域で、共有の置き場ではない。",
+   "3": "Amazon ECRはコンテナイメージの保管庫で、ファイル共有の仕組みではない。"
+  },
+  "beginnerNote": "「共有」がキーワード。レッスンの「EBSとEFSの違い」を思い出す。",
+  "service": "EFS",
+  "tags": [
+   "基礎",
+   "EFS"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-04-02",
+  "domain": "technology"
+ },
+ {
+  "id": "b-tec-04-03",
+  "question": "保存期間に応じ、S3のデータを自動で安いクラスへ移す・削除する設定はどれですか。",
+  "choices": [
+   "バージョニング",
+   "ライフサイクルポリシー",
+   "Object Lock",
+   "レプリケーション"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：ライフサイクルポリシーは、経過日数などの条件に応じてS3のオブジェクトを自動で安いストレージクラスへ移動したり削除したりする設定です。過去の状態を残すバージョニングとは異なり、コスト最適化を自動化する仕組みです。",
+  "wrongChoiceExplanations": {
+   "0": "バージョニングはオブジェクトの過去の状態を保持する機能です。",
+   "2": "Object Lockは一定期間の削除・上書きを禁止するWORM機能です。",
+   "3": "レプリケーションは別リージョン等へオブジェクトを自動複製する機能です。"
+  },
+  "domain": "technology",
+  "service": "S3ライフサイクルポリシー",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "S3ライフサイクルポリシー"
+  ],
+  "beginnerNote": "「時間が経ったら自動で」という条件付けに注目しましょう。",
+  "basis": "AWS公式のS3ライフサイクルの説明：条件に応じ自動でクラス移行・削除するルール"
+ },
+ {
+  "id": "b-tec-04-04",
+  "question": "EC2・EBS・RDSなど複数サービスのバックアップを一元管理できるのはどれですか。",
+  "choices": [
+   "AWS Storage Gateway",
+   "AWS DataSync",
+   "AWS Backup",
+   "AWS Snowball Edge"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Backupは複数のAWSサービス（EC2・EBS・RDSなど）のバックアップ設定・実行・保存を一元管理できるサービスです。オンプレとS3をつなぐStorage Gatewayや、データ転送用のDataSyncとは目的が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Storage Gatewayはオンプレとクラウドをつなぐ橋渡しの仕組みです。",
+   "1": "DataSyncは大量データを高速にAWSへ転送・同期するサービスです。",
+   "3": "Snowball Edgeは物理デバイスで大量データを輸送するサービスです。"
+  },
+  "domain": "technology",
+  "service": "AWS Backup",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Backup"
+  ],
+  "beginnerNote": "「複数サービスをまとめて」管理できる点に注目しましょう。",
+  "basis": "AWS公式のAWS Backupの説明：複数のAWSサービスのバックアップを一元管理するサービス"
+ },
+ {
+  "id": "b-tec-04-05",
+  "question": "高性能計算（HPC）向けに設計された、高速な並列ファイルシステムはどれですか。",
+  "choices": [
+   "FSx for Windows File Server",
+   "Amazon EFS（複数から共有）",
+   "Amazon EBS（1台専用ディスク）",
+   "Amazon FSx for Lustre"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：Amazon FSx for Lustreは高性能計算（HPC）や機械学習など、高速な処理向けに設計された並列ファイルシステムです。Windows向け共有ファイルサーバーのFSx for Windows File Serverとは対象OS・用途が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "FSx for Windows File ServerはWindows向けの共有ファイルサーバーです。",
+   "1": "EFSは複数のEC2から共有できる汎用のファイルストレージです。",
+   "2": "EBSはEC2に接続する1台専用の仮想ディスクです。"
+  },
+  "domain": "technology",
+  "service": "Amazon FSx for Lustre",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon FSx for Lustre"
+  ],
+  "beginnerNote": "「高速な計算処理向け」という用途を考えましょう。",
+  "basis": "AWS公式のFSx for Lustreの説明：HPCや機械学習向けの高性能な並列ファイルシステム"
+ },
+ {
+  "id": "b-tec-04-06",
+  "question": "EBSボリュームの特徴として正しいものはどれですか。",
+  "choices": [
+   "複数のEC2から常に同時共有される",
+   "世界中のどのリージョンからも同時に接続し放題である",
+   "特定のアベイラビリティーゾーン内でのみ使用できる",
+   "容量無制限のオブジェクトストレージである"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：EBSボリュームは特定のアベイラビリティーゾーン（AZ）内でのみ使用できるという特徴があります。別AZのEC2に付け替えることはできず、移動するにはスナップショット経由での複製が必要です。この点がAZをまたいで使えるS3などと異なります。",
+  "wrongChoiceExplanations": {
+   "0": "複数から同時共有できるのはEFSなどのファイルストレージです。",
+   "1": "世界中から同時接続できるのはRoute 53等の一部サービスの話です。",
+   "3": "容量無制限に近いオブジェクトストレージはAmazon S3です。"
+  },
+  "domain": "technology",
+  "service": "Amazon EBS",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon EBS"
+  ],
+  "beginnerNote": "「同じAZ内でしか使えない」という制約を考えましょう。",
+  "basis": "AWS公式のEBSの説明：EBSボリュームは特定のAZ内でのみ使用可能"
+ },
+ {
+  "question": "ネットワークで送るには大きすぎるデータを、物理的な機器で運んでAWSへ移す仕組みはどれですか。",
+  "choices": [
+   "AWS Snowファミリー",
+   "AWS DataSync",
+   "Amazon CloudFront",
+   "AWS Site-to-Site VPN"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「AWS Snowファミリー」。Snowファミリーは、データを入れた専用の物理デバイスを輸送してAWSへ取り込む仕組みで、回線で送ると時間がかかりすぎる巨大なデータの移行に使う。DataSyncはネットワーク経由で大量データを高速に転送するサービスで、回線で間に合うならこちらを使う。",
+  "wrongChoiceExplanations": {
+   "1": "AWS DataSyncはネットワーク経由で大量データを高速に転送するサービスである。",
+   "2": "Amazon CloudFrontはコンテンツを利用者の近くから配信するCDNである。",
+   "3": "Site-to-Site VPNは社内とAWSを暗号化した通信でつなぐ接続手段である。"
+  },
+  "beginnerNote": "「物理輸送が要るほど巨大」というレッスンの言葉を思い出す。",
+  "service": "Snowファミリー",
+  "tags": [
+   "基礎",
+   "Snowファミリー"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-04-07",
+  "domain": "technology"
+ },
+ {
+  "question": "社内のシステムとS3などのAWSのストレージをつなぐ、橋渡しの役割のサービスはどれですか。",
+  "choices": [
+   "AWS Storage Gateway",
+   "Amazon S3 Glacier",
+   "Amazon EFS",
+   "AWS Snowファミリー"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「AWS Storage Gateway」。Storage Gatewayは、社内（オンプレミス）のシステムから、S3などのAWSのストレージを使えるようにする橋渡しのサービスである。Glacierは長期保管向けのS3のクラス、EFSはAWS上の共有ファイルストレージ、Snowファミリーは物理的な機器で大量のデータを運ぶ仕組みである。",
+  "wrongChoiceExplanations": {
+   "1": "Amazon S3 Glacierは、めったに使わないデータを長期保管するためのS3のクラスである。",
+   "2": "Amazon EFSはAWS上で複数のEC2から共有するファイルストレージである。",
+   "3": "AWS Snowファミリーは物理デバイスでデータを運ぶ仕組みで、常時の橋渡しではない。"
+  },
+  "beginnerNote": "社内の仕組みとAWSの間の「出入り口」になるものを考える。",
+  "service": "Storage Gateway",
+  "tags": [
+   "基礎",
+   "Storage Gateway"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-04-08",
+  "domain": "technology"
+ },
+ {
+  "id": "b-tec-04-09",
+  "question": "EBSスナップショットの保存先として正しいものはどれですか。",
+  "choices": [
+   "Amazon EFS",
+   "インスタンスストア",
+   "Amazon FSx",
+   "Amazon S3"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：EBSスナップショットはAmazon S3に保存されます。EBSボリュームの内容をある時点で複製し、耐久性の高いS3側に保管することで、別AZや別リージョンへの復元も可能になります。EFSやインスタンスストアは保存先ではありません。",
+  "wrongChoiceExplanations": {
+   "0": "EFSは複数のEC2から共有できるファイルストレージで保存先ではありません。",
+   "1": "インスタンスストアは一時的な内蔵ストレージで永続保存には使いません。",
+   "2": "FSxは共有ファイルシステムのサービスで保存先ではありません。"
+  },
+  "domain": "technology",
+  "service": "EBSスナップショット",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "EBSスナップショット"
+  ],
+  "beginnerNote": "「複製をどこに置くか」という保管場所を考えましょう。",
+  "basis": "AWS公式のEBSスナップショットの説明：スナップショットはAmazon S3に保存される"
+ },
+ {
+  "question": "大量のデータを、ネットワーク経由で高速にAWSへ転送するサービスはどれですか。",
+  "choices": [
+   "AWS DataSync",
+   "AWS Snowファミリー",
+   "AWS Storage Gateway",
+   "Amazon EBS"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「AWS DataSync」。DataSyncは、社内のストレージとAWSの間で、大量のデータをネットワーク経由で高速に転送・同期するサービスである。回線で送るには大きすぎる場合は、物理デバイスで運ぶSnowファミリーを使う。Storage Gatewayは社内からAWSのストレージを使い続けるための橋渡しで、移行のための転送とは目的が違う。",
+  "wrongChoiceExplanations": {
+   "1": "AWS Snowファミリーは物理的な機器でデータを運ぶ仕組みで、ネットワーク転送ではない。",
+   "2": "Storage Gatewayは社内からAWSのストレージを使うための橋渡しで、転送専用ではない。",
+   "3": "Amazon EBSはEC2に接続する仮想ディスクで、転送のサービスではない。"
+  },
+  "beginnerNote": "回線で送れる大きさなら、ネットワークで転送・同期するサービスを使う。",
+  "service": "DataSync",
+  "tags": [
+   "基礎",
+   "DataSync"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-04-10",
+  "domain": "technology"
+ }
+]

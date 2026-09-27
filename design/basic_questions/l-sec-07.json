@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-sec-07-01",
+  "question": "GuardDutyが不審な挙動を検知した際に生成する情報を一般に何と呼びますか。",
+  "choices": [
+   "チケット",
+   "ファインディング",
+   "スナップショット",
+   "テンプレート"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：GuardDutyは不審な挙動を検知すると「ファインディング」という検出結果の形で情報を生成します。何が・いつ・どこで起きたかをまとめた記録です。バックアップの複製を指すスナップショットや、構成のひな形を指すテンプレートとは意味が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "問い合わせや作業依頼を管理する仕組みの用語で、GuardDutyの検知結果を指す言葉ではありません。",
+   "2": "ある時点の状態を複製・保存したものを指し、検知結果を指す言葉ではありません。",
+   "3": "構成のひな形を指す言葉で、検知結果を指す言葉ではありません。"
+  },
+  "domain": "security",
+  "service": "GuardDuty",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "GuardDuty"
+  ],
+  "beginnerNote": "「検知結果」を指す専用の呼び方があります。",
+  "basis": "AWS公式のGuardDutyの説明：検知結果はファインディングとして生成される。"
+ },
+ {
+  "id": "b-sec-07-02",
+  "question": "Amazon Inspectorによる脆弱性スキャンの特徴として正しいものはどれですか。",
+  "choices": [
+   "スキャン結果は一切保存されない",
+   "1年に一度だけ手動で実行する",
+   "利用者が毎回手作業で対象を指定",
+   "脆弱性判明時に自動で再評価する"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：Amazon Inspectorは一度きりの検査ではなく、新たな脆弱性情報が判明するたびに対象を自動で継続的に再評価します。常に最新の脅威情報に基づいて弱点を洗い出せる点が特徴です。手作業での都度実行や、結果を保存しない運用とは異なる仕組みです。",
+  "wrongChoiceExplanations": {
+   "0": "スキャン結果は記録され、確認や対応に活用できます。",
+   "1": "年1回の手動実行ではなく、継続的な自動スキャンが特徴です。",
+   "2": "対象の指定を都度手作業で行う必要はなく、自動で評価されます。"
+  },
+  "domain": "security",
+  "service": "Inspector",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Inspector"
+  ],
+  "beginnerNote": "「一度きり」か「継続的」かに注目しましょう。",
+  "basis": "AWS公式のInspectorの説明：新たな脆弱性情報の判明に応じて自動的に再評価する。"
+ },
+ {
+  "id": "b-sec-07-03",
+  "question": "Amazon Macieが機微データを検出する際に主に用いている技術はどれですか。",
+  "choices": [
+   "手作業によるファイル一覧の目視確認",
+   "機械学習によるパターンの識別",
+   "ネットワーク帯域の測定",
+   "サーバーの温度監視"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：Amazon Macieは機械学習を用いて、S3内のファイルから氏名やクレジットカード番号などの機微データのパターンを自動で識別します。人手による目視確認より効率よく大量のデータを検査できます。ネットワークの帯域測定や温度監視とはまったく異なる仕組みです。",
+  "wrongChoiceExplanations": {
+   "0": "人手による目視確認ではなく、機械学習による自動検出が中心です。",
+   "2": "Macieはネットワーク帯域を測定する仕組みではありません。",
+   "3": "Macieはサーバーの温度を監視する仕組みではありません。"
+  },
+  "domain": "security",
+  "service": "Macie",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Macie"
+  ],
+  "beginnerNote": "「人手」ではなく何が判定しているかを考えましょう。",
+  "basis": "レッスン本文『Amazon MacieはS3の中から個人情報を機械学習で見つけ出します』"
+ },
+ {
+  "id": "b-sec-07-04",
+  "question": "「先週、あるセキュリティグループの設定がどう変わったか」を確認したい。使うサービスはどれか。",
+  "choices": [
+   "AWS Config",
+   "Amazon GuardDuty",
+   "Amazon Inspector",
+   "AWS Shield"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「AWS Config」。Configは、AWSリソースの設定がいつ・どう変わったかを記録し、過去の設定の状態をさかのぼって確認できる。ルールを決めて、設定がそれに合っているかを評価することもできる。GuardDutyは脅威の検知、Inspectorは脆弱性のスキャン、ShieldはDDoS攻撃からの保護で、設定の変更履歴を確認する用途ではない。",
+  "wrongChoiceExplanations": {
+   "1": "Amazon GuardDutyはログなどから不審な動きや脅威を検知するサービスである。",
+   "2": "Amazon InspectorはEC2やコンテナイメージの脆弱性をスキャンするサービスである。",
+   "3": "AWS ShieldはDDoS攻撃からシステムを守るサービスである。"
+  },
+  "domain": "security",
+  "service": "AWS Config",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Config"
+  ],
+  "beginnerNote": "「設定（コンフィグ）」の移り変わりを記録するサービスを考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-sec-07-05",
+  "question": "コスト・セキュリティなど複数の観点でベストプラクティスをチェックするサービスはどれですか。",
+  "choices": [
+   "AWS Trusted Advisor",
+   "Amazon Macie",
+   "AWS Directory Service",
+   "Amazon Cognito"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS Trusted Advisorは、コスト・セキュリティ・パフォーマンスなど複数の観点からアカウントの状態を点検し、ベストプラクティスに沿った改善提案を行うサービスです。Macieは機微データ検出、Directory ServiceはAD連携、Cognitoはアプリ利用者認証を担い、点検の対象がそれぞれ異なります。",
+  "wrongChoiceExplanations": {
+   "1": "S3内の機微データを検出するサービスで、複数観点の総合的な点検は行いません。",
+   "2": "社内ADとAWSを連携させるサービスで、複数観点の点検は行いません。",
+   "3": "アプリ利用者の認証を担うサービスで、複数観点の点検は行いません。"
+  },
+  "domain": "security",
+  "service": "Trusted Advisor",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Trusted Advisor"
+  ],
+  "beginnerNote": "「複数の観点をまとめて点検」という言葉に注目しましょう。",
+  "basis": "AWS公式のTrusted Advisorの説明：コスト・セキュリティ等の観点でベストプラクティスを点検する。"
+ },
+ {
+  "id": "b-sec-07-06",
+  "question": "S3バケットなどが意図せず外部アカウントに公開されていないかを分析するサービスはどれですか。",
+  "choices": [
+   "AWS Certificate Manager",
+   "AWS Secrets Manager",
+   "Amazon Inspector",
+   "IAM Access Analyzer"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：IAM Access Analyzerは、S3バケットなどのリソースが意図せず外部アカウントや公開範囲へ共有されていないかを分析するサービスです。想定外の公開設定を早期に見つける目的で使います。証明書管理のACM、機密情報保管のSecrets Manager、脆弱性診断のInspectorとは点検の対象が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "TLS証明書の発行・管理を行うサービスで、外部公開の分析とは異なります。",
+   "1": "DBパスワードなどの機密情報を保管するサービスで、外部公開の分析とは異なります。",
+   "2": "EC2やコンテナの脆弱性を診断するサービスで、外部公開の分析とは異なります。"
+  },
+  "domain": "security",
+  "service": "IAM Access Analyzer",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "IAM Access Analyzer"
+  ],
+  "beginnerNote": "「外部に開かれすぎていないか」を確認する仕組みを考えましょう。",
+  "basis": "AWS公式のIAM Access Analyzerの説明：意図しない外部共有・公開を分析して知らせる。"
+ },
+ {
+  "id": "b-sec-07-07",
+  "question": "ISOやSOCなど、AWSのコンプライアンス関連レポートを閲覧・ダウンロードできるサービスはどれですか。",
+  "choices": [
+   "Amazon GuardDuty",
+   "AWS WAF",
+   "AWS Artifact",
+   "Amazon Macie"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Artifactは、ISOやSOCなど第三者認証・コンプライアンス関連のレポートを閲覧・ダウンロードできるサービスです。監査対応などで自社の説明資料として活用します。GuardDutyは脅威検知、WAFはWebリクエストの遮断、Macieは機微データ検出を担い、コンプライアンス資料の提供とは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "ログを分析し不審な挙動を検知するサービスで、コンプライアンス資料の提供は行いません。",
+   "1": "悪意のあるWebリクエストを遮断するサービスで、コンプライアンス資料の提供は行いません。",
+   "3": "S3内の機微データを検出するサービスで、コンプライアンス資料の提供は行いません。"
+  },
+  "domain": "security",
+  "service": "AWS Artifact",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Artifact"
+  ],
+  "beginnerNote": "「監査資料・証明書類」を取り寄せる場所を考えましょう。",
+  "basis": "AWS公式のAWS Artifactの説明：コンプライアンスレポートを閲覧・ダウンロードできる。"
+ },
+ {
+  "id": "b-sec-07-08",
+  "question": "GuardDutyを有効にする際、監視対象のEC2などへ追加のエージェントソフトウェアは必要ですか。",
+  "choices": [
+   "必要で、事前に個別インストールする",
+   "不要で、既存ログの分析のみで機能",
+   "必要で、月ごとに手動更新する",
+   "必要だが、契約後に自動配布される"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：GuardDutyは、VPCフローログやCloudTrailなど既存のログを分析する仕組みのため、監視対象への追加のエージェントソフトウェアのインストールは不要です。有効化するだけで利用を始められます。事前の個別インストールや手動更新が必要という説明は誤りです。",
+  "wrongChoiceExplanations": {
+   "0": "GuardDutyは既存のログを分析する仕組みで、事前の個別インストールは不要です。",
+   "2": "GuardDutyの利用にエージェントの手動更新という手間は発生しません。",
+   "3": "そもそもエージェントの配布自体が必要な仕組みではありません。"
+  },
+  "domain": "security",
+  "service": "GuardDuty",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "GuardDuty"
+  ],
+  "beginnerNote": "「何もインストールしなくて良い」理由を考えましょう。",
+  "basis": "AWS公式のGuardDutyの説明：既存のログを分析するためエージェントのインストールは不要。"
+ },
+ {
+  "id": "b-sec-07-09",
+  "question": "AWS Shield（標準/Standard）の提供条件として正しいものはどれですか。",
+  "choices": [
+   "追加費用なく自動的に適用される",
+   "契約書を交わした利用者のみ適用",
+   "EC2利用者にのみ限定して適用",
+   "申請してから数週間後に適用"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS Shield（標準）は、追加費用なしですべてのAWS利用者に自動的に適用され、一般的なDDoS攻撃からアプリを保護します。特別な契約や申請の手続きは不要です。特定の利用者や特定サービスに限定される、あるいは適用まで時間がかかるという説明は誤りです。",
+  "wrongChoiceExplanations": {
+   "1": "特別な契約書がなくても、標準の保護は自動的に適用されます。",
+   "2": "EC2利用者に限定されるものではなく、幅広いリソースが対象です。",
+   "3": "申請や審査を経てから適用される仕組みではありません。"
+  },
+  "domain": "security",
+  "service": "AWS Shield",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Shield"
+  ],
+  "beginnerNote": "「自動的」「追加費用なし」という言葉に注目しましょう。",
+  "basis": "AWS公式のAWS Shieldの説明：標準保護はすべての利用者に自動的かつ無償で適用される。"
+ },
+ {
+  "id": "b-sec-07-10",
+  "question": "脅威検知系のサービスの中で、データファイルの中身自体を検査するのはどれですか。",
+  "choices": [
+   "Amazon GuardDuty",
+   "Amazon Inspector",
+   "Amazon Macie",
+   "3つとも同じ対象を検査する"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：ログから挙動を検査するGuardDuty、設定や既知の脆弱性を検査するInspectorに対し、データファイルの中身自体を検査して機微情報を見つけるのはAmazon Macieです。3つのサービスは検査する対象がそれぞれ異なり、同じ対象を検査するわけではありません。",
+  "wrongChoiceExplanations": {
+   "0": "GuardDutyはログから不審な挙動を検知するもので、データの中身そのものは検査しません。",
+   "1": "Inspectorは脆弱性や危険な設定を検査するもので、データの中身そのものは検査しません。",
+   "3": "3つのサービスは検査する対象がそれぞれ異なり、同じではありません。"
+  },
+  "domain": "security",
+  "service": "セキュリティサービス",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "セキュリティサービス"
+  ],
+  "beginnerNote": "「ログ」「設定」「データの中身」のどれを見ているかを整理しましょう。",
+  "basis": "レッスン本文：GuardDutyは挙動監視、Inspectorは脆弱性診断、Macieはデータの中身から機微情報を検出する。"
+ }
+]

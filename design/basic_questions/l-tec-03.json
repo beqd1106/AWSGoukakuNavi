@@ -1,0 +1,282 @@
+[
+ {
+  "question": "サーバーを用意せずにコードを実行できる、AWSのサーバーレスなサービスはどれですか。",
+  "choices": [
+   "Amazon EC2",
+   "AWS Lambda",
+   "Amazon EBS",
+   "Amazon ECR"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「AWS Lambda」。Lambdaはサーバーの用意や管理をせずにコードを実行でき、呼ばれたときだけ動いて使った分だけ課金される。EC2は自分で管理する仮想サーバー、EBSはEC2に付ける仮想ディスク、ECRはコンテナイメージの保管庫である。サーバーの面倒を見たくない処理＝Lambda、と押さえる。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon EC2は利用者がOSなどを管理する仮想サーバーで、サーバーレスではない。",
+   "2": "Amazon EBSはEC2に接続して使う仮想ディスクで、コードを実行するサービスではない。",
+   "3": "Amazon ECRはコンテナイメージを保管するサービスで、コードを実行するものではない。"
+  },
+  "beginnerNote": "「サーバーレス」の代表として、関数を動かすサービスを考える。",
+  "service": "Lambda",
+  "tags": [
+   "基礎",
+   "Lambda"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-01",
+  "domain": "technology"
+ },
+ {
+  "question": "AWS Lambdaの料金の考え方として正しいものはどれですか。",
+  "choices": [
+   "動いていなくても常に料金がかかる",
+   "呼ばれて動いた分だけ料金がかかる",
+   "何回呼んでもずっと無料で使える",
+   "毎月の料金が必ず定額になる"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「呼ばれて動いた分だけ料金がかかる」。Lambdaは処理が呼ばれたときだけ動き、その実行の分だけ課金されるので、常に起動しておくサーバーの費用がかからない。動いていない時間は料金がかからない点がEC2との大きな違いである。ずっと無料になったり、必ず定額になったりするわけではない。",
+  "wrongChoiceExplanations": {
+   "0": "常に料金がかかるのは起動しっぱなしのサーバーで、Lambdaは動いた分だけである。",
+   "2": "Lambdaも実行した分の料金がかかり、ずっと無料になるわけではない。",
+   "3": "Lambdaの料金は利用量に応じて変わり、必ず定額になるわけではない。"
+  },
+  "beginnerNote": "「呼ばれたときだけ動く」という特徴から料金の形を考える。",
+  "service": "Lambda",
+  "tags": [
+   "基礎",
+   "Lambda"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-02",
+  "domain": "technology"
+ },
+ {
+  "question": "「S3にファイルが置かれたら自動で処理を始める」ような使い方を何と呼びますか。",
+  "choices": [
+   "オンプレミス",
+   "イベント駆動",
+   "スケールアップ",
+   "リザーブド"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「イベント駆動」。イベント駆動は、ファイルの追加や通知などの出来事（イベント）をきっかけに処理が自動で動く仕組みで、Lambdaが得意とする使い方である。オンプレミスは自社設備で動かす形、スケールアップは1台の性能を上げること、リザーブドは長期利用で割引を受ける購入方式で、いずれも関係しない。",
+  "wrongChoiceExplanations": {
+   "0": "オンプレミスは自社設備でシステムを動かす形態のことである。",
+   "2": "スケールアップは、1台のサーバーの性能を上げて処理能力を高めることである。",
+   "3": "リザーブドは、長期利用を約束して割引を受けるEC2の購入方式である。"
+  },
+  "beginnerNote": "「出来事をきっかけに動く」ことを表す言葉を選ぶ。",
+  "service": "Lambda",
+  "tags": [
+   "基礎",
+   "Lambda"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-03",
+  "domain": "technology"
+ },
+ {
+  "question": "「コンテナ」の説明として正しいものはどれですか。",
+  "choices": [
+   "社内とAWSを結ぶ専用の通信回線",
+   "データを長期保管する最安のストレージ",
+   "アプリと動く環境を箱にまとめて動かす技術",
+   "利用者の権限をまとめて管理する仕組み"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「アプリと動く環境を箱にまとめて動かす技術」。コンテナはアプリと、それが動くのに必要なものを1つの箱にまとめ、どこでも同じように動かせるようにする技術である。AWSではECSやEKSがコンテナの実行を管理し、ECRがコンテナイメージを保管する。長期保管のストレージや専用回線、権限管理とは別物である。",
+  "wrongChoiceExplanations": {
+   "0": "社内とAWSを結ぶ専用の通信回線はAWS Direct Connectである。",
+   "1": "データを長期保管する低コストのストレージは、S3 Glacierのクラスなどである。",
+   "3": "利用者の権限をまとめて管理するのはIAMのグループやポリシーである。"
+  },
+  "beginnerNote": "荷物をまとめて運ぶ「コンテナ（箱）」のイメージで考える。",
+  "service": "コンテナ",
+  "tags": [
+   "基礎",
+   "コンテナ"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-04",
+  "domain": "technology"
+ },
+ {
+  "question": "コンテナイメージを保管しておく場所として使うAWSのサービスはどれですか。",
+  "choices": [
+   "Amazon EKS",
+   "Amazon ECS",
+   "Amazon ECR",
+   "AWS Fargate"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「Amazon ECR」。ECR（Elastic Container Registry）はコンテナイメージの保管庫で、ここに置いたイメージをECSやEKSで動かす。ECSとEKSはコンテナの実行を管理するサービス、Fargateはコンテナを動かす土台のサーバー管理をなくす仕組みである。名前が似ているので、置き場＝ECR、と役割で覚える。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon EKSはKubernetesでコンテナの実行を管理するサービスである。",
+   "1": "Amazon ECSはコンテナの実行を管理するサービスで、保管庫ではない。",
+   "3": "AWS Fargateはコンテナを動かすサーバーの管理を不要にする仕組みである。"
+  },
+  "beginnerNote": "「Registry（登録簿・保管庫）」の頭文字が入った名前を探す。",
+  "service": "コンテナ",
+  "tags": [
+   "基礎",
+   "コンテナ"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-05",
+  "domain": "technology"
+ },
+ {
+  "question": "Kubernetesを使ってコンテナを動かしたいときに選ぶAWSのサービスはどれですか。",
+  "choices": [
+   "Amazon Lightsail",
+   "Amazon ECR",
+   "AWS Lambda",
+   "Amazon EKS"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「Amazon EKS」。EKS（Elastic Kubernetes Service）は、広く使われているコンテナ管理の仕組みKubernetesをAWS上で使えるサービスである。AWS独自の方式でコンテナを管理するのはECS、コンテナイメージの保管庫はECRである。LambdaはコードをサーバーレスでAWSで動かすサービス、Lightsailは手軽な仮想サーバーである。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon Lightsailは簡単な構成の仮想サーバーなどを提供するサービスである。",
+   "1": "Amazon ECRはコンテナイメージを保管するサービスで、コンテナを動かす仕組みではない。",
+   "2": "AWS Lambdaはコードをサーバーレスで実行するサービスで、Kubernetesではない。"
+  },
+  "beginnerNote": "サービス名の「K」が何の頭文字かを考える。",
+  "service": "コンテナ",
+  "tags": [
+   "基礎",
+   "コンテナ"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-06",
+  "domain": "technology"
+ },
+ {
+  "question": "ECSやEKSで、コンテナを動かす土台のサーバー管理まで不要にする仕組みはどれですか。",
+  "choices": [
+   "AWS Direct Connect",
+   "Amazon EC2",
+   "Amazon ECR",
+   "AWS Fargate"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「AWS Fargate」。Fargateを使うと、コンテナを動かすためのサーバー（EC2）を利用者が用意・管理する必要がなくなり、コンテナの設定だけに集中できる。EC2を土台にする場合は、そのサーバーの管理が利用者に残る。ECRはイメージの保管庫、Direct Connectは専用線接続である。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Direct Connectは社内とAWSを専用線でつなぐサービスである。",
+   "1": "Amazon EC2を土台にすると、コンテナを動かすサーバーの管理は利用者に残る。",
+   "2": "Amazon ECRはコンテナイメージの保管庫で、サーバー管理をなくす仕組みではない。"
+  },
+  "beginnerNote": "レッスンの「サーバーの面倒を見たくない＝Fargate/Lambda」を思い出す。",
+  "service": "Fargate",
+  "tags": [
+   "基礎",
+   "Fargate"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-07",
+  "domain": "technology"
+ },
+ {
+  "question": "EC2と比べたときのAWS Lambdaの特徴として正しいものはどれですか。",
+  "choices": [
+   "OSやサーバーの管理を利用者がしなくてよい",
+   "OSのパッチ適用を利用者が必ず行う",
+   "常に起動しておく必要がある",
+   "使える場所がオンプレミスに限られる"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「OSやサーバーの管理を利用者がしなくてよい」。EC2ではOSのパッチ適用やサーバーの管理が利用者の責任になるが、Lambdaはサーバーの用意・管理をAWSに任せられ、利用者はコードに集中できる。呼ばれたときだけ動くので、常に起動しておく必要もない。運用の手間の差で比べると分かりやすい。",
+  "wrongChoiceExplanations": {
+   "1": "OSのパッチ適用を利用者が行うのはEC2の場合で、Lambdaでは不要である。",
+   "2": "Lambdaは呼ばれたときだけ動くので、常に起動しておく必要はない。",
+   "3": "LambdaはAWSのサービスで、オンプレミスに限られるものではない。"
+  },
+  "beginnerNote": "「サーバーレス」という言葉が何をなくすのかを考える。",
+  "service": "Lambda",
+  "tags": [
+   "基礎",
+   "Lambda"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-08",
+  "domain": "technology"
+ },
+ {
+  "question": "Amazon ECSの役割として正しいものはどれですか。",
+  "choices": [
+   "コンテナの実行を管理する",
+   "コンテナイメージを保管する",
+   "ドメイン名を管理する",
+   "データを集計・分析する"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「コンテナの実行を管理する」。ECS（Elastic Container Service）は、AWSが提供するコンテナの実行管理のサービスで、どのコンテナをいくつ動かすかなどを管理する。イメージの保管はECR、ドメイン名の管理はRoute 53、集計・分析はRedshiftなどの役割である。ECS＝動かす、ECR＝置く、で区別する。",
+  "wrongChoiceExplanations": {
+   "1": "コンテナイメージを保管するのはAmazon ECRである。",
+   "2": "ドメイン名を管理するのはAmazon Route 53である。",
+   "3": "データの集計・分析はAmazon Redshiftなどの役割である。"
+  },
+  "beginnerNote": "「Service」と「Registry」のどちらが付いているかに注目する。",
+  "service": "コンテナ",
+  "tags": [
+   "基礎",
+   "コンテナ"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-09",
+  "domain": "technology"
+ },
+ {
+  "question": "サーバーの面倒を見たくない場合の選び方として、レッスンの説明に合うものはどれですか。",
+  "choices": [
+   "LambdaやFargateを選ぶ",
+   "EC2を選びOSを自分で管理する",
+   "オンプレミスに機器を増やす",
+   "Direct Connectを契約する"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「LambdaやFargateを選ぶ」。レッスンでは「サーバーの面倒を見たくない＝Fargate/Lambda」とまとめている。Lambdaはコードを、Fargateはコンテナを、サーバーの用意・管理なしで動かせる。EC2はOSから利用者が管理する選択で、オンプレミスや専用線の契約はサーバー管理を減らす方法ではない。",
+  "wrongChoiceExplanations": {
+   "1": "EC2を選ぶと、OSのパッチ適用などのサーバー管理は利用者の責任になる。",
+   "2": "オンプレミスに機器を増やすと、管理するサーバーはむしろ増える。",
+   "3": "Direct Connectは専用線の接続サービスで、サーバー管理を減らすものではない。"
+  },
+  "beginnerNote": "運用の手間を減らす2つのサービス名を思い出す。",
+  "service": "サーバーレス",
+  "tags": [
+   "基礎",
+   "サーバーレス"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-03-10",
+  "domain": "technology"
+ }
+]

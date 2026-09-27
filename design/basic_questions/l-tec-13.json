@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-13-01",
+  "question": "Amazon SageMakerとAmazon Bedrockの使い分けとして正しいものはどれか。",
+  "choices": [
+   "自作ならBedrock、既存の基盤モデルならSageMaker",
+   "自作ならSageMaker、既存の基盤モデルならBedrock",
+   "どちらも画像認識専用のサービスである",
+   "どちらも文字を音声にするサービスである"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「自作ならSageMaker、既存の基盤モデルならBedrock」。SageMakerは機械学習モデルを自分で構築・学習・デプロイする土台、Bedrockはさまざまな基盤モデル（生成AI）をAPIで手軽に使うサービスである。画像認識はRekognition、文字の読み上げはPollyが担う。作るのか、使うのかで選び分ける。",
+  "wrongChoiceExplanations": {
+   "0": "説明が逆である。モデルを自作する土台がSageMaker、基盤モデルを使うのがBedrockである。",
+   "2": "画像や動画の認識を行うのはAmazon Rekognitionである。",
+   "3": "文字（テキスト）を音声に変換するのはAmazon Pollyである。"
+  },
+  "domain": "technology",
+  "service": "SageMaker",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "SageMaker"
+  ],
+  "beginnerNote": "モデルを「作る」のか「使う」のかで考える。",
+  "basis": "レッスン本文『自前でモデルを作りたい＝SageMaker』『生成AIの入り口＝Bedrock』"
+ },
+ {
+  "id": "b-tec-13-02",
+  "question": "生成AIの「基盤モデル」の説明として正しいものはどれか。",
+  "choices": [
+   "画像の中の文字だけを読み取る専用の小さな仕組み",
+   "大量のデータで学習し、幅広い用途に使える大規模なモデル",
+   "利用者が一から毎回学習させて作る表計算のひな形",
+   "AWSの料金を計算するための見積もり用の仕組み"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「大量のデータで学習し、幅広い用途に使える大規模なモデル」。基盤モデルは、事前に大量のデータで学習済みで、文章生成や要約、チャットなど幅広い用途に使えるモデルである。Amazon Bedrockでは、こうした複数の基盤モデルをAPIで呼び出して使える。文字の読み取りだけを行うのはTextractのような用途特化のサービスである。",
+  "wrongChoiceExplanations": {
+   "0": "文書画像から文字を読み取るのはAmazon Textractのような用途特化のサービスである。",
+   "2": "基盤モデルは事前に学習済みで、利用者が一から毎回学習させるものではない。",
+   "3": "料金の見積もりはAWS Pricing Calculatorの役割で、基盤モデルとは関係ない。"
+  },
+  "domain": "technology",
+  "service": "Bedrock",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Bedrock"
+  ],
+  "beginnerNote": "「土台（基盤）」になるほど、何にでも使える点に注目する。",
+  "basis": "AWS公式：基盤モデル（FM）は大量のデータで事前学習された大規模モデル"
+ },
+ {
+  "id": "b-tec-13-03",
+  "question": "Amazon TranscribeとAmazon Pollyの変換の向きとして正しいものはどれか。",
+  "choices": [
+   "Transcribeは文字→音声、Pollyは音声→文字",
+   "Transcribeは音声→文字、Pollyは文字→音声",
+   "どちらも英語を日本語に翻訳する",
+   "どちらも画像から文字を読み取る"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「Transcribeは音声→文字、Pollyは文字→音声」。Transcribeは録音などの音声を文字に起こし、Pollyは文字（テキスト）を自然な音声で読み上げる。向きが逆なので混同しやすい。翻訳はAmazon Translate、文書画像からの文字の読み取りはAmazon Textractが担う。",
+  "wrongChoiceExplanations": {
+   "0": "説明が逆である。音声を文字にするのがTranscribe、文字を音声にするのがPollyである。",
+   "2": "言語の翻訳を行うのはAmazon Translateである。",
+   "3": "文書の画像から文字や表を読み取るのはAmazon Textractである。"
+  },
+  "domain": "technology",
+  "service": "AI/ML",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AI/ML"
+  ],
+  "beginnerNote": "「書き起こす（トランスクライブ）」という言葉の意味から考える。",
+  "basis": "レッスン本文『音声→文字＝Transcribe、文字→音声＝Polly』"
+ },
+ {
+  "id": "b-tec-13-04",
+  "question": "商品レビューが肯定的か否定的かを自動で判定したい。使うサービスはどれか。",
+  "choices": [
+   "Amazon Polly",
+   "Amazon Rekognition",
+   "Amazon Comprehend",
+   "Amazon Textract"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「Amazon Comprehend」。Comprehendは文章を解析するサービスで、感情（肯定・否定など）やキーフレーズを取り出せる。画像や動画の認識はRekognition、文字の読み上げはPolly、文書画像からの文字や表の読み取りはTextractである。「文章の中身を理解する＝Comprehend」と押さえる。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon Pollyは文字（テキスト）を音声で読み上げるサービスである。",
+   "1": "Amazon Rekognitionは画像や動画から物体や顔を認識するサービスである。",
+   "3": "Amazon Textractは文書の画像から文字や表を読み取るサービスである。"
+  },
+  "domain": "technology",
+  "service": "Amazon Comprehend",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Comprehend"
+  ],
+  "beginnerNote": "レビューは画像ではなく文章だという点に注目する。",
+  "basis": "レッスン本文『文章解析＝Comprehend』"
+ },
+ {
+  "id": "b-tec-13-05",
+  "question": "請求書のスキャン画像から、日付や金額の欄を読み取りたい。使うサービスはどれか。",
+  "choices": [
+   "Amazon Translate",
+   "Amazon Transcribe",
+   "Amazon Textract",
+   "Amazon Comprehend"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「Amazon Textract」。Textractは文書の画像やPDFから文字や表、項目の値を読み取って取り出すサービスである。音声の文字起こしはTranscribe、翻訳はTranslate、文章の感情やキーフレーズの解析はComprehendが担う。紙の書類をデータにしたいときはTextractと覚える。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon Translateは文章をほかの言語に翻訳するサービスである。",
+   "1": "Amazon Transcribeは音声を文字に起こすサービスで、画像は扱わない。",
+   "3": "Amazon Comprehendは文章の感情やキーフレーズを解析するサービスである。"
+  },
+  "domain": "technology",
+  "service": "Amazon Textract",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Textract"
+  ],
+  "beginnerNote": "入力が「文書の画像」であることに注目する。",
+  "basis": "レッスン本文『文書からデータ抽出＝Textract』"
+ },
+ {
+  "id": "b-tec-13-06",
+  "question": "業務の質問への回答や作業を手伝う、AWSの生成AIアシスタントはどれか。",
+  "choices": [
+   "Amazon Rekognition",
+   "Amazon Polly",
+   "Amazon SageMaker",
+   "Amazon Q"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「Amazon Q」。Amazon Qは生成AIを使ったアシスタントで、質問に答えたり、開発や業務の作業を手伝ったりする。基盤モデルを自分のアプリに組み込むときの入り口はBedrock、モデルを自作する土台はSageMaker、画像認識はRekognition、読み上げはPollyである。すぐ使えるアシスタント＝Amazon Qと区別する。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon Rekognitionは画像や動画を認識するサービスである。",
+   "1": "Amazon Pollyは文字を音声で読み上げるサービスで、アシスタントではない。",
+   "2": "Amazon SageMakerは機械学習モデルを自分で構築・学習する土台である。"
+  },
+  "domain": "technology",
+  "service": "Amazon Q",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Q"
+  ],
+  "beginnerNote": "「アシスタント」として質問に答える、生成AIのサービスを考える。",
+  "basis": "AWS公式：Amazon Qは生成AIを活用したアシスタント"
+ },
+ {
+  "id": "b-tec-13-07",
+  "question": "RekognitionやTranscribeのような「すぐ使えるAIサービス」の利点はどれか。",
+  "choices": [
+   "料金が一切かからない",
+   "必ず自分でモデルを学習させる",
+   "インターネットなしで動かせる",
+   "専門知識がなくてもAPIで使える"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「専門知識がなくてもAPIで使える」。すぐ使えるAIサービスは、AWSが学習済みの機能を提供しているので、機械学習の専門知識やモデル作りなしに、APIを呼ぶだけで画像認識や文字起こしを使える。自分でモデルを作りたい場合はSageMakerを使う。利用した分の料金はかかる点にも注意する。",
+  "wrongChoiceExplanations": {
+   "0": "すぐ使えるAIサービスも、使った分の料金がかかる。",
+   "1": "自分でモデルを学習させるのはSageMakerを使う場合で、すぐ使えるAIサービスでは不要。",
+   "2": "AWSのサービスはネットワーク経由で使うもので、インターネットなしが利点ではない。"
+  },
+  "domain": "technology",
+  "service": "AI/ML",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AI/ML"
+  ],
+  "beginnerNote": "「すぐ使える」という言葉が何を省けることを意味するかを考える。",
+  "basis": "レッスン本文『すぐ使えるAIサービス』"
+ },
+ {
+  "id": "b-tec-13-08",
+  "question": "機械学習で、学習済みのモデルに新しいデータを入れて予測させることを何と呼ぶか。",
+  "choices": [
+   "推論",
+   "学習",
+   "前処理",
+   "監視"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「推論」。機械学習では、まずデータを使ってモデルを作る「学習」を行い、できあがったモデルに新しいデータを入れて答えや予測を出させることを「推論」と呼ぶ。SageMakerは学習から、推論のためのデプロイまでを一気通貫で支える。前処理は学習の前にデータを整える作業である。",
+  "wrongChoiceExplanations": {
+   "1": "学習は、データを使ってモデルを作る段階で、予測させる段階ではない。",
+   "2": "前処理は、学習の前にデータを整える作業である。",
+   "3": "監視は、動いているシステムの状態を見守ることで、予測させることではない。"
+  },
+  "domain": "technology",
+  "service": "AI/ML",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AI/ML"
+  ],
+  "beginnerNote": "モデルを「作る」段階と「使う」段階のうち、使う方を考える。",
+  "basis": "AWS公式：学習（training）と推論（inference）"
+ },
+ {
+  "id": "b-tec-13-09",
+  "question": "社内文書を、自然な質問文でそのまま検索できるようにするサービスはどれか。",
+  "choices": [
+   "Amazon Kendra",
+   "Amazon Polly",
+   "Amazon Translate",
+   "Amazon Transcribe"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「Amazon Kendra」。Kendraは機械学習を使った検索サービスで、社内のさまざまな文書を、キーワードだけでなく自然な質問文で検索できるようにする。Pollyは文字の読み上げ、Translateは翻訳、Transcribeは音声の文字起こしで、いずれも検索のサービスではない。",
+  "wrongChoiceExplanations": {
+   "1": "Amazon Pollyは文字を音声で読み上げるサービスで、検索は行わない。",
+   "2": "Amazon Translateは文章を別の言語に翻訳するサービスである。",
+   "3": "Amazon Transcribeは音声を文字に起こすサービスである。"
+  },
+  "domain": "technology",
+  "service": "Amazon Kendra",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Kendra"
+  ],
+  "beginnerNote": "4つのうち、「探す」ことが役割のサービスを選ぶ。",
+  "basis": "AWS公式：Amazon Kendraは機械学習を活用したインテリジェント検索サービス"
+ },
+ {
+  "id": "b-tec-13-10",
+  "question": "Amazon Bedrockを使う場合、利用者がしなくてよいことはどれか。",
+  "choices": [
+   "基盤モデルを一から学習させること",
+   "アプリからAPIを呼び出すこと",
+   "使うモデルを選ぶこと",
+   "生成したい内容を指示すること"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「基盤モデルを一から学習させること」。Bedrockでは、AWSや各社が用意した基盤モデルをAPIで呼び出して使えるので、モデルを一から学習させる必要はない。利用者は使うモデルを選び、アプリからAPIを呼び出し、何を生成したいかを指示する。モデルを自分で作りたい場合はSageMakerを使う。",
+  "wrongChoiceExplanations": {
+   "1": "BedrockはAPIで使うサービスなので、アプリからAPIを呼び出す作業は利用者が行う。",
+   "2": "Bedrockでは複数の基盤モデルから、使うモデルを利用者が選ぶ。",
+   "3": "何を生成したいか（プロンプト）は利用者が指示する必要がある。"
+  },
+  "domain": "technology",
+  "service": "Bedrock",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Bedrock"
+  ],
+  "beginnerNote": "「用意されたモデルを使う」ことから、省ける作業を考える。",
+  "basis": "レッスン本文『基盤モデル（生成AI）をAPIで手軽に利用できる』"
+ }
+]

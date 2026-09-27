@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-bil-05-01",
+  "question": "複数のAWSアカウントを束ね、請求を一つにまとめられるサービスはどれですか。",
+  "choices": [
+   "AWS Marketplace",
+   "AWS Budgets",
+   "AWS Trusted Advisor",
+   "AWS Organizations"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：AWS Organizationsは、複数のAWSアカウントを束ねて一元管理できるサービスです。請求をまとめる一括請求（コンソリデーテッドビリング）や、組織全体の統制（SCP）などの機能を提供します。個々のアカウントを分けたまま管理と請求だけをまとめられる点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Marketplaceはサードパーティ製ソフトを購入できるカタログです。",
+   "1": "AWS Budgetsは予算を決めて超過をアラートで知らせるサービスです。",
+   "2": "AWS Trusted Advisorはコストや安全性など複数観点で点検するサービスです。"
+  },
+  "domain": "billing",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "『複数アカウントをまとめる』という点に注目しましょう。",
+  "basis": "レッスン本文『AWS Organizationsで複数アカウントを束ねると、請求をまとめて1つにできます』"
+ },
+ {
+  "id": "b-bil-05-02",
+  "question": "一括請求（コンソリデーテッドビリング）の利点として最も適切なものはどれですか。",
+  "choices": [
+   "各アカウントの請求が別々になる",
+   "使用量合算でボリューム割引が効く",
+   "サポートプランが自動で不要になる",
+   "契約年数が自動で延長される"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：一括請求（コンソリデーテッドビリング）の利点は、複数アカウントの使用量が合算されることで、ボリュームディスカウントなどの割引が効きやすくなる点です。各アカウントを個別に契約する場合より、まとめて管理することでコスト面のメリットを得られます。",
+  "wrongChoiceExplanations": {
+   "0": "一括請求では各アカウントの請求は個別ではなく1つにまとめられます。",
+   "2": "サポートプランの要否とは直接関係ありません。",
+   "3": "契約年数が自動で延長される機能ではありません。"
+  },
+  "domain": "billing",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "『合わせると得になる』という考え方に注目しましょう。",
+  "basis": "レッスン本文『使用量が合算されるため、ボリューム割引が効きやすくなるメリット』"
+ },
+ {
+  "id": "b-bil-05-03",
+  "question": "組織全体で許可される操作の上限を、共通のポリシーとして設定できる仕組みはどれですか。",
+  "choices": [
+   "AWS Budgets（予算管理）",
+   "AWS Marketplace",
+   "SCP（サービス統制ポリシー）",
+   "AWS Trusted Advisor"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：SCP（サービスコントロールポリシー）は、AWS Organizationsの機能の一つで、組織全体の複数アカウントに対して共通の許可・禁止のルール（操作の上限）を設定できる仕組みです。個々のアカウントごとに設定する必要がなく、統制を一元化できる点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Budgetsは予算を決めて超過をアラートで知らせるサービスです。",
+   "1": "AWS Marketplaceはサードパーティ製ソフトを購入できるカタログです。",
+   "3": "AWS Trusted Advisorはコストや安全性など複数観点で点検するサービスです。"
+  },
+  "domain": "billing",
+  "service": "SCP",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "SCP"
+  ],
+  "beginnerNote": "『組織全体で共通のルール』という点に注目しましょう。",
+  "basis": "レッスン本文『OrganizationsはSCP（サービスコントロールポリシー）で全アカウント共通の上限を設定でき』"
+ },
+ {
+  "id": "b-bil-05-04",
+  "question": "AWS Marketplaceで探して利用できるものとして正しいものはどれか。",
+  "choices": [
+   "組織全体の操作を制限するポリシー",
+   "AWSアカウントのルートユーザー",
+   "AWSが公開する第三者監査レポート",
+   "他社が提供するソフトウェアやサービス"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「他社が提供するソフトウェアやサービス」。AWS Marketplaceは、他社（サードパーティ）のソフトウェアやサービスを探して購入・利用できるカタログで、費用はAWSの請求にまとめられる。第三者監査レポートの入手はAWS Artifact、組織全体の操作の上限を決めるのはSCP（サービスコントロールポリシー）である。",
+  "wrongChoiceExplanations": {
+   "0": "組織全体で許可する操作の上限を決めるのはSCP（サービスコントロールポリシー）である。",
+   "1": "ルートユーザーはアカウント作成時にできる最上位のユーザーで、Marketplaceで探すものではない。",
+   "2": "第三者監査レポートを入手するのはAWS Artifactである。"
+  },
+  "domain": "billing",
+  "service": "AWS Marketplace",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Marketplace"
+  ],
+  "beginnerNote": "「マーケット（市場）」で何が並んでいるかを考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-bil-05-05",
+  "question": "AWS Organizationsで複数アカウントを束ねる際、管理の中心となるアカウントを何と呼びますか。",
+  "choices": [
+   "管理アカウント",
+   "メンバーアカウント",
+   "ゲストアカウント",
+   "サブアカウント"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS Organizationsで複数アカウントを束ねるとき、組織の中心となり請求や統制を担うアカウントを管理アカウントと呼びます。他の参加アカウントはメンバーアカウントと呼ばれ、管理アカウントを通じて一括請求やSCPの適用を受けます。",
+  "wrongChoiceExplanations": {
+   "1": "メンバーアカウントは組織に参加する側のアカウントです。",
+   "2": "『ゲストアカウント』という名称の区分はOrganizationsにはありません。",
+   "3": "『サブアカウント』という正式名称の区分ではありません。"
+  },
+  "domain": "billing",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "『中心となる』アカウントという表現がヒントです。",
+  "basis": "一般知識：AWS Organizationsの管理アカウント／メンバーアカウントの区分（CLF-C02範囲）"
+ },
+ {
+  "id": "b-bil-05-06",
+  "question": "本番用・開発用などアカウントを分けて組織で管理することの利点はどれですか。",
+  "choices": [
+   "契約年数が自動で短縮される",
+   "影響範囲や費用を分離できる",
+   "サポートプランが不要になる",
+   "すべての操作が無条件に許可される"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：本番用・開発用などアカウントを分けて組織で管理すると、事故やコストの影響範囲をアカウント単位で分離しつつ、AWS Organizationsを使えば請求やルールは一元的にまとめて管理できます。分けても管理の手間が増えすぎない点が利点です。",
+  "wrongChoiceExplanations": {
+   "0": "契約年数の短縮とアカウント分割は関係ありません。",
+   "2": "サポートプランの要否とは直接関係ありません。",
+   "3": "むしろSCPなどで操作を制限しやすくなるのが利点です。"
+  },
+  "domain": "billing",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "『分ける』ことと『まとめる』ことが両立する点に注目しましょう。",
+  "basis": "一般知識：マルチアカウント戦略の基本的な利点（CLF-C02範囲）"
+ },
+ {
+  "id": "b-bil-05-07",
+  "question": "請求やコストに関する情報を確認・管理する、AWSの管理画面はどれですか。",
+  "choices": [
+   "AWS Organizations（複数アカウントの一括管理）",
+   "SCP（サービスコントロールポリシー・上限設定）",
+   "AWS Billing and Cost Management",
+   "AWS Marketplace（購入品を請求にまとめる）"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Billing and Cost Managementは、請求書の確認や支払い方法の設定、コストに関する情報をまとめて確認・管理できるAWSの管理画面です。複数アカウントの管理を行うOrganizationsや、組織全体の統制を行うSCPとは異なり、請求そのものを扱う画面という位置づけです。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Organizationsは複数アカウントを束ねて管理するサービスです。",
+   "1": "SCPは組織全体で操作の上限を設定する統制の仕組みです。",
+   "3": "AWS Marketplaceはサードパーティ製ソフトを購入できるカタログです。"
+  },
+  "domain": "billing",
+  "service": "請求管理",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "請求管理"
+  ],
+  "beginnerNote": "『請求そのものを確認する画面』という点に注目しましょう。",
+  "basis": "既存問題『請求やコストに関する情報を確認・管理する、AWSの管理画面はどれですか。正解:AWS Billing and Cost Management』"
+ },
+ {
+  "id": "b-bil-05-08",
+  "question": "AWS Organizations自体の利用料金について正しいものはどれか。",
+  "choices": [
+   "Organizationsの利用に追加料金はかからない",
+   "束ねたアカウントの数に応じて料金がかかる",
+   "一括請求を使うと必ず手数料がかかる",
+   "管理アカウントだけ割増料金がかかる"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「Organizationsの利用に追加料金はかからない」。AWS Organizationsは複数のアカウントを束ねて管理し、一括請求などを使えるようにするサービスで、Organizations自体の利用に追加料金はかからない。料金がかかるのは、各アカウントで使ったAWSのサービスの分である。一括請求で使用量が合算され、ボリューム割引を受けやすくなる利点もある。",
+  "wrongChoiceExplanations": {
+   "1": "Organizationsにアカウントを束ねても、その数に応じた料金はかからない。",
+   "2": "一括請求は追加料金なしで使える機能で、手数料はかからない。",
+   "3": "管理アカウントだけ料金が上がるという仕組みはない。"
+  },
+  "domain": "billing",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "束ねる仕組みそのものに費用がかかるかどうかを考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-bil-05-09",
+  "question": "AWS OrganizationsとSCPの関係として正しいものはどれですか。",
+  "choices": [
+   "Organizations内でSCPを設定し組織全体を統制する",
+   "SCPを使うとOrganizations自体が不要になる",
+   "SCPはOrganizationsとは別の独立したサービスである",
+   "SCPは個々のアカウント内でのみ有効である"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS OrganizationsとSCPは一体の仕組みで、Organizationsという複数アカウント管理の枠組みの中でSCPを設定し、組織全体に共通の許可・禁止ルールを適用して統制します。SCPはOrganizationsの機能の一部であり、独立したサービスではありません。",
+  "wrongChoiceExplanations": {
+   "1": "SCPを使ってもOrganizations自体は必要です。",
+   "2": "SCPはOrganizationsの機能の一部であり、独立したサービスではありません。",
+   "3": "SCPは組織全体の複数アカウントに共通して適用できます。"
+  },
+  "domain": "billing",
+  "service": "SCP",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "SCP"
+  ],
+  "beginnerNote": "『一部の機能』か『別のサービス』かを考えましょう。",
+  "basis": "レッスン本文『OrganizationsはSCP（サービスコントロールポリシー）で全アカウント共通の上限を設定でき』"
+ },
+ {
+  "id": "b-bil-05-10",
+  "question": "一括請求（コンソリデーテッドビリング）で、全アカウントの請求をまとめて確認できるのはどこですか。",
+  "choices": [
+   "各メンバーアカウントの個別画面のみ",
+   "管理アカウントでまとめて確認できる",
+   "AWS Marketplaceの購入履歴画面",
+   "Trusted Advisorのチェック結果画面"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：一括請求（コンソリデーテッドビリング）では、組織の管理アカウントの請求画面から、参加している全メンバーアカウントの利用状況と請求をまとめて確認・支払いできます。各アカウントで個別に請求書を管理する必要がなくなる点が便利です。",
+  "wrongChoiceExplanations": {
+   "0": "一括請求ではメンバーアカウントごとに分散せず、管理アカウントでまとめて確認できます。",
+   "2": "AWS Marketplaceは購入したソフトの履歴を見る画面で、請求の一括確認画面ではありません。",
+   "3": "Trusted Advisorは点検結果を表示する画面で、請求の確認画面ではありません。"
+  },
+  "domain": "billing",
+  "service": "AWS Organizations",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Organizations"
+  ],
+  "beginnerNote": "『まとめる』役割を持つアカウントはどれかを考えましょう。",
+  "basis": "レッスン本文『AWS Organizationsで複数アカウントを束ねると、請求をまとめて1つにできます』"
+ }
+]

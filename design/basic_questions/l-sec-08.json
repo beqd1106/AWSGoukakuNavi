@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-sec-08-01",
+  "question": "EC2インスタンスに個別設定し、許可した通信だけを通す仕組みはどれですか。",
+  "choices": [
+   "ネットワークACL",
+   "AWS WAF",
+   "セキュリティグループ",
+   "AWS Shield"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：セキュリティグループはEC2インスタンス単位で動作する仮想ファイアウォールです。許可した通信のみを通し、戻りの通信は自動的に許可されるステートフルな仕組みです。サブネット単位で動作しステートレスなネットワークACLとは適用範囲と挙動の両方で区別されます。",
+  "wrongChoiceExplanations": {
+   "0": "ネットワークACLはサブネット単位でステートレスに動作する仕組みです。",
+   "1": "AWS WAFはWebアプリへの攻撃をルールで遮断するサービスです。",
+   "3": "AWS ShieldはDDoS攻撃から守るサービスです。"
+  },
+  "domain": "security",
+  "service": "セキュリティグループ",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "セキュリティグループ"
+  ],
+  "beginnerNote": "どの単位（インスタンスかサブネットか）で動くかに注目しましょう。",
+  "basis": "レッスン本文『セキュリティグループはインスタンス単位の仮想ファイアウォール…（ステートフル）』"
+ },
+ {
+  "id": "b-sec-08-02",
+  "question": "ネットワークACLを設定する単位として正しいものはどれか。",
+  "choices": [
+   "サブネット",
+   "EC2インスタンス",
+   "リージョン",
+   "AWSアカウント"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「サブネット」。ネットワークACLはサブネット単位で通信の許可・拒否を設定する仕組みで、行きと帰りの通信を別々に判定する（ステートレス）。EC2インスタンス単位で設定するのはセキュリティグループで、こちらは許可した通信の戻りを自動で通す（ステートフル）。設定する単位の違いで区別するのが基本である。",
+  "wrongChoiceExplanations": {
+   "1": "EC2インスタンス単位で設定するのはセキュリティグループである。",
+   "2": "ネットワークACLはリージョン全体にまとめて設定するものではない。",
+   "3": "ネットワークACLはアカウント全体ではなく、サブネットごとに設定する。"
+  },
+  "domain": "security",
+  "service": "ネットワークACL",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ネットワークACL"
+  ],
+  "beginnerNote": "VPCの中を区切った「区画」に付ける仕組みだと考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-sec-08-03",
+  "question": "セキュリティグループとネットワークACLの違いとして正しいものはどれですか。",
+  "choices": [
+   "SGは戻り通信を許可せず、NACLは自動許可する",
+   "SGは戻り通信を自動許可、NACLは許可しない",
+   "SGもNACLも戻り通信を自動許可する",
+   "SGもNACLも戻り通信を自動許可しない"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：セキュリティグループは戻りの通信を自動的に許可しますが、ネットワークACLは許可しません。前者はインスタンス単位のステートフルな仕組み、後者はサブネット単位のステートレスな仕組みという適用範囲の違いも伴います。同じ『通信制御』でも挙動が異なる点が区別のポイントです。",
+  "wrongChoiceExplanations": {
+   "0": "戻り通信の自動許可はNACLではなくセキュリティグループの性質です。",
+   "2": "ネットワークACLは戻り通信を自動では許可しません。",
+   "3": "セキュリティグループは戻り通信を自動的に許可します。"
+  },
+  "domain": "security",
+  "service": "ネットワーク防御",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ネットワーク防御"
+  ],
+  "beginnerNote": "『戻りの通信』をどちらが自動で通すかを考えましょう。",
+  "basis": "レッスン本文『セキュリティグループは…ステートフル…ネットワークACLは…ステートレス』"
+ },
+ {
+  "id": "b-sec-08-04",
+  "question": "AWS WAFが遮断の対象とする攻撃はどれですか。",
+  "choices": [
+   "DDoSによる大量アクセス攻撃",
+   "マルウェアによる感染の拡大",
+   "IAM権限の不正な昇格",
+   "SQLインジェクション等の攻撃"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：AWS WAFはSQLインジェクションやクロスサイトスクリプティングなど、Webアプリを狙う攻撃をルールで検知・遮断するサービスです。CloudFrontやALBの前段に設置して使います。DDoS攻撃への対策を担うAWS Shieldとは、守る対象の攻撃の種類が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "DDoSによる大量アクセスから守るのはAWS Shieldの役割です。",
+   "1": "マルウェアの検知はWAFではなく別のセキュリティ領域です。",
+   "2": "IAM権限の管理はIAMのポリシー設定で扱う領域です。"
+  },
+  "domain": "security",
+  "service": "WAF",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "WAF"
+  ],
+  "beginnerNote": "『Webアプリの入力欄を狙う攻撃』かどうかに注目しましょう。",
+  "basis": "レッスン本文『AWS WAFはWebアプリを狙うSQLインジェクションやクロスサイトスクリプティングなどの攻撃をルールで遮断します』"
+ },
+ {
+  "id": "b-sec-08-05",
+  "question": "AWS WAFを設置して効果を発揮させる位置として適切なのはどれですか。",
+  "choices": [
+   "オンプレミスとの暗号化接続点",
+   "CloudFrontやALBの前",
+   "各EC2インスタンスの内部のみ",
+   "S3バケットのアクセス権限設定内"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS WAFはCloudFrontやALB（ロードバランサー）の前段に設置し、Webアプリに届く前の通信を検査・遮断します。攻撃者からのリクエストが実際のアプリへ到達する前に防ぐ点がポイントです。オンプレ接続を守るVPNや、S3の権限管理とは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "オンプレミスとの暗号化接続はSite-to-Site VPNなどの役割です。",
+   "2": "WAFはインスタンス内部ではなく通信経路の入口に配置します。",
+   "3": "S3のアクセス権限はIAMポリシーやバケットポリシーで管理します。"
+  },
+  "domain": "security",
+  "service": "WAF",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "WAF"
+  ],
+  "beginnerNote": "攻撃が『アプリに届く前』のどこで止めるかを考えましょう。",
+  "basis": "レッスン本文『AWS WAFは…CloudFrontやALBの前に置いて使います』"
+ },
+ {
+  "id": "b-sec-08-06",
+  "question": "DDoS攻撃の説明として正しいものはどれですか。",
+  "choices": [
+   "Webアプリの入力欄に不正なコードを注入する攻撃",
+   "大量のアクセスを送り付けサービスを停止させる攻撃",
+   "認証情報を盗み不正ログインする攻撃",
+   "データベースの設定ミスを悪用する攻撃"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：DDoS攻撃とは、大量のアクセスを一斉に送りつけてサービスを利用できなくする攻撃です。AWSではAWS Shieldがこの攻撃からの保護を担います。Webアプリの入力欄を狙うSQLインジェクションなどとは、攻撃の手口も対策サービスも異なります。",
+  "wrongChoiceExplanations": {
+   "0": "これはSQLインジェクションなど、AWS WAFが遮断する攻撃の説明です。",
+   "2": "認証情報の窃取は不正アクセスの手口であり、DDoSとは異なります。",
+   "3": "設定ミスの悪用は構成不備の問題であり、DDoS攻撃とは別の話です。"
+  },
+  "domain": "security",
+  "service": "Shield",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Shield"
+  ],
+  "beginnerNote": "『大量アクセスでサービスを止める』という手口の中身を考えましょう。",
+  "basis": "レッスン本文『AWS ShieldはDDoS攻撃（大量アクセスでサービスを止める攻撃）から守ります』"
+ },
+ {
+  "id": "b-sec-08-07",
+  "question": "AWS ShieldのStandardとAdvancedの違いとして正しいものはどれですか。",
+  "choices": [
+   "Standardは有料、Advancedは無料",
+   "両方とも無料で保護内容も同じ",
+   "Standardは無料、Advancedは有料",
+   "Advancedのみ自動的に有効化"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWS Shield Standardは追加料金なしで全アカウントに自動適用される基本的なDDoS保護です。Advancedは有料で、大規模DDoSへの高度な保護やコスト補償、専門チームの支援が付きます。無料か有料か、保護の手厚さが両者の区別点です。",
+  "wrongChoiceExplanations": {
+   "0": "無料で自動適用されるのはStandardの方です。",
+   "1": "Advancedは有料で、保護内容もStandardより手厚くなります。",
+   "3": "Standardの方が全アカウントに自動的に適用されます。"
+  },
+  "domain": "security",
+  "service": "Shield",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Shield"
+  ],
+  "beginnerNote": "『無料で自動』なのはどちらの層かを考えましょう。",
+  "basis": "レッスン本文『Standardは無料で自動適用、Advancedは高度な保護と支援が付きます』"
+ },
+ {
+  "id": "b-sec-08-08",
+  "question": "大量のS3データの中に含まれる個人情報を、機械学習で自動的に見つけたいです。適切なのはどれですか。",
+  "choices": [
+   "Amazon Macie",
+   "AWS WAF",
+   "AWS Shield",
+   "AWS Artifact"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：Amazon Macieは機械学習を使い、S3に保存されたデータの中から個人情報などの機微データを自動的に発見・分類するサービスです。大量のデータの中身を人手で確認せずに機密情報の有無を把握できる点が特徴です。攻撃対策のWAFやShieldとは目的が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "AWS WAFはWebアプリへの攻撃を遮断するサービスです。",
+   "2": "AWS ShieldはDDoS攻撃から守るサービスです。",
+   "3": "AWS Artifactは監査レポートを入手するサービスです。"
+  },
+  "domain": "security",
+  "service": "Amazon Macie",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Macie"
+  ],
+  "beginnerNote": "『S3の中身』を自動でチェックする点に注目しましょう。",
+  "basis": "既存問題『S3に保存された個人情報（PII）などの機密データを自動で発見・分類するサービス…正解:Amazon Macie』"
+ },
+ {
+  "id": "b-sec-08-09",
+  "question": "AWS Network Firewallの役割として正しいものはどれですか。",
+  "choices": [
+   "インスタンス単位で許可した通信のみを通す",
+   "Webアプリへの攻撃をルールで遮断する",
+   "DDoS攻撃から自動的に保護する",
+   "VPC全体のステートフルな通信制御を行う"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：AWS Network FirewallはVPC全体に対して、より高度なルールでステートフルな通信制御を行えるマネージド型サービスです。インスタンス単位のセキュリティグループやサブネット単位のネットワークACLよりも複雑なフィルタリングを一元的に設定したい場合に使います。",
+  "wrongChoiceExplanations": {
+   "0": "インスタンス単位の通信制御はセキュリティグループの役割です。",
+   "1": "Web攻撃の遮断はAWS WAFの役割です。",
+   "2": "DDoS攻撃からの保護はAWS Shieldの役割です。"
+  },
+  "domain": "security",
+  "service": "ネットワーク",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ネットワーク"
+  ],
+  "beginnerNote": "『VPC全体』という適用範囲の広さがヒントです。",
+  "basis": "既存問題『VPC内のトラフィックに対し、ステートフルなファイアウォール機能をマネージドで提供…正解:AWS Network Firewall』"
+ },
+ {
+  "id": "b-sec-08-10",
+  "question": "AWS Site-to-Site VPNの特徴として正しいものはどれですか。",
+  "choices": [
+   "インターネット経由で暗号化接続する",
+   "専用線を新設して物理接続する",
+   "Webアプリの攻撃を検知し遮断する",
+   "S3内の機密情報を自動で検出する"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：AWS Site-to-Site VPNは、インターネット回線を使ってオンプレミス環境とAWSの間に暗号化された接続を確立するサービスです。専用線を新設するAWS Direct Connectより安価・手軽に始められる点が特徴です。攻撃対策やデータ検出とは異なる、接続方式の話である点に注意します。",
+  "wrongChoiceExplanations": {
+   "1": "専用線による物理的な接続はAWS Direct Connectの特徴です。",
+   "2": "攻撃の検知・遮断はAWS WAFの役割です。",
+   "3": "機密情報の検出はAmazon Macieの役割です。"
+  },
+  "domain": "security",
+  "service": "ネットワーク",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ネットワーク"
+  ],
+  "beginnerNote": "専用線を『新設しない』点が手がかりです。",
+  "basis": "既存問題『オンプレミスとAWSを安価・手軽に暗号化接続したい…正解:AWS Site-to-Site VPN』"
+ }
+]

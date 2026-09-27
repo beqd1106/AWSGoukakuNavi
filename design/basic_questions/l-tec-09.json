@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-09-01",
+  "question": "複数のEC2インスタンスへ通信を振り分け、負荷を分散するサービスはどれですか。",
+  "choices": [
+   "AWS CloudFormation",
+   "Amazon EC2 Auto Scaling",
+   "Amazon CloudWatch",
+   "Elastic Load Balancing"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論はElastic Load Balancing（ELB）です。複数のEC2インスタンスへ受信トラフィックを振り分け、1台が異常でも健全な先へ回すことで可用性を高めます。台数そのものを増減するAuto Scalingとは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "AWS CloudFormationはインフラ構成をコードで自動構築するサービスです。",
+   "1": "Amazon EC2 Auto Scalingは負荷に応じてEC2の台数を自動で増減するサービスです。",
+   "2": "Amazon CloudWatchはメトリクスやログを収集し監視するサービスです。"
+  },
+  "domain": "technology",
+  "service": "ELB",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ELB"
+  ],
+  "beginnerNote": "複数のサーバーへアクセスを均等に配る仕組みをイメージしましょう。",
+  "basis": "レッスン本文『Elastic Load Balancingは複数のサーバーへアクセスを均等に振り分けます』"
+ },
+ {
+  "id": "b-tec-09-02",
+  "question": "ELBとAuto Scalingを組み合わせると、どんな構成になるか。",
+  "choices": [
+   "台数を自動で増減し、通信も振り分けられる",
+   "台数は固定のまま、通信を1台に集中させる",
+   "データを別のリージョンへ自動で移し続ける",
+   "サーバーを使わずにSQLで分析できるようになる"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「台数を自動で増減し、通信も振り分けられる」。Auto Scalingは負荷に応じてEC2の台数を自動で増減し、ELBは複数のEC2へ通信を振り分ける。組み合わせると、増えた台数にもすぐ通信が分散され、負荷の変化に強く止まりにくい構成になる。サーバー不要でSQL分析をするのはAthenaで、別の話である。",
+  "wrongChoiceExplanations": {
+   "1": "この組み合わせは台数を自動で増減させ、通信を複数台へ分散させる。",
+   "2": "ELBやAuto Scalingは、データを別のリージョンへ移し続ける仕組みではない。",
+   "3": "サーバーを使わずにSQLで分析するのはAmazon Athenaである。"
+  },
+  "domain": "technology",
+  "service": "Auto Scaling",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Auto Scaling"
+  ],
+  "beginnerNote": "「数を変える役」と「振り分ける役」を合わせるとどうなるかを考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-tec-09-03",
+  "question": "HTTP/HTTPSのWebトラフィック向けに使うロードバランサーはどれですか。",
+  "choices": [
+   "NLB",
+   "ALB",
+   "GWLB",
+   "CLB"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論はALB（Application Load Balancer）です。HTTP/HTTPSのWebトラフィックに対応し、URLパスなどの内容に基づいた振り分けができます。NLBは高速なTCP/UDP通信向けで、用途が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "NLB（Network Load Balancer）は高速なTCP/UDP通信向けのロードバランサーです。",
+   "2": "GWLB（Gateway Load Balancer）はセキュリティアプライアンスの経路制御に使うロードバランサーです。",
+   "3": "CLB（Classic Load Balancer）は旧世代のロードバランサーです。"
+  },
+  "domain": "technology",
+  "service": "ELB",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ELB"
+  ],
+  "beginnerNote": "Webサイトのように、URLの中身を見て振り分けたい場合に向いている種類を考えましょう。",
+  "basis": "レッスン本文『ALB＝HTTP向け』"
+ },
+ {
+  "id": "b-tec-09-04",
+  "question": "高速なTCP通信を扱うシステム向けのロードバランサーはどれですか。",
+  "choices": [
+   "NLB",
+   "ALB",
+   "GWLB",
+   "CLB"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論はNLB（Network Load Balancer）です。TCP/UDPレイヤーで超低遅延・高スループットの通信を処理でき、大量アクセスや高速通信が必要な場面に向きます。HTTP/HTTPS向けのALBとは対象レイヤーが異なります。",
+  "wrongChoiceExplanations": {
+   "1": "ALB（Application Load Balancer）はHTTP/HTTPSのWebトラフィック向けです。",
+   "2": "GWLB（Gateway Load Balancer）はセキュリティアプライアンスの経路制御向けです。",
+   "3": "CLB（Classic Load Balancer）は旧世代のロードバランサーです。"
+  },
+  "domain": "technology",
+  "service": "ELB",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ELB"
+  ],
+  "beginnerNote": "とにかく速さや高いスループットが求められる通信を扱う種類を考えましょう。",
+  "basis": "レッスン本文『NLB＝高速なTCP向け』"
+ },
+ {
+  "id": "b-tec-09-05",
+  "question": "需要の増減に合わせて、リソースの量を自動で調整する性質を何と呼びますか。",
+  "choices": [
+   "耐久性（デュラビリティ）",
+   "整合性（コンシステンシー）",
+   "可搬性（ポータビリティ）",
+   "弾力性（エラスティシティ）"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論は弾力性（エラスティシティ）です。需要が増えれば自動でリソースを増やし、減れば減らして無駄なコストを抑える性質を指します。Auto Scalingはこの性質を実現する代表的な仕組みです。耐久性はデータが失われにくい性質で、意味が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "耐久性（デュラビリティ）はデータが失われにくい性質を指す言葉です。",
+   "1": "整合性（コンシステンシー）はデータの内容が矛盾なく保たれる性質を指す言葉です。",
+   "2": "可搬性（ポータビリティ）は環境を変えても動かしやすい性質を指す言葉です。"
+  },
+  "domain": "technology",
+  "service": "高可用性",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "高可用性"
+  ],
+  "beginnerNote": "需要が増えたら増やし、減ったら減らす、という伸び縮みする性質を考えましょう。",
+  "basis": "レッスン本文『需要に合わせる＝弾力性の代表例です』"
+ },
+ {
+  "id": "b-tec-09-06",
+  "question": "システムが止まらず使い続けられる度合いを表す言葉はどれですか。",
+  "choices": [
+   "機密性（コンフィデンシャリティ）",
+   "可用性（アベイラビリティ）",
+   "完全性（インテグリティ）",
+   "拡張性（スケーラビリティ）"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論は可用性（アベイラビリティ）です。システムが障害時にも止まらず使い続けられる度合いを指します。ELBやAuto Scaling、複数AZ配置はこの可用性を高めるための代表的な手段です。機密性や完全性はセキュリティに関する別の性質です。",
+  "wrongChoiceExplanations": {
+   "0": "機密性（コンフィデンシャリティ）は許可された人だけが情報を見られる性質です。",
+   "2": "完全性（インテグリティ）はデータが改ざんされず正確に保たれる性質です。",
+   "3": "拡張性（スケーラビリティ）は需要に応じて規模を広げられる性質です。"
+  },
+  "domain": "technology",
+  "service": "高可用性",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "高可用性"
+  ],
+  "beginnerNote": "止まらずに使い続けられるかどうか、という観点の言葉を考えましょう。",
+  "basis": "レッスン本文『この2つで止まらない・溢れない』（可用性という一般的なIT用語知識）"
+ },
+ {
+  "id": "b-tec-09-07",
+  "question": "需要の増加に合わせて、システムの規模を拡張できる性質を何と呼びますか。",
+  "choices": [
+   "可用性（アベイラビリティ）",
+   "耐久性（デュラビリティ）",
+   "拡張性（スケーラビリティ）",
+   "機密性（コンフィデンシャリティ）"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論は拡張性（スケーラビリティ）です。アクセスの増加など需要の高まりに合わせて、システムの処理能力を拡張できる性質を指します。Auto Scalingはこの性質を実現する仕組みの1つです。可用性は止まらず使い続けられる度合いで、意味が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "可用性（アベイラビリティ）はシステムが止まらず使い続けられる度合いです。",
+   "1": "耐久性（デュラビリティ）はデータが失われにくい性質です。",
+   "3": "機密性（コンフィデンシャリティ）は許可された人だけが情報を見られる性質です。"
+  },
+  "domain": "technology",
+  "service": "高可用性",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "高可用性"
+  ],
+  "beginnerNote": "需要が増えたときに規模を広げられるかどうか、という観点を考えましょう。",
+  "basis": "レッスン本文『Auto Scalingは負荷に応じてEC2を自動で増減』（拡張性という一般的なIT用語知識）"
+ },
+ {
+  "question": "ELBが、異常のあるインスタンスへ通信を送らないようにするために行う確認はどれですか。",
+  "choices": [
+   "ヘルスチェック",
+   "スナップショット",
+   "ライフサイクル",
+   "バージョニング"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「ヘルスチェック」。ELBは振り分け先のインスタンスに定期的にヘルスチェック（正常に応答するかの確認）を行い、異常なものには通信を送らず、正常なものだけに振り分ける。これにより一部が故障してもサービスを続けやすくなる。スナップショットはディスクの複製、ライフサイクルとバージョニングはS3の機能である。",
+  "wrongChoiceExplanations": {
+   "1": "スナップショットはEBSなどのある時点の状態を保存する複製である。",
+   "2": "ライフサイクルは、S3のデータを期間に応じて移動・削除する設定である。",
+   "3": "バージョニングは、S3で上書きや削除の前の版を残す機能である。"
+  },
+  "beginnerNote": "「健康（ヘルス）かどうか」を確かめる、という言葉を思い浮かべる。",
+  "service": "Elastic Load Balancing",
+  "tags": [
+   "基礎",
+   "Elastic Load Balancing"
+  ],
+  "difficulty": 1,
+  "basis": "Opus修正（レッスンの柱に沿って差し替え）",
+  "id": "b-tec-09-08",
+  "domain": "technology"
+ },
+ {
+  "id": "b-tec-09-09",
+  "question": "負荷が下がったときに、EC2インスタンスの台数を減らす動作を何と呼びますか。",
+  "choices": [
+   "スケールアウト",
+   "スケールイン",
+   "スケールアップ",
+   "フェイルオーバー"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論はスケールインです。Auto Scalingが負荷の低下を検知し、不要になったEC2インスタンスを自動で減らす動作を指します。逆に台数を増やす動作はスケールアウトと呼ばれ、区別されます。",
+  "wrongChoiceExplanations": {
+   "0": "スケールアウトは負荷の増加に応じてインスタンスの台数を増やす動作です。",
+   "2": "スケールアップはインスタンス自体のスペック（性能）を引き上げることです。",
+   "3": "フェイルオーバーは障害発生時に別の系統へ自動的に切り替えることです。"
+  },
+  "domain": "technology",
+  "service": "Auto Scaling",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Auto Scaling"
+  ],
+  "beginnerNote": "台数を「減らす」動作の名前を、増やす動作と区別して考えましょう。",
+  "basis": "レッスン本文『空いたら減らして』（Auto Scalingの一般的な用語知識）"
+ },
+ {
+  "id": "b-tec-09-10",
+  "question": "高可用性の設計は、Well-Architectedのどの柱と最も関係が深いですか。",
+  "choices": [
+   "コスト最適化",
+   "セキュリティ",
+   "信頼性",
+   "運用上の優秀性"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論は信頼性（Reliability）の柱です。障害からの復旧力や、需要変動への対応力を高める設計を扱い、ELB・Auto Scaling・複数AZ配置はこの柱の代表的な実践例です。運用上の優秀性は監視や運用改善を扱う、別の柱です。",
+  "wrongChoiceExplanations": {
+   "0": "コスト最適化は無駄な支出を抑え費用対効果を高めることを扱う柱です。",
+   "1": "セキュリティはデータやシステムを守ることを扱う柱です。",
+   "3": "運用上の優秀性は監視や運用の自動化・改善を扱う柱です。"
+  },
+  "domain": "technology",
+  "service": "高可用性",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "高可用性"
+  ],
+  "beginnerNote": "障害に強く、需要の変化にも耐えられる設計がどの柱にあたるかを考えましょう。",
+  "basis": "レッスン本文の高可用性構成（ELB・Auto Scaling・複数AZ）はAWS Well-Architected Frameworkの信頼性の柱に該当する一般知識"
+ }
+]

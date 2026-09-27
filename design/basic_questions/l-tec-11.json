@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-11-01",
+  "question": "アプリ間の処理を非同期にやり取りするためのキューを提供するサービスはどれですか。",
+  "choices": [
+   "Amazon SNS",
+   "Amazon SQS",
+   "Amazon API Gateway",
+   "Amazon EventBridge"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論としてAmazon SQSは処理待ちのメッセージをためるキューサービスです。アプリ同士を直接つながず、受け手が自分のペースで取り出せるようにして疎結合を実現します。1つの通知を複数へ配信するSNSとは、ためて順に渡す点で役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon SNSは1つの通知を複数の宛先へ一斉配信するサービスです。",
+   "2": "Amazon API GatewayはAPIリクエストを受け付ける窓口となるサービスです。",
+   "3": "Amazon EventBridgeはイベントを条件で振り分けるイベントバスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon SQS",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon SQS"
+  ],
+  "beginnerNote": "「ためて順番に取り出す」動きに注目しましょう。",
+  "basis": "レッスン本文『SQS（キュー）は処理待ちのメッセージをためて、受け手が自分のペースで取り出せます』"
+ },
+ {
+  "id": "b-tec-11-02",
+  "question": "Amazon SNSで、メッセージを送る先としてまとめる入れ物を何と呼ぶか。",
+  "choices": [
+   "トピック",
+   "キュー",
+   "バケット",
+   "サブネット"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「トピック」。SNSでは、送り手がトピックにメッセージを送ると、そのトピックを購読（サブスクライブ）しているメールやSQSキュー、Lambdaなどへ一斉に配信される。メッセージをためて順に取り出す「キュー」はSQSの仕組み、「バケット」はS3の保存先、「サブネット」はVPCの中の区画である。",
+  "wrongChoiceExplanations": {
+   "1": "キューはAmazon SQSでメッセージをためておく仕組みである。",
+   "2": "バケットはAmazon S3でデータを保存する入れ物である。",
+   "3": "サブネットはVPCの中をさらに区切ったネットワークの区画である。"
+  },
+  "domain": "technology",
+  "service": "Amazon SNS",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon SNS"
+  ],
+  "beginnerNote": "話題（テーマ）ごとにまとめて配るイメージから考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-tec-11-03",
+  "question": "外部からのAPIリクエストを受け付け、Lambdaなど裏側の処理へつなぐサービスはどれですか。",
+  "choices": [
+   "Amazon SQS",
+   "Amazon SNS",
+   "Amazon API Gateway",
+   "Amazon EventBridge"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論としてAmazon API GatewayはAPIの受付窓口となり、外部からのリクエストをLambdaなどのバックエンドへつなぐマネージドサービスです。認証やアクセス制御もあわせて行えます。メッセージをためるSQSや一斉配信するSNSとは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon SQSは処理待ちのメッセージをためるキューサービスです。",
+   "1": "Amazon SNSは1つの通知を複数の宛先へ一斉配信するサービスです。",
+   "3": "Amazon EventBridgeはイベントを条件で振り分けるイベントバスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon API Gateway",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon API Gateway"
+  ],
+  "beginnerNote": "「受付窓口」という言葉が手がかりです。",
+  "basis": "レッスン本文『API GatewayはAPIの受付窓口となり、Lambdaなどのバックエンドとつなぎます』"
+ },
+ {
+  "id": "b-tec-11-04",
+  "question": "発生したイベントを条件に応じて複数のサービスへ振り分けるサービスはどれですか。",
+  "choices": [
+   "Amazon SQS",
+   "Amazon SNS",
+   "AWS Step Functions",
+   "Amazon EventBridge"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論としてAmazon EventBridgeは発生したイベントを条件（ルール）に応じて複数のAWSサービスやSaaSへ振り分けるイベントバスです。イベント駆動でシステム同士をつなぎます。すべての宛先へ同じ内容を配るSNSとは、条件で振り分ける点が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon SQSは処理待ちのメッセージをためるキューサービスです。",
+   "1": "Amazon SNSは1つの通知を複数の宛先へ一斉配信するサービスです。",
+   "2": "AWS Step Functionsは複数処理の実行順序を管理するサービスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon EventBridge",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon EventBridge"
+  ],
+  "beginnerNote": "「条件で振り分ける」という言葉に注目しましょう。",
+  "basis": "レッスン本文『EventBridgeはイベントを条件で振り分け』"
+ },
+ {
+  "id": "b-tec-11-05",
+  "question": "複数のLambda関数などの実行順序や流れをまとめて管理するサービスはどれですか。",
+  "choices": [
+   "AWS Step Functions",
+   "Amazon SQS",
+   "Amazon SNS",
+   "Amazon API Gateway"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論としてAWS Step Functionsは複数の処理をワークフローとして定義し、実行順序や分岐をまとめて管理するサービスです。処理の流れ全体を可視化・制御したい場面で使います。個々のメッセージをためるSQSや配るSNSとは、扱う対象が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "Amazon SQSは処理待ちのメッセージをためるキューサービスです。",
+   "2": "Amazon SNSは1つの通知を複数の宛先へ一斉配信するサービスです。",
+   "3": "Amazon API GatewayはAPIリクエストを受け付ける窓口となるサービスです。"
+  },
+  "domain": "technology",
+  "service": "AWS Step Functions",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Step Functions"
+  ],
+  "beginnerNote": "「実行順序や流れ全体」という言葉に注目しましょう。",
+  "basis": "レッスン本文『Step Functionsは複数処理の流れを管理する』"
+ },
+ {
+  "id": "b-tec-11-06",
+  "question": "システム同士を直接つながず、間に仕組みを挟んで独立性を保つ考え方を何と呼びますか。",
+  "choices": [
+   "密結合",
+   "疎結合",
+   "垂直統合",
+   "単一障害点"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論としてシステム同士を直接つなげず、間にSQSなどを挟んで独立性を高める考え方を疎結合と呼びます。一方の遅延や障害が全体に波及しにくくなります。互いが強く依存しあう密結合とは反対の考え方です。",
+  "wrongChoiceExplanations": {
+   "0": "密結合はシステム同士が直接強く依存しあう状態です。",
+   "2": "垂直統合は工程を一つの組織でまとめて担う経営上の考え方です。",
+   "3": "単一障害点はそこが壊れると全体が止まる箇所を指します。"
+  },
+  "domain": "technology",
+  "service": "疎結合",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "疎結合"
+  ],
+  "beginnerNote": "「間に仕組みを挟む」効果を考えましょう。",
+  "basis": "レッスン本文『システム同士を直接つながず、間に仕組みを挟むことで…これが疎結合』"
+ },
+ {
+  "id": "b-tec-11-07",
+  "question": "既存のActiveMQ/RabbitMQ環境から、そのままの形で移行しやすいマネージド型メッセージブローカーはどれですか。",
+  "choices": [
+   "Amazon SQS",
+   "Amazon SNS",
+   "Amazon MQ",
+   "Amazon EventBridge"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論としてAmazon MQは、ActiveMQやRabbitMQなど標準的なプロトコルに対応したマネージド型メッセージブローカーです。既存のオンプレミス構成をそのまま移行したい場合に向きます。AWS独自プロトコルのSQSとは互換性の考え方が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon SQSは独自プロトコルのキューで、既存ブローカーの互換移行を主目的にしません。",
+   "1": "Amazon SNSは1つの通知を複数の宛先へ一斉配信するサービスです。",
+   "3": "Amazon EventBridgeはイベントを条件で振り分けるイベントバスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon MQ",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon MQ"
+  ],
+  "beginnerNote": "「既存の仕組みをそのまま移行」という点が手がかりです。",
+  "basis": "AWS公式のAmazon MQの説明：既存のメッセージブローカーと互換性のあるマネージドサービス"
+ },
+ {
+  "id": "b-tec-11-08",
+  "question": "SalesforceなどのSaaSアプリとAWSサービスの間で、コードを書かずにデータ連携できるサービスはどれですか。",
+  "choices": [
+   "Amazon SQS",
+   "Amazon API Gateway",
+   "AWS Step Functions",
+   "Amazon AppFlow"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論としてAmazon AppFlowはSalesforceなどのSaaSアプリとAWSサービスの間で、コードを書かずにデータをやり取りできる連携サービスです。定型的なデータ連携を素早く構築できます。APIの受付窓口であるAPI Gatewayとは目的が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon SQSは処理待ちのメッセージをためるキューサービスです。",
+   "1": "Amazon API GatewayはAPIリクエストを受け付ける窓口となるサービスです。",
+   "2": "AWS Step Functionsは複数処理の実行順序を管理するサービスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon AppFlow",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon AppFlow"
+  ],
+  "beginnerNote": "「SaaSとの連携」という言葉に注目しましょう。",
+  "basis": "AWS公式のAmazon AppFlowの説明：SaaSアプリケーションとAWSサービス間のデータフローをノーコードで連携"
+ },
+ {
+  "id": "b-tec-11-09",
+  "question": "あるできごとの発生をきっかけに、処理が自動的に実行される設計を何と呼びますか。",
+  "choices": [
+   "イベント駆動アーキテクチャ",
+   "モノリシックアーキテクチャ",
+   "オンプレミス構成",
+   "垂直スケーリング"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論として、あるできごと（イベント）の発生をきっかけに処理が自動実行される設計をイベント駆動アーキテクチャと呼びます。SQSやSNS、EventBridgeなどを介してサービス間を疎結合につなぐ際の基本的な考え方です。機能を一体化するモノリシックとは対照的です。",
+  "wrongChoiceExplanations": {
+   "1": "モノリシックアーキテクチャは機能をひとつの大きなアプリにまとめる設計です。",
+   "2": "オンプレミス構成は自社のデータセンターで機器を運用する形態です。",
+   "3": "垂直スケーリングは1台の性能（スペック）を上げて対応する方式です。"
+  },
+  "domain": "technology",
+  "service": "イベント駆動アーキテクチャ",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "イベント駆動アーキテクチャ"
+  ],
+  "beginnerNote": "「きっかけ」で処理が動く点に注目しましょう。",
+  "basis": "AWS公式の説明：イベントの発生をトリガーに処理を実行する設計をイベント駆動アーキテクチャと呼ぶ"
+ },
+ {
+  "id": "b-tec-11-10",
+  "question": "1つの通知を複数のSQSキューへ同時配信し、それぞれが独立して処理できるようにする構成を何と呼びますか。",
+  "choices": [
+   "ロードバランシング",
+   "ファンアウトパターン",
+   "オートスケーリング",
+   "マルチAZ構成"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論として、SNSの通知を複数のSQSキューへ同時配信し、それぞれが独立して処理できるようにする構成をファンアウトパターンと呼びます。1つのイベントを複数の処理系統へ確実に届けたい場面で使います。負荷を分散するロードバランシングとは目的が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "ロードバランシングは複数のリソースへ処理を振り分けて負荷を分散する仕組みです。",
+   "2": "オートスケーリングは需要に応じてリソースの数を自動で増減する仕組みです。",
+   "3": "マルチAZ構成は複数のアベイラビリティーゾーンにまたがって配置する構成です。"
+  },
+  "domain": "technology",
+  "service": "ファンアウトパターン",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "ファンアウトパターン"
+  ],
+  "beginnerNote": "「1つの通知を複数の処理系統へ」という点に注目しましょう。",
+  "basis": "AWS公式のSNS+SQSファンアウトパターンの説明：1つの通知を複数のSQSキューへ配信し独立して処理させる構成"
+ }
+]

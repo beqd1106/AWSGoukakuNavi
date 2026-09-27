@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-08-01",
+  "question": "世界中のエッジ拠点からコンテンツを配信し、表示を速くするCDNサービスはどれですか。",
+  "choices": [
+   "Amazon Route 53",
+   "Amazon CloudFront",
+   "AWS Direct Connect",
+   "AWS Global Accelerator"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論はAmazon CloudFrontです。世界中のエッジロケーションにキャッシュを配置し、利用者に近い拠点からコンテンツを届けるCDN（コンテンツ配信ネットワーク）です。オンプレミスとの専用線接続であるDirect Connectとは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon Route 53はドメイン名を解決するDNSサービスです。",
+   "2": "AWS Direct Connectはオンプレミスとの専用線接続サービスです。",
+   "3": "AWS Global Acceleratorは通信をAWSの高速網に乗せて高速化するサービスです。"
+  },
+  "domain": "technology",
+  "service": "CloudFront",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CloudFront"
+  ],
+  "beginnerNote": "世界中に散らばる配信拠点を使って、利用者の近くから届ける仕組みを考えましょう。",
+  "basis": "レッスン本文『CloudFrontは世界中のエッジロケーションからコンテンツを配信するCDN』"
+ },
+ {
+  "id": "b-tec-08-02",
+  "question": "CloudFrontなどで、利用者に近い場所に置かれる配信拠点を何と呼びますか。",
+  "choices": [
+   "リージョン",
+   "アベイラビリティーゾーン",
+   "エッジロケーション",
+   "データセンター"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論はエッジロケーションです。CloudFrontなどが利用者の近くにコンテンツをキャッシュして配信するための拠点を指します。リージョンやアベイラビリティーゾーンはAWS全体のデータセンターの単位で、意味が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "リージョンは世界各地にあるAWSの独立したエリアの単位です。",
+   "1": "アベイラビリティーゾーンはリージョン内の独立した施設群です。",
+   "3": "データセンターは一般的な設備の総称で、AWS固有の用語ではありません。"
+  },
+  "domain": "technology",
+  "service": "配信・接続",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "配信・接続"
+  ],
+  "beginnerNote": "利用者から地理的に近い拠点を使って配信を速くする仕組みの名前を考えましょう。",
+  "basis": "レッスン本文『世界中のエッジロケーションからコンテンツを配信するCDN』"
+ },
+ {
+  "id": "b-tec-08-03",
+  "question": "CDNが配信するコンテンツの、大元となるサーバーを何と呼びますか。",
+  "choices": [
+   "オリジン",
+   "エンドポイント",
+   "リポジトリ",
+   "ゲートウェイ"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論はオリジンです。CloudFrontなどのCDNがキャッシュを配信する際に参照する、コンテンツの配信元サーバーを指します。エンドポイントはAPIなどの接続先全般を指す言葉で、オリジンとは意味の範囲が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "エンドポイントは通信の接続先を指す一般的な用語です。",
+   "2": "リポジトリはコードやパッケージを保管する場所を指す用語です。",
+   "3": "ゲートウェイはネットワーク間の出入口となる機器やサービスを指します。"
+  },
+  "domain": "technology",
+  "service": "配信・接続",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "配信・接続"
+  ],
+  "beginnerNote": "CDNがキャッシュを作るときに参照する、コンテンツの出どころを考えましょう。",
+  "basis": "レッスン本文『オリジンの負荷も軽くなります』（配信元＝オリジンという文脈）"
+ },
+ {
+  "id": "b-tec-08-04",
+  "question": "オンプレミスとAWSの間に専用の物理回線を用意して接続するサービスはどれですか。",
+  "choices": [
+   "AWS Site-to-Site VPN",
+   "AWS Global Accelerator",
+   "AWS Transit Gateway",
+   "AWS Direct Connect"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論はAWS Direct Connectです。インターネットを介さず専用の物理回線でオンプレミスとAWSを接続し、安定・低遅延・大容量の通信を実現します。VPNはインターネット上の暗号化トンネルで接続する点が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Site-to-Site VPNはインターネット上に暗号化トンネルを作る接続方法です。",
+   "1": "AWS Global Acceleratorは通信をAWSの高速網に乗せて高速化するサービスです。",
+   "2": "AWS Transit Gatewayは複数のVPCや拠点を1か所でまとめて接続するサービスです。"
+  },
+  "domain": "technology",
+  "service": "Direct Connect",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Direct Connect"
+  ],
+  "beginnerNote": "インターネットを経由しない、専用の物理回線を使う接続方法を考えましょう。",
+  "basis": "レッスン本文『Direct Connectはインターネットを介さない専用線で、安定・低遅延・大容量』"
+ },
+ {
+  "id": "b-tec-08-05",
+  "question": "インターネット上に暗号化されたトンネルを作り、オンプレミスとAWSを手軽に接続する方法はどれですか。",
+  "choices": [
+   "AWS Direct Connect",
+   "AWS Site-to-Site VPN",
+   "AWS Transit Gateway",
+   "AWS Global Accelerator"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論はAWS Site-to-Site VPNです。インターネット上に暗号化トンネルを作ってオンプレミスとAWSを接続する、比較的手軽な方法です。専用の物理回線を使うDirect Connectとは、安定性重視か手軽さ重視かという点で異なります。",
+  "wrongChoiceExplanations": {
+   "0": "AWS Direct Connectは専用の物理回線でインターネットを介さず接続する方法です。",
+   "2": "AWS Transit Gatewayは複数のVPCや拠点をまとめて接続するサービスです。",
+   "3": "AWS Global Acceleratorは通信をAWSの高速網に乗せて高速化するサービスです。"
+  },
+  "domain": "technology",
+  "service": "VPN",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "VPN"
+  ],
+  "beginnerNote": "インターネット回線をそのまま使い、暗号化だけで安全性を確保する手軽な方法を考えましょう。",
+  "basis": "レッスン本文『VPNはインターネット上に暗号化トンネルを作る手軽な接続』"
+ },
+ {
+  "id": "b-tec-08-06",
+  "question": "遠く離れた利用者からの通信をAWSの高速なネットワークに乗せ、安定・高速化するサービスはどれですか。",
+  "choices": [
+   "AWS Global Accelerator",
+   "AWS Direct Connect",
+   "Amazon CloudFront",
+   "Elastic Load Balancing"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論はAWS Global Acceleratorです。利用者からの通信をAWSのグローバルな高速ネットワークに素早く乗せることで、遠距離アクセスを安定・高速化します。複数のEC2へ振り分けるElastic Load Balancingとは目的が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "AWS Direct Connectは専用の物理回線でオンプレミスと接続するサービスです。",
+   "2": "Amazon CloudFrontは世界中のエッジ拠点から配信するCDNです。",
+   "3": "Elastic Load Balancingは複数のサーバーへ通信を振り分けるサービスです。"
+  },
+  "domain": "technology",
+  "service": "Global Accelerator",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Global Accelerator"
+  ],
+  "beginnerNote": "遠くのユーザーの通信を、AWSの速いネットワーク経路に早く乗せる仕組みを考えましょう。",
+  "basis": "レッスン本文『Global Acceleratorはユーザーからの通信をAWSの高速ネットワークに素早く載せ、遠距離アクセスを安定・高速化』"
+ },
+ {
+  "id": "b-tec-08-07",
+  "question": "多数のVPCやオンプレミス拠点を1か所でまとめて接続できるサービスはどれですか。",
+  "choices": [
+   "AWS Transit Gateway",
+   "AWS Direct Connect",
+   "Amazon CloudFront",
+   "AWS Site-to-Site VPN"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論はAWS Transit Gatewayです。多数のVPCやオンプレミス拠点を1つの接続点でまとめてつなぎ、ネットワーク構成をシンプルにします。個別の拠点を1本ずつ専用線でつなぐDirect Connectとは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "AWS Direct Connectは専用の物理回線で1つの拠点とAWSを接続するサービスです。",
+   "2": "Amazon CloudFrontは世界中のエッジ拠点から配信するCDNです。",
+   "3": "AWS Site-to-Site VPNはインターネット上に暗号化トンネルを作る接続方法です。"
+  },
+  "domain": "technology",
+  "service": "Transit Gateway",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Transit Gateway"
+  ],
+  "beginnerNote": "たくさんのネットワークを1つのハブに束ねて、接続をシンプルにする仕組みを考えましょう。",
+  "basis": "レッスン本文『Transit Gatewayは多数のVPCや拠点を1点で束ねて接続します』"
+ },
+ {
+  "id": "b-tec-08-08",
+  "question": "「CDN」という略語が指すものとして正しいものはどれですか。",
+  "choices": [
+   "Cloud Data Network",
+   "Content Distribution Node",
+   "Content Data Node",
+   "Content Delivery Network"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論はContent Delivery Networkです。CDNは世界中の拠点にコンテンツをキャッシュし、利用者に近い場所から配信して表示を速くする仕組みの総称です。CloudFrontはこの仕組みを提供する代表的なAWSサービスです。",
+  "wrongChoiceExplanations": {
+   "0": "Cloud Data Networkという名称の略語は存在しません。",
+   "1": "Content Distribution Nodeという名称の略語は存在しません。",
+   "2": "Content Data Nodeという名称の略語は存在しません。"
+  },
+  "domain": "technology",
+  "service": "配信・接続",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "配信・接続"
+  ],
+  "beginnerNote": "略語なので、英単語ひとつひとつの意味を考えてみましょう。",
+  "basis": "レッスン本文『CloudFrontは…配信するCDN』（CDN=Content Delivery Networkは一般的な略語知識）"
+ },
+ {
+  "id": "b-tec-08-09",
+  "question": "「オンプレミス」という言葉が指すものとして正しいものはどれですか。",
+  "choices": [
+   "AWSが提供するデータセンター",
+   "自社で保有・運用する設備や環境",
+   "インターネット上の仮想サーバー",
+   "AWSのマネージドサービス全般"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論は「自社で保有・運用する設備や環境」です。オンプレミスとは、クラウドを使わず自社のデータセンターなどに構築した従来型のIT環境を指します。本レッスンではこれとAWSを接続する方法を扱っています。",
+  "wrongChoiceExplanations": {
+   "0": "AWSが提供するデータセンターは、クラウド事業者側の設備であり自社設備ではありません。",
+   "2": "インターネット上の仮想サーバーは、クラウド上の仮想化されたリソースを指す言葉です。",
+   "3": "AWSのマネージドサービス全般は、クラウド側で運用されるサービスの総称です。"
+  },
+  "domain": "technology",
+  "service": "配信・接続",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "配信・接続"
+  ],
+  "beginnerNote": "クラウドを使う前から会社が自前で持っていた設備や環境をイメージしましょう。",
+  "basis": "レッスン本文『オンプレとの接続』（オンプレミス＝自社設備という一般的なIT用語知識）"
+ },
+ {
+  "id": "b-tec-08-10",
+  "question": "自社設備（オンプレミス）とAWSを組み合わせて使う構成を何と呼びますか。",
+  "choices": [
+   "マルチリージョン構成",
+   "マルチAZ構成",
+   "ハイブリッド構成",
+   "サーバーレス構成"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論はハイブリッド構成です。自社のオンプレミス環境とAWSなどのクラウドを組み合わせて利用する構成を指します。マルチAZやマルチリージョンは、クラウド内での障害対策のための分散配置を指す言葉で、意味が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "マルチリージョン構成は、複数のAWSリージョンにまたがってリソースを配置する構成です。",
+   "1": "マルチAZ構成は、1つのリージョン内の複数のアベイラビリティーゾーンに分散配置する構成です。",
+   "3": "サーバーレス構成は、サーバー管理不要でコードの実行に集中できる構成です。"
+  },
+  "domain": "technology",
+  "service": "配信・接続",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "配信・接続"
+  ],
+  "beginnerNote": "自社の設備とクラウドを両方使う組み合わせ方をイメージしましょう。",
+  "basis": "レッスン本文『オンプレとの接続』の見出し（オンプレミスとクラウドを併用する構成＝一般的なIT用語知識）"
+ }
+]

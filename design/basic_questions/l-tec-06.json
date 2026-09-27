@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-06-01",
+  "question": "点と点のつながり（関係性）を扱うのに適したグラフ型データベースはどれですか。",
+  "choices": [
+   "Amazon Neptune",
+   "Amazon Redshift",
+   "Amazon ElastiCache",
+   "Amazon RDS"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：Amazon Neptuneは、人と人のつながりなど「関係性」を扱うのに特化したグラフデータベースです。表形式のRDSや分析用のRedshiftとは異なり、ノードとエッジの繋がりを高速にたどれる点が特徴です。",
+  "wrongChoiceExplanations": {
+   "1": "大規模データの集計・分析に特化したデータウェアハウスです。",
+   "2": "よく使うデータをメモリに置いて高速化するキャッシュです。",
+   "3": "表形式で扱うマネージドのリレーショナルデータベースです。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『つながり・関係性』を扱う専用DBという点に注目しましょう。",
+  "basis": "レッスン本文『グラフ構造はNeptune…やりたいことに合わせて専用DBを選びます』"
+ },
+ {
+  "id": "b-tec-06-02",
+  "question": "MongoDBと互換性を持つ、ドキュメント型のマネージドデータベースはどれですか。",
+  "choices": [
+   "Amazon Aurora",
+   "Amazon DocumentDB",
+   "Amazon DynamoDB",
+   "Amazon Redshift（分析用）"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：Amazon DocumentDBはMongoDB互換のドキュメント型データベースです。JSONに近い柔軟な形式でデータを扱える点が特徴で、表形式のAuroraやキー・バリュー型のDynamoDBとは扱うデータ構造が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "MySQL/PostgreSQL互換の高性能なリレーショナルデータベースです。",
+   "2": "キー・バリュー型のサーバーレスなNoSQLデータベースです。",
+   "3": "大規模データの分析に特化したデータウェアハウスです。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『MongoDB互換』というキーワードが手がかりです。",
+  "basis": "レッスン本文『ドキュメント型はDocumentDB』"
+ },
+ {
+  "id": "b-tec-06-03",
+  "question": "RDSで、別AZに待機用の複製を持ち障害時に切り替える仕組みは何ですか。",
+  "choices": [
+   "リードレプリカ",
+   "マルチAZ配置",
+   "グローバルテーブル",
+   "Intelligent-Tiering"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：RDSの「マルチAZ配置」は別のアベイラビリティーゾーンに待機系を用意し、障害時に自動で切り替える仕組みです。可用性を高める機能で、読み取り性能を上げるリードレプリカとは目的が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "読み取り性能を上げるために複製を増やす機能で、目的が異なります。",
+   "2": "DynamoDBを複数リージョンで同期する機能です。",
+   "3": "S3のストレージクラスを自動最適化する機能です。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『障害時の切り替え』という可用性の話に注目しましょう。",
+  "basis": "AWS公式のRDSの説明：マルチAZ配置で高可用性を実現。"
+ },
+ {
+  "id": "b-tec-06-04",
+  "question": "RDSで読み取り性能を高めるため、複製を増やして負荷分散する機能はどれですか。",
+  "choices": [
+   "リードレプリカ",
+   "マルチAZ配置",
+   "スナップショット",
+   "DAX"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：「リードレプリカ」は読み取り専用の複製を追加し、読み取りの負荷を分散して性能を高める機能です。障害時の切り替えを目的とするマルチAZ配置とは役割が異なる点を、あわせて押さえておきましょう。",
+  "wrongChoiceExplanations": {
+   "1": "障害時に切り替える待機系を用意する高可用性のための機能です。",
+   "2": "ある時点のデータ状態を保存するバックアップです。",
+   "3": "DynamoDB専用のインメモリキャッシュです。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『読み取り専用の複製を増やす』目的を考えましょう。",
+  "basis": "AWS公式のRDSの説明：リードレプリカで読み取りをスケールする。"
+ },
+ {
+  "id": "b-tec-06-05",
+  "question": "DynamoDB専用の、マイクロ秒級で応答するインメモリキャッシュはどれですか。",
+  "choices": [
+   "Amazon ElastiCache",
+   "Amazon RDS Proxy",
+   "Amazon DAX",
+   "Amazon Redshift"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：Amazon DAX（DynamoDB Accelerator）はDynamoDB専用のインメモリキャッシュで、マイクロ秒級の応答を実現します。汎用的なキャッシュのElastiCacheとは異なり、DynamoDBに特化して連携が簡単な点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "Redis/Memcached互換の汎用的なインメモリキャッシュです。",
+   "1": "データベースへの接続を効率化する接続プールのサービスです。",
+   "3": "大規模データの分析に特化したデータウェアハウスです。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『どのDB専用のキャッシュか』が区別のポイントです。",
+  "basis": "AWS公式の説明：DAXはDynamoDB専用のインメモリキャッシュ。"
+ },
+ {
+  "id": "b-tec-06-06",
+  "question": "RDSで、ある時点の状態を保存し障害時に復元できる仕組みはどれですか。",
+  "choices": [
+   "自動バックアップ",
+   "リードレプリカ",
+   "マルチAZ配置",
+   "グローバルテーブル"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：RDSの自動バックアップ（スナップショット）は、ある時点のデータ状態を保存し、必要なときに復元できる仕組みです。読み取り性能を上げるリードレプリカや、障害時切替のマルチAZ配置とは目的が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "読み取りの負荷分散のために複製を増やす機能です。",
+   "2": "障害時に別AZの待機系へ自動切り替える機能です。",
+   "3": "DynamoDBを複数リージョンで同期する機能です。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『過去の状態に戻せるか』という復元性に注目しましょう。",
+  "basis": "AWS公式のRDSの説明：自動バックアップとスナップショットで復元可能。"
+ },
+ {
+  "id": "b-tec-06-07",
+  "question": "Auroraで、負荷に応じて処理能力を自動で増減できる構成はどれですか。",
+  "choices": [
+   "Aurora Multi-Master",
+   "RDS Proxy",
+   "Aurora Serverless",
+   "DynamoDB Streams"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：Aurora Serverlessは、アクセス量に応じてデータベースの処理能力を自動で増減できる構成です。常に一定のサーバーを起動しておく通常のAuroraと異なり、使った分だけの運用がしやすくなります。",
+  "wrongChoiceExplanations": {
+   "0": "複数のノードで同時に書き込みを受け付ける構成の名称です。",
+   "1": "多数のアプリ接続をまとめて効率化する接続プールです。",
+   "3": "DynamoDBのデータ変更を検知して連携する仕組みです。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『負荷に応じて自動で増減する』という特徴が手がかりです。",
+  "basis": "AWS公式のAuroraの説明：Aurora Serverlessは自動スケールの構成。"
+ },
+ {
+  "id": "b-tec-06-08",
+  "question": "異なる種類のデータベース間でスキーマ（構造）の変換を支援するツールはどれですか。",
+  "choices": [
+   "AWS DMS",
+   "AWS SCT",
+   "AWS Batch",
+   "Amazon Kendra"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS Schema Conversion Tool（AWS SCT）は、異なる種類のデータベース間でテーブル構造などのスキーマを変換するツールです。実際のデータそのものを移行するAWS DMSとセットで使われることが多い点が区別のポイントです。",
+  "wrongChoiceExplanations": {
+   "0": "稼働中のデータを移行するためのサービスで、スキーマ変換ではなくデータ移行が主です。",
+   "2": "大量のバッチ計算ジョブを実行するサービスです。",
+   "3": "自然言語で検索できるエンタープライズ検索サービスです。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『データそのもの』ではなく『構造の変換』を担う点に注目しましょう。",
+  "basis": "AWS公式の説明：AWS SCTはスキーマ変換、AWS DMSはデータ移行を担う。"
+ },
+ {
+  "id": "b-tec-06-09",
+  "question": "Amazon RDSが対応するデータベースエンジンの組み合わせとして適切なものはどれですか。",
+  "choices": [
+   "独自エンジンのみ対応",
+   "NoSQLエンジンのみ対応",
+   "検索エンジンのみ対応",
+   "複数のエンジンに対応"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：Amazon RDSはMySQL・PostgreSQL・MariaDB・Oracle・SQL Serverなど複数のリレーショナルDBエンジンに対応しています。単一の独自エンジンやNoSQL専用ではなく、幅広い選択肢から選べる点が特徴です。",
+  "wrongChoiceExplanations": {
+   "0": "RDSは複数のエンジンを選べ、単一の独自エンジン限定ではありません。",
+   "1": "RDSはリレーショナル型が中心で、NoSQL専用ではありません。",
+   "2": "RDSはデータベースサービスで、検索エンジンではありません。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『選べるエンジンの幅』に注目して考えましょう。",
+  "basis": "レッスン本文『RDSはMySQL/PostgreSQLなどの管理をAWSに任せられるSQLデータベース』"
+ },
+ {
+  "id": "b-tec-06-10",
+  "question": "NoSQLデータベースの特徴として正しいものはどれですか。",
+  "choices": [
+   "列構成を事前に厳密に固定する",
+   "SQL文でしか操作できない",
+   "必ず複数の表を結合して使う",
+   "スキーマを柔軟に変更できる"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：NoSQLデータベースは、事前に列構成を厳密に固定せず柔軟に変更できる点が特徴です。表と行を厳密に定義するリレーショナルDBと異なり、データ構造の変化に対応しやすい設計になっています。",
+  "wrongChoiceExplanations": {
+   "0": "列構成を厳密に固定するのはリレーショナルDBの特徴です。",
+   "1": "SQLを主に使うのはリレーショナルDBで、NoSQLは異なる操作方法が中心です。",
+   "2": "表の結合を多用するのはリレーショナルDBの特徴です。"
+  },
+  "domain": "technology",
+  "service": "データベース",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "データベース"
+  ],
+  "beginnerNote": "『構造をあらかじめ固定するかどうか』が区別のポイントです。",
+  "basis": "AWS公式のNoSQLの説明：柔軟なスキーマで多様なデータ構造に対応。"
+ }
+]

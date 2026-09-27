@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-14-01",
+  "question": "自社のアプリのプログラムの中から、S3へファイルを保存したい。使う手段はどれか。",
+  "choices": [
+   "マネジメントコンソール",
+   "AWS SDK",
+   "AWS Elastic Beanstalk",
+   "AWS Amplify Console"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「AWS SDK」。SDKは、各プログラミング言語からAWSを操作するための部品で、アプリのコードの中からS3への保存などを行える。マネジメントコンソールはブラウザで人が操作する画面、Elastic Beanstalkはアプリの実行環境をまとめて用意するサービスである。プログラムから操作＝SDKと覚える。",
+  "wrongChoiceExplanations": {
+   "0": "マネジメントコンソールはブラウザで人が操作する画面で、プログラムの中からは使わない。",
+   "2": "Elastic Beanstalkはアプリの実行環境を自動で用意するサービスで、S3への保存の手段ではない。",
+   "3": "Amplify Consoleはフロントエンドの公開などを行う画面で、プログラムの中からの操作手段ではない。"
+  },
+  "domain": "technology",
+  "service": "SDK",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "SDK"
+  ],
+  "beginnerNote": "「プログラムの中から」操作する手段を選ぶ。",
+  "basis": "レッスン本文『SDK（プログラムから操作）』"
+ },
+ {
+  "id": "b-tec-14-02",
+  "question": "マネジメントコンソールが特に向いている場面はどれか。",
+  "choices": [
+   "同じ操作を毎晩自動で何百回も行うとき",
+   "画面を見ながら少しの設定を試すとき",
+   "アプリのコードからAWSを操作するとき",
+   "テストからデプロイまでを自動化するとき"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「画面を見ながら少しの設定を試すとき」。マネジメントコンソールはブラウザのGUIで、画面を見ながら手作業で操作できるので、少しの設定や動作の確認に向いている。同じ操作を繰り返す自動化にはCLI、アプリのコードからの操作にはSDK、テストからデプロイまでの自動化にはCodePipelineなどを使う。",
+  "wrongChoiceExplanations": {
+   "0": "同じ操作を大量に繰り返す自動化には、コマンドで操作できるAWS CLIが向いている。",
+   "2": "アプリのコードからAWSを操作するのはAWS SDKである。",
+   "3": "テストからデプロイまでの自動化はCodePipelineなどのCI/CDサービスが担う。"
+  },
+  "domain": "technology",
+  "service": "操作・デプロイ",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "操作・デプロイ"
+  ],
+  "beginnerNote": "人が画面で操作する手段が得意なことを考える。",
+  "basis": "レッスン本文『手作業＝コンソール、自動化＝CLI/SDK』"
+ },
+ {
+  "id": "b-tec-14-03",
+  "question": "ブラウザからすぐにAWS CLIのコマンドを使える環境を提供するものはどれか。",
+  "choices": [
+   "Amazon CloudFront",
+   "AWS CloudShell",
+   "AWS CloudTrail",
+   "Amazon CloudWatch"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「AWS CloudShell」。CloudShellはマネジメントコンソールから開けるブラウザ上のコマンド環境で、自分のパソコンに準備をしなくてもAWS CLIを使える。名前が似ているCloudFrontはコンテンツ配信（CDN）、CloudTrailは操作履歴の記録、CloudWatchは監視のサービスで、役割がまったく違う。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon CloudFrontはエッジロケーションからコンテンツを配信するCDNである。",
+   "2": "AWS CloudTrailはAWSアカウントでの操作やAPI呼び出しの履歴を記録する。",
+   "3": "Amazon CloudWatchはリソースやアプリのメトリクス・ログを監視する。"
+  },
+  "domain": "technology",
+  "service": "CLI",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CLI"
+  ],
+  "beginnerNote": "「シェル（コマンドを打つ場所）」という名前に注目する。",
+  "basis": "AWS公式：AWS CloudShellはブラウザベースのシェル（CLIが使える）"
+ },
+ {
+  "id": "b-tec-14-04",
+  "question": "AWS CodeBuildの役割として正しいものはどれか。",
+  "choices": [
+   "一連の流れ全体をつないでまとめる",
+   "アプリをサーバーへ配布（デプロイ）する",
+   "ソースコードのビルドとテストを行う",
+   "Webやモバイルの画面を手軽に公開する"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「ソースコードのビルドとテストを行う」。CodeBuildはソースコードをビルド（実行できる形に組み立て）し、テストを実行する。サーバーなどへの配布はCodeDeploy、ビルドやデプロイをつないで流れ全体を自動化するのはCodePipelineである。フロントエンドやモバイルアプリの公開を手軽にするのはAmplifyである。",
+  "wrongChoiceExplanations": {
+   "0": "ビルドやデプロイをつないで流れ全体を自動化するのはAWS CodePipelineである。",
+   "1": "アプリをサーバーなどへ配布（デプロイ）するのはAWS CodeDeployである。",
+   "3": "Webやモバイルアプリの開発・公開を手軽にするのはAWS Amplifyである。"
+  },
+  "domain": "technology",
+  "service": "CI/CD",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CI/CD"
+  ],
+  "beginnerNote": "名前の「Build（組み立てる）」から役割を考える。",
+  "basis": "レッスン本文『CodePipeline/CodeBuild/CodeDeployは…CI/CDを自動化』"
+ },
+ {
+  "id": "b-tec-14-05",
+  "question": "AWS CodeDeployの役割として正しいものはどれか。",
+  "choices": [
+   "操作の履歴を記録して監査に使う",
+   "ソースコードをビルドしてテストする",
+   "アプリをEC2などへ自動で配布する",
+   "画像から物体や顔を認識する"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「アプリをEC2などへ自動で配布する」。CodeDeployは、できあがったアプリをEC2やLambdaなどへ自動でデプロイ（配布・反映）する。ビルドとテストはCodeBuild、流れ全体をつなぐのはCodePipelineが担う。操作履歴の記録はCloudTrail、画像認識はRekognitionで、CI/CDとは別のサービスである。",
+  "wrongChoiceExplanations": {
+   "0": "操作やAPI呼び出しの履歴を記録するのはAWS CloudTrailである。",
+   "1": "ソースコードをビルドしてテストするのはAWS CodeBuildである。",
+   "3": "画像や動画から物体や顔を認識するのはAmazon Rekognitionである。"
+  },
+  "domain": "technology",
+  "service": "CI/CD",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CI/CD"
+  ],
+  "beginnerNote": "名前の「Deploy（配置する）」から役割を考える。",
+  "basis": "レッスン本文『CodePipeline/CodeBuild/CodeDeployは…CI/CDを自動化』"
+ },
+ {
+  "id": "b-tec-14-06",
+  "question": "CodeBuildやCodeDeployをつなぎ、変更から公開までの流れをまとめるサービスはどれか。",
+  "choices": [
+   "AWS CloudFormation",
+   "AWS CloudShell",
+   "AWS Amplify",
+   "AWS CodePipeline"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「AWS CodePipeline」。CodePipelineは、ソースの変更をきっかけに、ビルド（CodeBuild）、テスト、デプロイ（CodeDeploy）といった各段階を順につなぎ、流れ全体を自動で進めるサービスである。CloudShellはブラウザのコマンド環境、Amplifyはフロントエンドやモバイルの開発・公開、CloudFormationはテンプレートでインフラを作るサービスである。",
+  "wrongChoiceExplanations": {
+   "0": "AWS CloudFormationはテンプレートからインフラを自動で作るサービスである。",
+   "1": "AWS CloudShellはブラウザからコマンドを使える環境で、流れをつなぐサービスではない。",
+   "2": "AWS AmplifyはWebやモバイルアプリの開発・公開を手軽にするサービスである。"
+  },
+  "domain": "technology",
+  "service": "AWS CodePipeline",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS CodePipeline"
+  ],
+  "beginnerNote": "「パイプライン（管）」で各段階をつなぐイメージから考える。",
+  "basis": "レッスン本文『CodePipeline/CodeBuild/CodeDeployは、テスト～デプロイの流れ（CI/CD）を自動化』"
+ },
+ {
+  "id": "b-tec-14-07",
+  "question": "Elastic Beanstalkを使うとき、利用者が主に用意するものはどれか。",
+  "choices": [
+   "データセンターの電源と空調",
+   "ロードバランサーの手作業での構築",
+   "EC2の台数の手作業での調整",
+   "アプリのコード"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「アプリのコード」。Elastic Beanstalkでは、利用者はアプリのコードをアップロードするだけで、裏側のEC2やロードバランサーなどの実行環境が自動で用意される。インフラの構築や台数の調整を任せられるので、素早く公開できる。データセンターの電源や空調は、そもそもAWSが管理するものである。",
+  "wrongChoiceExplanations": {
+   "0": "データセンターの電源や空調はAWSが管理し、利用者は用意しない。",
+   "1": "ロードバランサーはElastic Beanstalkが自動で用意するので、手作業で構築しなくてよい。",
+   "2": "EC2の用意や台数の調整もElastic Beanstalkに任せられる。"
+  },
+  "domain": "technology",
+  "service": "Elastic Beanstalk",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Elastic Beanstalk"
+  ],
+  "beginnerNote": "「コードをアップするだけ」というレッスンの説明を思い出す。",
+  "basis": "レッスン本文『Elastic Beanstalkはコードをアップするだけで、裏側のEC2やロードバランサーを自動で用意』"
+ },
+ {
+  "id": "b-tec-14-08",
+  "question": "Elastic BeanstalkとCloudFormationの違いとして正しいものはどれか。",
+  "choices": [
+   "前者はアプリ公開を任せ、後者はテンプレートで構成を定義",
+   "前者はテンプレートで構成を定義し、後者はアプリ公開を任せる",
+   "どちらも画像や動画の認識を行うAIサービス",
+   "どちらも操作の履歴を記録する監査サービス"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「前者はアプリ公開を任せ、後者はテンプレートで構成を定義」。Elastic Beanstalkはコードを渡すと実行環境の用意から公開までを任せられるPaaS、CloudFormationはテンプレート（コード）でインフラの構成を定義し、同じ環境を何度でも自動で作れるIaCのサービスである。画像認識はRekognition、操作履歴の記録はCloudTrailである。",
+  "wrongChoiceExplanations": {
+   "1": "説明が逆である。アプリ公開を任せるのがBeanstalk、テンプレートで定義するのがCloudFormation。",
+   "2": "画像や動画の認識を行うのはAmazon Rekognitionである。",
+   "3": "操作やAPI呼び出しの履歴を記録するのはAWS CloudTrailである。"
+  },
+  "domain": "technology",
+  "service": "Elastic Beanstalk",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Elastic Beanstalk"
+  ],
+  "beginnerNote": "「アプリを任せる」のか「構成を書いて作る」のかで分ける。",
+  "basis": "レッスン本文『Elastic Beanstalk…PaaS』＋CloudFormation＝テンプレートでインフラを定義（IaC）"
+ },
+ {
+  "id": "b-tec-14-09",
+  "question": "AWS CLIでAWSを操作するために、事前に設定が必要なものはどれか。",
+  "choices": [
+   "アクセスキーなどの認証情報",
+   "エッジロケーションの場所",
+   "サポートプランの種類",
+   "S3のストレージクラス"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「アクセスキーなどの認証情報」。CLIは自分のパソコンなどからコマンドでAWSを操作するため、誰が操作しているかをAWSに示すアクセスキーなどの認証情報を設定しておく必要がある。認証情報は大切に扱い、ルートユーザーのアクセスキーは作らない、といったセキュリティの基本とも関わる。",
+  "wrongChoiceExplanations": {
+   "1": "エッジロケーションはCloudFrontなどの配信拠点で、CLIを使うための設定ではない。",
+   "2": "サポートプランはAWSサポートの契約内容で、CLIを使う前提条件ではない。",
+   "3": "ストレージクラスはS3に保存するデータの保存方法の選択で、CLIの設定ではない。"
+  },
+  "domain": "technology",
+  "service": "CLI",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CLI"
+  ],
+  "beginnerNote": "コマンドを打つのが「誰」なのかをAWSが確かめる方法を考える。",
+  "basis": "AWS公式：AWS CLIの利用にはアクセスキー等の認証情報の設定が必要"
+ },
+ {
+  "id": "b-tec-14-10",
+  "question": "「CI/CD」の「CD」が表すものとして正しいものはどれか。",
+  "choices": [
+   "継続的デリバリー（デプロイ）",
+   "コンテンツ配信ネットワーク",
+   "コスト削減の取り組み",
+   "クラウドのデータセンター"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「継続的デリバリー（デプロイ）」。CI/CDのCIは継続的インテグレーション（変更をこまめに統合してビルド・テスト）、CDは継続的デリバリー（またはデプロイ）で、変更を自動で本番に届ける仕組みを表す。AWSではCodePipelineやCodeBuild、CodeDeployがこれを支える。CDN（コンテンツ配信ネットワーク）とは別の言葉である。",
+  "wrongChoiceExplanations": {
+   "1": "コンテンツ配信ネットワークはCDNで、CloudFrontが代表例。CI/CDのCDとは別物である。",
+   "2": "コスト削減はCI/CDの略語とは関係しない。",
+   "3": "クラウドのデータセンターはCI/CDの略語とは関係しない。"
+  },
+  "domain": "technology",
+  "service": "CI/CD",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "CI/CD"
+  ],
+  "beginnerNote": "CIの次に来る、変更を「届ける」段階を考える。",
+  "basis": "レッスン本文『テスト～デプロイの流れ（CI/CD）を自動化』"
+ }
+]

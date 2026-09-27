@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-tec-12-01",
+  "question": "S3に保存したデータを、サーバーを用意せずSQLで直接分析できるサービスはどれですか。",
+  "choices": [
+   "Amazon Redshift",
+   "Amazon Athena",
+   "Amazon Kinesis",
+   "AWS Glue"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論としてAmazon Athenaは、S3に保存したデータに対しサーバーを用意せずSQLで直接問い合わせできるサービスです。都度の分析を手軽に行いたい場面に向きます。継続的な大規模分析用のデータウェアハウスであるRedshiftとは、用途の重さが異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon Redshiftは大規模データを継続的に分析するデータウェアハウスです。",
+   "2": "Amazon Kinesisはリアルタイムに流れるデータを収集・処理するサービスです。",
+   "3": "AWS Glueはデータの抽出・変換・統合（ETL）を行うサービスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon Athena",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Athena"
+  ],
+  "beginnerNote": "「サーバー不要」という言葉に注目しましょう。",
+  "basis": "レッスン本文『S3にたまったデータをそのままSQLで調べるならAthena（サーバー不要）』"
+ },
+ {
+  "id": "b-tec-12-02",
+  "question": "Amazon Redshiftの分類として正しいものはどれか。",
+  "choices": [
+   "NoSQLデータベース",
+   "データウェアハウス",
+   "メッセージキュー",
+   "コンテンツ配信ネットワーク"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "正解は「データウェアハウス」。Redshiftは、大量のデータを集めて継続的に集計・分析するためのデータウェアハウスである。キーと値でデータを扱うNoSQLデータベースはDynamoDB、メッセージキューはSQS、コンテンツ配信ネットワーク（CDN）はCloudFrontが代表例になる。分析用の倉庫＝Redshiftと押さえる。",
+  "wrongChoiceExplanations": {
+   "0": "NoSQLデータベースの代表はAmazon DynamoDBである。",
+   "2": "メッセージキューの代表はAmazon SQSである。",
+   "3": "コンテンツ配信ネットワーク（CDN）の代表はAmazon CloudFrontである。"
+  },
+  "domain": "technology",
+  "service": "Amazon Redshift",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Redshift"
+  ],
+  "beginnerNote": "「ウェアハウス（倉庫）」にデータをためて分析するイメージで考える。",
+  "basis": "Opus差し替え（既存問題とほぼ同文だったため）"
+ },
+ {
+  "id": "b-tec-12-03",
+  "question": "センサーやログなど絶え間なく流れるデータをリアルタイムに取り込むサービスはどれですか。",
+  "choices": [
+   "Amazon Athena",
+   "AWS Glue",
+   "Amazon Kinesis",
+   "Amazon QuickSight"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論としてAmazon Kinesisはセンサーやログなど絶え間なく流れるデータをリアルタイムに取り込み・処理するサービスです。継続的なストリーミングデータの扱いに向きます。すでにたまったデータを調べるAthenaとは、扱うデータの性質が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon AthenaはS3のデータをSQLで直接分析するサービスです。",
+   "1": "AWS Glueはデータの抽出・変換・統合（ETL）を行うサービスです。",
+   "3": "Amazon QuickSightはデータをグラフで可視化するBIサービスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon Kinesis",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Kinesis"
+  ],
+  "beginnerNote": "「絶え間なく流れる」という言葉に注目しましょう。",
+  "basis": "レッスン本文『Kinesisはセンサーやログなど絶え間なく流れるデータをリアルタイムに取り込み・処理します』"
+ },
+ {
+  "id": "b-tec-12-04",
+  "question": "分析の前にデータの抽出・変換・統合（ETL）を行い、下ごしらえをするサービスはどれですか。",
+  "choices": [
+   "Amazon Athena",
+   "Amazon Redshift",
+   "Amazon Kinesis",
+   "AWS Glue"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論としてAWS Glueはデータの抽出・変換・統合（ETL）を行い、分析の下ごしらえをするサービスです。異なる形式のデータを整えてから分析基盤へ渡す役割を担います。分析そのものを行うAthenaやRedshiftとは工程の位置づけが異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon AthenaはS3のデータをSQLで直接分析するサービスです。",
+   "1": "Amazon Redshiftは大規模データを継続的に分析するデータウェアハウスです。",
+   "2": "Amazon Kinesisはリアルタイムに流れるデータを収集・処理するサービスです。"
+  },
+  "domain": "technology",
+  "service": "AWS Glue",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "AWS Glue"
+  ],
+  "beginnerNote": "「下ごしらえ」という言葉に注目しましょう。",
+  "basis": "レッスン本文『Glueはデータの抽出・変換・統合（ETL）を行い分析の下ごしらえをします』"
+ },
+ {
+  "id": "b-tec-12-05",
+  "question": "分析結果をグラフやダッシュボードで見える化するBIサービスはどれですか。",
+  "choices": [
+   "Amazon Athena",
+   "Amazon QuickSight",
+   "Amazon Redshift",
+   "AWS Glue"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論としてAmazon QuickSightは分析結果をグラフやダッシュボードにして見える化するBIサービスです。経営層への共有など、結果を分かりやすく提示したい場面で使います。データを整えるGlueや分析するAthena/Redshiftとは工程が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Amazon AthenaはS3のデータをSQLで直接分析するサービスです。",
+   "2": "Amazon Redshiftは大規模データを継続的に分析するデータウェアハウスです。",
+   "3": "AWS Glueはデータの抽出・変換・統合（ETL）を行うサービスです。"
+  },
+  "domain": "technology",
+  "service": "Amazon QuickSight",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon QuickSight"
+  ],
+  "beginnerNote": "「見える化」という言葉に注目しましょう。",
+  "basis": "レッスン本文『QuickSightはグラフやダッシュボードでデータを見える化します』"
+ },
+ {
+  "id": "b-tec-12-06",
+  "question": "Amazon EMRが得意とする処理として正しいものはどれか。",
+  "choices": [
+   "グラフやダッシュボードでの見える化",
+   "流れてくるデータのリアルタイム取り込み",
+   "ためた大量データの一括（バッチ）分析",
+   "S3のデータへのSQLでの直接問い合わせ"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "正解は「ためた大量データの一括（バッチ）分析」。Amazon EMRはHadoopやSparkといった分散処理の仕組みを使い、大量のデータをまとめて分析する。流れてくるデータをその場で扱うのはKinesis、見える化はQuickSight、S3のデータにSQLで直接問い合わせるのはAthenaである。「まとめて処理＝EMR」と覚える。",
+  "wrongChoiceExplanations": {
+   "0": "グラフやダッシュボードで見える化するのはAmazon QuickSightである。",
+   "1": "流れてくるデータをリアルタイムに取り込むのはAmazon Kinesisである。",
+   "3": "S3のデータにSQLで直接問い合わせるのはAmazon Athenaである。"
+  },
+  "domain": "technology",
+  "service": "EMR",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "EMR"
+  ],
+  "beginnerNote": "HadoopやSparkが何のための仕組みかを思い出す。",
+  "basis": "レッスン本文『EMRはHadoop/Sparkで大規模なバッチ分析を行います』"
+ },
+ {
+  "id": "b-tec-12-07",
+  "question": "Amazon Athenaを使うとき、利用者が用意しなくてよいものはどれか。",
+  "choices": [
+   "分析結果の使い道",
+   "分析したいデータ",
+   "問い合わせのSQL文",
+   "分析のためのサーバー"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "正解は「分析のためのサーバー」。Athenaはサーバーレスのサービスで、S3にあるデータに対してSQLを書いて問い合わせるだけで分析でき、サーバーの用意や管理は不要である。データやSQL文、結果をどう使うかは利用者が用意する。継続的に大規模な分析をする本格的なデータウェアハウスが必要ならRedshiftを使う、という使い分けも押さえる。",
+  "wrongChoiceExplanations": {
+   "0": "分析結果をどう使うかは利用者が決めることで、Athenaが決めるものではない。",
+   "1": "分析の対象となるデータは利用者が用意し、S3に置いておく必要がある。",
+   "2": "何を調べるかを表すSQL文は、利用者が書く必要がある。"
+  },
+  "domain": "technology",
+  "service": "Athena",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Athena"
+  ],
+  "beginnerNote": "「サーバー不要」という特徴がそのまま答えにつながる。",
+  "basis": "レッスン本文『S3にたまったデータをそのままSQLで調べるならAthena（サーバー不要）』"
+ },
+ {
+  "id": "b-tec-12-08",
+  "question": "形式を問わずさまざまなデータを、そのまま大量にためておく場所を何と呼ぶか。",
+  "choices": [
+   "データレイク",
+   "データウェアハウス",
+   "エッジロケーション",
+   "リードレプリカ"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「データレイク」。データレイクは、表の形に整える前のデータも含め、さまざまな形式のデータをそのまま大量にためておく場所で、AWSではS3がよく使われる。分析しやすい形に整えたデータを集計するのがデータウェアハウス（Redshift）である。ためる場所と、整えて分析する場所の違いで区別する。",
+  "wrongChoiceExplanations": {
+   "1": "データウェアハウスは分析しやすい形に整えたデータを集計する仕組みで、Redshiftが代表例。",
+   "2": "エッジロケーションは利用者の近くからコンテンツを配信する拠点である。",
+   "3": "リードレプリカはデータベースの読み取りを分散するための複製である。"
+  },
+  "domain": "technology",
+  "service": "分析",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "分析"
+  ],
+  "beginnerNote": "「湖」のように、何でも流れ込んでたまる場所をイメージする。",
+  "basis": "AWS公式：データレイクは構造化・非構造化データをそのまま大規模に保存する（S3が中心）"
+ },
+ {
+  "id": "b-tec-12-09",
+  "question": "分析の流れとして、レッスンの説明に合う順番はどれか。",
+  "choices": [
+   "Glueで整え、QuickSightで見せる",
+   "QuickSightで整え、Glueで見せる",
+   "Kinesisで見せ、Athenaで整える",
+   "Redshiftで取り込み、Kinesisで見せる"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「Glueで整え、QuickSightで見せる」。レッスンでは、Glueがデータの抽出・変換・統合（ETL）で分析の下ごしらえをし、QuickSightがグラフやダッシュボードで見える化する、と説明している。流れてくるデータの取り込みはKinesis、ためたデータの分析はAthenaやRedshiftが担う。役割ごとに順番を整理しておく。",
+  "wrongChoiceExplanations": {
+   "1": "QuickSightは見える化、Glueは下ごしらえの役割で、順番と役割が逆になっている。",
+   "2": "Kinesisはデータの取り込み、Athenaは分析の役割で、見せる・整える役ではない。",
+   "3": "Redshiftはデータウェアハウスで分析を担い、Kinesisは見える化のサービスではない。"
+  },
+  "domain": "technology",
+  "service": "分析",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "分析"
+  ],
+  "beginnerNote": "「下ごしらえ」と「見える化」がそれぞれどのサービスかを思い出す。",
+  "basis": "レッスン本文『Glueは…分析の下ごしらえ…QuickSightは…見える化』"
+ },
+ {
+  "id": "b-tec-12-10",
+  "question": "Amazon KinesisとAmazon EMRの違いとして正しいものはどれか。",
+  "choices": [
+   "Kinesisはその場で、EMRはまとめて処理する",
+   "Kinesisはまとめて、EMRはその場で処理する",
+   "どちらもグラフを作る可視化サービスである",
+   "どちらもSQLでS3を直接調べるサービスである"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "正解は「Kinesisはその場で、EMRはまとめて処理する」。Kinesisはセンサーやログなど絶え間なく流れるデータをリアルタイムに取り込み・処理し、EMRはHadoopやSparkでためた大量データを一括（バッチ）で分析する。可視化はQuickSight、S3をSQLで直接調べるのはAthenaの役割で、どちらにも当てはまらない。",
+  "wrongChoiceExplanations": {
+   "1": "説明が逆である。リアルタイムはKinesis、バッチ（まとめて処理）はEMRである。",
+   "2": "グラフやダッシュボードで見える化するのはAmazon QuickSightである。",
+   "3": "S3のデータにSQLで直接問い合わせるのはAmazon Athenaである。"
+  },
+  "domain": "technology",
+  "service": "Kinesis",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Kinesis"
+  ],
+  "beginnerNote": "「流れるデータ」と「ためたデータ」のどちらを扱うかで分ける。",
+  "basis": "レッスン本文『Kinesisは…リアルタイム』『EMRは…バッチ分析』"
+ }
+]

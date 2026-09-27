@@ -1,0 +1,282 @@
+[
+ {
+  "id": "b-sec-05-01",
+  "question": "IAM Identity Centerは、以前は何というサービス名でしたか。",
+  "choices": [
+   "AWS IAM",
+   "AWS SSO",
+   "AWS STS",
+   "Amazon Cognito"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：IAM Identity Centerは、以前「AWS SSO（AWS Single Sign-On）」という名称で提供されていたサービスです。役割は変わらず、複数のAWSアカウントや業務アプリへの一元的なサインインを可能にします。IAMユーザーを個別に管理する通常のIAMや、一時的な認証情報を発行するSTSとは目的が異なる点で区別します。",
+  "wrongChoiceExplanations": {
+   "0": "AWSリソースへのアクセス権限を管理する基本サービスで、旧称ではありません。",
+   "2": "一時的な認証情報を発行するサービスで、旧称ではありません。",
+   "3": "アプリ利用者向けの認証サービスで、旧称ではありません。"
+  },
+  "domain": "security",
+  "service": "IAM Identity Center",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "IAM Identity Center"
+  ],
+  "beginnerNote": "「以前の名前」という言葉に注目しましょう。",
+  "basis": "レッスン本文『IAM Identity Center（旧AWS SSO）』"
+ },
+ {
+  "id": "b-sec-05-02",
+  "question": "IAM Identity Centerを使う前提として必要になるサービスはどれですか。",
+  "choices": [
+   "AWS Organizations",
+   "Amazon Cognito",
+   "AWS Directory Service",
+   "Amazon Inspector"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：IAM Identity Centerは複数のAWSアカウントをまとめる「AWS Organizations」と連携して使います。組織内の全アカウントへのアクセスを一元的に管理するための前提となる仕組みです。Cognitoのようなアプリ利用者向け認証や、AD連携・脆弱性診断のサービスとは役割が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "アプリ利用者のサインアップ・サインインを管理する認証サービスです。",
+   "2": "社内のActive DirectoryとAWSを連携させるサービスです。",
+   "3": "EC2やコンテナの脆弱性を診断するサービスです。"
+  },
+  "domain": "security",
+  "service": "IAM Identity Center",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "IAM Identity Center"
+  ],
+  "beginnerNote": "「複数アカウントをまとめる」ための土台は何かを考えましょう。",
+  "basis": "AWS公式のIAM Identity Centerの説明：AWS Organizationsと連携して複数アカウントへのアクセスを管理する。"
+ },
+ {
+  "id": "b-sec-05-03",
+  "question": "Amazon Cognitoで、アプリ利用者のサインアップ・サインインを管理する機能はどれですか。",
+  "choices": [
+   "IDプール",
+   "アクセスプール",
+   "ユーザープール",
+   "権限プール"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：Amazon Cognitoの「ユーザープール」は、アプリ利用者のサインアップ・サインインを管理する認証ディレクトリです。ユーザー情報を保持し、ログイン処理を担います。AWSリソースへの一時的なアクセス権を発行する「IDプール」とは役割が異なる点に注意します。",
+  "wrongChoiceExplanations": {
+   "0": "認証後にAWSリソースへの一時的なアクセス権を付与する機能です。",
+   "1": "Cognitoの実際の機能名ではありません。",
+   "3": "Cognitoの実際の機能名ではありません。"
+  },
+  "domain": "security",
+  "service": "Amazon Cognito",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Cognito"
+  ],
+  "beginnerNote": "「利用者の登録・ログイン情報そのもの」を管理するのはどちらかを考えましょう。",
+  "basis": "AWS公式のAmazon Cognitoの説明：ユーザープールはサインアップ・サインインを管理するディレクトリ。"
+ },
+ {
+  "id": "b-sec-05-04",
+  "question": "Amazon Cognitoで、認証後にAWSリソースへの一時的なアクセス権を付与する機能はどれですか。",
+  "choices": [
+   "IDプール",
+   "ユーザープール",
+   "同期プール",
+   "権限プール"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：Amazon Cognitoの「IDプール」は、認証済みの利用者にAWSリソースへの一時的なアクセス権（IAMロールに基づく認証情報）を付与する機能です。利用者のサインアップ・サインイン情報そのものを管理する「ユーザープール」とは役割分担が異なります。",
+  "wrongChoiceExplanations": {
+   "1": "アプリ利用者のサインアップ・サインインを管理する認証ディレクトリです。",
+   "2": "Cognitoの実際の機能名ではありません。",
+   "3": "Cognitoの実際の機能名ではありません。"
+  },
+  "domain": "security",
+  "service": "Amazon Cognito",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Cognito"
+  ],
+  "beginnerNote": "「AWSリソースへのアクセス権」を渡すのはどちらかを考えましょう。",
+  "basis": "AWS公式のAmazon Cognitoの説明：IDプールはAWSの認証情報（一時的なアクセス権）を付与する。"
+ },
+ {
+  "id": "b-sec-05-05",
+  "question": "Amazon Cognitoが標準で対応しているサインイン方法として正しいものはどれですか。",
+  "choices": [
+   "郵送のみによるパスワード通知",
+   "電話口頭のみによる本人確認",
+   "紙の申請書のみでの登録手続き",
+   "Googleなどのソーシャルログイン"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：Amazon Cognitoは、GoogleやFacebookなど外部のソーシャルアカウントを使ったソーシャルログインに標準対応しています。自社の会員情報だけでなく、外部IDプロバイダーとも連携できる点が特徴です。郵送や電話のみによる旧来的な本人確認の仕組みとは異なります。",
+  "wrongChoiceExplanations": {
+   "0": "Cognitoが提供する標準的なサインイン方法ではありません。",
+   "1": "Cognitoが提供する標準的なサインイン方法ではありません。",
+   "2": "Cognitoが提供する標準的なサインイン方法ではありません。"
+  },
+  "domain": "security",
+  "service": "Amazon Cognito",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Amazon Cognito"
+  ],
+  "beginnerNote": "「外部サービスのアカウント」でログインできる仕組みを思い出しましょう。",
+  "basis": "AWS公式のAmazon Cognitoの説明：Google・Facebook等のソーシャルIDプロバイダーによるサインインに対応。"
+ },
+ {
+  "id": "b-sec-05-06",
+  "question": "AWS STSは、IAMロールを「引き受ける（Assume）」ときに何を発行しますか。",
+  "choices": [
+   "恒久的なパスワード",
+   "一時的な認証情報",
+   "固定のアクセスキー",
+   "終身有効な証明書"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS STSは、IAMロールを引き受ける際に有効期限付きの一時的な認証情報を発行します。役割を切り替えて権限を借りる仕組みを支える機能です。ずっと使い続けられる恒久的なパスワードや固定のアクセスキーとは異なり、期限切れで自動的に無効になります。",
+  "wrongChoiceExplanations": {
+   "0": "IAMユーザーが持つ恒久的な認証情報で、STSが発行するものではありません。",
+   "2": "固定して使い続けるIAMの認証情報で、STSが発行するものではありません。",
+   "3": "STSが発行する認証情報は期限付きで、終身有効ではありません。"
+  },
+  "domain": "security",
+  "service": "STS",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "STS"
+  ],
+  "beginnerNote": "「期限がある」認証情報が何かを考えましょう。",
+  "basis": "レッスン本文『STSは短時間だけ有効な一時認証情報を発行します』"
+ },
+ {
+  "id": "b-sec-05-07",
+  "question": "AWS Directory Serviceで、既存ADがなくてもAWS上に新規ADを構築できる機能名はどれですか。",
+  "choices": [
+   "Cognitoのユーザープール",
+   "Managed Microsoft AD",
+   "Identity CenterのSSO機能",
+   "Secrets Managerの保管"
+  ],
+  "correctAnswers": [
+   1
+  ],
+  "explanation": "結論：AWS Directory Serviceの「Managed Microsoft AD」を使うと、既存のActive Directoryがなくても、AWS上に新規のマネージド型ADを構築できます。既存ADとの連携だけでなく新規構築にも対応する点が特徴です。CognitoやIdentity Centerは認証の仕組みが異なり、ADの構築機能ではありません。",
+  "wrongChoiceExplanations": {
+   "0": "アプリ利用者のサインアップ・サインインを管理する認証サービスです。",
+   "2": "複数アカウントへのSSOを実現するサービスです。",
+   "3": "DBパスワードなどの機密情報を保管するサービスです。"
+  },
+  "domain": "security",
+  "service": "Directory Service",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "Directory Service"
+  ],
+  "beginnerNote": "「ゼロから作れる」ADの仕組みがあることを思い出しましょう。",
+  "basis": "AWS公式のAWS Directory Serviceの説明：AWS Managed Microsoft ADで新規にディレクトリを構築できる。"
+ },
+ {
+  "id": "b-sec-05-08",
+  "question": "パスワードに加えてもう一つの要素で本人確認を強化する仕組みを何と呼びますか。",
+  "choices": [
+   "多要素認証（MFA）",
+   "シングルサインオン",
+   "フェデレーション",
+   "ロールベースアクセス制御"
+  ],
+  "correctAnswers": [
+   0
+  ],
+  "explanation": "結論：多要素認証（MFA）は、パスワードに加えてスマホの認証アプリなど別の要素で本人確認を強化する仕組みです。パスワードが漏れても不正ログインを防ぎやすくなります。一度のログインで複数サービスに入れるSSOや、外部IDと連携するフェデレーションとは異なる考え方です。",
+  "wrongChoiceExplanations": {
+   "1": "一度のログインで複数のサービスに入れる仕組みで、追加の認証要素とは異なります。",
+   "2": "外部の認証基盤とIDを連携させる仕組みです。",
+   "3": "権限を役割（ロール）単位で割り当てる考え方です。"
+  },
+  "domain": "security",
+  "service": "認証管理",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "認証管理"
+  ],
+  "beginnerNote": "「パスワード以外にもう一つ」必要になる仕組みを考えましょう。",
+  "basis": "AWS公式のMFAの説明：パスワードに加え追加の認証要素で本人確認を強化する。"
+ },
+ {
+  "id": "b-sec-05-09",
+  "question": "IAM Identity Centerが主な対象とする利用者層はどれですか。",
+  "choices": [
+   "一般消費者の会員",
+   "不特定多数の匿名利用者",
+   "取引先の一般顧客",
+   "社内の従業員"
+  ],
+  "correctAnswers": [
+   3
+  ],
+  "explanation": "結論：IAM Identity Centerは、社内の従業員（ワークフォース）が複数のAWSアカウントや業務アプリへアクセスするための仕組みです。組織のメンバー向けのSSO基盤という位置づけです。自社アプリの一般利用者（顧客）向けの認証はAmazon Cognitoが担当し、対象者が異なります。",
+  "wrongChoiceExplanations": {
+   "0": "自社アプリなどの一般利用者はAmazon Cognitoが対象とする層です。",
+   "1": "匿名利用者への認証提供はIAM Identity Centerの想定用途ではありません。",
+   "2": "取引先の一般顧客向け認証はCognitoなど別のサービスが担います。"
+  },
+  "domain": "security",
+  "service": "IAM Identity Center",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "IAM Identity Center"
+  ],
+  "beginnerNote": "「社内の人」向けか「外部の利用者」向けかを考えましょう。",
+  "basis": "レッスン本文『IAM Identity Centerは、一度のログインで複数のAWSアカウントやアプリに入れるようにします』（社員向け）"
+ },
+ {
+  "id": "b-sec-05-10",
+  "question": "AWSアカウントのルートユーザーの扱いとして最も適切な考え方はどれですか。",
+  "choices": [
+   "すべての作業をルートユーザーで行う",
+   "パスワードを全社員で共有する",
+   "普段は最小権限のIAMを使う",
+   "ルートユーザーにMFAは設定しない"
+  ],
+  "correctAnswers": [
+   2
+  ],
+  "explanation": "結論：AWSアカウントのルートユーザーは強力な権限を持つため、普段の作業には使わず、必要な権限だけを持つIAMユーザーやロールを利用するのが基本です（最小権限の原則）。ルートユーザーを日常業務やパスワード共有に使うと、アカウント全体が危険にさらされます。",
+  "wrongChoiceExplanations": {
+   "0": "強力な権限を持つルートユーザーを日常業務に使うのは推奨されません。",
+   "1": "ルートユーザーの認証情報を共有するとセキュリティ上のリスクが大きくなります。",
+   "3": "ルートユーザーにはむしろMFAを設定することが強く推奨されます。"
+  },
+  "domain": "security",
+  "service": "認証管理",
+  "difficulty": 1,
+  "tags": [
+   "基礎",
+   "認証管理"
+  ],
+  "beginnerNote": "「強力すぎる権限」を普段使いすべきかを考えましょう。",
+  "basis": "AWS公式のセキュリティベストプラクティス：ルートユーザーは通常業務に使わず、最小権限のIAMを利用する。"
+ }
+]
